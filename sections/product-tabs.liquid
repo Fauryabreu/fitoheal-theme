@@ -47,43 +47,32 @@
               {% if block.type == 'product' and block.settings.tab == tval %}
                 {%- assign prod = block.settings.product -%}
                 {% if prod != blank %}
-                  <article class="fh-product-card" {{ block.shopify_attributes }}>
+                  <div class="fh-product-card" {{ block.shopify_attributes }}>
+                    {% if block.settings.badge != blank %}
+                      <span class="fh-product-card__badge">{{ block.settings.badge }}</span>
+                    {% endif %}
                     <a href="{{ prod.url }}" class="fh-product-card__img">
                       {% if prod.featured_image %}
-                        {{ prod.featured_image | image_url: width: 600 | image_tag: loading: 'lazy', alt: prod.title }}
+                        <img src="{{ prod.featured_image | img_url: '400x' }}" alt="{{ prod.title }}" loading="lazy" width="400">
                       {% else %}
                         {{ 'product-1' | placeholder_svg_tag }}
                       {% endif %}
-                      {% if block.settings.badge != blank %}
-                        <span class="fh-product-card__badge">{{ block.settings.badge }}</span>
-                      {% endif %}
                     </a>
                     <div class="fh-product-card__body">
-                      <p class="fh-product-card__name">{{ prod.title }}</p>
+                      <h4 class="fh-product-card__name">{{ prod.title }}</h4>
                       {% if prod.description != blank %}
-                        <p class="fh-product-card__desc">{{ prod.description | strip_html | truncate: 90 }}</p>
+                        <p class="fh-product-card__desc">{{ prod.description | strip_html | truncate: 80 }}</p>
                       {% endif %}
                       <div class="fh-product-card__rating">
                         <span class="fh-product-card__stars">★★★★★</span>
                         <span class="fh-product-card__review-count">({{ prod.metafields.reviews.rating_count | default: '—' }})</span>
                       </div>
                       <div class="fh-product-card__footer">
-                        <span class="fh-product-card__price">Desde {{ prod.price | money }}</span>
+                        <span class="fh-product-card__price">Desde {{ prod.price_min | money }}</span>
                         <a href="{{ prod.url }}" class="fh-product-card__link">Ver producto →</a>
                       </div>
                     </div>
-                  </article>
-                {% else %}
-                  <!-- Placeholder si producto no asignado aún -->
-                  <article class="fh-product-card fh-product-card--placeholder" {{ block.shopify_attributes }}>
-                    <div class="fh-product-card__img">{{ 'product-1' | placeholder_svg_tag }}</div>
-                    <div class="fh-product-card__body">
-                      <p class="fh-product-card__name">Selecciona un producto en el editor</p>
-                      {% if block.settings.badge != blank %}
-                        <span class="fh-product-card__badge" style="position:static;margin-bottom:0.5rem;">{{ block.settings.badge }}</span>
-                      {% endif %}
-                    </div>
-                  </article>
+                  </div>
                 {% endif %}
               {% endif %}
             {% endfor %}
