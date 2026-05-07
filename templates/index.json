@@ -137,49 +137,16 @@
     "product-tabs": {
       "type": "product-tabs",
       "blocks": {
-        "tab-descanso": {
-          "type": "tab",
-          "settings": {
-            "label": "descanso",
-            "collection": "descanso",
-            "limit": 3,
-            "badge": "Alta absorción X5"
-          }
-        },
-        "tab-digestion": {
-          "type": "tab",
-          "settings": {
-            "label": "digestión",
-            "collection": "digestion",
-            "limit": 3,
-            "badge": "Alta absorción X5"
-          }
-        },
-        "tab-enfoque": {
-          "type": "tab",
-          "settings": {
-            "label": "enfoque",
-            "collection": "enfoque",
-            "limit": 3,
-            "badge": "Alta absorción X5"
-          }
-        },
-        "tab-metabolismo": {
-          "type": "tab",
-          "settings": {
-            "label": "metabolismo",
-            "collection": "metabolismo",
-            "limit": 3,
-            "badge": "Alta absorción X5"
-          }
-        }
+        "prod-d1": { "type": "product", "settings": { "tab": "descanso",    "badge": "Alta absorción X5" } },
+        "prod-d2": { "type": "product", "settings": { "tab": "descanso",    "badge": "Alta absorción X5" } },
+        "prod-g1": { "type": "product", "settings": { "tab": "digestion",   "badge": "Alta absorción X5" } },
+        "prod-g2": { "type": "product", "settings": { "tab": "digestion",   "badge": "Alta absorción X5" } },
+        "prod-e1": { "type": "product", "settings": { "tab": "enfoque",     "badge": "Alta absorción X5" } },
+        "prod-e2": { "type": "product", "settings": { "tab": "enfoque",     "badge": "Alta absorción X5" } },
+        "prod-m1": { "type": "product", "settings": { "tab": "metabolismo", "badge": "Alta absorción X5" } },
+        "prod-m2": { "type": "product", "settings": { "tab": "metabolismo", "badge": "Alta absorción X5" } }
       },
-      "block_order": [
-        "tab-descanso",
-        "tab-digestion",
-        "tab-enfoque",
-        "tab-metabolismo"
-      ],
+      "block_order": ["prod-d1","prod-d2","prod-g1","prod-g2","prod-e1","prod-e2","prod-m1","prod-m2"],
       "settings": {
         "bg_color": "#fafdf8",
         "titulo": "Soluciones liposomales para cada objetivo",
