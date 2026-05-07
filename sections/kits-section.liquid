@@ -1,79 +1,38 @@
-<section
-  id="shopify-section-{{ section.id }}"
-  class="kits-section section-padding"
-  style="background-color: {{ section.settings.bg_color }};"
->
+<section id="shopify-section-{{ section.id }}" class="fh-kits" style="background-color:{{ section.settings.bg_color }};">
   <div class="page-width">
+    {% if section.settings.titulo != blank %}
+      <h2 class="fh-kits__title">{{ section.settings.titulo }}</h2>
+    {% endif %}
 
-    <!-- Header -->
-    <div class="section-header{% if section.settings.header_align == 'center' %} section-header--center{% endif %}">
-      {% if section.settings.eyebrow != blank %}
-        <p class="eyebrow">{{ section.settings.eyebrow }}</p>
-      {% endif %}
-      {% if section.settings.title != blank %}
-        <h2 class="h2">{{ section.settings.title }}</h2>
-      {% endif %}
-      <div class="divider{% if section.settings.header_align == 'center' %} divider--center{% endif %}"></div>
-      {% if section.settings.subtitle != blank %}
-        <p class="lead">{{ section.settings.subtitle }}</p>
-      {% endif %}
-    </div>
-
-    <!-- Kits grid -->
-    <div class="kits-grid">
+    <div class="fh-kits__grid">
       {% for block in section.blocks %}
-        {% case block.type %}
-          {% when 'kit' %}
-            <article class="kit-card" {{ block.shopify_attributes }}>
-              <!-- Background image -->
-              <div class="kit-card__bg">
-                {% if block.settings.image != blank %}
-                  {{ block.settings.image | image_url: width: 1200 | image_tag: loading: 'lazy', alt: block.settings.title }}
-                {% else %}
-                  {{ 'collection-1' | placeholder_svg_tag: 'placeholder-svg' }}
-                {% endif %}
-              </div>
-
-              <!-- Content overlay -->
-              <div class="kit-card__content">
-                {% if block.settings.tag != blank %}
-                  <span class="kit-card__tag">{{ block.settings.tag }}</span>
-                {% endif %}
-
-                {% if block.settings.title != blank %}
-                  <h3 class="kit-card__title">{{ block.settings.title }}</h3>
-                {% endif %}
-
-                {% if block.settings.description != blank %}
-                  <p class="kit-card__desc">{{ block.settings.description }}</p>
-                {% endif %}
-
-                <div class="kit-card__footer">
-                  <div>
-                    {% if block.settings.price_label != blank %}
-                      <p class="kit-card__price-label">{{ block.settings.price_label }}</p>
-                    {% endif %}
-                    {% if block.settings.price != blank %}
-                      <p class="kit-card__price">{{ block.settings.price }}</p>
-                    {% endif %}
-                  </div>
-
-                  {% if block.settings.cta_label != blank %}
-                    <a
-                      href="{{ block.settings.cta_link | default: '#' }}"
-                      class="btn btn--light"
-                      style="flex-shrink: 0;"
-                    >
-                      {{ block.settings.cta_label }}
-                    </a>
-                  {% endif %}
-                </div>
-              </div>
-            </article>
-        {% endcase %}
+        {% if block.type == 'kit' %}
+          <article class="fh-kit-card" {{ block.shopify_attributes }}>
+            <div class="fh-kit-card__img">
+              {% if block.settings.imagen != blank %}
+                {{ block.settings.imagen | image_url: width: 600 | image_tag: loading: 'lazy', alt: block.settings.nombre }}
+              {% else %}
+                {{ 'collection-1' | placeholder_svg_tag }}
+              {% endif %}
+            </div>
+            <div class="fh-kit-card__body">
+              {% if block.settings.nombre != blank %}
+                <p class="fh-kit-card__name">{{ block.settings.nombre }}</p>
+              {% endif %}
+              {% if block.settings.descripcion != blank %}
+                <p class="fh-kit-card__desc">{{ block.settings.descripcion }}</p>
+              {% endif %}
+              {% if block.settings.cta_label != blank %}
+                <a href="{{ block.settings.cta_link | default: '#' }}" class="fh-kit-card__link">
+                  {{ block.settings.cta_label }}
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" width="14" height="14"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
+                </a>
+              {% endif %}
+            </div>
+          </article>
+        {% endif %}
       {% endfor %}
     </div>
-
   </div>
 </section>
 
@@ -81,124 +40,32 @@
 {
   "name": "Kits Section",
   "tag": "section",
-  "class": "kits-section-wrapper",
   "settings": [
-    {
-      "type": "color",
-      "id": "bg_color",
-      "label": "Background color",
-      "default": "#ffffff"
-    },
-    {
-      "type": "select",
-      "id": "header_align",
-      "label": "Header alignment",
-      "options": [
-        { "value": "left",   "label": "Left" },
-        { "value": "center", "label": "Center" }
-      ],
-      "default": "center"
-    },
-    {
-      "type": "text",
-      "id": "eyebrow",
-      "label": "Eyebrow",
-      "default": "Packs y bundles"
-    },
-    {
-      "type": "text",
-      "id": "title",
-      "label": "Title",
-      "default": "Kits diseñados para resultados"
-    },
-    {
-      "type": "textarea",
-      "id": "subtitle",
-      "label": "Subtitle",
-      "default": "Combinaciones pensadas por nuestros nutricionistas para maximizar los beneficios liposomales."
-    }
+    { "type": "color", "id": "bg_color", "label": "Fondo",  "default": "#ffffff" },
+    { "type": "text",  "id": "titulo",   "label": "Título", "default": "Kits diseñados para tus objetivos" }
   ],
   "blocks": [
     {
       "type": "kit",
-      "name": "Kit card",
+      "name": "Kit",
       "settings": [
-        {
-          "type": "image_picker",
-          "id": "image",
-          "label": "Background image"
-        },
-        {
-          "type": "text",
-          "id": "tag",
-          "label": "Tag label",
-          "default": "Kit más vendido"
-        },
-        {
-          "type": "text",
-          "id": "title",
-          "label": "Kit title",
-          "default": "Kit Inmunidad Total"
-        },
-        {
-          "type": "textarea",
-          "id": "description",
-          "label": "Description",
-          "default": "Vitamina C + Zinc + Elderberry. El trío definitivo para reforzar tus defensas de forma natural y sostenida."
-        },
-        {
-          "type": "text",
-          "id": "price_label",
-          "label": "Price label",
-          "default": "Desde"
-        },
-        {
-          "type": "text",
-          "id": "price",
-          "label": "Price",
-          "default": "$89.99"
-        },
-        {
-          "type": "text",
-          "id": "cta_label",
-          "label": "CTA label",
-          "default": "Ver kit"
-        },
-        {
-          "type": "url",
-          "id": "cta_link",
-          "label": "CTA link"
-        }
+        { "type": "image_picker", "id": "imagen",      "label": "Imagen del kit" },
+        { "type": "text",         "id": "nombre",      "label": "Nombre",        "default": "Sueño / Estrés" },
+        { "type": "textarea",     "id": "descripcion", "label": "Descripción",   "default": "Relájate, baja el estrés y mejora tu descanso." },
+        { "type": "text",         "id": "cta_label",   "label": "Texto botón",   "default": "Ver kit" },
+        { "type": "url",          "id": "cta_link",    "label": "Link kit" }
       ]
     }
   ],
-  "max_blocks": 4,
+  "max_blocks": 6,
   "presets": [
     {
       "name": "Kits Section",
       "blocks": [
-        {
-          "type": "kit",
-          "settings": {
-            "tag": "Kit más vendido",
-            "title": "Kit Inmunidad Total",
-            "description": "Vitamina C + Zinc + Elderberry. El trío definitivo para reforzar tus defensas.",
-            "price_label": "Desde",
-            "price": "$89.99",
-            "cta_label": "Ver kit"
-          }
-        },
-        {
-          "type": "kit",
-          "settings": {
-            "tag": "Nuevo",
-            "title": "Kit Energía y Foco",
-            "description": "Magnesio + B12 + CoQ10. Activa tu energía celular y mejora tu concentración.",
-            "price_label": "Desde",
-            "price": "$79.99",
-            "cta_label": "Ver kit"
-          }
-        }
+        { "type": "kit", "settings": { "nombre": "Sueño / Estrés",  "descripcion": "Relájate, baja el estrés y mejora tu descanso.", "cta_label": "Ver kit" } },
+        { "type": "kit", "settings": { "nombre": "Desinflamar",      "descripcion": "Apoya la inflamación natural y el equilibrio digestivo.", "cta_label": "Ver kit" } },
+        { "type": "kit", "settings": { "nombre": "Metabólico",       "descripcion": "Apoya el metabolismo de la glucosa y la inflamación.", "cta_label": "Ver kit" } },
+        { "type": "kit", "settings": { "nombre": "Focus",            "descripcion": "Claridad mental, concentración y energía sostenida.", "cta_label": "Ver kit" } }
       ]
     }
   ]

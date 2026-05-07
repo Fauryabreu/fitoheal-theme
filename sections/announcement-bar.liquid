@@ -1,30 +1,16 @@
 {% if section.settings.show_bar %}
-<div class="announcement-bar" style="background-color: {{ section.settings.bg_color }}; color: {{ section.settings.text_color }};">
+<div class="fh-announcement" style="background-color:{{ section.settings.bg_color }};color:{{ section.settings.text_color }};">
   <div class="page-width">
-    <ul class="announcement-bar__list" role="list">
+    <ul class="fh-announcement__list" role="list">
       {% for i in (1..3) %}
-        {% assign text_key  = 'item_' | append: i | append: '_text' %}
-        {% assign link_key  = 'item_' | append: i | append: '_link' %}
-        {% assign icon_key  = 'item_' | append: i | append: '_icon' %}
-        {% assign text  = section.settings[text_key] %}
-        {% assign link  = section.settings[link_key] %}
-        {% assign icon  = section.settings[icon_key] %}
+        {% assign text_key = 'item_' | append: i | append: '_text' %}
+        {% assign link_key = 'item_' | append: i | append: '_link' %}
+        {% assign text = section.settings[text_key] %}
+        {% assign link = section.settings[link_key] %}
         {% if text != blank %}
-          <li class="announcement-bar__item">
-            {% if icon == 'check' %}
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
-            {% elsif icon == 'truck' %}
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 18.75a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 01-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h1.125c.621 0 1.129-.504 1.09-1.124a17.902 17.902 0 00-3.213-9.193 2.056 2.056 0 00-1.58-.86H14.25M16.5 18.75h-2.25m0-11.177v-.958c0-.568-.422-1.048-.987-1.106a48.554 48.554 0 00-10.026 0 1.106 1.106 0 00-.987 1.106v7.635m12-6.677v6.677m0 4.5v-4.5m0 0h-12"/></svg>
-            {% elsif icon == 'shield' %}
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"/></svg>
-            {% elsif icon == 'leaf' %}
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 17.25c-4.097 0-7.5-2.804-7.5-6.375A6.187 6.187 0 0112 4.5c2.485 0 4.5 2.239 4.5 4.875A4.313 4.313 0 0112 13.5c-1.243 0-2.25-.895-2.25-2 0-1.104 1.007-2 2.25-2 .83 0 1.5.597 1.5 1.333"/></svg>
-            {% endif %}
-            {% if link != blank %}
-              <a href="{{ link }}" style="color: {{ section.settings.link_color }};">{{ text }}</a>
-            {% else %}
-              {{ text }}
-            {% endif %}
+          <li class="fh-announcement__item">
+            {% if link != blank %}<a href="{{ link }}">{{ text }}</a>
+            {% else %}{{ text }}{% endif %}
           </li>
         {% endif %}
       {% endfor %}
@@ -37,121 +23,20 @@
 {
   "name": "Announcement Bar",
   "tag": "section",
-  "class": "announcement-bar-section",
   "settings": [
-    {
-      "type": "checkbox",
-      "id": "show_bar",
-      "label": "Show announcement bar",
-      "default": true
-    },
-    {
-      "type": "color",
-      "id": "bg_color",
-      "label": "Background color",
-      "default": "#1B4332"
-    },
-    {
-      "type": "color",
-      "id": "text_color",
-      "label": "Text color",
-      "default": "#ffffff"
-    },
-    {
-      "type": "color",
-      "id": "link_color",
-      "label": "Link color",
-      "default": "#74C69D"
-    },
-    {
-      "type": "header",
-      "content": "Item 1"
-    },
-    {
-      "type": "select",
-      "id": "item_1_icon",
-      "label": "Icon 1",
-      "options": [
-        { "value": "check", "label": "Checkmark" },
-        { "value": "truck", "label": "Truck" },
-        { "value": "shield", "label": "Shield" },
-        { "value": "leaf", "label": "Leaf" },
-        { "value": "none", "label": "None" }
-      ],
-      "default": "truck"
-    },
-    {
-      "type": "text",
-      "id": "item_1_text",
-      "label": "Text 1",
-      "default": "Envío gratis en pedidos +$75"
-    },
-    {
-      "type": "url",
-      "id": "item_1_link",
-      "label": "Link 1"
-    },
-    {
-      "type": "header",
-      "content": "Item 2"
-    },
-    {
-      "type": "select",
-      "id": "item_2_icon",
-      "label": "Icon 2",
-      "options": [
-        { "value": "check", "label": "Checkmark" },
-        { "value": "truck", "label": "Truck" },
-        { "value": "shield", "label": "Shield" },
-        { "value": "leaf", "label": "Leaf" },
-        { "value": "none", "label": "None" }
-      ],
-      "default": "shield"
-    },
-    {
-      "type": "text",
-      "id": "item_2_text",
-      "label": "Text 2",
-      "default": "Garantía de satisfacción 30 días"
-    },
-    {
-      "type": "url",
-      "id": "item_2_link",
-      "label": "Link 2"
-    },
-    {
-      "type": "header",
-      "content": "Item 3"
-    },
-    {
-      "type": "select",
-      "id": "item_3_icon",
-      "label": "Icon 3",
-      "options": [
-        { "value": "check", "label": "Checkmark" },
-        { "value": "truck", "label": "Truck" },
-        { "value": "shield", "label": "Shield" },
-        { "value": "leaf", "label": "Leaf" },
-        { "value": "none", "label": "None" }
-      ],
-      "default": "leaf"
-    },
-    {
-      "type": "text",
-      "id": "item_3_text",
-      "label": "Text 3",
-      "default": "100% natural · Sin aditivos artificiales"
-    },
-    {
-      "type": "url",
-      "id": "item_3_link",
-      "label": "Link 3"
-    }
+    { "type": "checkbox", "id": "show_bar",   "label": "Mostrar barra", "default": true },
+    { "type": "color",    "id": "bg_color",   "label": "Fondo",  "default": "#1B4332" },
+    { "type": "color",    "id": "text_color", "label": "Texto",  "default": "#ffffff"  },
+    { "type": "header",   "content": "Item 1" },
+    { "type": "text", "id": "item_1_text", "label": "Texto 1", "default": "Envío gratis en pedidos superiores a $150.000" },
+    { "type": "url",  "id": "item_1_link", "label": "Link 1" },
+    { "type": "header",   "content": "Item 2" },
+    { "type": "text", "id": "item_2_text", "label": "Texto 2", "default": "Alta absorción liposomal X5" },
+    { "type": "url",  "id": "item_2_link", "label": "Link 2" },
+    { "type": "header",   "content": "Item 3" },
+    { "type": "text", "id": "item_3_text", "label": "Texto 3", "default": "Bienestar por objetivo, todos los días." },
+    { "type": "url",  "id": "item_3_link", "label": "Link 3" }
   ],
-  "presets": [
-    {
-      "name": "Announcement Bar"
-    }
-  ]
+  "presets": [{ "name": "Announcement Bar" }]
 }
 {% endschema %}

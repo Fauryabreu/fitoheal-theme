@@ -1,227 +1,176 @@
-<section
-  id="shopify-section-{{ section.id }}"
-  class="product-tabs section-padding"
-  style="background-color: {{ section.settings.bg_color }};"
->
+<section id="shopify-section-{{ section.id }}" class="fh-product-tabs" style="background-color:{{ section.settings.bg_color }};">
   <div class="page-width">
+    <div class="fh-product-tabs__layout">
 
-    <!-- Section header -->
-    <div class="section-header{% if section.settings.header_align == 'center' %} section-header--center{% endif %}">
-      {% if section.settings.eyebrow != blank %}
-        <p class="eyebrow">{{ section.settings.eyebrow }}</p>
-      {% endif %}
-      {% if section.settings.title != blank %}
-        <h2 class="h2">{{ section.settings.title }}</h2>
-      {% endif %}
-      <div class="divider{% if section.settings.header_align == 'center' %} divider--center{% endif %}"></div>
-      {% if section.settings.subtitle != blank %}
-        <p class="lead">{{ section.settings.subtitle }}</p>
-      {% endif %}
-    </div>
-
-    <!-- Tab navigation -->
-    <div class="tabs-nav" role="tablist" aria-label="Product categories">
-      {% assign tab_index = 0 %}
-      {% for block in section.blocks %}
-        {% if block.type == 'tab' %}
-          <button
-            class="tab-btn{% if tab_index == 0 %} is-active{% endif %}"
-            role="tab"
-            aria-selected="{% if tab_index == 0 %}true{% else %}false{% endif %}"
-            aria-controls="tab-panel-{{ block.id }}"
-            id="tab-btn-{{ block.id }}"
-            data-tab="{{ block.id }}"
-            {{ block.shopify_attributes }}
-          >
-            {{ block.settings.tab_label }}
-          </button>
-          {% assign tab_index = tab_index | plus: 1 %}
+      <!-- Sidebar izquierda -->
+      <aside class="fh-product-tabs__sidebar">
+        {% if section.settings.titulo != blank %}
+          <h2 class="fh-product-tabs__sidebar-title">{{ section.settings.titulo }}</h2>
         {% endif %}
-      {% endfor %}
-    </div>
+        {% if section.settings.descripcion != blank %}
+          <p class="fh-product-tabs__sidebar-desc">{{ section.settings.descripcion }}</p>
+        {% endif %}
+        {% if section.settings.cta_label != blank %}
+          <a href="{{ section.settings.cta_link | default: '#' }}" class="fh-btn fh-btn--outline">{{ section.settings.cta_label }}</a>
+        {% endif %}
+      </aside>
 
-    <!-- Tab panels -->
-    {% assign panel_index = 0 %}
-    {% for block in section.blocks %}
-      {% if block.type == 'tab' %}
-        <div
-          id="tab-panel-{{ block.id }}"
-          class="tab-panel{% if panel_index == 0 %} is-active{% endif %}"
-          role="tabpanel"
-          aria-labelledby="tab-btn-{{ block.id }}"
-        >
-          <!-- Products inside this tab are child blocks -->
-          {% for child in section.blocks %}
-            {% if child.type == 'product' and child.settings.tab_id == block.id %}
-              {% render 'product-card', block: child %}
-            {% endif %}
-          {% endfor %}
+      <!-- Contenido derecha -->
+      <div>
+        <!-- Tabs nav -->
+        {% assign tab_blocks = section.blocks | where: 'type', 'tab' %}
+        {% if tab_blocks.size > 0 %}
+          <div class="fh-tabs-nav" role="tablist">
+            {% for block in tab_blocks %}
+              <button
+                class="fh-tab-btn{% if forloop.first %} is-active{% endif %}"
+                role="tab"
+                aria-selected="{% if forloop.first %}true{% else %}false{% endif %}"
+                aria-controls="fh-tab-panel-{{ block.id }}"
+                id="fh-tab-{{ block.id }}"
+                data-tab="{{ block.id }}"
+                {{ block.shopify_attributes }}
+              >{{ block.settings.label }}</button>
+            {% endfor %}
+          </div>
 
-          <!-- Fallback: use collection if assigned -->
-          {% if block.settings.collection != blank %}
-            {% assign col = collections[block.settings.collection] %}
-            {% if col != blank %}
-              {% assign limit_count = block.settings.products_limit | default: 3 %}
-              {% for product in col.products limit: limit_count %}
-                <article class="product-card">
-                  <a href="{{ product.url }}" class="product-card__media">
-                    {% if product.featured_image %}
-                      {{ product.featured_image | image_url: width: 600 | image_tag: loading: 'lazy', alt: product.title }}
-                    {% else %}
-                      {{ 'product-1' | placeholder_svg_tag: 'placeholder-svg' }}
-                    {% endif %}
-                    {% if product.compare_at_price > product.price %}
-                      <span class="product-card__badge badge badge--dark">Sale</span>
-                    {% endif %}
-                  </a>
-                  <div class="product-card__body">
-                    <p class="product-card__category">{{ product.type }}</p>
-                    <h3 class="product-card__title">
-                      <a href="{{ product.url }}">{{ product.title }}</a>
-                    </h3>
-                    {% if product.description != blank %}
-                      <p class="product-card__desc">{{ product.description | strip_html | truncate: 100 }}</p>
-                    {% endif %}
-                    <div class="product-card__footer">
-                      <div class="product-card__price">
-                        {% if product.compare_at_price > product.price %}
-                          <s>{{ product.compare_at_price | money }}</s>
-                        {% endif %}
-                        {{ product.price | money }}
+          <!-- Tab panels -->
+          {% for tab_block in tab_blocks %}
+            <div
+              id="fh-tab-panel-{{ tab_block.id }}"
+              class="fh-tab-panel{% if forloop.first %} is-active{% endif %}"
+              role="tabpanel"
+              aria-labelledby="fh-tab-{{ tab_block.id }}"
+            >
+              {% comment %} Productos de colección asignada {% endcomment %}
+              {% if tab_block.settings.collection != blank %}
+                {% assign col = collections[tab_block.settings.collection] %}
+                {% assign limit_n = tab_block.settings.limit | default: 3 %}
+                {% for product in col.products limit: limit_n %}
+                  <article class="fh-product-card">
+                    <a href="{{ product.url }}" class="fh-product-card__img">
+                      {% if product.featured_image %}
+                        {{ product.featured_image | image_url: width: 600 | image_tag: loading: 'lazy', alt: product.title }}
+                      {% else %}
+                        {{ 'product-1' | placeholder_svg_tag }}
+                      {% endif %}
+                      {% if tab_block.settings.badge != blank %}
+                        <span class="fh-product-card__badge">{{ tab_block.settings.badge }}</span>
+                      {% endif %}
+                    </a>
+                    <div class="fh-product-card__body">
+                      <p class="fh-product-card__name">{{ product.title }}</p>
+                      {% if product.description != blank %}
+                        <p class="fh-product-card__desc">{{ product.description | strip_html | truncate: 90 }}</p>
+                      {% endif %}
+                      <div class="fh-product-card__rating">
+                        <span class="fh-product-card__stars">★★★★★</span>
+                        <span class="fh-product-card__review-count">({{ product.metafields.reviews.rating_count | default: '—' }})</span>
                       </div>
-                      <button
-                        class="product-card__add"
-                        aria-label="Add {{ product.title }} to cart"
-                        data-variant-id="{{ product.selected_or_first_available_variant.id }}"
-                      >
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"/></svg>
-                      </button>
+                      <div class="fh-product-card__footer">
+                        <span class="fh-product-card__price">Desde {{ product.price | money }}</span>
+                        <a href="{{ product.url }}" class="fh-product-card__link">Ver producto →</a>
+                      </div>
                     </div>
-                  </div>
-                </article>
-              {% endfor %}
-            {% endif %}
-          {% endif %}
-        </div>
-        {% assign panel_index = panel_index | plus: 1 %}
-      {% endif %}
-    {% endfor %}
+                  </article>
+                {% endfor %}
+              {% endif %}
 
+              {% comment %} Productos manuales: blocks tipo 'product' con tab_id == tab_block.id {% endcomment %}
+              {% for prod_block in section.blocks %}
+                {% if prod_block.type == 'product' and prod_block.settings.tab_id == tab_block.id %}
+                  {% assign prod = prod_block.settings.product %}
+                  {% if prod != blank %}
+                    <article class="fh-product-card" {{ prod_block.shopify_attributes }}>
+                      <a href="{{ prod.url }}" class="fh-product-card__img">
+                        {% if prod.featured_image %}
+                          {{ prod.featured_image | image_url: width: 600 | image_tag: loading: 'lazy', alt: prod.title }}
+                        {% else %}
+                          {{ 'product-1' | placeholder_svg_tag }}
+                        {% endif %}
+                        {% if prod_block.settings.badge != blank %}
+                          <span class="fh-product-card__badge">{{ prod_block.settings.badge }}</span>
+                        {% endif %}
+                      </a>
+                      <div class="fh-product-card__body">
+                        <p class="fh-product-card__name">{{ prod.title }}</p>
+                        {% if prod.description != blank %}
+                          <p class="fh-product-card__desc">{{ prod.description | strip_html | truncate: 90 }}</p>
+                        {% endif %}
+                        <div class="fh-product-card__rating">
+                          <span class="fh-product-card__stars">★★★★★</span>
+                          {% if prod_block.settings.review_count != blank %}
+                            <span class="fh-product-card__review-count">({{ prod_block.settings.review_count }})</span>
+                          {% endif %}
+                        </div>
+                        <div class="fh-product-card__footer">
+                          <span class="fh-product-card__price">Desde {{ prod.price | money }}</span>
+                          <a href="{{ prod.url }}" class="fh-product-card__link">Ver producto →</a>
+                        </div>
+                      </div>
+                    </article>
+                  {% endif %}
+                {% endif %}
+              {% endfor %}
+            </div>
+          {% endfor %}
+        {% endif %}
+      </div>
+
+    </div>
   </div>
 </section>
 
 <script>
-  (function() {
-    var btns   = document.querySelectorAll('#shopify-section-{{ section.id }} .tab-btn');
-    var panels = document.querySelectorAll('#shopify-section-{{ section.id }} .tab-panel');
-
-    btns.forEach(function(btn) {
-      btn.addEventListener('click', function() {
-        var target = btn.dataset.tab;
-
-        btns.forEach(function(b) {
-          b.classList.remove('is-active');
-          b.setAttribute('aria-selected', 'false');
-        });
-        panels.forEach(function(p) {
-          p.classList.remove('is-active');
-        });
-
-        btn.classList.add('is-active');
-        btn.setAttribute('aria-selected', 'true');
-        document.getElementById('tab-panel-' + target)?.classList.add('is-active');
-      });
+(function(){
+  var wrap = document.getElementById('shopify-section-{{ section.id }}');
+  if (!wrap) return;
+  var btns   = wrap.querySelectorAll('.fh-tab-btn');
+  var panels = wrap.querySelectorAll('.fh-tab-panel');
+  btns.forEach(function(btn){
+    btn.addEventListener('click', function(){
+      btns.forEach(function(b){ b.classList.remove('is-active'); b.setAttribute('aria-selected','false'); });
+      panels.forEach(function(p){ p.classList.remove('is-active'); });
+      btn.classList.add('is-active');
+      btn.setAttribute('aria-selected','true');
+      var panel = document.getElementById('fh-tab-panel-' + btn.dataset.tab);
+      if (panel) panel.classList.add('is-active');
     });
-  })();
+  });
+})();
 </script>
 
 {% schema %}
 {
   "name": "Product Tabs",
   "tag": "section",
-  "class": "product-tabs-section",
   "settings": [
-    {
-      "type": "color",
-      "id": "bg_color",
-      "label": "Background color",
-      "default": "#FAFDF8"
-    },
-    {
-      "type": "select",
-      "id": "header_align",
-      "label": "Header alignment",
-      "options": [
-        { "value": "left",   "label": "Left" },
-        { "value": "center", "label": "Center" }
-      ],
-      "default": "center"
-    },
-    {
-      "type": "text",
-      "id": "eyebrow",
-      "label": "Eyebrow",
-      "default": "Nuestros productos"
-    },
-    {
-      "type": "text",
-      "id": "title",
-      "label": "Title",
-      "default": "Suplementos para cada necesidad"
-    },
-    {
-      "type": "textarea",
-      "id": "subtitle",
-      "label": "Subtitle"
-    }
+    { "type": "color",    "id": "bg_color",    "label": "Fondo",           "default": "#FAFDF8" },
+    { "type": "header",   "content": "Sidebar" },
+    { "type": "text",     "id": "titulo",      "label": "Título sidebar",  "default": "Soluciones liposomales para cada objetivo" },
+    { "type": "textarea", "id": "descripcion", "label": "Descripción",     "default": "Tecnología liposomal de alta absorción que favorece el aprovechamiento de los nutrientes y acompaña tu bienestar día a día." },
+    { "type": "text",     "id": "cta_label",   "label": "Texto botón CTA", "default": "Conoce nuestra línea" },
+    { "type": "url",      "id": "cta_link",    "label": "Link CTA" }
   ],
   "blocks": [
     {
       "type": "tab",
       "name": "Tab",
       "settings": [
-        {
-          "type": "text",
-          "id": "tab_label",
-          "label": "Tab label",
-          "default": "Todos"
-        },
-        {
-          "type": "collection",
-          "id": "collection",
-          "label": "Collection (optional)"
-        },
-        {
-          "type": "range",
-          "id": "products_limit",
-          "label": "Max products",
-          "min": 2,
-          "max": 8,
-          "step": 1,
-          "default": 3
-        }
+        { "type": "text",       "id": "label",      "label": "Nombre del tab",       "default": "descanso" },
+        { "type": "collection", "id": "collection", "label": "Colección (opcional)" },
+        { "type": "range",      "id": "limit",      "label": "Máx. productos",       "min": 1, "max": 6, "step": 1, "default": 3 },
+        { "type": "text",       "id": "badge",      "label": "Badge en tarjetas",    "default": "Alta absorción X5" }
       ]
     },
     {
       "type": "product",
-      "name": "Product card (manual)",
+      "name": "Producto manual",
       "settings": [
-        {
-          "type": "text",
-          "id": "tab_id",
-          "label": "Tab block ID (copy from tab block)"
-        },
-        {
-          "type": "product",
-          "id": "product",
-          "label": "Product"
-        },
-        {
-          "type": "text",
-          "id": "custom_badge",
-          "label": "Badge label",
-          "default": "Bestseller"
-        }
+        { "type": "text",    "id": "tab_id",       "label": "ID del tab (copia del bloque tab)" },
+        { "type": "product", "id": "product",      "label": "Producto" },
+        { "type": "text",    "id": "badge",        "label": "Badge",            "default": "Alta absorción X5" },
+        { "type": "text",    "id": "review_count", "label": "N° reseñas (ej. 50)" }
       ]
     }
   ],
@@ -229,10 +178,10 @@
     {
       "name": "Product Tabs",
       "blocks": [
-        { "type": "tab", "settings": { "tab_label": "Todos" } },
-        { "type": "tab", "settings": { "tab_label": "Inmunidad" } },
-        { "type": "tab", "settings": { "tab_label": "Energía" } },
-        { "type": "tab", "settings": { "tab_label": "Antioxidantes" } }
+        { "type": "tab", "settings": { "label": "descanso",   "badge": "Alta absorción X5" } },
+        { "type": "tab", "settings": { "label": "digestión",  "badge": "Alta absorción X5" } },
+        { "type": "tab", "settings": { "label": "enfoque",    "badge": "Alta absorción X5" } },
+        { "type": "tab", "settings": { "label": "metabolismo","badge": "Alta absorción X5" } }
       ]
     }
   ]

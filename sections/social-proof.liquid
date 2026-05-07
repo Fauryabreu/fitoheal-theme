@@ -1,0 +1,89 @@
+<section id="shopify-section-{{ section.id }}" class="fh-social-proof">
+  <div class="page-width">
+    <div class="fh-social-proof__inner">
+
+      <!-- Testimonial -->
+      <div class="fh-testimonial">
+        <blockquote class="fh-testimonial__quote">{{ section.settings.quote }}</blockquote>
+        {% if section.settings.author != blank %}
+          <p class="fh-testimonial__author">— {{ section.settings.author }}</p>
+        {% endif %}
+      </div>
+
+      <!-- Media logos -->
+      <div class="fh-media-logos">
+        {% if section.settings.logos_label != blank %}
+          <p class="fh-media-logos__label">{{ section.settings.logos_label }}</p>
+        {% endif %}
+        <div class="fh-media-logos__row">
+          {% for block in section.blocks %}
+            {% if block.type == 'logo' %}
+              <span class="fh-media-logo" {{ block.shopify_attributes }}>
+                {% if block.settings.logo_img != blank %}
+                  {{ block.settings.logo_img | image_url: height: 44 | image_tag: loading: 'lazy', alt: block.settings.logo_name }}
+                {% else %}
+                  {{ block.settings.logo_name }}
+                {% endif %}
+              </span>
+            {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+
+      <!-- Rating -->
+      <div class="fh-rating">
+        {% if section.settings.rating_score != blank %}
+          <p class="fh-rating__score">{{ section.settings.rating_score }}</p>
+        {% endif %}
+        <div class="fh-rating__stars" aria-label="{{ section.settings.rating_score }}">★★★★★</div>
+        {% if section.settings.rating_count != blank %}
+          <p class="fh-rating__count">{{ section.settings.rating_count }}</p>
+        {% endif %}
+        {% if section.settings.rating_link_label != blank and section.settings.rating_link != blank %}
+          <a href="{{ section.settings.rating_link }}" class="fh-rating__link">{{ section.settings.rating_link_label }}</a>
+        {% endif %}
+      </div>
+
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Social Proof",
+  "tag": "section",
+  "settings": [
+    { "type": "header",   "content": "Testimonio" },
+    { "type": "textarea", "id": "quote",  "label": "Cita",   "default": "Desde que incorporé Fitoheal a mi rutina, me siento con más energía, duermo mejor y mi descanso está en equilibrio." },
+    { "type": "text",     "id": "author", "label": "Autor",  "default": "Camila R." },
+    { "type": "header",   "content": "Logos de medios" },
+    { "type": "text",     "id": "logos_label", "label": "Etiqueta", "default": "Mencionado en" },
+    { "type": "header",   "content": "Rating" },
+    { "type": "text",     "id": "rating_score",      "label": "Puntuación",    "default": "4.8 de 5 estrellas" },
+    { "type": "text",     "id": "rating_count",      "label": "Conteo",        "default": "+1.800 reseñas verificadas" },
+    { "type": "text",     "id": "rating_link_label", "label": "Texto enlace",  "default": "Ver opiniones reales" },
+    { "type": "url",      "id": "rating_link",       "label": "Link reseñas" }
+  ],
+  "blocks": [
+    {
+      "type": "logo",
+      "name": "Logo de medio",
+      "settings": [
+        { "type": "image_picker", "id": "logo_img",  "label": "Logo imagen" },
+        { "type": "text",         "id": "logo_name", "label": "Nombre (texto fallback)", "default": "Forbes" }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Social Proof",
+      "blocks": [
+        { "type": "logo", "settings": { "logo_name": "Forbes" } },
+        { "type": "logo", "settings": { "logo_name": "Semana" } },
+        { "type": "logo", "settings": { "logo_name": "Hábitat" } },
+        { "type": "logo", "settings": { "logo_name": "BienEstar" } }
+      ]
+    }
+  ]
+}
+{% endschema %}

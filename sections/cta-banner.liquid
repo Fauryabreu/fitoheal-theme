@@ -1,0 +1,35 @@
+<section id="shopify-section-{{ section.id }}" class="fh-cta" style="background-color:{{ section.settings.bg_color }};">
+  <div class="page-width">
+    <div class="fh-cta__inner">
+      {% if section.settings.texto != blank %}
+        <p class="fh-cta__text">{{ section.settings.texto }}</p>
+      {% endif %}
+      <div class="fh-cta__btns">
+        {% if section.settings.btn_primario_label != blank %}
+          <a href="{{ section.settings.btn_primario_link | default: '#' }}" class="fh-btn fh-btn--white">{{ section.settings.btn_primario_label }}</a>
+        {% endif %}
+        {% if section.settings.btn_secundario_label != blank %}
+          <a href="{{ section.settings.btn_secundario_link | default: '#' }}" class="fh-btn fh-btn--white-outline">{{ section.settings.btn_secundario_label }}</a>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "CTA Banner",
+  "tag": "section",
+  "settings": [
+    { "type": "color",  "id": "bg_color",             "label": "Fondo",              "default": "#1B4332" },
+    { "type": "text",   "id": "texto",                "label": "Texto",              "default": "Encuentra la fórmula que acompaña mejor tu objetivo" },
+    { "type": "header", "content": "Botón primario" },
+    { "type": "text",   "id": "btn_primario_label",   "label": "Texto",              "default": "Comprar ahora" },
+    { "type": "url",    "id": "btn_primario_link",    "label": "Link" },
+    { "type": "header", "content": "Botón secundario" },
+    { "type": "text",   "id": "btn_secundario_label", "label": "Texto",              "default": "Ver kits" },
+    { "type": "url",    "id": "btn_secundario_link",  "label": "Link" }
+  ],
+  "presets": [{ "name": "CTA Banner" }]
+}
+{% endschema %}

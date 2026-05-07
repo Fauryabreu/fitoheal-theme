@@ -1,125 +1,92 @@
-<footer
-  id="shopify-section-{{ section.id }}"
-  class="site-footer"
-  style="background-color: {{ section.settings.bg_color }};"
-  role="contentinfo"
->
+<footer id="shopify-section-{{ section.id }}" class="fh-footer" style="background-color:{{ section.settings.bg_color }};" role="contentinfo">
   <div class="page-width">
 
     <!-- Top grid -->
-    <div class="site-footer__top">
+    <div class="fh-footer__top">
 
-      <!-- Brand column -->
-      <div class="footer-brand">
-        <div class="footer-brand__logo">
+      <!-- Columna marca -->
+      <div>
+        <a href="{{ routes.root_url }}" class="fh-footer__logo" aria-label="{{ shop.name }}">
           {% if section.settings.logo != blank %}
-            {{ section.settings.logo | image_url: height: 80 | image_tag: loading: 'lazy', alt: shop.name }}
+            {{ section.settings.logo | image_url: height: 64 | image_tag: loading: 'lazy', alt: shop.name }}
           {% else %}
-            <span class="footer-brand__logo-text">{{ section.settings.logo_text | default: shop.name }}</span>
+            {{ section.settings.logo_text | default: 'fitoheal' }}
           {% endif %}
-        </div>
-
-        {% if section.settings.brand_desc != blank %}
-          <p class="footer-brand__desc">{{ section.settings.brand_desc }}</p>
+        </a>
+        {% if section.settings.descripcion != blank %}
+          <p class="fh-footer__desc">{{ section.settings.descripcion }}</p>
         {% endif %}
-
-        <!-- Social links -->
-        <div class="footer-social" aria-label="Social media links">
-          {% if section.settings.social_instagram != blank %}
-            <a href="{{ section.settings.social_instagram }}" class="footer-social__link" target="_blank" rel="noopener" aria-label="Instagram">
+        <div class="fh-footer__social" aria-label="Redes sociales">
+          {% if section.settings.instagram != blank %}
+            <a href="{{ section.settings.instagram }}" class="fh-footer__social-link" target="_blank" rel="noopener" aria-label="Instagram">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
             </a>
           {% endif %}
-          {% if section.settings.social_tiktok != blank %}
-            <a href="{{ section.settings.social_tiktok }}" class="footer-social__link" target="_blank" rel="noopener" aria-label="TikTok">
+          {% if section.settings.tiktok != blank %}
+            <a href="{{ section.settings.tiktok }}" class="fh-footer__social-link" target="_blank" rel="noopener" aria-label="TikTok">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.34 6.34 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V9.18a8.18 8.18 0 004.78 1.52V7.25a4.85 4.85 0 01-1.01-.56z"/></svg>
             </a>
           {% endif %}
-          {% if section.settings.social_youtube != blank %}
-            <a href="{{ section.settings.social_youtube }}" class="footer-social__link" target="_blank" rel="noopener" aria-label="YouTube">
+          {% if section.settings.youtube != blank %}
+            <a href="{{ section.settings.youtube }}" class="fh-footer__social-link" target="_blank" rel="noopener" aria-label="YouTube">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M23.495 6.205a3.007 3.007 0 00-2.088-2.088c-1.87-.501-9.396-.501-9.396-.501s-7.507-.01-9.396.501A3.007 3.007 0 00.527 6.205a31.247 31.247 0 00-.522 5.805 31.247 31.247 0 00.522 5.783 3.007 3.007 0 002.088 2.088c1.868.502 9.396.502 9.396.502s7.506 0 9.396-.502a3.007 3.007 0 002.088-2.088 31.247 31.247 0 00.5-5.783 31.247 31.247 0 00-.5-5.805zM9.609 15.601V8.408l6.264 3.602z"/></svg>
-            </a>
-          {% endif %}
-          {% if section.settings.social_facebook != blank %}
-            <a href="{{ section.settings.social_facebook }}" class="footer-social__link" target="_blank" rel="noopener" aria-label="Facebook">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
             </a>
           {% endif %}
         </div>
       </div>
 
-      <!-- Nav columns from blocks -->
+      <!-- Columnas de navegación desde bloques -->
       {% for block in section.blocks %}
-        {% case block.type %}
-          {% when 'nav_column' %}
-            <div class="footer-col" {{ block.shopify_attributes }}>
-              {% if block.settings.heading != blank %}
-                <p class="footer-col__heading">{{ block.settings.heading }}</p>
-              {% endif %}
-              <ul class="footer-col__list" role="list">
-                {% if block.settings.menu != blank %}
-                  {% for link in block.settings.menu.links %}
-                    <li>
-                      <a href="{{ link.url }}" class="footer-col__link">{{ link.title }}</a>
-                    </li>
-                  {% endfor %}
-                {% endif %}
-              </ul>
-            </div>
-
-          {% when 'newsletter' %}
-            <div class="footer-col" {{ block.shopify_attributes }}>
-              {% if block.settings.heading != blank %}
-                <p class="footer-col__heading">{{ block.settings.heading }}</p>
-              {% endif %}
-              {% if block.settings.description != blank %}
-                <p style="font-size: var(--font-size-sm); color: rgba(255,255,255,0.65); margin-bottom: var(--spacing-md); line-height: 1.6;">
-                  {{ block.settings.description }}
-                </p>
-              {% endif %}
-              <div class="footer-newsletter">
-                {% form 'customer', id: 'footer-newsletter-form' %}
-                  <input type="hidden" name="contact[tags]" value="newsletter">
-                  <div class="footer-newsletter__form">
-                    <label for="footer-email" class="visually-hidden">Email</label>
-                    <input
-                      type="email"
-                      id="footer-email"
-                      name="contact[email]"
-                      class="footer-newsletter__input"
-                      placeholder="{{ block.settings.placeholder | default: 'Tu email' }}"
-                      required
-                      autocomplete="email"
-                    >
-                    <button type="submit" class="btn btn--primary btn--sm">
-                      {{ block.settings.button_label | default: 'Unirse' }}
-                    </button>
-                  </div>
-                {% endform %}
+        {% if block.type == 'nav_col' %}
+          <div {{ block.shopify_attributes }}>
+            {% if block.settings.titulo != blank %}
+              <p class="fh-footer__col-title">{{ block.settings.titulo }}</p>
+            {% endif %}
+            {% if block.settings.menu != blank %}
+              <nav class="fh-footer__links">
+                {% for link in block.settings.menu.links %}
+                  <a href="{{ link.url }}" class="fh-footer__link">{{ link.title }}</a>
+                {% endfor %}
+              </nav>
+            {% endif %}
+          </div>
+        {% elsif block.type == 'contact_col' %}
+          <div {{ block.shopify_attributes }}>
+            {% if block.settings.titulo != blank %}
+              <p class="fh-footer__col-title">{{ block.settings.titulo }}</p>
+            {% endif %}
+            {% if block.settings.email != blank %}
+              <div class="fh-footer__contact-item">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.75" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"/></svg>
+                <a href="mailto:{{ block.settings.email }}" class="fh-footer__link">{{ block.settings.email }}</a>
               </div>
-            </div>
-        {% endcase %}
+            {% endif %}
+            {% if block.settings.web != blank %}
+              <div class="fh-footer__contact-item">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.75" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918"/></svg>
+                <a href="https://{{ block.settings.web }}" class="fh-footer__link" target="_blank" rel="noopener">{{ block.settings.web }}</a>
+              </div>
+            {% endif %}
+            {% if block.settings.social != blank %}
+              <div class="fh-footer__contact-item">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.75" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931zm0 0L19.5 7.125"/></svg>
+                <span class="fh-footer__link">{{ block.settings.social }}</span>
+              </div>
+            {% endif %}
+            {% if block.settings.colombia_badge %}
+              <div class="fh-colombia-badge">
+                🇨🇴 {{ block.settings.colombia_text | default: 'Hecho en Colombia' }}
+              </div>
+            {% endif %}
+          </div>
+        {% endif %}
       {% endfor %}
 
     </div>
 
-    <!-- Bottom bar -->
-    <div class="site-footer__bottom">
-      <p>&copy; {{ 'now' | date: '%Y' }} {{ shop.name }}. {{ section.settings.copyright_text | default: 'Todos los derechos reservados.' }}</p>
-
-      <nav class="footer-legal" aria-label="Legal links">
-        {% if section.settings.legal_menu != blank %}
-          {% for link in section.settings.legal_menu.links %}
-            <a href="{{ link.url }}" class="footer-legal__link">{{ link.title }}</a>
-          {% endfor %}
-        {% endif %}
-      </nav>
-
-      {% if section.settings.show_payment_icons %}
-        <div class="footer-payments" aria-label="Payment methods">
-          {{ shop.enabled_payment_types | payment_type_svg_tag: class: 'payment-icon' }}
-        </div>
-      {% endif %}
+    <!-- Bottom -->
+    <div class="fh-footer__bottom">
+      <p>&copy; {{ 'now' | date: '%Y' }} {{ shop.name }}. {{ section.settings.copyright | default: 'Todos los derechos reservados.' }}</p>
     </div>
 
   </div>
@@ -129,120 +96,39 @@
 {
   "name": "Footer",
   "tag": "section",
-  "class": "site-footer-section",
   "settings": [
-    {
-      "type": "color",
-      "id": "bg_color",
-      "label": "Background color",
-      "default": "#1B4332"
-    },
-    {
-      "type": "header",
-      "content": "Brand"
-    },
-    {
-      "type": "image_picker",
-      "id": "logo",
-      "label": "Logo"
-    },
-    {
-      "type": "text",
-      "id": "logo_text",
-      "label": "Logo text (fallback)",
-      "default": "Fitoheal"
-    },
-    {
-      "type": "textarea",
-      "id": "brand_desc",
-      "label": "Brand description",
-      "default": "Nutrición liposomal de alta biodisponibilidad. Porque lo que cuenta no es lo que tomas, sino lo que absorbes."
-    },
-    {
-      "type": "header",
-      "content": "Social"
-    },
-    {
-      "type": "url", "id": "social_instagram", "label": "Instagram URL"
-    },
-    {
-      "type": "url", "id": "social_tiktok",    "label": "TikTok URL"
-    },
-    {
-      "type": "url", "id": "social_youtube",   "label": "YouTube URL"
-    },
-    {
-      "type": "url", "id": "social_facebook",  "label": "Facebook URL"
-    },
-    {
-      "type": "header",
-      "content": "Bottom bar"
-    },
-    {
-      "type": "link_list",
-      "id": "legal_menu",
-      "label": "Legal links menu"
-    },
-    {
-      "type": "text",
-      "id": "copyright_text",
-      "label": "Copyright text",
-      "default": "Todos los derechos reservados."
-    },
-    {
-      "type": "checkbox",
-      "id": "show_payment_icons",
-      "label": "Show payment icons",
-      "default": true
-    }
+    { "type": "color",        "id": "bg_color",    "label": "Fondo",             "default": "#ffffff" },
+    { "type": "header",       "content": "Marca" },
+    { "type": "image_picker", "id": "logo",        "label": "Logo imagen" },
+    { "type": "text",         "id": "logo_text",   "label": "Logo texto",        "default": "fitoheal" },
+    { "type": "textarea",     "id": "descripcion", "label": "Descripción",       "default": "Soluciones liposomales de alta absorción con ingredientes naturales para tu bienestar diario." },
+    { "type": "header",       "content": "Redes sociales" },
+    { "type": "url", "id": "instagram", "label": "Instagram" },
+    { "type": "url", "id": "tiktok",    "label": "TikTok" },
+    { "type": "url", "id": "youtube",   "label": "YouTube" },
+    { "type": "header", "content": "Pie de página" },
+    { "type": "text", "id": "copyright", "label": "Texto copyright", "default": "Todos los derechos reservados." }
   ],
   "blocks": [
     {
-      "type": "nav_column",
-      "name": "Navigation column",
+      "type": "nav_col",
+      "name": "Columna de navegación",
       "settings": [
-        {
-          "type": "text",
-          "id": "heading",
-          "label": "Column heading",
-          "default": "Productos"
-        },
-        {
-          "type": "link_list",
-          "id": "menu",
-          "label": "Menu"
-        }
+        { "type": "text",      "id": "titulo", "label": "Título",  "default": "Navegación" },
+        { "type": "link_list", "id": "menu",   "label": "Menú" }
       ]
     },
     {
-      "type": "newsletter",
-      "name": "Newsletter",
+      "type": "contact_col",
+      "name": "Columna de contacto",
       "limit": 1,
       "settings": [
-        {
-          "type": "text",
-          "id": "heading",
-          "label": "Heading",
-          "default": "Newsletter"
-        },
-        {
-          "type": "text",
-          "id": "description",
-          "label": "Description",
-          "default": "Recibe consejos de nutrición y ofertas exclusivas."
-        },
-        {
-          "type": "text",
-          "id": "placeholder",
-          "label": "Input placeholder",
-          "default": "tu@email.com"
-        },
-        {
-          "type": "text",
-          "id": "button_label",
-          "label": "Button label",
-          "default": "Suscribirse"
-        }
+        { "type": "text",     "id": "titulo",        "label": "Título",           "default": "¿Necesitas ayuda?" },
+        { "type": "text",     "id": "email",         "label": "Email",            "default": "info@fitoheal.co" },
+        { "type": "text",     "id": "web",           "label": "Web",              "default": "www.fitoheal.co" },
+        { "type": "text",     "id": "social",        "label": "Handle social",    "default": "@fitoheal.co" },
+        { "type": "checkbox", "id": "colombia_badge","label": "Mostrar badge Colombia", "default": true },
+        { "type": "text",     "id": "colombia_text", "label": "Texto badge",      "default": "Calidad, ciencia y naturaleza para tu bienestar diario." }
       ]
     }
   ],
@@ -251,21 +137,9 @@
     {
       "name": "Footer",
       "blocks": [
-        {
-          "type": "nav_column",
-          "settings": { "heading": "Productos" }
-        },
-        {
-          "type": "nav_column",
-          "settings": { "heading": "Empresa" }
-        },
-        {
-          "type": "newsletter",
-          "settings": {
-            "heading": "Newsletter",
-            "description": "Recibe consejos de nutrición y ofertas exclusivas."
-          }
-        }
+        { "type": "nav_col",     "settings": { "titulo": "Navegación" } },
+        { "type": "nav_col",     "settings": { "titulo": "Información" } },
+        { "type": "contact_col", "settings": { "titulo": "¿Necesitas ayuda?", "email": "info@fitoheal.co", "web": "www.fitoheal.co", "social": "@fitoheal.co" } }
       ]
     }
   ]
