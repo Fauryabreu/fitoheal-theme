@@ -159,7 +159,7 @@
           "type": "tab",
           "settings": {
             "label": "enfoque",
-            "collection": "",
+            "collection": "enfoque",
             "limit": 3,
             "badge": "Alta absorción X5"
           }
