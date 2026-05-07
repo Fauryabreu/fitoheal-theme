@@ -1,24 +1,84 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
-    "hero-grid": {
+    "hero_grid_Pj4Cg6": {
       "type": "hero-grid",
-      "settings": {}
+      "name": "Hero",
+      "settings": {
+        "bg_color": "#fafdf8",
+        "titulo": "Bienestar liposomal para objetivos reales",
+        "subtitulo": "Fórmulas de alta absorción que apoyan tu bienestar en descanso, estrés, enfoque, digestión y metabolismo.",
+        "texto_btn_primario": "Comprar ahora",
+        "link_btn_primario": "",
+        "texto_btn_secundario": "Descubre los kits",
+        "link_btn_secundario": "",
+        "trust_icon_color": "#40916c",
+        "trust_1_text": "Liposomal alta absorción X5",
+        "trust_2_text": "Ingredientes naturales",
+        "trust_3_text": "Desarrollado por profesionales",
+        "trust_4_text": "Hecho en Colombia"
+      }
     },
-    "features-bar": {
+    "features_bar_p8jKef": {
       "type": "features-bar",
+      "name": "Features Bar",
       "blocks": {
-        "f1": { "type": "feature", "settings": { "icon": "leaf",   "title": "100% Natural",          "description": "Sin colorantes, conservantes ni GMO." } },
-        "f2": { "type": "feature", "settings": { "icon": "flask",  "title": "Tecnología liposomal",  "description": "Absorción hasta 8x superior." } },
-        "f3": { "type": "feature", "settings": { "icon": "shield", "title": "Garantía 30 días",      "description": "Devolución sin preguntas." } },
-        "f4": { "type": "feature", "settings": { "icon": "truck",  "title": "Envío en 24–48h",       "description": "Con seguimiento en tiempo real." } }
+        "feature_f6mGGj": {
+          "type": "feature",
+          "settings": {
+            "icon": "leaf",
+            "title": "100% Natural",
+            "description": "Sin colorantes, conservantes ni GMO."
+          }
+        },
+        "feature_4WmxqV": {
+          "type": "feature",
+          "settings": {
+            "icon": "flask",
+            "title": "Tecnología liposomal",
+            "description": "Absorción hasta 8x superior al suplemento estándar."
+          }
+        },
+        "feature_YgmrgE": {
+          "type": "feature",
+          "settings": {
+            "icon": "shield",
+            "title": "Garantía 30 días",
+            "description": "Devolución sin preguntas si no estás satisfecho."
+          }
+        },
+        "feature_mqcVaj": {
+          "type": "feature",
+          "settings": {
+            "icon": "truck",
+            "title": "Envío rápido",
+            "description": "Entrega en 24–48h con seguimiento en tiempo real."
+          }
+        }
       },
-      "block_order": ["f1", "f2", "f3", "f4"],
-      "settings": {}
+      "block_order": [
+        "feature_f6mGGj",
+        "feature_4WmxqV",
+        "feature_YgmrgE",
+        "feature_mqcVaj"
+      ],
+      "settings": {
+        "bg_color": "#1b4332"
+      }
     },
-    "kits-section": {
+    "kits_section_etY9BJ": {
       "type": "kits-section",
+      "name": "Kits Section",
       "blocks": {
-        "kit-1": {
+        "kit_DVKyQc": {
           "type": "kit",
           "settings": {
             "tag": "Kit más vendido",
@@ -26,10 +86,11 @@
             "description": "Vitamina C + Zinc + Elderberry. El trío definitivo para reforzar tus defensas.",
             "price_label": "Desde",
             "price": "$89.99",
-            "cta_label": "Ver kit"
+            "cta_label": "Ver kit",
+            "cta_link": ""
           }
         },
-        "kit-2": {
+        "kit_NHgTfT": {
           "type": "kit",
           "settings": {
             "tag": "Nuevo",
@@ -37,29 +98,62 @@
             "description": "Magnesio + B12 + CoQ10. Activa tu energía celular y mejora tu concentración.",
             "price_label": "Desde",
             "price": "$79.99",
-            "cta_label": "Ver kit"
+            "cta_label": "Ver kit",
+            "cta_link": ""
           }
         }
       },
-      "block_order": ["kit-1", "kit-2"],
-      "settings": {}
+      "block_order": [
+        "kit_DVKyQc",
+        "kit_NHgTfT"
+      ],
+      "settings": {
+        "bg_color": "#ffffff",
+        "header_align": "center",
+        "eyebrow": "Packs y bundles",
+        "title": "Kits diseñados para resultados",
+        "subtitle": "Combinaciones pensadas por nuestros nutricionistas para maximizar los beneficios liposomales."
+      }
     },
-    "product-tabs": {
+    "product_tabs_rK7mNx": {
       "type": "product-tabs",
+      "name": "Product Tabs",
       "blocks": {
-        "tab-all":    { "type": "tab", "settings": { "tab_label": "Todos" } },
-        "tab-immune": { "type": "tab", "settings": { "tab_label": "Inmunidad" } },
-        "tab-energy": { "type": "tab", "settings": { "tab_label": "Energía" } },
-        "tab-anti":   { "type": "tab", "settings": { "tab_label": "Antioxidantes" } }
+        "tab_all_tQpLsA": {
+          "type": "tab",
+          "settings": { "tab_label": "Todos" }
+        },
+        "tab_immune_wXbCjE": {
+          "type": "tab",
+          "settings": { "tab_label": "Inmunidad" }
+        },
+        "tab_energy_vMkDhR": {
+          "type": "tab",
+          "settings": { "tab_label": "Energía" }
+        },
+        "tab_anti_nFzGpU": {
+          "type": "tab",
+          "settings": { "tab_label": "Antioxidantes" }
+        }
       },
-      "block_order": ["tab-all", "tab-immune", "tab-energy", "tab-anti"],
-      "settings": {}
+      "block_order": [
+        "tab_all_tQpLsA",
+        "tab_immune_wXbCjE",
+        "tab_energy_vMkDhR",
+        "tab_anti_nFzGpU"
+      ],
+      "settings": {
+        "bg_color": "#fafdf8",
+        "header_align": "center",
+        "eyebrow": "Nuestros productos",
+        "title": "Suplementos para cada necesidad"
+      }
     }
   },
   "order": [
-    "hero-grid",
-    "features-bar",
-    "kits-section",
-    "product-tabs"
+    "hero_grid_Pj4Cg6",
+    "features_bar_p8jKef",
+    "kits_section_etY9BJ",
+    "product_tabs_rK7mNx"
   ]
 }
