@@ -150,7 +150,7 @@
           "type": "tab",
           "settings": {
             "label": "digestión",
-            "collection": "",
+            "collection": "digestion",
             "limit": 3,
             "badge": "Alta absorción X5"
           }
