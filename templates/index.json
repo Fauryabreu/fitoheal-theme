@@ -1,94 +1,18 @@
 {
   "sections": {
-    "announcement-bar": {
-      "type": "announcement-bar",
-      "settings": {}
-    },
     "hero-grid": {
       "type": "hero-grid",
-      "blocks": {
-        "featured-card": {
-          "type": "product_card",
-          "settings": {
-            "name": "Vitamina C Liposomal 1000mg",
-            "price": "$34.99",
-            "featured": true
-          }
-        },
-        "card-2": {
-          "type": "product_card",
-          "settings": {
-            "name": "Glutatión Liposomal",
-            "price": "$44.99",
-            "featured": false
-          }
-        },
-        "card-3": {
-          "type": "product_card",
-          "settings": {
-            "name": "Magnesio Liposomal",
-            "price": "$28.99",
-            "featured": false
-          }
-        }
-      },
-      "block_order": ["featured-card", "card-2", "card-3"],
       "settings": {}
     },
     "features-bar": {
       "type": "features-bar",
       "blocks": {
-        "f1": { "type": "feature", "settings": { "icon": "leaf",    "title": "100% Natural",           "description": "Sin colorantes, conservantes ni GMO." } },
-        "f2": { "type": "feature", "settings": { "icon": "flask",   "title": "Tecnología liposomal",   "description": "Absorción hasta 8x superior." } },
-        "f3": { "type": "feature", "settings": { "icon": "shield",  "title": "Garantía 30 días",       "description": "Devolución sin preguntas." } },
-        "f4": { "type": "feature", "settings": { "icon": "truck",   "title": "Envío en 24–48h",        "description": "Con seguimiento en tiempo real." } }
+        "f1": { "type": "feature", "settings": { "icon": "leaf",   "title": "100% Natural",          "description": "Sin colorantes, conservantes ni GMO." } },
+        "f2": { "type": "feature", "settings": { "icon": "flask",  "title": "Tecnología liposomal",  "description": "Absorción hasta 8x superior." } },
+        "f3": { "type": "feature", "settings": { "icon": "shield", "title": "Garantía 30 días",      "description": "Devolución sin preguntas." } },
+        "f4": { "type": "feature", "settings": { "icon": "truck",  "title": "Envío en 24–48h",       "description": "Con seguimiento en tiempo real." } }
       },
       "block_order": ["f1", "f2", "f3", "f4"],
-      "settings": {}
-    },
-    "product-tabs": {
-      "type": "product-tabs",
-      "blocks": {
-        "tab-all":    { "type": "tab", "settings": { "tab_label": "Todos" } },
-        "tab-immune": { "type": "tab", "settings": { "tab_label": "Inmunidad" } },
-        "tab-energy": { "type": "tab", "settings": { "tab_label": "Energía" } },
-        "tab-anti":   { "type": "tab", "settings": { "tab_label": "Antioxidantes" } }
-      },
-      "block_order": ["tab-all", "tab-immune", "tab-energy", "tab-anti"],
-      "settings": {}
-    },
-    "social-proof": {
-      "type": "social-proof",
-      "blocks": {
-        "t1": {
-          "type": "testimonial",
-          "settings": {
-            "rating": 5,
-            "quote": "Llevo 3 meses con Vitamina C Liposomal. Menos resfriados, más energía y la piel me cambió. Ya no puedo vivir sin esto.",
-            "author_name": "María González",
-            "author_tag": "Cliente verificada · Madrid"
-          }
-        },
-        "t2": {
-          "type": "testimonial",
-          "settings": {
-            "rating": 5,
-            "quote": "El Glutatión me ha cambiado la piel en 2 semanas. Cero artificialismos, ingredientes reales.",
-            "author_name": "Carlos Herrera",
-            "author_tag": "Cliente verificado · Barcelona"
-          }
-        },
-        "t3": {
-          "type": "testimonial",
-          "settings": {
-            "rating": 5,
-            "quote": "Por fin un suplemento que se absorbe. Lo recomendé a toda mi familia y todos coinciden.",
-            "author_name": "Ana Martínez",
-            "author_tag": "Cliente verificada · Valencia"
-          }
-        }
-      },
-      "block_order": ["t1", "t2", "t3"],
       "settings": {}
     },
     "kits-section": {
@@ -120,41 +44,22 @@
       "block_order": ["kit-1", "kit-2"],
       "settings": {}
     },
-    "about-section": {
-      "type": "about-section",
+    "product-tabs": {
+      "type": "product-tabs",
       "blocks": {
-        "v1": { "type": "value", "settings": { "icon": "flask", "title": "Calidad farmacéutica",  "description": "Triple control de pureza en cada lote." } },
-        "v2": { "type": "value", "settings": { "icon": "leaf",  "title": "Origen natural",        "description": "Fuentes vegetales certificadas, sin GMO." } },
-        "v3": { "type": "value", "settings": { "icon": "globe", "title": "Compromiso sostenible", "description": "Embalaje 100% reciclable." } }
+        "tab-all":    { "type": "tab", "settings": { "tab_label": "Todos" } },
+        "tab-immune": { "type": "tab", "settings": { "tab_label": "Inmunidad" } },
+        "tab-energy": { "type": "tab", "settings": { "tab_label": "Energía" } },
+        "tab-anti":   { "type": "tab", "settings": { "tab_label": "Antioxidantes" } }
       },
-      "block_order": ["v1", "v2", "v3"],
-      "settings": {}
-    },
-    "how-it-works": {
-      "type": "how-it-works",
-      "blocks": {
-        "s1": { "type": "step", "settings": { "icon": "🌿", "title": "Ingredientes premium",      "description": "Solo materias primas de grado farmacéutico con certificado de origen." } },
-        "s2": { "type": "step", "settings": { "icon": "⚗️", "title": "Encapsulación liposomal",  "description": "Envolvemos cada nutriente en liposomas que imitan la membrana celular." } },
-        "s3": { "type": "step", "settings": { "icon": "🔬", "title": "Control de calidad",        "description": "Triple análisis en laboratorio certificado antes de cada lote." } },
-        "s4": { "type": "step", "settings": { "icon": "✨", "title": "Absorción celular",          "description": "Los liposomas se fusionan con tus células entregando el nutriente." } }
-      },
-      "block_order": ["s1", "s2", "s3", "s4"],
-      "settings": {}
-    },
-    "cta-banner": {
-      "type": "cta-banner",
+      "block_order": ["tab-all", "tab-immune", "tab-energy", "tab-anti"],
       "settings": {}
     }
   },
   "order": [
-    "announcement-bar",
     "hero-grid",
     "features-bar",
-    "product-tabs",
-    "social-proof",
     "kits-section",
-    "about-section",
-    "how-it-works",
-    "cta-banner"
+    "product-tabs"
   ]
 }
