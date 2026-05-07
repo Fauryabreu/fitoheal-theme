@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "announcement-bar": {
@@ -7,8 +16,11 @@
         "bg_color": "#1b4332",
         "text_color": "#ffffff",
         "item_1_text": "Envío gratis en pedidos superiores a $150.000",
+        "item_1_link": "",
         "item_2_text": "Alta absorción liposomal X5",
-        "item_3_text": "Bienestar por objetivo, todos los días."
+        "item_2_link": "",
+        "item_3_text": "Bienestar por objetivo, todos los días.",
+        "item_3_link": ""
       }
     },
     "hero-grid": {
@@ -18,7 +30,9 @@
         "titulo": "Bienestar liposomal para objetivos reales",
         "subtitulo": "Fórmulas de alta absorción que apoyan tu bienestar en descanso, estrés, enfoque, digestión y metabolismo.",
         "texto_btn_primario": "Comprar ahora",
+        "link_btn_primario": "",
         "texto_btn_secundario": "Descubre los kits",
+        "link_btn_secundario": "",
         "trust_icon_color": "#40916c",
         "trust_1_text": "Liposomal alta absorción X5",
         "trust_2_text": "Ingredientes naturales",
@@ -29,58 +43,197 @@
     "social-proof": {
       "type": "social-proof",
       "blocks": {
-        "logo-1": { "type": "logo", "settings": { "logo_name": "Forbes" } },
-        "logo-2": { "type": "logo", "settings": { "logo_name": "Semana" } },
-        "logo-3": { "type": "logo", "settings": { "logo_name": "Hábitat" } },
-        "logo-4": { "type": "logo", "settings": { "logo_name": "BienEstar" } }
+        "logo-1": {
+          "type": "logo",
+          "settings": {
+            "logo_name": "Forbes"
+          }
+        },
+        "logo-2": {
+          "type": "logo",
+          "settings": {
+            "logo_name": "Semana"
+          }
+        },
+        "logo-3": {
+          "type": "logo",
+          "settings": {
+            "logo_name": "Hábitat"
+          }
+        },
+        "logo-4": {
+          "type": "logo",
+          "settings": {
+            "logo_name": "BienEstar"
+          }
+        }
       },
-      "block_order": ["logo-1", "logo-2", "logo-3", "logo-4"],
+      "block_order": [
+        "logo-1",
+        "logo-2",
+        "logo-3",
+        "logo-4"
+      ],
       "settings": {
         "quote": "Desde que incorporé Fitoheal a mi rutina, me siento con más energía, duermo mejor y mi descanso está en equilibrio.",
         "author": "Camila R.",
         "logos_label": "Mencionado en",
         "rating_score": "4.8 de 5 estrellas",
         "rating_count": "+1.800 reseñas verificadas",
-        "rating_link_label": "Ver opiniones reales"
+        "rating_link_label": "Ver opiniones reales",
+        "rating_link": ""
       }
     },
     "features-bar": {
       "type": "features-bar",
       "blocks": {
-        "f1": { "type": "feature", "settings": { "icon": "drop",     "text": "Alta absorción X5" } },
-        "f2": { "type": "feature", "settings": { "icon": "capsule",  "text": "60 cápsulas por frasco" } },
-        "f3": { "type": "feature", "settings": { "icon": "check",    "text": "Gluten free" } },
-        "f4": { "type": "feature", "settings": { "icon": "calendar", "text": "Fácil de incorporar a tu rutina" } },
-        "f5": { "type": "feature", "settings": { "icon": "star",     "text": "Bienestar por objetivo" } }
+        "f1": {
+          "type": "feature",
+          "settings": {
+            "icon": "drop",
+            "text": "Alta absorción X5"
+          }
+        },
+        "f2": {
+          "type": "feature",
+          "settings": {
+            "icon": "capsule",
+            "text": "60 cápsulas por frasco"
+          }
+        },
+        "f3": {
+          "type": "feature",
+          "settings": {
+            "icon": "check",
+            "text": "Gluten free"
+          }
+        },
+        "f4": {
+          "type": "feature",
+          "settings": {
+            "icon": "calendar",
+            "text": "Fácil de incorporar a tu rutina"
+          }
+        },
+        "f5": {
+          "type": "feature",
+          "settings": {
+            "icon": "star",
+            "text": "Bienestar por objetivo"
+          }
+        }
       },
-      "block_order": ["f1", "f2", "f3", "f4", "f5"],
-      "settings": { "bg_color": "#ffffff" }
+      "block_order": [
+        "f1",
+        "f2",
+        "f3",
+        "f4",
+        "f5"
+      ],
+      "settings": {
+        "bg_color": "#ffffff"
+      }
     },
     "product-tabs": {
       "type": "product-tabs",
       "blocks": {
-        "tab-descanso":   { "type": "tab", "settings": { "label": "descanso",    "badge": "Alta absorción X5" } },
-        "tab-digestion":  { "type": "tab", "settings": { "label": "digestión",   "badge": "Alta absorción X5" } },
-        "tab-enfoque":    { "type": "tab", "settings": { "label": "enfoque",     "badge": "Alta absorción X5" } },
-        "tab-metabolismo":{ "type": "tab", "settings": { "label": "metabolismo", "badge": "Alta absorción X5" } }
+        "tab-descanso": {
+          "type": "tab",
+          "settings": {
+            "label": "descanso",
+            "collection": "",
+            "limit": 3,
+            "badge": "Alta absorción X5"
+          }
+        },
+        "tab-digestion": {
+          "type": "tab",
+          "settings": {
+            "label": "digestión",
+            "collection": "",
+            "limit": 3,
+            "badge": "Alta absorción X5"
+          }
+        },
+        "tab-enfoque": {
+          "type": "tab",
+          "settings": {
+            "label": "enfoque",
+            "collection": "",
+            "limit": 3,
+            "badge": "Alta absorción X5"
+          }
+        },
+        "tab-metabolismo": {
+          "type": "tab",
+          "settings": {
+            "label": "metabolismo",
+            "collection": "",
+            "limit": 3,
+            "badge": "Alta absorción X5"
+          }
+        }
       },
-      "block_order": ["tab-descanso", "tab-digestion", "tab-enfoque", "tab-metabolismo"],
+      "block_order": [
+        "tab-descanso",
+        "tab-digestion",
+        "tab-enfoque",
+        "tab-metabolismo"
+      ],
       "settings": {
         "bg_color": "#fafdf8",
         "titulo": "Soluciones liposomales para cada objetivo",
         "descripcion": "Tecnología liposomal de alta absorción que favorece el aprovechamiento de los nutrientes y acompaña tu bienestar día a día.",
-        "cta_label": "Conoce nuestra línea"
+        "cta_label": "Conoce nuestra línea",
+        "cta_link": ""
       }
     },
     "kits-section": {
       "type": "kits-section",
       "blocks": {
-        "kit-1": { "type": "kit", "settings": { "nombre": "Sueño / Estrés",  "descripcion": "Relájate, baja el estrés y mejora tu descanso.", "cta_label": "Ver kit" } },
-        "kit-2": { "type": "kit", "settings": { "nombre": "Desinflamar",      "descripcion": "Apoya la inflamación natural y el equilibrio digestivo.", "cta_label": "Ver kit" } },
-        "kit-3": { "type": "kit", "settings": { "nombre": "Metabólico",       "descripcion": "Apoya el metabolismo de la glucosa y la inflamación.", "cta_label": "Ver kit" } },
-        "kit-4": { "type": "kit", "settings": { "nombre": "Focus",            "descripcion": "Claridad mental, concentración y energía sostenida.", "cta_label": "Ver kit" } }
+        "kit-1": {
+          "type": "kit",
+          "settings": {
+            "nombre": "Sueño / Estrés",
+            "descripcion": "Relájate, baja el estrés y mejora tu descanso.",
+            "cta_label": "Ver kit",
+            "cta_link": ""
+          }
+        },
+        "kit-2": {
+          "type": "kit",
+          "settings": {
+            "nombre": "Desinflamar",
+            "descripcion": "Apoya la inflamación natural y el equilibrio digestivo.",
+            "cta_label": "Ver kit",
+            "cta_link": ""
+          }
+        },
+        "kit-3": {
+          "type": "kit",
+          "settings": {
+            "nombre": "Metabólico",
+            "descripcion": "Apoya el metabolismo de la glucosa y la inflamación.",
+            "cta_label": "Ver kit",
+            "cta_link": ""
+          }
+        },
+        "kit-4": {
+          "type": "kit",
+          "settings": {
+            "nombre": "Focus",
+            "descripcion": "Claridad mental, concentración y energía sostenida.",
+            "cta_label": "Ver kit",
+            "cta_link": ""
+          }
+        }
       },
-      "block_order": ["kit-1", "kit-2", "kit-3", "kit-4"],
+      "block_order": [
+        "kit-1",
+        "kit-2",
+        "kit-3",
+        "kit-4"
+      ],
       "settings": {
         "bg_color": "#ffffff",
         "titulo": "Kits diseñados para tus objetivos"
@@ -93,21 +246,45 @@
         "imagen_pos": "right",
         "titulo": "Más sobre Fitoheal",
         "descripcion": "<p>Somos un sistema de soluciones liposomales de alta absorción con ingredientes seleccionados y ciencia moderna para acompañarte en tus objetivos sin restricciones impuestas.</p><p>Creados para integrarse fácilmente a tu rutina diaria y ayudarte a sentir la mejor versión. Todos los días.</p>",
-        "cta_label": "Conoce nuestra historia"
+        "cta_label": "Conoce nuestra historia",
+        "cta_link": ""
       }
     },
     "how-it-works": {
       "type": "how-it-works",
       "blocks": {
-        "s1": { "type": "step", "settings": { "titulo": "Elige tu objetivo",  "descripcion": "Descubre el producto o kit ideal para ti." } },
-        "s2": { "type": "step", "settings": { "titulo": "Elige tu fórmula",   "descripcion": "Una o dos cápsulas al día según tu rutina." } },
-        "s3": { "type": "step", "settings": { "titulo": "Crea tu rutina",     "descripcion": "La consistencia es la clave para sentir el cambio." } }
+        "s1": {
+          "type": "step",
+          "settings": {
+            "titulo": "Elige tu objetivo",
+            "descripcion": "Descubre el producto o kit ideal para ti."
+          }
+        },
+        "s2": {
+          "type": "step",
+          "settings": {
+            "titulo": "Elige tu fórmula",
+            "descripcion": "Una o dos cápsulas al día según tu rutina."
+          }
+        },
+        "s3": {
+          "type": "step",
+          "settings": {
+            "titulo": "Crea tu rutina",
+            "descripcion": "La consistencia es la clave para sentir el cambio."
+          }
+        }
       },
-      "block_order": ["s1", "s2", "s3"],
+      "block_order": [
+        "s1",
+        "s2",
+        "s3"
+      ],
       "settings": {
         "bg_color": "#ffffff",
         "titulo": "Cómo funciona tu bienestar, simple.",
-        "cta_label": "Descubre tu objetivo"
+        "cta_label": "Descubre tu objetivo",
+        "cta_link": ""
       }
     },
     "cta-banner": {
@@ -116,7 +293,54 @@
         "bg_color": "#1b4332",
         "texto": "Encuentra la fórmula que acompaña mejor tu objetivo",
         "btn_primario_label": "Comprar ahora",
-        "btn_secundario_label": "Ver kits"
+        "btn_primario_link": "",
+        "btn_secundario_label": "Ver kits",
+        "btn_secundario_link": ""
+      }
+    },
+    "footer_section_yUzwdH": {
+      "type": "footer-section",
+      "blocks": {
+        "nav_col_Bd8hxk": {
+          "type": "nav_col",
+          "settings": {
+            "titulo": "Navegación",
+            "menu": ""
+          }
+        },
+        "nav_col_iHJf7L": {
+          "type": "nav_col",
+          "settings": {
+            "titulo": "Información",
+            "menu": ""
+          }
+        },
+        "contact_col_V3LbyC": {
+          "type": "contact_col",
+          "settings": {
+            "titulo": "¿Necesitas ayuda?",
+            "email": "info@fitoheal.co",
+            "web": "www.fitoheal.co",
+            "social": "@fitoheal.co",
+            "colombia_badge": true,
+            "colombia_text": "Calidad, ciencia y naturaleza para tu bienestar diario."
+          }
+        }
+      },
+      "block_order": [
+        "nav_col_Bd8hxk",
+        "nav_col_iHJf7L",
+        "contact_col_V3LbyC"
+      ],
+      "name": "Footer",
+      "settings": {
+        "bg_color": "#ffffff",
+        "logo_text": "fitoheal",
+        "descripcion": "Soluciones liposomales de alta absorción con ingredientes naturales para tu bienestar diario.",
+        "instagram": "",
+        "tiktok": "",
+        "youtube": "",
+        "copyright": "Todos los derechos reservados."
       }
     }
   },
@@ -129,6 +353,7 @@
     "kits-section",
     "about-section",
     "how-it-works",
-    "cta-banner"
+    "cta-banner",
+    "footer_section_yUzwdH"
   ]
 }
