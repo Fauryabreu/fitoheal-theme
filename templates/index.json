@@ -141,7 +141,7 @@
           "type": "tab",
           "settings": {
             "label": "descanso",
-            "collection": "",
+            "collection": "descanso",
             "limit": 3,
             "badge": "Alta absorción X5"
           }
