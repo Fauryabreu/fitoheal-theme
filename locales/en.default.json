@@ -1,0 +1,22 @@
+{
+  "accessibility": {
+    "skip_to_text": "Skip to content",
+    "refresh_page": "Refresh page",
+    "link_messages": {
+      "new_window": "Opens in a new window"
+    }
+  },
+  "sections": {
+    "cart": {
+      "cart_error": "Unable to add item to cart. Please try again.",
+      "cart_quantity_error_html": "Only [quantity] items left in stock."
+    }
+  },
+  "products": {
+    "product": {
+      "add_to_cart": "Add to cart",
+      "sold_out": "Sold out",
+      "unavailable": "Unavailable"
+    }
+  }
+}

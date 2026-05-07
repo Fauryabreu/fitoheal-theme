@@ -1,0 +1,22 @@
+{
+  "accessibility": {
+    "skip_to_text": "Ir al contenido",
+    "refresh_page": "Actualizar página",
+    "link_messages": {
+      "new_window": "Se abre en una nueva ventana"
+    }
+  },
+  "sections": {
+    "cart": {
+      "cart_error": "No se pudo añadir al carrito. Inténtalo de nuevo.",
+      "cart_quantity_error_html": "Solo quedan [quantity] unidades en stock."
+    }
+  },
+  "products": {
+    "product": {
+      "add_to_cart": "Añadir al carrito",
+      "sold_out": "Agotado",
+      "unavailable": "No disponible"
+    }
+  }
+}

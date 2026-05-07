@@ -1,0 +1,240 @@
+<section
+  id="shopify-section-{{ section.id }}"
+  class="product-tabs section-padding"
+  style="background-color: {{ section.settings.bg_color }};"
+>
+  <div class="page-width">
+
+    <!-- Section header -->
+    <div class="section-header{% if section.settings.header_align == 'center' %} section-header--center{% endif %}">
+      {% if section.settings.eyebrow != blank %}
+        <p class="eyebrow">{{ section.settings.eyebrow }}</p>
+      {% endif %}
+      {% if section.settings.title != blank %}
+        <h2 class="h2">{{ section.settings.title }}</h2>
+      {% endif %}
+      <div class="divider{% if section.settings.header_align == 'center' %} divider--center{% endif %}"></div>
+      {% if section.settings.subtitle != blank %}
+        <p class="lead">{{ section.settings.subtitle }}</p>
+      {% endif %}
+    </div>
+
+    <!-- Tab navigation -->
+    <div class="tabs-nav" role="tablist" aria-label="Product categories">
+      {% assign tab_index = 0 %}
+      {% for block in section.blocks %}
+        {% if block.type == 'tab' %}
+          <button
+            class="tab-btn{% if tab_index == 0 %} is-active{% endif %}"
+            role="tab"
+            aria-selected="{% if tab_index == 0 %}true{% else %}false{% endif %}"
+            aria-controls="tab-panel-{{ block.id }}"
+            id="tab-btn-{{ block.id }}"
+            data-tab="{{ block.id }}"
+            {{ block.shopify_attributes }}
+          >
+            {{ block.settings.tab_label }}
+          </button>
+          {% assign tab_index = tab_index | plus: 1 %}
+        {% endif %}
+      {% endfor %}
+    </div>
+
+    <!-- Tab panels -->
+    {% assign panel_index = 0 %}
+    {% for block in section.blocks %}
+      {% if block.type == 'tab' %}
+        <div
+          id="tab-panel-{{ block.id }}"
+          class="tab-panel{% if panel_index == 0 %} is-active{% endif %}"
+          role="tabpanel"
+          aria-labelledby="tab-btn-{{ block.id }}"
+        >
+          <!-- Products inside this tab are child blocks -->
+          {% for child in section.blocks %}
+            {% if child.type == 'product' and child.settings.tab_id == block.id %}
+              {% render 'product-card', block: child %}
+            {% endif %}
+          {% endfor %}
+
+          <!-- Fallback: use collection if assigned -->
+          {% if block.settings.collection != blank %}
+            {% assign col = collections[block.settings.collection] %}
+            {% if col != blank %}
+              {% assign limit_count = block.settings.products_limit | default: 3 %}
+              {% for product in col.products limit: limit_count %}
+                <article class="product-card">
+                  <a href="{{ product.url }}" class="product-card__media">
+                    {% if product.featured_image %}
+                      {{ product.featured_image | image_url: width: 600 | image_tag: loading: 'lazy', alt: product.title }}
+                    {% else %}
+                      {{ 'product-1' | placeholder_svg_tag: 'placeholder-svg' }}
+                    {% endif %}
+                    {% if product.compare_at_price > product.price %}
+                      <span class="product-card__badge badge badge--dark">Sale</span>
+                    {% endif %}
+                  </a>
+                  <div class="product-card__body">
+                    <p class="product-card__category">{{ product.type }}</p>
+                    <h3 class="product-card__title">
+                      <a href="{{ product.url }}">{{ product.title }}</a>
+                    </h3>
+                    {% if product.description != blank %}
+                      <p class="product-card__desc">{{ product.description | strip_html | truncate: 100 }}</p>
+                    {% endif %}
+                    <div class="product-card__footer">
+                      <div class="product-card__price">
+                        {% if product.compare_at_price > product.price %}
+                          <s>{{ product.compare_at_price | money }}</s>
+                        {% endif %}
+                        {{ product.price | money }}
+                      </div>
+                      <button
+                        class="product-card__add"
+                        aria-label="Add {{ product.title }} to cart"
+                        data-variant-id="{{ product.selected_or_first_available_variant.id }}"
+                      >
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"/></svg>
+                      </button>
+                    </div>
+                  </div>
+                </article>
+              {% endfor %}
+            {% endif %}
+          {% endif %}
+        </div>
+        {% assign panel_index = panel_index | plus: 1 %}
+      {% endif %}
+    {% endfor %}
+
+  </div>
+</section>
+
+<script>
+  (function() {
+    var btns   = document.querySelectorAll('#shopify-section-{{ section.id }} .tab-btn');
+    var panels = document.querySelectorAll('#shopify-section-{{ section.id }} .tab-panel');
+
+    btns.forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        var target = btn.dataset.tab;
+
+        btns.forEach(function(b) {
+          b.classList.remove('is-active');
+          b.setAttribute('aria-selected', 'false');
+        });
+        panels.forEach(function(p) {
+          p.classList.remove('is-active');
+        });
+
+        btn.classList.add('is-active');
+        btn.setAttribute('aria-selected', 'true');
+        document.getElementById('tab-panel-' + target)?.classList.add('is-active');
+      });
+    });
+  })();
+</script>
+
+{% schema %}
+{
+  "name": "Product Tabs",
+  "tag": "section",
+  "class": "product-tabs-section",
+  "settings": [
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Background color",
+      "default": "#FAFDF8"
+    },
+    {
+      "type": "select",
+      "id": "header_align",
+      "label": "Header alignment",
+      "options": [
+        { "value": "left",   "label": "Left" },
+        { "value": "center", "label": "Center" }
+      ],
+      "default": "center"
+    },
+    {
+      "type": "text",
+      "id": "eyebrow",
+      "label": "Eyebrow",
+      "default": "Nuestros productos"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "Suplementos para cada necesidad"
+    },
+    {
+      "type": "textarea",
+      "id": "subtitle",
+      "label": "Subtitle"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "tab",
+      "name": "Tab",
+      "settings": [
+        {
+          "type": "text",
+          "id": "tab_label",
+          "label": "Tab label",
+          "default": "Todos"
+        },
+        {
+          "type": "collection",
+          "id": "collection",
+          "label": "Collection (optional)"
+        },
+        {
+          "type": "range",
+          "id": "products_limit",
+          "label": "Max products",
+          "min": 2,
+          "max": 8,
+          "step": 1,
+          "default": 3
+        }
+      ]
+    },
+    {
+      "type": "product",
+      "name": "Product card (manual)",
+      "settings": [
+        {
+          "type": "text",
+          "id": "tab_id",
+          "label": "Tab block ID (copy from tab block)"
+        },
+        {
+          "type": "product",
+          "id": "product",
+          "label": "Product"
+        },
+        {
+          "type": "text",
+          "id": "custom_badge",
+          "label": "Badge label",
+          "default": "Bestseller"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Product Tabs",
+      "blocks": [
+        { "type": "tab", "settings": { "tab_label": "Todos" } },
+        { "type": "tab", "settings": { "tab_label": "Inmunidad" } },
+        { "type": "tab", "settings": { "tab_label": "Energía" } },
+        { "type": "tab", "settings": { "tab_label": "Antioxidantes" } }
+      ]
+    }
+  ]
+}
+{% endschema %}

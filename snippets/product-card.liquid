@@ -1,0 +1,70 @@
+{% comment %}
+  Renders a product card. Accepts:
+  - product: {Object} Product Liquid object
+  - block: {Object} Optional block for custom badge/settings
+  - show_quick_add: {Boolean} Show quick-add button
+  - lazy_load: {Boolean} Lazy load image (default true)
+{% endcomment %}
+
+{% assign lazy = lazy_load | default: true %}
+
+<article class="product-card">
+  <a href="{{ product.url }}" class="product-card__media" aria-label="{{ product.title }}">
+    {% if product.featured_image %}
+      {{ product.featured_image
+          | image_url: width: 600
+          | image_tag:
+              loading: lazy | if: 'lazy' | else: 'eager',
+              alt: product.featured_image.alt | default: product.title,
+              width: 600,
+              height: 600
+      }}
+    {% else %}
+      {{ 'product-1' | placeholder_svg_tag: 'placeholder-svg' }}
+    {% endif %}
+
+    {% if block.settings.custom_badge != blank %}
+      <span class="product-card__badge badge badge--dark">{{ block.settings.custom_badge }}</span>
+    {% elsif product.compare_at_price > product.price %}
+      <span class="product-card__badge badge badge--dark">
+        -{{ product.compare_at_price | minus: product.price | times: 100 | divided_by: product.compare_at_price }}%
+      </span>
+    {% endif %}
+  </a>
+
+  <div class="product-card__body">
+    {% if product.type != blank %}
+      <p class="product-card__category">{{ product.type }}</p>
+    {% endif %}
+
+    <h3 class="product-card__title">
+      <a href="{{ product.url }}">{{ product.title }}</a>
+    </h3>
+
+    {% if product.description != blank %}
+      <p class="product-card__desc">{{ product.description | strip_html | truncate: 90 }}</p>
+    {% endif %}
+
+    <div class="product-card__footer">
+      <div class="product-card__price">
+        {% if product.compare_at_price > product.price %}
+          <s>{{ product.compare_at_price | money }}</s>
+        {% endif %}
+        {{ product.price | money }}
+      </div>
+
+      {% if show_quick_add != false %}
+        <button
+          class="product-card__add"
+          aria-label="{{ 'products.product.add_to_cart' | t }}: {{ product.title }}"
+          data-product-id="{{ product.id }}"
+          data-variant-id="{{ product.selected_or_first_available_variant.id }}"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"/>
+          </svg>
+        </button>
+      {% endif %}
+    </div>
+  </div>
+</article>

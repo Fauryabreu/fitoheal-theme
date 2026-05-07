@@ -1,0 +1,206 @@
+<section
+  id="shopify-section-{{ section.id }}"
+  class="kits-section section-padding"
+  style="background-color: {{ section.settings.bg_color }};"
+>
+  <div class="page-width">
+
+    <!-- Header -->
+    <div class="section-header{% if section.settings.header_align == 'center' %} section-header--center{% endif %}">
+      {% if section.settings.eyebrow != blank %}
+        <p class="eyebrow">{{ section.settings.eyebrow }}</p>
+      {% endif %}
+      {% if section.settings.title != blank %}
+        <h2 class="h2">{{ section.settings.title }}</h2>
+      {% endif %}
+      <div class="divider{% if section.settings.header_align == 'center' %} divider--center{% endif %}"></div>
+      {% if section.settings.subtitle != blank %}
+        <p class="lead">{{ section.settings.subtitle }}</p>
+      {% endif %}
+    </div>
+
+    <!-- Kits grid -->
+    <div class="kits-grid">
+      {% for block in section.blocks %}
+        {% case block.type %}
+          {% when 'kit' %}
+            <article class="kit-card" {{ block.shopify_attributes }}>
+              <!-- Background image -->
+              <div class="kit-card__bg">
+                {% if block.settings.image != blank %}
+                  {{ block.settings.image | image_url: width: 1200 | image_tag: loading: 'lazy', alt: block.settings.title }}
+                {% else %}
+                  {{ 'collection-1' | placeholder_svg_tag: 'placeholder-svg' }}
+                {% endif %}
+              </div>
+
+              <!-- Content overlay -->
+              <div class="kit-card__content">
+                {% if block.settings.tag != blank %}
+                  <span class="kit-card__tag">{{ block.settings.tag }}</span>
+                {% endif %}
+
+                {% if block.settings.title != blank %}
+                  <h3 class="kit-card__title">{{ block.settings.title }}</h3>
+                {% endif %}
+
+                {% if block.settings.description != blank %}
+                  <p class="kit-card__desc">{{ block.settings.description }}</p>
+                {% endif %}
+
+                <div class="kit-card__footer">
+                  <div>
+                    {% if block.settings.price_label != blank %}
+                      <p class="kit-card__price-label">{{ block.settings.price_label }}</p>
+                    {% endif %}
+                    {% if block.settings.price != blank %}
+                      <p class="kit-card__price">{{ block.settings.price }}</p>
+                    {% endif %}
+                  </div>
+
+                  {% if block.settings.cta_label != blank %}
+                    <a
+                      href="{{ block.settings.cta_link | default: '#' }}"
+                      class="btn btn--light"
+                      style="flex-shrink: 0;"
+                    >
+                      {{ block.settings.cta_label }}
+                    </a>
+                  {% endif %}
+                </div>
+              </div>
+            </article>
+        {% endcase %}
+      {% endfor %}
+    </div>
+
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Kits Section",
+  "tag": "section",
+  "class": "kits-section-wrapper",
+  "settings": [
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Background color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "select",
+      "id": "header_align",
+      "label": "Header alignment",
+      "options": [
+        { "value": "left",   "label": "Left" },
+        { "value": "center", "label": "Center" }
+      ],
+      "default": "center"
+    },
+    {
+      "type": "text",
+      "id": "eyebrow",
+      "label": "Eyebrow",
+      "default": "Packs y bundles"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "Kits diseñados para resultados"
+    },
+    {
+      "type": "textarea",
+      "id": "subtitle",
+      "label": "Subtitle",
+      "default": "Combinaciones pensadas por nuestros nutricionistas para maximizar los beneficios liposomales."
+    }
+  ],
+  "blocks": [
+    {
+      "type": "kit",
+      "name": "Kit card",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Background image"
+        },
+        {
+          "type": "text",
+          "id": "tag",
+          "label": "Tag label",
+          "default": "Kit más vendido"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Kit title",
+          "default": "Kit Inmunidad Total"
+        },
+        {
+          "type": "textarea",
+          "id": "description",
+          "label": "Description",
+          "default": "Vitamina C + Zinc + Elderberry. El trío definitivo para reforzar tus defensas de forma natural y sostenida."
+        },
+        {
+          "type": "text",
+          "id": "price_label",
+          "label": "Price label",
+          "default": "Desde"
+        },
+        {
+          "type": "text",
+          "id": "price",
+          "label": "Price",
+          "default": "$89.99"
+        },
+        {
+          "type": "text",
+          "id": "cta_label",
+          "label": "CTA label",
+          "default": "Ver kit"
+        },
+        {
+          "type": "url",
+          "id": "cta_link",
+          "label": "CTA link"
+        }
+      ]
+    }
+  ],
+  "max_blocks": 4,
+  "presets": [
+    {
+      "name": "Kits Section",
+      "blocks": [
+        {
+          "type": "kit",
+          "settings": {
+            "tag": "Kit más vendido",
+            "title": "Kit Inmunidad Total",
+            "description": "Vitamina C + Zinc + Elderberry. El trío definitivo para reforzar tus defensas.",
+            "price_label": "Desde",
+            "price": "$89.99",
+            "cta_label": "Ver kit"
+          }
+        },
+        {
+          "type": "kit",
+          "settings": {
+            "tag": "Nuevo",
+            "title": "Kit Energía y Foco",
+            "description": "Magnesio + B12 + CoQ10. Activa tu energía celular y mejora tu concentración.",
+            "price_label": "Desde",
+            "price": "$79.99",
+            "cta_label": "Ver kit"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

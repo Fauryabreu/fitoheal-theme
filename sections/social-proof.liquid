@@ -1,0 +1,285 @@
+<section
+  id="shopify-section-{{ section.id }}"
+  class="social-proof section-padding"
+  style="background-color: {{ section.settings.bg_color }};"
+>
+  <div class="page-width">
+
+    <!-- Section header -->
+    {% if section.settings.title != blank %}
+      <div class="section-header section-header--center">
+        {% if section.settings.eyebrow != blank %}
+          <p class="eyebrow">{{ section.settings.eyebrow }}</p>
+        {% endif %}
+        <h2 class="h2">{{ section.settings.title }}</h2>
+        <div class="divider divider--center"></div>
+        {% if section.settings.subtitle != blank %}
+          <p class="lead">{{ section.settings.subtitle }}</p>
+        {% endif %}
+      </div>
+    {% endif %}
+
+    <!-- Stats bar -->
+    {% assign has_stats = false %}
+    {% for i in (1..4) %}
+      {% assign num_key = 'stat_' | append: i | append: '_number' %}
+      {% if section.settings[num_key] != blank %}{% assign has_stats = true %}{% endif %}
+    {% endfor %}
+
+    {% if has_stats %}
+      <div class="social-proof__stats">
+        {% for i in (1..4) %}
+          {% assign num_key   = 'stat_' | append: i | append: '_number' %}
+          {% assign label_key = 'stat_' | append: i | append: '_label' %}
+          {% assign num   = section.settings[num_key] %}
+          {% assign label = section.settings[label_key] %}
+          {% if num != blank %}
+            <div class="stat-item">
+              <div class="stat-item__number">{{ num }}</div>
+              {% if label != blank %}
+                <div class="stat-item__label">{{ label }}</div>
+              {% endif %}
+            </div>
+          {% endif %}
+        {% endfor %}
+      </div>
+    {% endif %}
+
+    <!-- Testimonials -->
+    {% assign testimonial_blocks = section.blocks | where: 'type', 'testimonial' %}
+    {% if testimonial_blocks.size > 0 %}
+      <div class="social-proof__testimonials">
+        {% for block in testimonial_blocks %}
+          <article class="testimonial-card" {{ block.shopify_attributes }}>
+            <div class="testimonial-card__stars" aria-label="{{ block.settings.rating }} out of 5 stars">
+              {% assign rating = block.settings.rating | default: 5 %}
+              {% for i in (1..5) %}
+                {% if i <= rating %}★{% else %}☆{% endif %}
+              {% endfor %}
+            </div>
+            {% if block.settings.quote != blank %}
+              <blockquote class="testimonial-card__quote">
+                "{{ block.settings.quote }}"
+              </blockquote>
+            {% endif %}
+            <footer class="testimonial-card__author">
+              {% if block.settings.avatar != blank %}
+                <div class="testimonial-card__avatar">
+                  {{ block.settings.avatar | image_url: width: 88, height: 88 | image_tag: loading: 'lazy', alt: block.settings.author_name }}
+                </div>
+              {% else %}
+                <div class="testimonial-card__avatar" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" style="width:44px;height:44px;padding:10px;color:#2D6A4F;"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0"/></svg>
+                </div>
+              {% endif %}
+              <div>
+                {% if block.settings.author_name != blank %}
+                  <p class="testimonial-card__name">{{ block.settings.author_name }}</p>
+                {% endif %}
+                {% if block.settings.author_tag != blank %}
+                  <p class="testimonial-card__tag">{{ block.settings.author_tag }}</p>
+                {% endif %}
+              </div>
+            </footer>
+          </article>
+        {% endfor %}
+      </div>
+    {% endif %}
+
+    <!-- Media logos -->
+    {% assign logo_blocks = section.blocks | where: 'type', 'media_logo' %}
+    {% if logo_blocks.size > 0 %}
+      <div class="social-proof__media-logos">
+        {% if section.settings.logos_label != blank %}
+          <p class="media-logos__label">{{ section.settings.logos_label }}</p>
+        {% endif %}
+        <div class="media-logos__grid">
+          {% for block in logo_blocks %}
+            {% if block.settings.logo_image != blank %}
+              {% if block.settings.logo_link != blank %}
+                <a href="{{ block.settings.logo_link }}" target="_blank" rel="noopener" {{ block.shopify_attributes }}>
+                  {{ block.settings.logo_image | image_url: height: 64 | image_tag: class: 'media-logo', loading: 'lazy', alt: block.settings.logo_alt }}
+                </a>
+              {% else %}
+                <span {{ block.shopify_attributes }}>
+                  {{ block.settings.logo_image | image_url: height: 64 | image_tag: class: 'media-logo', loading: 'lazy', alt: block.settings.logo_alt }}
+                </span>
+              {% endif %}
+            {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+    {% endif %}
+
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Social Proof",
+  "tag": "section",
+  "class": "social-proof-section",
+  "settings": [
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Background color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "header",
+      "content": "Section header"
+    },
+    {
+      "type": "text",
+      "id": "eyebrow",
+      "label": "Eyebrow",
+      "default": "Lo que dicen nuestros clientes"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "Miles de personas ya sienten la diferencia"
+    },
+    {
+      "type": "textarea",
+      "id": "subtitle",
+      "label": "Subtitle"
+    },
+    {
+      "type": "header",
+      "content": "Stats"
+    },
+    {
+      "type": "text", "id": "stat_1_number", "label": "Stat 1 number", "default": "+12,000"
+    },
+    {
+      "type": "text", "id": "stat_1_label", "label": "Stat 1 label", "default": "Clientes satisfechos"
+    },
+    {
+      "type": "text", "id": "stat_2_number", "label": "Stat 2 number", "default": "4.9★"
+    },
+    {
+      "type": "text", "id": "stat_2_label", "label": "Stat 2 label", "default": "Calificación promedio"
+    },
+    {
+      "type": "text", "id": "stat_3_number", "label": "Stat 3 number", "default": "8x"
+    },
+    {
+      "type": "text", "id": "stat_3_label", "label": "Stat 3 label", "default": "Mayor absorción"
+    },
+    {
+      "type": "text", "id": "stat_4_number", "label": "Stat 4 number", "default": "100%"
+    },
+    {
+      "type": "text", "id": "stat_4_label", "label": "Stat 4 label", "default": "Natural y vegano"
+    },
+    {
+      "type": "header",
+      "content": "Media logos"
+    },
+    {
+      "type": "text",
+      "id": "logos_label",
+      "label": "Logos label",
+      "default": "Mencionado en"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "testimonial",
+      "name": "Testimonial",
+      "settings": [
+        {
+          "type": "range",
+          "id": "rating",
+          "label": "Star rating",
+          "min": 1,
+          "max": 5,
+          "step": 1,
+          "default": 5
+        },
+        {
+          "type": "textarea",
+          "id": "quote",
+          "label": "Quote",
+          "default": "Llevo 3 meses tomando Vitamina C Liposomal y la diferencia es increíble. Menos resfriados, más energía y se me nota en la piel. Ya no puedo vivir sin esto."
+        },
+        {
+          "type": "image_picker",
+          "id": "avatar",
+          "label": "Author photo"
+        },
+        {
+          "type": "text",
+          "id": "author_name",
+          "label": "Author name",
+          "default": "María González"
+        },
+        {
+          "type": "text",
+          "id": "author_tag",
+          "label": "Author tag",
+          "default": "Cliente verificada · Madrid"
+        }
+      ]
+    },
+    {
+      "type": "media_logo",
+      "name": "Media logo",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "logo_image",
+          "label": "Logo image"
+        },
+        {
+          "type": "text",
+          "id": "logo_alt",
+          "label": "Logo alt text"
+        },
+        {
+          "type": "url",
+          "id": "logo_link",
+          "label": "Logo link (optional)"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Social Proof",
+      "blocks": [
+        {
+          "type": "testimonial",
+          "settings": {
+            "rating": 5,
+            "quote": "Llevo 3 meses tomando Vitamina C Liposomal y la diferencia es increíble. Menos resfriados, más energía y se me nota en la piel.",
+            "author_name": "María González",
+            "author_tag": "Cliente verificada · Madrid"
+          }
+        },
+        {
+          "type": "testimonial",
+          "settings": {
+            "rating": 5,
+            "quote": "El Glutatión me ha cambiado la vida. Empecé a notar cambios en mi piel a las 2 semanas. Cero artificialismos, ingredientes reales.",
+            "author_name": "Carlos Herrera",
+            "author_tag": "Cliente verificado · Barcelona"
+          }
+        },
+        {
+          "type": "testimonial",
+          "settings": {
+            "rating": 5,
+            "quote": "Por fin un suplemento que se absorbe de verdad. Lo recomendé a toda mi familia y todos coinciden: se nota desde la primera semana.",
+            "author_name": "Ana Martínez",
+            "author_tag": "Cliente verificada · Valencia"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

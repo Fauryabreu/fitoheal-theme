@@ -1,0 +1,155 @@
+[
+  {
+    "name": "theme_info",
+    "theme_name": "Fitoheal",
+    "theme_version": "1.0.0",
+    "theme_author": "Fitoheal",
+    "theme_documentation_url": "",
+    "theme_support_url": ""
+  },
+  {
+    "name": "Colors",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Brand palette"
+      },
+      {
+        "type": "color",
+        "id": "color_brand_primary",
+        "label": "Primary (dark green)",
+        "default": "#1B4332"
+      },
+      {
+        "type": "color",
+        "id": "color_brand_medium",
+        "label": "Medium green",
+        "default": "#2D6A4F"
+      },
+      {
+        "type": "color",
+        "id": "color_brand_light",
+        "label": "Light green (accent)",
+        "default": "#74C69D"
+      },
+      {
+        "type": "color",
+        "id": "color_cream",
+        "label": "Cream (background)",
+        "default": "#FAFDF8"
+      },
+      {
+        "type": "header",
+        "content": "Text"
+      },
+      {
+        "type": "color",
+        "id": "color_text_dark",
+        "label": "Text dark",
+        "default": "#0D1F17"
+      },
+      {
+        "type": "color",
+        "id": "color_text_muted",
+        "label": "Text muted",
+        "default": "#4A6258"
+      },
+      {
+        "type": "color",
+        "id": "color_border",
+        "label": "Border",
+        "default": "#D4E8DC"
+      }
+    ]
+  },
+  {
+    "name": "Typography",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Google Fonts are loaded via theme.liquid"
+      },
+      {
+        "type": "paragraph",
+        "content": "Display font: Fraunces (headings). Body font: DM Sans (body text). To change fonts, edit the Google Fonts URL in layout/theme.liquid."
+      },
+      {
+        "type": "range",
+        "id": "body_font_size",
+        "label": "Base font size (px)",
+        "min": 14,
+        "max": 18,
+        "step": 1,
+        "unit": "px",
+        "default": 16
+      }
+    ]
+  },
+  {
+    "name": "Layout",
+    "settings": [
+      {
+        "type": "range",
+        "id": "page_width",
+        "label": "Page max width (px)",
+        "min": 1000,
+        "max": 1440,
+        "step": 40,
+        "unit": "px",
+        "default": 1280
+      },
+      {
+        "type": "range",
+        "id": "section_gap",
+        "label": "Section vertical gap (px)",
+        "min": 40,
+        "max": 120,
+        "step": 8,
+        "unit": "px",
+        "default": 80
+      }
+    ]
+  },
+  {
+    "name": "Favicon",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "favicon",
+        "label": "Favicon image",
+        "info": "32×32px PNG recommended"
+      }
+    ]
+  },
+  {
+    "name": "Cart",
+    "settings": [
+      {
+        "type": "select",
+        "id": "cart_type",
+        "label": "Cart type",
+        "options": [
+          { "value": "page",   "label": "Page" },
+          { "value": "drawer", "label": "Drawer" }
+        ],
+        "default": "drawer"
+      }
+    ]
+  },
+  {
+    "name": "Animations",
+    "settings": [
+      {
+        "type": "select",
+        "id": "animations_hover_elements",
+        "label": "Hover effect",
+        "options": [
+          { "value": "none",     "label": "None" },
+          { "value": "lift",     "label": "Lift" },
+          { "value": "zoom",     "label": "Zoom" }
+        ],
+        "default": "lift"
+      }
+    ]
+  }
+]
