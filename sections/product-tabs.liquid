@@ -1,85 +1,241 @@
-<section id="shopify-section-{{ section.id }}" class="fh-product-tabs" style="background-color:{{ section.settings.bg_color }};">
-  <div class="page-width">
-    <div class="fh-product-tabs__layout">
+<style>
+  .fh-pt { background-color: {{ section.settings.bg_color }}; padding: 4rem 0; }
+  .fh-pt__layout {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 3rem;
+    align-items: start;
+  }
+  .fh-pt__sidebar { position: sticky; top: 120px; }
+  .fh-pt__sidebar-title {
+    font-family: var(--font-display);
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: var(--color-text-dark);
+    line-height: 1.25;
+    margin: 0 0 1rem;
+  }
+  .fh-pt__sidebar-desc {
+    font-size: 0.9375rem;
+    color: var(--color-text-muted);
+    line-height: 1.65;
+    margin: 0 0 1.5rem;
+  }
+  .fh-tabs-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+    border-bottom: 2px solid #e8f0ec;
+    padding-bottom: 0;
+  }
+  .fh-tab-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.625rem 1rem;
+    font-family: var(--font-body);
+    font-size: 0.9375rem;
+    color: var(--color-text-muted);
+    border-bottom: 2px solid transparent;
+    margin-bottom: -2px;
+    transition: color 200ms, border-color 200ms;
+    text-transform: capitalize;
+  }
+  .fh-tab-btn.is-active,
+  .fh-tab-btn:hover {
+    color: var(--color-brand-primary);
+    border-bottom-color: var(--color-brand-primary);
+  }
+  .fh-tab-panel { display: none; }
+  .fh-tab-panel.is-active {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.25rem;
+  }
+  /* Card */
+  .fh-pc {
+    background: #fff;
+    border-radius: 12px;
+    border: 1px solid #e8f0ec;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: box-shadow 200ms;
+  }
+  .fh-pc:hover { box-shadow: 0 6px 24px rgba(27,67,50,0.12); }
+  .fh-pc__img-wrap {
+    position: relative;
+    background: #f6fbf8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    overflow: hidden;
+  }
+  .fh-pc__img-wrap img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    display: block;
+  }
+  .fh-pc__badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: var(--color-brand-primary);
+    color: #fff;
+    font-size: 0.7rem;
+    font-weight: 600;
+    padding: 3px 8px;
+    border-radius: 999px;
+    letter-spacing: 0.02em;
+  }
+  .fh-pc__body {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.375rem;
+    flex: 1;
+  }
+  .fh-pc__name {
+    font-family: var(--font-display);
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--color-text-dark);
+    margin: 0;
+    line-height: 1.3;
+  }
+  .fh-pc__desc {
+    font-size: 0.8125rem;
+    color: var(--color-text-muted);
+    line-height: 1.55;
+    margin: 0;
+  }
+  .fh-pc__stars { color: #f5a623; font-size: 0.875rem; letter-spacing: 1px; }
+  .fh-pc__footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: auto;
+    padding-top: 0.5rem;
+    border-top: 1px solid #f0f5f2;
+  }
+  .fh-pc__price {
+    font-size: 0.9375rem;
+    font-weight: 700;
+    color: var(--color-brand-primary);
+  }
+  .fh-pc__link {
+    font-size: 0.8125rem;
+    font-weight: 600;
+    color: var(--color-brand-medium);
+    text-decoration: none;
+  }
+  .fh-pc__link:hover { text-decoration: underline; }
+  /* Placeholder */
+  .fh-pc--empty { opacity: 0.45; pointer-events: none; }
+  /* Mobile */
+  @media (max-width: 768px) {
+    .fh-pt__layout { grid-template-columns: 1fr; gap: 1.5rem; }
+    .fh-pt__sidebar { position: static; }
+    .fh-tab-panel.is-active { grid-template-columns: 1fr; }
+    .fh-tabs-nav { overflow-x: auto; white-space: nowrap; flex-wrap: nowrap; }
+    .fh-pc__img-wrap, .fh-pc__img-wrap img { height: 140px; }
+    .fh-pc__body { padding: 0.75rem; }
+  }
+</style>
 
-      <!-- Sidebar izquierda -->
-      <aside class="fh-product-tabs__sidebar">
-        {% if section.settings.titulo != blank %}
-          <h2 class="fh-product-tabs__sidebar-title">{{ section.settings.titulo }}</h2>
-        {% endif %}
-        {% if section.settings.descripcion != blank %}
-          <p class="fh-product-tabs__sidebar-desc">{{ section.settings.descripcion }}</p>
-        {% endif %}
-        {% if section.settings.cta_label != blank %}
-          <a href="{{ section.settings.cta_link | default: '#' }}" class="fh-btn fh-btn--outline">{{ section.settings.cta_label }}</a>
-        {% endif %}
+<section id="shopify-section-{{ section.id }}" class="fh-pt">
+  <div class="page-width">
+    <div class="fh-pt__layout">
+
+      <!-- Sidebar -->
+      <aside class="fh-pt__sidebar">
+        {%- if section.settings.titulo != blank -%}
+          <h2 class="fh-pt__sidebar-title">{{ section.settings.titulo }}</h2>
+        {%- endif -%}
+        {%- if section.settings.descripcion != blank -%}
+          <p class="fh-pt__sidebar-desc">{{ section.settings.descripcion }}</p>
+        {%- endif -%}
+        {%- if section.settings.cta_label != blank -%}
+          <a href="{{ section.settings.cta_link | default: '#' }}" class="fh-btn fh-btn--outline">
+            {{ section.settings.cta_label }}
+          </a>
+        {%- endif -%}
       </aside>
 
-      <!-- Contenido derecha -->
+      <!-- Tabs -->
       <div>
         {%- assign tab_vals   = 'descanso,digestion,enfoque,metabolismo' | split: ',' -%}
         {%- assign tab_labels = 'descanso,digestión,enfoque,metabolismo' | split: ',' -%}
 
-        <!-- Tabs nav -->
         <div class="fh-tabs-nav" role="tablist">
-          {% for tval in tab_vals %}
+          {%- for tval in tab_vals -%}
             {%- assign tlabel = tab_labels[forloop.index0] -%}
             <button
               class="fh-tab-btn{% if forloop.first %} is-active{% endif %}"
               role="tab"
               aria-selected="{% if forloop.first %}true{% else %}false{% endif %}"
-              aria-controls="fh-tab-panel-{{ tval }}"
-              id="fh-tab-{{ tval }}"
+              aria-controls="fh-tp-{{ tval }}"
               data-tab="{{ tval }}"
             >{{ tlabel }}</button>
-          {% endfor %}
+          {%- endfor -%}
         </div>
 
-        <!-- Tab panels -->
-        {% for tval in tab_vals %}
+        {%- for tval in tab_vals -%}
           <div
-            id="fh-tab-panel-{{ tval }}"
+            id="fh-tp-{{ tval }}"
             class="fh-tab-panel{% if forloop.first %} is-active{% endif %}"
             role="tabpanel"
-            aria-labelledby="fh-tab-{{ tval }}"
           >
-            {% for block in section.blocks %}
-              {% if block.type == 'product' and block.settings.tab == tval %}
+            {%- for block in section.blocks -%}
+              {%- if block.type == 'product' and block.settings.tab == tval -%}
                 {%- assign prod = block.settings.product -%}
-                {% if prod != blank %}
-                  <div class="fh-product-card" {{ block.shopify_attributes }}>
-                    {% if block.settings.badge != blank %}
-                      <span class="fh-product-card__badge">{{ block.settings.badge }}</span>
-                    {% endif %}
-                    <a href="{{ prod.url }}" class="fh-product-card__img">
-                      {% if prod.featured_image %}
-                        <img src="{{ prod.featured_image | img_url: '400x' }}" alt="{{ prod.title }}" loading="lazy" width="400">
-                      {% else %}
+                {%- if prod != blank -%}
+                  <div class="fh-pc" {{ block.shopify_attributes }}>
+                    <div class="fh-pc__img-wrap">
+                      {%- if prod.featured_image -%}
+                        <img
+                          src="{{ prod.featured_image | image_url: width: 400 }}"
+                          alt="{{ prod.title | escape }}"
+                          loading="lazy"
+                          width="400"
+                          height="400"
+                        >
+                      {%- else -%}
                         {{ 'product-1' | placeholder_svg_tag }}
-                      {% endif %}
-                    </a>
-                    <div class="fh-product-card__body">
-                      <h4 class="fh-product-card__name">{{ prod.title }}</h4>
-                      {% if prod.description != blank %}
-                        <p class="fh-product-card__desc">{{ prod.description | strip_html | truncate: 80 }}</p>
-                      {% endif %}
-                      <div class="fh-product-card__rating">
-                        <span class="fh-product-card__stars">★★★★★</span>
-                        <span class="fh-product-card__review-count">({{ prod.metafields.reviews.rating_count | default: '—' }})</span>
-                      </div>
-                      <div class="fh-product-card__footer">
-                        <span class="fh-product-card__price">Desde {{ prod.price_min | money }}</span>
-                        <a href="{{ prod.url }}" class="fh-product-card__link">Ver producto →</a>
+                      {%- endif -%}
+                      {%- if block.settings.badge != blank -%}
+                        <span class="fh-pc__badge">{{ block.settings.badge }}</span>
+                      {%- endif -%}
+                    </div>
+                    <div class="fh-pc__body">
+                      <h4 class="fh-pc__name">{{ prod.title }}</h4>
+                      {%- if prod.description != blank -%}
+                        <p class="fh-pc__desc">{{ prod.description | strip_html | truncate: 90 }}</p>
+                      {%- endif -%}
+                      <div class="fh-pc__stars" aria-label="5 estrellas">★★★★★</div>
+                      <div class="fh-pc__footer">
+                        <span class="fh-pc__price">Desde {{ prod.price_min | money }}</span>
+                        <a href="{{ prod.url }}" class="fh-pc__link">Ver producto →</a>
                       </div>
                     </div>
                   </div>
-                {% endif %}
-              {% endif %}
-            {% endfor %}
+                {%- else -%}
+                  <div class="fh-pc fh-pc--empty" {{ block.shopify_attributes }}>
+                    <div class="fh-pc__img-wrap">{{ 'product-1' | placeholder_svg_tag }}</div>
+                    <div class="fh-pc__body">
+                      <p class="fh-pc__name" style="font-size:0.8rem;color:#999;">Selecciona un producto en el editor</p>
+                    </div>
+                  </div>
+                {%- endif -%}
+              {%- endif -%}
+            {%- endfor -%}
           </div>
-        {% endfor %}
-
+        {%- endfor -%}
       </div>
+
     </div>
   </div>
 </section>
@@ -96,7 +252,7 @@
       panels.forEach(function(p){ p.classList.remove('is-active'); });
       btn.classList.add('is-active');
       btn.setAttribute('aria-selected','true');
-      var panel = document.getElementById('fh-tab-panel-' + btn.dataset.tab);
+      var panel = wrap.querySelector('#fh-tp-' + btn.dataset.tab);
       if (panel) panel.classList.add('is-active');
     });
   });
@@ -137,18 +293,14 @@
       ]
     }
   ],
-  "max_blocks": 20,
+  "max_blocks": 24,
   "presets": [
     {
       "name": "Product Tabs",
       "blocks": [
         { "type": "product", "settings": { "tab": "descanso",    "badge": "Alta absorción X5" } },
-        { "type": "product", "settings": { "tab": "descanso",    "badge": "Alta absorción X5" } },
-        { "type": "product", "settings": { "tab": "digestion",   "badge": "Alta absorción X5" } },
         { "type": "product", "settings": { "tab": "digestion",   "badge": "Alta absorción X5" } },
         { "type": "product", "settings": { "tab": "enfoque",     "badge": "Alta absorción X5" } },
-        { "type": "product", "settings": { "tab": "enfoque",     "badge": "Alta absorción X5" } },
-        { "type": "product", "settings": { "tab": "metabolismo", "badge": "Alta absorción X5" } },
         { "type": "product", "settings": { "tab": "metabolismo", "badge": "Alta absorción X5" } }
       ]
     }

@@ -153,83 +153,11 @@
             "badge": "Alta absorción X5"
           }
         },
-        "prod-g1": {
-          "type": "product",
-          "settings": {
-            "tab": "digestion",
-            "product": "citrato-de-magnesio-d3-liposomal",
-            "badge": "Alta absorción X5"
-          }
-        },
-        "product_KkDRFe": {
+        "prod-d3": {
           "type": "product",
           "settings": {
             "tab": "descanso",
             "product": "melena-de-leon-liposomal",
-            "badge": "Alta absorción X5"
-          }
-        },
-        "prod-g2": {
-          "type": "product",
-          "settings": {
-            "tab": "digestion",
-            "product": "melena-de-leon-liposomal",
-            "badge": "Alta absorción X5"
-          }
-        },
-        "product_i9nQMy": {
-          "type": "product",
-          "settings": {
-            "tab": "digestion",
-            "product": "berberina-liposomal",
-            "badge": "Alta absorción X5"
-          }
-        },
-        "prod-e1": {
-          "type": "product",
-          "settings": {
-            "tab": "enfoque",
-            "product": "melena-de-leon-liposomal",
-            "badge": "Alta absorción X5"
-          }
-        },
-        "prod-e2": {
-          "type": "product",
-          "settings": {
-            "tab": "enfoque",
-            "product": "ashwadanga-withania-sonmiferia",
-            "badge": "Alta absorción X5"
-          }
-        },
-        "product_yVriNG": {
-          "type": "product",
-          "settings": {
-            "tab": "enfoque",
-            "product": "glicinato-de-magnesio-d3-liposomal",
-            "badge": "Alta absorción X5"
-          }
-        },
-        "prod-m1": {
-          "type": "product",
-          "settings": {
-            "tab": "metabolismo",
-            "product": "berberina-liposomal",
-            "badge": "Alta absorción X5"
-          }
-        },
-        "prod-m2": {
-          "type": "product",
-          "settings": {
-            "tab": "metabolismo",
-            "product": "curcuma-longa-d3-liposomal",
-            "badge": "Alta absorción X5"
-          }
-        },
-        "product_eWJUap": {
-          "type": "product",
-          "settings": {
-            "tab": "metabolismo",
-            "product": "citrato-de-magnesio-d3-liposomal",
             "badge": "Alta absorción X5"
           }
         }
@@ -237,16 +165,7 @@
       "block_order": [
         "prod-d1",
         "prod-d2",
-        "prod-g1",
-        "product_KkDRFe",
-        "prod-g2",
-        "product_i9nQMy",
-        "prod-e1",
-        "prod-e2",
-        "product_yVriNG",
-        "prod-m1",
-        "prod-m2",
-        "product_eWJUap"
+        "prod-d3"
       ],
       "settings": {
         "bg_color": "#fafdf8",
