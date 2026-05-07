@@ -1,17 +1,22 @@
-/*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin theme editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */
 {
   "sections": {
-    "hero_grid_Pj4Cg6": {
+    "announcement-bar": {
+      "type": "announcement-bar",
+      "settings": {
+        "show_bar": true,
+        "bg_color": "#1b4332",
+        "text_color": "#ffffff",
+        "link_color": "#74C69D",
+        "item_1_icon": "truck",
+        "item_1_text": "Envío gratis en pedidos +$75",
+        "item_2_icon": "shield",
+        "item_2_text": "Garantía de satisfacción 30 días",
+        "item_3_icon": "leaf",
+        "item_3_text": "100% natural · Sin aditivos artificiales"
+      }
+    },
+    "hero-grid": {
       "type": "hero-grid",
-      "name": "Hero",
       "settings": {
         "bg_color": "#fafdf8",
         "titulo": "Bienestar liposomal para objetivos reales",
@@ -27,11 +32,10 @@
         "trust_4_text": "Hecho en Colombia"
       }
     },
-    "features_bar_p8jKef": {
+    "features-bar": {
       "type": "features-bar",
-      "name": "Features Bar",
       "blocks": {
-        "feature_f6mGGj": {
+        "f1": {
           "type": "feature",
           "settings": {
             "icon": "leaf",
@@ -39,7 +43,7 @@
             "description": "Sin colorantes, conservantes ni GMO."
           }
         },
-        "feature_4WmxqV": {
+        "f2": {
           "type": "feature",
           "settings": {
             "icon": "flask",
@@ -47,7 +51,7 @@
             "description": "Absorción hasta 8x superior al suplemento estándar."
           }
         },
-        "feature_YgmrgE": {
+        "f3": {
           "type": "feature",
           "settings": {
             "icon": "shield",
@@ -55,30 +59,24 @@
             "description": "Devolución sin preguntas si no estás satisfecho."
           }
         },
-        "feature_mqcVaj": {
+        "f4": {
           "type": "feature",
           "settings": {
             "icon": "truck",
-            "title": "Envío rápido",
-            "description": "Entrega en 24–48h con seguimiento en tiempo real."
+            "title": "Envío en 24–48h",
+            "description": "Con seguimiento en tiempo real."
           }
         }
       },
-      "block_order": [
-        "feature_f6mGGj",
-        "feature_4WmxqV",
-        "feature_YgmrgE",
-        "feature_mqcVaj"
-      ],
+      "block_order": ["f1", "f2", "f3", "f4"],
       "settings": {
         "bg_color": "#1b4332"
       }
     },
-    "kits_section_etY9BJ": {
+    "kits-section": {
       "type": "kits-section",
-      "name": "Kits Section",
       "blocks": {
-        "kit_DVKyQc": {
+        "kit-1": {
           "type": "kit",
           "settings": {
             "tag": "Kit más vendido",
@@ -90,7 +88,7 @@
             "cta_link": ""
           }
         },
-        "kit_NHgTfT": {
+        "kit-2": {
           "type": "kit",
           "settings": {
             "tag": "Nuevo",
@@ -103,10 +101,7 @@
           }
         }
       },
-      "block_order": [
-        "kit_DVKyQc",
-        "kit_NHgTfT"
-      ],
+      "block_order": ["kit-1", "kit-2"],
       "settings": {
         "bg_color": "#ffffff",
         "header_align": "center",
@@ -115,33 +110,27 @@
         "subtitle": "Combinaciones pensadas por nuestros nutricionistas para maximizar los beneficios liposomales."
       }
     },
-    "product_tabs_rK7mNx": {
+    "product-tabs": {
       "type": "product-tabs",
-      "name": "Product Tabs",
       "blocks": {
-        "tab_all_tQpLsA": {
+        "tab-all": {
           "type": "tab",
           "settings": { "tab_label": "Todos" }
         },
-        "tab_immune_wXbCjE": {
+        "tab-immune": {
           "type": "tab",
           "settings": { "tab_label": "Inmunidad" }
         },
-        "tab_energy_vMkDhR": {
+        "tab-energy": {
           "type": "tab",
           "settings": { "tab_label": "Energía" }
         },
-        "tab_anti_nFzGpU": {
+        "tab-anti": {
           "type": "tab",
           "settings": { "tab_label": "Antioxidantes" }
         }
       },
-      "block_order": [
-        "tab_all_tQpLsA",
-        "tab_immune_wXbCjE",
-        "tab_energy_vMkDhR",
-        "tab_anti_nFzGpU"
-      ],
+      "block_order": ["tab-all", "tab-immune", "tab-energy", "tab-anti"],
       "settings": {
         "bg_color": "#fafdf8",
         "header_align": "center",
@@ -151,9 +140,10 @@
     }
   },
   "order": [
-    "hero_grid_Pj4Cg6",
-    "features_bar_p8jKef",
-    "kits_section_etY9BJ",
-    "product_tabs_rK7mNx"
+    "announcement-bar",
+    "hero-grid",
+    "features-bar",
+    "kits-section",
+    "product-tabs"
   ]
 }
