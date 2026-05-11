@@ -1,3 +1,49 @@
+<style>
+  #shopify-section-{{ section.id }} .fh-features__row {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 20px 40px;
+    gap: 0;
+  }
+  #shopify-section-{{ section.id }} .fh-feature-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    white-space: nowrap;
+    padding: 0 16px;
+  }
+  #shopify-section-{{ section.id }} .fh-feature-item__icon {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    line-height: 1;
+  }
+  #shopify-section-{{ section.id }} .fh-feature-item__icon svg {
+    display: block;
+    vertical-align: middle;
+    flex-shrink: 0;
+  }
+  #shopify-section-{{ section.id }} .fh-feature-item__text {
+    color: #ffffff;
+    font-size: 0.875rem;
+    font-weight: 500;
+    line-height: 1.2;
+  }
+  @media (max-width: 768px) {
+    #shopify-section-{{ section.id }} .fh-features__row {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 16px 20px;
+      gap: 12px;
+    }
+    #shopify-section-{{ section.id }} .fh-feature-item {
+      white-space: normal;
+    }
+  }
+</style>
+
 <section id="shopify-section-{{ section.id }}" class="fh-features" style="background: linear-gradient(90deg, #1B4332 0%, #2D6A4F 50%, #1B4332 100%);">
   <div class="page-width">
     <div class="fh-features__row">
