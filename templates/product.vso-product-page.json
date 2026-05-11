@@ -740,6 +740,99 @@
         "block_border_radius": 0
       }
     },
+    "vso_img_with_text_01_xtNmKG": {
+      "type": "vso-img-with-text-01",
+      "blocks": {
+        "image_FLgKzt": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Comparacion_producto.png",
+            "image_height": 580,
+            "image_height_mobile": 400,
+            "image_border_radius": 8
+          }
+        },
+        "title_HptVxx": {
+          "type": "title",
+          "settings": {
+            "title": "No es solo Ashwagandha. Es tecnología liposomal.",
+            "title_custom": false,
+            "title_font": "assistant_n4",
+            "title_font_weight": "700",
+            "title_font_size": 30,
+            "title_font_size_mobile": 24,
+            "title_margin_bottom": 20,
+            "title_color": "#000000"
+          }
+        },
+        "description_gdagdr": {
+          "type": "description",
+          "settings": {
+            "text": "Nuestra fórmula está diseñada para favorecer una mejor absorción del activo, ayudando a que tu cuerpo lo aproveche de forma más eficiente dentro de tu rutina diaria.",
+            "text_custom": false,
+            "text_font": "assistant_n4",
+            "text_font_weight": "400",
+            "text_alignment": "left",
+            "text_font_size": 16,
+            "text_font_size_mobile": 16,
+            "text_margin_bottom": 30,
+            "text_color": "#444444"
+          }
+        },
+        "feature_iXrNph": {
+          "type": "feature",
+          "settings": {
+            "text": "Hydration Retention",
+            "text_custom": false,
+            "text_font": "assistant_n4",
+            "text_font_weight": "400"
+          }
+        },
+        "feature_T4twQB": {
+          "type": "feature",
+          "settings": {
+            "text": "Temperature Regulation",
+            "text_custom": false,
+            "text_font": "assistant_n4",
+            "text_font_weight": "400"
+          }
+        }
+      },
+      "block_order": [
+        "image_FLgKzt",
+        "title_HptVxx",
+        "description_gdagdr",
+        "feature_iXrNph",
+        "feature_T4twQB"
+      ],
+      "name": "VSO - Img With Text 01",
+      "settings": {
+        "reverse_layout": false,
+        "mobile_reverse_layout": true,
+        "content_background_color": "#F7F7F7",
+        "features_gap": 20,
+        "features_margin_top": 10,
+        "feature_icon_size": 48,
+        "feature_icon_size_mobile": 32,
+        "feature_icon_border_radius": 0,
+        "feature_icon_margin_bottom": 10,
+        "feature_text_font_size": 14,
+        "feature_text_font_size_mobile": 14,
+        "feature_text_color": "#000000",
+        "feature_text_font_weight": "400",
+        "features_in_row": false,
+        "grid_max_width": 1220,
+        "section_max_width": 120,
+        "padding_desktop": 60,
+        "padding_tablet_mobile": 0,
+        "margin_desktop": 0,
+        "margin_bottom_desktop": 0,
+        "margin_tablet_mobile": 0,
+        "margin_bottom_tablet_mobile": 0,
+        "background_color": "#FFFFFF",
+        "background_gradient_color": ""
+      }
+    },
     "vso_hero_45_8W1D8M": {
       "type": "vso-hero-45",
       "blocks": {
@@ -1499,6 +1592,7 @@
     "vso_hero_36_81fyqM",
     "vso_hero_19_XGjzRA",
     "vso_icon_benefits_01_QX0kww",
+    "vso_img_with_text_01_xtNmKG",
     "vso_hero_45_8W1D8M",
     "vso_hero_32_5X7zMU",
     "vso_testimonials_14_Xt7hK1",
