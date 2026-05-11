@@ -746,7 +746,7 @@
         "heading_hTfXhK": {
           "type": "heading",
           "settings": {
-            "heading": "Designed Without Compromise",
+            "heading": "<strong>Diseñada para absorberse mejor</strong>",
             "heading_color": "#ffffff",
             "heading_custom_font": true,
             "heading_as": "h2",
@@ -766,7 +766,7 @@
         "description_4OPqrn": {
           "type": "description",
           "settings": {
-            "description": "<p>Our formula focuses on what truly supports gut health—without unnecessary additives or fillers.</p>",
+            "description": "<p>Nuestra fórmula liposomal ayuda a proteger y transportar los activos para favorecer una mejor absorción.</p>",
             "description_color": "#ffffff",
             "description_custom_font": true,
             "description_as": "p",
@@ -784,40 +784,42 @@
         "card_item_1_qudzdO": {
           "type": "card_item",
           "settings": {
-            "label": "Artificial fillers",
+            "label": "<strong>Sin fórmula genérica</strong>",
             "cross_out_label": true
           }
         },
         "card_item_2_TDxx9y": {
           "type": "card_item",
           "settings": {
-            "label": "Added sugars",
+            "label": "<strong>Sin promesas exageradas</strong>",
             "cross_out_label": true
           }
         },
         "card_item_3_gqpjSf": {
           "type": "card_item",
           "settings": {
-            "label": "Artificial flavors",
+            "label": "<strong>Sin absorción convencional</strong>",
             "cross_out_label": true
           }
         },
         "card_item_4_ZsYBmD": {
           "type": "card_item",
           "settings": {
-            "label": "Low-quality probiotic strains",
+            "label": "<strong>Sin complicar tu rutina</strong>",
             "cross_out_label": true
           }
         },
         "card_item_5_u5J76E": {
           "type": "card_item",
+          "disabled": true,
           "settings": {
-            "label": "Synthetic preservatives",
+            "label": "<strong>Sin mezclas complicadas</strong>",
             "cross_out_label": true
           }
         },
         "card_item_6_aOQ0o9": {
           "type": "card_item",
+          "disabled": true,
           "settings": {
             "label": "Artificial colors",
             "cross_out_label": true
@@ -825,13 +827,15 @@
         },
         "card_item_7_TC3pr9": {
           "type": "card_item",
+          "disabled": true,
           "settings": {
-            "label": "Harsh chemical binders",
+            "label": "<strong>Sin estimulantes</strong>",
             "cross_out_label": true
           }
         },
         "card_item_8_9b3ZpQ": {
           "type": "card_item",
+          "disabled": true,
           "settings": {
             "label": "One-size-fits-all formulas",
             "cross_out_label": true
