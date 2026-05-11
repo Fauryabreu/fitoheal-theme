@@ -10,118 +10,271 @@
 {
   "sections": {
     "vso_product_info_02_CB34KK": {
-      "settings": {
-        "collapsible_style": "line",
-        "collapsible_line_top_border": true,
-        "collapsible_title_size": 18,
-        "collapsible_title_size_mobile": 16
-      },
+      "type": "vso-product-info-02",
       "blocks": {
         "media_WkndvD": {
           "type": "media",
           "settings": {
             "media_width_desktop": 60,
             "image_aspect_ratio": "adapt",
+            "media_fixed_height": 560,
+            "media_fixed_height_mobile": 420,
+            "media_sticky_desktop": false,
+            "show_arrows_desktop": true,
+            "pagination_type": "thumbnails",
+            "dots_pill_background": false,
+            "dots_pill_background_color": "#ffffff",
+            "dots_active_color": "#111111",
+            "dots_inactive_color": "#d9d9d9",
+            "thumbnails_position_desktop": "side",
+            "thumbnail_border_width": 1,
             "thumbnail_border_radius": 10,
-            "media_border_radius": 12,
-            "media_gap": 12
+            "thumbnail_border_color": "#e7e7e7",
+            "thumbnail_border_color_active": "#111111",
+            "media_gap": 12,
+            "media_border_radius": 12
           }
         },
         "title_bpx6jA": {
           "type": "title",
-          "settings": {}
+          "settings": {
+            "title_text": "",
+            "heading_tag": "h3",
+            "title_custom_typography": true,
+            "title_size": 30,
+            "title_size_mobile": 24,
+            "title_weight": 600,
+            "title_line_height": 120,
+            "title_alignment": "left",
+            "title_alignment_mobile": "left",
+            "title_color": "#111111",
+            "margin_top_desktop": 0,
+            "margin_bottom_desktop": 0,
+            "margin_top_mobile": 0,
+            "margin_bottom_mobile": 0
+          }
         },
         "text_WKhTaO": {
           "type": "text",
           "settings": {
             "text": "<p>Advanced _probiotic + prebiotic synbiotic_ designed to support gut health, digestion, immunity, and skin balance.</p>",
+            "text_highlight_color": "#d7fca3",
+            "text_highlight_text_color": "#111111",
+            "text_color": "#555555",
             "font_size": 18,
-            "font_size_mobile": 14
+            "font_size_mobile": 14,
+            "text_alignment": "left",
+            "text_alignment_mobile": "left",
+            "text_custom_font": false,
+            "text_font": "poppins_n4",
+            "margin_top_desktop": 0,
+            "margin_bottom_desktop": 0,
+            "margin_top_mobile": 0,
+            "margin_bottom_mobile": 0
           }
         },
         "price_a5tRpT": {
           "type": "price",
-          "settings": {}
+          "settings": {
+            "show_compare_at": true,
+            "price_size": 22,
+            "price_size_mobile": 20,
+            "price_weight": 600,
+            "price_color": "#111111",
+            "compare_price_color": "#999999",
+            "margin_top_desktop": 0,
+            "margin_bottom_desktop": 0,
+            "margin_top_mobile": 0,
+            "margin_bottom_mobile": 0
+          }
         },
         "variant_picker_MBqXk8": {
           "type": "variant_picker",
-          "settings": {}
+          "settings": {
+            "picker_style": "boxes",
+            "swatch_option_name": "Color",
+            "input_text_color": "#111111",
+            "box_background": "#ffffff",
+            "box_text_color": "#111111",
+            "box_border_color": "#e0e0e0",
+            "box_selected_background": "#111111",
+            "box_selected_text_color": "#ffffff",
+            "selected_background": "#111111",
+            "dropdown_border_color": "#d9d9d9",
+            "input_border_radius": 10,
+            "pill_radius": 10,
+            "swatch_size": 36,
+            "swatch_show_label": true,
+            "image_option_name": "Color",
+            "image_size": 60,
+            "image_border_radius": 8,
+            "image_show_label": true,
+            "margin_top_desktop": 0,
+            "margin_bottom_desktop": 0,
+            "margin_top_mobile": 0,
+            "margin_bottom_mobile": 0
+          }
         },
         "form_mc0IyY": {
           "type": "form",
           "settings": {
             "show_quantity": false,
-            "button_text_weight": 600,
+            "show_dynamic_checkout": false,
+            "atc_custom_text": "",
+            "sold_out_custom_text": "",
+            "qty_border_color": "#e0e0e0",
+            "qty_border_radius": 10,
+            "qty_background_color": "#ffffff",
+            "qty_text_color": "#111111",
             "button_font_size": 22,
             "button_font_size_mobile": 18,
+            "button_text_weight": 600,
+            "button_custom_font": false,
+            "button_font_family": "poppins_n4",
+            "button_padding_vertical": 14,
+            "button_border_width": 0,
+            "button_border_color": "#e0e0e0",
+            "button_background": "#285028",
+            "button_text_color": "#ffffff",
+            "button_border_radius": 10,
             "show_button_subtext": true,
             "button_subtext": "30 Day Money-Back Guarantee",
+            "button_subtext_icon_size": 14,
             "button_subtext_spacing_top": 6,
             "button_subtext_size": 14,
             "button_subtext_size_mobile": 10,
-            "button_background": "#285028"
+            "button_subtext_color": "#ffffff",
+            "dc_background": "#111111",
+            "dc_text_color": "#ffffff",
+            "dc_font_size": 15,
+            "dc_font_weight": 600,
+            "dc_border_radius": 12,
+            "dc_border_width": 0,
+            "dc_border_color": "#e0e0e0",
+            "margin_top_desktop": 0,
+            "margin_bottom_desktop": 0,
+            "margin_top_mobile": 0,
+            "margin_bottom_mobile": 0
           }
         },
         "description_4X83w7": {
           "type": "description",
           "settings": {
-            "description_font_size": 16
+            "description_text": "",
+            "description_color": "#111111",
+            "description_font_size": 16,
+            "description_font_size_mobile": 14,
+            "description_font_weight": 400,
+            "description_custom_font": false,
+            "description_font_family": "poppins_n4",
+            "margin_top_desktop": 0,
+            "margin_bottom_desktop": 0,
+            "margin_top_mobile": 0,
+            "margin_bottom_mobile": 0
           }
         },
         "collapsible_row_1_DAxcm0": {
           "type": "collapsible_row",
           "settings": {
-            "title": "How does this synbiotic work?"
+            "title": "How does this synbiotic work?",
+            "content": "<p>Share additional information with your customers.</p>",
+            "margin_top_desktop": 0,
+            "margin_bottom_desktop": 0,
+            "margin_top_mobile": 0,
+            "margin_bottom_mobile": 0
           }
         },
         "collapsible_row_2_b5NJ8R": {
           "type": "collapsible_row",
           "settings": {
-            "title": "When should I take it?"
+            "title": "When should I take it?",
+            "content": "<p>Share additional information with your customers.</p>",
+            "margin_top_desktop": 0,
+            "margin_bottom_desktop": 0,
+            "margin_top_mobile": 0,
+            "margin_bottom_mobile": 0
           }
         },
         "collapsible_row_3_fMM5Om": {
           "type": "collapsible_row",
           "settings": {
-            "title": "How long until I notice results?"
+            "title": "How long until I notice results?",
+            "content": "<p>Share additional information with your customers.</p>",
+            "margin_top_desktop": 0,
+            "margin_bottom_desktop": 0,
+            "margin_top_mobile": 0,
+            "margin_bottom_mobile": 0
           }
         },
         "benefits_Q7njOq": {
           "type": "benefits",
           "settings": {
-            "box_border_color": "#597059",
-            "box_background": "#EEF1EA",
-            "box_gap": 12,
-            "box_border_width": 1,
-            "box_padding": 16,
-            "text_size": 13,
-            "text_size_mobile": 14,
-            "text_weight": 600,
+            "hide_on_mobile": true,
             "text_1": "Supports Gut Balance",
             "text_2": "Reduces Bloating & Discomfort",
             "text_3": "Supports Immune & Skin Health",
-            "icon_color": "#1E3B1D",
-            "text_color": "#1E3B1D"
+            "column_width": 170,
+            "column_width_mobile": 100,
+            "box_gap": 12,
+            "box_padding": 16,
+            "box_padding_mobile": 10,
+            "box_radius": 12,
+            "box_border_width": 1,
+            "box_border_color": "#597059",
+            "box_background": "#eef1ea",
+            "icon_size": 34,
+            "icon_size_mobile": 24,
+            "icon_color": "#1e3b1d",
+            "icon_text_gap": 2,
+            "text_color": "#1e3b1d",
+            "text_size": 13,
+            "text_size_mobile": 14,
+            "text_weight": 600,
+            "text_line_height": 135,
+            "text_custom_font": false,
+            "text_font": "poppins_n5"
           }
         },
         "media_testimonial_MDJLsd": {
           "type": "media_testimonial",
           "settings": {
-            "border_width": 1,
-            "border_color": "#597059",
-            "background_color": "#EEF1EA",
+            "hide_on_mobile": true,
+            "image_size": 90,
+            "image_size_mobile": 48,
+            "image_radius": 6,
+            "image_radius_mobile": 12,
+            "image_position": "left",
+            "gap": 20,
             "title": "Finally Found Something That Helped My Digestion",
             "body": "<p>I struggled with bloating for years. After a few weeks of this synbiotic, my digestion improved and bloating reduced significantly.</p>",
             "author": "— Melissa R.",
             "text_gap": 4,
-            "image_radius": 6,
-            "gap": 20,
-            "image_size": 90,
-            "image_size_mobile": 48,
             "title_color": "#111111",
+            "title_custom_font": false,
+            "title_render_as": "h4",
+            "title_font_size": 13,
+            "title_font_size_mobile": 13,
+            "title_font": "poppins_n5",
             "description_color": "#111111",
+            "description_custom_font": false,
+            "description_render_as": "p",
+            "description_font_size": 13,
+            "description_font_size_mobile": 13,
+            "description_font": "poppins_n4",
             "author_color": "#111111",
-            "title_render_as": "h4"
+            "author_custom_font": false,
+            "author_render_as": "p",
+            "author_font_size": 12,
+            "author_font_size_mobile": 12,
+            "author_font": "poppins_n4",
+            "width_mode": "full",
+            "background_color": "#eef1ea",
+            "enable_glare": true,
+            "border_radius": 12,
+            "border_width": 1,
+            "border_style": "solid",
+            "border_color": "#597059",
+            "padding": 16
           }
         }
       },
@@ -140,33 +293,99 @@
         "media_testimonial_MDJLsd"
       ],
       "name": "VSO - Product Info 02",
-      "type": "vso-product-info-02"
+      "settings": {
+        "enable_advanced_settings": false,
+        "product": "",
+        "max_width": 90,
+        "padding_x": 20,
+        "padding_x_mobile": 20,
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "margin_top_mobile": 0,
+        "margin_bottom_mobile": 0,
+        "background_type": "solid",
+        "background_color": "#ffffff",
+        "background_gradient": "linear-gradient(180deg, #FFFFFF 0%, #F5F5F5 100%)",
+        "grid_gap": 40,
+        "grid_gap_mobile": 20,
+        "details_gap": 16,
+        "form_gap": 12,
+        "collapsible_style": "line",
+        "collapsible_line_top_border": true,
+        "collapsible_background_color": "#f5f5f5",
+        "collapsible_border_radius": 12,
+        "collapsible_title_color": "#111111",
+        "collapsible_title_size": 18,
+        "collapsible_title_size_mobile": 16,
+        "collapsible_title_weight": 500,
+        "collapsible_content_color": "#111111",
+        "collapsible_content_size": 14,
+        "collapsible_content_size_mobile": 14,
+        "collapsible_leading_icon_gap": 8,
+        "collapsible_icon_size": 30
+      }
     },
     "vso_hero_36_81fyqM": {
-      "settings": {
-        "section_outer_bg_color": "#1E3B1D",
-        "section_padding_bottom_mobile": 40,
-        "icon_size": 60,
-        "icon_size_mobile": 50,
-        "feature_title_as": "h4",
-        "feature_title_color": "#FFFFFF",
-        "feature_text_color": "#FFFFFF"
-      },
+      "type": "vso-hero-36",
       "blocks": {
         "heading_rUiuRq": {
           "type": "heading",
           "settings": {
             "subtitle": "Science-Backed Gut Health",
-            "subtitle_color": "#FFFFFF",
+            "subtitle_custom_font": false,
+            "subtitle_as": "p",
+            "subtitle_font": "poppins_n4",
+            "subtitle_font_size": 14,
+            "subtitle_font_size_mobile": 12,
+            "subtitle_font_weight": 400,
+            "subtitle_line_height": 140,
+            "subtitle_letter_spacing": 1,
+            "subtitle_color": "#ffffff",
+            "subtitle_spacing": 16,
             "title": "Feel the difference of a truly healthy gut.",
-            "title_color": "#FFFFFF"
+            "title_custom_font": false,
+            "title_as": "h2",
+            "title_font": "poppins_n6",
+            "title_font_size": 48,
+            "title_font_size_mobile": 32,
+            "title_font_weight": 600,
+            "title_line_height": 120,
+            "title_letter_spacing": 0,
+            "title_color_type": "solid",
+            "title_color": "#ffffff",
+            "title_gradient": "linear-gradient(135deg, #EC4899 0%, #F472B6 100%)",
+            "title_spacing": 16,
+            "text": "Transform your lashes with:",
+            "text_custom_font": false,
+            "text_as": "p",
+            "text_font": "poppins_n4",
+            "text_font_size": 16,
+            "text_font_size_mobile": 14,
+            "text_font_weight": 400,
+            "text_line_height": 150,
+            "text_color": "#333333",
+            "heading_block_spacing": 48,
+            "heading_block_spacing_mobile": 32,
+            "heading_alignment": "left",
+            "heading_alignment_mobile": "left"
           }
         },
         "media_Av4wtb": {
           "type": "media",
           "settings": {
+            "media_edge_to_edge": false,
             "mobile_media_position": "middle",
-            "grid_gap_mobile": 32
+            "media_type": "image",
+            "image": "shopify://shop_images/ChatGPTImage5may2026_14_53_38_2_08dee332-126d-41b9-9f38-45f992224543.png",
+            "video_url": "",
+            "enable_lazy_loading": true,
+            "media_height": 600,
+            "media_height_mobile": 400,
+            "media_border_radius": 16,
+            "media_border_radius_mobile": 16,
+            "grid_gap": 60,
+            "grid_gap_mobile": 32,
+            "media_column_width_desktop": 50
           }
         },
         "feature_1_iokXup": {
@@ -207,33 +426,119 @@
         "feature_4_w0MBJV"
       ],
       "name": "VSO - Hero 36",
-      "type": "vso-hero-36"
+      "settings": {
+        "enable_advanced_settings": false,
+        "section_max_width": 120,
+        "section_horizontal_padding": 24,
+        "section_horizontal_padding_mobile": 15,
+        "section_outer_padding_top": 20,
+        "section_outer_padding_bottom": 20,
+        "section_outer_padding_top_mobile": 15,
+        "section_outer_padding_bottom_mobile": 15,
+        "section_outer_bg_color": "#1e3b1d",
+        "full_width_desktop": false,
+        "section_border_radius": 12,
+        "section_border_radius_mobile": 0,
+        "section_border_width": 0,
+        "section_border_width_mobile": 0,
+        "section_border_color": "#000000",
+        "content_column_gap": 24,
+        "content_column_gap_mobile": 20,
+        "features_gap": 32,
+        "features_gap_mobile": 24,
+        "section_padding_top": 40,
+        "section_padding_bottom": 40,
+        "section_padding_top_mobile": 20,
+        "section_padding_bottom_mobile": 40,
+        "margin_top": 40,
+        "margin_bottom": 40,
+        "margin_top_mobile": 20,
+        "margin_bottom_mobile": 20,
+        "feature_element_gap": 12,
+        "features_alignment": "left",
+        "features_alignment_mobile": "left",
+        "features_columns_mobile": "2",
+        "icon_size": 60,
+        "icon_size_mobile": 50,
+        "feature_title_custom_font": false,
+        "feature_title_as": "h4",
+        "feature_title_font": "poppins_n6",
+        "feature_title_font_size": 18,
+        "feature_title_font_size_mobile": 16,
+        "feature_title_font_weight": 600,
+        "feature_title_line_height": 140,
+        "feature_title_color": "#ffffff",
+        "feature_text_custom_font": false,
+        "feature_text_as": "p",
+        "feature_text_font": "poppins_n4",
+        "feature_text_font_size": 15,
+        "feature_text_font_size_mobile": 14,
+        "feature_text_font_weight": 400,
+        "feature_text_line_height": 150,
+        "feature_text_color": "#ffffff"
+      }
     },
     "vso_hero_19_XGjzRA": {
-      "settings": {
-        "timeline_line_color": "#597059",
-        "timeline_dot_color": "#597059",
-        "margin_top": 0,
-        "margin_bottom": 20,
-        "margin_top_mobile": 0,
-        "margin_bottom_mobile": 0
-      },
+      "type": "vso-hero-19",
       "blocks": {
         "heading_pmVfuI": {
           "type": "heading",
           "settings": {
+            "heading_alignment": "center",
             "heading": "A Healthier Gut, _Step by Step",
+            "heading_custom_font": false,
             "heading_as": "h3",
+            "heading_font": "poppins_n4",
+            "heading_size_desktop": 48,
+            "heading_size_mobile": 32,
+            "heading_weight": 600,
+            "heading_color": "#1f2937",
             "heading_highlight_color": "linear-gradient(128deg, rgba(89, 112, 89, 1) 0%, rgba(115, 145, 115, 1) 100%)",
+            "heading_highlight_custom_font": false,
+            "heading_highlight_font": "poppins_n4",
+            "heading_highlight_weight": 600,
+            "heading_highlight_size_desktop": 48,
+            "heading_highlight_size_mobile": 32,
             "description": "",
+            "description_custom_font": false,
+            "description_as": "p",
+            "description_font": "poppins_n4",
+            "description_size_desktop": 16,
+            "description_size_mobile": 16,
+            "description_weight": 400,
+            "description_line_height": 1.5,
+            "description_color": "#6b7280",
+            "heading_enable_max_width": true,
+            "heading_max_width_desktop": 1000,
+            "heading_description_gap": 8,
+            "block_margin_top_desktop": 0,
             "block_margin_bottom_desktop": 20,
+            "block_margin_top_mobile": 0,
             "block_margin_bottom_mobile": 16
           }
         },
         "media_kcpVCU": {
           "type": "media",
           "settings": {
-            "media_sizing_desktop": "4/3"
+            "media_type": "image",
+            "video_url": "",
+            "video_autoplay": true,
+            "video_loop": true,
+            "video_muted": true,
+            "video_controls": false,
+            "image_radius": 12,
+            "media_sizing_desktop": "4/3",
+            "image_height_desktop": 600,
+            "object_fit_desktop": "cover",
+            "mobile_media_type": "image",
+            "mobile_video_url": "",
+            "mobile_video_autoplay": true,
+            "mobile_video_loop": true,
+            "mobile_video_muted": true,
+            "mobile_video_controls": false,
+            "media_sizing_mobile": "1/1",
+            "image_height_mobile": 500,
+            "object_fit_mobile": "cover"
           }
         },
         "timeline_item_1_AaGtoe": {
@@ -269,38 +574,89 @@
         "timeline_item_3_6WDi7E"
       ],
       "name": "VSO - Hero 19",
-      "type": "vso-hero-19"
-    },
-    "vso_icon_benefits_01_QX0kww": {
       "settings": {
-        "background_color": "#FFFFFF",
-        "padding_top_desktop": 40,
-        "padding_bottom_desktop": 40,
+        "enable_advanced_settings": false,
+        "section_max_width": 120,
+        "padding_horizontal": 0,
+        "padding_horizontal_mobile": 0,
+        "section_bg_type": "solid",
+        "section_bg_solid": "#ffffff",
+        "section_bg_gradient": "linear-gradient(135deg, #F5F3FF 0%, #EEF2FF 100%)",
+        "section_full_width": true,
+        "section_border_radius": 12,
+        "section_border_radius_mobile": 0,
+        "section_border_width": 0,
+        "section_border_width_mobile": 0,
+        "section_border_color": "#e6e6e6",
+        "timeline_gap": 32,
+        "timeline_margin_top": 32,
+        "timeline_item_gap": 16,
+        "timeline_line_width": 2,
+        "timeline_line_color": "#597059",
+        "timeline_dot_size": 16,
+        "timeline_dot_color": "#597059",
+        "timeline_media_gap_desktop": 24,
+        "timeline_media_gap_mobile": 12,
+        "timeline_subheading_custom_font": false,
+        "timeline_subheading_as": "p",
+        "timeline_subheading_font": "poppins_n4",
+        "timeline_subheading_size_desktop": 14,
+        "timeline_subheading_size_mobile": 14,
+        "timeline_subheading_weight": 400,
+        "timeline_subheading_margin_bottom": 4,
+        "timeline_subheading_color": "#434343",
+        "timeline_heading_custom_font": false,
+        "timeline_heading_as": "h3",
+        "timeline_heading_font": "poppins_n4",
+        "timeline_heading_size_desktop": 20,
+        "timeline_heading_size_mobile": 18,
+        "timeline_heading_weight": 600,
+        "timeline_heading_margin_bottom": 8,
+        "timeline_heading_color": "#303030",
+        "timeline_description_custom_font": false,
+        "timeline_description_as": "p",
+        "timeline_description_font": "poppins_n4",
+        "timeline_description_size_desktop": 14,
+        "timeline_description_size_mobile": 14,
+        "timeline_description_weight": 400,
+        "timeline_description_line_height": 1.4,
+        "timeline_description_color": "#404040",
+        "padding_top": 40,
+        "padding_bottom": 40,
         "padding_top_mobile": 20,
         "padding_bottom_mobile": 20,
-        "margin_top_desktop": 40,
-        "margin_bottom_desktop": 40,
-        "margin_top_mobile": 20,
-        "margin_bottom_mobile": 20,
-        "blocks_alignment": "center",
-        "custom_blocks_text_font": true,
-        "blocks_text_font": "gelasio_n4",
-        "block_text_size_desktop": 20,
-        "block_text_size_mobile": 16,
-        "block_text_line_height": 150,
-        "desktop_icon_size": 180,
-        "mobile_icon_size": 100,
-        "block_border_radius": 0
-      },
+        "margin_top": 0,
+        "margin_bottom": 20,
+        "margin_top_mobile": 0,
+        "margin_bottom_mobile": 0
+      }
+    },
+    "vso_icon_benefits_01_QX0kww": {
+      "type": "vso-icon-benefits-01",
       "blocks": {
         "heading_TUMvsh": {
           "type": "heading",
           "settings": {
             "content_alignment": "left",
             "title": "Strengthens your gut at the _source_ for lasting relief.",
+            "title_color": "#000000",
             "title_highlight_color": "#478641",
+            "custom_title_font": false,
             "title_as": "h4",
-            "subtitle": ""
+            "title_font": "sans_serif_n4",
+            "title_size_desktop": 40,
+            "title_size_mobile": 32,
+            "title_line_height": 130,
+            "subtitle": "",
+            "subtitle_color": "#000000",
+            "custom_subtitle_font": false,
+            "subtitle_as": "p",
+            "subtitle_font": "sans_serif_n4",
+            "subtitle_size_desktop": 20,
+            "subtitle_size_mobile": 16,
+            "subtitle_line_height": 130,
+            "header_elements_gap": 16,
+            "header_blocks_gap": 50
           }
         },
         "benefit_1_5lAsTN": {
@@ -340,36 +696,88 @@
         "benefit_4_gPhHh1"
       ],
       "name": "VSO - Icon Benefits 01",
-      "type": "vso-icon-benefits-01"
+      "settings": {
+        "enable_advanced_settings": false,
+        "section_max_width": 64,
+        "section_horizontal_padding": 24,
+        "padding_horizontal_mobile": 15,
+        "background_color": "#ffffff",
+        "full_width": true,
+        "section_border_radius": 12,
+        "section_border_radius_mobile": 0,
+        "padding_top_desktop": 40,
+        "padding_bottom_desktop": 40,
+        "padding_top_mobile": 20,
+        "padding_bottom_mobile": 20,
+        "margin_top_desktop": 40,
+        "margin_bottom_desktop": 40,
+        "margin_top_mobile": 20,
+        "margin_bottom_mobile": 20,
+        "mobile_columns": "2",
+        "blocks_alignment": "center",
+        "desktop_blocks_gap": 32,
+        "mobile_blocks_gap": 16,
+        "custom_blocks_title_font": false,
+        "blocks_title_as": "h3",
+        "blocks_title_font": "sans_serif_n4",
+        "block_title_size_desktop": 18,
+        "block_title_size_mobile": 18,
+        "block_title_line_height": 120,
+        "blocks_title_color": "#000000",
+        "custom_blocks_text_font": true,
+        "blocks_text_as": "p",
+        "blocks_text_font": "gelasio_n4",
+        "block_text_size_desktop": 20,
+        "block_text_size_mobile": 16,
+        "block_text_line_height": 150,
+        "blocks_text_color": "#000000",
+        "block_background_color": "rgba(0,0,0,0)",
+        "desktop_icon_size": 180,
+        "mobile_icon_size": 100,
+        "block_padding": 0,
+        "block_elements_gap": 16,
+        "block_border_radius": 0
+      }
     },
     "vso_hero_45_8W1D8M": {
-      "settings": {
-        "section_bg_color": "#1E3B1D",
-        "padding_top_mobile": 40,
-        "padding_bottom_mobile": 40,
-        "card_bg_color": "#F6F7EF",
-        "item_icon_bg_color": "#1E3B1D",
-        "item_icon_check_color": "#FFFFFF",
-        "item_icon_cross_color": "#FFFFFF",
-        "crossed_label_color": "#282828",
-        "card_items_two_columns": true
-      },
+      "type": "vso-hero-45",
       "blocks": {
         "heading_hTfXhK": {
           "type": "heading",
           "settings": {
             "heading": "Designed Without Compromise",
-            "heading_color": "#FFFFFF",
+            "heading_color": "#ffffff",
             "heading_custom_font": true,
+            "heading_as": "h2",
+            "heading_font": "poppins_n7",
             "heading_font_size_desktop": 50,
-            "heading_font_size_mobile": 36
+            "heading_font_size_mobile": 36,
+            "heading_line_height": 105,
+            "heading_font_weight": 700,
+            "heading_limit_width_desktop": true,
+            "heading_max_width_desktop": 520,
+            "heading_margin_top": 0,
+            "heading_margin_bottom": 0,
+            "heading_margin_top_mobile": 0,
+            "heading_margin_bottom_mobile": 0
           }
         },
         "description_4OPqrn": {
           "type": "description",
           "settings": {
             "description": "<p>Our formula focuses on what truly supports gut health—without unnecessary additives or fillers.</p>",
-            "description_color": "#FFFFFF"
+            "description_color": "#ffffff",
+            "description_custom_font": true,
+            "description_as": "p",
+            "description_font": "poppins_n4",
+            "description_size": 18,
+            "description_size_mobile": 16,
+            "description_line_height": 145,
+            "description_weight": 400,
+            "description_margin_top": 0,
+            "description_margin_bottom": 0,
+            "description_margin_top_mobile": 0,
+            "description_margin_bottom_mobile": 0
           }
         },
         "card_item_1_qudzdO": {
@@ -442,25 +850,76 @@
         "card_item_8_9b3ZpQ"
       ],
       "name": "VSO - Hero 45",
-      "type": "vso-hero-45"
+      "settings": {
+        "enable_advanced_settings": false,
+        "background_type": "solid",
+        "section_bg_color": "#1e3b1d",
+        "section_bg_gradient": "linear-gradient(135deg, #F4F1EC 0%, #EBE7E0 100%)",
+        "full_width_desktop": false,
+        "section_border_radius": 12,
+        "padding_top": 40,
+        "padding_bottom": 40,
+        "padding_top_mobile": 40,
+        "padding_bottom_mobile": 40,
+        "margin_top": 40,
+        "margin_bottom": 40,
+        "margin_top_mobile": 20,
+        "margin_bottom_mobile": 20,
+        "content_alignment": "left",
+        "content_alignment_mobile": "left",
+        "content_vertical_alignment": "center",
+        "card_desktop_position": "center",
+        "reverse_layout_desktop": false,
+        "reverse_layout_mobile": false,
+        "card_column_width": 60,
+        "column_gap": 30,
+        "column_gap_mobile": 20,
+        "content_gap": 20,
+        "content_gap_mobile": 16,
+        "card_bg_color": "#f6f7ef",
+        "card_border_radius": 24,
+        "card_padding": 32,
+        "card_padding_mobile": 24,
+        "card_item_gap": 18,
+        "card_item_gap_mobile": 14,
+        "card_items_two_columns": true,
+        "card_items_two_columns_mobile": false,
+        "card_border_width": 0,
+        "card_border_color": "#2f2f2f",
+        "item_icon_bg_color": "#1e3b1d",
+        "item_icon_check_color": "#ffffff",
+        "item_icon_cross_color": "#ffffff",
+        "item_icon_wrap_size": 28,
+        "item_icon_wrap_size_mobile": 24,
+        "item_icon_size": 24,
+        "item_icon_size_mobile": 21,
+        "crossed_label_color": "#282828",
+        "crossed_line_color": "#a8a8a8",
+        "crossed_line_thickness": 1,
+        "item_label_color": "#ffffff",
+        "item_label_custom_font": true,
+        "item_label_as": "p",
+        "item_label_font": "poppins_n5",
+        "item_label_size": 18,
+        "item_label_size_mobile": 16,
+        "item_label_line_height": 130,
+        "item_label_weight": 500,
+        "section_max_width": 120,
+        "padding_horizontal": 20,
+        "padding_horizontal_mobile": 16
+      }
     },
     "vso_hero_32_5X7zMU": {
-      "settings": {
-        "margin_bottom": 0,
-        "padding_top": 0,
-        "padding_top_mobile": 12,
-        "padding_bottom_mobile": 12,
-        "pagination_dot_color_active": "#1E3B1D",
-        "card_border_color": "#1E3B1D",
-        "tag_bg_color": "#1E3B1D",
-        "tag_color": "#FFFFFF"
-      },
+      "type": "vso-hero-32",
       "blocks": {
         "card_1_Z3UZYO": {
           "type": "card",
           "settings": {
             "tag_1": "Microbiome",
             "tag_2": "Digestive Support",
+            "tag_3": "",
+            "tag_4": "",
+            "tag_5": "",
             "heading": "Probiotic Strains",
             "description": "<p>A diverse blend of clinically studied probiotic bacteria designed to support gut balance, improve digestion, and promote a healthy microbiome.</p>"
           }
@@ -470,6 +929,9 @@
           "settings": {
             "tag_1": "Prebiotic",
             "tag_2": "Gut Nourishment",
+            "tag_3": "",
+            "tag_4": "",
+            "tag_5": "",
             "heading": "Prebiotic Fiber",
             "description": "<p>Plant-based prebiotics feed beneficial gut bacteria, helping them grow and maintain a balanced digestive environment.</p>"
           }
@@ -479,6 +941,9 @@
           "settings": {
             "tag_1": "Polyphenols",
             "tag_2": "Antioxidant Support",
+            "tag_3": "",
+            "tag_4": "",
+            "tag_5": "",
             "heading": "Plant Polyphenols",
             "description": "<p>Powerful plant-derived compounds that support beneficial gut microbes while providing antioxidant support for overall wellness.</p>"
           }
@@ -488,6 +953,9 @@
           "settings": {
             "tag_1": "Hydration",
             "tag_2": "Plumping",
+            "tag_3": "",
+            "tag_4": "",
+            "tag_5": "",
             "heading": "Hyaluronic Acid Deep Moisture",
             "description": "<p>Holds up to 1000x its weight in water to deeply hydrate, plump fine lines, and create a smooth, supple complexion with long-lasting moisture retention.</p>"
           }
@@ -497,6 +965,9 @@
           "settings": {
             "tag_1": "Anti-Aging",
             "tag_2": "Immunity",
+            "tag_3": "",
+            "tag_4": "",
+            "tag_5": "",
             "heading": "Peptides for Firmness",
             "description": "<p>Stimulates collagen synthesis to improve skin elasticity, reduce wrinkles, and restore firmness for a lifted, more contoured appearance.</p>"
           }
@@ -510,50 +981,182 @@
         "card_5_UQzPEX"
       ],
       "name": "VSO - Hero 32",
-      "type": "vso-hero-32"
+      "settings": {
+        "enable_advanced_settings": false,
+        "section_max_width": 120,
+        "padding_horizontal": 0,
+        "padding_horizontal_mobile": 0,
+        "section_bg_type": "solid",
+        "section_bg_color": "#ffffff",
+        "section_bg_gradient": "linear-gradient(180deg, #FFFFFF 0%, #F3F4F6 100%)",
+        "full_width_desktop": true,
+        "section_border_radius": 12,
+        "section_border_radius_mobile": 0,
+        "padding_top": 0,
+        "padding_bottom": 40,
+        "padding_top_mobile": 12,
+        "padding_bottom_mobile": 12,
+        "margin_top": 40,
+        "margin_bottom": 0,
+        "margin_top_mobile": 20,
+        "margin_bottom_mobile": 20,
+        "enable_carousel": true,
+        "cards_equal_height": true,
+        "cards_per_view_desktop": 3,
+        "cards_gap_desktop": 16,
+        "cards_gap_mobile": 16,
+        "show_navigation_arrows": true,
+        "navigation_arrows_border_width": 1,
+        "navigation_arrows_bg_color": "#ffffff",
+        "navigation_arrows_icon_color": "#000000",
+        "navigation_arrows_icon_color_disabled": "#bdbdbd",
+        "show_pagination_dots": true,
+        "pagination_dot_color_active": "#1e3b1d",
+        "pagination_dot_color_inactive": "#b3b3b3",
+        "card_padding_vertical": 16,
+        "card_padding_horizontal": 16,
+        "card_border_radius": 12,
+        "card_border_width": 1,
+        "card_bg_color": "#ffffff",
+        "card_border_color": "#1e3b1d",
+        "card_text_alignment": "left",
+        "enable_image_zoom": true,
+        "card_image_height_desktop": 180,
+        "card_image_height_mobile": 160,
+        "card_image_border_radius": 12,
+        "card_image_margin_bottom": 16,
+        "tag_custom_font": false,
+        "tag_as": "p",
+        "tag_font": "poppins_n4",
+        "tag_size_desktop": 12,
+        "tag_size_mobile": 11,
+        "tag_weight": 400,
+        "tag_line_height": 1.2,
+        "tag_color": "#ffffff",
+        "tag_padding_vertical": 4,
+        "tag_padding_horizontal": 10,
+        "tag_border_radius": 12,
+        "tag_border_width": 0,
+        "tag_bg_color": "#1e3b1d",
+        "tag_border_color": "#e0e0e0",
+        "tag_gap": 8,
+        "tags_margin_bottom": 10,
+        "card_heading_custom_font": false,
+        "card_heading_as": "h3",
+        "card_heading_font": "poppins_n4",
+        "card_heading_size_desktop": 20,
+        "card_heading_size_mobile": 18,
+        "card_heading_weight": 600,
+        "card_heading_line_height": 1.3,
+        "card_heading_color": "#1a1a1a",
+        "card_heading_margin_bottom": 12,
+        "card_description_custom_font": false,
+        "card_description_as": "p",
+        "card_description_font": "poppins_n4",
+        "card_description_size_desktop": 14,
+        "card_description_size_mobile": 14,
+        "card_description_weight": 400,
+        "card_description_line_height": 1.5,
+        "card_description_color": "#666666"
+      }
     },
     "vso_testimonials_14_Xt7hK1": {
-      "settings": {
-        "full_width_desktop": false,
-        "background_style": "gradient",
-        "background_gradient": "linear-gradient(180deg, rgba(238, 241, 234, 1) 0%, rgba(255, 255, 255, 1) 100%)",
-        "margin_top_desktop": 0,
-        "card_shadow_color": "#1E3B1D",
-        "star_color": "#1E3B1D",
-        "nav_arrow_shadow_color": "#1E3B1D",
-        "author_circle_background_color": "#1E3B1D",
-        "block_author_color": "#1E3B1D"
-      },
+      "type": "vso-testimonials-14",
       "blocks": {
         "review_summary_tbSEjh": {
           "type": "review_summary",
           "settings": {
-            "bg_color": "#1E3B1D"
+            "show_block": true,
+            "text": "Rated <strong>4.8/5</strong> based on <strong>+10,839</strong> Total Ratings",
+            "custom_font": false,
+            "font": "sans_serif_n4",
+            "size_desktop": 14,
+            "size_mobile": 13,
+            "line_height": 140,
+            "font_weight": 500,
+            "text_color": "#ffffff",
+            "stars_count": 5,
+            "bg_color": "#1e3b1d",
+            "stars_color": "#ffffff",
+            "empty_stars_color": "#bdbdbd",
+            "stars_size": 16,
+            "gap": 8,
+            "padding_y": 8,
+            "padding_x": 14,
+            "radius": 8,
+            "spacing_top_desktop": 0,
+            "spacing_bottom_desktop": 14,
+            "spacing_top_mobile": 0,
+            "spacing_bottom_mobile": 14
           }
         },
         "heading_cZrCC2": {
           "type": "heading",
-          "settings": {}
+          "settings": {
+            "heading": "Customer Reviews",
+            "heading_custom_font": false,
+            "heading_as": "h2",
+            "heading_font": "sans_serif_n4",
+            "heading_size_desktop": 40,
+            "heading_size_mobile": 32,
+            "heading_line_height": 130,
+            "heading_color": "#000000",
+            "heading_font_weight": 700,
+            "spacing_top_desktop": 0,
+            "spacing_bottom_desktop": 0,
+            "spacing_top_mobile": 0,
+            "spacing_bottom_mobile": 0
+          }
         },
         "star_card_1_MLGyKe": {
           "type": "star_card",
-          "settings": {}
+          "settings": {
+            "title": "",
+            "description": "<em>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</em>",
+            "author": "Sarah M.",
+            "author_subtitle": "3 days ago",
+            "verified_text": "Verified Rating"
+          }
         },
         "star_card_2_EaLsDk": {
           "type": "star_card",
-          "settings": {}
+          "settings": {
+            "title": "",
+            "description": "<em>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</em>",
+            "author": "Sarah M.",
+            "author_subtitle": "3 days ago",
+            "verified_text": "Verified Rating"
+          }
         },
         "star_card_3_DAUTtw": {
           "type": "star_card",
-          "settings": {}
+          "settings": {
+            "title": "",
+            "description": "<em>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</em>",
+            "author": "Sarah M.",
+            "author_subtitle": "3 days ago",
+            "verified_text": "Verified Rating"
+          }
         },
         "star_card_4_xssJnE": {
           "type": "star_card",
-          "settings": {}
+          "settings": {
+            "title": "",
+            "description": "<em>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</em>",
+            "author": "Sarah M.",
+            "author_subtitle": "3 days ago",
+            "verified_text": "Verified Rating"
+          }
         },
         "star_card_5_Vd3sJM": {
           "type": "star_card",
-          "settings": {}
+          "settings": {
+            "title": "",
+            "description": "<em>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</em>",
+            "author": "Sarah M.",
+            "author_subtitle": "3 days ago",
+            "verified_text": "Verified Rating"
+          }
         }
       },
       "block_order": [
@@ -566,19 +1169,97 @@
         "star_card_5_Vd3sJM"
       ],
       "name": "VSO - Testimonials 14",
-      "type": "vso-testimonials-14"
+      "settings": {
+        "enable_advanced_settings": false,
+        "background_style": "gradient",
+        "background_color": "#f7f7f7",
+        "background_gradient": "linear-gradient(180deg, rgba(238, 241, 234, 1) 0%, rgba(255, 255, 255, 1) 100%)",
+        "full_width_desktop": false,
+        "section_border_radius": 12,
+        "padding_top_desktop": 40,
+        "padding_bottom_desktop": 40,
+        "padding_top_mobile": 20,
+        "padding_bottom_mobile": 20,
+        "margin_top_desktop": 0,
+        "margin_bottom_desktop": 40,
+        "margin_top_mobile": 20,
+        "margin_bottom_mobile": 20,
+        "block_background_color": "#ffffff",
+        "block_padding": 24,
+        "enable_full_width_card_image": false,
+        "card_image_max_height_desktop": 260,
+        "card_image_max_height_mobile": 200,
+        "block_elements_gap": 10,
+        "block_border_radius": 8,
+        "desktop_card_width": 350,
+        "desktop_blocks_gap": 32,
+        "mobile_blocks_gap": 16,
+        "enable_equal_height": false,
+        "block_border_width": 0,
+        "block_border_color": "#e0e0e0",
+        "enable_card_shadow": true,
+        "card_shadow_color": "#1e3b1d",
+        "star_size": 18,
+        "star_color": "#1e3b1d",
+        "custom_block_title_font": false,
+        "block_title_as": "h3",
+        "block_title_font": "sans_serif_n4",
+        "block_title_size_desktop": 18,
+        "block_title_size_mobile": 16,
+        "block_title_line_height": 130,
+        "block_title_color": "#111111",
+        "custom_block_description_font": false,
+        "block_description_as": "p",
+        "block_description_font": "sans_serif_n4",
+        "block_description_size_desktop": 16,
+        "block_description_size_mobile": 14,
+        "block_description_line_height": 150,
+        "block_description_color": "#232323",
+        "block_description_font_weight": 400,
+        "author_circle_size": 40,
+        "author_circle_size_mobile": 36,
+        "author_circle_background_color": "#1e3b1d",
+        "author_circle_text_color": "#ffffff",
+        "author_container_gap": 8,
+        "block_author_size_desktop": 14,
+        "block_author_size_mobile": 13,
+        "block_author_line_height": 140,
+        "block_author_color": "#1e3b1d",
+        "block_author_font_weight": 600,
+        "block_verified_size_desktop": 12,
+        "block_verified_size_mobile": 11,
+        "block_verified_line_height": 130,
+        "block_verified_color": "#888888",
+        "block_verified_font_weight": 400,
+        "show_navigation_desktop": true,
+        "show_navigation_mobile": true,
+        "nav_arrow_size": 50,
+        "nav_arrow_bg_color": "#ffffff",
+        "nav_arrow_icon_color": "#6b7280",
+        "nav_arrow_border_width": 0,
+        "nav_arrow_border_color": "#e5e7eb",
+        "nav_arrow_shadow_enable": true,
+        "nav_arrow_shadow_color": "#1e3b1d",
+        "nav_arrow_gap": 10,
+        "nav_arrow_top_spacing": 0
+      }
     },
     "vso_hero_47_bOIkOt": {
-      "settings": {
-        "section_bg_type": "gradient",
-        "section_bg_gradient": "linear-gradient(135deg, rgba(30, 59, 29, 1) 0%, rgba(29, 29, 29, 1) 100%)",
-        "benefit_text_color": "#FFFFFF"
-      },
+      "type": "vso-hero-47",
       "blocks": {
         "heading_AJLMlS": {
           "type": "heading",
           "settings": {
-            "heading": "Why People Choose Us"
+            "heading": "Why People Choose Us",
+            "heading_color": "#ffffff",
+            "heading_custom_font": true,
+            "heading_as": "h2",
+            "heading_font": "poppins_n7",
+            "heading_font_size": 42,
+            "heading_font_size_mobile": 32,
+            "heading_line_height": 120,
+            "heading_font_weight": 700,
+            "heading_letter_spacing": 0
           }
         },
         "benefit_1_htG8Zq": {
@@ -610,40 +1291,147 @@
         "benefit_3_pZgdq7"
       ],
       "name": "VSO - Hero 47",
-      "type": "vso-hero-47"
+      "settings": {
+        "enable_advanced_settings": false,
+        "section_max_width": 90,
+        "section_horizontal_padding": 0,
+        "section_horizontal_padding_mobile": 0,
+        "section_bg_type": "gradient",
+        "section_bg_color": "#242424",
+        "section_bg_gradient": "linear-gradient(135deg, rgba(30, 59, 29, 1) 0%, rgba(29, 29, 29, 1) 100%)",
+        "full_width_desktop": false,
+        "full_width_mobile": false,
+        "section_border_radius": 12,
+        "section_border_radius_mobile": 0,
+        "section_border_color": "#e5e7eb",
+        "section_border_width": 0,
+        "section_border_width_mobile": 0,
+        "layout_gap": 40,
+        "layout_gap_mobile": 24,
+        "section_padding_top": 40,
+        "section_padding_bottom": 40,
+        "section_padding_top_mobile": 20,
+        "section_padding_bottom_mobile": 20,
+        "margin_top": 40,
+        "margin_bottom": 40,
+        "margin_top_mobile": 20,
+        "margin_bottom_mobile": 20,
+        "benefit_image_size": 48,
+        "benefit_image_size_mobile": 40,
+        "benefit_title_color": "#ffffff",
+        "benefit_title_custom_font": true,
+        "benefit_title_as": "h3",
+        "benefit_title_font": "poppins_n7",
+        "benefit_title_font_size": 16,
+        "benefit_title_font_size_mobile": 16,
+        "benefit_title_line_height": 130,
+        "benefit_title_font_weight": 700,
+        "benefit_title_letter_spacing": 0,
+        "benefit_text_color": "#ffffff",
+        "benefit_text_custom_font": false,
+        "benefit_text_as": "p",
+        "benefit_text_font": "poppins_n4",
+        "benefit_text_font_size": 14,
+        "benefit_text_font_size_mobile": 14,
+        "benefit_text_line_height": 150,
+        "benefit_text_font_weight": 400,
+        "benefit_text_letter_spacing": 0,
+        "benefit_padding": 0,
+        "benefit_padding_mobile": 0,
+        "benefit_content_gap": 12
+      }
     },
     "vso_faq_02_XYxdFn": {
-      "settings": {},
+      "type": "vso-faq-02",
       "blocks": {
         "title_wMRzQ5": {
           "type": "title",
           "settings": {
-            "title_highlight_color": "#478641"
+            "title": "Answers to Your _Important_ Questions",
+            "title_color": "#000000",
+            "title_highlight_color": "#478641",
+            "custom_font": false,
+            "title_as": "h2",
+            "font": "bricolage_grotesque_n4",
+            "title_size": 40,
+            "title_size_mobile": 26,
+            "title_alignment_desktop": "left",
+            "title_alignment_mobile": "center",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "margin_top_mobile": 0,
+            "margin_bottom_mobile": 0
           }
         },
         "subtitle_EvXGjz": {
           "type": "subtitle",
-          "settings": {}
+          "settings": {
+            "subtitle": "<p>Didn't find what you were looking for? Contact us and our support team will be happy to help.</p>",
+            "subtitle_color": "#333333",
+            "custom_font": false,
+            "subtitle_as": "p",
+            "font": "bricolage_grotesque_n4",
+            "subtitle_size": 20,
+            "subtitle_size_mobile": 18,
+            "subtitle_alignment_desktop": "left",
+            "subtitle_alignment_mobile": "center",
+            "margin_top": 10,
+            "margin_bottom": 10,
+            "margin_top_mobile": 10,
+            "margin_bottom_mobile": 10
+          }
         },
         "team_YH0rbu": {
           "type": "team",
-          "settings": {}
+          "settings": {
+            "team_images_count": 3,
+            "team_image_size": 60,
+            "team_image_border_width": 2,
+            "team_image_border_color": "#ffffff",
+            "team_images_overlap": 10,
+            "team_images_margin_bottom": 10,
+            "paragraph": "Meet our team of experts who are ready to assist you with any questions you may have.",
+            "team_paragraph_color": "#333333",
+            "custom_font": false,
+            "team_paragraph_as": "p",
+            "font": "bricolage_grotesque_n4",
+            "team_paragraph_size": 18,
+            "team_paragraph_size_mobile": 16,
+            "team_alignment_desktop": "left",
+            "team_alignment_mobile": "center",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "margin_top_mobile": 0,
+            "margin_bottom_mobile": 30
+          }
         },
         "faq_item_1_nCxGYg": {
           "type": "faq_item",
-          "settings": {}
+          "settings": {
+            "question": "What is the return policy?",
+            "answer": "<p>Our return policy allows for returns within 30 days of purchase. Please see our website for more details.</p>"
+          }
         },
         "faq_item_2_ohlkGR": {
           "type": "faq_item",
-          "settings": {}
+          "settings": {
+            "question": "What is the return policy?",
+            "answer": "<p>Our return policy allows for returns within 30 days of purchase. Please see our website for more details.</p>"
+          }
         },
         "faq_item_3_aKHWJF": {
           "type": "faq_item",
-          "settings": {}
+          "settings": {
+            "question": "What is the return policy?",
+            "answer": "<p>Our return policy allows for returns within 30 days of purchase. Please see our website for more details.</p>"
+          }
         },
         "faq_item_4_jrk0ZU": {
           "type": "faq_item",
-          "settings": {}
+          "settings": {
+            "question": "What is the return policy?",
+            "answer": "<p>Our return policy allows for returns within 30 days of purchase. Please see our website for more details.</p>"
+          }
         }
       },
       "block_order": [
@@ -656,7 +1444,46 @@
         "faq_item_4_jrk0ZU"
       ],
       "name": "VSO - FAQ 02",
-      "type": "vso-faq-02"
+      "settings": {
+        "enable_advanced_settings": false,
+        "section_full_width": false,
+        "section_max_width_desktop": 120,
+        "padding_horizontal": 20,
+        "padding_horizontal_mobile": 15,
+        "desktop_column_gap": 20,
+        "left_column_padding_right_desktop": 40,
+        "section_bg_type": "solid",
+        "section_bg_color": "#ffffff",
+        "section_bg_gradient": "linear-gradient(360deg, #F5F5F5 0%, #FFFFFF 100%)",
+        "full_width_desktop": true,
+        "section_border_radius": 12,
+        "padding_top": 40,
+        "padding_bottom": 40,
+        "padding_top_mobile": 20,
+        "padding_bottom_mobile": 20,
+        "margin_top": 40,
+        "margin_bottom": 40,
+        "margin_top_mobile": 20,
+        "margin_bottom_mobile": 20,
+        "faq_item_gap": 10,
+        "faq_divider_width": 1,
+        "faq_question_color": "#000000",
+        "faq_question_custom_font": false,
+        "faq_question_as": "p",
+        "faq_question_font": "bricolage_grotesque_n4",
+        "faq_question_font_size": 18,
+        "faq_question_font_size_mobile": 16,
+        "faq_question_font_weight": "500",
+        "faq_question_padding_vertical": 10,
+        "faq_question_padding_vertical_mobile": 10,
+        "faq_answer_color": "#333333",
+        "faq_answer_custom_font": false,
+        "faq_answer_font": "bricolage_grotesque_n4",
+        "faq_answer_font_size": 16,
+        "faq_answer_font_size_mobile": 15,
+        "faq_icon_size": 18,
+        "faq_icon_color": "#000000"
+      }
     }
   },
   "order": [
