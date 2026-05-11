@@ -279,6 +279,7 @@
         "kit-2": {
           "type": "kit",
           "settings": {
+            "imagen": "shopify://shop_images/Kit_Desinflamar_21c31fe7-3658-4926-a9ec-96ef289d9fbd.png",
             "nombre": "Desinflamar",
             "descripcion": "Apoya la inflamación natural y el equilibrio digestivo.",
             "cta_label": "Ver kit",
