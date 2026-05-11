@@ -57,7 +57,7 @@
         "text_WKhTaO": {
           "type": "text",
           "settings": {
-            "text": "<p>Apoya el _equilibrio emociona_l, ayuda a manejar el estrés diario y favorece un descanso de mejor calidad.</p>",
+            "text": "<p>Apoya el _equilibrio emocional_, ayuda a manejar el _estrés diario_ y favorece un _descanso_ de mejor calidad.</p>",
             "text_highlight_color": "#d7fca3",
             "text_highlight_text_color": "#111111",
             "text_color": "#555555",
@@ -331,7 +331,7 @@
         "heading_rUiuRq": {
           "type": "heading",
           "settings": {
-            "subtitle": "Science-Backed Gut Health",
+            "subtitle": "<strong>Bienestar emocional y descanso</strong>",
             "subtitle_custom_font": false,
             "subtitle_as": "p",
             "subtitle_font": "poppins_n4",
@@ -342,7 +342,7 @@
             "subtitle_letter_spacing": 1,
             "subtitle_color": "#ffffff",
             "subtitle_spacing": 16,
-            "title": "Feel the difference of a truly healthy gut.",
+            "title": "<strong>Siente más calma en tu rutina diaria.</strong>",
             "title_custom_font": false,
             "title_as": "h2",
             "title_font": "poppins_n6",
@@ -391,29 +391,29 @@
         "feature_1_iokXup": {
           "type": "feature",
           "settings": {
-            "feature_title": "Diverse Probiotic Strains",
-            "feature_text": "24 strains support microbial diversity, the foundation of a healthy gut."
+            "feature_title": "<strong>Ayuda a reducir el estrés</strong>",
+            "feature_text": "Favorece una respuesta más equilibrada frente al estrés diario."
           }
         },
         "feature_2_n0zBc0": {
           "type": "feature",
           "settings": {
-            "feature_title": "Engineered to Survive",
-            "feature_text": "ViaCap® delivery system safeguards probiotics all the way to the colon."
+            "feature_title": "<strong>Equilibrio emocional</strong>",
+            "feature_text": "Apoya la calma mental y el bienestar general durante el día."
           }
         },
         "feature_3_2EfXxK": {
           "type": "feature",
           "settings": {
-            "feature_title": "Feeds Good Gut Microbes",
-            "feature_text": "Antioxidant-promoting prebiotic feeds beneficial gut microbes."
+            "feature_title": "<strong>Mejor descanso</strong>",
+            "feature_text": "Contribuye a una rutina de sueño más estable y reparadora."
           }
         },
         "feature_4_w0MBJV": {
           "type": "feature",
           "settings": {
-            "feature_title": "Proven in 4 Clinical Trials",
-            "feature_text": "Scientifically validated in four, gold-standard clinical trials."
+            "feature_title": "<strong>Energía sin estimulantes</strong>",
+            "feature_text": "Ideal para sentirte más centrado, sin depender de cafeína o estimulantes."
           }
         }
       },
