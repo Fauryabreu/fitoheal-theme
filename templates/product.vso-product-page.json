@@ -38,7 +38,7 @@
         "title_bpx6jA": {
           "type": "title",
           "settings": {
-            "title_text": "",
+            "title_text": "Ashwagandha Withania Somnífera D3",
             "heading_tag": "h3",
             "title_custom_typography": true,
             "title_size": 30,
@@ -57,7 +57,7 @@
         "text_WKhTaO": {
           "type": "text",
           "settings": {
-            "text": "<p>Advanced _probiotic + prebiotic synbiotic_ designed to support gut health, digestion, immunity, and skin balance.</p>",
+            "text": "<p>Apoya el _equilibrio emociona_l, ayuda a manejar el estrés diario y favorece un descanso de mejor calidad.</p>",
             "text_highlight_color": "#d7fca3",
             "text_highlight_text_color": "#111111",
             "text_color": "#555555",
@@ -160,7 +160,7 @@
         "description_4X83w7": {
           "type": "description",
           "settings": {
-            "description_text": "",
+            "description_text": "<p>Una fórmula liposomal de alta absorción diseñada para apoyar tu bienestar diario, la calma mental y la calidad del sueño.</p>",
             "description_color": "#111111",
             "description_font_size": 16,
             "description_font_size_mobile": 14,
@@ -210,9 +210,9 @@
           "type": "benefits",
           "settings": {
             "hide_on_mobile": true,
-            "text_1": "Supports Gut Balance",
-            "text_2": "Reduces Bloating & Discomfort",
-            "text_3": "Supports Immune & Skin Health",
+            "text_1": "<strong>Ayuda a reducir el estrés</strong>",
+            "text_2": "Favorece el equilibrio emocional",
+            "text_3": "Apoya la calidad del sueño",
             "column_width": 170,
             "column_width_mobile": 100,
             "box_gap": 12,
