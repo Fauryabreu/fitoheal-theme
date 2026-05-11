@@ -485,7 +485,7 @@
           "type": "heading",
           "settings": {
             "heading_alignment": "center",
-            "heading": "A Healthier Gut, _Step by Step",
+            "heading": "Un apoyo diario para _sentir más equilibrio",
             "heading_custom_font": false,
             "heading_as": "h3",
             "heading_font": "poppins_n4",
@@ -493,7 +493,7 @@
             "heading_size_mobile": 32,
             "heading_weight": 600,
             "heading_color": "#1f2937",
-            "heading_highlight_color": "linear-gradient(128deg, rgba(89, 112, 89, 1) 0%, rgba(115, 145, 115, 1) 100%)",
+            "heading_highlight_color": "linear-gradient(128deg, rgba(89, 112, 89, 1), rgba(115, 145, 115, 1) 100%)",
             "heading_highlight_custom_font": false,
             "heading_highlight_font": "poppins_n4",
             "heading_highlight_weight": 600,
@@ -544,25 +544,25 @@
         "timeline_item_1_AaGtoe": {
           "type": "timeline_item",
           "settings": {
-            "subheading": "Weeks 1–2",
-            "heading": "Gut Adjustment Begins",
-            "description": "<p>Your microbiome begins adapting to the probiotic strains. Some users notice less digestive discomfort as beneficial bacteria begin to balance the gut.</p>"
+            "subheading": "Primeros días",
+            "heading": "Tu cuerpo empieza a adaptarse",
+            "description": "<p>La Ashwagandha puede ayudar a apoyar una respuesta más equilibrada frente al estrés diario y favorecer una sensación gradual de calma.</p>"
           }
         },
         "timeline_item_2_3Qr27B": {
           "type": "timeline_item",
           "settings": {
-            "subheading": "Weeks 3–4",
-            "heading": "Improved Digestive Balance",
-            "description": "<p>As microbial diversity improves, digestion may feel smoother and occasional bloating may decrease with consistent use.</p>"
+            "subheading": "Semanas 2–4",
+            "heading": "Mayor equilibrio emocional",
+            "description": "<p>Con el uso constante, puede contribuir a sentirte más centrado durante el día y apoyar una rutina de descanso más estable.</p>"
           }
         },
         "timeline_item_3_6WDi7E": {
           "type": "timeline_item",
           "settings": {
-            "subheading": "Months 2–3+",
-            "heading": "Stronger Gut Support",
-            "description": "<p>With continued daily use, the microbiome becomes more balanced, helping support digestion, immune health, and overall gut wellness.</p>"
+            "subheading": "Uso continuo",
+            "heading": "Mejor bienestar diario",
+            "description": "<p>Como parte de una rutina saludable, puede favorecer la calma mental, el equilibrio de energía y la calidad del sueño.</p>"
           }
         }
       },
