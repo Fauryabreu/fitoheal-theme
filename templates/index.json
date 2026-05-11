@@ -138,6 +138,46 @@
     "product-tabs": {
       "type": "product-tabs",
       "blocks": {
+        "product_mFUaEJ": {
+          "type": "product",
+          "settings": {
+            "tab": "metabolismo",
+            "product": "citrato-de-magnesio-d3-liposomal",
+            "badge": "Alta absorción X5"
+          }
+        },
+        "product_iPr3qL": {
+          "type": "product",
+          "settings": {
+            "tab": "metabolismo",
+            "product": "curcuma-longa-d3-liposomal",
+            "badge": "Alta absorción X5"
+          }
+        },
+        "product_pMyTUd": {
+          "type": "product",
+          "settings": {
+            "tab": "metabolismo",
+            "product": "berberina-liposomal",
+            "badge": "Alta absorción X5"
+          }
+        },
+        "product_zThPFm": {
+          "type": "product",
+          "settings": {
+            "tab": "enfoque",
+            "product": "berberina-liposomal",
+            "badge": "Alta absorción X5"
+          }
+        },
+        "product_n6AX9n": {
+          "type": "product",
+          "settings": {
+            "tab": "enfoque",
+            "product": "ashwadanga-withania-sonmiferia",
+            "badge": "Alta absorción X5"
+          }
+        },
         "product_achebK": {
           "type": "product",
           "settings": {
@@ -196,6 +236,11 @@
         }
       },
       "block_order": [
+        "product_mFUaEJ",
+        "product_iPr3qL",
+        "product_pMyTUd",
+        "product_zThPFm",
+        "product_n6AX9n",
         "product_achebK",
         "product_UPz3qb",
         "product_zchbHQ",
