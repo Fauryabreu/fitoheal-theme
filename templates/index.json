@@ -138,6 +138,14 @@
     "product-tabs": {
       "type": "product-tabs",
       "blocks": {
+        "product_achebK": {
+          "type": "product",
+          "settings": {
+            "tab": "enfoque",
+            "product": "melena-de-leon-liposomal",
+            "badge": "Alta absorción X5"
+          }
+        },
         "product_UPz3qb": {
           "type": "product",
           "settings": {
@@ -188,6 +196,7 @@
         }
       },
       "block_order": [
+        "product_achebK",
         "product_UPz3qb",
         "product_zchbHQ",
         "product_96E7dL",
