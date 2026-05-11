@@ -210,7 +210,7 @@
           "type": "benefits",
           "settings": {
             "hide_on_mobile": true,
-            "text_1": "<strong>Envío Gratis</strong>",
+            "text_1": "<strong>Envío Gratis. Pedidos más de $150,000</strong>",
             "text_2": "Paga al recibir",
             "text_3": "Entrega de 24 a 48 Hrs",
             "column_width": 170,
