@@ -138,43 +138,62 @@
     "product-tabs": {
       "type": "product-tabs",
       "blocks": {
-        "tab-descanso": {
-          "type": "tab",
+        "product_UPz3qb": {
+          "type": "product",
           "settings": {
-            "label": "descanso",
-            "product_1": "ashwadanga-withania-sonmiferia",
-            "product_2": "glicinato-de-magnesio-d3-liposomal",
-            "product_3": "melena-de-leon-liposomal",
+            "tab": "descanso",
+            "product": "melena-de-leon-liposomal",
             "badge": "Alta absorción X5"
           }
         },
-        "tab-digestion": {
-          "type": "tab",
+        "product_zchbHQ": {
+          "type": "product",
           "settings": {
-            "label": "digestión",
+            "tab": "digestion",
+            "product": "citrato-de-magnesio-d3-liposomal",
             "badge": "Alta absorción X5"
           }
         },
-        "tab-enfoque": {
-          "type": "tab",
+        "product_96E7dL": {
+          "type": "product",
           "settings": {
-            "label": "enfoque",
+            "tab": "digestion",
+            "product": "berberina-liposomal",
             "badge": "Alta absorción X5"
           }
         },
-        "tab-metabolismo": {
-          "type": "tab",
+        "product_mRRLqm": {
+          "type": "product",
           "settings": {
-            "label": "metabolismo",
+            "tab": "digestion",
+            "product": "melena-de-leon-liposomal",
+            "badge": "Alta absorción X5"
+          }
+        },
+        "prod-d1": {
+          "type": "product",
+          "settings": {
+            "tab": "descanso",
+            "product": "ashwadanga-withania-sonmiferia",
+            "badge": "Alta absorción X5"
+          }
+        },
+        "prod-d2": {
+          "type": "product",
+          "settings": {
+            "tab": "descanso",
+            "product": "glicinato-de-magnesio-d3-liposomal",
             "badge": "Alta absorción X5"
           }
         }
       },
       "block_order": [
-        "tab-descanso",
-        "tab-digestion",
-        "tab-enfoque",
-        "tab-metabolismo"
+        "product_UPz3qb",
+        "product_zchbHQ",
+        "product_96E7dL",
+        "product_mRRLqm",
+        "prod-d1",
+        "prod-d2"
       ],
       "settings": {
         "bg_color": "#fafdf8",
