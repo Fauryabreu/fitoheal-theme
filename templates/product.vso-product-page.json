@@ -1448,7 +1448,7 @@
         "title_wMRzQ5": {
           "type": "title",
           "settings": {
-            "title": "Answers to Your _Important_ Questions",
+            "title": "<strong>Resuelve _tus dudas_ importantes</strong>",
             "title_color": "#000000",
             "title_highlight_color": "#478641",
             "custom_font": false,
@@ -1467,8 +1467,8 @@
         "subtitle_EvXGjz": {
           "type": "subtitle",
           "settings": {
-            "subtitle": "<p>Didn't find what you were looking for? Contact us and our support team will be happy to help.</p>",
-            "subtitle_color": "#333333",
+            "subtitle": "<p><strong>Información clara para que sepas cómo integrar Ashwagandha Liposomal a tu rutina diaria.</strong></p>",
+            "subtitle_color": "#121212",
             "custom_font": false,
             "subtitle_as": "p",
             "font": "bricolage_grotesque_n4",
@@ -1484,6 +1484,7 @@
         },
         "team_YH0rbu": {
           "type": "team",
+          "disabled": true,
           "settings": {
             "team_images_count": 3,
             "team_image_size": 60,
@@ -1509,29 +1510,29 @@
         "faq_item_1_nCxGYg": {
           "type": "faq_item",
           "settings": {
-            "question": "What is the return policy?",
-            "answer": "<p>Our return policy allows for returns within 30 days of purchase. Please see our website for more details.</p>"
+            "question": "<strong>¿Para qué sirve la Ashwagandha Liposomal?</strong>",
+            "answer": "<p>Apoya el manejo del estrés diario, favorece el equilibrio emocional y contribuye a una mejor calidad de descanso.</p>"
           }
         },
         "faq_item_2_ohlkGR": {
           "type": "faq_item",
           "settings": {
-            "question": "What is the return policy?",
-            "answer": "<p>Our return policy allows for returns within 30 days of purchase. Please see our website for more details.</p>"
+            "question": "<strong>¿Cómo debo tomarla?</strong>",
+            "answer": "<p><strong>Tomar de 1 a 2 cápsulas al día con agua, según tu rutina y tolerancia.</strong></p>"
           }
         },
         "faq_item_3_aKHWJF": {
           "type": "faq_item",
           "settings": {
-            "question": "What is the return policy?",
-            "answer": "<p>Our return policy allows for returns within 30 days of purchase. Please see our website for more details.</p>"
+            "question": "<strong>¿Qué diferencia tiene la tecnología liposomal?</strong>",
+            "answer": "<p>Ayuda a proteger y transportar los activos para favorecer una mejor absorción y aprovechamiento en el organismo.</p>"
           }
         },
         "faq_item_4_jrk0ZU": {
           "type": "faq_item",
           "settings": {
-            "question": "What is the return policy?",
-            "answer": "<p>Our return policy allows for returns within 30 days of purchase. Please see our website for more details.</p>"
+            "question": "<strong>¿Tiene estimulantes?</strong>",
+            "answer": "<p>No. Es una fórmula pensada para apoyar la calma, el equilibrio y el bienestar diario sin depender de estimulantes.</p>"
           }
         }
       },
