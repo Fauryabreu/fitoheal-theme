@@ -176,8 +176,8 @@
         "collapsible_row_1_DAxcm0": {
           "type": "collapsible_row",
           "settings": {
-            "title": "How does this synbiotic work?",
-            "content": "<p>Share additional information with your customers.</p>",
+            "title": "¿Cómo funciona la Ashwagandha?",
+            "content": "<p>La Ashwagandha es un adaptógeno natural que ayuda al cuerpo a manejar mejor el estrés diario. Su fórmula liposomal favorece una mejor absorción, apoyando la calma mental, el equilibrio emocional y el descanso.</p>",
             "margin_top_desktop": 0,
             "margin_bottom_desktop": 0,
             "margin_top_mobile": 0,
@@ -187,8 +187,8 @@
         "collapsible_row_2_b5NJ8R": {
           "type": "collapsible_row",
           "settings": {
-            "title": "When should I take it?",
-            "content": "<p>Share additional information with your customers.</p>",
+            "title": "¿Cuándo debo tomarla?",
+            "content": "<p>Tomar <strong>1 a 2 cápsulas al día</strong>, preferiblemente con agua y según la tolerancia de cada persona. Para rutinas enfocadas en descanso, muchas personas prefieren tomarla en la tarde o noche. La etiqueta indica uso oral y dosis de 1 a 2 cápsulas al día. </p>",
             "margin_top_desktop": 0,
             "margin_bottom_desktop": 0,
             "margin_top_mobile": 0,
@@ -198,8 +198,8 @@
         "collapsible_row_3_fMM5Om": {
           "type": "collapsible_row",
           "settings": {
-            "title": "How long until I notice results?",
-            "content": "<p>Share additional information with your customers.</p>",
+            "title": "¿En cuánto tiempo puedo notar cambios?",
+            "content": "<p>Cada cuerpo responde de manera diferente. El uso constante puede ayudar a sentir mayor equilibrio, calma y mejor calidad de descanso dentro de una rutina diaria saludable.</p>",
             "margin_top_desktop": 0,
             "margin_bottom_desktop": 0,
             "margin_top_mobile": 0,
@@ -247,7 +247,7 @@
             "gap": 20,
             "title": "Finalmente pude desconectar mejor",
             "body": "<p>Sentía la mente acelerada al final del día. Después de incluir Ashwagandha en mi rutina, he sentido más calma y un descanso más estable.</p>",
-            "author": "— Melissa R.",
+            "author": "— Cliente",
             "text_gap": 4,
             "title_color": "#111111",
             "title_custom_font": false,
