@@ -416,7 +416,8 @@
       "name": "Footer",
       "settings": {
         "bg_color": "#ffffff",
-        "logo_text": "fitoheal",
+        "logo": "shopify://shop_images/logo_fitoheal_verde_2.png",
+        "logo_text": "",
         "descripcion": "Soluciones liposomales de alta absorción con ingredientes naturales para tu bienestar diario.",
         "instagram": "",
         "tiktok": "",
