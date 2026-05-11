@@ -364,7 +364,8 @@
         "bg_color": "#ffffff",
         "titulo": "Cómo funciona tu bienestar, simple.",
         "cta_label": "Descubre tu objetivo",
-        "cta_link": ""
+        "cta_link": "",
+        "imagen": "shopify://shop_images/Como_funciona.png"
       }
     },
     "cta-banner": {
