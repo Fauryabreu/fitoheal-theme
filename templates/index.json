@@ -289,6 +289,7 @@
         "kit-3": {
           "type": "kit",
           "settings": {
+            "imagen": "shopify://shop_images/Kit_Metabolismo.png",
             "nombre": "Metabólico",
             "descripcion": "Apoya el metabolismo de la glucosa y la inflamación.",
             "cta_label": "Ver kit",
