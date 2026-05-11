@@ -133,6 +133,12 @@
         "f4",
         "f5"
       ],
+      "custom_css": [
+        ".fh-features-bar {display: flex; align-items: center; justify-content: center; gap: 48px; padding: 18px 40px; flex-wrap: nowrap;}",
+        ".fh-feature-item {display: flex; flex-direction: row; align-items: center; justify-content: center; gap: 8px; flex-shrink: 0;}",
+        ".fh-feature-item svg {width: 22px; height: 22px; flex-shrink: 0; display: block;}",
+        ".fh-feature-item span {font-size: 13px; font-weight: 500; line-height: 1; white-space: nowrap;}"
+      ],
       "settings": {}
     },
     "product-tabs": {
