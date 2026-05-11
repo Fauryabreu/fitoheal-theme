@@ -326,7 +326,8 @@
         "titulo": "Más sobre Fitoheal",
         "descripcion": "<p>Somos un sistema de soluciones liposomales de alta absorción con ingredientes seleccionados y ciencia moderna para acompañarte en tus objetivos sin restricciones impuestas.</p><p>Creados para integrarse fácilmente a tu rutina diaria y ayudarte a sentir la mejor versión. Todos los días.</p>",
         "cta_label": "Conoce nuestra historia",
-        "cta_link": ""
+        "cta_link": "",
+        "imagen": "shopify://shop_images/Sobre_FitoHeal.png"
       }
     },
     "how-it-works": {
