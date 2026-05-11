@@ -38,7 +38,7 @@
         "title_bpx6jA": {
           "type": "title",
           "settings": {
-            "title_text": "Ashwagandha Withania Somnífera D3",
+            "title_text": "Ashwagandha Withania Somnífera D3 Liposomal",
             "heading_tag": "h3",
             "title_custom_typography": true,
             "title_size": 30,
@@ -638,7 +638,7 @@
           "type": "heading",
           "settings": {
             "content_alignment": "left",
-            "title": "Strengthens your gut at the _source_ for lasting relief.",
+            "title": "<strong>Tecnología _liposomal para una mejor absorción</strong>",
             "title_color": "#000000",
             "title_highlight_color": "#478641",
             "custom_title_font": false,
@@ -662,29 +662,29 @@
         "benefit_1_5lAsTN": {
           "type": "benefit",
           "settings": {
-            "title": "4.6x",
-            "text": "Increase in beneficial gut bacteria"
+            "title": "<strong>Alta absorción X5</strong>",
+            "text": "Favorece mayor disponibilidad del activo."
           }
         },
         "benefit_2_WLkZAU": {
           "type": "benefit",
           "settings": {
-            "title": "85%",
-            "text": "Increase in skin barrier protection"
+            "title": "<strong>Mejor aprovechamiento</strong>",
+            "text": "Ayuda a que cada cápsula trabaje mejor."
           }
         },
         "benefit_3_XK8kZV": {
           "type": "benefit",
           "settings": {
-            "title": "50%",
-            "text": "Stronger gut barrier"
+            "title": "<strong>Uso constante</strong>",
+            "text": "Apoya una experiencia más estable."
           }
         },
         "benefit_4_gPhHh1": {
           "type": "benefit",
           "settings": {
-            "title": "25%",
-            "text": "Decrease in waist size"
+            "title": "<strong>Rutina fácil</strong>",
+            "text": "Cápsulas prácticas para el día a día."
           }
         }
       },
@@ -980,6 +980,7 @@
         "card_4_RumQHb",
         "card_5_UQzPEX"
       ],
+      "disabled": true,
       "name": "VSO - Hero 32",
       "settings": {
         "enable_advanced_settings": false,
@@ -1291,6 +1292,7 @@
         "benefit_2_ONW6z9",
         "benefit_3_pZgdq7"
       ],
+      "disabled": true,
       "name": "VSO - Hero 47",
       "settings": {
         "enable_advanced_settings": false,
@@ -1299,7 +1301,7 @@
         "section_horizontal_padding_mobile": 0,
         "section_bg_type": "gradient",
         "section_bg_color": "#242424",
-        "section_bg_gradient": "linear-gradient(135deg, rgba(30, 59, 29, 1) 0%, rgba(29, 29, 29, 1) 100%)",
+        "section_bg_gradient": "linear-gradient(135deg, rgba(30, 59, 29, 1), rgba(29, 29, 29, 1) 100%)",
         "full_width_desktop": false,
         "full_width_mobile": false,
         "section_border_radius": 12,
