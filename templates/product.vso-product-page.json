@@ -762,7 +762,7 @@
             "title_font_size": 30,
             "title_font_size_mobile": 24,
             "title_margin_bottom": 20,
-            "title_color": "#000000"
+            "title_color": "#1b4332"
           }
         },
         "description_gdagdr": {
@@ -809,7 +809,7 @@
       "settings": {
         "reverse_layout": false,
         "mobile_reverse_layout": true,
-        "content_background_color": "#F7F7F7",
+        "content_background_color": "#f4f4f4",
         "features_gap": 20,
         "features_margin_top": 10,
         "feature_icon_size": 48,
