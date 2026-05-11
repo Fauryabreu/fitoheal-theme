@@ -269,6 +269,7 @@
         "kit-1": {
           "type": "kit",
           "settings": {
+            "imagen": "shopify://shop_images/kit_descanso_estress.png",
             "nombre": "Sueño / Estrés",
             "descripcion": "Relájate, baja el estrés y mejora tu descanso.",
             "cta_label": "Ver kit",
