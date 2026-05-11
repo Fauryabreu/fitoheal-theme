@@ -149,6 +149,13 @@
       }
     },
     "content_for_index": [],
+    "blocks": {
+      "9498069353249421316": {
+        "type": "shopify://apps/section-vso-theme-sections/blocks/versioScript/06016590-3938-4460-bd08-bd58cf996a58",
+        "disabled": false,
+        "settings": {}
+      }
+    },
     "color_schemes": {
       "scheme-1": {
         "settings": {
