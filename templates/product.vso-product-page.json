@@ -210,9 +210,9 @@
           "type": "benefits",
           "settings": {
             "hide_on_mobile": true,
-            "text_1": "<strong>Ayuda a reducir el estrés</strong>",
-            "text_2": "Favorece el equilibrio emocional",
-            "text_3": "Apoya la calidad del sueño",
+            "text_1": "<strong>Envío Gratis</strong>",
+            "text_2": "Paga al recibir",
+            "text_3": "Entrega de 24 a 48 Hrs",
             "column_width": 170,
             "column_width_mobile": 100,
             "box_gap": 12,
@@ -829,7 +829,7 @@
         "margin_bottom_desktop": 0,
         "margin_tablet_mobile": 0,
         "margin_bottom_tablet_mobile": 0,
-        "background_color": "#FFFFFF",
+        "background_color": "#ffffff",
         "background_gradient_color": ""
       }
     },
