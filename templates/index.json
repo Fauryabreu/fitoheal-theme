@@ -138,35 +138,43 @@
     "product-tabs": {
       "type": "product-tabs",
       "blocks": {
-        "prod-d1": {
-          "type": "product",
+        "tab-descanso": {
+          "type": "tab",
           "settings": {
-            "tab": "descanso",
-            "product": "ashwadanga-withania-sonmiferia",
+            "label": "descanso",
+            "product_1": "ashwadanga-withania-sonmiferia",
+            "product_2": "glicinato-de-magnesio-d3-liposomal",
+            "product_3": "melena-de-leon-liposomal",
             "badge": "Alta absorción X5"
           }
         },
-        "prod-d2": {
-          "type": "product",
+        "tab-digestion": {
+          "type": "tab",
           "settings": {
-            "tab": "descanso",
-            "product": "glicinato-de-magnesio-d3-liposomal",
+            "label": "digestión",
             "badge": "Alta absorción X5"
           }
         },
-        "prod-d3": {
-          "type": "product",
+        "tab-enfoque": {
+          "type": "tab",
           "settings": {
-            "tab": "descanso",
-            "product": "melena-de-leon-liposomal",
+            "label": "enfoque",
+            "badge": "Alta absorción X5"
+          }
+        },
+        "tab-metabolismo": {
+          "type": "tab",
+          "settings": {
+            "label": "metabolismo",
             "badge": "Alta absorción X5"
           }
         }
       },
       "block_order": [
-        "prod-d1",
-        "prod-d2",
-        "prod-d3"
+        "tab-descanso",
+        "tab-digestion",
+        "tab-enfoque",
+        "tab-metabolismo"
       ],
       "settings": {
         "bg_color": "#fafdf8",

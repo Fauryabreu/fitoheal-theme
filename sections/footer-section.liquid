@@ -75,7 +75,14 @@
             {% endif %}
             {% if block.settings.colombia_badge %}
               <div class="fh-colombia-badge">
-                🇨🇴 {{ block.settings.colombia_text | default: 'Hecho en Colombia' }}
+                <img
+                  src="{{ 'hecho-en-colombia.svg' | asset_url }}"
+                  alt="Hecho en Colombia"
+                  width="120"
+                  height="150"
+                  loading="lazy"
+                  style="display:block;width:120px;height:auto;"
+                >
               </div>
             {% endif %}
           </div>
