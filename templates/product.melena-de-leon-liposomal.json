@@ -413,7 +413,7 @@
           "type": "feature",
           "settings": {
             "feature_title": "<strong>Bienestar integral</strong>",
-            "feature_text": "Ideal para sentirte más centrado, sin depender de cafeína o estimulantes."
+            "feature_text": "Favorece sistema inmune y digestivo."
           }
         }
       },
@@ -485,7 +485,7 @@
           "type": "heading",
           "settings": {
             "heading_alignment": "center",
-            "heading": "Un apoyo diario para _sentir más equilibrio",
+            "heading": "_Claridad mental,_ paso a paso",
             "heading_custom_font": false,
             "heading_as": "h3",
             "heading_font": "poppins_n4",
