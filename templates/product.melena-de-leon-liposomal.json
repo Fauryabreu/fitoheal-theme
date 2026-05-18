@@ -755,7 +755,7 @@
         "title_HptVxx": {
           "type": "title",
           "settings": {
-            "title": "No es solo Ashwagandha. Es tecnología liposomal.",
+            "title": "<strong>No es solo Melena de León. Es soporte cognitivo liposomal.</strong>",
             "title_custom": false,
             "title_font": "assistant_n4",
             "title_font_weight": "700",
@@ -768,7 +768,7 @@
         "description_gdagdr": {
           "type": "description",
           "settings": {
-            "text": "Nuestra fórmula está diseñada para favorecer una mejor absorción del activo, ayudando a que tu cuerpo lo aproveche de forma más eficiente dentro de tu rutina diaria.",
+            "text": "Nuestra fórmula está diseñada para favorecer una mejor absorción de los activos de la Melena de León, ayudando a que tu cuerpo los aproveche mejor dentro de tu rutina diaria de enfoque, memoria y claridad mental.",
             "text_custom": false,
             "text_font": "assistant_n4",
             "text_font_weight": "400",
@@ -1467,7 +1467,7 @@
         "subtitle_EvXGjz": {
           "type": "subtitle",
           "settings": {
-            "subtitle": "<p><strong>Información clara para que sepas cómo integrar Ashwagandha Liposomal a tu rutina diaria.</strong></p>",
+            "subtitle": "<p>Información clara para saber cómo integrar Melena de León Liposomal a tu rutina diaria de enfoque, memoria y bienestar.</p>",
             "subtitle_color": "#121212",
             "custom_font": false,
             "subtitle_as": "p",
@@ -1510,8 +1510,8 @@
         "faq_item_1_nCxGYg": {
           "type": "faq_item",
           "settings": {
-            "question": "<strong>¿Para qué sirve la Ashwagandha Liposomal?</strong>",
-            "answer": "<p>Apoya el manejo del estrés diario, favorece el equilibrio emocional y contribuye a una mejor calidad de descanso.</p>"
+            "question": "<strong>¿Para qué sirve la Melena de León Liposomal?</strong>",
+            "answer": "<p>Apoya la memoria, la concentración y el bienestar cognitivo diario. Además, puede contribuir al sistema inmune y favorecer la salud digestiva.</p>"
           }
         },
         "faq_item_2_ohlkGR": {
@@ -1525,14 +1525,14 @@
           "type": "faq_item",
           "settings": {
             "question": "<strong>¿Qué diferencia tiene la tecnología liposomal?</strong>",
-            "answer": "<p>Ayuda a proteger y transportar los activos para favorecer una mejor absorción y aprovechamiento en el organismo.</p>"
+            "answer": "<p>La tecnología liposomal ayuda a proteger y transportar los activos de la Melena de León para favorecer una mejor absorción y aprovechamiento en el organismo.</p>"
           }
         },
         "faq_item_4_jrk0ZU": {
           "type": "faq_item",
           "settings": {
             "question": "<strong>¿Tiene estimulantes?</strong>",
-            "answer": "<p>No. Es una fórmula pensada para apoyar la calma, el equilibrio y el bienestar diario sin depender de estimulantes.</p>"
+            "answer": "<p>No. Su enfoque principal es el soporte cognitivo, pero también puede apoyar funciones relacionadas con el sistema inmune y digestivo, según los beneficios descritos en la etiqueta. </p>"
           }
         }
       },
