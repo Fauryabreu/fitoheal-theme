@@ -97,6 +97,44 @@
       ],
       "settings": {}
     },
+    "how-it-works": {
+      "type": "how-it-works",
+      "blocks": {
+        "s1": {
+          "type": "step",
+          "settings": {
+            "titulo": "Tecnología liposomal",
+            "descripcion": "Una forma avanzada de encapsular los activos para ayudar a que el cuerpo los absorba mejor."
+          }
+        },
+        "s2": {
+          "type": "step",
+          "settings": {
+            "titulo": "Mejor absorción y aprovechamiento",
+            "descripcion": "Favorece una mejor disponibilidad del ingrediente dentro de tu rutina diaria."
+          }
+        },
+        "s3": {
+          "type": "step",
+          "settings": {
+            "titulo": "Bienestar más enfocado",
+            "descripcion": "Te ayuda a elegir una fórmula según tu objetivo: descanso, digestión, enfoque o metabolismo."
+          }
+        }
+      },
+      "block_order": [
+        "s1",
+        "s2",
+        "s3"
+      ],
+      "settings": {
+        "bg_color": "#ffffff",
+        "titulo": "¿Por qué elegir una fórmula liposomal?",
+        "cta_label": "Encuentra tu fórmula",
+        "cta_link": "",
+        "imagen": "shopify://shop_images/Como_funciona.png"
+      }
+    },
     "product-tabs": {
       "type": "product-tabs",
       "blocks": {
@@ -286,44 +324,6 @@
         "imagen": "shopify://shop_images/Sobre_FitoHeal.png"
       }
     },
-    "how-it-works": {
-      "type": "how-it-works",
-      "blocks": {
-        "s1": {
-          "type": "step",
-          "settings": {
-            "titulo": "Tecnología liposomal",
-            "descripcion": "Una forma avanzada de encapsular los activos para ayudar a que el cuerpo los absorba mejor."
-          }
-        },
-        "s2": {
-          "type": "step",
-          "settings": {
-            "titulo": "Mejor absorción y aprovechamiento",
-            "descripcion": "Favorece una mejor disponibilidad del ingrediente dentro de tu rutina diaria."
-          }
-        },
-        "s3": {
-          "type": "step",
-          "settings": {
-            "titulo": "Bienestar más enfocado",
-            "descripcion": "Te ayuda a elegir una fórmula según tu objetivo: descanso, digestión, enfoque o metabolismo."
-          }
-        }
-      },
-      "block_order": [
-        "s1",
-        "s2",
-        "s3"
-      ],
-      "settings": {
-        "bg_color": "#ffffff",
-        "titulo": "¿Por qué elegir una fórmula liposomal?",
-        "cta_label": "Encuentra tu fórmula",
-        "cta_link": "",
-        "imagen": "shopify://shop_images/Como_funciona.png"
-      }
-    },
     "cta-banner": {
       "type": "cta-banner",
       "settings": {
@@ -387,10 +387,10 @@
     "hero-grid",
     "social-proof",
     "features-bar",
+    "how-it-works",
     "product-tabs",
     "kits-section",
     "about-section",
-    "how-it-works",
     "cta-banner",
     "footer_section_yUzwdH"
   ]
