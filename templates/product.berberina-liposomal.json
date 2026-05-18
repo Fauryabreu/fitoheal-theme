@@ -331,7 +331,7 @@
         "heading_rUiuRq": {
           "type": "heading",
           "settings": {
-            "subtitle": "<strong>Bienestar emocional y descanso</strong>",
+            "subtitle": "<strong>Metabolismo y bienestar digestivo</strong>",
             "subtitle_custom_font": false,
             "subtitle_as": "p",
             "subtitle_font": "poppins_n4",
@@ -342,7 +342,7 @@
             "subtitle_letter_spacing": 1,
             "subtitle_color": "#ffffff",
             "subtitle_spacing": 16,
-            "title": "<strong>Siente más calma en tu rutina diaria.</strong>",
+            "title": "<strong>Apoya tu equilibrio desde adentro.</strong>",
             "title_custom_font": false,
             "title_as": "h2",
             "title_font": "poppins_n6",
@@ -391,29 +391,29 @@
         "feature_1_iokXup": {
           "type": "feature",
           "settings": {
-            "feature_title": "<strong>Ayuda a reducir el estrés</strong>",
-            "feature_text": "Favorece una respuesta más equilibrada frente al estrés diario."
+            "feature_title": "<strong>Apoyo metabólico</strong>",
+            "feature_text": "Contribuye al equilibrio natural del metabolismo."
           }
         },
         "feature_2_n0zBc0": {
           "type": "feature",
           "settings": {
-            "feature_title": "<strong>Equilibrio emocional</strong>",
-            "feature_text": "Apoya la calma mental y el bienestar general durante el día."
+            "feature_title": "<strong>Bienestar digestivo</strong>",
+            "feature_text": "Favorece una mejor sensación digestiva."
           }
         },
         "feature_3_2EfXxK": {
           "type": "feature",
           "settings": {
-            "feature_title": "<strong>Mejor descanso</strong>",
-            "feature_text": "Contribuye a una rutina de sueño más estable y reparadora."
+            "feature_title": "<strong>Equilibrio de glucosa</strong>",
+            "feature_text": "Apoya niveles saludables dentro de una rutina diaria."
           }
         },
         "feature_4_w0MBJV": {
           "type": "feature",
           "settings": {
-            "feature_title": "<strong>Energía sin estimulantes</strong>",
-            "feature_text": "Ideal para sentirte más centrado, sin depender de cafeína o estimulantes."
+            "feature_title": "<strong>Acción antioxidante</strong>",
+            "feature_text": "Contribuye al cuidado celular."
           }
         }
       },
@@ -485,7 +485,7 @@
           "type": "heading",
           "settings": {
             "heading_alignment": "center",
-            "heading": "Un apoyo diario para _sentir más equilibrio",
+            "heading": "_Equilibrio metabólico_, paso a paso",
             "heading_custom_font": false,
             "heading_as": "h3",
             "heading_font": "poppins_n4",
@@ -546,24 +546,24 @@
           "type": "timeline_item",
           "settings": {
             "subheading": "Primeros días",
-            "heading": "Tu cuerpo empieza a adaptarse",
-            "description": "<p>La Ashwagandha puede ayudar a apoyar una respuesta más equilibrada frente al estrés diario y favorecer una sensación gradual de calma.</p>"
+            "heading": "Apoyo diario",
+            "description": "<p>Integra la berberina a tu rutina para acompañar tu bienestar metabólico.</p>"
           }
         },
         "timeline_item_2_3Qr27B": {
           "type": "timeline_item",
           "settings": {
             "subheading": "Semanas 2–4",
-            "heading": "Mayor equilibrio emocional",
-            "description": "<p>Con el uso constante, puede contribuir a sentirte más centrado durante el día y apoyar una rutina de descanso más estable.</p>"
+            "heading": "Mayor equilibrio",
+            "description": "<p>Con el uso constante, puede apoyar el metabolismo y el bienestar digestivo.</p>"
           }
         },
         "timeline_item_3_6WDi7E": {
           "type": "timeline_item",
           "settings": {
             "subheading": "Uso continuo",
-            "heading": "Mejor bienestar diario",
-            "description": "<p>Como parte de una rutina saludable, puede favorecer la calma mental, el equilibrio de energía y la calidad del sueño.</p>"
+            "heading": "Bienestar integral",
+            "description": "<p>Contribuye al equilibrio de la glucosa, la digestión y el cuidado antioxidante.</p>"
           }
         }
       },
@@ -755,7 +755,7 @@
         "title_HptVxx": {
           "type": "title",
           "settings": {
-            "title": "No es solo Ashwagandha. Es tecnología liposomal.",
+            "title": "<strong>No es solo berberina. Es berberina liposomal.</strong>",
             "title_custom": false,
             "title_font": "assistant_n4",
             "title_font_weight": "700",
@@ -768,7 +768,7 @@
         "description_gdagdr": {
           "type": "description",
           "settings": {
-            "text": "Nuestra fórmula está diseñada para favorecer una mejor absorción del activo, ayudando a que tu cuerpo lo aproveche de forma más eficiente dentro de tu rutina diaria.",
+            "text": "Nuestra fórmula está diseñada para favorecer una mejor absorción de los activos de la berberina, ayudando a que tu cuerpo los aproveche mejor dentro de tu rutina diaria.",
             "text_custom": false,
             "text_font": "assistant_n4",
             "text_font_weight": "400",
@@ -1467,7 +1467,7 @@
         "subtitle_EvXGjz": {
           "type": "subtitle",
           "settings": {
-            "subtitle": "<p><strong>Información clara para que sepas cómo integrar Ashwagandha Liposomal a tu rutina diaria.</strong></p>",
+            "subtitle": "<p><strong>Información clara para saber cómo integrar Berberina Liposomal a tu rutina diaria.</strong></p>",
             "subtitle_color": "#121212",
             "custom_font": false,
             "subtitle_as": "p",
@@ -1510,29 +1510,29 @@
         "faq_item_1_nCxGYg": {
           "type": "faq_item",
           "settings": {
-            "question": "<strong>¿Para qué sirve la Ashwagandha Liposomal?</strong>",
-            "answer": "<p>Apoya el manejo del estrés diario, favorece el equilibrio emocional y contribuye a una mejor calidad de descanso.</p>"
+            "question": "<strong>¿Para qué sirve la Berberina Liposomal?</strong>",
+            "answer": "<p><strong>Apoya el metabolismo, contribuye al equilibrio de la glucosa y favorece el bienestar digestivo diario.</strong> Estos son los claims recomendados para e-commerce en berberina, junto con su acción antioxidante. </p>"
           }
         },
         "faq_item_2_ohlkGR": {
           "type": "faq_item",
           "settings": {
             "question": "<strong>¿Cómo debo tomarla?</strong>",
-            "answer": "<p><strong>Tomar de 1 a 2 cápsulas al día con agua, según tu rutina y tolerancia.</strong></p>"
+            "answer": "<p><strong>Tomar de 1 a 2 cápsulas al día con agua, preferiblemente junto a una comida o según tu rutina diaria.</strong> La etiqueta indica uso oral y dosis de 1 a 2 cápsulas al día. </p>"
           }
         },
         "faq_item_3_aKHWJF": {
           "type": "faq_item",
           "settings": {
             "question": "<strong>¿Qué diferencia tiene la tecnología liposomal?</strong>",
-            "answer": "<p>Ayuda a proteger y transportar los activos para favorecer una mejor absorción y aprovechamiento en el organismo.</p>"
+            "answer": "<p><strong>La tecnología liposomal ayuda a proteger y transportar los activos para favorecer una mejor absorción y aprovechamiento en el organismo.</strong> Fitoheal posiciona toda la línea con enfoque de “Alta absorción X5”.</p>"
           }
         },
         "faq_item_4_jrk0ZU": {
           "type": "faq_item",
           "settings": {
             "question": "<strong>¿Tiene estimulantes?</strong>",
-            "answer": "<p>No. Es una fórmula pensada para apoyar la calma, el equilibrio y el bienestar diario sin depender de estimulantes.</p>"
+            "answer": "<p><strong>Sí, puede integrarse como parte de una rutina diaria de bienestar.</strong> Si estás embarazada, en lactancia o bajo tratamiento médico, consulta con un profesional de salud antes de usarla. La etiqueta también indica mantener fuera del alcance de los niños. </p>"
           }
         }
       },
