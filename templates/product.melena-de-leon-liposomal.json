@@ -57,7 +57,7 @@
         "text_WKhTaO": {
           "type": "text",
           "settings": {
-            "text": "<p>Apoya el _equilibrio emocional_, ayuda a manejar el _estrés diario_ y favorece un _descanso_ de mejor calidad.</p>",
+            "text": "<p>Tecnología liposomal de alta absorción diseñada para ayudar a tu cuerpo a aprovechar mejor la Melena de León, _apoyando memoria, enfoque y bienestar cognitivo diario.</p>",
             "text_highlight_color": "#d7fca3",
             "text_highlight_text_color": "#111111",
             "text_color": "#555555",
@@ -160,7 +160,7 @@
         "description_4X83w7": {
           "type": "description",
           "settings": {
-            "description_text": "<p>Una fórmula liposomal de alta absorción diseñada para apoyar tu bienestar diario, la calma mental y la calidad del sueño.</p>",
+            "description_text": "<p>No es solo tomar Melena de León. Es darle a tu cuerpo una fórmula diseñada para absorberse mejor y apoyar tu claridad mental desde adentro.</p>",
             "description_color": "#111111",
             "description_font_size": 16,
             "description_font_size_mobile": 14,
@@ -176,8 +176,8 @@
         "collapsible_row_1_DAxcm0": {
           "type": "collapsible_row",
           "settings": {
-            "title": "¿Cómo funciona la Ashwagandha?",
-            "content": "<p>La Ashwagandha es un adaptógeno natural que ayuda al cuerpo a manejar mejor el estrés diario. Su fórmula liposomal favorece una mejor absorción, apoyando la calma mental, el equilibrio emocional y el descanso.</p>",
+            "title": "¿Cómo funciona la Melena de León Liposomal?",
+            "content": "<p>La Melena de León es un hongo funcional utilizado como soporte cognitivo natural. En formato liposomal, ayuda a proteger y transportar sus activos para favorecer una mejor absorción y aprovechamiento dentro de tu rutina diaria.</p>",
             "margin_top_desktop": 0,
             "margin_bottom_desktop": 0,
             "margin_top_mobile": 0,
@@ -199,7 +199,7 @@
           "type": "collapsible_row",
           "settings": {
             "title": "¿En cuánto tiempo puedo notar cambios?",
-            "content": "<p>Cada cuerpo responde de manera diferente. El uso constante puede ayudar a sentir mayor equilibrio, calma y mejor calidad de descanso dentro de una rutina diaria saludable.</p>",
+            "content": "<p>Cada cuerpo responde de manera diferente. Con el uso constante, puede apoyar la memoria, la concentración y una sensación de mayor claridad mental.</p>",
             "margin_top_desktop": 0,
             "margin_bottom_desktop": 0,
             "margin_top_mobile": 0,
