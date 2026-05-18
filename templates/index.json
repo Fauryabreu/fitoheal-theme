@@ -28,8 +28,8 @@
       "type": "hero-grid",
       "settings": {
         "bg_color": "#fafdf8",
-        "titulo": "Bienestar liposomal para objetivos reales",
-        "subtitulo": "Fórmulas de alta absorción que apoyan tu bienestar en descanso, estrés, enfoque, digestión y metabolismo.",
+        "titulo": "No es solo suplementarte. Es absorber mejor.",
+        "subtitulo": "Fitoheal utiliza tecnología liposomal para ayudar a proteger y transportar los activos, favoreciendo una mejor absorción y aprovechamiento en tu rutina diaria.",
         "texto_btn_primario": "Comprar ahora",
         "link_btn_primario": "",
         "texto_btn_secundario": "Descubre los kits",
@@ -89,50 +89,6 @@
     },
     "features-bar": {
       "type": "features-bar",
-      "blocks": {
-        "f1": {
-          "type": "feature",
-          "settings": {
-            "icon": "drop",
-            "text": "Alta absorción X5"
-          }
-        },
-        "f2": {
-          "type": "feature",
-          "settings": {
-            "icon": "capsule",
-            "text": "60 cápsulas por frasco"
-          }
-        },
-        "f3": {
-          "type": "feature",
-          "settings": {
-            "icon": "gluten",
-            "text": "Gluten free"
-          }
-        },
-        "f4": {
-          "type": "feature",
-          "settings": {
-            "icon": "calendar",
-            "text": "Fácil de incorporar a tu rutina"
-          }
-        },
-        "f5": {
-          "type": "feature",
-          "settings": {
-            "icon": "target",
-            "text": "Bienestar por objetivo"
-          }
-        }
-      },
-      "block_order": [
-        "f1",
-        "f2",
-        "f3",
-        "f4",
-        "f5"
-      ],
       "custom_css": [
         ".fh-features-bar {display: flex; align-items: center; justify-content: center; gap: 48px; padding: 18px 40px; flex-wrap: nowrap;}",
         ".fh-feature-item {display: flex; flex-direction: row; align-items: center; justify-content: center; gap: 8px; flex-shrink: 0;}",
@@ -257,8 +213,8 @@
       ],
       "settings": {
         "bg_color": "#fafdf8",
-        "titulo": "Soluciones liposomales para cada objetivo",
-        "descripcion": "Tecnología liposomal de alta absorción que favorece el aprovechamiento de los nutrientes y acompaña tu bienestar día a día.",
+        "titulo": "Elige tu fórmula liposomal según tu objetivo",
+        "descripcion": "Cada fórmula Fitoheal está diseñada para favorecer una mejor absorción y apoyar una necesidad concreta de tu rutina diaria.",
         "cta_label": "Conoce nuestra línea",
         "cta_link": ""
       }
