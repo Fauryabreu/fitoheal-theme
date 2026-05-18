@@ -1467,7 +1467,7 @@
         "subtitle_EvXGjz": {
           "type": "subtitle",
           "settings": {
-            "subtitle": "<p><strong>Información clara para que sepas cómo integrar Ashwagandha Liposomal a tu rutina diaria.</strong></p>",
+            "subtitle": "<p>Información clara para saber cómo integrar Cúrcuma Liposomal a tu rutina diaria.</p>",
             "subtitle_color": "#121212",
             "custom_font": false,
             "subtitle_as": "p",
@@ -1510,15 +1510,15 @@
         "faq_item_1_nCxGYg": {
           "type": "faq_item",
           "settings": {
-            "question": "<strong>¿Para qué sirve la Ashwagandha Liposomal?</strong>",
-            "answer": "<p>Apoya el manejo del estrés diario, favorece el equilibrio emocional y contribuye a una mejor calidad de descanso.</p>"
+            "question": "<strong>¿Para qué sirve la Cúrcuma Liposomal?</strong>",
+            "answer": "<p>Apoya la respuesta antiinflamatoria natural del cuerpo, favorece la salud articular y contribuye al bienestar antioxidante.</p>"
           }
         },
         "faq_item_2_ohlkGR": {
           "type": "faq_item",
           "settings": {
             "question": "<strong>¿Cómo debo tomarla?</strong>",
-            "answer": "<p><strong>Tomar de 1 a 2 cápsulas al día con agua, según tu rutina y tolerancia.</strong></p>"
+            "answer": "<p>Tomar de <strong>1 a 2 cápsulas al día</strong> con agua, preferiblemente junto a una comida o según tu rutina diaria. La etiqueta indica uso oral y dosis de 1 a 2 cápsulas al día.</p>"
           }
         },
         "faq_item_3_aKHWJF": {
@@ -1531,8 +1531,8 @@
         "faq_item_4_jrk0ZU": {
           "type": "faq_item",
           "settings": {
-            "question": "<strong>¿Tiene estimulantes?</strong>",
-            "answer": "<p>No. Es una fórmula pensada para apoyar la calma, el equilibrio y el bienestar diario sin depender de estimulantes.</p>"
+            "question": "<strong>¿Puedo tomarla todos los días?</strong>",
+            "answer": "<p>Sí, puede integrarse como parte de una rutina diaria de bienestar. Si estás embarazada, en lactancia o bajo tratamiento médico, consulta con un profesional de salud antes de usarla. La etiqueta también indica mantener fuera del alcance de los niños. </p>"
           }
         }
       },
