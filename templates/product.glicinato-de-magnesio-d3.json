@@ -376,7 +376,7 @@
             "media_edge_to_edge": false,
             "mobile_media_position": "middle",
             "media_type": "image",
-            "image": "shopify://shop_images/imagen_modelo.png",
+            "image": "shopify://shop_images/Glicinato_3.png",
             "video_url": "",
             "enable_lazy_loading": true,
             "media_height": 600,
@@ -521,7 +521,7 @@
           "type": "media",
           "settings": {
             "media_type": "image",
-            "image": "shopify://shop_images/imagen_de_producto.png",
+            "image": "shopify://shop_images/Glicinato_2.png",
             "video_url": "",
             "video_autoplay": true,
             "video_loop": true,
@@ -746,7 +746,7 @@
         "image_FLgKzt": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/Comparacion_producto.png",
+            "image": "shopify://shop_images/Glicinato_1.png",
             "image_height": 580,
             "image_height_mobile": 400,
             "image_border_radius": 8
