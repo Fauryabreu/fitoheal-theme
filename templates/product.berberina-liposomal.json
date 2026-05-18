@@ -176,8 +176,8 @@
         "collapsible_row_1_DAxcm0": {
           "type": "collapsible_row",
           "settings": {
-            "title": "¿Cómo funciona la Ashwagandha?",
-            "content": "<p>La Ashwagandha es un adaptógeno natural que ayuda al cuerpo a manejar mejor el estrés diario. Su fórmula liposomal favorece una mejor absorción, apoyando la calma mental, el equilibrio emocional y el descanso.</p>",
+            "title": "¿Cómo funciona la Berberina Liposomal?",
+            "content": "<p>La berberina es un activo natural utilizado para apoyar el metabolismo, el equilibrio de la glucosa y el bienestar digestivo. Su tecnología liposomal favorece una mejor absorción y aprovechamiento dentro de la rutina diaria.</p>",
             "margin_top_desktop": 0,
             "margin_bottom_desktop": 0,
             "margin_top_mobile": 0,
@@ -188,7 +188,7 @@
           "type": "collapsible_row",
           "settings": {
             "title": "¿Cuándo debo tomarla?",
-            "content": "<p>Tomar <strong>1 a 2 cápsulas al día</strong>, preferiblemente con agua y según la tolerancia de cada persona. Para rutinas enfocadas en descanso, muchas personas prefieren tomarla en la tarde o noche. La etiqueta indica uso oral y dosis de 1 a 2 cápsulas al día. </p>",
+            "content": "<p>Tomar de <strong>1 a 2 cápsulas al día</strong> con agua, preferiblemente junto a una comida o según tu rutina diaria. La etiqueta indica vía oral y dosis de 1 a 2 cápsulas al día. </p>",
             "margin_top_desktop": 0,
             "margin_bottom_desktop": 0,
             "margin_top_mobile": 0,
@@ -199,7 +199,7 @@
           "type": "collapsible_row",
           "settings": {
             "title": "¿En cuánto tiempo puedo notar cambios?",
-            "content": "<p>Cada cuerpo responde de manera diferente. El uso constante puede ayudar a sentir mayor equilibrio, calma y mejor calidad de descanso dentro de una rutina diaria saludable.</p>",
+            "content": "<p>Cada cuerpo responde de manera diferente. Con el uso constante, puede apoyar el equilibrio metabólico, la digestión y el bienestar general.</p>",
             "margin_top_desktop": 0,
             "margin_bottom_desktop": 0,
             "margin_top_mobile": 0,
@@ -245,8 +245,8 @@
             "image_radius_mobile": 12,
             "image_position": "left",
             "gap": 20,
-            "title": "Finalmente pude desconectar mejor",
-            "body": "<p>Sentía la mente acelerada al final del día. Después de incluir Ashwagandha en mi rutina, he sentido más calma y un descanso más estable.</p>",
+            "title": "<strong>Finalmente pude apoyar mejor mi metabolismo</strong>",
+            "body": "<p>Buscaba una opción práctica para acompañar mi rutina diaria. Con Berberina Liposomal, siento que tengo un mejor apoyo para mi metabolismo y bienestar digestivo.</p>",
             "author": "— Cliente",
             "text_gap": 4,
             "title_color": "#111111",
