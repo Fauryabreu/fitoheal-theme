@@ -292,22 +292,22 @@
         "s1": {
           "type": "step",
           "settings": {
-            "titulo": "Elige tu objetivo",
-            "descripcion": "Descubre el producto o kit ideal para ti."
+            "titulo": "Tecnología liposomal",
+            "descripcion": "Una forma avanzada de encapsular los activos para ayudar a que el cuerpo los absorba mejor."
           }
         },
         "s2": {
           "type": "step",
           "settings": {
-            "titulo": "Elige tu fórmula",
-            "descripcion": "Una o dos cápsulas al día según tu rutina."
+            "titulo": "Mejor absorción y aprovechamiento",
+            "descripcion": "Favorece una mejor disponibilidad del ingrediente dentro de tu rutina diaria."
           }
         },
         "s3": {
           "type": "step",
           "settings": {
-            "titulo": "Crea tu rutina",
-            "descripcion": "La consistencia es la clave para sentir el cambio."
+            "titulo": "Bienestar más enfocado",
+            "descripcion": "Te ayuda a elegir una fórmula según tu objetivo: descanso, digestión, enfoque o metabolismo."
           }
         }
       },
@@ -318,8 +318,8 @@
       ],
       "settings": {
         "bg_color": "#ffffff",
-        "titulo": "Cómo funciona tu bienestar, simple.",
-        "cta_label": "Descubre tu objetivo",
+        "titulo": "¿Por qué elegir una fórmula liposomal?",
+        "cta_label": "Encuentra tu fórmula",
         "cta_link": "",
         "imagen": "shopify://shop_images/Como_funciona.png"
       }
