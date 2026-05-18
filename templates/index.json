@@ -104,21 +104,21 @@
           "type": "step",
           "settings": {
             "titulo": "Tecnología liposomal",
-            "descripcion": "Una forma avanzada de encapsular los activos para ayudar a que el cuerpo los absorba mejor."
+            "descripcion": "Es una tecnología que ayuda a proteger los activos del suplemento para que tu cuerpo pueda absorberlos mejor."
           }
         },
         "s2": {
           "type": "step",
           "settings": {
             "titulo": "Mejor absorción y aprovechamiento",
-            "descripcion": "Favorece una mejor disponibilidad del ingrediente dentro de tu rutina diaria."
+            "descripcion": "Porque no basta con tomar un suplemento. Lo importante es que tu cuerpo pueda aprovecharlo bien."
           }
         },
         "s3": {
           "type": "step",
           "settings": {
             "titulo": "Bienestar más enfocado",
-            "descripcion": "Te ayuda a elegir una fórmula según tu objetivo: descanso, digestión, enfoque o metabolismo."
+            "descripcion": "Más absorción, mejor aprovechamiento y fórmulas pensadas para objetivos como descanso, digestión, enfoque y metabolismo."
           }
         }
       },
