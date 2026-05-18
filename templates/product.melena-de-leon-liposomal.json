@@ -331,7 +331,7 @@
         "heading_rUiuRq": {
           "type": "heading",
           "settings": {
-            "subtitle": "<strong>Bienestar emocional y descanso</strong>",
+            "subtitle": "<strong>Soporte cognitivo liposomal</strong>",
             "subtitle_custom_font": false,
             "subtitle_as": "p",
             "subtitle_font": "poppins_n4",
@@ -342,7 +342,7 @@
             "subtitle_letter_spacing": 1,
             "subtitle_color": "#ffffff",
             "subtitle_spacing": 16,
-            "title": "<strong>Siente más calma en tu rutina diaria.</strong>",
+            "title": "<strong>Claridad mental que tu cuerpo puede aprovechar mejor.</strong>",
             "title_custom_font": false,
             "title_as": "h2",
             "title_font": "poppins_n6",
@@ -391,28 +391,28 @@
         "feature_1_iokXup": {
           "type": "feature",
           "settings": {
-            "feature_title": "<strong>Ayuda a reducir el estrés</strong>",
-            "feature_text": "Favorece una respuesta más equilibrada frente al estrés diario."
+            "feature_title": "<strong>Alta absorción X5</strong>",
+            "feature_text": "Mejor aprovechamiento del activo."
           }
         },
         "feature_2_n0zBc0": {
           "type": "feature",
           "settings": {
-            "feature_title": "<strong>Equilibrio emocional</strong>",
-            "feature_text": "Apoya la calma mental y el bienestar general durante el día."
+            "feature_title": "<strong>Memoria y enfoque</strong>",
+            "feature_text": "Apoya la claridad mental diaria."
           }
         },
         "feature_3_2EfXxK": {
           "type": "feature",
           "settings": {
-            "feature_title": "<strong>Mejor descanso</strong>",
-            "feature_text": "Contribuye a una rutina de sueño más estable y reparadora."
+            "feature_title": "<strong>Tecnología liposomal</strong>",
+            "feature_text": "Ayuda a proteger y transportar sus componentes."
           }
         },
         "feature_4_w0MBJV": {
           "type": "feature",
           "settings": {
-            "feature_title": "<strong>Energía sin estimulantes</strong>",
+            "feature_title": "<strong>Bienestar integral</strong>",
             "feature_text": "Ideal para sentirte más centrado, sin depender de cafeína o estimulantes."
           }
         }
