@@ -485,7 +485,7 @@
           "type": "heading",
           "settings": {
             "heading_alignment": "center",
-            "heading": "Un apoyo diario para _sentir más equilibrio",
+            "heading": "_Descanso y relajación_, paso a paso",
             "heading_custom_font": false,
             "heading_as": "h3",
             "heading_font": "poppins_n4",
@@ -546,24 +546,24 @@
           "type": "timeline_item",
           "settings": {
             "subheading": "Primeros días",
-            "heading": "Tu cuerpo empieza a adaptarse",
-            "description": "<p>La Ashwagandha puede ayudar a apoyar una respuesta más equilibrada frente al estrés diario y favorecer una sensación gradual de calma.</p>"
+            "heading": "Apoyo para relajar el cuerpo",
+            "description": "<p>Integra el glicinato de magnesio a tu rutina para favorecer la relajación muscular y el descanso.</p>"
           }
         },
         "timeline_item_2_3Qr27B": {
           "type": "timeline_item",
           "settings": {
             "subheading": "Semanas 2–4",
-            "heading": "Mayor equilibrio emocional",
-            "description": "<p>Con el uso constante, puede contribuir a sentirte más centrado durante el día y apoyar una rutina de descanso más estable.</p>"
+            "heading": "Rutina de sueño más estable",
+            "description": "<p>Con el uso constante, puede contribuir a una mejor sensación de calma y equilibrio del sistema nervioso.</p>"
           }
         },
         "timeline_item_3_6WDi7E": {
           "type": "timeline_item",
           "settings": {
             "subheading": "Uso continuo",
-            "heading": "Mejor bienestar diario",
-            "description": "<p>Como parte de una rutina saludable, puede favorecer la calma mental, el equilibrio de energía y la calidad del sueño.</p>"
+            "heading": "Bienestar diario",
+            "description": "<p>Apoya el descanso, la relajación muscular y una rutina más equilibrada.</p>"
           }
         }
       },
