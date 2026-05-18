@@ -328,10 +328,10 @@
       "type": "cta-banner",
       "settings": {
         "bg_color": "#1b4332",
-        "texto": "Encuentra la fórmula que acompaña mejor tu objetivo",
+        "texto": "Descubre cómo la tecnología liposomal puede apoyar tu rutina diaria",
         "btn_primario_label": "Comprar ahora",
         "btn_primario_link": "",
-        "btn_secundario_label": "Ver kits",
+        "btn_secundario_label": "",
         "btn_secundario_link": ""
       }
     },
