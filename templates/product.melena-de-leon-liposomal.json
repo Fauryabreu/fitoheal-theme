@@ -485,7 +485,7 @@
           "type": "heading",
           "settings": {
             "heading_alignment": "center",
-            "heading": "_Claridad mental,_ paso a paso",
+            "heading": "_Soporte cognitivo_ con mejor aprovechamiento",
             "heading_custom_font": false,
             "heading_as": "h3",
             "heading_font": "poppins_n4",
@@ -546,24 +546,24 @@
           "type": "timeline_item",
           "settings": {
             "subheading": "Primeros días",
-            "heading": "Tu cuerpo empieza a adaptarse",
-            "description": "<p>La Ashwagandha puede ayudar a apoyar una respuesta más equilibrada frente al estrés diario y favorecer una sensación gradual de calma.</p>"
+            "heading": "Tu cuerpo empieza a aprovechar mejor el activo",
+            "description": "<p>La tecnología liposomal ayuda a proteger y transportar los componentes de la Melena de León para favorecer una mejor absorción dentro de tu rutina diaria.</p>"
           }
         },
         "timeline_item_2_3Qr27B": {
           "type": "timeline_item",
           "settings": {
             "subheading": "Semanas 2–4",
-            "heading": "Mayor equilibrio emocional",
-            "description": "<p>Con el uso constante, puede contribuir a sentirte más centrado durante el día y apoyar una rutina de descanso más estable.</p>"
+            "heading": "Apoyo más constante para memoria y enfoque",
+            "description": "<p>Con el uso constante, puede contribuir a una sensación de mayor claridad mental, enfoque y acompañamiento cognitivo diario.</p>"
           }
         },
         "timeline_item_3_6WDi7E": {
           "type": "timeline_item",
           "settings": {
             "subheading": "Uso continuo",
-            "heading": "Mejor bienestar diario",
-            "description": "<p>Como parte de una rutina saludable, puede favorecer la calma mental, el equilibrio de energía y la calidad del sueño.</p>"
+            "heading": "Bienestar integral",
+            "description": "<p>Además del soporte cognitivo, favorece el bienestar general al apoyar funciones relacionadas con sistema inmune y digestivo. </p>"
           }
         }
       },
