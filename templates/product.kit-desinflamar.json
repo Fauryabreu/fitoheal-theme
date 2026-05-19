@@ -1467,7 +1467,7 @@
         "subtitle_EvXGjz": {
           "type": "subtitle",
           "settings": {
-            "subtitle": "<p><strong>Información clara para que sepas cómo integrar Ashwagandha Liposomal a tu rutina diaria.</strong></p>",
+            "subtitle": "<p><strong>Información clara para saber cómo integrar el Kit Desinflamar a tu rutina diaria de bienestar físico y digestivo.</strong></p>",
             "subtitle_color": "#121212",
             "custom_font": false,
             "subtitle_as": "p",
@@ -1510,29 +1510,29 @@
         "faq_item_1_nCxGYg": {
           "type": "faq_item",
           "settings": {
-            "question": "<strong>¿Para qué sirve la Ashwagandha Liposomal?</strong>",
-            "answer": "<p>Apoya el manejo del estrés diario, favorece el equilibrio emocional y contribuye a una mejor calidad de descanso.</p>"
+            "question": "<strong>¿Para qué sirve el Kit Desinflamar?</strong>",
+            "answer": "<p>Apoya el bienestar físico, la salud articular, la digestión y la función muscular, combinando Cúrcuma Liposomal + Citrato de Magnesio D3 Liposomal.</p>"
           }
         },
         "faq_item_2_ohlkGR": {
           "type": "faq_item",
           "settings": {
-            "question": "<strong>¿Cómo debo tomarla?</strong>",
-            "answer": "<p><strong>Tomar de 1 a 2 cápsulas al día con agua, según tu rutina y tolerancia.</strong></p>"
+            "question": "<strong>¿Por qué combinar Cúrcuma y Citrato de Magnesio?</strong>",
+            "answer": "<p>Porque trabajan de forma complementaria: la Cúrcuma apoya la respuesta antiinflamatoria natural, las articulaciones y la acción antioxidante, mientras el Citrato de Magnesio favorece la digestión, la salud intestinal y la función muscular. </p><p></p>"
           }
         },
         "faq_item_3_aKHWJF": {
           "type": "faq_item",
           "settings": {
-            "question": "<strong>¿Qué diferencia tiene la tecnología liposomal?</strong>",
-            "answer": "<p>Ayuda a proteger y transportar los activos para favorecer una mejor absorción y aprovechamiento en el organismo.</p>"
+            "question": "<strong>¿Cuándo debo tomarlo?</strong>",
+            "answer": "<p>Tomar según la indicación de cada producto: <strong>1 a 2 cápsulas al día</strong> con agua, preferiblemente junto a una comida o según tu rutina diaria.</p>"
           }
         },
         "faq_item_4_jrk0ZU": {
           "type": "faq_item",
           "settings": {
-            "question": "<strong>¿Tiene estimulantes?</strong>",
-            "answer": "<p>No. Es una fórmula pensada para apoyar la calma, el equilibrio y el bienestar diario sin depender de estimulantes.</p>"
+            "question": "<strong>¿Qué diferencia tiene que sea liposomal?</strong>",
+            "answer": "<p>La tecnología liposomal ayuda a proteger y transportar los activos para favorecer una mejor absorción y aprovechamiento en el organismo.</p>"
           }
         }
       },
