@@ -755,7 +755,7 @@
         "title_HptVxx": {
           "type": "title",
           "settings": {
-            "title": "No es solo Ashwagandha. Es tecnología liposomal.",
+            "title": "<strong>No es solo Berberina + Cúrcuma. Es tecnología liposomal.</strong>",
             "title_custom": false,
             "title_font": "assistant_n4",
             "title_font_weight": "700",
@@ -768,7 +768,7 @@
         "description_gdagdr": {
           "type": "description",
           "settings": {
-            "text": "Nuestra fórmula está diseñada para favorecer una mejor absorción del activo, ayudando a que tu cuerpo lo aproveche de forma más eficiente dentro de tu rutina diaria.",
+            "text": "Nuestra fórmula está diseñada para favorecer una mejor absorción de los activos, ayudando a que tu cuerpo los aproveche de forma más eficiente dentro de tu rutina diaria.",
             "text_custom": false,
             "text_font": "assistant_n4",
             "text_font_weight": "400",
@@ -1467,7 +1467,7 @@
         "subtitle_EvXGjz": {
           "type": "subtitle",
           "settings": {
-            "subtitle": "<p><strong>Información clara para que sepas cómo integrar Ashwagandha Liposomal a tu rutina diaria.</strong></p>",
+            "subtitle": "<p>Nuestra fórmula está diseñada para favorecer una mejor absorción de los activos, ayudando a que tu cuerpo los aproveche de forma más eficiente dentro de tu rutina diaria.</p>",
             "subtitle_color": "#121212",
             "custom_font": false,
             "subtitle_as": "p",
@@ -1510,29 +1510,29 @@
         "faq_item_1_nCxGYg": {
           "type": "faq_item",
           "settings": {
-            "question": "<strong>¿Para qué sirve la Ashwagandha Liposomal?</strong>",
-            "answer": "<p>Apoya el manejo del estrés diario, favorece el equilibrio emocional y contribuye a una mejor calidad de descanso.</p>"
+            "question": "<strong>¿Para qué sirve el Kit Metabólico Liposomal?</strong>",
+            "answer": "<p>Está diseñado para apoyar el metabolismo, favorecer la salud digestiva y contribuir al equilibrio general del cuerpo. Combina <strong>Berberina Liposomal + Cúrcuma Liposomal</strong>, dos activos enfocados en bienestar metabólico, acción antioxidante y respuesta antiinflamatoria natural.</p>"
           }
         },
         "faq_item_2_ohlkGR": {
           "type": "faq_item",
           "settings": {
             "question": "<strong>¿Cómo debo tomarla?</strong>",
-            "answer": "<p><strong>Tomar de 1 a 2 cápsulas al día con agua, según tu rutina y tolerancia.</strong></p>"
+            "answer": "<p>Se recomienda tomar <strong>1 a 2 cápsulas al día</strong>, preferiblemente con alimentos.<br/><br/>La constancia es clave para integrarlo como parte de una rutina saludable.</p>"
           }
         },
         "faq_item_3_aKHWJF": {
           "type": "faq_item",
           "settings": {
             "question": "<strong>¿Qué diferencia tiene la tecnología liposomal?</strong>",
-            "answer": "<p>Ayuda a proteger y transportar los activos para favorecer una mejor absorción y aprovechamiento en el organismo.</p>"
+            "answer": "<p>La tecnología liposomal ayuda a proteger y transportar mejor los activos, favoreciendo una mejor absorción y aprovechamiento por parte del cuerpo.</p>"
           }
         },
         "faq_item_4_jrk0ZU": {
           "type": "faq_item",
           "settings": {
-            "question": "<strong>¿Tiene estimulantes?</strong>",
-            "answer": "<p>No. Es una fórmula pensada para apoyar la calma, el equilibrio y el bienestar diario sin depender de estimulantes.</p>"
+            "question": "<strong>¿Este kit ayuda a bajar de peso?</strong>",
+            "answer": "<p>No debe verse como una solución para bajar de peso.<br/><br/>Su función es <strong>apoyar el metabolismo, la digestión y el equilibrio diario</strong>, especialmente cuando se combina con buenos hábitos de alimentación, movimiento y descanso.</p>"
           }
         }
       },
