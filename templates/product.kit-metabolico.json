@@ -38,7 +38,7 @@
         "title_bpx6jA": {
           "type": "title",
           "settings": {
-            "title_text": "Ashwagandha Withania Somnífera D3 Liposomal",
+            "title_text": "<strong>Kit Metabólico: Cúrcuma + Berberina Liposomal</strong>",
             "heading_tag": "h3",
             "title_custom_typography": true,
             "title_size": 30,
@@ -57,7 +57,7 @@
         "text_WKhTaO": {
           "type": "text",
           "settings": {
-            "text": "<p>Apoya el _equilibrio emocional_, ayuda a manejar el _estrés diario_ y favorece un _descanso_ de mejor calidad.</p>",
+            "text": "<p>_Apoya tu metabolismo, el equilibrio digestivo_ y la respuesta antiinflamatoria natural del cuerpo.</p>",
             "text_highlight_color": "#d7fca3",
             "text_highlight_text_color": "#111111",
             "text_color": "#555555",
@@ -160,7 +160,7 @@
         "description_4X83w7": {
           "type": "description",
           "settings": {
-            "description_text": "<p>Una fórmula liposomal de alta absorción diseñada para apoyar tu bienestar diario, la calma mental y la calidad del sueño.</p>",
+            "description_text": "<p>Una combinación liposomal de <strong>Berberina + Cúrcuma</strong>, diseñada para apoyar el metabolismo, favorecer la salud digestiva y contribuir al bienestar físico diario.</p>",
             "description_color": "#111111",
             "description_font_size": 16,
             "description_font_size_mobile": 14,
@@ -176,8 +176,8 @@
         "collapsible_row_1_DAxcm0": {
           "type": "collapsible_row",
           "settings": {
-            "title": "¿Cómo funciona la Ashwagandha?",
-            "content": "<p>La Ashwagandha es un adaptógeno natural que ayuda al cuerpo a manejar mejor el estrés diario. Su fórmula liposomal favorece una mejor absorción, apoyando la calma mental, el equilibrio emocional y el descanso.</p>",
+            "title": "¿Cómo funciona el Kit Metabólico?",
+            "content": "<p>Combina <strong>Berberina Liposomal</strong> y <strong>Cúrcuma Liposomal</strong>.<br/><br/>La berberina apoya procesos relacionados con el metabolismo y el equilibrio de glucosa, mientras que la cúrcuma contribuye a la respuesta antiinflamatoria natural y al bienestar general.</p>",
             "margin_top_desktop": 0,
             "margin_bottom_desktop": 0,
             "margin_top_mobile": 0,
@@ -188,7 +188,7 @@
           "type": "collapsible_row",
           "settings": {
             "title": "¿Cuándo debo tomarla?",
-            "content": "<p>Tomar <strong>1 a 2 cápsulas al día</strong>, preferiblemente con agua y según la tolerancia de cada persona. Para rutinas enfocadas en descanso, muchas personas prefieren tomarla en la tarde o noche. La etiqueta indica uso oral y dosis de 1 a 2 cápsulas al día. </p>",
+            "content": "<p>Se recomienda tomarlo con alimentos.<br/><br/>La dosis general de los productos Fitoheal es de <strong>1 a 2 cápsulas al día</strong>, según la indicación del producto.</p>",
             "margin_top_desktop": 0,
             "margin_bottom_desktop": 0,
             "margin_top_mobile": 0,
@@ -199,7 +199,7 @@
           "type": "collapsible_row",
           "settings": {
             "title": "¿En cuánto tiempo puedo notar cambios?",
-            "content": "<p>Cada cuerpo responde de manera diferente. El uso constante puede ayudar a sentir mayor equilibrio, calma y mejor calidad de descanso dentro de una rutina diaria saludable.</p>",
+            "content": "<p>Depende de cada persona, su rutina, alimentación y constancia.<br/><br/>Este kit está pensado como apoyo diario, no como solución inmediata.</p>",
             "margin_top_desktop": 0,
             "margin_bottom_desktop": 0,
             "margin_top_mobile": 0,
@@ -245,8 +245,8 @@
             "image_radius_mobile": 12,
             "image_position": "left",
             "gap": 20,
-            "title": "Finalmente pude desconectar mejor",
-            "body": "<p>Sentía la mente acelerada al final del día. Después de incluir Ashwagandha en mi rutina, he sentido más calma y un descanso más estable.</p>",
+            "title": "Me siento más ligero y con mejor equilibrio",
+            "body": "<p>Sentía mi digestión pesada y mi metabolismo lento. Al incluir el Kit Metabólico en mi rutina, he sentido más bienestar y mayor equilibrio en mi día a día.</p>",
             "author": "— Cliente",
             "text_gap": 4,
             "title_color": "#111111",
