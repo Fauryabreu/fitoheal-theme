@@ -521,7 +521,7 @@
           "type": "media",
           "settings": {
             "media_type": "image",
-            "image": "shopify://shop_images/imagen_de_producto.png",
+            "image": "shopify://shop_images/7.png",
             "video_url": "",
             "video_autoplay": true,
             "video_loop": true,
