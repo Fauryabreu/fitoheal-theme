@@ -485,7 +485,7 @@
           "type": "heading",
           "settings": {
             "heading_alignment": "center",
-            "heading": "Un apoyo diario para _sentir más equilibrio",
+            "heading": "Un apoyo diario_ para sentir más equilibrio",
             "heading_custom_font": false,
             "heading_as": "h3",
             "heading_font": "poppins_n4",
@@ -546,24 +546,24 @@
           "type": "timeline_item",
           "settings": {
             "subheading": "Primeros días",
-            "heading": "Tu cuerpo empieza a adaptarse",
-            "description": "<p>La Ashwagandha puede ayudar a apoyar una respuesta más equilibrada frente al estrés diario y favorecer una sensación gradual de calma.</p>"
+            "heading": "Tu rutina empieza a sentirse más ligera",
+            "description": "<p>Con el uso constante, este kit empieza a apoyar el metabolismo y a favorecer una mejor sensación de bienestar digestivo en tu día a día.</p>"
           }
         },
         "timeline_item_2_3Qr27B": {
           "type": "timeline_item",
           "settings": {
             "subheading": "Semanas 2–4",
-            "heading": "Mayor equilibrio emocional",
-            "description": "<p>Con el uso constante, puede contribuir a sentirte más centrado durante el día y apoyar una rutina de descanso más estable.</p>"
+            "heading": "Más equilibrio digestivo y metabólico",
+            "description": "<p>La combinación de <strong>Berberina + Cúrcuma</strong> puede contribuir a una rutina más equilibrada, apoyando el metabolismo, la digestión y la respuesta antiinflamatoria natural del cuerpo.</p>"
           }
         },
         "timeline_item_3_6WDi7E": {
           "type": "timeline_item",
           "settings": {
             "subheading": "Uso continuo",
-            "heading": "Mejor bienestar diario",
-            "description": "<p>Como parte de una rutina saludable, puede favorecer la calma mental, el equilibrio de energía y la calidad del sueño.</p>"
+            "heading": "Bienestar diario como parte de tu rutina",
+            "description": "<p>Como parte de hábitos saludables, puede ayudarte a sostener un mejor equilibrio general, con apoyo digestivo, acción antioxidante y acompañamiento metabólico diario.</p>"
           }
         }
       },
