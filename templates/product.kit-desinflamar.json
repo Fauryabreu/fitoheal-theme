@@ -376,7 +376,7 @@
             "media_edge_to_edge": false,
             "mobile_media_position": "middle",
             "media_type": "image",
-            "image": "shopify://shop_images/imagen_modelo.png",
+            "image": "shopify://shop_images/6.png",
             "video_url": "",
             "enable_lazy_loading": true,
             "media_height": 600,
