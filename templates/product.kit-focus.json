@@ -1467,7 +1467,7 @@
         "subtitle_EvXGjz": {
           "type": "subtitle",
           "settings": {
-            "subtitle": "<p><strong>Información clara para que sepas cómo integrar Ashwagandha Liposomal a tu rutina diaria.</strong></p>",
+            "subtitle": "<p>Información clara para que sepas cómo integrar el Kit Focus Liposomal a tu rutina diaria.</p>",
             "subtitle_color": "#121212",
             "custom_font": false,
             "subtitle_as": "p",
@@ -1510,29 +1510,43 @@
         "faq_item_1_nCxGYg": {
           "type": "faq_item",
           "settings": {
-            "question": "<strong>¿Para qué sirve la Ashwagandha Liposomal?</strong>",
-            "answer": "<p>Apoya el manejo del estrés diario, favorece el equilibrio emocional y contribuye a una mejor calidad de descanso.</p>"
+            "question": "<strong>¿Para qué sirve el Kit Focus Liposomal?</strong>",
+            "answer": "<p>Está diseñado para apoyar el enfoque, la memoria, la concentración y el equilibrio mental durante el día. </p><p>Combina <strong>Ashwagandha Liposomal + Melena de León Liposomal</strong>, una mezcla pensada para momentos de alta exigencia mental.</p>"
           }
         },
         "faq_item_2_ohlkGR": {
           "type": "faq_item",
           "settings": {
             "question": "<strong>¿Cómo debo tomarla?</strong>",
-            "answer": "<p><strong>Tomar de 1 a 2 cápsulas al día con agua, según tu rutina y tolerancia.</strong></p>"
+            "answer": "<p>Se recomienda tomar <strong>1 a 2 cápsulas al día</strong>, preferiblemente con alimentos.<br/><br/>Puedes integrarlo en tu rutina de la mañana o durante el día.</p>"
           }
         },
         "faq_item_3_aKHWJF": {
           "type": "faq_item",
           "settings": {
             "question": "<strong>¿Qué diferencia tiene la tecnología liposomal?</strong>",
-            "answer": "<p>Ayuda a proteger y transportar los activos para favorecer una mejor absorción y aprovechamiento en el organismo.</p>"
+            "answer": "<p>La tecnología liposomal ayuda a proteger y transportar mejor los activos, favoreciendo una mejor absorción y aprovechamiento dentro del cuerpo.</p>"
           }
         },
         "faq_item_4_jrk0ZU": {
           "type": "faq_item",
           "settings": {
-            "question": "<strong>¿Tiene estimulantes?</strong>",
-            "answer": "<p>No. Es una fórmula pensada para apoyar la calma, el equilibrio y el bienestar diario sin depender de estimulantes.</p>"
+            "question": "<strong>¿Me puede dar sueño?</strong>",
+            "answer": "<p>No está pensado como un producto para dormir.<br/><br/>La Ashwagandha puede favorecer la calma, pero en este kit el objetivo principal es apoyar el enfoque, la memoria y el equilibrio mental durante el día.</p>"
+          }
+        },
+        "faq_item_7d7hjk": {
+          "type": "faq_item",
+          "settings": {
+            "question": "<strong>¿Puedo tomarlo para estudiar o trabajar?</strong>",
+            "answer": "<p>Sí. Puede integrarse como apoyo diario en rutinas de estudio, trabajo o concentración, especialmente cuando buscas más claridad mental y menos sensación de saturación.</p>"
+          }
+        },
+        "faq_item_4t7Dxr": {
+          "type": "faq_item",
+          "settings": {
+            "question": "<strong>¿Quiénes deben consultar antes de usarlo?</strong>",
+            "answer": "<p>Personas embarazadas, en lactancia, con condiciones médicas, trastornos autoinmunes, hipertiroidismo o que tomen medicamentos deben consultar con un profesional de salud antes de usarlo.</p>"
           }
         }
       },
@@ -1543,7 +1557,9 @@
         "faq_item_1_nCxGYg",
         "faq_item_2_ohlkGR",
         "faq_item_3_aKHWJF",
-        "faq_item_4_jrk0ZU"
+        "faq_item_4_jrk0ZU",
+        "faq_item_7d7hjk",
+        "faq_item_4t7Dxr"
       ],
       "name": "VSO - FAQ 02",
       "settings": {
