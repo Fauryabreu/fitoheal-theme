@@ -376,7 +376,7 @@
             "media_edge_to_edge": false,
             "mobile_media_position": "middle",
             "media_type": "image",
-            "image": "shopify://shop_images/imagen_modelo.png",
+            "image": "shopify://shop_images/ChatGPT_Image_20_may_2026_13_41_37.png",
             "video_url": "",
             "enable_lazy_loading": true,
             "media_height": 600,
@@ -521,7 +521,7 @@
           "type": "media",
           "settings": {
             "media_type": "image",
-            "image": "shopify://shop_images/imagen_de_producto.png",
+            "image": "shopify://shop_images/ChatGPT_Image_20_may_2026_13_51_09.png",
             "video_url": "",
             "video_autoplay": true,
             "video_loop": true,
