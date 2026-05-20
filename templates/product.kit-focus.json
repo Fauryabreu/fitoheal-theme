@@ -331,7 +331,7 @@
         "heading_rUiuRq": {
           "type": "heading",
           "settings": {
-            "subtitle": "<strong>Bienestar emocional y descanso</strong>",
+            "subtitle": "<strong>Enfoque, memoria y equilibrio diario</strong>",
             "subtitle_custom_font": false,
             "subtitle_as": "p",
             "subtitle_font": "poppins_n4",
@@ -342,7 +342,7 @@
             "subtitle_letter_spacing": 1,
             "subtitle_color": "#ffffff",
             "subtitle_spacing": 16,
-            "title": "<strong>Siente más calma en tu rutina diaria.</strong>",
+            "title": "<strong>Siente más claridad en tu rutina diaria.</strong>",
             "title_custom_font": false,
             "title_as": "h2",
             "title_font": "poppins_n6",
@@ -391,22 +391,22 @@
         "feature_1_iokXup": {
           "type": "feature",
           "settings": {
-            "feature_title": "<strong>Ayuda a reducir el estrés</strong>",
-            "feature_text": "Favorece una respuesta más equilibrada frente al estrés diario."
+            "feature_title": "<strong>Enfoque mental</strong>",
+            "feature_text": "Ayuda a mantener una mente más clara durante tus actividades diarias."
           }
         },
         "feature_2_n0zBc0": {
           "type": "feature",
           "settings": {
-            "feature_title": "<strong>Equilibrio emocional</strong>",
-            "feature_text": "Apoya la calma mental y el bienestar general durante el día."
+            "feature_title": "<strong>Memoria</strong>",
+            "feature_text": "Apoya la función cognitiva y la retención de información."
           }
         },
         "feature_3_2EfXxK": {
           "type": "feature",
           "settings": {
-            "feature_title": "<strong>Mejor descanso</strong>",
-            "feature_text": "Contribuye a una rutina de sueño más estable y reparadora."
+            "feature_title": "<strong>Calma diaria</strong>",
+            "feature_text": "Favorece una respuesta más equilibrada frente al estrés cotidiano."
           }
         },
         "feature_4_w0MBJV": {
@@ -485,7 +485,7 @@
           "type": "heading",
           "settings": {
             "heading_alignment": "center",
-            "heading": "Un apoyo diario para _sentir más equilibrio",
+            "heading": "Un apoyo diario para _sentir más claridad",
             "heading_custom_font": false,
             "heading_as": "h3",
             "heading_font": "poppins_n4",
@@ -546,24 +546,24 @@
           "type": "timeline_item",
           "settings": {
             "subheading": "Primeros días",
-            "heading": "Tu cuerpo empieza a adaptarse",
-            "description": "<p>La Ashwagandha puede ayudar a apoyar una respuesta más equilibrada frente al estrés diario y favorecer una sensación gradual de calma.</p>"
+            "heading": "Tu mente empieza a sentirse más estable",
+            "description": "<p>Con el uso constante, este kit puede apoyar una sensación gradual de calma, claridad y mejor disposición mental durante el día.</p>"
           }
         },
         "timeline_item_2_3Qr27B": {
           "type": "timeline_item",
           "settings": {
             "subheading": "Semanas 2–4",
-            "heading": "Mayor equilibrio emocional",
-            "description": "<p>Con el uso constante, puede contribuir a sentirte más centrado durante el día y apoyar una rutina de descanso más estable.</p>"
+            "heading": "Mayor enfoque y equilibrio",
+            "description": "<p>La combinación de <strong>Ashwagandha + Melena de León</strong> puede contribuir a una rutina más enfocada, apoyando la memoria, la concentración y el bienestar emocional.</p>"
           }
         },
         "timeline_item_3_6WDi7E": {
           "type": "timeline_item",
           "settings": {
             "subheading": "Uso continuo",
-            "heading": "Mejor bienestar diario",
-            "description": "<p>Como parte de una rutina saludable, puede favorecer la calma mental, el equilibrio de energía y la calidad del sueño.</p>"
+            "heading": "Más claridad como parte de tu rutina",
+            "description": "<p>Como parte de hábitos saludables, puede ayudarte a sostener mejor concentración, calma mental y energía sin estimulantes.</p>"
           }
         }
       },
