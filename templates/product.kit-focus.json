@@ -38,7 +38,7 @@
         "title_bpx6jA": {
           "type": "title",
           "settings": {
-            "title_text": "Ashwagandha Withania Somnífera D3 Liposomal",
+            "title_text": "Kit Focus: Ashwagandha + Melena de León Liposomal",
             "heading_tag": "h3",
             "title_custom_typography": true,
             "title_size": 30,
@@ -57,7 +57,7 @@
         "text_WKhTaO": {
           "type": "text",
           "settings": {
-            "text": "<p>Apoya el _equilibrio emocional_, ayuda a manejar el _estrés diario_ y favorece un _descanso_ de mejor calidad.</p>",
+            "text": "<p>Apoya el enfoque, la memoria y el equilibrio mental durante el día.</p><h2></h2>",
             "text_highlight_color": "#d7fca3",
             "text_highlight_text_color": "#111111",
             "text_color": "#555555",
@@ -160,7 +160,7 @@
         "description_4X83w7": {
           "type": "description",
           "settings": {
-            "description_text": "<p>Una fórmula liposomal de alta absorción diseñada para apoyar tu bienestar diario, la calma mental y la calidad del sueño.</p>",
+            "description_text": "<p>Una fórmula liposomal de alta absorción diseñada para apoyar la concentración, la memoria y la calma mental sin depender de estimulantes.</p>",
             "description_color": "#111111",
             "description_font_size": 16,
             "description_font_size_mobile": 14,
@@ -176,8 +176,8 @@
         "collapsible_row_1_DAxcm0": {
           "type": "collapsible_row",
           "settings": {
-            "title": "¿Cómo funciona la Ashwagandha?",
-            "content": "<p>La Ashwagandha es un adaptógeno natural que ayuda al cuerpo a manejar mejor el estrés diario. Su fórmula liposomal favorece una mejor absorción, apoyando la calma mental, el equilibrio emocional y el descanso.</p>",
+            "title": "¿Cómo funciona el Kit Focus?",
+            "content": "<p>Combina <strong>Ashwagandha Liposomal + Melena de León Liposomal</strong>.<br/><br/>La Ashwagandha ayuda a favorecer el equilibrio emocional y la calma diaria, mientras que la Melena de León apoya la memoria, la concentración y el bienestar cognitivo.</p>",
             "margin_top_desktop": 0,
             "margin_bottom_desktop": 0,
             "margin_top_mobile": 0,
@@ -188,7 +188,7 @@
           "type": "collapsible_row",
           "settings": {
             "title": "¿Cuándo debo tomarla?",
-            "content": "<p>Tomar <strong>1 a 2 cápsulas al día</strong>, preferiblemente con agua y según la tolerancia de cada persona. Para rutinas enfocadas en descanso, muchas personas prefieren tomarla en la tarde o noche. La etiqueta indica uso oral y dosis de 1 a 2 cápsulas al día. </p>",
+            "content": "<p>Puedes tomarlo durante el día, preferiblemente con alimentos.<br/><br/>La dosis general recomendada es de <strong>1 a 2 cápsulas al día</strong>, según la indicación del producto.</p>",
             "margin_top_desktop": 0,
             "margin_bottom_desktop": 0,
             "margin_top_mobile": 0,
@@ -199,7 +199,7 @@
           "type": "collapsible_row",
           "settings": {
             "title": "¿En cuánto tiempo puedo notar cambios?",
-            "content": "<p>Cada cuerpo responde de manera diferente. El uso constante puede ayudar a sentir mayor equilibrio, calma y mejor calidad de descanso dentro de una rutina diaria saludable.</p>",
+            "content": "<p>Depende de cada persona y de su constancia.<br/><br/>Este kit está pensado como apoyo diario para la concentración, la claridad mental y el equilibrio, no como un efecto inmediato.</p>",
             "margin_top_desktop": 0,
             "margin_bottom_desktop": 0,
             "margin_top_mobile": 0,
@@ -245,8 +245,8 @@
             "image_radius_mobile": 12,
             "image_position": "left",
             "gap": 20,
-            "title": "Finalmente pude desconectar mejor",
-            "body": "<p>Sentía la mente acelerada al final del día. Después de incluir Ashwagandha en mi rutina, he sentido más calma y un descanso más estable.</p>",
+            "title": "<strong>Me siento más enfocado y menos saturado</strong>",
+            "body": "<p>Antes sentía la mente cargada y me costaba concentrarme. Al incluir el Kit Focus en mi rutina, he sentido más claridad, calma y mejor enfoque durante el día.</p>",
             "author": "— Cliente",
             "text_gap": 4,
             "title_color": "#111111",
