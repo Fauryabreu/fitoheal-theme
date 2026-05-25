@@ -54,6 +54,12 @@
     gap: 1.25rem;
   }
   /* Card */
+  .fh-pc-link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    height: 100%;
+  }
   .fh-pc {
     background: #fff;
     border-radius: 12px;
@@ -62,8 +68,9 @@
     display: flex;
     flex-direction: column;
     transition: box-shadow 200ms;
+    height: 100%;
   }
-  .fh-pc:hover { box-shadow: 0 6px 24px rgba(27,67,50,0.12); }
+  .fh-pc-link:hover .fh-pc { box-shadow: 0 6px 24px rgba(27,67,50,0.12); }
   .fh-pc__img-wrap {
     position: relative;
     background: #f6fbf8;
@@ -177,6 +184,7 @@
           {%- for block in section.blocks -%}
             {%- if block.type == 'tab' -%}
               <button
+                id="fh-tab-{{ block.id }}"
                 class="fh-tab-btn{% if forloop.first %} is-active{% endif %}"
                 role="tab"
                 aria-selected="{% if forloop.first %}true{% else %}false{% endif %}"
@@ -200,35 +208,36 @@
               {%- assign tab_products = block.settings.product_1, block.settings.product_2, block.settings.product_3 -%}
               {%- for prod in tab_products -%}
                 {%- if prod != blank -%}
-                  <div class="fh-pc">
-                    <div class="fh-pc__img-wrap">
-                      {%- if prod.featured_image -%}
-                        <img
-                          src="{{ prod.featured_image | image_url: width: 400 }}"
-                          alt="{{ prod.title | escape }}"
-                          loading="lazy"
-                          width="400"
-                          height="400"
-                        >
-                      {%- else -%}
-                        {{ 'product-1' | placeholder_svg_tag }}
-                      {%- endif -%}
-                      {%- if block.settings.badge != blank -%}
-                        <span class="fh-pc__badge">{{ block.settings.badge }}</span>
-                      {%- endif -%}
-                    </div>
-                    <div class="fh-pc__body">
-                      <h4 class="fh-pc__name">{{ prod.title }}</h4>
-                      {%- if prod.description != blank -%}
-                        <p class="fh-pc__desc">{{ prod.description | strip_html | truncate: 90 }}</p>
-                      {%- endif -%}
-                      <div class="fh-pc__stars" aria-label="5 estrellas">★★★★★</div>
-                      <div class="fh-pc__footer">
-                        <span class="fh-pc__price">{{ prod.price_min | money }}</span>
-                        <a href="{{ prod.url }}" class="fh-pc__link">Ver producto →</a>
+                  <a href="{{ prod.url }}" class="fh-pc-link">
+                    <div class="fh-pc">
+                      <div class="fh-pc__img-wrap">
+                        {%- if prod.featured_image -%}
+                          <img
+                            src="{{ prod.featured_image | image_url: width: 400 }}"
+                            alt="{{ prod.title | escape }}"
+                            loading="lazy"
+                            width="400"
+                            height="400"
+                          >
+                        {%- else -%}
+                          {{ 'product-1' | placeholder_svg_tag }}
+                        {%- endif -%}
+                        {%- if block.settings.badge != blank -%}
+                          <span class="fh-pc__badge">{{ block.settings.badge }}</span>
+                        {%- endif -%}
+                      </div>
+                      <div class="fh-pc__body">
+                        <h4 class="fh-pc__name">{{ prod.title }}</h4>
+                        {%- if prod.description != blank -%}
+                          <p class="fh-pc__desc">{{ prod.description | strip_html | truncate: 90 }}</p>
+                        {%- endif -%}
+                        <div class="fh-pc__footer">
+                          <span class="fh-pc__price">{{ prod.price_min | money }}</span>
+                          <span class="fh-pc__link">Ver producto →</span>
+                        </div>
                       </div>
                     </div>
-                  </div>
+                  </a>
                 {%- endif -%}
               {%- endfor -%}
             </div>

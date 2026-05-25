@@ -1,3 +1,28 @@
+<style>
+  .fh-kit-card-link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    height: 100%;
+  }
+  .fh-kit-card { min-height: 480px; }
+  .fh-kit-card__img {
+    height: 260px;
+    overflow: hidden;
+  }
+  .fh-kit-card__img img,
+  .fh-kit-card__img svg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  .fh-kit-card-link:hover .fh-kit-card {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 28px rgba(27,67,50,0.1);
+  }
+</style>
+
 <section id="shopify-section-{{ section.id }}" class="fh-kits" style="background-color:{{ section.settings.bg_color }};">
   <div class="page-width">
     {% if section.settings.titulo != blank %}
@@ -26,29 +51,31 @@
               {%- assign card_color = '#1B4332' -%}
           {%- endcase -%}
 
-          <article class="fh-kit-card" {{ block.shopify_attributes }} style="background-color:{{ card_bg }};">
-            <div class="fh-kit-card__img">
-              {% if block.settings.imagen != blank %}
-                {{ block.settings.imagen | image_url: width: 600 | image_tag: loading: 'lazy', alt: block.settings.nombre }}
-              {% else %}
-                {{ 'collection-1' | placeholder_svg_tag }}
-              {% endif %}
-            </div>
-            <div class="fh-kit-card__body">
-              {% if block.settings.nombre != blank %}
-                <p class="fh-kit-card__name" style="color:{{ card_color }};">{{ block.settings.nombre }}</p>
-              {% endif %}
-              {% if block.settings.descripcion != blank %}
-                <p class="fh-kit-card__desc">{{ block.settings.descripcion }}</p>
-              {% endif %}
-              {% if block.settings.cta_label != blank %}
-                <a href="{{ block.settings.cta_link | default: '#' }}" class="fh-kit-card__link" style="color:{{ card_color }};">
-                  {{ block.settings.cta_label }}
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" width="14" height="14"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
-                </a>
-              {% endif %}
-            </div>
-          </article>
+          <a href="{{ block.settings.cta_link | default: '#' }}" class="fh-kit-card-link">
+            <article class="fh-kit-card" {{ block.shopify_attributes }} style="background-color:{{ card_bg }};">
+              <div class="fh-kit-card__img">
+                {% if block.settings.imagen != blank %}
+                  {{ block.settings.imagen | image_url: width: 600 | image_tag: loading: 'lazy', alt: block.settings.nombre }}
+                {% else %}
+                  {{ 'collection-1' | placeholder_svg_tag }}
+                {% endif %}
+              </div>
+              <div class="fh-kit-card__body">
+                {% if block.settings.nombre != blank %}
+                  <p class="fh-kit-card__name" style="color:{{ card_color }};">{{ block.settings.nombre }}</p>
+                {% endif %}
+                {% if block.settings.descripcion != blank %}
+                  <p class="fh-kit-card__desc">{{ block.settings.descripcion }}</p>
+                {% endif %}
+                {% if block.settings.cta_label != blank %}
+                  <span class="fh-kit-card__link" style="color:{{ card_color }};">
+                    {{ block.settings.cta_label }}
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" width="14" height="14"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
+                  </span>
+                {% endif %}
+              </div>
+            </article>
+          </a>
         {% endif %}
       {% endfor %}
     </div>

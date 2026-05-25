@@ -1,3 +1,20 @@
+<style>
+  .fh-footer,
+  .fh-footer * { background-color: transparent; }
+  .fh-footer { background-color: #ffffff !important; }
+  .fh-colombia-badge {
+    background: transparent !important;
+    border: none !important;
+    padding: 0 !important;
+    margin-top: 1rem;
+  }
+  .fh-colombia-badge img {
+    mix-blend-mode: multiply;
+    background: transparent !important;
+    border: none !important;
+  }
+</style>
+
 <footer id="shopify-section-{{ section.id }}" class="fh-footer" style="background-color:{{ section.settings.bg_color }};" role="contentinfo">
   <div class="page-width">
 
@@ -79,7 +96,7 @@
                   src="{{ 'hecho-en-colombia.png' | asset_url }}"
                   alt="Hecho en Colombia"
                   loading="lazy"
-                  style="width:100px;height:auto;display:block;background:transparent;border:none;"
+                  style="width:100px;height:auto;display:block;background:transparent;border:none;mix-blend-mode:multiply;"
                 >
               </div>
             {% endif %}
