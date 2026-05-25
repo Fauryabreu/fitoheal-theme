@@ -19,7 +19,11 @@
   }
   .fh-kit-card-link:hover .fh-kit-card {
     transform: translateY(-4px);
-    box-shadow: 0 10px 28px rgba(27,67,50,0.1);
+    box-shadow: var(--shadow-lg);
+  }
+  @media (max-width: 560px) {
+    .fh-kit-card { min-height: unset; }
+    .fh-kit-card__img { height: 200px; }
   }
 </style>
 

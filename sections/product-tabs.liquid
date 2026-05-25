@@ -1,5 +1,5 @@
 <style>
-  .fh-pt { background-color: {{ section.settings.bg_color }}; padding: 4rem 0; }
+  .fh-pt { background-color: {{ section.settings.bg_color }}; padding: clamp(3rem, 6vw, 5rem) 0; }
   .fh-pt__layout {
     display: grid;
     grid-template-columns: 300px 1fr;
@@ -26,7 +26,7 @@
     flex-wrap: wrap;
     gap: 0;
     margin-bottom: 2rem;
-    border-bottom: 2px solid #e8f0ec;
+    border-bottom: 2px solid var(--color-border);
   }
   .fh-tab-btn {
     background: none;
@@ -41,11 +41,13 @@
     transition: color 200ms, border-color 200ms;
     text-transform: capitalize;
     white-space: nowrap;
+    min-height: 44px;
   }
   .fh-tab-btn.is-active,
   .fh-tab-btn:hover {
     color: var(--color-brand-primary);
     border-bottom-color: var(--color-brand-primary);
+    font-weight: 600;
   }
   .fh-tab-panel { display: none; }
   .fh-tab-panel.is-active {
@@ -61,16 +63,16 @@
     height: 100%;
   }
   .fh-pc {
-    background: #fff;
-    border-radius: 12px;
-    border: 1px solid #e8f0ec;
+    background: var(--color-white);
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--color-border);
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    transition: box-shadow 200ms;
+    transition: transform 220ms ease-out, box-shadow 220ms ease-out;
     height: 100%;
   }
-  .fh-pc-link:hover .fh-pc { box-shadow: 0 6px 24px rgba(27,67,50,0.12); }
+  .fh-pc-link:hover .fh-pc { transform: translateY(-4px); box-shadow: var(--shadow-lg); }
   .fh-pc__img-wrap {
     position: relative;
     background: #f6fbf8;
@@ -90,13 +92,14 @@
     position: absolute;
     top: 10px;
     left: 10px;
-    background: var(--color-brand-primary);
-    color: #fff;
+    background: rgba(116,198,157,0.2);
+    color: var(--color-brand-primary);
+    border: 1px solid rgba(116,198,157,0.4);
     font-size: 0.7rem;
     font-weight: 600;
     padding: 3px 8px;
     border-radius: 999px;
-    letter-spacing: 0.02em;
+    letter-spacing: 0.04em;
     white-space: nowrap;
   }
   .fh-pc__body {
@@ -117,11 +120,10 @@
   .fh-pc__desc {
     font-size: 0.8125rem;
     color: var(--color-text-muted);
-    line-height: 1.55;
+    line-height: 1.6;
     margin: 0;
     flex: 1;
   }
-  .fh-pc__stars { color: #f5a623; font-size: 0.875rem; letter-spacing: 1px; margin-top: 0.25rem; }
   .fh-pc__footer {
     display: flex;
     align-items: center;
@@ -129,7 +131,7 @@
     gap: 12px;
     margin-top: 0.5rem;
     padding-top: 0.75rem;
-    border-top: 1px solid #f0f5f2;
+    border-top: 1px solid var(--color-border);
   }
   .fh-pc__price {
     font-size: 0.9375rem;
@@ -146,15 +148,16 @@
     text-decoration: none;
     white-space: nowrap;
   }
-  .fh-pc__link:hover { text-decoration: underline; }
+  .fh-pc-link:hover .fh-pc__link { text-decoration: underline; }
   /* Mobile */
   @media (max-width: 768px) {
     .fh-pt__layout { grid-template-columns: 1fr; gap: 1.5rem; }
     .fh-pt__sidebar { position: static; }
     .fh-tab-panel.is-active { grid-template-columns: 1fr; gap: 16px; }
-    .fh-tabs-nav { overflow-x: auto; white-space: nowrap; flex-wrap: nowrap; }
+    .fh-tabs-nav { overflow-x: auto; white-space: nowrap; flex-wrap: nowrap; scrollbar-width: none; }
+    .fh-tabs-nav::-webkit-scrollbar { display: none; }
     .fh-pc__img-wrap, .fh-pc__img-wrap img { height: 180px; object-fit: contain; }
-    .fh-pc__body { padding: 0.75rem; }
+    .fh-pc__body { padding: 0.875rem; }
   }
 </style>
 
