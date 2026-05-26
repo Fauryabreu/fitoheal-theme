@@ -74,17 +74,16 @@
   .fh-pc:hover { box-shadow: 0 6px 24px rgba(27,67,50,0.12); }
   .fh-pc__img-wrap {
     position: relative;
-    background: #f6fbf8;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 200px;
+    aspect-ratio: 3 / 4;
+    background: var(--color-cream);
     overflow: hidden;
+    width: 100%;
   }
   .fh-pc__img-wrap img {
     width: 100%;
-    height: 200px;
+    height: 100%;
     object-fit: contain;
+    object-position: center;
     display: block;
   }
   .fh-pc__badge {
@@ -186,15 +185,14 @@
       gap: 1.25rem !important;
     }
     .fh-pc__img-wrap {
-      height: 320px !important;
-      aspect-ratio: unset !important;
+      aspect-ratio: 3 / 4 !important;
+      height: auto !important;
     }
     .fh-pc__img-wrap img {
-      height: 320px !important;
       width: 100% !important;
+      height: 100% !important;
       object-fit: contain !important;
       object-position: center !important;
-      background: var(--color-cream) !important;
     }
     .fh-pc {
       width: 100% !important;
