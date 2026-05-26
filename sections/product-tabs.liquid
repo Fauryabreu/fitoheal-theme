@@ -156,21 +156,25 @@
       max-width: 100% !important;
     }
     .fh-tabs-nav {
-      flex-wrap: wrap !important;
-      overflow-x: hidden !important;
+      flex-wrap: nowrap !important;
+      overflow-x: auto !important;
+      scrollbar-width: none !important;
       white-space: normal !important;
       width: 100% !important;
       border-bottom: none !important;
-      gap: 0.5rem !important;
+      gap: 0.375rem !important;
       margin-bottom: 1.25rem !important;
       margin-top: 1.5rem !important;
     }
+    .fh-tabs-nav::-webkit-scrollbar { display: none !important; }
     .fh-tab-btn {
       border: 1.5px solid var(--color-border) !important;
       border-radius: 100px !important;
       margin-bottom: 0 !important;
-      padding: 0.5rem 1rem !important;
+      font-size: 0.75rem !important;
+      padding: 0.375rem 0.75rem !important;
       white-space: nowrap !important;
+      flex-shrink: 0 !important;
     }
     .fh-tab-btn.is-active {
       background: var(--color-brand-primary) !important;
