@@ -317,7 +317,7 @@
       "name": "All Products",
       "settings": {
         "titulo": "Nuestros productos",
-        "bg_color": "#FAFDF8"
+        "bg_color": "#f7f7f7"
       }
     },
     "about-section": {
