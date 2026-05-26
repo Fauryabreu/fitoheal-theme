@@ -163,6 +163,7 @@
       border-bottom: none !important;
       gap: 0.5rem !important;
       margin-bottom: 1.25rem !important;
+      margin-top: 1.5rem !important;
     }
     .fh-tab-btn {
       border: 1.5px solid var(--color-border) !important;
@@ -255,7 +256,7 @@
               {%- if block.type == 'product' and block.settings.tab == tval -%}
                 {%- assign prod = block.settings.product -%}
                 {%- if prod != blank -%}
-                  <div class="fh-pc" {{ block.shopify_attributes }}>
+                  <a href="{{ prod.url }}" class="fh-pc" style="display:block;text-decoration:none;color:inherit;" {{ block.shopify_attributes }}>
                     <div class="fh-pc__img-wrap">
                       {%- if prod.featured_image -%}
                         <img
@@ -280,10 +281,10 @@
                       <div class="fh-pc__stars" aria-label="5 estrellas">★★★★★</div>
                       <div class="fh-pc__footer">
                         <span class="fh-pc__price"> {{ prod.price_min | money }}</span>
-                        <a href="{{ prod.url }}" class="fh-pc__link">Ver producto →</a>
+                        <span class="fh-pc__link">Ver producto →</span>
                       </div>
                     </div>
-                  </div>
+                  </a>
                 {%- else -%}
                   <div class="fh-pc fh-pc--empty" {{ block.shopify_attributes }}>
                     <div class="fh-pc__img-wrap">{{ 'product-1' | placeholder_svg_tag }}</div>
