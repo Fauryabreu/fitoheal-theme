@@ -1,0 +1,136 @@
+<style>
+  .fh-ap {
+    padding: clamp(3rem, 6vw, 5rem) 0;
+    background-color: {{ section.settings.bg_color }};
+  }
+  .fh-ap__title {
+    font-family: var(--font-display);
+    font-size: clamp(1.625rem, 3.5vw, 2.25rem);
+    font-weight: 600;
+    color: var(--color-text-dark);
+    line-height: 1.2;
+    margin: 0 0 2rem;
+    text-align: center;
+  }
+  .fh-ap__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.25rem;
+  }
+  /* Card */
+  .fh-ap-card {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    background: var(--color-white);
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--color-border);
+    overflow: hidden;
+    transition: transform 220ms ease-out, box-shadow 220ms ease-out;
+  }
+  .fh-ap-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-md);
+  }
+  .fh-ap-card__img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    display: block;
+    background: #f6fbf8;
+  }
+  .fh-ap-card__body {
+    padding: 0.875rem 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+  .fh-ap-card__name {
+    font-family: var(--font-display);
+    font-size: 0.9375rem;
+    font-weight: 600;
+    color: var(--color-text-dark);
+    margin: 0;
+    line-height: 1.3;
+  }
+  .fh-ap-card__price {
+    font-size: 0.9375rem;
+    font-weight: 700;
+    color: var(--color-brand-primary);
+  }
+  /* Empty */
+  .fh-ap__empty {
+    text-align: center;
+    color: var(--color-text-muted);
+    padding: 3rem 0;
+  }
+  /* Responsive */
+  @media (max-width: 600px) {
+    .fh-ap__grid { grid-template-columns: repeat(2, 1fr); gap: 0.875rem; }
+  }
+</style>
+
+<section id="shopify-section-{{ section.id }}" class="fh-ap">
+  <div class="page-width">
+
+    {%- if section.settings.titulo != blank -%}
+      <h2 class="fh-ap__title">{{ section.settings.titulo }}</h2>
+    {%- endif -%}
+
+    {%- assign limit = section.settings.productos_count | default: 12 -%}
+    {%- assign all_products = collections.all.products -%}
+
+    {%- if all_products.size > 0 -%}
+      <div class="fh-ap__grid">
+        {%- for product in all_products limit: limit -%}
+          <a href="{{ product.url }}" class="fh-ap-card" aria-label="{{ product.title | escape }}">
+            {%- if product.featured_image -%}
+              <img
+                class="fh-ap-card__img"
+                src="{{ product.featured_image | image_url: width: 600 }}"
+                alt="{{ product.featured_image.alt | default: product.title | escape }}"
+                loading="lazy"
+                width="600"
+                height="600"
+              >
+            {%- else -%}
+              <div class="fh-ap-card__img" style="display:flex;align-items:center;justify-content:center;">
+                {{ 'product-1' | placeholder_svg_tag }}
+              </div>
+            {%- endif -%}
+            <div class="fh-ap-card__body">
+              <p class="fh-ap-card__name">{{ product.title }}</p>
+              <span class="fh-ap-card__price">{{ product.price_min | money }}</span>
+            </div>
+          </a>
+        {%- endfor -%}
+      </div>
+    {%- else -%}
+      <p class="fh-ap__empty">No hay productos disponibles.</p>
+    {%- endif -%}
+
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "All Products",
+  "tag": "section",
+  "settings": [
+    { "type": "text",  "id": "titulo",           "label": "Título",                "default": "Nuestros productos" },
+    {
+      "type": "range",
+      "id": "productos_count",
+      "label": "Productos a mostrar",
+      "min": 4,
+      "max": 24,
+      "step": 4,
+      "default": 12
+    },
+    { "type": "color", "id": "bg_color", "label": "Color de fondo", "default": "#FAFDF8" }
+  ],
+  "presets": [
+    { "name": "All Products" }
+  ]
+}
+{% endschema %}

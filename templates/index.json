@@ -257,6 +257,14 @@
         "cta_link": ""
       }
     },
+    "all-products": {
+      "type": "all-products",
+      "settings": {
+        "titulo": "Nuestros productos",
+        "productos_count": 12,
+        "bg_color": "#fafdf8"
+      }
+    },
     "kits-section": {
       "type": "kits-section",
       "blocks": {
@@ -388,6 +396,7 @@
     "features-bar",
     "how-it-works",
     "product-tabs",
+    "all-products",
     "kits-section",
     "about-section",
     "cta-banner",
