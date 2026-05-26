@@ -1,4 +1,12 @@
 <style>
+  .fh-pt {
+    overflow-x: hidden !important;
+    max-width: 100vw !important;
+  }
+  .fh-pt .page-width {
+    overflow-x: hidden !important;
+    max-width: 100% !important;
+  }
   .fh-pt { background-color: {{ section.settings.bg_color }}; padding: 4rem 0; }
   .fh-pt__layout {
     display: grid;
@@ -137,12 +145,66 @@
   .fh-pc--empty { opacity: 0.45; pointer-events: none; }
   /* Mobile */
   @media (max-width: 768px) {
-    .fh-pt__layout { grid-template-columns: 1fr; gap: 1.5rem; }
-    .fh-pt__sidebar { position: static; }
-    .fh-tab-panel.is-active { grid-template-columns: 1fr; }
-    .fh-tabs-nav { overflow-x: auto; white-space: nowrap; flex-wrap: nowrap; }
-    .fh-pc__img-wrap, .fh-pc__img-wrap img { height: 140px; }
-    .fh-pc__body { padding: 0.75rem; }
+    .fh-pt__layout {
+      display: block !important;
+      width: 100% !important;
+      max-width: 100% !important;
+    }
+    .fh-pt__sidebar {
+      width: 100% !important;
+      position: static !important;
+      max-width: 100% !important;
+    }
+    .fh-tabs-nav {
+      flex-wrap: wrap !important;
+      overflow-x: hidden !important;
+      white-space: normal !important;
+      width: 100% !important;
+      border-bottom: none !important;
+      gap: 0.5rem !important;
+      margin-bottom: 1.25rem !important;
+    }
+    .fh-tab-btn {
+      border: 1.5px solid var(--color-border) !important;
+      border-radius: 100px !important;
+      margin-bottom: 0 !important;
+      padding: 0.5rem 1rem !important;
+      white-space: nowrap !important;
+    }
+    .fh-tab-btn.is-active {
+      background: var(--color-brand-primary) !important;
+      color: #fff !important;
+      border-color: var(--color-brand-primary) !important;
+    }
+    .fh-tab-panel.is-active {
+      grid-template-columns: 1fr !important;
+      gap: 1.25rem !important;
+    }
+    .fh-pc__img-wrap {
+      height: 320px !important;
+      aspect-ratio: unset !important;
+    }
+    .fh-pc__img-wrap img {
+      height: 320px !important;
+      width: 100% !important;
+      object-fit: contain !important;
+      object-position: center !important;
+      background: var(--color-cream) !important;
+    }
+    .fh-pc {
+      width: 100% !important;
+      max-width: 100% !important;
+    }
+    .fh-pc__body {
+      padding: 1.25rem !important;
+    }
+    .fh-pc__name {
+      font-size: 1.0625rem !important;
+    }
+    .fh-pc__footer {
+      padding-top: 0.875rem !important;
+      margin-top: 0.5rem !important;
+    }
   }
 </style>
 
