@@ -312,12 +312,17 @@
         "titulo": "Kits diseñados para tus objetivos"
       }
     },
-    "all_products_RFgVUh": {
+    "all_products_CT9cBY": {
       "type": "all-products",
       "name": "All Products",
       "settings": {
         "titulo": "Nuestros productos",
-        "bg_color": "#f7f7f7"
+        "subtitulo": "",
+        "show_subtitle": true,
+        "coleccion": "",
+        "limite": 12,
+        "bg_color": "#ffffff",
+        "btn_label": "Comprar ahora"
       }
     },
     "about-section": {
@@ -398,7 +403,7 @@
     "how-it-works",
     "product-tabs",
     "kits-section",
-    "all_products_RFgVUh",
+    "all_products_CT9cBY",
     "about-section",
     "cta-banner",
     "footer_section_yUzwdH"
