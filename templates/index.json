@@ -257,14 +257,6 @@
         "cta_link": ""
       }
     },
-    "all-products": {
-      "type": "all-products",
-      "settings": {
-        "titulo": "Nuestros productos",
-        "productos_count": 12,
-        "bg_color": "#fafdf8"
-      }
-    },
     "kits-section": {
       "type": "kits-section",
       "blocks": {
@@ -318,6 +310,14 @@
       "settings": {
         "bg_color": "#ffffff",
         "titulo": "Kits diseñados para tus objetivos"
+      }
+    },
+    "all_products_RFgVUh": {
+      "type": "all-products",
+      "name": "All Products",
+      "settings": {
+        "titulo": "Nuestros productos",
+        "bg_color": "#FAFDF8"
       }
     },
     "about-section": {
@@ -393,11 +393,12 @@
   "order": [
     "announcement-bar",
     "hero-grid",
+    "social-proof",
     "features-bar",
     "how-it-works",
     "product-tabs",
-    "all-products",
     "kits-section",
+    "all_products_RFgVUh",
     "about-section",
     "cta-banner",
     "footer_section_yUzwdH"
