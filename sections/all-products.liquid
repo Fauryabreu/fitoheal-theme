@@ -5,116 +5,111 @@
 
   .fh-ap {
     background-color: {{ section.settings.bg_color }};
+    padding: clamp(3rem, 6vw, 5rem) 0;
+    overflow: hidden;
   }
 
-  /* ── Header hero ── */
-  .fh-ap__hero {
-    position: relative;
-    min-height: 320px;
+  /* ── Header row ── */
+  .fh-ap__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  .fh-ap__header-text {}
+  .fh-ap__title {
+    font-family: var(--font-display);
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    font-weight: 600;
+    color: var(--color-brand-primary);
+    line-height: 1.2;
+    margin: 0;
+  }
+  .fh-ap__subtitle {
+    font-family: var(--font-body);
+    font-size: 0.9375rem;
+    color: var(--color-text-muted);
+    margin: 0.375rem 0 0;
+    line-height: 1.5;
+  }
+
+  /* ── Arrow buttons ── */
+  .fh-ap__arrows {
+    display: flex;
+    gap: 0.625rem;
+    flex-shrink: 0;
+  }
+  .fh-ap__arrow {
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: center;
-    overflow: hidden;
-    background-color: #1b4332;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: 1.5px solid var(--color-border);
+    background: transparent;
+    color: var(--color-text-dark);
+    cursor: pointer;
+    transition: background 200ms, color 200ms, border-color 200ms;
+    flex-shrink: 0;
   }
-  .fh-ap__hero-bg {
-    position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
+  .fh-ap__arrow:hover {
+    background: var(--color-brand-primary);
+    color: #fff;
+    border-color: var(--color-brand-primary);
+  }
+  .fh-ap__arrow svg {
+    width: 18px;
+    height: 18px;
     display: block;
-  }
-  .fh-ap__hero-overlay {
-    position: absolute;
-    inset: 0;
-  }
-  .fh-ap__hero-content {
-    position: relative;
-    z-index: 1;
-    padding: 3rem 1.5rem;
-    max-width: 680px;
-  }
-  .fh-ap__hero-eyebrow {
-    display: inline-block;
-    font-family: var(--font-body);
-    font-size: 0.6875rem;
-    font-weight: 700;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    color: #74c69d;
-    margin-bottom: 0.75rem;
-  }
-  .fh-ap__hero-title {
-    font-family: var(--font-display);
-    font-size: clamp(2rem, 5vw, 3rem);
-    font-weight: 600;
-    color: #fff;
-    line-height: 1.1;
-    margin: 0 0 1rem;
-  }
-  .fh-ap__hero-subtitle {
-    font-family: var(--font-body);
-    font-size: 1.0625rem;
-    color: rgba(255,255,255,0.78);
-    line-height: 1.65;
-    margin: 0 0 1.75rem;
-  }
-  .fh-ap__hero-btn {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    font-family: var(--font-body);
-    font-size: 0.875rem;
-    font-weight: 600;
-    color: #1b4332;
-    background: #fff;
-    padding: 0.75rem 1.75rem;
-    border-radius: 100px;
-    text-decoration: none;
-    transition: background 220ms, color 220ms, transform 140ms;
-  }
-  .fh-ap__hero-btn:hover {
-    background: #74c69d;
-    color: #fff;
-    transform: translateY(-2px);
+    pointer-events: none;
   }
 
-  /* ── Grid body ── */
-  .fh-ap__body {
-    padding: clamp(3rem, 6vw, 5rem) 0;
-  }
-  .fh-ap__grid {
-    display: grid;
-    grid-template-columns: repeat(var(--fh-ap-cols, 4), 1fr);
+  /* ── Carousel track ── */
+  .fh-ap__track {
+    display: flex;
     gap: 1.5rem;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    padding-bottom: 1rem;
+    cursor: grab;
+    user-select: none;
   }
+  .fh-ap__track::-webkit-scrollbar { display: none; }
+  .fh-ap__track.is-dragging { cursor: grabbing; scroll-behavior: auto; }
 
   /* ── Card ── */
   .fh-ap-card {
+    flex-shrink: 0;
+    width: calc(25% - 1.125rem);
+    scroll-snap-align: start;
     display: block;
     text-decoration: none;
     color: inherit;
-    background: {{ section.settings.card_bg }};
+    background: transparent;
     cursor: pointer;
+    position: relative;
   }
+
+  /* ── Card media ── */
   .fh-ap-card__media {
     position: relative;
     aspect-ratio: 3 / 4;
     overflow: hidden;
-    background: #f6fbf8;
+    background: var(--color-cream);
   }
-  /* Primary image */
   .fh-ap-card__img {
     position: absolute;
     inset: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
+    object-position: center;
     display: block;
-    transition: opacity 400ms ease, transform 600ms ease;
+    transition: opacity 400ms ease;
   }
   .fh-ap-card__img--primary {
     opacity: 1;
@@ -124,86 +119,58 @@
     opacity: 0;
     z-index: 2;
   }
-  /* Crossfade on hover */
-  .fh-ap-card:hover .fh-ap-card__img--primary {
-    opacity: 0;
-    transform: scale(1.04);
-  }
   .fh-ap-card:hover .fh-ap-card__img--hover {
     opacity: 1;
   }
-  /* Scale primary when no second image */
-  .fh-ap-card:hover .fh-ap-card__img--only {
-    transform: scale(1.04);
-  }
 
-  /* ── Hover button ── */
-  .fh-ap-card__actions {
+  /* ── CTA button on hover ── */
+  .fh-ap-card__cta {
     position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%) translateY(8px);
+    opacity: 0;
     z-index: 3;
-    padding: 0.875rem;
-    transform: translateY(100%);
-    transition: transform 280ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
-  }
-  .fh-ap-card:hover .fh-ap-card__actions {
-    transform: translateY(0);
-  }
-  .fh-ap-card__btn {
-    display: block;
-    width: 100%;
-    position: relative;
-    overflow: hidden;
+    transition: opacity 250ms ease, transform 250ms ease;
+    white-space: nowrap;
+    /* Fill layer */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.75rem 1.75rem;
+    border: 1.5px solid #fff;
+    border-radius: 4px;
     font-family: var(--font-body);
     font-size: 0.875rem;
     font-weight: 600;
-    letter-spacing: 0.02em;
-    text-align: center;
-    padding: 0.8125rem 1.25rem;
-    border-radius: 6px;
-    border: none;
-    cursor: pointer;
-    color: var(--fh-btn-text, #ffffff);
+    color: #fff;
     background: transparent;
+    overflow: hidden;
     isolation: isolate;
-    transition: color 360ms ease;
+    cursor: pointer;
+    text-decoration: none;
   }
-  /* Fill layer */
-  .fh-ap-card__btn::before {
+  .fh-ap-card__cta::before {
     content: '';
     position: absolute;
     inset: 0;
-    background: var(--fh-btn-bg, #1b4332);
-    transform: translateX(-100%);
-    transition: transform 360ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    background: var(--color-brand-primary);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 300ms ease;
     z-index: -1;
   }
-  /* Outline layer (visible before fill) */
-  .fh-ap-card__btn::after {
-    content: '';
-    position: absolute;
-    inset: 0;
-    border-radius: 6px;
-    border: 1.5px solid var(--fh-btn-bg, #1b4332);
-    opacity: 0;
-    transition: opacity 280ms ease;
-    pointer-events: none;
-  }
-  .fh-ap-card:hover .fh-ap-card__btn::before {
-    transform: translateX(0);
-  }
-  .fh-ap-card:hover .fh-ap-card__btn::after {
+  .fh-ap-card:hover .fh-ap-card__cta {
     opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+  .fh-ap-card__cta:hover::before {
+    transform: scaleX(1);
   }
 
   /* ── Card info ── */
   .fh-ap-card__info {
-    padding: 0.875rem 0 0;
-    display: flex;
-    flex-direction: column;
-    gap: 0.25rem;
+    padding: 0.875rem 0.25rem;
   }
   .fh-ap-card__name {
     font-family: var(--font-display);
@@ -216,12 +183,11 @@
   .fh-ap-card__price {
     font-family: var(--font-body);
     font-size: 0.875rem;
-    font-weight: 400;
     color: var(--color-text-muted);
-    margin: 0;
+    margin: 0.25rem 0 0;
   }
 
-  /* ── Empty ── */
+  /* ── Empty state ── */
   .fh-ap__empty {
     text-align: center;
     padding: 4rem 0;
@@ -230,33 +196,20 @@
   }
 
   /* ── Responsive ── */
-  @media (max-width: 900px) {
-    .fh-ap__grid { --fh-ap-cols: 3; gap: 1rem; }
-  }
   @media (max-width: 768px) {
-    .fh-ap__grid { --fh-ap-cols: 2; gap: 0.875rem; }
-    .fh-ap__hero { min-height: 260px; }
+    .fh-ap__track { gap: 0.75rem; }
+    .fh-ap-card { width: calc(33.333% - 0.5rem); }
   }
   @media (max-width: 480px) {
-    .fh-ap__grid { --fh-ap-cols: 2; gap: 0.75rem; }
-    .fh-ap__hero { min-height: 220px; }
-    .fh-ap__hero-title { font-size: 1.625rem; }
-    .fh-ap-card__info { padding-top: 0.625rem; }
-    .fh-ap-card__name { font-size: 0.8125rem; }
-    .fh-ap-card__price { font-size: 0.75rem; }
+    .fh-ap__track { gap: 0.75rem; }
+    .fh-ap-card { width: calc(50% - 0.375rem); }
+    .fh-ap__subtitle { display: none; }
   }
 </style>
 
 {%- liquid
-  assign overlay_opacity = section.settings.overlay_opacity | divided_by: 100.0
-  assign overlay_color   = section.settings.overlay_color
-  assign cols            = section.settings.cols_desktop | default: 4
-  assign limite          = section.settings.limite | default: 12
-  assign show_price      = section.settings.show_price
-  assign hover_img       = section.settings.hover_image
-  assign btn_label       = section.settings.btn_label | default: 'Comprar ahora'
-  assign btn_color       = section.settings.btn_color
-  assign btn_text_color  = section.settings.btn_text_color
+  assign limite    = section.settings.limite | default: 12
+  assign btn_label = section.settings.btn_label | default: 'Comprar ahora'
 
   if section.settings.coleccion != blank
     assign src = section.settings.coleccion
@@ -265,152 +218,174 @@
   endif
 -%}
 
-<div id="shopify-section-{{ section.id }}" class="fh-ap" style="--fh-ap-cols: {{ cols }};">
+<section id="shopify-section-{{ section.id }}" class="fh-ap">
+  <div class="page-width">
 
-  {%- comment -%}── Hero header ──{%- endcomment -%}
-  {%- if section.settings.titulo != blank or section.settings.eyebrow != blank -%}
-    <div class="fh-ap__hero">
-      {%- if section.settings.imagen_header != blank -%}
-        <img
-          class="fh-ap__hero-bg"
-          src="{{ section.settings.imagen_header | image_url: width: 1600 }}"
-          alt="{{ section.settings.titulo | escape }}"
-          loading="eager"
-          fetchpriority="high"
-          width="1600"
-          height="320"
-        >
-      {%- endif -%}
-      <div
-        class="fh-ap__hero-overlay"
-        style="background-color: {{ overlay_color }}; opacity: {{ overlay_opacity }};"
-      ></div>
-      <div class="fh-ap__hero-content">
-        {%- if section.settings.eyebrow != blank -%}
-          <span class="fh-ap__hero-eyebrow">{{ section.settings.eyebrow }}</span>
+    <!-- Header -->
+    <div class="fh-ap__header">
+      <div class="fh-ap__header-text">
+        {%- if section.settings.titulo != blank -%}
+          <h2 class="fh-ap__title">{{ section.settings.titulo }}</h2>
         {%- endif -%}
-        <h2 class="fh-ap__hero-title">{{ section.settings.titulo }}</h2>
-        {%- if section.settings.subtitulo != blank -%}
-          <p class="fh-ap__hero-subtitle">{{ section.settings.subtitulo }}</p>
-        {%- endif -%}
-        {%- if section.settings.header_btn_label != blank -%}
-          <a href="{{ section.settings.header_btn_link | default: '#' }}" class="fh-ap__hero-btn">
-            {{ section.settings.header_btn_label }}
-          </a>
+        {%- if section.settings.show_subtitle and section.settings.subtitulo != blank -%}
+          <p class="fh-ap__subtitle">{{ section.settings.subtitulo }}</p>
         {%- endif -%}
       </div>
+      <div class="fh-ap__arrows" aria-label="Navegación carrusel">
+        <button class="fh-ap__arrow fh-ap__arrow--prev" aria-label="Anterior" type="button">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M15 18l-6-6 6-6"/>
+          </svg>
+        </button>
+        <button class="fh-ap__arrow fh-ap__arrow--next" aria-label="Siguiente" type="button">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M9 18l6-6-6-6"/>
+          </svg>
+        </button>
+      </div>
     </div>
-  {%- endif -%}
 
-  {%- comment -%}── Product grid ──{%- endcomment -%}
-  <div class="fh-ap__body">
-    <div class="page-width">
-      {%- if src.products.size > 0 -%}
-        <div class="fh-ap__grid">
-          {%- for product in src.products limit: limite -%}
-            <a
-              href="{{ product.url }}"
-              class="fh-ap-card"
-              aria-label="{{ product.title | escape }}"
-              style="--fh-btn-bg: {{ btn_color }}; --fh-btn-text: {{ btn_text_color }};"
-            >
-              <div class="fh-ap-card__media">
+    <!-- Carousel -->
+    {%- if src.products.size > 0 -%}
+      <div class="fh-ap__track" role="list">
+        {%- for product in src.products limit: limite -%}
+          <a
+            href="{{ product.url }}"
+            class="fh-ap-card"
+            role="listitem"
+            aria-label="{{ product.title | escape }}"
+          >
+            <div class="fh-ap-card__media">
 
-                {%- comment -%}Primary image{%- endcomment -%}
-                {%- if product.featured_image -%}
-                  <img
-                    class="fh-ap-card__img fh-ap-card__img--primary"
-                    src="{{ product.featured_image | image_url: width: 800 }}"
-                    alt="{{ product.featured_image.alt | default: product.title | escape }}"
-                    loading="lazy"
-                    width="800"
-                    height="1067"
-                  >
-                {%- else -%}
-                  <div class="fh-ap-card__img fh-ap-card__img--primary" style="display:flex;align-items:center;justify-content:center;position:absolute;inset:0;">
-                    {{ 'product-1' | placeholder_svg_tag }}
-                  </div>
-                {%- endif -%}
-
-                {%- comment -%}Hover / second image{%- endcomment -%}
-                {%- if hover_img and product.images[1] -%}
-                  <img
-                    class="fh-ap-card__img fh-ap-card__img--hover"
-                    src="{{ product.images[1] | image_url: width: 800 }}"
-                    alt="{{ product.images[1].alt | default: product.title | escape }}"
-                    loading="lazy"
-                    width="800"
-                    height="1067"
-                  >
-                {%- elsif product.featured_image -%}
-                  {%- comment -%}No second image — scale primary only{%- endcomment -%}
-                {%- endif -%}
-
-                {%- comment -%}CTA button on hover{%- endcomment -%}
-                <div class="fh-ap-card__actions">
-                  <span class="fh-ap-card__btn">{{ btn_label }}</span>
+              <!-- Primary image -->
+              {%- if product.featured_image -%}
+                <img
+                  class="fh-ap-card__img fh-ap-card__img--primary"
+                  src="{{ product.featured_image | image_url: width: 800 }}"
+                  alt="{{ product.featured_image.alt | default: product.title | escape }}"
+                  loading="lazy"
+                  width="800"
+                  height="1067"
+                >
+              {%- else -%}
+                <div class="fh-ap-card__img fh-ap-card__img--primary" style="display:flex;align-items:center;justify-content:center;">
+                  {{ 'product-1' | placeholder_svg_tag }}
                 </div>
+              {%- endif -%}
 
-              </div>
+              <!-- Hover image -->
+              {%- if product.images[1] -%}
+                <img
+                  class="fh-ap-card__img fh-ap-card__img--hover"
+                  src="{{ product.images[1] | image_url: width: 800 }}"
+                  alt="{{ product.images[1].alt | default: product.title | escape }}"
+                  loading="lazy"
+                  width="800"
+                  height="1067"
+                >
+              {%- endif -%}
 
-              <div class="fh-ap-card__info">
-                <p class="fh-ap-card__name">{{ product.title }}</p>
-                {%- if show_price -%}
-                  <p class="fh-ap-card__price">{{ product.price_min | money }}</p>
-                {%- endif -%}
-              </div>
-            </a>
-          {%- endfor -%}
-        </div>
-      {%- else -%}
-        <p class="fh-ap__empty">No hay productos disponibles.</p>
-      {%- endif -%}
-    </div>
+              <!-- CTA -->
+              <span class="fh-ap-card__cta">{{ btn_label }}</span>
+
+            </div>
+            <div class="fh-ap-card__info">
+              <p class="fh-ap-card__name">{{ product.title }}</p>
+              <p class="fh-ap-card__price">{{ product.price_min | money }}</p>
+            </div>
+          </a>
+        {%- endfor -%}
+      </div>
+    {%- else -%}
+      <p class="fh-ap__empty">No hay productos disponibles.</p>
+    {%- endif -%}
+
   </div>
+</section>
 
-</div>
+<script>
+(function () {
+  var section = document.getElementById('shopify-section-{{ section.id }}');
+  if (!section) return;
+
+  var track = section.querySelector('.fh-ap__track');
+  var btnPrev = section.querySelector('.fh-ap__arrow--prev');
+  var btnNext = section.querySelector('.fh-ap__arrow--next');
+  if (!track) return;
+
+  /* ── Arrow scroll ── */
+  function getCardWidth() {
+    var first = track.firstElementChild;
+    if (!first) return 0;
+    var style = window.getComputedStyle(track);
+    var gap = parseFloat(style.columnGap || style.gap) || 0;
+    return first.getBoundingClientRect().width + gap;
+  }
+
+  if (btnPrev) {
+    btnPrev.addEventListener('click', function () {
+      track.scrollBy({ left: -getCardWidth(), behavior: 'smooth' });
+    });
+  }
+  if (btnNext) {
+    btnNext.addEventListener('click', function () {
+      track.scrollBy({ left: getCardWidth(), behavior: 'smooth' });
+    });
+  }
+
+  /* ── Drag to scroll ── */
+  var isDragging = false;
+  var startX = 0;
+  var startScroll = 0;
+
+  track.addEventListener('mousedown', function (e) {
+    isDragging = true;
+    startX = e.pageX;
+    startScroll = track.scrollLeft;
+    track.classList.add('is-dragging');
+  });
+
+  document.addEventListener('mousemove', function (e) {
+    if (!isDragging) return;
+    e.preventDefault();
+    var dx = e.pageX - startX;
+    track.scrollLeft = startScroll - dx;
+  });
+
+  document.addEventListener('mouseup', function () {
+    if (!isDragging) return;
+    isDragging = false;
+    track.classList.remove('is-dragging');
+  });
+
+  /* Prevent link navigation on drag */
+  track.addEventListener('click', function (e) {
+    if (Math.abs(track.scrollLeft - startScroll) > 5) {
+      e.preventDefault();
+    }
+  }, true);
+})();
+</script>
 
 {% schema %}
 {
   "name": "All Products",
   "tag": "section",
   "settings": [
-    { "type": "header", "content": "Header de sección" },
-    { "type": "image_picker", "id": "imagen_header",   "label": "Imagen de fondo" },
-    { "type": "text",         "id": "eyebrow",         "label": "Eyebrow",              "default": "Catálogo completo" },
-    { "type": "text",         "id": "titulo",          "label": "Título",               "default": "Nuestros productos" },
-    { "type": "textarea",     "id": "subtitulo",       "label": "Subtítulo" },
-    { "type": "text",         "id": "header_btn_label","label": "Texto botón header" },
-    { "type": "url",          "id": "header_btn_link", "label": "Link botón header" },
-    { "type": "color",        "id": "overlay_color",   "label": "Color overlay",        "default": "#1B4332" },
-    {
-      "type": "range",
-      "id": "overlay_opacity",
-      "label": "Opacidad overlay",
-      "min": 0, "max": 90, "step": 5, "default": 60
-    },
-    { "type": "header", "content": "Grid de productos" },
-    { "type": "collection", "id": "coleccion",    "label": "Colección" },
+    { "type": "text",     "id": "titulo",       "label": "Título",               "default": "Nuestros productos" },
+    { "type": "textarea", "id": "subtitulo",    "label": "Subtítulo" },
+    { "type": "checkbox", "id": "show_subtitle","label": "Mostrar subtítulo",    "default": true },
+    { "type": "header",   "content": "Productos" },
+    { "type": "collection", "id": "coleccion",  "label": "Colección" },
     {
       "type": "range",
       "id": "limite",
       "label": "Productos a mostrar",
       "min": 4, "max": 24, "step": 4, "default": 12
     },
-    {
-      "type": "range",
-      "id": "cols_desktop",
-      "label": "Columnas desktop",
-      "min": 2, "max": 4, "step": 1, "default": 4
-    },
-    { "type": "color", "id": "bg_color",  "label": "Fondo sección", "default": "#FAFDF8" },
-    { "type": "color", "id": "card_bg",   "label": "Fondo cards",   "default": "#FFFFFF" },
-    { "type": "header", "content": "Cards" },
-    { "type": "text",     "id": "btn_label",      "label": "Texto botón hover",  "default": "Comprar ahora" },
-    { "type": "color",    "id": "btn_color",       "label": "Color fill botón",   "default": "#1B4332" },
-    { "type": "color",    "id": "btn_text_color",  "label": "Color texto botón",  "default": "#FFFFFF" },
-    { "type": "checkbox", "id": "show_price",      "label": "Mostrar precio",     "default": true },
-    { "type": "checkbox", "id": "hover_image",     "label": "Segunda imagen en hover", "default": true }
+    { "type": "header", "content": "Estilo" },
+    { "type": "color",  "id": "bg_color",   "label": "Fondo sección", "default": "#FAFDF8" },
+    { "type": "text",   "id": "btn_label",  "label": "Texto botón cards", "default": "Comprar ahora" }
   ],
   "presets": [
     { "name": "All Products" }
