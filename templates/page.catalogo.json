@@ -124,9 +124,55 @@
         "hero_inf_btn2_link": "",
         "hero_inf_bg": "#fafdf8"
       }
+    },
+    "footer_section_WTf9rw": {
+      "type": "footer-section",
+      "blocks": {
+        "nav_col_FdmRV6": {
+          "type": "nav_col",
+          "settings": {
+            "titulo": "Navegación",
+            "menu": ""
+          }
+        },
+        "nav_col_x4eKXK": {
+          "type": "nav_col",
+          "settings": {
+            "titulo": "Información",
+            "menu": ""
+          }
+        },
+        "contact_col_VxdYRa": {
+          "type": "contact_col",
+          "settings": {
+            "titulo": "¿Necesitas ayuda?",
+            "email": "info@fitoheal.co",
+            "web": "www.fitoheal.co",
+            "social": "@fitoheal.co",
+            "colombia_badge": true,
+            "colombia_text": "Calidad, ciencia y naturaleza para tu bienestar diario."
+          }
+        }
+      },
+      "block_order": [
+        "nav_col_FdmRV6",
+        "nav_col_x4eKXK",
+        "contact_col_VxdYRa"
+      ],
+      "name": "Footer",
+      "settings": {
+        "bg_color": "#ffffff",
+        "logo_text": "fitoheal",
+        "descripcion": "Soluciones liposomales de alta absorción con ingredientes naturales para tu bienestar diario.",
+        "instagram": "",
+        "tiktok": "",
+        "youtube": "",
+        "copyright": "Todos los derechos reservados."
+      }
     }
   },
   "order": [
-    "catalogo"
+    "catalogo",
+    "footer_section_WTf9rw"
   ]
 }
