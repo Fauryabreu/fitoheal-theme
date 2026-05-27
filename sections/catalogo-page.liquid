@@ -1,0 +1,986 @@
+<style>
+  /* ══════════════════════════════════════════
+     CATÁLOGO — fh-cat-*
+  ══════════════════════════════════════════ */
+  .fh-cat { overflow-x: hidden; }
+
+  /* ── Focus visible ── */
+  .fh-cat a:focus-visible,
+  .fh-cat button:focus-visible {
+    outline: 2px solid var(--color-brand-light);
+    outline-offset: 3px;
+    border-radius: 3px;
+  }
+
+  /* ══════════════════════════════════════════
+     HERO
+  ══════════════════════════════════════════ */
+  .fh-cat__hero {
+    position: relative;
+    overflow: hidden;
+    background: #0d1f17;
+    height: 90vh;
+    max-height: 720px;
+  }
+  @media (max-width: 767px) {
+    .fh-cat__hero { height: 85vh; max-height: none; }
+  }
+
+  /* Media layers */
+  .fh-cat__hero-media {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+  }
+  .fh-cat__hero-media img,
+  .fh-cat__hero-media video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+  }
+  .fh-cat__hero-media--desk { display: block; }
+  .fh-cat__hero-media--mob  { display: none; }
+  @media (max-width: 767px) {
+    .fh-cat__hero-media--desk { display: none; }
+    .fh-cat__hero-media--mob  { display: block; }
+  }
+
+  /* Overlay */
+  .fh-cat__hero-overlay {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    pointer-events: none;
+  }
+
+  /* Content */
+  .fh-cat__hero-body {
+    position: relative;
+    z-index: 2;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: clamp(3rem, 6vw, 5rem);
+    padding-left:   clamp(1.5rem, 5vw, 5rem);
+    padding-right:  clamp(1.5rem, 5vw, 5rem);
+    max-width: 860px;
+  }
+
+  .fh-cat__hero-eyebrow {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-family: var(--font-body);
+    font-size: 0.6875rem;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--color-brand-light);
+    margin: 0 0 1rem;
+  }
+  .fh-cat__hero-eyebrow::before {
+    content: '';
+    display: block;
+    width: 32px;
+    height: 1.5px;
+    background: currentColor;
+    flex-shrink: 0;
+  }
+  .fh-cat__hero-title {
+    font-family: var(--font-display);
+    font-size: clamp(2.5rem, 6vw, 5rem);
+    font-weight: 700;
+    line-height: 1.05;
+    color: #fff;
+    margin: 0 0 1.25rem;
+  }
+  .fh-cat__hero-sub {
+    font-family: var(--font-body);
+    font-size: clamp(1rem, 2vw, 1.25rem);
+    color: rgba(255,255,255,0.75);
+    line-height: 1.65;
+    max-width: 520px;
+    margin: 0 0 2rem;
+  }
+  .fh-cat__hero-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.625rem;
+    width: fit-content;
+  }
+
+  /* Staggered entry animations */
+  @keyframes fhCatHeroIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  .fh-cat__hero-eyebrow { animation: fhCatHeroIn 600ms cubic-bezier(0.25,0.46,0.45,0.94) 0ms   both; }
+  .fh-cat__hero-title   { animation: fhCatHeroIn 600ms cubic-bezier(0.25,0.46,0.45,0.94) 150ms both; }
+  .fh-cat__hero-sub     { animation: fhCatHeroIn 600ms cubic-bezier(0.25,0.46,0.45,0.94) 300ms both; }
+  .fh-cat__hero-cta     { animation: fhCatHeroIn 600ms cubic-bezier(0.25,0.46,0.45,0.94) 450ms both; }
+
+  /* Scroll indicator */
+  .fh-cat__scroll-ind {
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    transition: opacity 500ms ease;
+    pointer-events: none;
+  }
+  .fh-cat__scroll-ind.is-hidden { opacity: 0; }
+  @keyframes fhCatScrollBounce {
+    0%, 100% { transform: translateY(0);    opacity: 0.7; }
+    50%       { transform: translateY(10px); opacity: 0.15; }
+  }
+  .fh-cat__scroll-line {
+    width: 1.5px;
+    height: 40px;
+    background: linear-gradient(to bottom, rgba(255,255,255,0.6), transparent);
+    border-radius: 2px;
+    animation: fhCatScrollBounce 1.6s ease-in-out infinite;
+  }
+  .fh-cat__scroll-dot {
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.45);
+  }
+
+  /* ══════════════════════════════════════════
+     SECTION HEADER (shared component)
+  ══════════════════════════════════════════ */
+  .fh-cat__hd {
+    text-align: center;
+    margin-bottom: clamp(2.5rem, 5vw, 4rem);
+  }
+  .fh-cat__hd-eyebrow {
+    font-family: var(--font-body);
+    font-size: 0.6875rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--color-brand-medium);
+    margin: 0 0 0.875rem;
+  }
+  .fh-cat__hd-title {
+    font-family: var(--font-display);
+    font-size: clamp(1.75rem, 3.5vw, 2.75rem);
+    font-weight: 600;
+    color: var(--color-text-dark);
+    line-height: 1.15;
+    margin: 0 0 1rem;
+  }
+  .fh-cat__hd-sub {
+    font-family: var(--font-body);
+    font-size: 1rem;
+    color: var(--color-text-muted);
+    line-height: 1.7;
+    max-width: 560px;
+    margin: 0 auto 1.5rem;
+  }
+  .fh-cat__hd-div {
+    width: 48px;
+    height: 3px;
+    background: linear-gradient(90deg, var(--color-brand-light), transparent);
+    border-radius: 2px;
+    margin: 0 auto;
+  }
+
+  /* ══════════════════════════════════════════
+     PRODUCT GRID
+  ══════════════════════════════════════════ */
+  .fh-cat__prods {
+    padding: clamp(4rem, 8vw, 7rem) 0;
+  }
+  .fh-cat__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: clamp(1.25rem, 3vw, 2rem);
+    margin-bottom: 3rem;
+  }
+  @media (max-width: 1024px) { .fh-cat__grid { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 767px)  { .fh-cat__grid { grid-template-columns: 1fr; } }
+
+  .fh-cat-card {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    background: #fff;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+    transform: translateY(30px);
+    opacity: 0;
+    transition: transform 350ms cubic-bezier(0.34,1.56,0.64,1),
+                box-shadow 350ms cubic-bezier(0.34,1.56,0.64,1),
+                opacity 500ms ease;
+  }
+  .fh-cat-card.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .fh-cat-card:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-lg);
+  }
+  .fh-cat-card__media {
+    overflow: hidden;
+    aspect-ratio: 3 / 4;
+    background: var(--color-cream);
+  }
+  .fh-cat-card__media img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+    transition: transform 500ms ease;
+  }
+  .fh-cat-card:hover .fh-cat-card__media img { transform: scale(1.03); }
+  .fh-cat-card__info { padding: 1.25rem; }
+  .fh-cat-card__name {
+    font-family: var(--font-display);
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--color-text-dark);
+    margin: 0 0 0.375rem;
+    line-height: 1.3;
+  }
+  .fh-cat-card__price {
+    font-family: var(--font-body);
+    font-size: 0.9375rem;
+    font-weight: 600;
+    color: var(--color-brand-primary);
+    margin: 0;
+  }
+  .fh-cat__prods-cta { text-align: center; }
+
+  /* ══════════════════════════════════════════
+     KITS CAROUSEL
+  ══════════════════════════════════════════ */
+  .fh-cat__kits {
+    padding: clamp(4rem, 8vw, 7rem) 0;
+    background: #fff;
+    overflow: hidden;
+  }
+  .fh-cat__kits-hd {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 1.5rem;
+    margin-bottom: 2.5rem;
+    text-align: left;
+  }
+  .fh-cat__kits-hd .fh-cat__hd { margin-bottom: 0; text-align: left; }
+  .fh-cat__kits-hd .fh-cat__hd-div { margin: 0; }
+  .fh-cat__arrows {
+    display: flex;
+    gap: 0.625rem;
+    flex-shrink: 0;
+    padding-bottom: 0.25rem;
+  }
+  .fh-cat__arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: 1.5px solid var(--color-border);
+    background: transparent;
+    color: var(--color-text-dark);
+    cursor: pointer;
+    transition: background 200ms ease, color 200ms ease, border-color 200ms ease;
+    flex-shrink: 0;
+  }
+  .fh-cat__arrow:hover {
+    background: var(--color-brand-primary);
+    color: #fff;
+    border-color: var(--color-brand-primary);
+  }
+  .fh-cat__arrow svg { width: 18px; height: 18px; display: block; pointer-events: none; }
+
+  .fh-cat__kits-track {
+    display: flex;
+    gap: 1.5rem;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    cursor: grab;
+    user-select: none;
+    padding-bottom: 1rem;
+  }
+  .fh-cat__kits-track::-webkit-scrollbar { display: none; }
+  .fh-cat__kits-track.is-dragging { cursor: grabbing; scroll-behavior: auto; }
+
+  .fh-cat-kit {
+    flex-shrink: 0;
+    width: calc(33.333% - 1rem);
+    scroll-snap-align: start;
+    border-radius: var(--radius-xl);
+    overflow: hidden;
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 300ms ease, box-shadow 300ms ease;
+  }
+  .fh-cat-kit:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); }
+  .fh-cat-kit__media { aspect-ratio: 4 / 3; overflow: hidden; }
+  .fh-cat-kit__media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 400ms ease;
+  }
+  .fh-cat-kit:hover .fh-cat-kit__media img { transform: scale(1.04); }
+  .fh-cat-kit__body { padding: 1.5rem; }
+  .fh-cat-kit__name {
+    font-family: var(--font-display);
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin: 0 0 0.625rem;
+    line-height: 1.25;
+  }
+  .fh-cat-kit__desc {
+    font-family: var(--font-body);
+    font-size: 0.875rem;
+    color: var(--color-text-muted);
+    line-height: 1.65;
+    margin: 0 0 1.25rem;
+  }
+  .fh-cat-kit__link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.375rem;
+    font-family: var(--font-body);
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--color-brand-primary);
+    text-decoration: none;
+    transition: gap 200ms ease;
+  }
+  .fh-cat-kit:hover .fh-cat-kit__link { gap: 0.75rem; }
+
+  @media (max-width: 1024px) { .fh-cat-kit { width: calc(50% - 0.75rem); } }
+  @media (max-width: 767px) {
+    .fh-cat-kit { width: calc(85% - 0.5rem); }
+    .fh-cat__kits-track { gap: 0.75rem; }
+    .fh-cat__kits-hd { flex-direction: column; align-items: flex-start; gap: 1rem; }
+  }
+
+  /* ══════════════════════════════════════════
+     BOTTOM HERO (2-col split)
+  ══════════════════════════════════════════ */
+  .fh-cat__hi { padding: clamp(4rem, 8vw, 7rem) 0; }
+  .fh-cat__hi-inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: clamp(2rem, 5vw, 5rem);
+    align-items: center;
+  }
+  @media (max-width: 767px) {
+    .fh-cat__hi-inner { grid-template-columns: 1fr; }
+  }
+
+  .fh-cat__hi-img {
+    border-radius: var(--radius-xl);
+    overflow: hidden;
+    box-shadow: var(--shadow-lg);
+    opacity: 0;
+    transform: translateX(-40px);
+    transition: opacity 700ms cubic-bezier(0.25,0.46,0.45,0.94),
+                transform 700ms cubic-bezier(0.25,0.46,0.45,0.94);
+  }
+  .fh-cat__hi-img.is-visible { opacity: 1; transform: translateX(0); }
+  .fh-cat__hi-img img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    display: block;
+  }
+
+  .fh-cat__hi-text {
+    opacity: 0;
+    transform: translateX(40px);
+    transition: opacity 700ms cubic-bezier(0.25,0.46,0.45,0.94),
+                transform 700ms cubic-bezier(0.25,0.46,0.45,0.94);
+  }
+  .fh-cat__hi-text.is-visible { opacity: 1; transform: translateX(0); }
+
+  .fh-cat__hi-eyebrow {
+    font-family: var(--font-body);
+    font-size: 0.6875rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--color-brand-medium);
+    margin: 0 0 1rem;
+  }
+  .fh-cat__hi-title {
+    font-family: var(--font-display);
+    font-size: clamp(1.75rem, 3vw, 2.5rem);
+    font-weight: 600;
+    color: var(--color-text-dark);
+    line-height: 1.15;
+    margin: 0 0 1.25rem;
+  }
+  .fh-cat__hi-desc {
+    font-family: var(--font-body);
+    font-size: 1rem;
+    color: var(--color-text-muted);
+    line-height: 1.75;
+    margin: 0 0 2rem;
+  }
+  .fh-cat__benefits {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 2.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.875rem;
+  }
+  .fh-cat__benefit {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    font-family: var(--font-body);
+    font-size: 0.9375rem;
+    color: var(--color-text-dark);
+    line-height: 1.5;
+    min-height: 44px;
+    padding-top: 0.125rem;
+  }
+  .fh-cat__benefit svg {
+    flex-shrink: 0;
+    width: 20px;
+    height: 20px;
+    color: var(--color-brand-light);
+    margin-top: 2px;
+  }
+  .fh-cat__hi-ctas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+  }
+
+  /* ── Reduced motion ── */
+  @media (prefers-reduced-motion: reduce) {
+    .fh-cat__hero-eyebrow,
+    .fh-cat__hero-title,
+    .fh-cat__hero-sub,
+    .fh-cat__hero-cta  { animation: none; opacity: 1; transform: none; }
+    .fh-cat__scroll-line { animation: none; }
+    .fh-cat-card,
+    .fh-cat__hi-img,
+    .fh-cat__hi-text   { opacity: 1; transform: none; transition: none; }
+    .fh-cat-card__media img,
+    .fh-cat-kit__media img { transition: none; }
+  }
+</style>
+
+{%- liquid
+  assign overlay_color   = section.settings.hero_overlay   | default: '#0D1F17'
+  assign overlay_opacity = section.settings.hero_opacidad  | default: 45 | divided_by: 100.0
+
+  if section.settings.productos_coleccion != blank
+    assign prod_src = section.settings.productos_coleccion
+  else
+    assign prod_src = collections.all
+  endif
+  assign prod_limit = section.settings.prod_limite | default: 6
+-%}
+
+<div id="shopify-section-{{ section.id }}" class="fh-cat">
+
+  {%- comment -%}══ HERO ══{%- endcomment -%}
+  <div class="fh-cat__hero">
+
+    {%- comment -%}Desktop media{%- endcomment -%}
+    <div class="fh-cat__hero-media fh-cat__hero-media--desk" aria-hidden="true">
+      {%- if section.settings.usar_video_desktop and section.settings.hero_video_desktop != blank -%}
+        {%- assign vd = section.settings.hero_video_desktop -%}
+        <video autoplay muted loop playsinline>
+          {%- for src in vd.sources -%}
+            <source src="{{ src.url }}" type="{{ src.mime_type }}">
+          {%- endfor -%}
+        </video>
+      {%- elsif section.settings.hero_imagen_desktop != blank -%}
+        <img
+          src="{{ section.settings.hero_imagen_desktop | image_url: width: 1920 }}"
+          alt=""
+          loading="eager"
+          fetchpriority="high"
+          width="1920"
+          height="1080"
+        >
+      {%- endif -%}
+    </div>
+
+    {%- comment -%}Mobile media{%- endcomment -%}
+    <div class="fh-cat__hero-media fh-cat__hero-media--mob" aria-hidden="true">
+      {%- if section.settings.usar_video_mobile and section.settings.hero_video_mobile != blank -%}
+        {%- assign vm = section.settings.hero_video_mobile -%}
+        <video autoplay muted loop playsinline>
+          {%- for src in vm.sources -%}
+            <source src="{{ src.url }}" type="{{ src.mime_type }}">
+          {%- endfor -%}
+        </video>
+      {%- elsif section.settings.hero_imagen_mobile != blank -%}
+        <img
+          src="{{ section.settings.hero_imagen_mobile | image_url: width: 800 }}"
+          alt=""
+          loading="eager"
+          fetchpriority="high"
+          width="800"
+          height="1422"
+        >
+      {%- endif -%}
+    </div>
+
+    {%- comment -%}Overlay{%- endcomment -%}
+    <div
+      class="fh-cat__hero-overlay"
+      style="background-color: {{ overlay_color }}; opacity: {{ overlay_opacity }};"
+    ></div>
+
+    {%- comment -%}Content{%- endcomment -%}
+    <div class="fh-cat__hero-body">
+      {%- if section.settings.hero_eyebrow != blank -%}
+        <span class="fh-cat__hero-eyebrow">{{ section.settings.hero_eyebrow }}</span>
+      {%- endif -%}
+      {%- if section.settings.hero_titulo != blank -%}
+        <h1 class="fh-cat__hero-title">{{ section.settings.hero_titulo }}</h1>
+      {%- endif -%}
+      {%- if section.settings.hero_subtitulo != blank -%}
+        <p class="fh-cat__hero-sub">{{ section.settings.hero_subtitulo }}</p>
+      {%- endif -%}
+      {%- if section.settings.hero_btn_label != blank -%}
+        <div class="fh-cat__hero-cta">
+          <a href="{{ section.settings.hero_btn_link | default: '#' }}" class="fh-btn fh-btn--white">
+            {{ section.settings.hero_btn_label }} →
+          </a>
+        </div>
+      {%- endif -%}
+    </div>
+
+    {%- comment -%}Scroll indicator{%- endcomment -%}
+    <div class="fh-cat__scroll-ind" id="fh-cat-scroll-ind-{{ section.id }}" aria-hidden="true">
+      <div class="fh-cat__scroll-line"></div>
+      <div class="fh-cat__scroll-dot"></div>
+    </div>
+
+  </div>
+  {%- comment -%}Sentinel for scroll indicator{%- endcomment -%}
+  <div id="fh-cat-sentinel-{{ section.id }}" style="height:1px;"></div>
+
+  {%- comment -%}══ PRODUCT GRID ══{%- endcomment -%}
+  <section
+    class="fh-cat__prods"
+    style="background-color: {{ section.settings.productos_bg }};"
+    aria-label="Productos"
+  >
+    <div class="page-width">
+      <div class="fh-cat__hd">
+        {%- if section.settings.prod_eyebrow != blank -%}
+          <p class="fh-cat__hd-eyebrow">{{ section.settings.prod_eyebrow }}</p>
+        {%- endif -%}
+        {%- if section.settings.prod_titulo != blank -%}
+          <h2 class="fh-cat__hd-title">{{ section.settings.prod_titulo }}</h2>
+        {%- endif -%}
+        {%- if section.settings.prod_subtitulo != blank -%}
+          <p class="fh-cat__hd-sub">{{ section.settings.prod_subtitulo }}</p>
+        {%- endif -%}
+        <div class="fh-cat__hd-div"></div>
+      </div>
+
+      {%- if prod_src.products.size > 0 -%}
+        <div class="fh-cat__grid">
+          {%- for product in prod_src.products limit: prod_limit -%}
+            <a
+              href="{{ product.url }}"
+              class="fh-cat-card"
+              data-fh-cat-card
+              aria-label="{{ product.title | escape }}"
+            >
+              <div class="fh-cat-card__media">
+                {%- if product.featured_image -%}
+                  <img
+                    src="{{ product.featured_image | image_url: width: 600 }}"
+                    alt="{{ product.featured_image.alt | default: product.title | escape }}"
+                    loading="lazy"
+                    width="600"
+                    height="800"
+                  >
+                {%- else -%}
+                  {{ 'product-1' | placeholder_svg_tag }}
+                {%- endif -%}
+              </div>
+              <div class="fh-cat-card__info">
+                <p class="fh-cat-card__name">{{ product.title }}</p>
+                <p class="fh-cat-card__price">{{ product.price_min | money }}</p>
+              </div>
+            </a>
+          {%- endfor -%}
+        </div>
+      {%- endif -%}
+
+      {%- if section.settings.ver_todos_label != blank -%}
+        <div class="fh-cat__prods-cta">
+          <a href="{{ section.settings.ver_todos_link | default: '/collections/all' }}" class="fh-btn fh-btn--outline">
+            {{ section.settings.ver_todos_label }}
+          </a>
+        </div>
+      {%- endif -%}
+    </div>
+  </section>
+
+  {%- comment -%}══ KITS CAROUSEL ══{%- endcomment -%}
+  {%- assign kit_blocks = section.blocks | where: 'type', 'kit' -%}
+  {%- if kit_blocks.size > 0 -%}
+    <section class="fh-cat__kits" aria-label="Kits">
+      <div class="page-width">
+        <div class="fh-cat__kits-hd">
+          <div class="fh-cat__hd">
+            {%- if section.settings.kits_eyebrow != blank -%}
+              <p class="fh-cat__hd-eyebrow">{{ section.settings.kits_eyebrow }}</p>
+            {%- endif -%}
+            {%- if section.settings.kits_titulo != blank -%}
+              <h2 class="fh-cat__hd-title">{{ section.settings.kits_titulo }}</h2>
+            {%- endif -%}
+            {%- if section.settings.kits_subtitulo != blank -%}
+              <p class="fh-cat__hd-sub">{{ section.settings.kits_subtitulo }}</p>
+            {%- endif -%}
+            <div class="fh-cat__hd-div"></div>
+          </div>
+          <div class="fh-cat__arrows" aria-label="Navegación carrusel">
+            <button
+              class="fh-cat__arrow fh-cat__arrow--prev"
+              aria-label="Anterior"
+              type="button"
+              data-fh-cat-prev
+            >
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M15 18l-6-6 6-6"/>
+              </svg>
+            </button>
+            <button
+              class="fh-cat__arrow fh-cat__arrow--next"
+              aria-label="Siguiente"
+              type="button"
+              data-fh-cat-next
+            >
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M9 18l6-6-6-6"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="fh-cat__kits-track" role="list" data-fh-cat-track>
+          {%- for block in kit_blocks -%}
+            <a
+              href="{{ block.settings.link | default: '#' }}"
+              class="fh-cat-kit"
+              role="listitem"
+              style="background-color: {{ block.settings.color_fondo }};"
+              {{ block.shopify_attributes }}
+            >
+              {%- if block.settings.imagen != blank -%}
+                <div class="fh-cat-kit__media">
+                  <img
+                    src="{{ block.settings.imagen | image_url: width: 800 }}"
+                    alt="{{ block.settings.nombre | escape }}"
+                    loading="lazy"
+                    width="800"
+                    height="600"
+                  >
+                </div>
+              {%- endif -%}
+              <div class="fh-cat-kit__body">
+                {%- if block.settings.nombre != blank -%}
+                  <p class="fh-cat-kit__name" style="color: {{ block.settings.color_titulo }};">
+                    {{ block.settings.nombre }}
+                  </p>
+                {%- endif -%}
+                {%- if block.settings.descripcion != blank -%}
+                  <p class="fh-cat-kit__desc">{{ block.settings.descripcion }}</p>
+                {%- endif -%}
+                <span class="fh-cat-kit__link">Ver kit →</span>
+              </div>
+            </a>
+          {%- endfor -%}
+        </div>
+      </div>
+    </section>
+  {%- endif -%}
+
+  {%- comment -%}══ BOTTOM HERO ══{%- endcomment -%}
+  {%- assign ben_blocks = section.blocks | where: 'type', 'beneficio' -%}
+  <section
+    class="fh-cat__hi"
+    style="background-color: {{ section.settings.hero_inf_bg }};"
+    aria-label="{{ section.settings.hero_inf_titulo | escape }}"
+  >
+    <div class="page-width">
+      <div class="fh-cat__hi-inner">
+
+        {%- comment -%}Image col{%- endcomment -%}
+        {%- if section.settings.hero_inf_imagen != blank -%}
+          <div class="fh-cat__hi-img" data-fh-cat-slide-left>
+            <img
+              src="{{ section.settings.hero_inf_imagen | image_url: width: 900 }}"
+              alt="{{ section.settings.hero_inf_titulo | escape }}"
+              loading="lazy"
+              width="900"
+              height="675"
+            >
+          </div>
+        {%- endif -%}
+
+        {%- comment -%}Text col{%- endcomment -%}
+        <div class="fh-cat__hi-text" data-fh-cat-slide-right>
+          {%- if section.settings.hero_inf_eyebrow != blank -%}
+            <p class="fh-cat__hi-eyebrow">{{ section.settings.hero_inf_eyebrow }}</p>
+          {%- endif -%}
+          {%- if section.settings.hero_inf_titulo != blank -%}
+            <h2 class="fh-cat__hi-title">{{ section.settings.hero_inf_titulo }}</h2>
+          {%- endif -%}
+          {%- if section.settings.hero_inf_desc != blank -%}
+            <p class="fh-cat__hi-desc">{{ section.settings.hero_inf_desc }}</p>
+          {%- endif -%}
+
+          {%- if ben_blocks.size > 0 -%}
+            <ul class="fh-cat__benefits">
+              {%- for block in ben_blocks -%}
+                <li class="fh-cat__benefit" {{ block.shopify_attributes }}>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <polyline points="20 6 9 17 4 12"/>
+                  </svg>
+                  {{ block.settings.texto }}
+                </li>
+              {%- endfor -%}
+            </ul>
+          {%- endif -%}
+
+          <div class="fh-cat__hi-ctas">
+            {%- if section.settings.hero_inf_btn1_label != blank -%}
+              <a href="{{ section.settings.hero_inf_btn1_link | default: '#' }}" class="fh-btn fh-btn--primary">
+                {{ section.settings.hero_inf_btn1_label }}
+              </a>
+            {%- endif -%}
+            {%- if section.settings.hero_inf_btn2_label != blank -%}
+              <a href="{{ section.settings.hero_inf_btn2_link | default: '#' }}" class="fh-btn fh-btn--outline">
+                {{ section.settings.hero_inf_btn2_label }}
+              </a>
+            {%- endif -%}
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<script>
+(function () {
+  var sec = document.getElementById('shopify-section-{{ section.id }}');
+  if (!sec) return;
+
+  /* ── Scroll indicator ── */
+  var scrollInd  = sec.querySelector('#fh-cat-scroll-ind-{{ section.id }}');
+  var sentinel   = sec.querySelector('#fh-cat-sentinel-{{ section.id }}');
+  if (scrollInd && sentinel) {
+    var indObs = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) scrollInd.classList.add('is-hidden');
+        else scrollInd.classList.remove('is-hidden');
+      });
+    }, { threshold: 0 });
+    indObs.observe(sentinel);
+  }
+
+  /* ── Product card animations ── */
+  var cards = sec.querySelectorAll('[data-fh-cat-card]');
+  if (cards.length) {
+    var cardObs = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e, i) {
+        if (e.isIntersecting) {
+          var idx = Array.prototype.indexOf.call(cards, e.target);
+          setTimeout(function () {
+            e.target.classList.add('is-visible');
+          }, idx * 100);
+          cardObs.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.1 });
+    cards.forEach(function (c) { cardObs.observe(c); });
+  }
+
+  /* ── Bottom hero slide animations ── */
+  var slideEls = sec.querySelectorAll('[data-fh-cat-slide-left],[data-fh-cat-slide-right]');
+  if (slideEls.length) {
+    var slideObs = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) {
+          e.target.classList.add('is-visible');
+          slideObs.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.15 });
+    slideEls.forEach(function (el) { slideObs.observe(el); });
+  }
+
+  /* ── Kit carousel — arrows ── */
+  var track   = sec.querySelector('[data-fh-cat-track]');
+  var btnPrev = sec.querySelector('[data-fh-cat-prev]');
+  var btnNext = sec.querySelector('[data-fh-cat-next]');
+
+  function getKitWidth() {
+    var first = track && track.firstElementChild;
+    if (!first) return 0;
+    var gap = parseFloat(window.getComputedStyle(track).gap) || 24;
+    return first.getBoundingClientRect().width + gap;
+  }
+  if (btnPrev && track) {
+    btnPrev.addEventListener('click', function () {
+      track.scrollBy({ left: -getKitWidth(), behavior: 'smooth' });
+    });
+  }
+  if (btnNext && track) {
+    btnNext.addEventListener('click', function () {
+      track.scrollBy({ left: getKitWidth(), behavior: 'smooth' });
+    });
+  }
+
+  /* ── Kit carousel — drag ── */
+  if (track) {
+    var isDrag = false, startX = 0, startScroll = 0;
+    track.addEventListener('mousedown', function (e) {
+      isDrag = true; startX = e.pageX; startScroll = track.scrollLeft;
+      track.classList.add('is-dragging');
+    });
+    document.addEventListener('mousemove', function (e) {
+      if (!isDrag) return;
+      e.preventDefault();
+      track.scrollLeft = startScroll - (e.pageX - startX);
+    });
+    document.addEventListener('mouseup', function () {
+      if (!isDrag) return;
+      isDrag = false;
+      track.classList.remove('is-dragging');
+    });
+    track.addEventListener('click', function (e) {
+      if (Math.abs(track.scrollLeft - startScroll) > 5) e.preventDefault();
+    }, true);
+  }
+})();
+</script>
+
+{% schema %}
+{
+  "name": "Catálogo",
+  "tag": "section",
+  "settings": [
+    { "type": "header", "content": "Hero — Media desktop" },
+    { "type": "image_picker", "id": "hero_imagen_desktop", "label": "Imagen desktop (fallback si no hay video)" },
+    { "type": "video",        "id": "hero_video_desktop",  "label": "Video desktop (16:9 horizontal)" },
+    { "type": "checkbox",     "id": "usar_video_desktop",  "label": "Usar video en desktop", "default": false },
+    { "type": "header", "content": "Hero — Media mobile" },
+    { "type": "image_picker", "id": "hero_imagen_mobile",  "label": "Imagen mobile (fallback si no hay video)" },
+    { "type": "video",        "id": "hero_video_mobile",   "label": "Video mobile (9:16 vertical)" },
+    { "type": "checkbox",     "id": "usar_video_mobile",   "label": "Usar video en mobile", "default": false },
+    { "type": "header", "content": "Hero — Overlay" },
+    { "type": "color", "id": "hero_overlay",  "label": "Color overlay",     "default": "#0D1F17" },
+    {
+      "type": "range",
+      "id": "hero_opacidad",
+      "label": "Opacidad overlay",
+      "min": 0, "max": 85, "step": 5, "default": 45
+    },
+    { "type": "header", "content": "Hero — Contenido" },
+    { "type": "text",     "id": "hero_eyebrow",   "label": "Eyebrow" },
+    { "type": "text",     "id": "hero_titulo",    "label": "Título",    "default": "Nuestro catálogo" },
+    { "type": "textarea", "id": "hero_subtitulo", "label": "Subtítulo" },
+    { "type": "text",     "id": "hero_btn_label", "label": "Texto botón CTA" },
+    { "type": "url",      "id": "hero_btn_link",  "label": "Link botón CTA" },
+    { "type": "header", "content": "Productos" },
+    { "type": "text",     "id": "prod_eyebrow",   "label": "Eyebrow",   "default": "Fórmulas liposomales" },
+    { "type": "text",     "id": "prod_titulo",    "label": "Título",    "default": "Nuestros productos" },
+    { "type": "textarea", "id": "prod_subtitulo", "label": "Subtítulo" },
+    { "type": "collection", "id": "productos_coleccion", "label": "Colección" },
+    {
+      "type": "range",
+      "id": "prod_limite",
+      "label": "Productos a mostrar",
+      "min": 3, "max": 12, "step": 3, "default": 6
+    },
+    { "type": "color",    "id": "productos_bg",       "label": "Fondo sección",          "default": "#FAFDF8" },
+    { "type": "text",     "id": "ver_todos_label",    "label": "Texto botón ver todos",  "default": "Ver todos los productos" },
+    { "type": "url",      "id": "ver_todos_link",     "label": "Link ver todos" },
+    { "type": "header", "content": "Kits" },
+    { "type": "text",     "id": "kits_eyebrow",   "label": "Eyebrow",   "default": "Pensados para ti" },
+    { "type": "text",     "id": "kits_titulo",    "label": "Título",    "default": "Kits para tus objetivos" },
+    { "type": "textarea", "id": "kits_subtitulo", "label": "Subtítulo" },
+    { "type": "header", "content": "Hero inferior" },
+    { "type": "image_picker", "id": "hero_inf_imagen",     "label": "Imagen" },
+    { "type": "text",         "id": "hero_inf_eyebrow",    "label": "Eyebrow" },
+    { "type": "text",         "id": "hero_inf_titulo",     "label": "Título" },
+    { "type": "textarea",     "id": "hero_inf_desc",       "label": "Descripción" },
+    { "type": "text",         "id": "hero_inf_btn1_label", "label": "Botón primario texto" },
+    { "type": "url",          "id": "hero_inf_btn1_link",  "label": "Botón primario link" },
+    { "type": "text",         "id": "hero_inf_btn2_label", "label": "Botón secundario texto" },
+    { "type": "url",          "id": "hero_inf_btn2_link",  "label": "Botón secundario link" },
+    { "type": "color",        "id": "hero_inf_bg",         "label": "Fondo sección", "default": "#FAFDF8" }
+  ],
+  "blocks": [
+    {
+      "type": "kit",
+      "name": "Kit",
+      "settings": [
+        { "type": "image_picker", "id": "imagen",       "label": "Imagen" },
+        { "type": "text",         "id": "nombre",       "label": "Nombre",       "default": "Kit" },
+        { "type": "textarea",     "id": "descripcion",  "label": "Descripción" },
+        { "type": "url",          "id": "link",         "label": "Link" },
+        { "type": "color",        "id": "color_fondo",  "label": "Fondo card",   "default": "#F0FAF4" },
+        { "type": "color",        "id": "color_titulo", "label": "Color título", "default": "#1B4332" }
+      ]
+    },
+    {
+      "type": "beneficio",
+      "name": "Beneficio",
+      "limit": 4,
+      "settings": [
+        { "type": "text", "id": "texto", "label": "Texto del beneficio", "default": "Alta absorción liposomal X5" }
+      ]
+    }
+  ],
+  "max_blocks": 10,
+  "presets": [
+    {
+      "name": "Catálogo",
+      "blocks": [
+        { "type": "kit",       "settings": { "nombre": "Estrés / Sueño",  "descripcion": "Relájate, baja el estrés y mejora tu descanso.", "color_fondo": "#F3F0FF", "color_titulo": "#6B4FBB" } },
+        { "type": "kit",       "settings": { "nombre": "Desinflamar",     "descripcion": "Apoya la inflamación natural y el equilibrio digestivo.", "color_fondo": "#F0FAF4", "color_titulo": "#1B4332" } },
+        { "type": "kit",       "settings": { "nombre": "Metabólico",      "descripcion": "Apoya el metabolismo de la glucosa y la inflamación.", "color_fondo": "#FFF8F0", "color_titulo": "#C05614" } },
+        { "type": "kit",       "settings": { "nombre": "Focus",           "descripcion": "Claridad mental, concentración y energía sostenida.", "color_fondo": "#FFF0F3", "color_titulo": "#B5294A" } },
+        { "type": "beneficio", "settings": { "texto": "Tecnología liposomal de alta absorción" } },
+        { "type": "beneficio", "settings": { "texto": "Ingredientes naturales seleccionados" } },
+        { "type": "beneficio", "settings": { "texto": "Desarrollado por profesionales" } },
+        { "type": "beneficio", "settings": { "texto": "Hecho en Colombia" } }
+      ]
+    }
+  ]
+}
+{% endschema %}

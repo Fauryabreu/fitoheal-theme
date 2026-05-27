@@ -1,0 +1,95 @@
+{
+  "sections": {
+    "catalogo": {
+      "type": "catalogo-page",
+      "blocks": {
+        "kit-1": {
+          "type": "kit",
+          "settings": {
+            "nombre": "Estrés / Sueño",
+            "descripcion": "Relájate, baja el estrés y mejora tu descanso.",
+            "cta_label": "Ver kit",
+            "cta_link": "shopify://products/kit-sueno-estres"
+          }
+        },
+        "kit-2": {
+          "type": "kit",
+          "settings": {
+            "nombre": "Desinflamar",
+            "descripcion": "Apoya la inflamación natural y el equilibrio digestivo.",
+            "cta_label": "Ver kit",
+            "cta_link": "shopify://products/kit-desinflamar"
+          }
+        },
+        "kit-3": {
+          "type": "kit",
+          "settings": {
+            "nombre": "Metabólico",
+            "descripcion": "Apoya el metabolismo de la glucosa y la inflamación.",
+            "cta_label": "Ver kit",
+            "cta_link": "shopify://products/kit-metabolico"
+          }
+        },
+        "kit-4": {
+          "type": "kit",
+          "settings": {
+            "nombre": "Focus",
+            "descripcion": "Claridad mental, concentración y energía sostenida.",
+            "cta_label": "Ver kit",
+            "cta_link": "shopify://products/kit-focus"
+          }
+        },
+        "ben-1": {
+          "type": "beneficio",
+          "settings": {
+            "texto": "Tecnología liposomal de alta absorción"
+          }
+        },
+        "ben-2": {
+          "type": "beneficio",
+          "settings": {
+            "texto": "Ingredientes naturales seleccionados"
+          }
+        },
+        "ben-3": {
+          "type": "beneficio",
+          "settings": {
+            "texto": "Desarrollado por profesionales de la salud"
+          }
+        },
+        "ben-4": {
+          "type": "beneficio",
+          "settings": {
+            "texto": "Hecho en Colombia para tu bienestar diario"
+          }
+        }
+      },
+      "block_order": [
+        "kit-1",
+        "kit-2",
+        "kit-3",
+        "kit-4",
+        "ben-1",
+        "ben-2",
+        "ben-3",
+        "ben-4"
+      ],
+      "settings": {
+        "hero_titulo": "Todos nuestros productos",
+        "hero_subtitulo": "Fórmulas liposomales de alta absorción para tu bienestar diario.",
+        "hero_cta_label": "Comprar ahora",
+        "hero_overlay_opacity": 45,
+        "productos_titulo": "Nuestros productos",
+        "productos_limite": 12,
+        "productos_bg": "#fafdf8",
+        "kits_titulo": "Kits por objetivo",
+        "kits_bg": "#ffffff",
+        "bottom_titulo": "Ciencia y naturaleza para tu bienestar",
+        "bottom_subtitulo": "Somos un sistema de soluciones liposomales de alta absorción con ingredientes seleccionados y ciencia moderna para acompañarte en tus objetivos sin restricciones impuestas.",
+        "bottom_cta_label": "Conoce nuestra historia",
+        "bottom_bg": "#fafdf8"
+      }
+    }
+  },
+  "order": ["catalogo"]
+}
