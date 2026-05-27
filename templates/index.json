@@ -348,6 +348,151 @@
         "btn_secundario_link": ""
       }
     },
+    "vso_faq_02_4p8iQ4": {
+      "type": "vso-faq-02",
+      "blocks": {
+        "title_EyikRj": {
+          "type": "title",
+          "settings": {
+            "title": "Aclaramos _tus dudas",
+            "title_color": "#000000",
+            "title_highlight_color": "#40916c",
+            "custom_font": false,
+            "title_as": "h2",
+            "font": "bricolage_grotesque_n4",
+            "title_size": 40,
+            "title_size_mobile": 26,
+            "title_alignment_desktop": "left",
+            "title_alignment_mobile": "center",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "margin_top_mobile": 0,
+            "margin_bottom_mobile": 0
+          }
+        },
+        "subtitle_jiMXqV": {
+          "type": "subtitle",
+          "settings": {
+            "subtitle": "<p>Todo lo que necesitas saber para elegir y usar mejor tus fórmulas liposomales Fitoheal.</p>",
+            "subtitle_color": "#333333",
+            "custom_font": false,
+            "subtitle_as": "p",
+            "font": "bricolage_grotesque_n4",
+            "subtitle_size": 20,
+            "subtitle_size_mobile": 18,
+            "subtitle_alignment_desktop": "left",
+            "subtitle_alignment_mobile": "center",
+            "margin_top": 10,
+            "margin_bottom": 10,
+            "margin_top_mobile": 10,
+            "margin_bottom_mobile": 10
+          }
+        },
+        "team_4Q6kCV": {
+          "type": "team",
+          "disabled": true,
+          "settings": {
+            "team_images_count": 3,
+            "team_image_size": 60,
+            "team_image_border_width": 2,
+            "team_image_border_color": "#FFFFFF",
+            "team_images_overlap": 10,
+            "team_images_margin_bottom": 10,
+            "paragraph": "Expect a reply within one business day.",
+            "team_paragraph_color": "#333333",
+            "custom_font": false,
+            "team_paragraph_as": "p",
+            "font": "bricolage_grotesque_n4",
+            "team_paragraph_size": 18,
+            "team_paragraph_size_mobile": 16,
+            "team_alignment_desktop": "left",
+            "team_alignment_mobile": "center",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "margin_top_mobile": 0,
+            "margin_bottom_mobile": 30
+          }
+        },
+        "faq_item_3KA4VF": {
+          "type": "faq_item",
+          "settings": {
+            "question": "How do I use this product?",
+            "answer": "<p>Our return policy allows for returns within 30 days of purchase. Please see our website for more details.</p>"
+          }
+        },
+        "faq_item_NMUmjw": {
+          "type": "faq_item",
+          "settings": {
+            "question": "What makes your product different from competitors?",
+            "answer": "<p>Our return policy allows for returns within 30 days of purchase. Please see our website for more details.</p>"
+          }
+        },
+        "faq_item_piUwNz": {
+          "type": "faq_item",
+          "settings": {
+            "question": "How long until I see results?",
+            "answer": "<p>Our return policy allows for returns within 30 days of purchase. Please see our website for more details.</p>"
+          }
+        },
+        "faq_item_AEU8mN": {
+          "type": "faq_item",
+          "settings": {
+            "question": "Do you offer a satisfaction guarantee?",
+            "answer": "<p>Our return policy allows for returns within 30 days of purchase. Please see our website for more details.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "title_EyikRj",
+        "subtitle_jiMXqV",
+        "team_4Q6kCV",
+        "faq_item_3KA4VF",
+        "faq_item_NMUmjw",
+        "faq_item_piUwNz",
+        "faq_item_AEU8mN"
+      ],
+      "name": "VSO - FAQ 02",
+      "settings": {
+        "enable_advanced_settings": false,
+        "section_full_width": false,
+        "section_max_width_desktop": 120,
+        "padding_horizontal": 20,
+        "padding_horizontal_mobile": 15,
+        "desktop_column_gap": 20,
+        "left_column_padding_right_desktop": 40,
+        "section_bg_type": "solid",
+        "section_bg_color": "#FFFFFF",
+        "section_bg_gradient": "linear-gradient(360deg, #F5F5F5 0%, #FFFFFF 100%)",
+        "full_width_desktop": true,
+        "section_border_radius": 12,
+        "padding_top": 40,
+        "padding_bottom": 40,
+        "padding_top_mobile": 20,
+        "padding_bottom_mobile": 20,
+        "margin_top": 40,
+        "margin_bottom": 40,
+        "margin_top_mobile": 20,
+        "margin_bottom_mobile": 20,
+        "faq_item_gap": 10,
+        "faq_divider_width": 1,
+        "faq_question_color": "#000000",
+        "faq_question_custom_font": false,
+        "faq_question_as": "p",
+        "faq_question_font": "bricolage_grotesque_n4",
+        "faq_question_font_size": 18,
+        "faq_question_font_size_mobile": 16,
+        "faq_question_font_weight": "500",
+        "faq_question_padding_vertical": 10,
+        "faq_question_padding_vertical_mobile": 10,
+        "faq_answer_color": "#333333",
+        "faq_answer_custom_font": false,
+        "faq_answer_font": "bricolage_grotesque_n4",
+        "faq_answer_font_size": 16,
+        "faq_answer_font_size_mobile": 15,
+        "faq_icon_size": 18,
+        "faq_icon_color": "#000000"
+      }
+    },
     "footer_section_yUzwdH": {
       "type": "footer-section",
       "blocks": {
@@ -406,6 +551,7 @@
     "all_products_CT9cBY",
     "about-section",
     "cta-banner",
+    "vso_faq_02_4p8iQ4",
     "footer_section_yUzwdH"
   ]
 }
