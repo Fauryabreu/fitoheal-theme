@@ -64,8 +64,8 @@
         "kit-4"
       ],
       "settings": {
-        "hero_imagen_desktop": "shopify://shop_images/Hero.png",
-        "usar_video_desktop": false,
+        "hero_video_desktop": "shopify://files/videos/video_202605270131.mp4",
+        "usar_video_desktop": true,
         "hero_imagen_mobile": "shopify://shop_images/ChatGPT_Image_30_abr_2026_16_54_34.png",
         "usar_video_mobile": false,
         "hero_overlay": "#0d1f17",
