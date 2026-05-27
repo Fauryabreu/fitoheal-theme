@@ -55,41 +55,13 @@
             "color_fondo": "#f0faf4",
             "color_titulo": "#1b4332"
           }
-        },
-        "ben-1": {
-          "type": "beneficio",
-          "settings": {
-            "texto": "Tecnología liposomal de alta absorción"
-          }
-        },
-        "ben-2": {
-          "type": "beneficio",
-          "settings": {
-            "texto": "Ingredientes naturales seleccionados"
-          }
-        },
-        "ben-3": {
-          "type": "beneficio",
-          "settings": {
-            "texto": "Desarrollado por profesionales de la salud"
-          }
-        },
-        "ben-4": {
-          "type": "beneficio",
-          "settings": {
-            "texto": "Hecho en Colombia para tu bienestar diario"
-          }
         }
       },
       "block_order": [
         "kit-1",
         "kit-2",
         "kit-3",
-        "kit-4",
-        "ben-1",
-        "ben-2",
-        "ben-3",
-        "ben-4"
+        "kit-4"
       ],
       "settings": {
         "hero_imagen_desktop": "shopify://shop_images/Hero.png",
@@ -113,16 +85,20 @@
         "ver_todos_link": "",
         "kits_eyebrow": "Pensados para ti",
         "kits_titulo": "Kits por objetivo",
-        "kits_subtitulo": "",
-        "hero_inf_imagen": "shopify://shop_images/ChatGPT_Image_20_may_2026_13_51_09.png",
-        "hero_inf_eyebrow": "",
-        "hero_inf_titulo": "",
-        "hero_inf_desc": "",
-        "hero_inf_btn1_label": "",
-        "hero_inf_btn1_link": "",
-        "hero_inf_btn2_label": "",
-        "hero_inf_btn2_link": "",
-        "hero_inf_bg": "#fafdf8"
+        "kits_subtitulo": ""
+      }
+    },
+    "about_section_kT6MgK": {
+      "type": "about-section",
+      "name": "About Section",
+      "settings": {
+        "bg_color": "#FAFDF8",
+        "imagen_pos": "right",
+        "titulo": "Más sobre Fitoheal",
+        "descripcion": "<p>Somos un sistema de soluciones liposomales de alta absorción con ingredientes seleccionados y ciencia moderna para acompañarte en tus objetivos sin restricciones impuestas.</p><p>Creados para integrarse fácilmente a tu rutina diaria y ayudarte a sentir la mejor versión. Todos los días.</p>",
+        "cta_label": "",
+        "cta_link": "",
+        "imagen": "shopify://shop_images/ChatGPT_Image_30_abr_2026_16_54_34.png"
       }
     },
     "footer_section_WTf9rw": {
@@ -173,6 +149,7 @@
   },
   "order": [
     "catalogo",
+    "about_section_kT6MgK",
     "footer_section_WTf9rw"
   ]
 }
