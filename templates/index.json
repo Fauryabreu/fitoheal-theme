@@ -31,7 +31,7 @@
         "titulo": "Suplementos Liposomales: diseñados para absorberse mejor",
         "subtitulo": "La tecnología liposomal ayuda a proteger y transportar los activos para que tu cuerpo pueda aprovecharlos mejor en tu rutina diaria.",
         "texto_btn_primario": "Comprar ahora",
-        "link_btn_primario": "",
+        "link_btn_primario": "shopify://pages/catalogo",
         "texto_btn_secundario": "",
         "link_btn_secundario": "",
         "imagen_hero": "shopify://shop_images/Hero_Principal.png",
@@ -131,7 +131,7 @@
         "bg_color": "#ffffff",
         "titulo": "¿Por qué elegir una fórmula liposomal?",
         "cta_label": "Encuentra tu fórmula",
-        "cta_link": "",
+        "cta_link": "shopify://pages/catalogo",
         "imagen": "shopify://shop_images/Como_funciona.png"
       }
     },
@@ -254,7 +254,7 @@
         "titulo": "Elige tu fórmula liposomal según tu objetivo",
         "descripcion": "Cada fórmula Fitoheal está diseñada para favorecer una mejor absorción y apoyar una necesidad concreta de tu rutina diaria.",
         "cta_label": "Conoce nuestra línea",
-        "cta_link": ""
+        "cta_link": "shopify://pages/catalogo"
       }
     },
     "kits-section": {
@@ -343,7 +343,7 @@
         "bg_color": "#1b4332",
         "texto": "Descubre cómo la tecnología liposomal puede apoyar tu rutina diaria",
         "btn_primario_label": "Comprar ahora",
-        "btn_primario_link": "",
+        "btn_primario_link": "shopify://pages/catalogo",
         "btn_secundario_label": "",
         "btn_secundario_link": ""
       }
