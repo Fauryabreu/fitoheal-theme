@@ -28,11 +28,11 @@
       "type": "hero-grid",
       "settings": {
         "bg_color": "#fafdf8",
-        "titulo": "Suplementos Liposomales: diseñados para absorberse mejor",
-        "subtitulo": "La tecnología liposomal ayuda a proteger y transportar los activos para que tu cuerpo pueda aprovecharlos mejor en tu rutina diaria.",
+        "titulo": "No es solo suplementarte. Es absorber mejor.",
+        "subtitulo": "Fitoheal utiliza tecnología liposomal para ayudar a proteger y transportar los activos, favoreciendo una mejor absorción y aprovechamiento en tu rutina diaria.",
         "texto_btn_primario": "Comprar ahora",
         "link_btn_primario": "",
-        "texto_btn_secundario": "",
+        "texto_btn_secundario": "Descubre los kits",
         "link_btn_secundario": "",
         "imagen_hero": "shopify://shop_images/Hero_Principal.png",
         "trust_icon_color": "#40916c",
@@ -348,183 +348,6 @@
         "btn_secundario_link": ""
       }
     },
-    "vso_faq_02_xMEEAe": {
-      "type": "vso-faq-02",
-      "blocks": {
-        "title_rbdked": {
-          "type": "title",
-          "settings": {
-            "title": "Aclaramos _tus dudas",
-            "title_color": "#000000",
-            "title_highlight_color": "#40916c",
-            "custom_font": false,
-            "title_as": "h2",
-            "font": "bricolage_grotesque_n4",
-            "title_size": 40,
-            "title_size_mobile": 26,
-            "title_alignment_desktop": "left",
-            "title_alignment_mobile": "center",
-            "margin_top": 0,
-            "margin_bottom": 0,
-            "margin_top_mobile": 0,
-            "margin_bottom_mobile": 0
-          }
-        },
-        "subtitle_FhwmaN": {
-          "type": "subtitle",
-          "settings": {
-            "subtitle": "<p><strong>¿Necesitas ayuda? Escríbenos y te orientamos según tu objetivo de bienestar.</strong></p>",
-            "subtitle_color": "#1b4332",
-            "custom_font": false,
-            "subtitle_as": "p",
-            "font": "bricolage_grotesque_n4",
-            "subtitle_size": 20,
-            "subtitle_size_mobile": 18,
-            "subtitle_alignment_desktop": "left",
-            "subtitle_alignment_mobile": "center",
-            "margin_top": 10,
-            "margin_bottom": 10,
-            "margin_top_mobile": 10,
-            "margin_bottom_mobile": 10
-          }
-        },
-        "team_8HV3rb": {
-          "type": "team",
-          "disabled": true,
-          "settings": {
-            "team_images_count": 3,
-            "team_image_size": 60,
-            "team_image_border_width": 2,
-            "team_image_border_color": "#ffffff",
-            "team_images_overlap": 10,
-            "team_images_margin_bottom": 10,
-            "paragraph": "Expect a reply within one business day.",
-            "team_paragraph_color": "#333333",
-            "custom_font": false,
-            "team_paragraph_as": "p",
-            "font": "bricolage_grotesque_n4",
-            "team_paragraph_size": 18,
-            "team_paragraph_size_mobile": 16,
-            "team_alignment_desktop": "left",
-            "team_alignment_mobile": "center",
-            "margin_top": 0,
-            "margin_bottom": 0,
-            "margin_top_mobile": 0,
-            "margin_bottom_mobile": 30
-          }
-        },
-        "faq_item_R3HzBL": {
-          "type": "faq_item",
-          "settings": {
-            "question": "<strong>¿Qué significa que un suplemento sea liposomal?</strong>",
-            "answer": "<p>Significa que utiliza una tecnología diseñada para ayudar a proteger y transportar los activos, favoreciendo una mejor absorción y aprovechamiento en el cuerpo.</p>"
-          }
-        },
-        "faq_item_wdGGEg": {
-          "type": "faq_item",
-          "settings": {
-            "question": "<strong>¿Qué hace diferente a Fitoheal?</strong>",
-            "answer": "<p>Fitoheal no se enfoca solo en ingredientes. Sus fórmulas liposomales están pensadas para apoyar objetivos concretos como descanso, digestión, enfoque, metabolismo y bienestar físico.</p>"
-          }
-        },
-        "faq_item_4pDGPG": {
-          "type": "faq_item",
-          "settings": {
-            "question": "<strong>¿Cómo elijo el producto ideal para mí?</strong>",
-            "answer": "<p>Elige según tu objetivo principal: descansar mejor, apoyar tu digestión, mejorar el enfoque, acompañar tu metabolismo o cuidar tu bienestar físico diario.</p>"
-          }
-        },
-        "faq_item_AJW4BQ": {
-          "type": "faq_item",
-          "settings": {
-            "question": "<strong>¿Cuál es la diferencia entre productos y kits?</strong>",
-            "answer": "<p>Los productos individuales apoyan una necesidad puntual. Los kits combinan dos fórmulas complementarias para acompañar objetivos más completos, como sueño/estrés, desinflamar, metabolismo o enfoque.</p>"
-          }
-        },
-        "faq_item_DTdrD8": {
-          "type": "faq_item",
-          "settings": {
-            "question": "<strong>¿Cómo debo tomar los productos?</strong>",
-            "answer": "<p>La mayoría de las fórmulas se toman de 1 a 2 cápsulas al día con agua. Revisa siempre la indicación específica de cada producto antes de usarlo.</p>"
-          }
-        },
-        "faq_item_yVPrFX": {
-          "type": "faq_item",
-          "settings": {
-            "question": "<strong>¿En cuánto tiempo puedo notar cambios?</strong>",
-            "answer": "<p>Cada cuerpo responde diferente. Lo más importante es la constancia: integrar el producto a tu rutina diaria ayuda a que el cuerpo aproveche mejor sus beneficios con el tiempo.</p>"
-          }
-        },
-        "faq_item_e6mAfY": {
-          "type": "faq_item",
-          "settings": {
-            "question": "<strong>¿Puedo combinar varios productos?</strong>",
-            "answer": "<p>Sí, algunos productos están pensados para complementarse en kits. Si estás embarazada, en lactancia, bajo tratamiento médico o tienes una condición de salud, consulta primero con un profesional.</p>"
-          }
-        },
-        "faq_item_3pcfxa": {
-          "type": "faq_item",
-          "settings": {
-            "question": "<strong>¿Fitoheal reemplaza un tratamiento médico?</strong>",
-            "answer": "<p>No. Fitoheal es un apoyo para el bienestar diario. No reemplaza diagnósticos, tratamientos ni recomendaciones médicas profesionales.</p>"
-          }
-        }
-      },
-      "block_order": [
-        "title_rbdked",
-        "subtitle_FhwmaN",
-        "team_8HV3rb",
-        "faq_item_R3HzBL",
-        "faq_item_wdGGEg",
-        "faq_item_4pDGPG",
-        "faq_item_AJW4BQ",
-        "faq_item_DTdrD8",
-        "faq_item_yVPrFX",
-        "faq_item_e6mAfY",
-        "faq_item_3pcfxa"
-      ],
-      "name": "VSO - FAQ 02",
-      "settings": {
-        "enable_advanced_settings": false,
-        "section_full_width": false,
-        "section_max_width_desktop": 120,
-        "padding_horizontal": 20,
-        "padding_horizontal_mobile": 15,
-        "desktop_column_gap": 20,
-        "left_column_padding_right_desktop": 40,
-        "section_bg_type": "solid",
-        "section_bg_color": "#fbfdf9",
-        "section_bg_gradient": "linear-gradient(360deg, #F5F5F5 0%, #FFFFFF 100%)",
-        "full_width_desktop": true,
-        "section_border_radius": 12,
-        "padding_top": 40,
-        "padding_bottom": 40,
-        "padding_top_mobile": 20,
-        "padding_bottom_mobile": 20,
-        "margin_top": 40,
-        "margin_bottom": 40,
-        "margin_top_mobile": 20,
-        "margin_bottom_mobile": 20,
-        "faq_item_gap": 10,
-        "faq_divider_width": 1,
-        "faq_question_color": "#000000",
-        "faq_question_custom_font": false,
-        "faq_question_as": "p",
-        "faq_question_font": "bricolage_grotesque_n4",
-        "faq_question_font_size": 18,
-        "faq_question_font_size_mobile": 16,
-        "faq_question_font_weight": "500",
-        "faq_question_padding_vertical": 10,
-        "faq_question_padding_vertical_mobile": 10,
-        "faq_answer_color": "#333333",
-        "faq_answer_custom_font": false,
-        "faq_answer_font": "bricolage_grotesque_n4",
-        "faq_answer_font_size": 16,
-        "faq_answer_font_size_mobile": 15,
-        "faq_icon_size": 18,
-        "faq_icon_color": "#000000"
-      }
-    },
     "footer_section_yUzwdH": {
       "type": "footer-section",
       "blocks": {
@@ -532,7 +355,7 @@
           "type": "nav_col",
           "settings": {
             "titulo": "Navegación",
-            "menu": "main-menu"
+            "menu": ""
           }
         },
         "nav_col_iHJf7L": {
@@ -548,7 +371,7 @@
             "titulo": "¿Necesitas ayuda?",
             "email": "info@fitoheal.co",
             "web": "www.fitoheal.co",
-            "social": "@fitoheal",
+            "social": "@fitoheal.co",
             "colombia_badge": true,
             "colombia_text": "Calidad, ciencia y naturaleza para tu bienestar diario."
           }
@@ -583,7 +406,6 @@
     "all_products_CT9cBY",
     "about-section",
     "cta-banner",
-    "vso_faq_02_xMEEAe",
     "footer_section_yUzwdH"
   ]
 }

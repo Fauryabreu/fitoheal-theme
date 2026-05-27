@@ -199,7 +199,7 @@
      PRODUCT GRID
   ══════════════════════════════════════════ */
   .fh-cat__prods {
-    padding: clamp(4rem, 8vw, 7rem) 0;
+    padding: clamp(2.5rem, 5vw, 4rem) 0;
   }
   .fh-cat__grid {
     display: grid;
@@ -267,7 +267,7 @@
      KITS CAROUSEL
   ══════════════════════════════════════════ */
   .fh-cat__kits {
-    padding: clamp(4rem, 8vw, 7rem) 0;
+    padding: clamp(2.5rem, 5vw, 4rem) 0;
     background: #fff;
     overflow: hidden;
   }
@@ -334,11 +334,17 @@
     transition: transform 300ms ease, box-shadow 300ms ease;
   }
   .fh-cat-kit:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); }
-  .fh-cat-kit__media { aspect-ratio: 4 / 3; overflow: hidden; }
+  .fh-cat-kit__media {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    background: var(--color-cream);
+  }
   .fh-cat-kit__media img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: center;
     display: block;
     transition: transform 400ms ease;
   }
@@ -378,102 +384,6 @@
     .fh-cat__kits-hd { flex-direction: column; align-items: flex-start; gap: 1rem; }
   }
 
-  /* ══════════════════════════════════════════
-     BOTTOM HERO (2-col split)
-  ══════════════════════════════════════════ */
-  .fh-cat__hi { padding: clamp(4rem, 8vw, 7rem) 0; }
-  .fh-cat__hi-inner {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: clamp(2rem, 5vw, 5rem);
-    align-items: center;
-  }
-  @media (max-width: 767px) {
-    .fh-cat__hi-inner { grid-template-columns: 1fr; }
-  }
-
-  .fh-cat__hi-img {
-    border-radius: var(--radius-xl);
-    overflow: hidden;
-    box-shadow: var(--shadow-lg);
-    opacity: 0;
-    transform: translateX(-40px);
-    transition: opacity 700ms cubic-bezier(0.25,0.46,0.45,0.94),
-                transform 700ms cubic-bezier(0.25,0.46,0.45,0.94);
-  }
-  .fh-cat__hi-img.is-visible { opacity: 1; transform: translateX(0); }
-  .fh-cat__hi-img img {
-    width: 100%;
-    aspect-ratio: 4 / 3;
-    object-fit: cover;
-    display: block;
-  }
-
-  .fh-cat__hi-text {
-    opacity: 0;
-    transform: translateX(40px);
-    transition: opacity 700ms cubic-bezier(0.25,0.46,0.45,0.94),
-                transform 700ms cubic-bezier(0.25,0.46,0.45,0.94);
-  }
-  .fh-cat__hi-text.is-visible { opacity: 1; transform: translateX(0); }
-
-  .fh-cat__hi-eyebrow {
-    font-family: var(--font-body);
-    font-size: 0.6875rem;
-    font-weight: 700;
-    letter-spacing: 0.14em;
-    text-transform: uppercase;
-    color: var(--color-brand-medium);
-    margin: 0 0 1rem;
-  }
-  .fh-cat__hi-title {
-    font-family: var(--font-display);
-    font-size: clamp(1.75rem, 3vw, 2.5rem);
-    font-weight: 600;
-    color: var(--color-text-dark);
-    line-height: 1.15;
-    margin: 0 0 1.25rem;
-  }
-  .fh-cat__hi-desc {
-    font-family: var(--font-body);
-    font-size: 1rem;
-    color: var(--color-text-muted);
-    line-height: 1.75;
-    margin: 0 0 2rem;
-  }
-  .fh-cat__benefits {
-    list-style: none;
-    padding: 0;
-    margin: 0 0 2.5rem;
-    display: flex;
-    flex-direction: column;
-    gap: 0.875rem;
-  }
-  .fh-cat__benefit {
-    display: flex;
-    align-items: flex-start;
-    gap: 0.75rem;
-    font-family: var(--font-body);
-    font-size: 0.9375rem;
-    color: var(--color-text-dark);
-    line-height: 1.5;
-    min-height: 44px;
-    padding-top: 0.125rem;
-  }
-  .fh-cat__benefit svg {
-    flex-shrink: 0;
-    width: 20px;
-    height: 20px;
-    color: var(--color-brand-light);
-    margin-top: 2px;
-  }
-  .fh-cat__hi-ctas {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    align-items: center;
-  }
-
   /* ── Reduced motion ── */
   @media (prefers-reduced-motion: reduce) {
     .fh-cat__hero-eyebrow,
@@ -481,9 +391,7 @@
     .fh-cat__hero-sub,
     .fh-cat__hero-cta  { animation: none; opacity: 1; transform: none; }
     .fh-cat__scroll-line { animation: none; }
-    .fh-cat-card,
-    .fh-cat__hi-img,
-    .fh-cat__hi-text   { opacity: 1; transform: none; transition: none; }
+    .fh-cat-card { opacity: 1; transform: none; transition: none; }
     .fh-cat-card__media img,
     .fh-cat-kit__media img { transition: none; }
   }
@@ -725,72 +633,6 @@
     </section>
   {%- endif -%}
 
-  {%- comment -%}══ BOTTOM HERO ══{%- endcomment -%}
-  {%- assign ben_blocks = section.blocks | where: 'type', 'beneficio' -%}
-  <section
-    class="fh-cat__hi"
-    style="background-color: {{ section.settings.hero_inf_bg }};"
-    aria-label="{{ section.settings.hero_inf_titulo | escape }}"
-  >
-    <div class="page-width">
-      <div class="fh-cat__hi-inner">
-
-        {%- comment -%}Image col{%- endcomment -%}
-        {%- if section.settings.hero_inf_imagen != blank -%}
-          <div class="fh-cat__hi-img" data-fh-cat-slide-left>
-            <img
-              src="{{ section.settings.hero_inf_imagen | image_url: width: 900 }}"
-              alt="{{ section.settings.hero_inf_titulo | escape }}"
-              loading="lazy"
-              width="900"
-              height="675"
-            >
-          </div>
-        {%- endif -%}
-
-        {%- comment -%}Text col{%- endcomment -%}
-        <div class="fh-cat__hi-text" data-fh-cat-slide-right>
-          {%- if section.settings.hero_inf_eyebrow != blank -%}
-            <p class="fh-cat__hi-eyebrow">{{ section.settings.hero_inf_eyebrow }}</p>
-          {%- endif -%}
-          {%- if section.settings.hero_inf_titulo != blank -%}
-            <h2 class="fh-cat__hi-title">{{ section.settings.hero_inf_titulo }}</h2>
-          {%- endif -%}
-          {%- if section.settings.hero_inf_desc != blank -%}
-            <p class="fh-cat__hi-desc">{{ section.settings.hero_inf_desc }}</p>
-          {%- endif -%}
-
-          {%- if ben_blocks.size > 0 -%}
-            <ul class="fh-cat__benefits">
-              {%- for block in ben_blocks -%}
-                <li class="fh-cat__benefit" {{ block.shopify_attributes }}>
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                    <polyline points="20 6 9 17 4 12"/>
-                  </svg>
-                  {{ block.settings.texto }}
-                </li>
-              {%- endfor -%}
-            </ul>
-          {%- endif -%}
-
-          <div class="fh-cat__hi-ctas">
-            {%- if section.settings.hero_inf_btn1_label != blank -%}
-              <a href="{{ section.settings.hero_inf_btn1_link | default: '#' }}" class="fh-btn fh-btn--primary">
-                {{ section.settings.hero_inf_btn1_label }}
-              </a>
-            {%- endif -%}
-            {%- if section.settings.hero_inf_btn2_label != blank -%}
-              <a href="{{ section.settings.hero_inf_btn2_link | default: '#' }}" class="fh-btn fh-btn--outline">
-                {{ section.settings.hero_inf_btn2_label }}
-              </a>
-            {%- endif -%}
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
 </div>
 
 <script>
@@ -826,20 +668,6 @@
       });
     }, { threshold: 0.1 });
     cards.forEach(function (c) { cardObs.observe(c); });
-  }
-
-  /* ── Bottom hero slide animations ── */
-  var slideEls = sec.querySelectorAll('[data-fh-cat-slide-left],[data-fh-cat-slide-right]');
-  if (slideEls.length) {
-    var slideObs = new IntersectionObserver(function (entries) {
-      entries.forEach(function (e) {
-        if (e.isIntersecting) {
-          e.target.classList.add('is-visible');
-          slideObs.unobserve(e.target);
-        }
-      });
-    }, { threshold: 0.15 });
-    slideEls.forEach(function (el) { slideObs.observe(el); });
   }
 
   /* ── Kit carousel — arrows ── */
@@ -933,16 +761,6 @@
     { "type": "text",     "id": "kits_eyebrow",   "label": "Eyebrow",   "default": "Pensados para ti" },
     { "type": "text",     "id": "kits_titulo",    "label": "Título",    "default": "Kits para tus objetivos" },
     { "type": "textarea", "id": "kits_subtitulo", "label": "Subtítulo" },
-    { "type": "header", "content": "Hero inferior" },
-    { "type": "image_picker", "id": "hero_inf_imagen",     "label": "Imagen" },
-    { "type": "text",         "id": "hero_inf_eyebrow",    "label": "Eyebrow" },
-    { "type": "text",         "id": "hero_inf_titulo",     "label": "Título" },
-    { "type": "textarea",     "id": "hero_inf_desc",       "label": "Descripción" },
-    { "type": "text",         "id": "hero_inf_btn1_label", "label": "Botón primario texto" },
-    { "type": "url",          "id": "hero_inf_btn1_link",  "label": "Botón primario link" },
-    { "type": "text",         "id": "hero_inf_btn2_label", "label": "Botón secundario texto" },
-    { "type": "url",          "id": "hero_inf_btn2_link",  "label": "Botón secundario link" },
-    { "type": "color",        "id": "hero_inf_bg",         "label": "Fondo sección", "default": "#FAFDF8" }
   ],
   "blocks": [
     {
@@ -957,16 +775,8 @@
         { "type": "color",        "id": "color_titulo", "label": "Color título", "default": "#1B4332" }
       ]
     },
-    {
-      "type": "beneficio",
-      "name": "Beneficio",
-      "limit": 4,
-      "settings": [
-        { "type": "text", "id": "texto", "label": "Texto del beneficio", "default": "Alta absorción liposomal X5" }
-      ]
-    }
   ],
-  "max_blocks": 10,
+  "max_blocks": 6,
   "presets": [
     {
       "name": "Catálogo",
@@ -974,11 +784,7 @@
         { "type": "kit",       "settings": { "nombre": "Estrés / Sueño",  "descripcion": "Relájate, baja el estrés y mejora tu descanso.", "color_fondo": "#F3F0FF", "color_titulo": "#6B4FBB" } },
         { "type": "kit",       "settings": { "nombre": "Desinflamar",     "descripcion": "Apoya la inflamación natural y el equilibrio digestivo.", "color_fondo": "#F0FAF4", "color_titulo": "#1B4332" } },
         { "type": "kit",       "settings": { "nombre": "Metabólico",      "descripcion": "Apoya el metabolismo de la glucosa y la inflamación.", "color_fondo": "#FFF8F0", "color_titulo": "#C05614" } },
-        { "type": "kit",       "settings": { "nombre": "Focus",           "descripcion": "Claridad mental, concentración y energía sostenida.", "color_fondo": "#FFF0F3", "color_titulo": "#B5294A" } },
-        { "type": "beneficio", "settings": { "texto": "Tecnología liposomal de alta absorción" } },
-        { "type": "beneficio", "settings": { "texto": "Ingredientes naturales seleccionados" } },
-        { "type": "beneficio", "settings": { "texto": "Desarrollado por profesionales" } },
-        { "type": "beneficio", "settings": { "texto": "Hecho en Colombia" } }
+        { "type": "kit",       "settings": { "nombre": "Focus",           "descripcion": "Claridad mental, concentración y energía sostenida.", "color_fondo": "#FFF0F3", "color_titulo": "#B5294A" } }
       ]
     }
   ]
