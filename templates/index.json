@@ -395,7 +395,7 @@
             "team_images_count": 3,
             "team_image_size": 60,
             "team_image_border_width": 2,
-            "team_image_border_color": "#FFFFFF",
+            "team_image_border_color": "#ffffff",
             "team_images_overlap": 10,
             "team_images_margin_bottom": 10,
             "paragraph": "Expect a reply within one business day.",
@@ -532,7 +532,7 @@
           "type": "nav_col",
           "settings": {
             "titulo": "Navegación",
-            "menu": ""
+            "menu": "main-menu"
           }
         },
         "nav_col_iHJf7L": {
