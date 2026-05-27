@@ -416,56 +416,56 @@
         "faq_item_R3HzBL": {
           "type": "faq_item",
           "settings": {
-            "question": "¿Qué significa que un suplemento sea liposomal?",
+            "question": "<strong>¿Qué significa que un suplemento sea liposomal?</strong>",
             "answer": "<p>Significa que utiliza una tecnología diseñada para ayudar a proteger y transportar los activos, favoreciendo una mejor absorción y aprovechamiento en el cuerpo.</p>"
           }
         },
         "faq_item_wdGGEg": {
           "type": "faq_item",
           "settings": {
-            "question": "¿Qué hace diferente a Fitoheal?",
+            "question": "<strong>¿Qué hace diferente a Fitoheal?</strong>",
             "answer": "<p>Fitoheal no se enfoca solo en ingredientes. Sus fórmulas liposomales están pensadas para apoyar objetivos concretos como descanso, digestión, enfoque, metabolismo y bienestar físico.</p>"
           }
         },
         "faq_item_4pDGPG": {
           "type": "faq_item",
           "settings": {
-            "question": "¿Cómo elijo el producto ideal para mí?",
+            "question": "<strong>¿Cómo elijo el producto ideal para mí?</strong>",
             "answer": "<p>Elige según tu objetivo principal: descansar mejor, apoyar tu digestión, mejorar el enfoque, acompañar tu metabolismo o cuidar tu bienestar físico diario.</p>"
           }
         },
         "faq_item_AJW4BQ": {
           "type": "faq_item",
           "settings": {
-            "question": "¿Cuál es la diferencia entre productos y kits?",
+            "question": "<strong>¿Cuál es la diferencia entre productos y kits?</strong>",
             "answer": "<p>Los productos individuales apoyan una necesidad puntual. Los kits combinan dos fórmulas complementarias para acompañar objetivos más completos, como sueño/estrés, desinflamar, metabolismo o enfoque.</p>"
           }
         },
         "faq_item_DTdrD8": {
           "type": "faq_item",
           "settings": {
-            "question": "¿Cómo debo tomar los productos?",
+            "question": "<strong>¿Cómo debo tomar los productos?</strong>",
             "answer": "<p>La mayoría de las fórmulas se toman de 1 a 2 cápsulas al día con agua. Revisa siempre la indicación específica de cada producto antes de usarlo.</p>"
           }
         },
         "faq_item_yVPrFX": {
           "type": "faq_item",
           "settings": {
-            "question": "¿En cuánto tiempo puedo notar cambios?",
+            "question": "<strong>¿En cuánto tiempo puedo notar cambios?</strong>",
             "answer": "<p>Cada cuerpo responde diferente. Lo más importante es la constancia: integrar el producto a tu rutina diaria ayuda a que el cuerpo aproveche mejor sus beneficios con el tiempo.</p>"
           }
         },
         "faq_item_e6mAfY": {
           "type": "faq_item",
           "settings": {
-            "question": "¿Puedo combinar varios productos?",
+            "question": "<strong>¿Puedo combinar varios productos?</strong>",
             "answer": "<p>Sí, algunos productos están pensados para complementarse en kits. Si estás embarazada, en lactancia, bajo tratamiento médico o tienes una condición de salud, consulta primero con un profesional.</p>"
           }
         },
         "faq_item_3pcfxa": {
           "type": "faq_item",
           "settings": {
-            "question": "¿Fitoheal reemplaza un tratamiento médico?",
+            "question": "<strong>¿Fitoheal reemplaza un tratamiento médico?</strong>",
             "answer": "<p>No. Fitoheal es un apoyo para el bienestar diario. No reemplaza diagnósticos, tratamientos ni recomendaciones médicas profesionales.</p>"
           }
         }
