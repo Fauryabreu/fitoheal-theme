@@ -18,7 +18,7 @@
             "imagen": "shopify://shop_images/ChatGPTImage26may2026_22_08_41_3.png",
             "nombre": "Estrés / Sueño",
             "descripcion": "Relájate, baja el estrés y mejora tu descanso.",
-            "link": "",
+            "link": "shopify://products/kit-sueno-estres",
             "color_fondo": "#f0faf4",
             "color_titulo": "#1b4332"
           }
@@ -29,7 +29,7 @@
             "imagen": "shopify://shop_images/ChatGPTImage26may2026_22_08_41_2.png",
             "nombre": "Desinflamar",
             "descripcion": "Apoya la inflamación natural y el equilibrio digestivo.",
-            "link": "",
+            "link": "shopify://products/kit-desinflamar",
             "color_fondo": "#f0faf4",
             "color_titulo": "#1b4332"
           }
@@ -40,7 +40,7 @@
             "imagen": "shopify://shop_images/ChatGPTImage26may2026_22_08_42_5.png",
             "nombre": "Metabólico",
             "descripcion": "Apoya el metabolismo de la glucosa y la inflamación.",
-            "link": "",
+            "link": "shopify://products/kit-metabolico",
             "color_fondo": "#f0faf4",
             "color_titulo": "#1b4332"
           }
@@ -51,7 +51,7 @@
             "imagen": "shopify://shop_images/ChatGPTImage26may2026_22_08_41_4.png",
             "nombre": "Focus",
             "descripcion": "Claridad mental, concentración y energía sostenida.",
-            "link": "",
+            "link": "shopify://products/kit-focus",
             "color_fondo": "#f0faf4",
             "color_titulo": "#1b4332"
           }
@@ -92,7 +92,7 @@
       "type": "about-section",
       "name": "About Section",
       "settings": {
-        "bg_color": "#FAFDF8",
+        "bg_color": "#fafdf8",
         "imagen_pos": "right",
         "titulo": "Bienestar que se adapta a tu rutina",
         "descripcion": "<p>Fórmulas liposomales pensadas para acompañarte en lo que necesitas cada día: descansar mejor, sentirte más ligero, enfocarte o cuidar tu bienestar físico.</p>",
