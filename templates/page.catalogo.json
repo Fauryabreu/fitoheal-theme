@@ -15,6 +15,7 @@
         "kit-1": {
           "type": "kit",
           "settings": {
+            "imagen": "shopify://shop_images/ChatGPTImage26may2026_22_08_41_3.png",
             "nombre": "Estrés / Sueño",
             "descripcion": "Relájate, baja el estrés y mejora tu descanso.",
             "link": "",
@@ -25,6 +26,7 @@
         "kit-2": {
           "type": "kit",
           "settings": {
+            "imagen": "shopify://shop_images/ChatGPTImage26may2026_22_08_41_2.png",
             "nombre": "Desinflamar",
             "descripcion": "Apoya la inflamación natural y el equilibrio digestivo.",
             "link": "",
@@ -35,6 +37,7 @@
         "kit-3": {
           "type": "kit",
           "settings": {
+            "imagen": "shopify://shop_images/ChatGPTImage26may2026_22_08_42_5.png",
             "nombre": "Metabólico",
             "descripcion": "Apoya el metabolismo de la glucosa y la inflamación.",
             "link": "",
@@ -45,6 +48,7 @@
         "kit-4": {
           "type": "kit",
           "settings": {
+            "imagen": "shopify://shop_images/ChatGPTImage26may2026_22_08_41_4.png",
             "nombre": "Focus",
             "descripcion": "Claridad mental, concentración y energía sostenida.",
             "link": "",
