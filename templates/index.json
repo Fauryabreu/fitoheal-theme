@@ -129,7 +129,6 @@
         },
         "video_block_jNyw4e": {
           "type": "video_block",
-          "disabled": true,
           "settings": {
             "video_file": "shopify://files/videos/o.mp4",
             "video_url": "",
