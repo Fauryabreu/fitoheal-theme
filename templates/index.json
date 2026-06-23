@@ -104,21 +104,21 @@
           "type": "step",
           "settings": {
             "titulo": "Tecnología liposomal",
-            "descripcion": "Es una tecnología que ayuda a proteger los activos del suplemento para que tu cuerpo pueda absorberlos mejor."
+            "descripcion": "La diferencia entre un suplemento convencional y uno verdaderamente avanzado no está únicamente en los ingredientes."
           }
         },
         "s2": {
           "type": "step",
           "settings": {
             "titulo": "Mejor absorción y aprovechamiento",
-            "descripcion": "Porque no basta con tomar un suplemento. Lo importante es que tu cuerpo pueda aprovecharlo bien."
+            "descripcion": "Está en la forma en que esos ingredientes llegan a tu organismo."
           }
         },
         "s3": {
           "type": "step",
           "settings": {
             "titulo": "Bienestar más enfocado",
-            "descripcion": "Más absorción, mejor aprovechamiento y fórmulas pensadas para objetivos como descanso, digestión, enfoque y metabolismo."
+            "descripcion": "Por eso desarrollamos nuestras fórmulas utilizando tecnología liposomal avanzada."
           }
         }
       },
@@ -129,7 +129,7 @@
       ],
       "settings": {
         "bg_color": "#ffffff",
-        "titulo": "¿Por qué elegir una fórmula liposomal?",
+        "titulo": "¿Has tomado suplementos semanas enteras y no sentiste nada?",
         "cta_label": "Encuentra tu fórmula",
         "cta_link": "shopify://pages/catalogo",
         "imagen": "shopify://shop_images/Como_funciona.png"
