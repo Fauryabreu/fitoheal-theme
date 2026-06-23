@@ -103,9 +103,10 @@
         "video_block_gfC3Xq": {
           "type": "video_block",
           "settings": {
+            "video_file": "shopify://files/videos/elegir suplemento.mp4",
             "video_url": "",
-            "testimonial_text": "\"Versio Ember Chai wakes me up without the coffee jitters or acid reflux.\"",
-            "testimonial_author": "Noor – Seattle"
+            "testimonial_text": "",
+            "testimonial_author": ""
           }
         },
         "video_block_MRbbFJ": {
@@ -113,8 +114,8 @@
           "settings": {
             "video_file": "shopify://files/videos/BENEFICIOS DE LIPOSOMAL.mp4",
             "video_url": "",
-            "testimonial_text": "\"I swapped my afternoon latte for Versio Glow Oolong and stay productive without crashing.\"",
-            "testimonial_author": "Sam – Austin"
+            "testimonial_text": "",
+            "testimonial_author": ""
           }
         },
         "video_block_Wmk4hx": {
@@ -122,8 +123,8 @@
           "settings": {
             "video_file": "shopify://files/videos/QUE ES LIPOSOMAL.mp4",
             "video_url": "",
-            "testimonial_text": "\"Versio Mint Lift replaced espresso for me—energized, soothed, no shakes.\"",
-            "testimonial_author": "Jules – Toronto"
+            "testimonial_text": "",
+            "testimonial_author": ""
           }
         },
         "video_block_jNyw4e": {
