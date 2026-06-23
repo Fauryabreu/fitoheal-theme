@@ -1,0 +1,2181 @@
+{% comment %}
+WARNING: UNAUTHORIZED MODIFICATION PROHIBITED
+This code is proprietary property of Versio Studio. Any unauthorized tampering,
+alteration, or distribution of this file is strictly forbidden and will be prosecuted to the maximum extent permitted by law.
+All modifications are logged.
+
+If you require assistance or have questions regarding this code, please contact support@versio.studio.
+{% endcomment %}
+
+{%- liquid
+  assign text_alignment = 'left'
+  assign blocks_alignment_desktop = 'left'
+  assign blocks_alignment_mobile = 'left'
+  assign header_blocks_gap = 0
+  assign content_width = section.settings.content_width
+  assign description_alignment_desktop = section.settings.description_alignment_desktop | default: section.settings.header_alignment_desktop | default: 'center'
+  assign description_alignment_mobile = section.settings.description_alignment_mobile | default: section.settings.header_alignment_mobile | default: 'center'
+  assign section_bg_value = section.settings.section_bg_color
+  if section.settings.section_bg_type == 'gradient'
+    assign section_bg_value = section.settings.section_bg_gradient
+  endif
+
+-%}
+
+{%- style -%}
+  {{ section.settings.heading_font | font_face: font_display: 'swap' }}
+  {{ section.settings.description_font | font_face: font_display: 'swap' }}
+
+  {% if section.settings.custom_heading_font %}
+    #ShoppableVideoStories-{{ section.id }} .vso-shoppable-video__heading {
+      font-family: {{ section.settings.heading_font.family }}, {{ section.settings.heading_font.fallback_families }};
+      font-style: {{ section.settings.heading_font.style }};
+    }
+  {% endif %}
+
+  {% if section.settings.custom_description_font %}
+    #ShoppableVideoStories-{{ section.id }} .vso-shoppable-video__description {
+      font-family: {{ section.settings.description_font.family }}, {{ section.settings.description_font.fallback_families }};
+      font-style: {{ section.settings.description_font.style }};
+    }
+  {% endif %}
+
+  .vso-shoppable-video {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .vso-shoppable-video__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: {{ header_blocks_gap }}px;
+    width: 100%;
+    position: relative;
+  }
+
+  .vso-shoppable-video__header-content {
+    max-width: 60%;
+    flex: 1;
+  }
+
+  .vso-shoppable-video__heading {
+    margin: 0;
+    margin-bottom: {{ section.settings.heading_bottom_spacing }}px;
+    text-align: {{ text_alignment }};
+  }
+
+  {% if section.settings.custom_heading_font %}
+    .vso-shoppable-video__heading {
+      line-height: {{ section.settings.heading_line_height }}%;
+      font-size: {{ section.settings.heading_size_desktop }}px;
+      color: {{ section.settings.heading_color }};
+      font-weight: {{ section.settings.heading_font_weight }};
+    }
+  {% endif %}
+
+  .vso-shoppable-video__description {
+    margin: 0;
+    text-align: {{ text_alignment }};
+    margin-bottom: {{ section.settings.description_bottom_spacing }}px;
+  }
+
+  {% if section.settings.custom_description_font %}
+    .vso-shoppable-video__description {
+      font-size: {{ section.settings.description_size_desktop }}px;
+      color: {{ section.settings.description_color }};
+      line-height: {{ section.settings.description_line_height }}%;
+    }
+  {% endif %}
+
+  @media screen and (min-width: 750px) {
+    {% if section.settings.header_alignment_desktop == 'center' %}
+      .vso-shoppable-video__header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+      .vso-shoppable-video__header-content {
+        max-width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      .vso-shoppable-video__heading,
+      .vso-shoppable-video__description {
+        text-align: center;
+      }
+    {% endif %}
+
+    .vso-shoppable-video__description {
+      text-align: {{ description_alignment_desktop }};
+    }
+  }
+
+  @media screen and (max-width: 749px) {
+    .vso-shoppable-video__header {
+      flex-direction: column;
+      align-items: {% if section.settings.header_alignment_mobile == 'center' %}center{% else %}flex-start{% endif %};
+      text-align: {% if section.settings.header_alignment_mobile == 'center' %}center{% else %}left{% endif %};
+    }
+
+    .vso-shoppable-video__header-content {
+      max-width: 100%;
+      text-align: {% if section.settings.header_alignment_mobile == 'center' %}center{% else %}left{% endif %};
+      margin-bottom: 20px;
+    }
+
+    .vso-shoppable-video__heading {
+      text-align: {% if section.settings.header_alignment_mobile == 'center' %}center{% else %}left{% endif %};
+    }
+
+    .vso-shoppable-video__description {
+      text-align: {{ description_alignment_mobile }};
+    }
+
+    .vso-shoppable-video__navigation {
+      display: none;
+    }
+  }
+
+  .vso-shoppable-video__swiper {
+    width: 100%;
+    padding:0px !important;
+    overflow: hidden;
+    position: relative;
+  }
+
+  @media screen and (min-width: 750px) {
+    .vso-shoppable-video__swiper {
+      overflow: hidden;
+    }
+
+    .vso-shoppable-video__swiper .swiper-slide {
+      opacity: 0.5;
+      transition: opacity 0.3s ease, transform 0.3s ease;
+      transform: scale(0.9);
+    }
+
+    .vso-shoppable-video__swiper .swiper-slide-active {
+      opacity: 1;
+      transform: scale(1);
+    }
+
+    .vso-shoppable-video__swiper .swiper-slide-prev,
+    .vso-shoppable-video__swiper .swiper-slide-next {
+      transform: scale(0.95);
+      opacity: 1;
+    }
+  }
+
+  .vso-shoppable-video__nav-overlay {
+    position: absolute;
+    display: none; 
+    align-items: center;
+    justify-content: center;
+    z-index: 20;
+    transform: translate(-50%, -50%);
+    pointer-events: auto;
+  }
+  @media screen and (min-width: 750px) {
+    .vso-shoppable-video__navigation { display: none !important; }
+    .vso-shoppable-video__nav-overlay { display: flex; }
+  }
+  @media screen and (max-width: 749px) {
+    .vso-shoppable-video__nav-overlay { display: none !important; }
+  }
+
+  .vso-shoppable-video__slide {
+  }
+
+  @media screen and (max-width: 749px) {
+    .vso-shoppable-video__slide {
+      width: auto;
+    }
+  }
+
+  .vso-shoppable-video__block {
+    display: flex;
+    flex-direction: column;
+    align-items: {{ blocks_alignment_desktop }};
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    text-align: {{ blocks_alignment_desktop }};
+    transition: transform 0.3s ease;
+    overflow: visible;
+  }
+
+  .vso-shoppable-video__video-container {
+    position: relative;
+    width: 100%;
+    margin: 0 0 {{ section.settings.video_to_content_gap }}px 0;
+    border-radius: {{ section.settings.video_border_radius | default: 32 }}px;
+    overflow: hidden;
+    background-color: transparent;
+    aspect-ratio: 3 / 4;
+    transition: aspect-ratio 0.4s ease, border-radius 0.4s ease, box-shadow 0.4s ease;
+  }
+
+  .vso-shoppable-video__video-container::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 35%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.3) 30%, transparent 100%);
+    pointer-events: none;
+    z-index: 5;
+  }
+
+  .vso-shoppable-video__play-button {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: {{ section.settings.video_button_size }}px;
+    height: {{ section.settings.video_button_size }}px;
+    border-radius: {{ section.settings.video_button_border_radius }}px;
+    background: {{ section.settings.video_button_bg_color | color_modify: 'alpha', 0.25 }};
+    backdrop-filter: blur(10px);
+    border: {{ section.settings.video_button_border_width }}px solid {{ section.settings.video_button_border_color | color_modify: 'alpha', 0.3 }};
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: 10;
+  }
+
+  .vso-shoppable-video__play-button:hover {
+    transform: scale(1.05);
+  }
+
+  .vso-shoppable-video__play-icon,
+  .vso-shoppable-video__pause-icon {
+    width: {{ section.settings.video_button_size | times: 0.45 | round: 0 }}px;
+    height: {{ section.settings.video_button_size | times: 0.45 | round: 0 }}px;
+    color: {{ section.settings.video_button_icon_color }};
+  }
+
+  .vso-shoppable-video__mute-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: {{ section.settings.video_button_size }}px;
+    height: {{ section.settings.video_button_size }}px;
+    border-radius: {{ section.settings.video_button_border_radius }}px;
+    background: {{ section.settings.video_button_bg_color | color_modify: 'alpha', 0.25 }};
+    backdrop-filter: blur(10px);
+    border: {{ section.settings.video_button_border_width }}px solid {{ section.settings.video_button_border_color | color_modify: 'alpha', 0.3 }};
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: 10;
+  }
+
+  .vso-shoppable-video__mute-button:hover { transform: scale(1.05); }
+
+  .vso-shoppable-video__volume-on-icon,
+  .vso-shoppable-video__volume-off-icon {
+    width: {{ section.settings.video_button_size | times: 0.45 | round: 0 }}px;
+    height: {{ section.settings.video_button_size | times: 0.45 | round: 0 }}px;
+    color: {{ section.settings.video_button_icon_color }};
+  }
+
+  .vso-shoppable-video__video-container .vso-shoppable-video__mute-button { display: none; }
+  .vso-shoppable-video__swiper .swiper-slide-active .vso-shoppable-video__mute-button { display: flex; }
+
+
+  .vso-shoppable-video__video {
+    width: 100%;
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
+    display: block;
+    transition: aspect-ratio 0.4s ease;
+  }
+
+  .vso-shoppable-video__video-placeholder {
+    width: 100%;
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
+    display: block;
+    background-color: #f3f4f6;
+    transition: aspect-ratio 0.4s ease;
+  }
+
+
+  @media screen and (max-width: 749px) {
+    .vso-shoppable-video__swiper {
+      padding: 30px 0px !important;
+      overflow: visible;
+      width: 100%;
+    }
+
+    .vso-shoppable-video__slide {
+      width: auto;
+    }
+
+    .vso-shoppable-video__swiper .swiper-slide { transition: opacity 0.3s ease, transform 0.3s ease; transform: scale(0.94); }
+    .vso-shoppable-video__swiper .swiper-slide-active { transform: scale(1); }
+    .vso-shoppable-video__swiper .swiper-slide-prev,
+    .vso-shoppable-video__swiper .swiper-slide-next { transform: scale(0.97); }
+
+    .section-{{ section.id }}-settings,
+    .vso-shoppable-video,
+    .section-{{ section.id }} {
+      overflow: visible;
+    }
+
+    {% if section.settings.custom_heading_font %}
+      .vso-shoppable-video__heading {
+        font-size: {{ section.settings.heading_size_mobile }}px;
+      }
+    {% endif %}
+
+    {% if section.settings.custom_description_font %}
+      .vso-shoppable-video__description {
+        font-size: {{ section.settings.description_size_mobile }}px;
+      }
+    {% endif %}
+
+    .vso-shoppable-video__block {
+      align-items: {{ blocks_alignment_mobile }};
+      text-align: {{ blocks_alignment_mobile }};
+    }
+
+  }
+
+  #shopify-section-{{ section.id }} {
+    --section-border-radius: 0px;
+    --section-horizontal-padding: 0px;
+    background: transparent;
+    margin-top: {{ section.settings.margin_top_mobile }}px;
+    margin-bottom: {{ section.settings.margin_bottom_mobile }}px;
+    border-radius: var(--section-border-radius);
+    overflow: hidden;
+    padding: 0;
+  }
+
+  {% if section.settings.enable_advanced_settings %}
+    #shopify-section-{{ section.id }} {
+      --section-horizontal-padding: {{ section.settings.padding_horizontal_mobile }}px;
+    }
+  {% endif %}
+
+  @media screen and (max-width: 749px) {
+    #shopify-section-{{ section.id }} {
+      background: {{ section_bg_value }};
+      overflow: visible;
+    }
+    #shopify-section-{{ section.id }} > .section-{{ section.id }} {
+      overflow: visible;
+    }
+  }
+
+  @media screen and (min-width: 750px) {
+    #shopify-section-{{ section.id }} {
+      {% if section.settings.full_width_desktop %}
+        --section-border-radius: 0px;
+      {% else %}
+        --section-border-radius: {{ section.settings.section_border_radius }}px;
+      {% endif %}
+      --section-horizontal-padding: 0px;
+      margin-top: {{ section.settings.margin_top_desktop }}px;
+      margin-bottom: {{ section.settings.margin_bottom_desktop }}px;
+      {% if section.settings.full_width_desktop %}
+        background: {{ section_bg_value }};
+      {% else %}
+        background: transparent;
+      {% endif %}
+    }
+  }
+
+  {% if section.settings.enable_advanced_settings == false and section.settings.full_width_desktop == false %}
+    @media screen and (min-width: 750px) {
+      #shopify-section-{{ section.id }} {
+        --section-horizontal-padding: 40px;
+      }
+    }
+  {% endif %}
+
+  {% if section.settings.enable_advanced_settings == false and section.settings.full_width_desktop %}
+    @media screen and (min-width: 750px) {
+      #shopify-section-{{ section.id }} {
+        --section-container-max-width: var(--page-content-width, var(--page-width, 1440px));
+        --section-outer-gutter: max(0px, calc((100vw - var(--section-container-max-width)) / 2));
+        --section-horizontal-padding: max(0px, calc(var(--page-margin, 40px) - var(--section-outer-gutter)));
+      }
+    }
+  {% endif %}
+
+  {% if section.settings.enable_advanced_settings %}
+    @media screen and (min-width: 750px) {
+      #shopify-section-{{ section.id }} {
+        --section-horizontal-padding: {{ section.settings.padding_horizontal_desktop }}px;
+      }
+    }
+  {% endif %}
+
+  #shopify-section-{{ section.id }} > .section-{{ section.id }} {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: var(--page-content-width, var(--page-width, 1440px));
+    box-sizing: border-box;
+    border-radius: var(--section-border-radius);
+    overflow: hidden;
+    padding-top: {{ section.settings.padding_top_mobile }}px;
+    padding-bottom: {{ section.settings.padding_bottom_mobile }}px;
+    padding-left: var(--section-horizontal-padding);
+    padding-right: var(--section-horizontal-padding);
+  }
+
+  @media screen and (max-width: 749px) {
+    #shopify-section-{{ section.id }} > .section-{{ section.id }} {
+      background: transparent;
+      overflow: visible;
+    }
+  }
+
+  @media screen and (min-width: 750px) {
+    #shopify-section-{{ section.id }} > .section-{{ section.id }} {
+      {% if section.settings.full_width_desktop %}
+        background: transparent;
+      {% else %}
+        background: {{ section_bg_value }};
+      {% endif %}
+      padding-top: {{ section.settings.padding_top_desktop }}px;
+      padding-bottom: {{ section.settings.padding_bottom_desktop }}px;
+    }
+  }
+
+  .section-{{ section.id }}-settings {
+    margin: 0 auto;
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    box-sizing: border-box;
+    max-width: 100%;
+  }
+
+  {% if section.settings.enable_advanced_settings %}
+    .section-{{ section.id }}-settings {
+      max-width: min({{ content_width }}rem, 100%);
+    }
+  {% endif %}
+
+  .vso-shoppable-video__nav-prev,
+  .vso-shoppable-video__nav-next {
+    width: {{ section.settings.nav_arrow_size }}px;
+    height: {{ section.settings.nav_arrow_size }}px;
+    background-color: {{ section.settings.nav_arrow_bg_color }};
+    border: {{ section.settings.nav_arrow_border_width }}px solid {{ section.settings.nav_arrow_border_color }};
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    {% if section.settings.nav_arrow_shadow_enable %}
+      box-shadow: {{ section.settings.nav_arrow_shadow_color | color_modify: 'alpha', 0.24 }} 0px 3px 8px;
+    {% endif %}
+  }
+
+  .vso-shoppable-video__nav-prev svg,
+  .vso-shoppable-video__nav-next svg {
+    width: {{ section.settings.nav_arrow_size | times: 0.4 | round: 0 }}px;
+    height: {{ section.settings.nav_arrow_size | times: 0.4 | round: 0 }}px;
+    color: {{ section.settings.nav_arrow_icon_color }};
+    transition: color 0.3s ease;
+  }
+
+  .vso-shoppable-video__nav-prev:hover,
+  .vso-shoppable-video__nav-next:hover {
+    border-color: {{ section.settings.nav_arrow_border_color | color_darken: 10 }};
+    {% if section.settings.nav_arrow_shadow_enable %}
+      box-shadow: {{ section.settings.nav_arrow_shadow_color | color_modify: 'alpha', 0.32 }} 0px 4px 12px;
+    {% endif %}
+  }
+
+  .vso-shoppable-video__nav-prev:hover svg,
+  .vso-shoppable-video__nav-next:hover svg {
+    color: {{ section.settings.nav_arrow_icon_color | color_darken: 20 }};
+  }
+
+  .vso-shoppable-video__nav-prev.swiper-button-disabled,
+  .vso-shoppable-video__nav-next.swiper-button-disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+  }
+
+{%- endstyle -%}
+
+<style>
+  #ShoppableVideoStories-{{ section.id }} {
+    --vso-video-card-gap: 32px;
+    --vso-video-card-width: clamp(220px, 19vw, 320px);
+    --vso-carousel-max-height: calc(var(--vso-video-card-width) * 16 / 9 + 5px);
+  }
+
+  @media screen and (min-width: 1200px) {
+    #ShoppableVideoStories-{{ section.id }} {
+      --vso-video-card-width: calc((100% - 4 * var(--vso-video-card-gap)) / 5);
+    }
+  }
+
+  #ShoppableVideoStories-{{ section.id }} .vso-shoppable-video {
+    align-items: center;
+    text-align: center;
+    gap: 24px;
+  }
+
+  #ShoppableVideoStories-{{ section.id }} .vso-shoppable-video__header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 12px;
+  }
+
+  #ShoppableVideoStories-{{ section.id }} .vso-shoppable-video__header-content {
+    max-width: 720px;
+    margin: 0 auto;
+  }
+
+  #ShoppableVideoStories-{{ section.id }} .vso-shoppable-video__description {
+    margin-bottom: {{ section.settings.description_bottom_spacing }}px;
+    text-align: {{ description_alignment_desktop }};
+  }
+
+  #ShoppableVideoStories-{{ section.id }} .vso-shoppable-video__heading {
+    letter-spacing: 0.08em;
+  }
+
+  #ShoppableVideoStories-{{ section.id }} .vso-shoppable-video__navigation {
+    display: none !important;
+  }
+
+  #ShoppableVideoStories-{{ section.id }} .vso-shoppable-video__carousel-wrap {
+    position: relative;
+    width: 100%;
+    min-width: 0;
+  }
+
+  #ShoppableVideoStories-{{ section.id }} .vso-shoppable-video__swiper {
+    width: 100%;
+    padding: 0 !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: var(--vso-carousel-max-height);
+  }
+
+  #ShoppableVideoStories-{{ section.id }} .vso-shoppable-video__swiper .swiper-wrapper {
+    align-items: center;
+  }
+
+  #ShoppableVideoStories-{{ section.id }} .vso-shoppable-video__slide {
+    min-height: var(--vso-carousel-max-height);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #ShoppableVideoStories-{{ section.id }} .vso-shoppable-video__swiper .swiper-slide {
+    opacity: 1;
+    transform: none;
+    width: auto;
+  }
+
+  @media screen and (min-width: 750px) {
+    #ShoppableVideoStories-{{ section.id }} .vso-shoppable-video__swiper,
+    #ShoppableVideoStories-{{ section.id }} .vso-shoppable-video__slide {
+      height: var(--vso-carousel-max-height);
+    }
+  }
+
+  #ShoppableVideoStories-{{ section.id }} .vso-shoppable-video__swiper .swiper-slide-active,
+  #ShoppableVideoStories-{{ section.id }} .vso-shoppable-video__swiper .swiper-slide-prev,
+  #ShoppableVideoStories-{{ section.id }} .vso-shoppable-video__swiper .swiper-slide-next {
+    opacity: 1;
+    transform: none;
+  }
+
+  #ShoppableVideoStories-{{ section.id }} .vso-shoppable-video__block {
+    background: transparent;
+    padding: 0;
+    border-radius: 32px;
+    box-shadow: none;
+    gap: 20px;
+  }
+
+  #ShoppableVideoStories-{{ section.id }} .vso-shoppable-video__video-container {
+    margin-bottom: 0;
+    border-radius: {{ section.settings.video_border_radius | default: 32 }}px;
+    overflow: hidden;
+    box-shadow: none;
+  }
+
+  #ShoppableVideoStories-{{ section.id }} .vso-shoppable-video__video-container::after {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 100%);
+    height: 45%;
+  }
+
+  #ShoppableVideoStories-{{ section.id }} .swiper-slide-active .vso-shoppable-video__video-container,
+  #ShoppableVideoStories-{{ section.id }} .swiper-slide-active .vso-shoppable-video__video,
+  #ShoppableVideoStories-{{ section.id }} .swiper-slide-active .vso-shoppable-video__video-placeholder {
+    aspect-ratio: 9 / 16;
+  }
+
+  #ShoppableVideoStories-{{ section.id }} .swiper-slide.is-height-probe,
+  #ShoppableVideoStories-{{ section.id }} .swiper-slide.is-height-probe .vso-shoppable-video__video-container,
+  #ShoppableVideoStories-{{ section.id }} .swiper-slide.is-height-probe .vso-shoppable-video__video,
+  #ShoppableVideoStories-{{ section.id }} .swiper-slide.is-height-probe .vso-shoppable-video__video-placeholder {
+    aspect-ratio: 9 / 16 !important;
+    transform: none !important;
+    opacity: 1 !important;
+  }
+
+  #ShoppableVideoStories-{{ section.id }} .vso-shoppable-video__testimonial {
+    max-width: {{ section.settings.testimonial_width_desktop | default: 640 }}px;
+    margin: {{ section.settings.testimonial_spacing_top_desktop }}px auto 0;
+    text-align: center;
+    opacity: 1;
+    transition: opacity 0.18s ease;
+  }
+
+  #ShoppableVideoStories-{{ section.id }} .vso-shoppable-video__testimonial.is-transitioning {
+    opacity: 0;
+  }
+
+  #ShoppableVideoStories-{{ section.id }} .vso-shoppable-video__testimonial-text {
+    margin: 0;
+    color: #0b0b0b;
+  }
+
+  #ShoppableVideoStories-{{ section.id }} .vso-shoppable-video__testimonial-author {
+    display: inline-block;
+    margin-top: 8px;
+  }
+
+  {% if section.settings.custom_testimonial_text_font %}
+    #ShoppableVideoStories-{{ section.id }} .vso-shoppable-video__testimonial-text {
+      font-family: {{ section.settings.testimonial_text_font.family }}, {{ section.settings.testimonial_text_font.fallback_families }};
+      font-style: {{ section.settings.testimonial_text_font.style }};
+      font-weight: {{ section.settings.testimonial_text_font_weight }};
+      font-size: {{ section.settings.testimonial_text_size_desktop }}px;
+      line-height: {{ section.settings.testimonial_text_line_height }}%;
+      color: {{ section.settings.testimonial_text_color }};
+    }
+  {% endif %}
+
+  {% if section.settings.custom_testimonial_author_font %}
+    #ShoppableVideoStories-{{ section.id }} .vso-shoppable-video__testimonial-author {
+      font-family: {{ section.settings.testimonial_author_font.family }}, {{ section.settings.testimonial_author_font.fallback_families }};
+      font-style: {{ section.settings.testimonial_author_font.style }};
+      font-weight: {{ section.settings.testimonial_author_font_weight }};
+      font-size: {{ section.settings.testimonial_author_size_desktop }}px;
+      line-height: {{ section.settings.testimonial_author_line_height }}%;
+      color: {{ section.settings.testimonial_author_color }};
+    }
+  {% endif %}
+
+  @media screen and (max-width: 749px) {
+    #ShoppableVideoStories-{{ section.id }} {
+      --vso-video-card-width: min(86vw, 320px);
+    }
+
+    #ShoppableVideoStories-{{ section.id }} .vso-shoppable-video__swiper {
+      padding-top: 0 !important;
+      padding-bottom: 0 !important;
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+      overflow: visible;
+      box-sizing: border-box;
+      min-height: var(--vso-carousel-max-height);
+      width: 100%;
+    }
+
+    #ShoppableVideoStories-{{ section.id }} .vso-shoppable-video__carousel-wrap {
+      position: relative;
+      width: 100vw;
+      margin-left: calc(50% - 50vw);
+      margin-right: calc(50% - 50vw);
+      padding-left: 14px;
+      padding-right: 14px;
+      box-sizing: border-box;
+      min-width: 0;
+    }
+
+    #ShoppableVideoStories-{{ section.id }} .vso-shoppable-video__slide {
+      min-height: var(--vso-carousel-max-height);
+      display: flex;
+      align-items: center;
+    }
+
+    #ShoppableVideoStories-{{ section.id }} .vso-shoppable-video__description {
+      letter-spacing: 0.12em;
+      text-align: {{ description_alignment_mobile }};
+    }
+
+    #ShoppableVideoStories-{{ section.id }} .vso-shoppable-video__block {
+      border-radius: 28px;
+    }
+
+    #ShoppableVideoStories-{{ section.id }} .vso-shoppable-video__testimonial {
+      margin: {{ section.settings.testimonial_spacing_top_mobile }}px auto 0;
+    }
+
+    {% if section.settings.custom_testimonial_text_font %}
+      #ShoppableVideoStories-{{ section.id }} .vso-shoppable-video__testimonial-text {
+        font-size: {{ section.settings.testimonial_text_size_mobile }}px;
+      }
+    {% else %}
+
+    {% endif %}
+
+    {% if section.settings.custom_testimonial_author_font %}
+      #ShoppableVideoStories-{{ section.id }} .vso-shoppable-video__testimonial-author {
+        font-size: {{ section.settings.testimonial_author_size_mobile }}px;
+      }
+    {% endif %}
+  }
+</style>
+
+<div class="section-{{ section.id }}">
+<div class="section-{{ section.id }}-settings">
+  <div class="vso-shoppable-video" id="ShoppableVideoStories-{{ section.id }}">
+    <div class="vso-shoppable-video__header">
+      <div class="vso-shoppable-video__header-content">
+        {% if section.settings.heading != blank %}
+          {% if section.settings.custom_heading_font %}
+            <h2 class="vso-shoppable-video__heading">
+              {{ section.settings.heading }}
+            </h2>
+          {% else %}
+            {%- assign heading_tag = section.settings.heading_as | default: 'h2' -%}
+            <{{ heading_tag }} class="vso-shoppable-video__heading">
+              {{ section.settings.heading }}
+            </{{ heading_tag }}>
+          {% endif %}
+        {% endif %}
+
+        {% if section.settings.description != blank %}
+          {% if section.settings.custom_description_font %}
+            <p class="vso-shoppable-video__description">
+              {{ section.settings.description }}
+            </p>
+          {% else %}
+            {%- assign description_tag = section.settings.description_as | default: 'p' -%}
+            <{{ description_tag }} class="vso-shoppable-video__description">
+              {{ section.settings.description }}
+            </{{ description_tag }}>
+          {% endif %}
+        {% endif %}
+      </div>
+
+      <div class="vso-shoppable-video__navigation">
+        <div class="vso-shoppable-video__nav-prev">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="transform: scaleX(-1);">
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+            <g id="SVGRepo_iconCarrier">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M8.29289 4.29289C8.68342 3.90237 9.31658 3.90237 9.70711 4.29289L16.7071 11.2929C17.0976 11.6834 17.0976 12.3166 16.7071 12.7071L9.70711 19.7071C9.31658 20.0976 8.68342 20.0976 8.29289 19.7071C7.90237 19.3166 7.90237 18.6834 8.29289 18.2929L14.5858 12L8.29289 5.70711C7.90237 5.31658 7.90237 4.68342 8.29289 4.29289Z" fill="currentColor"></path>
+            </g>
+          </svg>
+        </div>
+        <div class="vso-shoppable-video__nav-next">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+            <g id="SVGRepo_iconCarrier">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M8.29289 4.29289C8.68342 3.90237 9.31658 3.90237 9.70711 4.29289L16.7071 11.2929C17.0976 11.6834 17.0976 12.3166 16.7071 12.7071L9.70711 19.7071C9.31658 20.0976 8.68342 20.0976 8.29289 19.7071C7.90237 19.3166 7.90237 18.6834 8.29289 18.2929L14.5858 12L8.29289 5.70711C7.90237 5.31658 7.90237 4.68342 8.29289 4.29289Z" fill="currentColor"></path>
+            </g>
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    {% if section.blocks.size > 0 %}
+      {%- assign min_slides_needed = 10 -%}
+      {%- assign times_to_duplicate = min_slides_needed | divided_by: section.blocks.size | plus: 1 -%}
+
+      <div class="vso-shoppable-video__carousel-wrap">
+      <div class="swiper vso-shoppable-video__swiper">
+        <div class="swiper-wrapper">
+          {% for i in (1..times_to_duplicate) %}
+            {% for block in section.blocks %}
+            {%- capture slide_testimonial -%}
+              {{ block.settings.testimonial_text }}
+            {%- endcapture -%}
+            {%- assign slide_testimonial = slide_testimonial | strip -%}
+            {%- assign slide_author = block.settings.testimonial_author -%}
+            <div
+              class="swiper-slide vso-shoppable-video__slide"
+              data-slide-block-index="{{ forloop.index0 }}"
+              data-slide-testimonial="{{ slide_testimonial | strip_newlines | escape }}"
+              data-slide-author="{{ slide_author | strip_newlines | escape }}">
+              <div class="vso-shoppable-video__block" {% if i == 1 %}{{ block.shopify_attributes }}{% endif %}>
+                {% if block.settings.video_file != blank %}
+                  <div class="vso-shoppable-video__video-container" data-video-container>
+                    {{ block.settings.video_file | video_tag:
+                      class: 'vso-shoppable-video__video',
+                      autoplay: false,
+                      loop: true,
+                      muted: true,
+                      controls: false,
+                      preload: 'auto',
+                      playsinline: true,
+                      image_size: '800x'
+                    }}
+                    {% if section.settings.show_play_button %}
+                      <button class="vso-shoppable-video__play-button" data-play-button aria-label="Play/Pause video">
+                        <svg class="vso-shoppable-video__play-icon" viewBox="-3 0 28 28" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M21.415,12.554 L2.418,0.311 C1.291,-0.296 0,0.767 0,1.946 L0,26.054 C0,28.046 1.385,28.36 2.418,27.689 L21.415,15.446 C22.197,14.647 22.197,13.353 21.415,12.554" fill="currentColor"/>
+                        </svg>
+                        <svg class="vso-shoppable-video__pause-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="display: none;">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M5.163 3.819C5 4.139 5 4.559 5 5.4v13.2c0 .84 0 1.26.163 1.581a1.5 1.5 0 0 0 .656.655c.32.164.74.164 1.581.164h.2c.84 0 1.26 0 1.581-.163a1.5 1.5 0 0 0 .656-.656c.163-.32.163-.74.163-1.581V5.4c0-.84 0-1.26-.163-1.581a1.5 1.5 0 0 0-.656-.656C8.861 3 8.441 3 7.6 3h-.2c-.84 0-1.26 0-1.581.163a1.5 1.5 0 0 0-.656.656zm9 0C14 4.139 14 4.559 14 5.4v13.2c0 .84 0 1.26.164 1.581a1.5 1.5 0 0 0 .655.655c.32.164.74.164 1.581.164h.2c.84 0 1.26 0 1.581-.163a1.5 1.5 0 0 0 .655-.656c.164-.32.164-.74.164-1.581V5.4c0-.84 0-1.26-.163-1.581a1.5 1.5 0 0 0-.656-.656C17.861 3 17.441 3 16.6 3h-.2c-.84 0-1.26 0-1.581.163a1.5 1.5 0 0 0-.655.656z" fill="currentColor"/>
+                        </svg>
+                      </button>
+                    {% endif %}
+                    {% if section.settings.show_mute_button %}
+                    <button class="vso-shoppable-video__mute-button" data-mute-button aria-label="Mute/Unmute">
+                      <svg class="vso-shoppable-video__volume-off-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 4.5v15c0 .445-.5.694-.86.433L6.88 16.5H4a1.5 1.5 0 0 1-1.5-1.5v-6A1.5 1.5 0 0 1 4 7.5h2.88l4.26-3.433c.36-.261.86-.012.86.433Z" fill="currentColor"/>
+                        <path d="M16.5 9l6 6M22.5 9l-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                      </svg>
+                      <svg class="vso-shoppable-video__volume-on-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="display:none;">
+                        <path d="M12 4.5v15c0 .445-.5.694-.86.433L6.88 16.5H4a1.5 1.5 0 0 1-1.5-1.5v-6A1.5 1.5 0 0 1 4 7.5h2.88l4.26-3.433c.36-.261.86-.012.86.433Z" fill="currentColor"/>
+                        <path d="M16 8a5 5 0 0 1 0 8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        <path d="M18.5 5.5a8.5 8.5 0 0 1 0 13" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                      </svg>
+                    </button>
+                    {% endif %}
+                  </div>
+                {% elsif block.settings.video_url != blank %}
+                  <div class="vso-shoppable-video__video-container" data-video-container>
+                    {{ block.settings.video_url | video_tag:
+                      class: 'vso-shoppable-video__video',
+                      autoplay: false,
+                      loop: true,
+                      muted: true,
+                      controls: false,
+                      preload: 'auto',
+                      playsinline: true,
+                      image_size: '800x'
+                    }}
+                    {% if section.settings.show_play_button %}
+                      <button class="vso-shoppable-video__play-button" data-play-button aria-label="Play/Pause video">
+                        <svg class="vso-shoppable-video__play-icon" viewBox="-3 0 28 28" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M21.415,12.554 L2.418,0.311 C1.291,-0.296 0,0.767 0,1.946 L0,26.054 C0,28.046 1.385,28.36 2.418,27.689 L21.415,15.446 C22.197,14.647 22.197,13.353 21.415,12.554" fill="currentColor"/>
+                        </svg>
+                        <svg class="vso-shoppable-video__pause-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="display: none;">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M5.163 3.819C5 4.139 5 4.559 5 5.4v13.2c0 .84 0 1.26.163 1.581a1.5 1.5 0 0 0 .656.655c.32.164.74.164 1.581.164h.2c.84 0 1.26 0 1.581-.163a1.5 1.5 0 0 0 .656-.656c.163-.32.163-.74.163-1.581V5.4c0-.84 0-1.26-.163-1.581a1.5 1.5 0 0 0-.656-.656C8.861 3 8.441 3 7.6 3h-.2c-.84 0-1.26 0-1.581.163a1.5 1.5 0 0 0-.656.656zm9 0C14 4.139 14 4.559 14 5.4v13.2c0 .84 0 1.26.164 1.581a1.5 1.5 0 0 0 .655.655c.32.164.74.164 1.581.164h.2c.84 0 1.26 0 1.581-.163a1.5 1.5 0 0 0 .655-.656c.164-.32.164-.74.164-1.581V5.4c0-.84 0-1.26-.163-1.581a1.5 1.5 0 0 0-.656-.656C17.861 3 17.441 3 16.6 3h-.2c-.84 0-1.26 0-1.581.163a1.5 1.5 0 0 0-.655.656z" fill="currentColor"/>
+                        </svg>
+                      </button>
+                    {% endif %}
+                    {% if section.settings.show_mute_button %}
+                    <button class="vso-shoppable-video__mute-button" data-mute-button aria-label="Mute/Unmute">
+                      <svg class="vso-shoppable-video__volume-off-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 4.5v15c0 .445-.5.694-.86.433L6.88 16.5H4a1.5 1.5 0 0 1-1.5-1.5v-6A1.5 1.5 0 0 1 4 7.5h2.88l4.26-3.433c.36-.261.86-.012.86.433Z" fill="currentColor"/>
+                        <path d="M16.5 9l6 6M22.5 9l-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                      </svg>
+                      <svg class="vso-shoppable-video__volume-on-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="display:none;">
+                        <path d="M12 4.5v15c0 .445-.5.694-.86.433L6.88 16.5H4a1.5 1.5 0 0 1-1.5-1.5v-6A1.5 1.5 0 0 1 4 7.5h2.88l4.26-3.433c.36-.261.86-.012.86.433Z" fill="currentColor"/>
+                        <path d="M16 8a5 5 0 0 1 0 8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        <path d="M18.5 5.5a8.5 8.5 0 0 1 0 13" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                      </svg>
+                    </button>
+                    {% endif %}
+                  </div>
+                {% else %}
+                  <div class="vso-shoppable-video__video-container">
+                    {{ 'lifestyle-2' | placeholder_svg_tag: 'vso-shoppable-video__video vso-shoppable-video__video-placeholder' }}
+                  </div>
+                {% endif %}
+
+              </div>
+            </div>
+            {% endfor %}
+          {% endfor %}
+        </div>
+        <div class="vso-shoppable-video__nav-overlay vso-shoppable-video__nav-overlay-prev vso-shoppable-video__nav-prev">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="transform: scaleX(-1);">
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+            <g id="SVGRepo_iconCarrier">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M8.29289 4.29289C8.68342 3.90237 9.31658 3.90237 9.70711 4.29289L16.7071 11.2929C17.0976 11.6834 17.0976 12.3166 16.7071 12.7071L9.70711 19.7071C9.31658 20.0976 8.68342 20.0976 8.29289 19.7071C7.90237 19.3166 7.90237 18.6834 8.29289 18.2929L14.5858 12L8.29289 5.70711C7.90237 5.31658 7.90237 4.68342 8.29289 4.29289Z" fill="currentColor"></path>
+            </g>
+          </svg>
+        </div>
+        <div class="vso-shoppable-video__nav-overlay vso-shoppable-video__nav-overlay-next vso-shoppable-video__nav-next">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+            <g id="SVGRepo_iconCarrier">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M8.29289 4.29289C8.68342 3.90237 9.31658 3.90237 9.70711 4.29289L16.7071 11.2929C17.0976 11.6834 17.0976 12.3166 16.7071 12.7071L9.70711 19.7071C9.31658 20.0976 8.68342 20.0976 8.29289 19.7071C7.90237 19.3166 7.90237 18.6834 8.29289 18.2929L14.5858 12L8.29289 5.70711C7.90237 5.31658 7.90237 4.68342 8.29289 4.29289Z" fill="currentColor"></path>
+            </g>
+          </svg>
+        </div>
+      </div>
+      </div>
+      {%- assign first_block = section.blocks | first -%}
+      {% if first_block %}
+        {%- capture first_testimonial -%}
+          {{ first_block.settings.testimonial_text }}
+        {%- endcapture -%}
+        {%- assign first_testimonial = first_testimonial | strip -%}
+        {%- assign first_author = first_block.settings.testimonial_author | default: '' -%}
+        {%- assign testimonial_text_tag = section.settings.testimonial_text_as | default: 'p' -%}
+        {%- assign testimonial_author_tag = section.settings.testimonial_author_as | default: 'p' -%}
+        <div class="vso-shoppable-video__testimonial" data-testimonial-wrapper>
+          {% case testimonial_text_tag %}
+            {% when 'h2' %}<h2 class="vso-shoppable-video__testimonial-text" data-testimonial-text>{{ first_testimonial }}</h2>
+            {% when 'h3' %}<h3 class="vso-shoppable-video__testimonial-text" data-testimonial-text>{{ first_testimonial }}</h3>
+            {% when 'h4' %}<h4 class="vso-shoppable-video__testimonial-text" data-testimonial-text>{{ first_testimonial }}</h4>
+            {% when 'h5' %}<h5 class="vso-shoppable-video__testimonial-text" data-testimonial-text>{{ first_testimonial }}</h5>
+            {% else %}<p class="vso-shoppable-video__testimonial-text" data-testimonial-text>{{ first_testimonial }}</p>
+          {% endcase %}
+
+          {% case testimonial_author_tag %}
+            {% when 'h2' %}<h2 class="vso-shoppable-video__testimonial-author" data-testimonial-author>{{ first_author }}</h2>
+            {% when 'h3' %}<h3 class="vso-shoppable-video__testimonial-author" data-testimonial-author>{{ first_author }}</h3>
+            {% when 'h4' %}<h4 class="vso-shoppable-video__testimonial-author" data-testimonial-author>{{ first_author }}</h4>
+            {% when 'h5' %}<h5 class="vso-shoppable-video__testimonial-author" data-testimonial-author>{{ first_author }}</h5>
+            {% else %}<p class="vso-shoppable-video__testimonial-author" data-testimonial-author>{{ first_author }}</p>
+          {% endcase %}
+        </div>
+      {% endif %}
+      
+    {% endif %}
+  </div>
+</div>
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+
+<script defer>
+const initShoppableVideoStories{{ section.id | replace: '-', '' }} = () => {
+  const STORE_KEY = '__vsoShoppableVideoStories';
+  const store = window[STORE_KEY] = window[STORE_KEY] || {};
+  if (typeof store['{{ section.id }}'] === 'function') {
+    store['{{ section.id }}']();
+  }
+  store['{{ section.id }}'] = () => {};
+  const globalListeners = [];
+  const addGlobalListener = (target, event, handler, options) => {
+    target.addEventListener(event, handler, options);
+    globalListeners.push(() => target.removeEventListener(event, handler, options));
+  };
+
+  const sectionId = 'ShoppableVideoStories-{{ section.id }}';
+  const sectionEl = document.getElementById(sectionId);
+  if (!sectionEl) return;
+
+  const swiperContainer = sectionEl.querySelector('.vso-shoppable-video__swiper');
+  if (!swiperContainer) return;
+
+  const testimonialWrapper = sectionEl.querySelector('[data-testimonial-wrapper]');
+  const testimonialTextEl = sectionEl.querySelector('[data-testimonial-text]');
+  const testimonialAuthorEl = sectionEl.querySelector('[data-testimonial-author]');
+  const navPrev = sectionEl.querySelector('.vso-shoppable-video__nav-overlay-prev');
+  const navNext = sectionEl.querySelector('.vso-shoppable-video__nav-overlay-next');
+  const autoplayEnabled = {{ section.settings.video_autoplay | json }};
+  let globalMuted = (localStorage.getItem('vsoShoppableVideoMuted') ?? 'true') === 'true';
+  let testimonialTimeout;
+  let swiperInstance;
+
+  const blockTestimonials = [
+    {% for block in section.blocks %}
+      {
+        text: {{ block.settings.testimonial_text | default: '' | strip | strip_newlines | json }},
+        author: {{ block.settings.testimonial_author | default: '' | strip | strip_newlines | json }}
+      }{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  ];
+
+  const setPlayButtonState = (button, playing) => {
+    if (!button) return;
+    const playIcon = button.querySelector('.vso-shoppable-video__play-icon');
+    const pauseIcon = button.querySelector('.vso-shoppable-video__pause-icon');
+    if (playIcon) playIcon.style.display = playing ? 'none' : 'block';
+    if (pauseIcon) pauseIcon.style.display = playing ? 'block' : 'none';
+  };
+
+  const setMuteButtonState = (button, muted) => {
+    if (!button) return;
+    const onIcon = button.querySelector('.vso-shoppable-video__volume-on-icon');
+    const offIcon = button.querySelector('.vso-shoppable-video__volume-off-icon');
+    if (onIcon) onIcon.style.display = muted ? 'none' : 'block';
+    if (offIcon) offIcon.style.display = muted ? 'block' : 'none';
+  };
+
+  const slidesTestimonialData = (() => {
+    const seen = new Set();
+    const dataSource = blockTestimonials.length
+      ? blockTestimonials
+      : Array.from(sectionEl.querySelectorAll('[data-slide-testimonial]')).map((slide) => ({
+          text: slide.getAttribute('data-slide-testimonial') || '',
+          author: slide.getAttribute('data-slide-author') || ''
+        }));
+    return dataSource.reduce((acc, entry) => {
+      const text = entry?.text || '';
+      const author = entry?.author || '';
+      const key = `${text}||${author}`;
+      if (seen.has(key)) return acc;
+      seen.add(key);
+      acc.push({ text, author });
+      return acc;
+    }, []);
+  })();
+
+  const getActiveSlideEl = (swiperInstance) => {
+    if (!swiperInstance) return null;
+    const slides = swiperInstance.slides;
+    if (slides && typeof swiperInstance.activeIndex === 'number') {
+      const directMatch = slides[swiperInstance.activeIndex];
+      if (directMatch) return directMatch;
+    }
+    return swiperInstance.el?.querySelector('.swiper-slide-active') || null;
+  };
+
+  const getSlideTestimonialData = (slide) => {
+    if (!slide) return null;
+    const indexAttr = slide.getAttribute('data-slide-block-index');
+    if (indexAttr !== null) {
+      const parsedIndex = Number(indexAttr);
+      if (!Number.isNaN(parsedIndex) && blockTestimonials[parsedIndex]) {
+        const data = blockTestimonials[parsedIndex];
+        if (data && (data.text || data.author)) {
+          return { text: data.text || '', author: data.author || '' };
+        }
+      }
+    }
+    const fallbackText = slide.getAttribute('data-slide-testimonial') || '';
+    const fallbackAuthor = slide.getAttribute('data-slide-author') || '';
+    if (fallbackText || fallbackAuthor) {
+      return { text: fallbackText, author: fallbackAuthor };
+    }
+    return null;
+  };
+
+  let lastTestimonialData = (() => {
+    const initial = {
+      text: testimonialTextEl?.innerHTML || '',
+      author: testimonialAuthorEl?.textContent?.trim() || ''
+    };
+    if (initial.text || initial.author) return initial;
+    return blockTestimonials[0] ? { ...blockTestimonials[0] } : { text: '', author: '' };
+  })();
+
+  const setStableCarouselHeight = () => {
+    if (!swiperContainer) return;
+    const slides = Array.from(swiperContainer.querySelectorAll('.swiper-slide'));
+    if (!slides.length) return;
+    const swiperWrapper = swiperContainer.querySelector('.swiper-wrapper');
+
+    sectionEl.style.removeProperty('--vso-carousel-max-height');
+    swiperContainer.style.removeProperty('min-height');
+    swiperContainer.style.removeProperty('height');
+    if (swiperWrapper) {
+      swiperWrapper.style.removeProperty('min-height');
+      swiperWrapper.style.removeProperty('height');
+    }
+    slides.forEach((slide) => {
+      slide.style.removeProperty('min-height');
+      slide.style.removeProperty('height');
+    });
+
+    let maxHeight = 0;
+    slides.forEach((slide) => {
+      const block = slide.querySelector('.vso-shoppable-video__block');
+      if (!block) return;
+      const measured = Math.ceil(block.getBoundingClientRect().height);
+      if (measured > maxHeight) {
+        maxHeight = measured;
+      }
+    });
+
+    if (!maxHeight) return;
+
+    const maxHeightPx = `${maxHeight}px`;
+    sectionEl.style.setProperty('--vso-carousel-max-height', maxHeightPx);
+    swiperContainer.style.minHeight = maxHeightPx;
+    swiperContainer.style.height = maxHeightPx;
+    if (swiperWrapper) {
+      swiperWrapper.style.minHeight = maxHeightPx;
+      swiperWrapper.style.height = maxHeightPx;
+    }
+    slides.forEach((slide) => {
+      slide.style.minHeight = maxHeightPx;
+      slide.style.height = maxHeightPx;
+    });
+
+    if (swiperInstance) {
+      if (typeof swiperInstance.updateSlides === 'function') {
+        swiperInstance.updateSlides();
+      }
+      if (typeof swiperInstance.updateSize === 'function') {
+        swiperInstance.updateSize();
+      }
+      positionOverlayArrows(swiperInstance);
+    }
+  };
+
+  const positionOverlayArrows = (swiperInstance) => {
+    if (!swiperInstance || !navPrev || !navNext) return;
+    const isDesktop = window.matchMedia('(min-width: 750px)').matches;
+    if (!isDesktop) {
+      navPrev.style.display = 'none';
+      navNext.style.display = 'none';
+      return;
+    }
+
+    const containerWidth = swiperInstance.width;
+    const containerHeight = swiperInstance.height;
+    if (!containerWidth || !containerHeight) return;
+
+    const params = swiperInstance.params || {};
+    const breakpointConfig = params.breakpoints || {};
+    const viewportWidth = window.innerWidth || document.documentElement.clientWidth || 0;
+    let slidesPerView = typeof params.slidesPerView === 'number' ? params.slidesPerView : 1;
+    let spaceBetween = typeof params.spaceBetween === 'number' ? params.spaceBetween : 0;
+
+    Object.keys(breakpointConfig)
+      .map((bp) => Number(bp))
+      .filter((bp) => !Number.isNaN(bp))
+      .sort((a, b) => a - b)
+      .forEach((bp) => {
+        if (viewportWidth >= bp) {
+          const config = breakpointConfig[bp] || {};
+          if (typeof config.slidesPerView === 'number') {
+            slidesPerView = config.slidesPerView;
+          }
+          if (typeof config.spaceBetween === 'number') {
+            spaceBetween = config.spaceBetween;
+          }
+        }
+      });
+
+    if (slidesPerView <= 0) return;
+
+    const slideWidth = (containerWidth - Math.max(slidesPerView - 1, 0) * spaceBetween) / slidesPerView;
+    if (!slideWidth || !isFinite(slideWidth)) return;
+
+    const inset = 10;
+    const prevIndex = slidesPerView >= 2 ? 1 : 0;
+    const nextIndex = slidesPerView >= 4 ? 3 : Math.max(Math.ceil(slidesPerView) - 1, 0);
+    const slideStart = (index) => index * (slideWidth + spaceBetween);
+    const arrowWidth = navPrev.getBoundingClientRect().width || navNext.getBoundingClientRect().width || {{ section.settings.nav_arrow_size | default: 50 }};
+    const arrowOffset = arrowWidth * 0.25;
+    const clampX = (value) => Math.max(-arrowWidth, Math.min(containerWidth + arrowWidth, value));
+
+    let centerY = containerHeight / 2;
+    const firstVideo = swiperInstance.el?.querySelector('.swiper-slide .vso-shoppable-video__video-container');
+    if (firstVideo && swiperInstance.el) {
+      const swiperRect = swiperInstance.el.getBoundingClientRect();
+      const videoRect = firstVideo.getBoundingClientRect();
+      centerY = (videoRect.top - swiperRect.top) + (videoRect.height / 2);
+    }
+
+    const prevLeft = clampX(slideStart(prevIndex) + inset - arrowOffset);
+    const nextLeft = clampX(slideStart(nextIndex) + slideWidth - inset + arrowOffset);
+
+    navPrev.style.display = 'flex';
+    navNext.style.display = 'flex';
+    navPrev.style.top = `${centerY}px`;
+    navNext.style.top = `${centerY}px`;
+    navPrev.style.left = `${prevLeft}px`;
+    navNext.style.left = `${nextLeft}px`;
+  };
+
+  const setStableTestimonialHeight = () => {
+    if (!testimonialWrapper || !slidesTestimonialData.length) return;
+    const measurement = document.createElement('div');
+    measurement.className = 'vso-shoppable-video__testimonial';
+    measurement.style.position = 'absolute';
+    measurement.style.visibility = 'hidden';
+    measurement.style.pointerEvents = 'none';
+    measurement.style.left = '-9999px';
+    measurement.style.top = '0';
+    measurement.style.width = `${testimonialWrapper.clientWidth}px`;
+
+    const textProbe = document.createElement('div');
+    textProbe.className = 'vso-shoppable-video__testimonial-text';
+    const authorProbe = document.createElement('span');
+    authorProbe.className = 'vso-shoppable-video__testimonial-author';
+    measurement.append(textProbe, authorProbe);
+
+    testimonialWrapper.parentNode.appendChild(measurement);
+
+    let maxHeight = measurement.offsetHeight;
+    slidesTestimonialData.forEach(({ text, author }) => {
+      textProbe.innerHTML = text;
+      if (author) {
+        authorProbe.textContent = author;
+        authorProbe.style.display = '';
+      } else {
+        authorProbe.textContent = '';
+        authorProbe.style.display = 'none';
+      }
+      maxHeight = Math.max(maxHeight, measurement.offsetHeight);
+    });
+
+    measurement.remove();
+    testimonialWrapper.style.minHeight = `${maxHeight}px`;
+  };
+
+  setStableTestimonialHeight();
+  setStableCarouselHeight();
+
+  let resizeTestimonialTimer;
+  const handleTestimonialResize = () => {
+    if (!testimonialWrapper) return;
+    clearTimeout(resizeTestimonialTimer);
+    resizeTestimonialTimer = setTimeout(setStableTestimonialHeight, 150);
+  };
+  addGlobalListener(window, 'resize', handleTestimonialResize);
+
+  let resizeCarouselTimer;
+  const scheduleCarouselHeightUpdate = () => {
+    clearTimeout(resizeCarouselTimer);
+    resizeCarouselTimer = setTimeout(() => {
+      setStableCarouselHeight();
+      if (swiperInstance) {
+        positionOverlayArrows(swiperInstance);
+      }
+    }, 150);
+  };
+  addGlobalListener(window, 'resize', scheduleCarouselHeightUpdate);
+
+  const pauseAllVideos = () => {
+    sectionEl.querySelectorAll('video.vso-shoppable-video__video').forEach((video) => {
+      video.pause();
+      const playButton = video.closest('[data-video-container]')?.querySelector('[data-play-button]');
+      setPlayButtonState(playButton, false);
+    });
+  };
+
+  const playActiveVideo = (swiperInstance) => {
+    if (!swiperInstance || !autoplayEnabled) return;
+    const activeSlide = swiperInstance.slides[swiperInstance.activeIndex];
+    if (!activeSlide) return;
+    const video = activeSlide.querySelector('video.vso-shoppable-video__video');
+    if (!video) return;
+    video.muted = globalMuted;
+    video.setAttribute('playsinline', 'true');
+    video.play().then(() => {
+      const container = video.closest('[data-video-container]');
+      setPlayButtonState(container?.querySelector('[data-play-button]'), true);
+      setMuteButtonState(container?.querySelector('[data-mute-button]'), globalMuted);
+    }).catch(() => {});
+  };
+
+  const updateTestimonial = (swiperInstance, immediate = false) => {
+    if (!testimonialWrapper) return;
+    const activeSlide = getActiveSlideEl(swiperInstance);
+
+    const slideData = getSlideTestimonialData(activeSlide);
+    const nextData = slideData ? { ...slideData } : lastTestimonialData;
+
+    const applyUpdate = () => {
+      if (testimonialTextEl) {
+        testimonialTextEl.innerHTML = nextData.text;
+      }
+      if (testimonialAuthorEl) {
+        testimonialAuthorEl.textContent = nextData.author;
+        testimonialAuthorEl.style.display = nextData.author ? '' : 'none';
+      }
+      lastTestimonialData = nextData;
+      testimonialWrapper.classList.remove('is-transitioning');
+    };
+
+    if (immediate || !activeSlide) {
+      applyUpdate();
+      return;
+    }
+
+    testimonialWrapper.classList.add('is-transitioning');
+    clearTimeout(testimonialTimeout);
+    testimonialTimeout = setTimeout(applyUpdate, 140);
+  };
+
+  const bindVideoControls = () => {
+    const containers = sectionEl.querySelectorAll('[data-video-container]');
+    containers.forEach((container) => {
+      const video = container.querySelector('video.vso-shoppable-video__video');
+      if (!video) return;
+
+      video.muted = globalMuted;
+      setMuteButtonState(container.querySelector('[data-mute-button]'), globalMuted);
+
+      const ensureMeasuredHeight = () => scheduleCarouselHeightUpdate();
+      if (video.readyState >= 2) {
+        ensureMeasuredHeight();
+      } else {
+        video.addEventListener('loadedmetadata', ensureMeasuredHeight, { once: true });
+        video.addEventListener('loadeddata', ensureMeasuredHeight, { once: true });
+      }
+
+      const playButton = container.querySelector('[data-play-button]');
+      const muteButton = container.querySelector('[data-mute-button]');
+
+      const handleTogglePlay = (event) => {
+        if (event) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+        const slide = container.closest('.swiper-slide');
+        if (!slide?.classList.contains('swiper-slide-active')) {
+          return;
+        }
+        if (video.paused) {
+          video.play();
+          setPlayButtonState(playButton, true);
+        } else {
+          video.pause();
+          setPlayButtonState(playButton, false);
+        }
+      };
+
+      if (playButton) {
+        playButton.addEventListener('click', handleTogglePlay);
+      }
+      video.addEventListener('click', handleTogglePlay);
+
+      if (muteButton) {
+        muteButton.addEventListener('click', (event) => {
+          event.preventDefault();
+          event.stopPropagation();
+          const nextMuted = !video.muted;
+          video.muted = nextMuted;
+          globalMuted = nextMuted;
+          localStorage.setItem('vsoShoppableVideoMuted', nextMuted ? 'true' : 'false');
+          setMuteButtonState(muteButton, nextMuted);
+        });
+      }
+
+      video.addEventListener('play', () => setPlayButtonState(playButton, true));
+      video.addEventListener('pause', () => setPlayButtonState(playButton, false));
+    });
+  };
+
+  const totalSlides = {{ section.blocks.size }};
+  const shouldLoop = true;
+  const initialSlide = totalSlides >= 5 ? 2 : Math.max(0, Math.floor(totalSlides / 2));
+
+  const swiperConfig = {
+    slidesPerView: 1.2,
+    spaceBetween: 16,
+    centeredSlides: true,
+    loop: shouldLoop,
+    loopAdditionalSlides: 2,
+    centeredSlidesBounds: true,
+    initialSlide,
+    breakpoints: {
+      750: {
+        slidesPerView: 3,
+        spaceBetween: 24
+      },
+      1200: {
+        slidesPerView: 5,
+        spaceBetween: 32
+      }
+    },
+    on: {
+      init() {
+        bindVideoControls();
+        playActiveVideo(this);
+        updateTestimonial(this, true);
+        setStableCarouselHeight();
+        positionOverlayArrows(this);
+      },
+      slideChangeTransitionStart() {
+        pauseAllVideos();
+        positionOverlayArrows(this);
+      },
+      slideChangeTransitionEnd() {
+        playActiveVideo(this);
+        positionOverlayArrows(this);
+      },
+      slideChange() {
+        updateTestimonial(this);
+        positionOverlayArrows(this);
+      },
+      resize() {
+        positionOverlayArrows(this);
+      }
+    }
+  };
+
+  if (navPrev && navNext) {
+    swiperConfig.navigation = {
+      nextEl: navNext,
+      prevEl: navPrev
+    };
+  }
+
+  swiperInstance = new Swiper(swiperContainer, swiperConfig);
+
+  const handleVisibilityChange = () => {
+    if (document.hidden) {
+      pauseAllVideos();
+    } else {
+      playActiveVideo(swiperInstance);
+    }
+  };
+  addGlobalListener(document, 'visibilitychange', handleVisibilityChange);
+
+  store['{{ section.id }}'] = () => {
+    if (swiperInstance) {
+      swiperInstance.destroy(true, true);
+      swiperInstance = null;
+    }
+    clearTimeout(resizeTestimonialTimer);
+    clearTimeout(resizeCarouselTimer);
+    clearTimeout(testimonialTimeout);
+    globalListeners.forEach((unbind) => unbind());
+    globalListeners.length = 0;
+  };
+};
+
+const cleanupShoppableVideoStories{{ section.id | replace: '-', '' }} = () => {
+  const store = window.__vsoShoppableVideoStories;
+  if (store && typeof store['{{ section.id }}'] === 'function') {
+    store['{{ section.id }}']();
+    delete store['{{ section.id }}'];
+  }
+};
+
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', initShoppableVideoStories{{ section.id | replace: '-', '' }});
+} else {
+  initShoppableVideoStories{{ section.id | replace: '-', '' }}();
+}
+
+if (window.Shopify && Shopify.designMode) {
+  document.addEventListener('shopify:section:load', (event) => {
+    if (event.detail?.sectionId === '{{ section.id }}') {
+      initShoppableVideoStories{{ section.id | replace: '-', '' }}();
+    }
+  });
+  document.addEventListener('shopify:section:unload', (event) => {
+    if (event.detail?.sectionId === '{{ section.id }}') {
+      cleanupShoppableVideoStories{{ section.id | replace: '-', '' }}();
+    }
+  });
+}
+</script>
+
+{% schema %}
+{
+"name": "VSO - Video Carousel 03",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    { "type": "header", "content": "Section Settings" },
+    {
+      "type": "checkbox",
+      "id": "enable_advanced_settings",
+      "label": "Enable advanced settings",
+      "default": false,
+      "info": "Shows additional settings for spacing, layout, and typography."
+    },
+    {
+      "type": "paragraph",
+      "content": "If the section still looks broken after you finish customizing it, refresh the Theme Editor preview tab so the layout can re-render with your changes."
+    },
+    {
+      "type": "header",
+      "content": "Layout Settings",
+      "visible_if": "{{ section.settings.enable_advanced_settings == true }}"
+    },
+    {
+      "type": "range",
+      "id": "content_width",
+      "min": 30,
+      "max": 200,
+      "step": 2,
+      "unit": "rem",
+      "label": "Content max width",
+      "default": 120,
+      "visible_if": "{{ section.settings.enable_advanced_settings == true }}"
+    },
+    {
+      "type": "range",
+      "id": "padding_horizontal_desktop",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Desktop side spacing",
+      "default": 0,
+      "info": "Adds spacing on the left and right sides of this section on desktop.",
+      "visible_if": "{{ section.settings.enable_advanced_settings == true }}"
+    },
+    {
+      "type": "range",
+      "id": "padding_horizontal_mobile",
+      "min": 0,
+      "max": 50,
+      "step": 1,
+      "unit": "px",
+      "label": "Mobile side spacing",
+      "default": 0,
+      "info": "Adds spacing on the left and right sides of this section on mobile.",
+      "visible_if": "{{ section.settings.enable_advanced_settings == true }}"
+    },
+
+    { "type": "header", "content": "Section Background" },
+    {
+      "type": "select",
+      "id": "section_bg_type",
+      "label": "Section background type",
+      "options": [
+        { "value": "solid", "label": "Solid" },
+        { "value": "gradient", "label": "Gradient" }
+      ],
+      "default": "solid"
+    },
+    {
+      "type": "color",
+      "id": "section_bg_color",
+      "label": "Section background color",
+      "default": "#FFFFFF",
+      "visible_if": "{{ section.settings.section_bg_type == 'solid' }}"
+    },
+    {
+      "type": "color_background",
+      "id": "section_bg_gradient",
+      "label": "Section background gradient",
+      "default": "linear-gradient(180deg, #EAF6FF 0%, #FFFFFF 100%)",
+      "visible_if": "{{ section.settings.section_bg_type == 'gradient' }}"
+    },
+    {
+      "type": "checkbox",
+      "id": "full_width_desktop",
+      "label": "Full width background on desktop",
+      "default": true,
+      "info": "Mobile is always full width. Disable to apply the background to the inner container on desktop."
+    },
+    {
+      "type": "range",
+      "id": "section_border_radius",
+      "label": "Desktop border radius",
+      "min": 0,
+      "max": 40,
+      "step": 1,
+      "unit": "px",
+      "default": 0,
+      "visible_if": "{{ section.settings.full_width_desktop == false }}"
+    },
+
+    { "type": "header", "content": "Section Padding" },
+    {
+      "type": "range",
+      "id": "padding_top_desktop",
+      "min": 0,
+      "max": 180,
+      "step": 4,
+      "unit": "px",
+      "label": "Desktop padding top",
+      "default": 60
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom_desktop",
+      "min": 0,
+      "max": 180,
+      "step": 4,
+      "unit": "px",
+      "label": "Desktop padding bottom",
+      "default": 60
+    },
+    {
+      "type": "range",
+      "id": "padding_top_mobile",
+      "min": 0,
+      "max": 80,
+      "step": 4,
+      "unit": "px",
+      "label": "Mobile padding top",
+      "default": 32
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom_mobile",
+      "min": 0,
+      "max": 80,
+      "step": 4,
+      "unit": "px",
+      "label": "Mobile padding bottom",
+      "default": 32
+    },
+
+    { "type": "header", "content": "Section Margin" },
+    {
+      "type": "range",
+      "id": "margin_top_desktop",
+      "min": 0,
+      "max": 120,
+      "step": 4,
+      "unit": "px",
+      "label": "Desktop margin top",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "margin_bottom_desktop",
+      "min": 0,
+      "max": 120,
+      "step": 4,
+      "unit": "px",
+      "label": "Desktop margin bottom",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "margin_top_mobile",
+      "min": 0,
+      "max": 80,
+      "step": 4,
+      "unit": "px",
+      "label": "Mobile margin top",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "margin_bottom_mobile",
+      "min": 0,
+      "max": 80,
+      "step": 4,
+      "unit": "px",
+      "label": "Mobile margin bottom",
+      "default": 0
+    },
+
+    {
+      "type": "header",
+      "content": "Header Alignment",
+      "visible_if": "{{ section.settings.enable_advanced_settings == true }}"
+    },
+    {
+      "type": "select",
+      "id": "header_alignment_desktop",
+      "label": "Desktop header alignment",
+      "options": [
+        { "value": "left", "label": "Left" },
+        { "value": "center", "label": "Center" }
+      ],
+      "default": "center",
+      "visible_if": "{{ section.settings.enable_advanced_settings == true }}"
+    },
+    {
+      "type": "select",
+      "id": "header_alignment_mobile",
+      "label": "Mobile header alignment",
+      "options": [
+        { "value": "left", "label": "Left" },
+        { "value": "center", "label": "Center" }
+      ],
+      "default": "center",
+      "visible_if": "{{ section.settings.enable_advanced_settings == true }}"
+    },
+    {
+      "type": "header",
+      "content": "Description Alignment",
+      "visible_if": "{{ section.settings.enable_advanced_settings == true }}"
+    },
+    {
+      "type": "select",
+      "id": "description_alignment_desktop",
+      "label": "Desktop description alignment",
+      "options": [
+        { "value": "left", "label": "Left" },
+        { "value": "center", "label": "Center" }
+      ],
+      "default": "center",
+      "visible_if": "{{ section.settings.enable_advanced_settings == true }}"
+    },
+    {
+      "type": "select",
+      "id": "description_alignment_mobile",
+      "label": "Mobile description alignment",
+      "options": [
+        { "value": "left", "label": "Left" },
+        { "value": "center", "label": "Center" }
+      ],
+      "default": "center",
+      "visible_if": "{{ section.settings.enable_advanced_settings == true }}"
+    },
+
+    { "type": "header", "content": "Heading" },
+    {
+      "type": "inline_richtext",
+      "id": "heading",
+      "label": "Heading text",
+      "default": "Why Versio Tea Replaced Our Coffee"
+    },
+    { "type": "checkbox", "id": "custom_heading_font", "label": "Enable custom heading font", "default": false },
+    {
+      "type": "select",
+      "id": "heading_as",
+      "label": "Heading render as",
+      "options": [
+        { "value": "h1", "label": "H1" },
+        { "value": "h2", "label": "H2" },
+        { "value": "h3", "label": "H3" },
+        { "value": "h4", "label": "H4" },
+        { "value": "h5", "label": "H5" },
+        { "value": "p", "label": "Paragraph (p)" }
+      ],
+      "default": "h2",
+      "visible_if": "{{ section.settings.custom_heading_font == false }}"
+    },
+    {
+      "type": "range",
+      "id": "heading_size_desktop",
+      "min": 20,
+      "max": 80,
+      "step": 2,
+      "unit": "px",
+      "label": "Desktop font size",
+      "default": 40,
+      "visible_if": "{{ section.settings.custom_heading_font }}"
+    },
+    {
+      "type": "range",
+      "id": "heading_size_mobile",
+      "min": 16,
+      "max": 60,
+      "step": 2,
+      "unit": "px",
+      "label": "Mobile font size",
+      "default": 32,
+      "visible_if": "{{ section.settings.custom_heading_font }}"
+    },
+    {
+      "type": "font_picker",
+      "id": "heading_font",
+      "label": "Font family",
+      "default": "helvetica_n4",
+      "visible_if": "{{ section.settings.custom_heading_font }}"
+    },
+    {
+      "type": "color",
+      "id": "heading_color",
+      "label": "Text color",
+      "default": "#000000",
+      "visible_if": "{{ section.settings.custom_heading_font }}"
+    },
+    {
+      "type": "range",
+      "id": "heading_line_height",
+      "min": 50,
+      "max": 200,
+      "step": 10,
+      "unit": "%",
+      "label": "Line height",
+      "default": 130,
+      "visible_if": "{{ section.settings.custom_heading_font }}"
+    },
+    {
+      "type": "range",
+      "id": "heading_font_weight",
+      "min": 100,
+      "max": 900,
+      "step": 100,
+      "label": "Font weight",
+      "default": 700,
+      "visible_if": "{{ section.settings.custom_heading_font and section.settings.enable_advanced_settings == true }}"
+    },
+    {
+      "type": "range",
+      "id": "heading_bottom_spacing",
+      "min": 0,
+      "max": 60,
+      "step": 1,
+      "unit": "px",
+      "label": "Heading bottom spacing",
+      "default": 12
+    },
+
+    { "type": "header", "content": "Description" },
+    {
+      "type": "inline_richtext",
+      "id": "description",
+      "label": "Description text",
+      "default": "Hear how Versio tea drinkers swapped their daily coffee for calm focus, steady energy, and happier digestion."
+    },
+    { "type": "checkbox", "id": "custom_description_font", "label": "Enable custom description font", "default": false },
+    {
+      "type": "select",
+      "id": "description_as",
+      "label": "Description render as",
+      "options": [
+        { "value": "h2", "label": "H2" },
+        { "value": "h3", "label": "H3" },
+        { "value": "h4", "label": "H4" },
+        { "value": "h5", "label": "H5" },
+        { "value": "p", "label": "Paragraph (p)" }
+      ],
+      "default": "p",
+      "visible_if": "{{ section.settings.custom_description_font == false }}"
+    },
+    {
+      "type": "range",
+      "id": "description_size_desktop",
+      "min": 14,
+      "max": 38,
+      "step": 1,
+      "unit": "px",
+      "label": "Desktop font size",
+      "default": 20,
+      "visible_if": "{{ section.settings.custom_description_font }}"
+    },
+    {
+      "type": "range",
+      "id": "description_size_mobile",
+      "min": 12,
+      "max": 34,
+      "step": 1,
+      "unit": "px",
+      "label": "Mobile font size",
+      "default": 18,
+      "visible_if": "{{ section.settings.custom_description_font }}"
+    },
+    {
+      "type": "font_picker",
+      "id": "description_font",
+      "label": "Font family",
+      "default": "helvetica_n4",
+      "visible_if": "{{ section.settings.custom_description_font }}"
+    },
+    {
+      "type": "range",
+      "id": "description_line_height",
+      "min": 120,
+      "max": 200,
+      "step": 10,
+      "unit": "%",
+      "label": "Line height",
+      "default": 150,
+      "visible_if": "{{ section.settings.custom_description_font }}"
+    },
+    {
+      "type": "color",
+      "id": "description_color",
+      "label": "Text color",
+      "default": "#0B0B0B",
+      "visible_if": "{{ section.settings.custom_description_font }}"
+    },
+    {
+      "type": "range",
+      "id": "description_bottom_spacing",
+      "min": 0,
+      "max": 80,
+      "step": 1,
+      "unit": "px",
+      "label": "Description bottom spacing",
+      "default": 24
+    },
+
+    {
+      "type": "header",
+      "content": "Testimonial Spacing",
+      "visible_if": "{{ section.settings.enable_advanced_settings == true }}"
+    },
+    {
+      "type": "range",
+      "id": "testimonial_spacing_top_desktop",
+      "min": 0,
+      "max": 120,
+      "step": 4,
+      "unit": "px",
+      "label": "Desktop top spacing",
+      "default": 24,
+      "visible_if": "{{ section.settings.enable_advanced_settings == true }}"
+    },
+    {
+      "type": "range",
+      "id": "testimonial_spacing_top_mobile",
+      "min": 0,
+      "max": 120,
+      "step": 4,
+      "unit": "px",
+      "label": "Mobile top spacing",
+      "default": 24,
+      "visible_if": "{{ section.settings.enable_advanced_settings == true }}"
+    },
+    {
+      "type": "range",
+      "id": "testimonial_width_desktop",
+      "min": 320,
+      "max": 960,
+      "step": 20,
+      "unit": "px",
+      "label": "Desktop max width",
+      "default": 640,
+      "visible_if": "{{ section.settings.enable_advanced_settings == true }}"
+    },
+
+    { "type": "header", "content": "Testimonial Typography" },
+    { "type": "checkbox", "id": "custom_testimonial_text_font", "label": "Enable custom font settings (testimonial text)", "default": false },
+    {
+      "type": "select",
+      "id": "testimonial_text_as",
+      "label": "Testimonial text render as",
+      "options": [
+        { "value": "h2", "label": "H2" },
+        { "value": "h3", "label": "H3" },
+        { "value": "h4", "label": "H4" },
+        { "value": "h5", "label": "H5" },
+        { "value": "p", "label": "Paragraph (p)" }
+      ],
+      "default": "p",
+      "visible_if": "{{ section.settings.custom_testimonial_text_font == false }}"
+    },
+    {
+      "type": "font_picker",
+      "id": "testimonial_text_font",
+      "label": "Font family",
+      "default": "helvetica_n4",
+      "visible_if": "{{ section.settings.custom_testimonial_text_font }}"
+    },
+    {
+      "type": "range",
+      "id": "testimonial_text_size_desktop",
+      "min": 12,
+      "max": 48,
+      "step": 1,
+      "unit": "px",
+      "label": "Desktop font size",
+      "default": 18,
+      "visible_if": "{{ section.settings.custom_testimonial_text_font }}"
+    },
+    {
+      "type": "range",
+      "id": "testimonial_text_size_mobile",
+      "min": 10,
+      "max": 36,
+      "step": 1,
+      "unit": "px",
+      "label": "Mobile font size",
+      "default": 16,
+      "visible_if": "{{ section.settings.custom_testimonial_text_font }}"
+    },
+    {
+      "type": "range",
+      "id": "testimonial_text_line_height",
+      "min": 120,
+      "max": 220,
+      "step": 5,
+      "unit": "%",
+      "label": "Line height",
+      "default": 165,
+      "visible_if": "{{ section.settings.custom_testimonial_text_font }}"
+    },
+    {
+      "type": "range",
+      "id": "testimonial_text_font_weight",
+      "min": 100,
+      "max": 900,
+      "step": 100,
+      "label": "Font weight",
+      "default": 500,
+      "visible_if": "{{ section.settings.custom_testimonial_text_font and section.settings.enable_advanced_settings == true }}"
+    },
+    {
+      "type": "color",
+      "id": "testimonial_text_color",
+      "label": "Text color",
+      "default": "#0B0B0B",
+      "visible_if": "{{ section.settings.custom_testimonial_text_font }}"
+    },
+
+    { "type": "checkbox", "id": "custom_testimonial_author_font", "label": "Enable custom font settings (testimonial author)", "default": false },
+    {
+      "type": "select",
+      "id": "testimonial_author_as",
+      "label": "Testimonial author render as",
+      "options": [
+        { "value": "h2", "label": "H2" },
+        { "value": "h3", "label": "H3" },
+        { "value": "h4", "label": "H4" },
+        { "value": "h5", "label": "H5" },
+        { "value": "p", "label": "Paragraph (p)" }
+      ],
+      "default": "p",
+      "visible_if": "{{ section.settings.custom_testimonial_author_font == false }}"
+    },
+    {
+      "type": "font_picker",
+      "id": "testimonial_author_font",
+      "label": "Font family",
+      "default": "helvetica_n4",
+      "visible_if": "{{ section.settings.custom_testimonial_author_font }}"
+    },
+    {
+      "type": "range",
+      "id": "testimonial_author_size_desktop",
+      "min": 10,
+      "max": 40,
+      "step": 1,
+      "unit": "px",
+      "label": "Desktop font size",
+      "default": 14,
+      "visible_if": "{{ section.settings.custom_testimonial_author_font }}"
+    },
+    {
+      "type": "range",
+      "id": "testimonial_author_size_mobile",
+      "min": 8,
+      "max": 32,
+      "step": 1,
+      "unit": "px",
+      "label": "Mobile font size",
+      "default": 13,
+      "visible_if": "{{ section.settings.custom_testimonial_author_font }}"
+    },
+    {
+      "type": "range",
+      "id": "testimonial_author_line_height",
+      "min": 100,
+      "max": 200,
+      "step": 5,
+      "unit": "%",
+      "label": "Line height",
+      "default": 140,
+      "visible_if": "{{ section.settings.custom_testimonial_author_font }}"
+    },
+    {
+      "type": "range",
+      "id": "testimonial_author_font_weight",
+      "min": 100,
+      "max": 900,
+      "step": 100,
+      "label": "Font weight",
+      "default": 600,
+      "visible_if": "{{ section.settings.custom_testimonial_author_font and section.settings.enable_advanced_settings == true }}"
+    },
+    {
+      "type": "color",
+      "id": "testimonial_author_color",
+      "label": "Text color",
+      "default": "#0B0B0B",
+      "visible_if": "{{ section.settings.custom_testimonial_author_font }}"
+    },
+
+    { "type": "header", "content": "Video Settings" },
+    {
+      "type": "checkbox",
+      "id": "video_autoplay",
+      "label": "Autoplay centered video",
+      "default": true,
+      "info": "Automatically play the centered video in the carousel"
+    },
+    { "type": "checkbox", "id": "show_mute_button", "label": "Show mute/unmute button", "default": true },
+    {
+      "type": "checkbox",
+      "id": "show_play_button",
+      "label": "Show play/pause button",
+      "default": true,
+      "info": "Display a play/pause button overlay on videos"
+    },
+    {
+      "type": "range",
+      "id": "video_border_radius",
+      "min": 0,
+      "max": 64,
+      "step": 1,
+      "unit": "px",
+      "label": "Video border radius",
+      "default": 12
+    },
+
+    { "type": "header", "content": "Video Buttons Styling" },
+    { "type": "range", "id": "video_button_size", "min": 32, "max": 64, "step": 2, "unit": "px", "label": "Button size", "default": 44 },
+    { "type": "range", "id": "video_button_border_radius", "min": 0, "max": 32, "step": 1, "unit": "px", "label": "Button border radius", "default": 8 },
+    { "type": "color", "id": "video_button_bg_color", "label": "Button background", "default": "#ffffff" },
+    { "type": "color", "id": "video_button_border_color", "label": "Button border color", "default": "#ffffff" },
+    { "type": "range", "id": "video_button_border_width", "min": 0, "max": 5, "step": 0.5, "unit": "px", "label": "Button border width", "default": 1.5 },
+    { "type": "color", "id": "video_button_icon_color", "label": "Button icon color", "default": "#ffffff" },
+
+    { "type": "header", "content": "Carousel Navigation" },
+    { "type": "checkbox", "id": "show_navigation_desktop", "label": "Desktop show navigation arrows", "default": true },
+    { "type": "range", "id": "nav_arrow_size", "min": 40, "max": 80, "step": 5, "unit": "px", "label": "Arrow button size", "default": 50 },
+    { "type": "color", "id": "nav_arrow_bg_color", "label": "Arrow background color", "default": "#ffffff" },
+    { "type": "color", "id": "nav_arrow_icon_color", "label": "Arrow icon color", "default": "#262626" },
+    {
+      "type": "color",
+      "id": "nav_arrow_border_color",
+      "label": "Arrow border color",
+      "default": "#e5e7eb",
+      "visible_if": "{{ section.settings.enable_advanced_settings == true }}"
+    },
+    {
+      "type": "range",
+      "id": "nav_arrow_border_width",
+      "min": 0,
+      "max": 5,
+      "step": 1,
+      "unit": "px",
+      "label": "Arrow border width",
+      "default": 0,
+      "visible_if": "{{ section.settings.enable_advanced_settings == true }}"
+    },
+    { "type": "checkbox", "id": "nav_arrow_shadow_enable", "label": "Enable arrow shadow", "default": true },
+    { "type": "color", "id": "nav_arrow_shadow_color", "label": "Arrow shadow color", "default": "#000000" }
+  ],
+  "blocks": [
+    {
+      "type": "video_block",
+      "name": "Video Block",
+      "limit": 10,
+      "settings": [
+        { "type": "header", "content": "Video Content" },
+        { "type": "video", "id": "video_file", "label": "Video file upload", "info": "Upload a video file directly" },
+        {
+          "type": "video_url",
+          "id": "video_url",
+          "label": "Video URL (YouTube/Vimeo)",
+          "accept": ["youtube", "vimeo"],
+          "info": "Or provide YouTube/Vimeo URL"
+        },
+        {
+          "type": "inline_richtext",
+          "id": "testimonial_text",
+          "label": "Testimonial text",
+          "default": "\"Switching from coffee to Versio Radiant Matcha keeps me calm, focused, and crash-free.\"",
+          "info": "Appears under the carousel for the active slide."
+        },
+        {
+          "type": "inline_richtext",
+          "id": "testimonial_author",
+          "label": "Testimonial author",
+          "default": "Lena S.",
+          "info": "Name shown beneath the testimonial."
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "VSO - Video Carousel 03",
+      "blocks": [
+        { "type": "video_block", "settings": { "testimonial_text": "\"Versio Ember Chai wakes me up without the coffee jitters or acid reflux.\"", "testimonial_author": "Noor – Seattle" } },
+        { "type": "video_block", "settings": { "testimonial_text": "\"I swapped my afternoon latte for Versio Glow Oolong and stay productive without crashing.\"", "testimonial_author": "Sam – Austin" } },
+        { "type": "video_block", "settings": { "testimonial_text": "\"Versio Mint Lift replaced espresso for me—energized, soothed, no shakes.\"", "testimonial_author": "Jules – Toronto" } },
+        { "type": "video_block", "settings": { "testimonial_text": "\"My stomach thanks me for choosing Versio Golden Hibiscus instead of coffee every morning.\"", "testimonial_author": "Amara – Oakland" } },
+        { "type": "video_block", "settings": { "testimonial_text": "\"Versio Cloudberry Matcha gives coffee-level clarity with steady focus all day.\"", "testimonial_author": "Kenji – Portland" } }
+      ]
+    }
+  ]
+}
+{% endschema %}
