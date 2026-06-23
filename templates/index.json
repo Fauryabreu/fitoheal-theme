@@ -103,6 +103,7 @@
         "video_block_gfC3Xq": {
           "type": "video_block",
           "settings": {
+            "video_url": "",
             "testimonial_text": "\"Versio Ember Chai wakes me up without the coffee jitters or acid reflux.\"",
             "testimonial_author": "Noor – Seattle"
           }
@@ -111,6 +112,7 @@
           "type": "video_block",
           "settings": {
             "video_file": "shopify://files/videos/BENEFICIOS DE LIPOSOMAL.mp4",
+            "video_url": "",
             "testimonial_text": "\"I swapped my afternoon latte for Versio Glow Oolong and stay productive without crashing.\"",
             "testimonial_author": "Sam – Austin"
           }
@@ -119,6 +121,7 @@
           "type": "video_block",
           "settings": {
             "video_file": "shopify://files/videos/QUE ES LIPOSOMAL.mp4",
+            "video_url": "",
             "testimonial_text": "\"Versio Mint Lift replaced espresso for me—energized, soothed, no shakes.\"",
             "testimonial_author": "Jules – Toronto"
           }
@@ -127,6 +130,7 @@
           "type": "video_block",
           "disabled": true,
           "settings": {
+            "video_url": "",
             "testimonial_text": "\"My stomach thanks me for choosing Versio Golden Hibiscus instead of coffee every morning.\"",
             "testimonial_author": "Amara – Oakland"
           }
@@ -135,6 +139,7 @@
           "type": "video_block",
           "disabled": true,
           "settings": {
+            "video_url": "",
             "testimonial_text": "\"Versio Cloudberry Matcha gives coffee-level clarity with steady focus all day.\"",
             "testimonial_author": "Kenji – Portland"
           }
@@ -154,7 +159,7 @@
         "padding_horizontal_desktop": 0,
         "padding_horizontal_mobile": 0,
         "section_bg_type": "solid",
-        "section_bg_color": "#FFFFFF",
+        "section_bg_color": "#ffffff",
         "section_bg_gradient": "linear-gradient(180deg, #EAF6FF 0%, #FFFFFF 100%)",
         "full_width_desktop": true,
         "section_border_radius": 0,
@@ -187,7 +192,7 @@
         "description_size_mobile": 18,
         "description_font": "sans_serif_n4",
         "description_line_height": 150,
-        "description_color": "#0B0B0B",
+        "description_color": "#0b0b0b",
         "description_bottom_spacing": 17,
         "testimonial_spacing_top_desktop": 24,
         "testimonial_spacing_top_mobile": 24,
@@ -199,7 +204,7 @@
         "testimonial_text_size_mobile": 16,
         "testimonial_text_line_height": 165,
         "testimonial_text_font_weight": 500,
-        "testimonial_text_color": "#0B0B0B",
+        "testimonial_text_color": "#0b0b0b",
         "custom_testimonial_author_font": false,
         "testimonial_author_as": "p",
         "testimonial_author_font": "sans_serif_n4",
@@ -207,7 +212,7 @@
         "testimonial_author_size_mobile": 13,
         "testimonial_author_line_height": 140,
         "testimonial_author_font_weight": 600,
-        "testimonial_author_color": "#0B0B0B",
+        "testimonial_author_color": "#0b0b0b",
         "video_autoplay": true,
         "show_mute_button": true,
         "show_play_button": true,
@@ -264,6 +269,194 @@
         "cta_label": "Encuentra tu fórmula",
         "cta_link": "shopify://pages/catalogo",
         "imagen": "shopify://shop_images/Como_funciona.png"
+      }
+    },
+    "all_products_CT9cBY": {
+      "type": "all-products",
+      "name": "All Products",
+      "settings": {
+        "titulo": "Nuestros productos",
+        "subtitulo": "",
+        "show_subtitle": true,
+        "coleccion": "todos-los-productos",
+        "limite": 12,
+        "bg_color": "#ffffff",
+        "btn_label": "Comprar ahora"
+      }
+    },
+    "vso_hero_54_GBrMXJ": {
+      "type": "vso-hero-54",
+      "blocks": {
+        "media_iKPzri": {
+          "type": "media",
+          "settings": {
+            "media_type": "image",
+            "image": "shopify://shop_images/ChatGPT_Image_21_jun_2026_18_09_05.png",
+            "media_height_desktop": 640,
+            "media_object_position_horizontal": "center",
+            "media_object_position_vertical": "center",
+            "media_height_mobile": 380,
+            "mobile_media_position": "top",
+            "media_object_position_horizontal_mobile": "center",
+            "media_object_position_vertical_mobile": "center",
+            "use_different_media_on_mobile": false,
+            "mobile_media_type": "image",
+            "enable_hover_zoom": true,
+            "media_lazy_load": true
+          }
+        },
+        "heading_4nURfc": {
+          "type": "heading",
+          "settings": {
+            "eyebrow": "",
+            "eyebrow_custom_font": false,
+            "eyebrow_as": "p",
+            "eyebrow_font": "poppins_n5",
+            "eyebrow_font_size": 14,
+            "eyebrow_font_size_mobile": 13,
+            "eyebrow_font_weight": 500,
+            "eyebrow_line_height": 130,
+            "eyebrow_letter_spacing": 1,
+            "eyebrow_color": "#2F2F2F",
+            "eyebrow_spacing": 12,
+            "title": "<strong>¿Por qué la mayoría de suplementos no los sientes?</strong>",
+            "title_custom_font": false,
+            "title_as": "h3",
+            "title_font": "poppins_n7",
+            "title_font_size": 42,
+            "title_font_size_mobile": 32,
+            "title_font_weight": 700,
+            "title_line_height": 110,
+            "title_letter_spacing": 0,
+            "title_color_type": "solid",
+            "title_color": "#FFFFFF",
+            "title_gradient": "linear-gradient(120deg, #FFFFFF 0%, #D1D5DB 100%)",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "margin_top_mobile": 0,
+            "margin_bottom_mobile": 0
+          }
+        },
+        "benefit_ECJGzC": {
+          "type": "benefit",
+          "settings": {
+            "title": "1. Suplemento tradicional",
+            "text": "Lo tomas, pero tu cuerpo no siempre lo aprovecha por completo. Parte del ingrediente puede perderse durante la digestión.",
+            "show_divider": false
+          }
+        },
+        "benefit_bkxEia": {
+          "type": "benefit",
+          "settings": {
+            "title": "2. Tecnología liposomal",
+            "text": "El ingrediente se protege dentro de liposomas, pequeñas estructuras similares a las membranas celulares, que ayudan a transportarlo mejor.",
+            "show_divider": false
+          }
+        },
+        "benefit_74dWHm": {
+          "type": "benefit",
+          "settings": {
+            "title": "3. Mejor absorción",
+            "text": "Así, el cuerpo puede aprovechar más el suplemento y recibir mejor sus beneficios.",
+            "show_divider": false
+          }
+        },
+        "button_Rndggh": {
+          "type": "button",
+          "settings": {
+            "button_text": "Comprar ahora",
+            "button_action": "scroll_to_buy",
+            "button_link": "",
+            "button_bg_color": "#FFFFFF",
+            "button_text_color": "#1C4332",
+            "button_border_color": "#1A1A1A",
+            "button_border_width": 0,
+            "button_border_radius": 6,
+            "button_padding_vertical": 16,
+            "button_padding_horizontal": 36,
+            "button_padding_vertical_mobile": 14,
+            "button_padding_horizontal_mobile": 28,
+            "button_custom_font": true,
+            "button_font": "poppins_n6",
+            "button_font_size": 14,
+            "button_font_size_mobile": 13,
+            "button_font_weight": 600,
+            "button_letter_spacing": 1,
+            "margin_top": 8,
+            "margin_bottom": 0,
+            "margin_top_mobile": 8,
+            "margin_bottom_mobile": 0
+          }
+        }
+      },
+      "block_order": [
+        "media_iKPzri",
+        "heading_4nURfc",
+        "benefit_ECJGzC",
+        "benefit_bkxEia",
+        "benefit_74dWHm",
+        "button_Rndggh"
+      ],
+      "name": "VSO - Hero 54",
+      "settings": {
+        "enable_advanced_settings": false,
+        "section_bg_type": "solid",
+        "section_bg_color": "#1C4332",
+        "section_bg_gradient": "linear-gradient(180deg, #F1EFEC 0%, #E8E5E1 100%)",
+        "section_border_radius": 12,
+        "section_border_radius_mobile": 0,
+        "section_padding_top_mobile": 20,
+        "section_padding_bottom_mobile": 20,
+        "margin_top": 40,
+        "margin_bottom": 40,
+        "margin_top_mobile": 20,
+        "margin_bottom_mobile": 20,
+        "content_alignment": "left",
+        "content_alignment_mobile": "left",
+        "content_vertical_alignment": "center",
+        "content_vertical_alignment_mobile": "center",
+        "reverse_layout_desktop": true,
+        "double_inner_spacing": false,
+        "reverse_layout_mobile": false,
+        "content_max_width": 460,
+        "content_max_width_mobile": 460,
+        "media_column_width": 50,
+        "content_gap": 16,
+        "content_gap_mobile": 14,
+        "benefits_gap": 14,
+        "benefits_gap_mobile": 12,
+        "benefits_icon_text_gap": 16,
+        "benefits_icon_text_gap_mobile": 14,
+        "benefits_divider_color": "#FFFFFF",
+        "benefits_icon_color": "#1C4332",
+        "benefits_icon_bg_color": "#0CC172",
+        "benefits_icon_size": 48,
+        "benefits_icon_size_mobile": 44,
+        "benefits_icon_border_radius": 10,
+        "benefits_title_custom_font": false,
+        "benefits_title_as": "p",
+        "benefits_title_font": "poppins_n6",
+        "benefits_title_font_size": 16,
+        "benefits_title_font_size_mobile": 15,
+        "benefits_title_font_weight": 600,
+        "benefits_title_line_height": 140,
+        "benefits_title_letter_spacing": 0,
+        "benefits_title_color": "#0CC172",
+        "benefits_text_custom_font": false,
+        "benefits_text_as": "p",
+        "benefits_text_font": "poppins_n4",
+        "benefits_text_font_size": 15,
+        "benefits_text_font_size_mobile": 14,
+        "benefits_text_font_weight": 400,
+        "benefits_text_line_height": 150,
+        "benefits_text_letter_spacing": 0,
+        "benefits_text_color": "#FFFFFF",
+        "section_max_width": 90,
+        "section_horizontal_padding": 0,
+        "section_horizontal_padding_mobile": 0,
+        "section_border_width": 0,
+        "section_border_width_mobile": 0,
+        "section_border_color": "#FFFFFF"
       }
     },
     "product-tabs": {
@@ -441,19 +634,6 @@
       "settings": {
         "bg_color": "#ffffff",
         "titulo": "Kits diseñados para tus objetivos"
-      }
-    },
-    "all_products_CT9cBY": {
-      "type": "all-products",
-      "name": "All Products",
-      "settings": {
-        "titulo": "Nuestros productos",
-        "subtitulo": "",
-        "show_subtitle": true,
-        "coleccion": "todos-los-productos",
-        "limite": 12,
-        "bg_color": "#ffffff",
-        "btn_label": "Comprar ahora"
       }
     },
     "about-section": {
@@ -711,6 +891,7 @@
     "vso_video_carousel_03_zPGYPV",
     "how-it-works",
     "all_products_CT9cBY",
+    "vso_hero_54_GBrMXJ",
     "product-tabs",
     "kits-section",
     "about-section",
