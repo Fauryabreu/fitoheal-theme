@@ -97,6 +97,118 @@
       ],
       "settings": {}
     },
+    "vso_video_carousel_01_mafDjU": {
+      "type": "vso-video-carousel-01",
+      "blocks": {
+        "video_q3EmtX": {
+          "type": "video",
+          "settings": {
+            "video": "shopify://files/videos/BENEFICIOS DE LIPOSOMAL.mp4",
+            "title": "",
+            "description": ""
+          }
+        },
+        "video_MB4RyY": {
+          "type": "video",
+          "settings": {
+            "video": "shopify://files/videos/QUE ES LIPOSOMAL.mp4",
+            "title": "",
+            "description": ""
+          }
+        },
+        "video_XMdYi4": {
+          "type": "video",
+          "settings": {
+            "video": "shopify://files/videos/elegir suplemento.mp4",
+            "title": "",
+            "description": ""
+          }
+        },
+        "video_j7e9Tw": {
+          "type": "video",
+          "settings": {
+            "video": "shopify://files/videos/o.mp4",
+            "title": "",
+            "description": ""
+          }
+        }
+      },
+      "block_order": [
+        "video_q3EmtX",
+        "video_MB4RyY",
+        "video_XMdYi4",
+        "video_j7e9Tw"
+      ],
+      "name": "VSO - Video Carousel 01",
+      "settings": {
+        "heading": "¿Qué es la tecnología liposomal?",
+        "heading_color": "#1c4332",
+        "heading_highlight_color": "#facd56",
+        "heading_align": "center",
+        "heading_size": 32,
+        "heading_size_mobile": 24,
+        "heading_weight": 600,
+        "heading_custom_font": false,
+        "heading_font": "bricolage_grotesque_n4",
+        "slider_view": 4,
+        "slider_view_tablet": 3,
+        "slider_view_mobile": 1.2,
+        "slider_gap": 0,
+        "slider_gap_mobile": 0,
+        "slider_speed": 300,
+        "video_radius": 0,
+        "desktop_height_increase": 0,
+        "show_video_controls_desktop": false,
+        "show_video_controls_mobile": false,
+        "text_overlay_bg": "#000000",
+        "text_overlay_opacity": 0.7,
+        "title_color": "#ffffff",
+        "title_size": 20,
+        "title_size_mobile": 16,
+        "description_color": "#ffffff",
+        "description_size": 14,
+        "description_size_mobile": 12,
+        "disable_overlay_no_text": false,
+        "play_button_size": 60,
+        "play_button_size_mobile": 60,
+        "play_button_icon_size": 16,
+        "play_button_icon_size_mobile": 16,
+        "play_button_color": "#ffffff",
+        "play_button_bg": "rgba(0,0,0,0)",
+        "play_button_opacity": 0.7,
+        "play_button_border_color": "#ffffff",
+        "play_button_border_width": 2,
+        "play_button_pulse": false,
+        "play_button_pulse_color": "#000000",
+        "play_button_position": "top_right",
+        "arrow_show_desktop": true,
+        "arrow_show_mobile": false,
+        "disable_progress_bar_when_arrows_hidden": true,
+        "arrow_size": 46,
+        "arrow_icon_size": 20,
+        "arrow_color": "#000000",
+        "arrow_bg": "#ffffff",
+        "arrow_hover_color": "#000000",
+        "arrow_hover_bg": "#ffffff",
+        "arrow_border_color": "#808080",
+        "arrow_border_width": 1,
+        "arrow_stroke_width": 1.5,
+        "arrow_button_border_radius": 50,
+        "progress_bg_color": "#cccccc",
+        "progress_filled_color": "#000000",
+        "background_color": "#ffffff",
+        "background_gradient": "",
+        "full_width": true,
+        "content_width": 120,
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "padding_top": 60,
+        "padding_bottom": 60,
+        "padding_horizontal": 0,
+        "padding_horizontal_mobile": 0,
+        "mobile_peek_percentage": 10
+      }
+    },
     "vso_video_carousel_03_zPGYPV": {
       "type": "vso-video-carousel-03",
       "blocks": {
@@ -271,118 +383,6 @@
         "cta_label": "Encuentra tu fórmula",
         "cta_link": "shopify://pages/catalogo",
         "imagen": "shopify://shop_images/Como_funciona.png"
-      }
-    },
-    "vso_video_carousel_01_mafDjU": {
-      "type": "vso-video-carousel-01",
-      "blocks": {
-        "video_q3EmtX": {
-          "type": "video",
-          "settings": {
-            "video": "shopify://files/videos/BENEFICIOS DE LIPOSOMAL.mp4",
-            "title": "",
-            "description": ""
-          }
-        },
-        "video_MB4RyY": {
-          "type": "video",
-          "settings": {
-            "video": "shopify://files/videos/QUE ES LIPOSOMAL.mp4",
-            "title": "",
-            "description": ""
-          }
-        },
-        "video_XMdYi4": {
-          "type": "video",
-          "settings": {
-            "video": "shopify://files/videos/elegir suplemento.mp4",
-            "title": "",
-            "description": ""
-          }
-        },
-        "video_j7e9Tw": {
-          "type": "video",
-          "settings": {
-            "video": "shopify://files/videos/o.mp4",
-            "title": "",
-            "description": ""
-          }
-        }
-      },
-      "block_order": [
-        "video_q3EmtX",
-        "video_MB4RyY",
-        "video_XMdYi4",
-        "video_j7e9Tw"
-      ],
-      "name": "VSO - Video Carousel 01",
-      "settings": {
-        "heading": "¿Qué es la tecnología liposomal?",
-        "heading_color": "#1c4332",
-        "heading_highlight_color": "#facd56",
-        "heading_align": "center",
-        "heading_size": 32,
-        "heading_size_mobile": 24,
-        "heading_weight": 600,
-        "heading_custom_font": false,
-        "heading_font": "bricolage_grotesque_n4",
-        "slider_view": 4,
-        "slider_view_tablet": 3,
-        "slider_view_mobile": 1.2,
-        "slider_gap": 0,
-        "slider_gap_mobile": 0,
-        "slider_speed": 300,
-        "video_radius": 0,
-        "desktop_height_increase": 0,
-        "show_video_controls_desktop": false,
-        "show_video_controls_mobile": false,
-        "text_overlay_bg": "#000000",
-        "text_overlay_opacity": 0.7,
-        "title_color": "#ffffff",
-        "title_size": 20,
-        "title_size_mobile": 16,
-        "description_color": "#ffffff",
-        "description_size": 14,
-        "description_size_mobile": 12,
-        "disable_overlay_no_text": false,
-        "play_button_size": 60,
-        "play_button_size_mobile": 60,
-        "play_button_icon_size": 16,
-        "play_button_icon_size_mobile": 16,
-        "play_button_color": "#ffffff",
-        "play_button_bg": "rgba(0,0,0,0)",
-        "play_button_opacity": 0.7,
-        "play_button_border_color": "#ffffff",
-        "play_button_border_width": 2,
-        "play_button_pulse": false,
-        "play_button_pulse_color": "#000000",
-        "play_button_position": "top_right",
-        "arrow_show_desktop": true,
-        "arrow_show_mobile": false,
-        "disable_progress_bar_when_arrows_hidden": true,
-        "arrow_size": 46,
-        "arrow_icon_size": 20,
-        "arrow_color": "#000000",
-        "arrow_bg": "#ffffff",
-        "arrow_hover_color": "#000000",
-        "arrow_hover_bg": "#ffffff",
-        "arrow_border_color": "#808080",
-        "arrow_border_width": 1,
-        "arrow_stroke_width": 1.5,
-        "arrow_button_border_radius": 50,
-        "progress_bg_color": "#cccccc",
-        "progress_filled_color": "#000000",
-        "background_color": "#ffffff",
-        "background_gradient": "",
-        "full_width": true,
-        "content_width": 120,
-        "margin_top": 0,
-        "margin_bottom": 0,
-        "padding_top": 60,
-        "padding_bottom": 60,
-        "padding_horizontal": 0,
-        "padding_horizontal_mobile": 0,
-        "mobile_peek_percentage": 10
       }
     },
     "about-section": {
@@ -1144,10 +1144,10 @@
     "hero-grid",
     "social-proof",
     "features-bar",
-    "vso_video_carousel_03_zPGYPV",
-    "how-it-works",
     "vso_video_carousel_01_mafDjU",
     "about-section",
+    "vso_video_carousel_03_zPGYPV",
+    "how-it-works",
     "all_products_CT9cBY",
     "vso_hero_54_GBrMXJ",
     "product-tabs",
