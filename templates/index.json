@@ -97,6 +97,137 @@
       ],
       "settings": {}
     },
+    "vso_video_carousel_03_zPGYPV": {
+      "type": "vso-video-carousel-03",
+      "blocks": {
+        "video_block_gfC3Xq": {
+          "type": "video_block",
+          "settings": {
+            "testimonial_text": "\"Versio Ember Chai wakes me up without the coffee jitters or acid reflux.\"",
+            "testimonial_author": "Noor – Seattle"
+          }
+        },
+        "video_block_MRbbFJ": {
+          "type": "video_block",
+          "settings": {
+            "video_file": "shopify://files/videos/BENEFICIOS DE LIPOSOMAL.mp4",
+            "testimonial_text": "\"I swapped my afternoon latte for Versio Glow Oolong and stay productive without crashing.\"",
+            "testimonial_author": "Sam – Austin"
+          }
+        },
+        "video_block_Wmk4hx": {
+          "type": "video_block",
+          "settings": {
+            "video_file": "shopify://files/videos/QUE ES LIPOSOMAL.mp4",
+            "testimonial_text": "\"Versio Mint Lift replaced espresso for me—energized, soothed, no shakes.\"",
+            "testimonial_author": "Jules – Toronto"
+          }
+        },
+        "video_block_jNyw4e": {
+          "type": "video_block",
+          "disabled": true,
+          "settings": {
+            "testimonial_text": "\"My stomach thanks me for choosing Versio Golden Hibiscus instead of coffee every morning.\"",
+            "testimonial_author": "Amara – Oakland"
+          }
+        },
+        "video_block_qgV88j": {
+          "type": "video_block",
+          "disabled": true,
+          "settings": {
+            "testimonial_text": "\"Versio Cloudberry Matcha gives coffee-level clarity with steady focus all day.\"",
+            "testimonial_author": "Kenji – Portland"
+          }
+        }
+      },
+      "block_order": [
+        "video_block_gfC3Xq",
+        "video_block_MRbbFJ",
+        "video_block_Wmk4hx",
+        "video_block_jNyw4e",
+        "video_block_qgV88j"
+      ],
+      "name": "VSO - Video Carousel 03",
+      "settings": {
+        "enable_advanced_settings": false,
+        "content_width": 120,
+        "padding_horizontal_desktop": 0,
+        "padding_horizontal_mobile": 0,
+        "section_bg_type": "solid",
+        "section_bg_color": "#FFFFFF",
+        "section_bg_gradient": "linear-gradient(180deg, #EAF6FF 0%, #FFFFFF 100%)",
+        "full_width_desktop": true,
+        "section_border_radius": 0,
+        "padding_top_desktop": 60,
+        "padding_bottom_desktop": 60,
+        "padding_top_mobile": 32,
+        "padding_bottom_mobile": 32,
+        "margin_top_desktop": 0,
+        "margin_bottom_desktop": 0,
+        "margin_top_mobile": 0,
+        "margin_bottom_mobile": 0,
+        "header_alignment_desktop": "center",
+        "header_alignment_mobile": "center",
+        "description_alignment_desktop": "center",
+        "description_alignment_mobile": "center",
+        "heading": "¿Qué es la tecnología Liposomal?",
+        "custom_heading_font": false,
+        "heading_as": "h2",
+        "heading_size_desktop": 40,
+        "heading_size_mobile": 32,
+        "heading_font": "sans_serif_n4",
+        "heading_color": "#000000",
+        "heading_line_height": 130,
+        "heading_font_weight": 700,
+        "heading_bottom_spacing": 8,
+        "description": "La tecnología liposomal ayuda a que los ingredientes activos lleguen mejor protegidos al cuerpo. A través de pequeños liposomas, similares a las membranas celulares, los nutrientes se encapsulan para resistir mejor el proceso digestivo y favorecer una absorción más eficiente.Así, tu suplementación puede aprovecharse mejor, desde adentro.",
+        "custom_description_font": false,
+        "description_as": "p",
+        "description_size_desktop": 20,
+        "description_size_mobile": 18,
+        "description_font": "sans_serif_n4",
+        "description_line_height": 150,
+        "description_color": "#0B0B0B",
+        "description_bottom_spacing": 17,
+        "testimonial_spacing_top_desktop": 24,
+        "testimonial_spacing_top_mobile": 24,
+        "testimonial_width_desktop": 640,
+        "custom_testimonial_text_font": false,
+        "testimonial_text_as": "p",
+        "testimonial_text_font": "sans_serif_n4",
+        "testimonial_text_size_desktop": 18,
+        "testimonial_text_size_mobile": 16,
+        "testimonial_text_line_height": 165,
+        "testimonial_text_font_weight": 500,
+        "testimonial_text_color": "#0B0B0B",
+        "custom_testimonial_author_font": false,
+        "testimonial_author_as": "p",
+        "testimonial_author_font": "sans_serif_n4",
+        "testimonial_author_size_desktop": 14,
+        "testimonial_author_size_mobile": 13,
+        "testimonial_author_line_height": 140,
+        "testimonial_author_font_weight": 600,
+        "testimonial_author_color": "#0B0B0B",
+        "video_autoplay": true,
+        "show_mute_button": true,
+        "show_play_button": true,
+        "video_border_radius": 12,
+        "video_button_size": 44,
+        "video_button_border_radius": 8,
+        "video_button_bg_color": "#ffffff",
+        "video_button_border_color": "#ffffff",
+        "video_button_border_width": 1,
+        "video_button_icon_color": "#ffffff",
+        "show_navigation_desktop": true,
+        "nav_arrow_size": 45,
+        "nav_arrow_bg_color": "#ffffff",
+        "nav_arrow_icon_color": "#262626",
+        "nav_arrow_border_color": "#e5e7eb",
+        "nav_arrow_border_width": 0,
+        "nav_arrow_shadow_enable": true,
+        "nav_arrow_shadow_color": "#000000"
+      }
+    },
     "how-it-works": {
       "type": "how-it-works",
       "blocks": {
@@ -577,10 +708,11 @@
     "hero-grid",
     "social-proof",
     "features-bar",
+    "vso_video_carousel_03_zPGYPV",
     "how-it-works",
+    "all_products_CT9cBY",
     "product-tabs",
     "kits-section",
-    "all_products_CT9cBY",
     "about-section",
     "cta-banner",
     "vso_faq_02_4p8iQ4",
