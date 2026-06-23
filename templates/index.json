@@ -701,8 +701,8 @@
       ],
       "settings": {
         "bg_color": "#fafdf8",
-        "titulo": "Elige tu fórmula liposomal según tu objetivo",
-        "descripcion": "Cada fórmula Fitoheal está diseñada para favorecer una mejor absorción y apoyar una necesidad concreta de tu rutina diaria.",
+        "titulo": "¿Cuál es tu objetivo?",
+        "descripcion": "Cada fórmula está pensada para un resultado concreto.",
         "cta_label": "Conoce nuestra línea",
         "cta_link": "shopify://pages/catalogo"
       }
@@ -760,131 +760,6 @@
       "settings": {
         "bg_color": "#ffffff",
         "titulo": "Kits diseñados para tus objetivos"
-      }
-    },
-    "vso_hero_39_FPLd6q": {
-      "type": "vso-hero-39",
-      "blocks": {
-        "heading_Dztt8D": {
-          "type": "heading",
-          "settings": {
-            "subheading": "OVERNIGHT TRANSFORMATION",
-            "subheading_custom_font": false,
-            "subheading_as": "p",
-            "subheading_color": "#666666",
-            "subheading_font": "poppins_n4",
-            "subheading_font_size": 14,
-            "subheading_font_size_mobile": 12,
-            "subheading_font_weight": 400,
-            "subheading_line_height": 140,
-            "subheading_spacing": 12,
-            "heading": "Wake up glowing. <i>Our night mask works while you sleep for radiant skin.</i>",
-            "heading_custom_font": false,
-            "heading_as": "h2",
-            "heading_color_type": "solid",
-            "heading_color": "#000000",
-            "heading_gradient": "linear-gradient(135deg, #EC4899 0%, #F472B6 100%)",
-            "heading_font": "poppins_n6",
-            "heading_font_size": 48,
-            "heading_font_size_mobile": 32,
-            "heading_font_weight": 600,
-            "heading_line_height": 120,
-            "heading_alignment": "left",
-            "heading_alignment_mobile": "left",
-            "heading_max_width": 800,
-            "margin_top": 0,
-            "margin_bottom": 0,
-            "margin_top_mobile": 0,
-            "margin_bottom_mobile": 0
-          }
-        },
-        "tab_hCdjMY": {
-          "type": "tab",
-          "settings": {
-            "tab_name": "Serum"
-          }
-        },
-        "tab_HNGBj3": {
-          "type": "tab",
-          "settings": {
-            "tab_name": "Cream"
-          }
-        },
-        "tab_C4Eekk": {
-          "type": "tab",
-          "settings": {
-            "tab_name": "Eye Care"
-          }
-        },
-        "tab_Cyjh7Q": {
-          "type": "tab",
-          "settings": {
-            "tab_name": "Lip Mask"
-          }
-        }
-      },
-      "block_order": [
-        "heading_Dztt8D",
-        "tab_hCdjMY",
-        "tab_HNGBj3",
-        "tab_C4Eekk",
-        "tab_Cyjh7Q"
-      ],
-      "name": "VSO - Hero 39",
-      "settings": {
-        "enable_advanced_settings": false,
-        "section_max_width": 120,
-        "section_horizontal_padding": 40,
-        "section_horizontal_padding_mobile": 20,
-        "section_bg_type": "solid",
-        "section_bg_color": "#FFFFFF",
-        "section_bg_gradient": "linear-gradient(180deg, #FFFFFF 0%, #F5F5F5 100%)",
-        "full_width_desktop": true,
-        "section_border_radius": 12,
-        "section_border_radius_mobile": 0,
-        "section_border_width": 0,
-        "section_border_width_mobile": 0,
-        "section_border_color": "#000000",
-        "section_outer_padding_top": 20,
-        "section_outer_padding_bottom": 20,
-        "section_outer_padding_top_mobile": 15,
-        "section_outer_padding_bottom_mobile": 15,
-        "content_gap": 40,
-        "content_gap_mobile": 32,
-        "header_gap": 40,
-        "header_gap_mobile": 24,
-        "tabs_alignment_mobile": "flex-start",
-        "tabs_gap": 8,
-        "tab_padding_vertical": 14,
-        "tab_padding_horizontal": 32,
-        "tab_padding_vertical_mobile": 12,
-        "tab_padding_horizontal_mobile": 24,
-        "tab_border_radius": 8,
-        "tab_border_width": 1,
-        "tab_custom_font": false,
-        "tab_font": "poppins_n5",
-        "tab_font_size": 15,
-        "tab_font_size_mobile": 14,
-        "tab_font_weight": 500,
-        "tab_line_height": 100,
-        "tab_bg_color": "#FFFFFF",
-        "tab_text_color": "#333333",
-        "tab_border_color": "#E5E5E5",
-        "tab_bg_color_active": "#6366F1",
-        "tab_text_color_active": "#FFFFFF",
-        "tab_border_color_active": "#6366F1",
-        "video_height": 600,
-        "video_height_mobile": 400,
-        "video_border_radius": 24,
-        "video_border_radius_mobile": 16,
-        "section_padding_top": 40,
-        "section_padding_bottom": 40,
-        "section_padding_top_mobile": 20,
-        "section_padding_bottom_mobile": 20,
-        "margin_top": 40,
-        "margin_bottom": 40,
-        "margin_top_mobile": 20,
-        "margin_bottom_mobile": 20
       }
     },
     "vso_hero_14_Qz6GQN": {
@@ -1277,7 +1152,6 @@
     "vso_hero_54_GBrMXJ",
     "product-tabs",
     "kits-section",
-    "vso_hero_39_FPLd6q",
     "vso_hero_14_Qz6GQN",
     "cta-banner",
     "vso_faq_02_4p8iQ4",
