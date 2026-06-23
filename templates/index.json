@@ -406,7 +406,7 @@
         "show_subtitle": true,
         "coleccion": "todos-los-productos",
         "limite": 12,
-        "bg_color": "#ffffff",
+        "bg_color": "#FAFDF8",
         "btn_label": "Comprar ahora"
       }
     },
