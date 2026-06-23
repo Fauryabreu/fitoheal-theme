@@ -131,6 +131,7 @@
           "type": "video_block",
           "disabled": true,
           "settings": {
+            "video_file": "shopify://files/videos/o.mp4",
             "video_url": "",
             "testimonial_text": "\"My stomach thanks me for choosing Versio Golden Hibiscus instead of coffee every morning.\"",
             "testimonial_author": "Amara – Oakland"
