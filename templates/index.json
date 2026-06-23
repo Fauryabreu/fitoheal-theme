@@ -318,7 +318,7 @@
       "name": "VSO - Video Carousel 01",
       "settings": {
         "heading": "¿Qué es la tecnología liposomal?",
-        "heading_color": "#1C4332",
+        "heading_color": "#1c4332",
         "heading_highlight_color": "#facd56",
         "heading_align": "center",
         "heading_size": 32,
@@ -383,6 +383,18 @@
         "padding_horizontal": 0,
         "padding_horizontal_mobile": 0,
         "mobile_peek_percentage": 10
+      }
+    },
+    "about-section": {
+      "type": "about-section",
+      "settings": {
+        "bg_color": "#fafdf8",
+        "imagen_pos": "right",
+        "titulo": "¿Cómo funciona el liposomal?",
+        "descripcion": "<p>La tecnología liposomal funciona utilizando esferas microscópicas (llamadas liposomas) formadas por grasa para encapsular nutrientes. Actúan como un vehículo de transporte de alta tecnología que protege a los ingredientes de los ácidos estomacales y permite que se absorban directamente en las células. </p>",
+        "cta_label": "Conoce nuestra historia",
+        "cta_link": "",
+        "imagen": "shopify://shop_images/Sobre_FitoHeal.png"
       }
     },
     "all_products_CT9cBY": {
@@ -892,18 +904,6 @@
         "feature_description_weight": 400
       }
     },
-    "about-section": {
-      "type": "about-section",
-      "settings": {
-        "bg_color": "#fafdf8",
-        "imagen_pos": "right",
-        "titulo": "Más sobre Fitoheal",
-        "descripcion": "<p>Somos un sistema de soluciones liposomales de alta absorción con ingredientes seleccionados y ciencia moderna para acompañarte en tus objetivos sin restricciones impuestas.</p><p>Creados para integrarse fácilmente a tu rutina diaria y ayudarte a sentir la mejor versión. Todos los días.</p>",
-        "cta_label": "Conoce nuestra historia",
-        "cta_link": "",
-        "imagen": "shopify://shop_images/Sobre_FitoHeal.png"
-      }
-    },
     "cta-banner": {
       "type": "cta-banner",
       "settings": {
@@ -1147,12 +1147,12 @@
     "vso_video_carousel_03_zPGYPV",
     "how-it-works",
     "vso_video_carousel_01_mafDjU",
+    "about-section",
     "all_products_CT9cBY",
     "vso_hero_54_GBrMXJ",
     "product-tabs",
     "kits-section",
     "vso_hero_14_Qz6GQN",
-    "about-section",
     "cta-banner",
     "vso_faq_02_4p8iQ4",
     "footer_section_yUzwdH"
