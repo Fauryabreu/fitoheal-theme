@@ -209,11 +209,106 @@
         "mobile_peek_percentage": 10
       }
     },
+    "vso_img_with_text_01_HLxdjV": {
+      "type": "vso-img-with-text-01",
+      "blocks": {
+        "image_bVtJPM": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/ChatGPT_Image_5_jun_2026_11_27_31_dc010808-e96e-459e-abf4-dc9a7fd2dc59.png",
+            "image_height": 580,
+            "image_height_mobile": 400,
+            "image_border_radius": 8
+          }
+        },
+        "title_Y6QBxe": {
+          "type": "title",
+          "settings": {
+            "title": "¿Qué es la tecnología liposomal?",
+            "title_custom": false,
+            "title_font": "assistant_n4",
+            "title_font_weight": "700",
+            "title_font_size": 30,
+            "title_font_size_mobile": 24,
+            "title_margin_bottom": 20,
+            "title_color": "#0CC172"
+          }
+        },
+        "description_w9LtYG": {
+          "type": "description",
+          "settings": {
+            "text": "La tecnología liposomal ayuda a que los ingredientes activos lleguen mejor protegidos al cuerpo.Funciona mediante liposomas: pequeñas estructuras de fosfolípidos que encapsulan los nutrientes, los protegen durante la digestión y facilitan su transporte.El resultado: una absorción más eficiente y una mejor experiencia nutricional.",
+            "text_custom": false,
+            "text_font": "assistant_n4",
+            "text_font_weight": "400",
+            "text_alignment": "left",
+            "text_font_size": 16,
+            "text_font_size_mobile": 16,
+            "text_margin_bottom": 30,
+            "text_color": "#FAFDF8"
+          }
+        },
+        "feature_bUNBUz": {
+          "type": "feature",
+          "disabled": true,
+          "settings": {
+            "text": "Hydration Retention",
+            "text_custom": false,
+            "text_font": "assistant_n4",
+            "text_font_weight": "400"
+          }
+        },
+        "feature_VtTJM7": {
+          "type": "feature",
+          "disabled": true,
+          "settings": {
+            "text": "Temperature Regulation",
+            "text_custom": false,
+            "text_font": "assistant_n4",
+            "text_font_weight": "400"
+          }
+        }
+      },
+      "block_order": [
+        "image_bVtJPM",
+        "title_Y6QBxe",
+        "description_w9LtYG",
+        "feature_bUNBUz",
+        "feature_VtTJM7"
+      ],
+      "name": "VSO - Img With Text 01",
+      "settings": {
+        "reverse_layout": false,
+        "mobile_reverse_layout": true,
+        "content_background_color": "#1C4332",
+        "features_gap": 20,
+        "features_margin_top": 10,
+        "feature_icon_size": 48,
+        "feature_icon_size_mobile": 32,
+        "feature_icon_border_radius": 0,
+        "feature_icon_margin_bottom": 10,
+        "feature_text_font_size": 14,
+        "feature_text_font_size_mobile": 14,
+        "feature_text_color": "#000000",
+        "feature_text_font_weight": "400",
+        "features_in_row": false,
+        "grid_max_width": 1220,
+        "section_max_width": 120,
+        "padding_desktop": 60,
+        "padding_tablet_mobile": 0,
+        "margin_desktop": 0,
+        "margin_bottom_desktop": 0,
+        "margin_tablet_mobile": 0,
+        "margin_bottom_tablet_mobile": 0,
+        "background_color": "#1C4332",
+        "background_gradient_color": ""
+      }
+    },
     "about-section": {
       "type": "about-section",
       "settings": {
         "bg_color": "#fafdf8",
-        "imagen_pos": "right",
+        "imagen_pos": "left",
         "titulo": "¿Cómo funciona el liposomal?",
         "descripcion": "<p>La tecnología liposomal funciona utilizando esferas microscópicas (llamadas liposomas) formadas por grasa para encapsular nutrientes. Actúan como un vehículo de transporte de alta tecnología que protege a los ingredientes de los ácidos estomacales y permite que se absorban directamente en las células. </p>",
         "cta_label": "Conoce nuestra historia",
@@ -406,7 +501,7 @@
         "show_subtitle": true,
         "coleccion": "todos-los-productos",
         "limite": 12,
-        "bg_color": "#FAFDF8",
+        "bg_color": "#fafdf8",
         "btn_label": "Comprar ahora"
       }
     },
@@ -1145,6 +1240,7 @@
     "social-proof",
     "features-bar",
     "vso_video_carousel_01_mafDjU",
+    "vso_img_with_text_01_HLxdjV",
     "about-section",
     "vso_video_carousel_03_zPGYPV",
     "how-it-works",
