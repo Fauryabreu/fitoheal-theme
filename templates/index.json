@@ -489,7 +489,7 @@
             "eyebrow_letter_spacing": 1,
             "eyebrow_color": "#2f2f2f",
             "eyebrow_spacing": 12,
-            "title": "<strong>¿Por qué la mayoría de suplementos no los sientes?</strong>",
+            "title": "<strong>No es solo lo que tomas, es lo que tu cuerpo absorbe</strong>",
             "title_custom_font": false,
             "title_as": "h3",
             "title_font": "poppins_n7",
@@ -674,7 +674,7 @@
       ],
       "settings": {
         "bg_color": "#ffffff",
-        "titulo": "¿Por qué la mayoría de suplementos no los sientes?",
+        "titulo": "¿Has tomado suplementos semanas enteras y no sentiste nada?",
         "cta_label": "Encuentra tu fórmula",
         "cta_link": "shopify://pages/catalogo",
         "imagen": "shopify://shop_images/Como_funciona.png"
