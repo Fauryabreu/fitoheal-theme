@@ -510,8 +510,8 @@
         "benefit_ECJGzC": {
           "type": "benefit",
           "settings": {
-            "title": "1. Suplemento tradicional",
-            "text": "Lo tomas, pero tu cuerpo no siempre lo aprovecha por completo. Parte del ingrediente puede perderse durante la digestión.",
+            "title": "El problema con los suplementos normales",
+            "text": "Al tomarlos, tu cuerpo los procesa y los ácidos estomacales destruyen el principio activo  y la mayor parte no se absorbe.",
             "show_divider": false
           }
         },
