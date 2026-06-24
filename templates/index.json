@@ -597,7 +597,7 @@
         "benefits_gap_mobile": 12,
         "benefits_icon_text_gap": 16,
         "benefits_icon_text_gap_mobile": 14,
-        "benefits_divider_color": "#ffffff",
+        "benefits_divider_color": "#FFFFFF",
         "benefits_icon_color": "#1c4332",
         "benefits_icon_bg_color": "#0cc172",
         "benefits_icon_size": 48,
@@ -627,6 +627,19 @@
         "section_border_width": 0,
         "section_border_width_mobile": 0,
         "section_border_color": "#ffffff"
+      }
+    },
+    "all_products_CT9cBY": {
+      "type": "all-products",
+      "name": "All Products",
+      "settings": {
+        "titulo": "Nuestros productos",
+        "subtitulo": "",
+        "show_subtitle": true,
+        "coleccion": "todos-los-productos",
+        "limite": 12,
+        "bg_color": "#fafdf8",
+        "btn_label": "Comprar ahora"
       }
     },
     "how-it-works": {
@@ -665,19 +678,6 @@
         "cta_label": "Encuentra tu fórmula",
         "cta_link": "shopify://pages/catalogo",
         "imagen": "shopify://shop_images/Como_funciona.png"
-      }
-    },
-    "all_products_CT9cBY": {
-      "type": "all-products",
-      "name": "All Products",
-      "settings": {
-        "titulo": "Nuestros productos",
-        "subtitulo": "",
-        "show_subtitle": true,
-        "coleccion": "todos-los-productos",
-        "limite": 12,
-        "bg_color": "#fafdf8",
-        "btn_label": "Comprar ahora"
       }
     },
     "product-tabs": {
