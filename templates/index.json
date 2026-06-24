@@ -454,57 +454,6 @@
         "nav_arrow_shadow_color": "#000000"
       }
     },
-    "how-it-works": {
-      "type": "how-it-works",
-      "blocks": {
-        "s1": {
-          "type": "step",
-          "settings": {
-            "titulo": "El problema con los suplementos normales",
-            "descripcion": "Al tomarlos, tu cuerpo los procesa y los ácidos estomacales destruyen el principio activo  y la mayor parte no se absorbe."
-          }
-        },
-        "s2": {
-          "type": "step",
-          "settings": {
-            "titulo": "Lo que hace el liposomal",
-            "descripcion": "El ingrediente se envuelve en una capa de grasa idéntica a la de tus propias células. Eso le permite pasar el sistema digestivo sin descomponerse y entrar directo donde tiene que actuar: en tu sistema nervioso si es para dormir, en tu intestino si es para la digestión, en tu cerebro si es para concentrarte."
-          }
-        },
-        "s3": {
-          "type": "step",
-          "settings": {
-            "titulo": "Por eso lo sientes diferente",
-            "descripcion": "La biodisponibilidad se aumenta y la absorción del p se aumenta. Esa es la diferencia entre un suplemento que tomas y uno que tu cuerpo realmente usa."
-          }
-        }
-      },
-      "block_order": [
-        "s1",
-        "s2",
-        "s3"
-      ],
-      "settings": {
-        "bg_color": "#ffffff",
-        "titulo": "¿Por qué la mayoría de suplementos no los sientes?",
-        "cta_label": "Encuentra tu fórmula",
-        "cta_link": "shopify://pages/catalogo",
-        "imagen": "shopify://shop_images/Como_funciona.png"
-      }
-    },
-    "all_products_CT9cBY": {
-      "type": "all-products",
-      "name": "All Products",
-      "settings": {
-        "titulo": "Nuestros productos",
-        "subtitulo": "",
-        "show_subtitle": true,
-        "coleccion": "todos-los-productos",
-        "limite": 12,
-        "bg_color": "#fafdf8",
-        "btn_label": "Comprar ahora"
-      }
-    },
     "vso_hero_54_GBrMXJ": {
       "type": "vso-hero-54",
       "blocks": {
@@ -678,6 +627,57 @@
         "section_border_width": 0,
         "section_border_width_mobile": 0,
         "section_border_color": "#ffffff"
+      }
+    },
+    "how-it-works": {
+      "type": "how-it-works",
+      "blocks": {
+        "s1": {
+          "type": "step",
+          "settings": {
+            "titulo": "El problema con los suplementos normales",
+            "descripcion": "Al tomarlos, tu cuerpo los procesa y los ácidos estomacales destruyen el principio activo  y la mayor parte no se absorbe."
+          }
+        },
+        "s2": {
+          "type": "step",
+          "settings": {
+            "titulo": "Lo que hace el liposomal",
+            "descripcion": "El ingrediente se envuelve en una capa de grasa idéntica a la de tus propias células. Eso le permite pasar el sistema digestivo sin descomponerse y entrar directo donde tiene que actuar: en tu sistema nervioso si es para dormir, en tu intestino si es para la digestión, en tu cerebro si es para concentrarte."
+          }
+        },
+        "s3": {
+          "type": "step",
+          "settings": {
+            "titulo": "Por eso lo sientes diferente",
+            "descripcion": "La biodisponibilidad se aumenta y la absorción del p se aumenta. Esa es la diferencia entre un suplemento que tomas y uno que tu cuerpo realmente usa."
+          }
+        }
+      },
+      "block_order": [
+        "s1",
+        "s2",
+        "s3"
+      ],
+      "settings": {
+        "bg_color": "#ffffff",
+        "titulo": "¿Por qué la mayoría de suplementos no los sientes?",
+        "cta_label": "Encuentra tu fórmula",
+        "cta_link": "shopify://pages/catalogo",
+        "imagen": "shopify://shop_images/Como_funciona.png"
+      }
+    },
+    "all_products_CT9cBY": {
+      "type": "all-products",
+      "name": "All Products",
+      "settings": {
+        "titulo": "Nuestros productos",
+        "subtitulo": "",
+        "show_subtitle": true,
+        "coleccion": "todos-los-productos",
+        "limite": 12,
+        "bg_color": "#fafdf8",
+        "btn_label": "Comprar ahora"
       }
     },
     "product-tabs": {
@@ -1243,9 +1243,9 @@
     "vso_img_with_text_01_HLxdjV",
     "about-section",
     "vso_video_carousel_03_zPGYPV",
+    "vso_hero_54_GBrMXJ",
     "how-it-works",
     "all_products_CT9cBY",
-    "vso_hero_54_GBrMXJ",
     "product-tabs",
     "kits-section",
     "vso_hero_14_Qz6GQN",
