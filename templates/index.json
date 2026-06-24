@@ -196,7 +196,7 @@
         "arrow_button_border_radius": 50,
         "progress_bg_color": "#cccccc",
         "progress_filled_color": "#000000",
-        "background_color": "#FAFDF8",
+        "background_color": "#fafdf8",
         "background_gradient": "",
         "full_width": true,
         "content_width": 120,
@@ -460,7 +460,7 @@
         "s1": {
           "type": "step",
           "settings": {
-            "titulo": "Tecnología liposomal",
+            "titulo": "El problema con los suplementos normales",
             "descripcion": "La diferencia entre un suplemento convencional y uno verdaderamente avanzado no está únicamente en los ingredientes."
           }
         },
@@ -486,7 +486,7 @@
       ],
       "settings": {
         "bg_color": "#ffffff",
-        "titulo": "¿Has tomado suplementos semanas enteras y no sentiste nada?",
+        "titulo": "¿Por qué la mayoría de suplementos no los sientes?",
         "cta_label": "Encuentra tu fórmula",
         "cta_link": "shopify://pages/catalogo",
         "imagen": "shopify://shop_images/Como_funciona.png"
