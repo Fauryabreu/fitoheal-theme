@@ -488,7 +488,7 @@
             "eyebrow_line_height": 130,
             "eyebrow_letter_spacing": 1,
             "eyebrow_color": "#2f2f2f",
-            "eyebrow_spacing": 12,
+            "eyebrow_spacing": 5,
             "title": "<strong>No es solo lo que tomas, es lo que tu cuerpo absorbe</strong>",
             "title_custom_font": false,
             "title_as": "h3",
@@ -501,7 +501,7 @@
             "title_color_type": "solid",
             "title_color": "#ffffff",
             "title_gradient": "linear-gradient(120deg, #FFFFFF 0%, #D1D5DB 100%)",
-            "margin_top": 0,
+            "margin_top": 21,
             "margin_bottom": 0,
             "margin_top_mobile": 0,
             "margin_bottom_mobile": 0
@@ -553,7 +553,7 @@
             "button_font_weight": 600,
             "button_letter_spacing": 1,
             "margin_top": 8,
-            "margin_bottom": 0,
+            "margin_bottom": 24,
             "margin_top_mobile": 8,
             "margin_bottom_mobile": 0
           }
@@ -945,7 +945,7 @@
       "settings": {
         "enable_advanced_settings": false,
         "section_bg_type": "solid",
-        "section_bg_color": "#ffffff",
+        "section_bg_color": "#FBFDF9",
         "section_bg_gradient": "linear-gradient(135deg, #FFFFFF 0%, #F7F7F7 100%)",
         "section_full_width": true,
         "section_border_radius": 12,
