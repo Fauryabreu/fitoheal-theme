@@ -1,0 +1,960 @@
+{% comment %}
+WARNING: UNAUTHORIZED MODIFICATION PROHIBITED
+This code is proprietary property of Versio Studio. Any unauthorized tampering,
+alteration, or distribution of this file is strictly forbidden and will be prosecuted to the maximum extent permitted by law.
+All modifications are logged.
+
+If you require assistance or have questions regarding this code, please contact support@versio.studio.
+{% endcomment %}
+
+{%- style -%}
+  .vd-l { display: none !important; }
+  #shopify-section-{{ section.id }} {
+    width: 100%;
+    max-width: 100%;
+    --section-border-radius: {{ section.settings.section_border_radius_mobile }}px;
+    --section-horizontal-padding: var(--page-margin, 16px);
+    --blocks-gap: {{ section.settings.blocks_gap }}px;
+    --slides-desktop: {{ section.settings.slides_desktop }};
+    --slides-mobile: {{ section.settings.slides_mobile }};
+    --image-height-mobile: {{ section.settings.image_height_mobile }}px;
+    --image-height-desktop: {{ section.settings.image_height_desktop }}px;
+    --image-object-fit: {{ section.settings.image_object_fit | default: 'cover' }};
+    --image-border-radius-mobile: {{ section.settings.image_border_radius_mobile }}px;
+    --image-border-radius-desktop: {{ section.settings.image_border_radius_desktop }}px;
+    --overlay-offset: 10px;
+    margin-top: {{ section.settings.margin_top_mobile }}px;
+    margin-bottom: {{ section.settings.margin_bottom_mobile }}px;
+    border-radius: var(--section-border-radius);
+    overflow: hidden;
+    padding: 0;
+  }
+
+  {% if section.settings.enable_advanced_settings %}
+    #shopify-section-{{ section.id }} {
+      --section-horizontal-padding: {{ section.settings.padding_horizontal_mobile }}px;
+    }
+  {% endif %}
+
+  @media screen and (max-width: 749px) {
+    #shopify-section-{{ section.id }} {
+      background-color: {{ section.settings.section_bg_color }};
+    }
+  }
+
+  @media screen and (min-width: 750px) {
+    #shopify-section-{{ section.id }} {
+      --section-border-radius: {% if section.settings.bg_full_width %}0px{% else %}{{ section.settings.section_border_radius }}px{% endif %};
+      --section-horizontal-padding: 0px;
+      margin-top: {{ section.settings.margin_top }}px;
+      margin-bottom: {{ section.settings.margin_bottom }}px;
+      {% if section.settings.bg_full_width %}
+        background-color: {{ section.settings.section_bg_color }};
+      {% else %}
+        background: transparent;
+      {% endif %}
+    }
+  }
+
+  {% if section.settings.enable_advanced_settings == false and section.settings.bg_full_width == false %}
+    @media screen and (min-width: 750px) {
+      #shopify-section-{{ section.id }} {
+        --section-horizontal-padding: 40px;
+      }
+    }
+  {% endif %}
+
+  {% if section.settings.enable_advanced_settings == false and section.settings.bg_full_width %}
+    @media screen and (min-width: 750px) {
+      #shopify-section-{{ section.id }} {
+        --section-container-max-width: var(--page-content-width, var(--page-width, 1440px));
+        --section-outer-gutter: max(0px, calc((100vw - var(--section-container-max-width)) / 2));
+        --section-horizontal-padding: max(0px, calc(var(--page-margin, 40px) - var(--section-outer-gutter)));
+      }
+    }
+  {% endif %}
+
+  {% if section.settings.enable_advanced_settings %}
+    @media screen and (min-width: 750px) {
+      #shopify-section-{{ section.id }} {
+        --section-horizontal-padding: {{ section.settings.padding_horizontal }}px;
+      }
+    }
+  {% endif %}
+
+  #shopify-section-{{ section.id }} > .vso-hero-23__container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: var(--page-content-width, var(--page-width, 1440px));
+    {% if section.settings.enable_advanced_settings %}
+      {% if section.settings.section_full_width %}
+        max-width: 100%;
+      {% else %}
+        max-width: {{ section.settings.section_max_width }}rem;
+      {% endif %}
+    {% endif %}
+    padding-left: var(--section-horizontal-padding);
+    padding-right: var(--section-horizontal-padding);
+    padding-top: {{ section.settings.padding_top_mobile }}px;
+    padding-bottom: {{ section.settings.padding_bottom_mobile }}px;
+    border-radius: var(--section-border-radius);
+    overflow: hidden;
+  }
+
+  @media screen and (max-width: 749px) {
+    #shopify-section-{{ section.id }} > .vso-hero-23__container {
+      background: transparent;
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
+  @media screen and (min-width: 750px) {
+    #shopify-section-{{ section.id }} > .vso-hero-23__container {
+      {% if section.settings.bg_full_width %}
+        background: transparent;
+      {% else %}
+        background-color: {{ section.settings.section_bg_color }};
+      {% endif %}
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+
+  #shopify-section-{{ section.id }} .vso-hero-23__grid {
+    display: flex;
+    gap: var(--blocks-gap);
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    padding-bottom: 8px;
+  }
+  #shopify-section-{{ section.id }} .vso-hero-23__grid::-webkit-scrollbar { display: none; }
+
+  @media screen and (max-width: 749px) {
+    #shopify-section-{{ section.id }} .vso-hero-23__grid {
+      padding-left: var(--section-horizontal-padding);
+      padding-right: var(--section-horizontal-padding);
+      scroll-padding-left: var(--section-horizontal-padding);
+      scroll-padding-right: var(--section-horizontal-padding);
+    }
+    #shopify-section-{{ section.id }} .vso-hero-23__nav {
+      padding-left: var(--section-horizontal-padding);
+      padding-right: var(--section-horizontal-padding);
+    }
+  }
+
+  #shopify-section-{{ section.id }} .vso-hero-23__card {
+    position: relative;
+    border-radius: var(--image-border-radius-mobile);
+    overflow: hidden;
+    background: transparent;
+    flex: 0 0 calc((100% - var(--blocks-gap) * (var(--slides-mobile) - 1)) / var(--slides-mobile));
+    scroll-snap-align: start;
+  }
+  @media screen and (min-width: 750px) {
+    #shopify-section-{{ section.id }} .vso-hero-23__card {
+      flex-basis: calc((100% - var(--blocks-gap) * (var(--slides-desktop) - 1)) / var(--slides-desktop));
+      border-radius: var(--image-border-radius-desktop);
+    }
+  }
+
+  #shopify-section-{{ section.id }} .vso-hero-23__media {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: var(--image-height-mobile);
+    background: {{ section.settings.section_bg_color }};
+    overflow: hidden;
+    border-radius: var(--image-border-radius-mobile);
+    text-decoration: none;
+    color: inherit;
+  }
+  @media screen and (min-width: 750px) {
+    #shopify-section-{{ section.id }} .vso-hero-23__media {
+      height: var(--image-height-desktop);
+      border-radius: var(--image-border-radius-desktop);
+    }
+  }
+
+  #shopify-section-{{ section.id }} .vso-hero-23__title {
+    margin: 0 0 8px 0;
+    text-decoration: none;
+  }
+
+  #shopify-section-{{ section.id }} .vso-hero-23__image {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: var(--image-object-fit);
+    transition: opacity .3s ease;
+    display: block;
+  }
+  #shopify-section-{{ section.id }} .vso-hero-23__image--hover { opacity: 0; }
+  #shopify-section-{{ section.id }} .vso-hero-23__media:hover .vso-hero-23__image--hover { opacity: 1; }
+  #shopify-section-{{ section.id }} .vso-hero-23__media:hover .vso-hero-23__image--primary { opacity: 0; }
+  #shopify-section-{{ section.id }} .vso-hero-23__card:hover .vso-hero-23__image--hover { opacity: 1; }
+  #shopify-section-{{ section.id }} .vso-hero-23__card:hover .vso-hero-23__image--primary { opacity: 0; }
+
+  #shopify-section-{{ section.id }} .vso-hero-23__meta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0px;
+    margin-top: 16px;
+  }
+  #shopify-section-{{ section.id }} .vso-hero-23__name { margin: 0; }
+  #shopify-section-{{ section.id }} .vso-hero-23__price { margin: 0; }
+  #shopify-section-{{ section.id }} .vso-hero-23__desc {
+    margin: {{ section.settings.name_description_gap | default: 6 }}px 0 0 0;
+  }
+  #shopify-section-{{ section.id }} .vso-hero-23__desc-text { margin: 0; }
+  #shopify-section-{{ section.id }} .vso-hero-23__desc-text p { margin: 0; }
+
+  #shopify-section-{{ section.id }} .vso-hero-23--full-bleed .vso-hero-23__meta {
+    position: absolute;
+    left: 16px;
+    right: 16px;
+    bottom: 16px;
+    margin-top: 0;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+  #shopify-section-{{ section.id }} .vso-hero-23__topline { display: flex; align-items: center; justify-content: space-between; gap: 0px; width: 100%; }
+
+  #shopify-section-{{ section.id }} .vso-hero-23__cta {
+    position: absolute;
+    left: 16px;
+    right: 16px;
+    bottom: 16px;
+    transform: translateY(120%);
+    opacity: 0;
+    transition: transform .28s ease, opacity .28s ease;
+    z-index: 4;
+    pointer-events: none;
+  }
+  #shopify-section-{{ section.id }} .vso-hero-23__card:hover .vso-hero-23__cta {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  #shopify-section-{{ section.id }} .vso-hero-23__meta,
+  #shopify-section-{{ section.id }} .vso-hero-23__name,
+  #shopify-section-{{ section.id }} .vso-hero-23__price,
+  #shopify-section-{{ section.id }} .vso-hero-23__desc {
+    transition: opacity .28s ease;
+  }
+  #shopify-section-{{ section.id }} .vso-hero-23__card:hover .vso-hero-23__meta,
+  #shopify-section-{{ section.id }} .vso-hero-23__card:hover .vso-hero-23__name,
+  #shopify-section-{{ section.id }} .vso-hero-23__card:hover .vso-hero-23__price,
+  #shopify-section-{{ section.id }} .vso-hero-23__card:hover .vso-hero-23__desc {
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  #shopify-section-{{ section.id }} .vso-hero-23__button {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 14px 24px;
+    background: #FFFFFF;
+    color: {{ section.settings.button_text_color | default: '#111111' }};
+    border-radius: {{ section.settings.button_border_radius | default: 24 }}px;
+    text-decoration: none;
+    box-shadow: none;
+  }
+  #shopify-section-{{ section.id }} .vso-hero-23__button-as { margin: 0; }
+
+  #shopify-section-{{ section.id }} .vso-hero-23__nav { display: flex; align-items: center; gap: 12px; margin-top: 8px; }
+  #shopify-section-{{ section.id }} .vso-hero-23__arrow { width: {{ section.settings.arrow_size | default: 50 }}px; height: {{ section.settings.arrow_size | default: 50 }}px; border-radius: 50%; border: {{ section.settings.arrow_border_width | default: 1 }}px solid {{ section.settings.arrow_border_color | default: '#e5e7eb' }}; background: {{ section.settings.arrow_bg_color | default: '#ffffff' }}; display: inline-flex; align-items: center; justify-content: center; cursor: pointer; transition: none; box-shadow: none; }
+  #shopify-section-{{ section.id }} .vso-hero-23__arrow svg { width: {{ section.settings.arrow_size | default: 50 | times: 0.4 | round: 0 }}px; height: {{ section.settings.arrow_size | default: 50 | times: 0.4 | round: 0 }}px; color: {{ section.settings.arrow_icon_color | default: '#6b7280' }}; }
+  @media screen and (min-width: 750px) { {% unless section.settings.show_navigation_desktop %}#shopify-section-{{ section.id }} .vso-hero-23__nav { display: none; }{% endunless %} }
+  @media screen and (max-width: 749px) { {% unless section.settings.show_navigation_mobile %}#shopify-section-{{ section.id }} .vso-hero-23__nav { display: none; }{% endunless %} }
+  #shopify-section-{{ section.id }} .vso-hero-23__arrow:disabled { opacity: .4; cursor: default; }
+  #shopify-section-{{ section.id }} .vso-hero-23__progress { position: relative; height: {{ section.settings.progress_height | default: 6 }}px; background: {{ section.settings.progress_track_color | default: '#eeeeee' }}; border-radius: 9999px; overflow: hidden; flex: 1 1 auto; }
+  #shopify-section-{{ section.id }} .vso-hero-23__progress-fill { position: absolute; left: 0; top: 0; bottom: 0; width: 0%; background: {{ section.settings.progress_fill_color | default: '#111111' }}; border-radius: inherit; transition: width .2s ease; }
+
+  {% if section.settings.navigation_position == 'overlay' %}
+    #shopify-section-{{ section.id }} > .vso-hero-23__container { position: relative; }
+    #shopify-section-{{ section.id }} .vso-hero-23__nav {
+      position: absolute;
+      top: 50%;
+      left: var(--overlay-offset);
+      right: var(--overlay-offset);
+      transform: translateY(-50%);
+      margin-top: 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      pointer-events: none;
+      z-index: 10;
+    }
+    #shopify-section-{{ section.id }} .vso-hero-23__arrow {
+      pointer-events: auto;
+      opacity: 1;
+      transition: opacity 0.3s ease;
+    }
+    #shopify-section-{{ section.id }} .vso-hero-23__arrow.vso-hero-23__arrow--hidden {
+      opacity: 0;
+      pointer-events: none;
+    }
+    #shopify-section-{{ section.id }} .vso-hero-23__progress { display: none; }
+  {% endif %}
+
+  {% if section.settings.button_custom_font %}
+    #shopify-section-{{ section.id }} .vso-hero-23__button {
+      font-size: {{ section.settings.button_font_size_mobile }}px;
+      font-family: {{ section.settings.button_font.family }}, {{ section.settings.button_font.fallback_families }};
+      font-style: {{ section.settings.button_font.style }};
+    }
+    {% if section.settings.enable_advanced_settings %}
+      #shopify-section-{{ section.id }} .vso-hero-23__button {
+        font-weight: {{ section.settings.button_font_weight }};
+      }
+    {% endif %}
+    @media screen and (min-width: 750px) {
+      #shopify-section-{{ section.id }} .vso-hero-23__button {
+        font-size: {{ section.settings.button_font_size_desktop }}px;
+      }
+    }
+  {% endif %}
+
+  #shopify-section-{{ section.id }} .vso-hero-23__title {
+    color: {{ section.settings.overlay_title_text_color }};
+  }
+  {% if section.settings.overlay_title_custom_font %}
+    #shopify-section-{{ section.id }} .vso-hero-23__title {
+      font-size: {{ section.settings.overlay_title_font_size_mobile }}px;
+      font-family: {{ section.settings.overlay_title_font.family }}, {{ section.settings.overlay_title_font.fallback_families }};
+      font-style: {{ section.settings.overlay_title_font.style }};
+    }
+    {% if section.settings.enable_advanced_settings %}
+      #shopify-section-{{ section.id }} .vso-hero-23__title {
+        font-weight: {{ section.settings.overlay_title_font_weight }};
+      }
+    {% endif %}
+    @media screen and (min-width: 750px) {
+      #shopify-section-{{ section.id }} .vso-hero-23__title {
+        font-size: {{ section.settings.overlay_title_font_size_desktop }}px;
+      }
+    }
+  {% endif %}
+
+  #shopify-section-{{ section.id }} .vso-hero-23__name {
+    color: {{ section.settings.name_text_color }};
+  }
+  {% if section.settings.name_custom_font %}
+    #shopify-section-{{ section.id }} .vso-hero-23__name {
+      font-size: {{ section.settings.name_font_size_mobile }}px;
+      font-family: {{ section.settings.name_font.family }}, {{ section.settings.name_font.fallback_families }};
+      font-style: {{ section.settings.name_font.style }};
+    }
+    {% if section.settings.enable_advanced_settings %}
+      #shopify-section-{{ section.id }} .vso-hero-23__name {
+        font-weight: {{ section.settings.name_font_weight }};
+      }
+    {% endif %}
+    @media screen and (min-width: 750px) {
+      #shopify-section-{{ section.id }} .vso-hero-23__name {
+        font-size: {{ section.settings.name_font_size_desktop }}px;
+      }
+    }
+  {% endif %}
+
+  #shopify-section-{{ section.id }} .vso-hero-23__price {
+    color: {{ section.settings.price_text_color }};
+  }
+  {% if section.settings.price_custom_font %}
+    #shopify-section-{{ section.id }} .vso-hero-23__price {
+      font-size: {{ section.settings.price_font_size_mobile }}px;
+      font-family: {{ section.settings.price_font.family }}, {{ section.settings.price_font.fallback_families }};
+      font-style: {{ section.settings.price_font.style }};
+    }
+    {% if section.settings.enable_advanced_settings %}
+      #shopify-section-{{ section.id }} .vso-hero-23__price {
+        font-weight: {{ section.settings.price_font_weight }};
+      }
+    {% endif %}
+    @media screen and (min-width: 750px) {
+      #shopify-section-{{ section.id }} .vso-hero-23__price {
+        font-size: {{ section.settings.price_font_size_desktop }}px;
+      }
+    }
+  {% endif %}
+
+  #shopify-section-{{ section.id }} .vso-hero-23__desc {
+    color: {{ section.settings.description_color }};
+  }
+  {% if section.settings.description_custom_font %}
+    #shopify-section-{{ section.id }} .vso-hero-23__desc {
+      font-size: {{ section.settings.description_font_size_mobile }}px;
+      font-family: {{ section.settings.description_font.family }}, {{ section.settings.description_font.fallback_families }};
+      font-style: {{ section.settings.description_font.style }};
+    }
+    {% if section.settings.enable_advanced_settings %}
+      #shopify-section-{{ section.id }} .vso-hero-23__desc {
+        font-weight: {{ section.settings.description_font_weight }};
+      }
+    {% endif %}
+    @media screen and (min-width: 750px) {
+      #shopify-section-{{ section.id }} .vso-hero-23__desc {
+        font-size: {{ section.settings.description_font_size_desktop }}px;
+      }
+    }
+  {% endif %}
+  .vso-node { display: none; }
+  .vso-node--v2 { display: block; }
+{%- endstyle -%}
+
+{%- if request.design_mode -%}
+  <div class="vso-require-script">
+    <div class="vso-warning">
+      <div class="vso-warning__left">
+        <div class="vso-warning__badge">
+          <svg width="14" height="14" viewBox="0 0 20 20" fill="none">
+            <path d="M10 6.75a.75.75 0 0 1 .75.75v3.5a.75.75 0 1 1-1.5 0v-3.5a.75.75 0 0 1 .75-.75Z" fill="currentColor"/>
+            <path d="M11 13.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z" fill="currentColor"/>
+            <path fill-rule="evenodd" d="M10 3.5c-1.045 0-1.784.702-2.152 1.447a449.26 449.26 0 0 1-2.005 3.847l-.028.052a403.426 403.426 0 0 0-2.008 3.856c-.372.752-.478 1.75.093 2.614.57.863 1.542 1.184 2.464 1.184h7.272c.922 0 1.895-.32 2.464-1.184.57-.864.465-1.862.093-2.614-.21-.424-1.113-2.147-2.004-3.847l-.032-.061a429.497 429.497 0 0 1-2.005-3.847c-.368-.745-1.107-1.447-2.152-1.447Zm-.808 2.112c.404-.816 1.212-.816 1.616 0 .202.409 1.112 2.145 2.022 3.88a418.904 418.904 0 0 1 2.018 3.875c.404.817 0 1.633-1.212 1.633h-7.272c-1.212 0-1.617-.816-1.212-1.633.202-.408 1.113-2.147 2.023-3.883a421.932 421.932 0 0 0 2.017-3.872Z" fill="currentColor"/>
+          </svg>
+          <span>Action Required</span>
+        </div>
+        <h2 class="vso-warning__title">App Embeds Are Disabled</h2>
+        <p class="vso-warning__subtitle">Enable the Versio Sections app embed in your theme editor to use this section.</p>
+        <div class="vso-warning__steps">
+          <div class="vso-warning__step">
+            <span class="vso-warning__step-number">1</span>
+            <span>Click the <strong>App embeds</strong> icon (puzzle piece) at the top of the left sidebar</span>
+          </div>
+          <div class="vso-warning__step">
+            <span class="vso-warning__step-number">2</span>
+            <span>Toggle on <strong>Versio Sections</strong></span>
+          </div>
+          <div class="vso-warning__step">
+            <span class="vso-warning__step-number">3</span>
+            <span>Click <strong>Save</strong> in the top right</span>
+          </div>
+        </div>
+      </div>
+      <div class="vso-warning__image">
+        <img src="https://cdn.shopify.com/s/files/1/0970/2880/0861/files/1.png?v=1773296966" alt="How to enable app embeds" loading="lazy" width="640" height="880" />
+      </div>
+    </div>
+  </div>
+  <style>
+    .vso-hidden {
+      display: none !important;
+      height: 0 !important;
+      overflow: hidden !important;
+      visibility: hidden !important;
+      width: 0 !important;
+      opacity: 0 !important;
+    }
+    .vso-require-script .vso-warning {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      max-width: 900px;
+      margin: 24px auto;
+      background: #ffffff;
+      border: 1px solid #e2e2e2;
+      border-radius: 16px;
+      padding: 32px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.04), 0 4px 12px rgba(0,0,0,0.03);
+      display: flex;
+      gap: 32px;
+      align-items: center;
+    }
+    .vso-warning__left {
+      flex: 1;
+      min-width: 0;
+    }
+    .vso-warning__badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: #fef2f2;
+      color: #dc2626;
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      padding: 5px 12px;
+      border-radius: 100px;
+      margin-bottom: 14px;
+      border: 1px solid #fecaca;
+    }
+    .vso-warning__badge svg {
+      flex-shrink: 0;
+    }
+    .vso-warning__title {
+      font-size: 22px;
+      font-weight: 700;
+      color: #1a1a1a;
+      margin: 0 0 6px 0;
+      line-height: 1.3;
+    }
+    .vso-warning__subtitle {
+      font-size: 13px;
+      color: #777;
+      margin: 0 0 20px 0;
+      line-height: 1.5;
+      max-width: 340px;
+    }
+    .vso-warning__steps {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .vso-warning__step {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 14px;
+      color: #444;
+      line-height: 1.4;
+    }
+    .vso-warning__step strong {
+      color: #1a1a1a;
+    }
+    .vso-warning__step-number {
+      flex-shrink: 0;
+      width: 26px;
+      height: 26px;
+      background: #f3f3f3;
+      color: #555;
+      font-size: 12px;
+      font-weight: 700;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid #e0e0e0;
+    }
+    .vso-warning__image {
+      flex: 1;
+      min-width: 0;
+    }
+    .vso-warning__image img {
+      display: block;
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+      border-radius: 10px;
+    }
+    @media screen and (max-width: 749px) {
+      .vso-require-script .vso-warning {
+        margin: 16px;
+        padding: 24px 20px;
+        flex-direction: column;
+        gap: 24px;
+      }
+      .vso-warning__title {
+        font-size: 18px;
+      }
+      .vso-warning__subtitle {
+        max-width: none;
+      }
+      .vso-warning__image {
+        flex: none;
+        max-width: 100%;
+      }
+    }
+  </style>
+{%- endif -%}
+
+
+<div class="vso-hero-23__container vso-node vd-l vso-hero-23--full-bleed vso-hidden">
+  <div class="vso-hero-23__grid" id="vso-hero-23-grid-{{ section.id }}">
+    {%- for block in section.blocks -%}
+      {%- if block.type == 'product_card' -%}
+        {%- liquid
+          assign product_obj = block.settings.product
+        -%}
+        <div class="vso-hero-23__card" data-block-id="{{ block.id }}" {{ block.shopify_attributes }}>
+          {% if block.settings.card_title != blank %}
+            {%- if section.settings.overlay_title_custom_font -%}
+              <h2 class="vso-hero-23__title">{{ block.settings.card_title }}</h2>
+            {%- else -%}
+              {%- assign overlay_title_tag = section.settings.overlay_title_as | default: 'h2' -%}
+              <{{ overlay_title_tag }} class="vso-hero-23__title">{{ block.settings.card_title }}</{{ overlay_title_tag }}>
+            {%- endif -%}
+          {% endif %}
+          <a class="vso-hero-23__media"{% if product_obj %} href="{{ product_obj.url }}"{% endif %}>
+            {% if block.settings.main_image != blank %}
+              {{ block.settings.main_image | image_url: width: 1600 | image_tag: loading: 'lazy', class: 'vso-hero-23__image vso-hero-23__image--primary' }}
+            {% elsif product_obj and product_obj.featured_image %}
+              {{ product_obj.featured_image | image_url: width: 1600 | image_tag: loading: 'lazy', class: 'vso-hero-23__image vso-hero-23__image--primary' }}
+            {% else %}
+              {{ 'image' | placeholder_svg_tag: 'vso-hero-23__image vso-hero-23__image--primary' }}
+            {% endif %}
+            {% if block.settings.hover_image != blank %}
+              {{ block.settings.hover_image | image_url: width: 1600 | image_tag: loading: 'lazy', class: 'vso-hero-23__image vso-hero-23__image--hover' }}
+            {% elsif product_obj and product_obj.images and product_obj.images.size > 1 %}
+              {{ product_obj.images[1] | image_url: width: 1600 | image_tag: loading: 'lazy', class: 'vso-hero-23__image vso-hero-23__image--hover' }}
+            {% endif %}
+          </a>
+
+          <div class="vso-hero-23__meta">
+            {%- liquid
+              assign display_name = block.settings.custom_name
+              if display_name == blank and product_obj
+                assign display_name = product_obj.title
+              endif
+            -%}
+            <div class="vso-hero-23__topline">
+              {%- if section.settings.name_custom_font -%}
+                <h3 class="vso-hero-23__name">{{ display_name }}</h3>
+              {%- else -%}
+                {%- assign name_tag = section.settings.name_as | default: 'p' -%}
+                <{{ name_tag }} class="vso-hero-23__name">{{ display_name }}</{{ name_tag }}>
+              {%- endif -%}
+              {%- if section.settings.price_custom_font -%}
+                <p class="vso-hero-23__price">
+              {%- else -%}
+                {%- assign price_tag = section.settings.price_as | default: 'p' -%}
+                <{{ price_tag }} class="vso-hero-23__price">
+              {%- endif -%}
+                {%- if product_obj -%}
+                  {{ product_obj.price | money }}
+                {%- else -%}
+                  {{ 0 | money }}
+                {%- endif -%}
+              {%- if section.settings.price_custom_font -%}
+                </p>
+              {%- else -%}
+                </{{ price_tag }}>
+              {%- endif -%}
+            </div>
+            {%- liquid
+              assign custom_desc = block.settings.custom_description
+              assign base_desc = ''
+              if custom_desc != blank
+                assign base_desc = custom_desc
+              elsif product_obj and product_obj.description != blank
+                assign base_desc = product_obj.description | strip_html | truncate: 130
+              endif
+            -%}
+            {% if base_desc != blank %}
+              <div class="vso-hero-23__desc">
+                {% if section.settings.description_custom_font %}
+                  <div class="vso-hero-23__desc-text">{{ base_desc }}</div>
+                {% else %}
+                  {%- assign description_tag = section.settings.description_as | default: 'p' -%}
+                  {% if description_tag == 'p' %}
+                    <div class="vso-hero-23__desc-text">{{ base_desc }}</div>
+                  {% else %}
+                    <{{ description_tag }} class="vso-hero-23__desc-text">{{ base_desc | strip_html }}</{{ description_tag }}>
+                  {% endif %}
+                {% endif %}
+              </div>
+            {% endif %}
+          </div>
+          {% if block.settings.button_label != blank %}
+            <div class="vso-hero-23__cta">
+              {% assign cta_href = '#' %}
+              {% if product_obj %}{% assign cta_href = product_obj.url %}{% endif %}
+              {% if section.settings.button_custom_font == false %}
+                {%- assign button_as_tag = section.settings.button_as | default: 'p' -%}
+                <{{ button_as_tag }} class="vso-hero-23__button-as">
+                  <a class="vso-hero-23__button" href="{{ cta_href }}">{{ block.settings.button_label | default: 'Shop now' }}</a>
+                </{{ button_as_tag }}>
+              {% else %}
+                <a class="vso-hero-23__button" href="{{ cta_href }}">{{ block.settings.button_label | default: 'Shop now' }}</a>
+              {% endif %}
+            </div>
+          {% endif %}
+        </div>
+      {%- endif -%}
+    {%- endfor -%}
+  </div>
+  <div class="vso-hero-23__nav" id="vso-hero-23-nav-{{ section.id }}">
+    <div class="vso-hero-23__progress" aria-hidden="true">
+      <div class="vso-hero-23__progress-fill" id="vso-hero-23-progress-{{ section.id }}"></div>
+    </div>
+    <button type="button" class="vso-hero-23__arrow" data-dir="prev" aria-label="Previous" data-target="vso-hero-23-grid-{{ section.id }}">
+      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="transform: scaleX(-1);"><path fill-rule="evenodd" clip-rule="evenodd" d="M8.29289 4.29289C8.68342 3.90237 9.31658 3.90237 9.70711 4.29289L16.7071 11.2929C17.0976 11.6834 17.0976 12.3166 16.7071 12.7071L9.70711 19.7071C9.31658 20.0976 8.68342 20.0976 8.29289 19.7071C7.90237 19.3166 7.90237 18.6834 8.29289 18.2929L14.5858 12L8.29289 5.70711C7.90237 5.31658 7.90237 4.68342 8.29289 4.29289Z" fill="currentColor"></path></svg>
+    </button>
+    <button type="button" class="vso-hero-23__arrow" data-dir="next" aria-label="Next" data-target="vso-hero-23-grid-{{ section.id }}">
+      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M8.29289 4.29289C8.68342 3.90237 9.31658 3.90237 9.70711 4.29289L16.7071 11.2929C17.0976 11.6834 17.0976 12.3166 16.7071 12.7071L9.70711 19.7071C9.31658 20.0976 8.68342 20.0976 8.29289 19.7071C7.90237 19.3166 7.90237 18.6834 8.29289 18.2929L14.5858 12L8.29289 5.70711C7.90237 5.31658 7.90237 4.68342 8.29289 4.29289Z" fill="currentColor"></path></svg>
+    </button>
+  </div>
+</div>
+
+<script>
+  (function() {
+    var sectionEl = document.getElementById('shopify-section-{{ section.id }}');
+    if (sectionEl) { sectionEl.classList.add('section--full-width'); }
+    var navButtons = sectionEl.querySelectorAll('.vso-hero-23__arrow');
+    var navigationPosition = {{ section.settings.navigation_position | json }};
+    var prevButton = sectionEl.querySelector('.vso-hero-23__arrow[data-dir="prev"]');
+    var nextButton = sectionEl.querySelector('.vso-hero-23__arrow[data-dir="next"]');
+    var gridEl = document.getElementById('vso-hero-23-grid-{{ section.id }}');
+
+    navButtons.forEach(function(btn){
+      var dir = btn.getAttribute('data-dir');
+      var targetId = btn.getAttribute('data-target');
+      var grid = document.getElementById(targetId);
+      if (!grid) return;
+      btn.addEventListener('click', function(){
+        var card = grid.querySelector('.vso-hero-23__card');
+        var gap = parseInt(getComputedStyle(grid).gap || '0', 10);
+        var width = card ? card.getBoundingClientRect().width : 0;
+        var delta = width + gap;
+        grid.scrollBy({ left: dir === 'next' ? delta : -delta, behavior: 'smooth' });
+      });
+    });
+
+    function updateArrowVisibility() {
+      if (navigationPosition === 'overlay' && gridEl && prevButton && nextButton) {
+        var scrollLeft = gridEl.scrollLeft;
+        var scrollWidth = gridEl.scrollWidth;
+        var clientWidth = gridEl.clientWidth;
+        var tolerance = 2;
+
+        if (scrollLeft <= tolerance) {
+          prevButton.classList.add('vso-hero-23__arrow--hidden');
+        } else {
+          prevButton.classList.remove('vso-hero-23__arrow--hidden');
+        }
+
+        if (scrollLeft + clientWidth >= scrollWidth - tolerance) {
+          nextButton.classList.add('vso-hero-23__arrow--hidden');
+        } else {
+          nextButton.classList.remove('vso-hero-23__arrow--hidden');
+        }
+      }
+    }
+
+    var progressEl = document.getElementById('vso-hero-23-progress-{{ section.id }}');
+    var navEl = document.getElementById('vso-hero-23-nav-{{ section.id }}');
+    if (gridEl && progressEl) {
+      var updateProgress = function(){
+        var total = gridEl.scrollWidth;
+        var view = gridEl.clientWidth;
+        if (total <= 0 || view <= 0) { progressEl.style.width = '0%'; return; }
+        var visiblePortion = view / total;
+        var pct = ((gridEl.scrollLeft + view) / total) * 100;
+        var minPct = visiblePortion * 100;
+        pct = Math.max(minPct, Math.min(100, pct));
+        progressEl.style.width = pct + '%';
+        var canScroll = (total - view) > 2;
+        if (navEl) {
+          var showNavSetting = window.matchMedia('(min-width: 750px)').matches ? {{ section.settings.show_navigation_desktop | json }} : {{ section.settings.show_navigation_mobile | json }};
+          var shouldShowNav = showNavSetting && canScroll;
+          navEl.style.display = shouldShowNav ? '' : 'none';
+        }
+
+        updateArrowVisibility();
+      };
+      updateProgress();
+      gridEl.addEventListener('scroll', updateProgress, { passive: true });
+      window.addEventListener('resize', updateProgress);
+      window.addEventListener('load', updateProgress);
+      Array.prototype.forEach.call(gridEl.querySelectorAll('img'), function(img){
+        if (!img.complete) {
+          img.addEventListener('load', updateProgress, { once: true });
+        }
+      });
+      if ('ResizeObserver' in window) {
+        var ro = new ResizeObserver(function(){ updateProgress(); });
+        ro.observe(gridEl);
+      }
+    }
+
+    if (navigationPosition === 'overlay') {
+      updateArrowVisibility();
+    }
+  })();
+</script>
+
+{% schema %}
+{
+  "name": "VSO - Hero 23",
+  "tag": "section",
+  "class": "section vso-node vso-node--v2 vso-hero-23",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    { "type": "checkbox", "id": "enable_advanced_settings", "label": "Enable advanced settings", "default": false, "info": "Shows additional settings for spacing, layout, and typography." },
+
+    { "type": "header", "content": "Section Background" },
+    { "type": "color", "id": "section_bg_color", "label": "Background color", "default": "#F5F5F5" },
+    { "type": "checkbox", "id": "bg_full_width", "label": "Full width on desktop", "default": true },
+    { "type": "range", "id": "section_border_radius", "label": "Desktop border radius", "min": 0, "max": 60, "step": 2, "unit": "px", "default": 12, "visible_if": "{{ section.settings.bg_full_width == false }}" },
+    { "type": "range", "id": "section_border_radius_mobile", "label": "Mobile border radius", "min": 0, "max": 60, "step": 2, "unit": "px", "default": 0, "visible_if": "{{ section.settings.enable_advanced_settings == true }}" },
+
+    { "type": "header", "content": "Section Margin" },
+    { "type": "range", "id": "margin_top", "label": "Desktop margin top", "min": 0, "max": 100, "step": 4, "unit": "px", "default": 40 },
+    { "type": "range", "id": "margin_bottom", "label": "Desktop margin bottom", "min": 0, "max": 100, "step": 4, "unit": "px", "default": 40 },
+    { "type": "range", "id": "margin_top_mobile", "label": "Mobile margin top", "min": 0, "max": 100, "step": 4, "unit": "px", "default": 20 },
+    { "type": "range", "id": "margin_bottom_mobile", "label": "Mobile margin bottom", "min": 0, "max": 100, "step": 4, "unit": "px", "default": 20 },
+
+    { "type": "header", "content": "Section Padding" },
+    { "type": "range", "id": "padding_top", "label": "Desktop padding top", "min": 0, "max": 100, "step": 4, "unit": "px", "default": 40 },
+    { "type": "range", "id": "padding_bottom", "label": "Desktop padding bottom", "min": 0, "max": 100, "step": 4, "unit": "px", "default": 40 },
+    { "type": "range", "id": "padding_top_mobile", "label": "Mobile padding top", "min": 0, "max": 100, "step": 4, "unit": "px", "default": 20 },
+    { "type": "range", "id": "padding_bottom_mobile", "label": "Mobile padding bottom", "min": 0, "max": 100, "step": 4, "unit": "px", "default": 20 },
+
+    { "type": "header", "content": "Advanced Layout", "visible_if": "{{ section.settings.enable_advanced_settings == true }}" },
+    { "type": "checkbox", "id": "section_full_width", "label": "Full width container", "default": false, "visible_if": "{{ section.settings.enable_advanced_settings == true }}" },
+    { "type": "range", "id": "section_max_width", "label": "Content max width", "min": 60, "max": 200, "step": 2, "unit": "rem", "default": 120, "visible_if": "{{ section.settings.enable_advanced_settings == true }}" },
+    { "type": "range", "id": "padding_horizontal", "label": "Desktop side spacing", "min": 0, "max": 100, "step": 1, "unit": "px", "default": 0, "visible_if": "{{ section.settings.enable_advanced_settings == true }}" },
+    { "type": "range", "id": "padding_horizontal_mobile", "label": "Mobile side spacing", "min": 0, "max": 100, "step": 1, "unit": "px", "default": 0, "visible_if": "{{ section.settings.enable_advanced_settings == true }}" },
+
+    { "type": "header", "content": "Carousel" },
+    { "type": "range", "id": "slides_desktop", "label": "Slides on desktop", "min": 2, "max": 6, "step": 1, "default": 3 },
+    { "type": "range", "id": "slides_mobile", "label": "Slides on mobile", "min": 1, "max": 1.5, "step": 0.1, "default": 1.1 },
+    { "type": "range", "id": "blocks_gap", "label": "Gap between blocks", "min": 0, "max": 50, "step": 1, "unit": "px", "default": 20 },
+
+    { "type": "header", "content": "Product image settings" },
+    { "type": "range", "id": "image_height_desktop", "label": "Desktop image height", "min": 200, "max": 800, "step": 10, "unit": "px", "default": 500 },
+    { "type": "range", "id": "image_height_mobile", "label": "Mobile image height", "min": 200, "max": 600, "step": 10, "unit": "px", "default": 400 },
+    { "type": "select", "id": "image_object_fit", "label": "Image fit", "options": [
+      { "value": "contain", "label": "Contain" },
+      { "value": "cover", "label": "Cover" },
+      { "value": "fill", "label": "Fill" }
+    ], "default": "cover" },
+    { "type": "range", "id": "image_border_radius_desktop", "label": "Desktop image border radius", "min": 0, "max": 60, "step": 2, "unit": "px", "default": 12 },
+    { "type": "range", "id": "image_border_radius_mobile", "label": "Mobile image border radius", "min": 0, "max": 60, "step": 2, "unit": "px", "default": 12 },
+
+    { "type": "header", "content": "Navigation position" },
+    { "type": "select", "id": "navigation_position", "label": "Arrow position", "options": [
+      { "value": "below", "label": "Below blocks with progress bar" },
+      { "value": "overlay", "label": "On top of cards (left/right)" }
+    ], "default": "below" },
+
+    { "type": "header", "content": "Navigation visibility" },
+    { "type": "checkbox", "id": "show_navigation_desktop", "label": "Show arrows on desktop", "default": true },
+    { "type": "checkbox", "id": "show_navigation_mobile", "label": "Show arrows on mobile", "default": true },
+
+    { "type": "header", "content": "Arrow styling" },
+    { "type": "range", "id": "arrow_size", "label": "Arrow size", "min": 36, "max": 80, "step": 2, "unit": "px", "default": 50 },
+    { "type": "range", "id": "arrow_border_width", "label": "Arrow border width", "min": 0, "max": 5, "step": 1, "unit": "px", "default": 1 },
+    { "type": "color", "id": "arrow_bg_color", "label": "Arrow background color", "default": "#ffffff" },
+    { "type": "color", "id": "arrow_icon_color", "label": "Arrow icon color", "default": "#6b7280" },
+    { "type": "color", "id": "arrow_border_color", "label": "Arrow border color", "default": "#5E5E5E" },
+
+    { "type": "header", "content": "Progress bar", "visible_if": "{{ section.settings.navigation_position == 'below' }}" },
+    { "type": "range", "id": "progress_height", "label": "Bar height", "min": 1, "max": 10, "step": 1, "unit": "px", "default": 2, "visible_if": "{{ section.settings.navigation_position == 'below' }}" },
+    { "type": "color", "id": "progress_fill_color", "label": "Bar fill color", "default": "#111111", "visible_if": "{{ section.settings.navigation_position == 'below' }}" },
+    { "type": "color", "id": "progress_track_color", "label": "Bar track color", "default": "#EEEEEE", "visible_if": "{{ section.settings.navigation_position == 'below' }}" },
+
+    { "type": "header", "content": "Typography - Button" },
+    { "type": "checkbox", "id": "button_custom_font", "label": "Enable custom font settings", "default": false },
+    { "type": "select", "id": "button_as", "label": "Render as", "options": [
+      { "value": "h2", "label": "H2" },
+      { "value": "h3", "label": "H3" },
+      { "value": "h4", "label": "H4" },
+      { "value": "h5", "label": "H5" },
+      { "value": "p", "label": "Paragraph (p)" }
+    ], "default": "h5", "visible_if": "{{ section.settings.button_custom_font == false }}" },
+    { "type": "font_picker", "id": "button_font", "label": "Font family", "default": "poppins_n4", "visible_if": "{{ section.settings.button_custom_font }}" },
+    { "type": "range", "id": "button_font_size_desktop", "label": "Desktop text size", "min": 12, "max": 32, "step": 1, "unit": "px", "default": 16, "visible_if": "{{ section.settings.button_custom_font }}" },
+    { "type": "range", "id": "button_font_size_mobile", "label": "Mobile text size", "min": 12, "max": 28, "step": 1, "unit": "px", "default": 14, "visible_if": "{{ section.settings.button_custom_font }}" },
+    { "type": "range", "id": "button_font_weight", "label": "Font weight", "min": 100, "max": 900, "step": 100, "default": 600, "visible_if": "{{ section.settings.button_custom_font and section.settings.enable_advanced_settings == true }}" },
+    { "type": "color", "id": "button_text_color", "label": "Button text color", "default": "#111111" },
+    { "type": "range", "id": "button_border_radius", "label": "Button border radius", "min": 0, "max": 60, "step": 1, "unit": "px", "default": 24 },
+
+    { "type": "header", "content": "Typography - Card title" },
+    { "type": "checkbox", "id": "overlay_title_custom_font", "label": "Enable custom font settings", "default": false },
+    { "type": "select", "id": "overlay_title_as", "label": "Render as", "options": [
+      { "value": "h2", "label": "H2" },
+      { "value": "h3", "label": "H3" },
+      { "value": "h4", "label": "H4" },
+      { "value": "h5", "label": "H5" },
+      { "value": "p", "label": "Paragraph (p)" }
+    ], "default": "h2", "visible_if": "{{ section.settings.overlay_title_custom_font == false }}" },
+    { "type": "font_picker", "id": "overlay_title_font", "label": "Font family", "default": "poppins_n4", "visible_if": "{{ section.settings.overlay_title_custom_font }}" },
+    { "type": "range", "id": "overlay_title_font_size_desktop", "label": "Desktop text size", "min": 18, "max": 72, "step": 1, "unit": "px", "default": 34, "visible_if": "{{ section.settings.overlay_title_custom_font }}" },
+    { "type": "range", "id": "overlay_title_font_size_mobile", "label": "Mobile text size", "min": 16, "max": 48, "step": 1, "unit": "px", "default": 28, "visible_if": "{{ section.settings.overlay_title_custom_font }}" },
+    { "type": "range", "id": "overlay_title_font_weight", "label": "Font weight", "min": 100, "max": 900, "step": 100, "default": 700, "visible_if": "{{ section.settings.overlay_title_custom_font and section.settings.enable_advanced_settings == true }}" },
+    { "type": "color", "id": "overlay_title_text_color", "label": "Text color", "default": "#666666" },
+
+    { "type": "header", "content": "Typography - Product name" },
+    { "type": "checkbox", "id": "name_custom_font", "label": "Enable custom font settings", "default": false },
+    { "type": "select", "id": "name_as", "label": "Render as", "options": [
+      { "value": "h2", "label": "H2" },
+      { "value": "h3", "label": "H3" },
+      { "value": "h4", "label": "H4" },
+      { "value": "h5", "label": "H5" },
+      { "value": "p", "label": "Paragraph (p)" }
+    ], "default": "p", "visible_if": "{{ section.settings.name_custom_font == false }}" },
+    { "type": "font_picker", "id": "name_font", "label": "Font family", "default": "poppins_n4", "visible_if": "{{ section.settings.name_custom_font }}" },
+    { "type": "range", "id": "name_font_size_desktop", "label": "Desktop text size", "min": 12, "max": 48, "step": 1, "unit": "px", "default": 20, "visible_if": "{{ section.settings.name_custom_font }}" },
+    { "type": "range", "id": "name_font_size_mobile", "label": "Mobile text size", "min": 12, "max": 36, "step": 1, "unit": "px", "default": 18, "visible_if": "{{ section.settings.name_custom_font }}" },
+    { "type": "range", "id": "name_font_weight", "label": "Font weight", "min": 100, "max": 900, "step": 100, "default": 700, "visible_if": "{{ section.settings.name_custom_font and section.settings.enable_advanced_settings == true }}" },
+    { "type": "color", "id": "name_text_color", "label": "Text color", "default": "#111111" },
+
+    { "type": "header", "content": "Typography - Price" },
+    { "type": "checkbox", "id": "price_custom_font", "label": "Enable custom font settings", "default": false },
+    { "type": "select", "id": "price_as", "label": "Render as", "options": [
+      { "value": "h2", "label": "H2" },
+      { "value": "h3", "label": "H3" },
+      { "value": "h4", "label": "H4" },
+      { "value": "h5", "label": "H5" },
+      { "value": "p", "label": "Paragraph (p)" }
+    ], "default": "p", "visible_if": "{{ section.settings.price_custom_font == false }}" },
+    { "type": "font_picker", "id": "price_font", "label": "Font family", "default": "poppins_n4", "visible_if": "{{ section.settings.price_custom_font }}" },
+    { "type": "range", "id": "price_font_size_desktop", "label": "Desktop text size", "min": 12, "max": 40, "step": 1, "unit": "px", "default": 18, "visible_if": "{{ section.settings.price_custom_font }}" },
+    { "type": "range", "id": "price_font_size_mobile", "label": "Mobile text size", "min": 12, "max": 36, "step": 1, "unit": "px", "default": 16, "visible_if": "{{ section.settings.price_custom_font }}" },
+    { "type": "range", "id": "price_font_weight", "label": "Font weight", "min": 100, "max": 900, "step": 100, "default": 600, "visible_if": "{{ section.settings.price_custom_font and section.settings.enable_advanced_settings == true }}" },
+    { "type": "color", "id": "price_text_color", "label": "Text color", "default": "#111111" },
+
+    { "type": "header", "content": "Typography - Description" },
+    { "type": "checkbox", "id": "description_custom_font", "label": "Enable custom font settings", "default": false },
+    { "type": "select", "id": "description_as", "label": "Render as", "options": [
+      { "value": "h2", "label": "H2" },
+      { "value": "h3", "label": "H3" },
+      { "value": "h4", "label": "H4" },
+      { "value": "h5", "label": "H5" },
+      { "value": "p", "label": "Paragraph (p)" }
+    ], "default": "p", "visible_if": "{{ section.settings.description_custom_font == false }}" },
+    { "type": "range", "id": "name_description_gap", "label": "Gap between name and description", "min": 0, "max": 15, "step": 1, "unit": "px", "default": 6 },
+    { "type": "font_picker", "id": "description_font", "label": "Font family", "default": "poppins_n4", "visible_if": "{{ section.settings.description_custom_font }}" },
+    { "type": "range", "id": "description_font_size_desktop", "label": "Desktop text size", "min": 12, "max": 32, "step": 1, "unit": "px", "default": 14, "visible_if": "{{ section.settings.description_custom_font }}" },
+    { "type": "range", "id": "description_font_size_mobile", "label": "Mobile text size", "min": 12, "max": 28, "step": 1, "unit": "px", "default": 13, "visible_if": "{{ section.settings.description_custom_font }}" },
+    { "type": "range", "id": "description_font_weight", "label": "Font weight", "min": 100, "max": 900, "step": 100, "default": 400, "visible_if": "{{ section.settings.description_custom_font and section.settings.enable_advanced_settings == true }}" },
+    { "type": "color", "id": "description_color", "label": "Text color", "default": "#666666" }
+  ],
+
+  "blocks": [
+    {
+      "type": "product_card",
+      "name": "Product card",
+      "settings": [
+        { "type": "header", "content": "Product" },
+        { "type": "product", "id": "product", "label": "Product" },
+
+        { "type": "header", "content": "Images" },
+        { "type": "image_picker", "id": "main_image", "label": "Main image" },
+        { "type": "image_picker", "id": "hover_image", "label": "Hover image" },
+
+        { "type": "header", "content": "Title" },
+        { "type": "inline_richtext", "id": "card_title", "label": "Top-left title", "default": "Pluto" },
+
+        { "type": "header", "content": "Text overrides" },
+        { "type": "inline_richtext", "id": "custom_name", "label": "Custom product name (optional)" },
+        { "type": "richtext", "id": "custom_description", "label": "Custom description (optional)" },
+
+        { "type": "header", "content": "Button" },
+        { "type": "inline_richtext", "id": "button_label", "label": "Button label", "default": "Shop now" }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "VSO - Hero 23",
+      "blocks": [
+        { "type": "product_card", "settings": { "card_title": "Obsidian" } },
+        { "type": "product_card", "settings": { "card_title": "Pluto" } },
+        { "type": "product_card", "settings": { "card_title": "Chrome" } }
+      ]
+    }
+  ]
+}
+{% endschema %}
