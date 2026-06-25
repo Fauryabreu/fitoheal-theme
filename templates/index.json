@@ -524,7 +524,7 @@
           "type": "benefit",
           "settings": {
             "title": "El problema con los suplementos normales",
-            "text": "Al tomarlos, tu cuerpo los procesa y los ácidos estomacales destruyen el principio activo  y la mayor parte no se absorbe.",
+            "text": "Al tomarlos, tu cuerpo los procesa durante la digestión y parte de los ingredientes activos puede perderse antes de ser aprovechada.",
             "show_divider": false
           }
         },
@@ -532,7 +532,7 @@
           "type": "benefit",
           "settings": {
             "title": "Lo que hace el liposomal",
-            "text": "El ingrediente se envuelve en una capa de grasa idéntica a la de tus propias células. Eso le permite pasar el sistema digestivo sin descomponerse y entrar directo donde tiene que actuar: en tu sistema nervioso si es para dormir, en tu intestino si es para la digestión, en tu cerebro si es para concentrarte.",
+            "text": "Los ingredientes activos se protegen dentro de liposomas, pequeñas estructuras similares a las membranas celulares, que ayudan a transportarlos mejor.",
             "show_divider": false
           }
         },
@@ -540,7 +540,7 @@
           "type": "benefit",
           "settings": {
             "title": "Por eso lo sientes diferente",
-            "text": "La biodisponibilidad se aumenta y la absorción del p se aumenta. Esa es la diferencia entre un suplemento que tomas y uno que tu cuerpo realmente usa.",
+            "text": "Al favorecer una mejor absorción, tu cuerpo puede aprovechar más cada fórmula. Esa es la diferencia entre tomar un suplemento convencional y elegir uno diseñado para absorberse mejor.",
             "show_divider": false
           }
         },
