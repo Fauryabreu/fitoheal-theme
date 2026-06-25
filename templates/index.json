@@ -672,6 +672,7 @@
         "s2",
         "s3"
       ],
+      "disabled": true,
       "settings": {
         "bg_color": "#ffffff",
         "titulo": "¿Has tomado suplementos semanas enteras y no sentiste nada?",
@@ -863,7 +864,7 @@
         "heading_hh4QfC": {
           "type": "heading",
           "settings": {
-            "heading": "<strong>Esto es para ti, si...</strong>",
+            "heading": "<strong>Fitoheal es para ti, si...</strong>",
             "heading_margin_bottom": 8,
             "heading_margin_bottom_mobile": 8,
             "heading_custom_font": false,
