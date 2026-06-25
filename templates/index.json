@@ -797,9 +797,9 @@
       ],
       "settings": {
         "bg_color": "#fafdf8",
-        "titulo": "¿Cuál es tu objetivo?",
-        "descripcion": "Cada fórmula está pensada para un resultado concreto.",
-        "cta_label": "Conoce nuestra línea",
+        "titulo": "Elige tu suplemento según lo que quieres mejorar",
+        "descripcion": "Fórmulas liposomales individuales para apoyar objetivos como descanso, digestión, enfoque y metabolismo.",
+        "cta_label": "",
         "cta_link": "shopify://pages/catalogo"
       }
     },
