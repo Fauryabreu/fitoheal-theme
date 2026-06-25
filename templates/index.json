@@ -454,6 +454,19 @@
         "nav_arrow_shadow_color": "#000000"
       }
     },
+    "all_products_CT9cBY": {
+      "type": "all-products",
+      "name": "All Products",
+      "settings": {
+        "titulo": "Nuestros productos",
+        "subtitulo": "",
+        "show_subtitle": true,
+        "coleccion": "todos-los-productos",
+        "limite": 12,
+        "bg_color": "#fafdf8",
+        "btn_label": "Comprar ahora"
+      }
+    },
     "vso_hero_54_GBrMXJ": {
       "type": "vso-hero-54",
       "blocks": {
@@ -597,7 +610,7 @@
         "benefits_gap_mobile": 12,
         "benefits_icon_text_gap": 16,
         "benefits_icon_text_gap_mobile": 14,
-        "benefits_divider_color": "#FFFFFF",
+        "benefits_divider_color": "#ffffff",
         "benefits_icon_color": "#1c4332",
         "benefits_icon_bg_color": "#0cc172",
         "benefits_icon_size": 48,
@@ -627,19 +640,6 @@
         "section_border_width": 0,
         "section_border_width_mobile": 0,
         "section_border_color": "#ffffff"
-      }
-    },
-    "all_products_CT9cBY": {
-      "type": "all-products",
-      "name": "All Products",
-      "settings": {
-        "titulo": "Nuestros productos",
-        "subtitulo": "",
-        "show_subtitle": true,
-        "coleccion": "todos-los-productos",
-        "limite": 12,
-        "bg_color": "#fafdf8",
-        "btn_label": "Comprar ahora"
       }
     },
     "how-it-works": {
@@ -946,7 +946,7 @@
       "settings": {
         "enable_advanced_settings": false,
         "section_bg_type": "solid",
-        "section_bg_color": "#FBFDF9",
+        "section_bg_color": "#fbfdf9",
         "section_bg_gradient": "linear-gradient(135deg, #FFFFFF 0%, #F7F7F7 100%)",
         "section_full_width": true,
         "section_border_radius": 12,
@@ -1244,8 +1244,8 @@
     "vso_img_with_text_01_HLxdjV",
     "about-section",
     "vso_video_carousel_03_zPGYPV",
-    "vso_hero_54_GBrMXJ",
     "all_products_CT9cBY",
+    "vso_hero_54_GBrMXJ",
     "how-it-works",
     "product-tabs",
     "kits-section",
