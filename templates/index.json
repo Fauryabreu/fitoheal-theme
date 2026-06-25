@@ -811,7 +811,7 @@
           "settings": {
             "imagen": "shopify://shop_images/kit_descanso_estress.png",
             "nombre": "Estrés / Sueño",
-            "descripcion": "Relájate, baja el estrés y mejora tu descanso.",
+            "descripcion": "Baja el cortisol, entra en calma. Duerme profundo sin depender de nada.",
             "cta_label": "Ver kit",
             "cta_link": "shopify://products/kit-sueno-estres"
           }
