@@ -149,7 +149,7 @@
         "heading_size_mobile": 24,
         "heading_weight": 600,
         "heading_custom_font": false,
-        "heading_font": "bricolage_grotesque_n4",
+        "heading_font": "serif",
         "slider_view": 4,
         "slider_view_tablet": 3,
         "slider_view_mobile": 1.2,
