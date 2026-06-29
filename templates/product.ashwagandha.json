@@ -478,160 +478,6 @@
         "feature_text_color": "#ffffff"
       }
     },
-    "vso_hero_19_XGjzRA": {
-      "type": "vso-hero-19",
-      "blocks": {
-        "heading_pmVfuI": {
-          "type": "heading",
-          "settings": {
-            "heading_alignment": "center",
-            "heading": "Un apoyo diario para _sentir más equilibrio",
-            "heading_custom_font": false,
-            "heading_as": "h3",
-            "heading_font": "poppins_n4",
-            "heading_size_desktop": 48,
-            "heading_size_mobile": 32,
-            "heading_weight": 600,
-            "heading_color": "#1f2937",
-            "heading_highlight_color": "linear-gradient(128deg, rgba(89, 112, 89, 1), rgba(115, 145, 115, 1) 100%)",
-            "heading_highlight_custom_font": false,
-            "heading_highlight_font": "poppins_n4",
-            "heading_highlight_weight": 600,
-            "heading_highlight_size_desktop": 48,
-            "heading_highlight_size_mobile": 32,
-            "description": "",
-            "description_custom_font": false,
-            "description_as": "p",
-            "description_font": "poppins_n4",
-            "description_size_desktop": 16,
-            "description_size_mobile": 16,
-            "description_weight": 400,
-            "description_line_height": 1.5,
-            "description_color": "#6b7280",
-            "heading_enable_max_width": true,
-            "heading_max_width_desktop": 1000,
-            "heading_description_gap": 8,
-            "block_margin_top_desktop": 0,
-            "block_margin_bottom_desktop": 20,
-            "block_margin_top_mobile": 0,
-            "block_margin_bottom_mobile": 16
-          }
-        },
-        "media_kcpVCU": {
-          "type": "media",
-          "settings": {
-            "media_type": "image",
-            "image": "shopify://shop_images/imagen_de_producto.png",
-            "video_url": "",
-            "video_autoplay": true,
-            "video_loop": true,
-            "video_muted": true,
-            "video_controls": false,
-            "image_radius": 12,
-            "media_sizing_desktop": "4/3",
-            "image_height_desktop": 600,
-            "object_fit_desktop": "cover",
-            "mobile_media_type": "image",
-            "mobile_video_url": "",
-            "mobile_video_autoplay": true,
-            "mobile_video_loop": true,
-            "mobile_video_muted": true,
-            "mobile_video_controls": false,
-            "media_sizing_mobile": "1/1",
-            "image_height_mobile": 500,
-            "object_fit_mobile": "cover"
-          }
-        },
-        "timeline_item_1_AaGtoe": {
-          "type": "timeline_item",
-          "settings": {
-            "subheading": "Primeros días",
-            "heading": " Llegas al final del día y tu cabeza no para",
-            "description": "<p>Trabajo, pendientes, conversaciones que no cerraron. Te acuestas y sigues procesando todo.</p>"
-          }
-        },
-        "timeline_item_2_3Qr27B": {
-          "type": "timeline_item",
-          "settings": {
-            "subheading": "Semanas 2–4",
-            "heading": "Duermes pero no descansas",
-            "description": "<p>Te despiertas antes de la alarma o amaneces cansado. Las horas de sueño están, la recuperación no.</p>"
-          }
-        },
-        "timeline_item_3_6WDi7E": {
-          "type": "timeline_item",
-          "settings": {
-            "subheading": "Uso continuo",
-            "heading": "Mejor bienestar diario",
-            "description": "<p>Como parte de una rutina saludable, puede favorecer la calma mental, el equilibrio de energía y la calidad del sueño.</p>"
-          }
-        }
-      },
-      "block_order": [
-        "heading_pmVfuI",
-        "media_kcpVCU",
-        "timeline_item_1_AaGtoe",
-        "timeline_item_2_3Qr27B",
-        "timeline_item_3_6WDi7E"
-      ],
-      "name": "VSO - Hero 19",
-      "settings": {
-        "enable_advanced_settings": false,
-        "section_max_width": 120,
-        "padding_horizontal": 0,
-        "padding_horizontal_mobile": 0,
-        "section_bg_type": "solid",
-        "section_bg_solid": "#ffffff",
-        "section_bg_gradient": "linear-gradient(135deg, #F5F3FF 0%, #EEF2FF 100%)",
-        "section_full_width": true,
-        "section_border_radius": 12,
-        "section_border_radius_mobile": 0,
-        "section_border_width": 0,
-        "section_border_width_mobile": 0,
-        "section_border_color": "#e6e6e6",
-        "timeline_gap": 32,
-        "timeline_margin_top": 32,
-        "timeline_item_gap": 16,
-        "timeline_line_width": 2,
-        "timeline_line_color": "#597059",
-        "timeline_dot_size": 16,
-        "timeline_dot_color": "#597059",
-        "timeline_media_gap_desktop": 24,
-        "timeline_media_gap_mobile": 12,
-        "timeline_subheading_custom_font": false,
-        "timeline_subheading_as": "p",
-        "timeline_subheading_font": "poppins_n4",
-        "timeline_subheading_size_desktop": 14,
-        "timeline_subheading_size_mobile": 14,
-        "timeline_subheading_weight": 400,
-        "timeline_subheading_margin_bottom": 4,
-        "timeline_subheading_color": "#434343",
-        "timeline_heading_custom_font": false,
-        "timeline_heading_as": "h3",
-        "timeline_heading_font": "poppins_n4",
-        "timeline_heading_size_desktop": 20,
-        "timeline_heading_size_mobile": 18,
-        "timeline_heading_weight": 600,
-        "timeline_heading_margin_bottom": 8,
-        "timeline_heading_color": "#303030",
-        "timeline_description_custom_font": false,
-        "timeline_description_as": "p",
-        "timeline_description_font": "poppins_n4",
-        "timeline_description_size_desktop": 14,
-        "timeline_description_size_mobile": 14,
-        "timeline_description_weight": 400,
-        "timeline_description_line_height": 1.4,
-        "timeline_description_color": "#404040",
-        "padding_top": 40,
-        "padding_bottom": 40,
-        "padding_top_mobile": 20,
-        "padding_bottom_mobile": 20,
-        "margin_top": 0,
-        "margin_bottom": 20,
-        "margin_top_mobile": 0,
-        "margin_bottom_mobile": 0
-      }
-    },
     "vso_icon_benefits_01_QX0kww": {
       "type": "vso-icon-benefits-01",
       "blocks": {
@@ -738,6 +584,160 @@
         "block_padding": 0,
         "block_elements_gap": 16,
         "block_border_radius": 0
+      }
+    },
+    "vso_hero_19_XGjzRA": {
+      "type": "vso-hero-19",
+      "blocks": {
+        "heading_pmVfuI": {
+          "type": "heading",
+          "settings": {
+            "heading_alignment": "center",
+            "heading": "Un apoyo diario para _sentir más equilibrio",
+            "heading_custom_font": false,
+            "heading_as": "h3",
+            "heading_font": "poppins_n4",
+            "heading_size_desktop": 48,
+            "heading_size_mobile": 32,
+            "heading_weight": 600,
+            "heading_color": "#1f2937",
+            "heading_highlight_color": "linear-gradient(128deg, rgba(89, 112, 89, 1), rgba(115, 145, 115, 1) 100%)",
+            "heading_highlight_custom_font": false,
+            "heading_highlight_font": "poppins_n4",
+            "heading_highlight_weight": 600,
+            "heading_highlight_size_desktop": 48,
+            "heading_highlight_size_mobile": 32,
+            "description": "",
+            "description_custom_font": false,
+            "description_as": "p",
+            "description_font": "poppins_n4",
+            "description_size_desktop": 16,
+            "description_size_mobile": 16,
+            "description_weight": 400,
+            "description_line_height": 1.5,
+            "description_color": "#6b7280",
+            "heading_enable_max_width": true,
+            "heading_max_width_desktop": 1000,
+            "heading_description_gap": 8,
+            "block_margin_top_desktop": 0,
+            "block_margin_bottom_desktop": 20,
+            "block_margin_top_mobile": 0,
+            "block_margin_bottom_mobile": 16
+          }
+        },
+        "media_kcpVCU": {
+          "type": "media",
+          "settings": {
+            "media_type": "image",
+            "image": "shopify://shop_images/imagen_de_producto.png",
+            "video_url": "",
+            "video_autoplay": true,
+            "video_loop": true,
+            "video_muted": true,
+            "video_controls": false,
+            "image_radius": 12,
+            "media_sizing_desktop": "4/3",
+            "image_height_desktop": 600,
+            "object_fit_desktop": "cover",
+            "mobile_media_type": "image",
+            "mobile_video_url": "",
+            "mobile_video_autoplay": true,
+            "mobile_video_loop": true,
+            "mobile_video_muted": true,
+            "mobile_video_controls": false,
+            "media_sizing_mobile": "1/1",
+            "image_height_mobile": 500,
+            "object_fit_mobile": "cover"
+          }
+        },
+        "timeline_item_1_AaGtoe": {
+          "type": "timeline_item",
+          "settings": {
+            "subheading": "Primeros días",
+            "heading": "Llegas al final del día y tu cabeza no para",
+            "description": "<p>Trabajo, pendientes, conversaciones que no cerraron. Te acuestas y sigues procesando todo.</p>"
+          }
+        },
+        "timeline_item_2_3Qr27B": {
+          "type": "timeline_item",
+          "settings": {
+            "subheading": "Semanas 2–4",
+            "heading": "Duermes pero no descansas",
+            "description": "<p>Te despiertas antes de la alarma o amaneces cansado. Las horas de sueño están, la recuperación no.</p>"
+          }
+        },
+        "timeline_item_3_6WDi7E": {
+          "type": "timeline_item",
+          "settings": {
+            "subheading": "Uso continuo",
+            "heading": "Mejor bienestar diario",
+            "description": "<p>Como parte de una rutina saludable, puede favorecer la calma mental, el equilibrio de energía y la calidad del sueño.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_pmVfuI",
+        "media_kcpVCU",
+        "timeline_item_1_AaGtoe",
+        "timeline_item_2_3Qr27B",
+        "timeline_item_3_6WDi7E"
+      ],
+      "name": "VSO - Hero 19",
+      "settings": {
+        "enable_advanced_settings": false,
+        "section_max_width": 120,
+        "padding_horizontal": 0,
+        "padding_horizontal_mobile": 0,
+        "section_bg_type": "solid",
+        "section_bg_solid": "#ffffff",
+        "section_bg_gradient": "linear-gradient(135deg, #F5F3FF 0%, #EEF2FF 100%)",
+        "section_full_width": true,
+        "section_border_radius": 12,
+        "section_border_radius_mobile": 0,
+        "section_border_width": 0,
+        "section_border_width_mobile": 0,
+        "section_border_color": "#e6e6e6",
+        "timeline_gap": 32,
+        "timeline_margin_top": 32,
+        "timeline_item_gap": 16,
+        "timeline_line_width": 2,
+        "timeline_line_color": "#597059",
+        "timeline_dot_size": 16,
+        "timeline_dot_color": "#597059",
+        "timeline_media_gap_desktop": 24,
+        "timeline_media_gap_mobile": 12,
+        "timeline_subheading_custom_font": false,
+        "timeline_subheading_as": "p",
+        "timeline_subheading_font": "poppins_n4",
+        "timeline_subheading_size_desktop": 14,
+        "timeline_subheading_size_mobile": 14,
+        "timeline_subheading_weight": 400,
+        "timeline_subheading_margin_bottom": 4,
+        "timeline_subheading_color": "#434343",
+        "timeline_heading_custom_font": false,
+        "timeline_heading_as": "h3",
+        "timeline_heading_font": "poppins_n4",
+        "timeline_heading_size_desktop": 20,
+        "timeline_heading_size_mobile": 18,
+        "timeline_heading_weight": 600,
+        "timeline_heading_margin_bottom": 8,
+        "timeline_heading_color": "#303030",
+        "timeline_description_custom_font": false,
+        "timeline_description_as": "p",
+        "timeline_description_font": "poppins_n4",
+        "timeline_description_size_desktop": 14,
+        "timeline_description_size_mobile": 14,
+        "timeline_description_weight": 400,
+        "timeline_description_line_height": 1.4,
+        "timeline_description_color": "#404040",
+        "padding_top": 40,
+        "padding_bottom": 40,
+        "padding_top_mobile": 20,
+        "padding_bottom_mobile": 20,
+        "margin_top": 0,
+        "margin_bottom": 20,
+        "margin_top_mobile": 0,
+        "margin_bottom_mobile": 0
       }
     },
     "vso_img_with_text_01_xtNmKG": {
@@ -1591,8 +1591,8 @@
   "order": [
     "vso_product_info_02_CB34KK",
     "vso_hero_36_81fyqM",
-    "vso_hero_19_XGjzRA",
     "vso_icon_benefits_01_QX0kww",
+    "vso_hero_19_XGjzRA",
     "vso_img_with_text_01_xtNmKG",
     "vso_hero_45_8W1D8M",
     "vso_hero_32_5X7zMU",
