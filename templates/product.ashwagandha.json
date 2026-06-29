@@ -1532,8 +1532,8 @@
         "faq_item_4_jrk0ZU": {
           "type": "faq_item",
           "settings": {
-            "question": "<strong>¿Tiene estimulantes?</strong>",
-            "answer": "<p>No. Es una fórmula pensada para apoyar la calma, el equilibrio y el bienestar diario sin depender de estimulantes.</p>"
+            "question": "<strong>¿Tiene estimulantes o me va a dar sueño?</strong>",
+            "answer": "<p>No tiene estimulantes. No te da sueño directamente — te relaja. La diferencia es importante: no te va a dejar aturdido, pero sí puedes notar que es más fácil desconectarte y conciliar el sueño.</p>"
           }
         }
       },
