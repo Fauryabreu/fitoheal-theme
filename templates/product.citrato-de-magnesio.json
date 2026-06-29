@@ -160,7 +160,7 @@
         "description_4X83w7": {
           "type": "description",
           "settings": {
-            "description_text": "<p>Una fórmula liposomal de alta absorción que actúa directo en el tracto intestinal — el tubo que va del estómago al intestino grueso — para regularizar el tránsito, reducir la hinchazón y devolver el equilibrio digestivo.</p>",
+            "description_text": "<p>Una fórmula liposomal de alta absorción que actúa directo en el tracto intestinal — el tubo que va del estómago al intestino grueso — para regularizar el tránsito, reducir la hinchazón y devolver el equilibrio digestivo.</p><p>⚠  Consultar con un médico si se toman medicamentos para la presión arterial, antibióticos o diuréticos. No recomendado como sustituto de tratamiento médico para condiciones digestivas diagnosticadas.</p>",
             "description_color": "#111111",
             "description_font_size": 16,
             "description_font_size_mobile": 14,
@@ -1618,29 +1618,36 @@
         "faq_item_1_nCxGYg": {
           "type": "faq_item",
           "settings": {
-            "question": "<strong>¿Para qué sirve el Citrato de Magnesio D3 Liposomal?</strong>",
-            "answer": "<p>Apoya la digestión, favorece la salud intestinal y contribuye al bienestar muscular diario.</p>"
+            "question": "<strong>¿Para qué sirve el Citrato de Magnesio Liposomal?</strong>",
+            "answer": "<p>Para regularizar el tránsito intestinal, reducir la hinchazón y devolver fluidez a la digestión. Si después de comer quedas pesado, incómodo o tu intestino funciona de forma irregular, el citrato actúa directo en eso.</p>"
           }
         },
         "faq_item_2_ohlkGR": {
           "type": "faq_item",
           "settings": {
-            "question": "<strong>¿Cómo debo tomarla?</strong>",
-            "answer": "<p>Tomar de <strong>1 a 2 cápsulas al día</strong> con agua, preferiblemente junto a una comida o según tu rutina diaria. La etiqueta indica uso oral y dosis de 1 a 2 cápsulas al día. </p>"
+            "question": "<strong>¿Cuál es la diferencia entre Citrato y Glicinato de Magnesio?</strong>",
+            "answer": "<p>Son el mismo mineral con destinos distintos. El citrato actúa en el intestino — digestión, tránsito, hinchazón. El glicinato actúa en el sistema nervioso y los músculos — sueño, tensión, ansiedad. Si tu problema es digestivo, citrato. Si tu problema es dormir mal o tensión física, glicinato.</p>"
           }
         },
         "faq_item_3_aKHWJF": {
           "type": "faq_item",
           "settings": {
-            "question": "<strong>¿Qué diferencia tiene la tecnología liposomal?</strong>",
-            "answer": "<p>La tecnología liposomal ayuda a proteger y transportar el activo para favorecer una mejor absorción y aprovechamiento del magnesio.</p>"
+            "question": "<strong>¿Cómo debo tomarlo?</strong>",
+            "answer": "<p>1 a 2 cápsulas con las comidas principales, preferiblemente en la mañana o al almuerzo. Con agua.</p>"
           }
         },
         "faq_item_4_jrk0ZU": {
           "type": "faq_item",
           "settings": {
-            "question": "<strong>¿Es solo para digestión?</strong>",
-            "answer": "<p>No. Aunque su enfoque principal es el bienestar digestivo e intestinal, también apoya la función muscular y el equilibrio general del cuerpo. La etiqueta menciona digestión, salud intestinal, músculos y alta absorción X5. </p>"
+            "question": "<strong>¿Tiene efecto laxante?</strong>",
+            "answer": "<p>La versión liposomal está diseñada para evitar ese efecto. El problema del citrato estándar en dosis altas es que atrae agua al intestino y puede generar diarrea. La forma liposomal llega en la cantidad correcta sin ese exceso.</p>"
+          }
+        },
+        "faq_item_mU8wT7": {
+          "type": "faq_item",
+          "settings": {
+            "question": "<strong>¿Y si lo tomo y no siento nada?</strong>",
+            "answer": "<p>El citrato actúa de forma gradual — no es un laxante de efecto inmediato. Si después de 2 semanas de uso diario no notas diferencia en el tránsito o la hinchazón, escríbenos para evaluar si el producto correcto para tu caso.</p>"
           }
         }
       },
@@ -1651,7 +1658,8 @@
         "faq_item_1_nCxGYg",
         "faq_item_2_ohlkGR",
         "faq_item_3_aKHWJF",
-        "faq_item_4_jrk0ZU"
+        "faq_item_4_jrk0ZU",
+        "faq_item_mU8wT7"
       ],
       "name": "VSO - FAQ 02",
       "settings": {
