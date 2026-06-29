@@ -947,6 +947,7 @@
         "card_item_7_TC3pr9",
         "card_item_8_9b3ZpQ"
       ],
+      "disabled": true,
       "name": "VSO - Hero 45",
       "settings": {
         "enable_advanced_settings": false,
@@ -1448,7 +1449,7 @@
         "title_wMRzQ5": {
           "type": "title",
           "settings": {
-            "title": "<strong>Resuelve _tus dudas_ importantes</strong>",
+            "title": "<strong>Lo que suelen _preguntarnos</strong>",
             "title_color": "#000000",
             "title_highlight_color": "#478641",
             "custom_font": false,
@@ -1467,7 +1468,7 @@
         "subtitle_EvXGjz": {
           "type": "subtitle",
           "settings": {
-            "subtitle": "<p><strong>Información clara para que sepas cómo integrar Ashwagandha Liposomal a tu rutina diaria.</strong></p>",
+            "subtitle": "<p>Sobre Ashwagandha Liposomal de Fitoheal.</p>",
             "subtitle_color": "#121212",
             "custom_font": false,
             "subtitle_as": "p",
@@ -1511,28 +1512,28 @@
           "type": "faq_item",
           "settings": {
             "question": "<strong>¿Para qué sirve la Ashwagandha Liposomal?</strong>",
-            "answer": "<p>Apoya el manejo del estrés diario, favorece el equilibrio emocional y contribuye a una mejor calidad de descanso.</p>"
+            "answer": "<p>Para regular el cortisol — la hormona del estrés — y ayudarle a tu sistema nervioso a descansar. Si al final del día tu mente sigue acelerada, duermes mal o te despiertas sin energía, la Ashwagandha actúa en la raíz de eso.</p>"
           }
         },
         "faq_item_2_ohlkGR": {
           "type": "faq_item",
           "settings": {
             "question": "<strong>¿Cómo debo tomarla?</strong>",
-            "answer": "<p><strong>Tomar de 1 a 2 cápsulas al día con agua, según tu rutina y tolerancia.</strong></p>"
+            "answer": "<p>1 a 2 cápsulas al día con agua, preferiblemente en la tarde o noche. Tómala a la misma hora todos los días — la constancia es lo que hace la diferencia, no la dosis.</p>"
           }
         },
         "faq_item_3_aKHWJF": {
           "type": "faq_item",
           "settings": {
             "question": "<strong>¿Qué diferencia tiene la tecnología liposomal?</strong>",
-            "answer": "<p>Ayuda a proteger y transportar los activos para favorecer una mejor absorción y aprovechamiento en el organismo.</p>"
+            "answer": "<p>La Ashwagandha normal se degrada en el estómago antes de llegar a donde tiene que actuar. La versión liposomal está protegida por una capa de grasa idéntica a la de tus células — entra directo al sistema nervioso y hace lo que tiene que hacer.</p>"
           }
         },
         "faq_item_4_jrk0ZU": {
           "type": "faq_item",
           "settings": {
             "question": "<strong>¿Tiene estimulantes?</strong>",
-            "answer": "<p>No. Es una fórmula pensada para apoyar la calma, el equilibrio y el bienestar diario sin depender de estimulantes.</p>"
+            "answer": "<p>No tiene estimulantes. No te da sueño directamente — te relaja. La diferencia es importante: no te va a dejar aturdido, pero sí puedes notar que es más fácil desconectarte y conciliar el sueño.</p>"
           }
         }
       },
