@@ -700,7 +700,7 @@
           "type": "heading",
           "settings": {
             "heading_alignment": "center",
-            "heading": "_Equilibrio metabólico_, paso a paso",
+            "heading": "_Lo que puedes esperar,_ semana a semana.",
             "heading_custom_font": false,
             "heading_as": "h3",
             "heading_font": "poppins_n4",
@@ -761,24 +761,24 @@
           "type": "timeline_item",
           "settings": {
             "subheading": "Primeros días",
-            "heading": "Apoyo diario",
-            "description": "<p>Integra la berberina a tu rutina para acompañar tu bienestar metabólico.</p>"
+            "heading": "Energía más estable",
+            "description": "<p>Algunos notan menos variaciones de energía durante el día — menos somnolencia post-comida, menos urgencia antes de comer. El metabolismo empieza a responder.</p>"
           }
         },
         "timeline_item_2_3Qr27B": {
           "type": "timeline_item",
           "settings": {
             "subheading": "Semanas 2–4",
-            "heading": "Mayor equilibrio",
-            "description": "<p>Con el uso constante, puede apoyar el metabolismo y el bienestar digestivo.</p>"
+            "heading": "El metabolismo encuentra equilibrio",
+            "description": "<p>La glucosa se estabiliza. La digestión mejora. Con alimentación saludable de por medio, el cuerpo empieza a responder de forma más predecible.</p>"
           }
         },
         "timeline_item_3_6WDi7E": {
           "type": "timeline_item",
           "settings": {
             "subheading": "Uso continuo",
-            "heading": "Bienestar integral",
-            "description": "<p>Contribuye al equilibrio de la glucosa, la digestión y el cuidado antioxidante.</p>"
+            "heading": "Cambios medibles en sangre",
+            "description": "<p>Glucosa en ayunas, hemoglobina glicosilada (marcador de glucosa promedio en los últimos 3 meses), colesterol y triglicéridos — los cambios se evidencian en los exámenes de laboratorio.</p>"
           }
         }
       },
