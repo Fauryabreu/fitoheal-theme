@@ -57,7 +57,7 @@
         "text_WKhTaO": {
           "type": "text",
           "settings": {
-            "text": "<p>_Apoya el descanso_, contribuye a la relajación muscular y _favorece el equilibrio del sistema nervioso._</p>",
+            "text": "<p>_Tu cuerpo carga la tensión que acumulaste hace semanas_. El glicinato de magnesio le da permiso de soltar.</p>",
             "text_highlight_color": "#d7fca3",
             "text_highlight_text_color": "#111111",
             "text_color": "#555555",
@@ -160,7 +160,7 @@
         "description_4X83w7": {
           "type": "description",
           "settings": {
-            "description_text": "<p>Una fórmula liposomal de alta absorción diseñada para apoyar tu descanso, relajación y bienestar diario.</p>",
+            "description_text": "<p>Una fórmula liposomal que combina magnesio con glicina — un aminoácido (bloque básico de proteínas) con efecto relajante propio — para aflojar la tensión muscular y preparar el sistema nervioso para dormir profundo.</p>",
             "description_color": "#111111",
             "description_font_size": 16,
             "description_font_size_mobile": 14,
