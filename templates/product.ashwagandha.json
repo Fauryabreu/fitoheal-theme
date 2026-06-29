@@ -639,7 +639,7 @@
           "type": "heading",
           "settings": {
             "content_alignment": "left",
-            "title": "<strong>Tecnología _liposomal para una mejor absorción</strong>",
+            "title": "<strong>Para cuando el día terminó, _pero tu cabeza sigue</strong>",
             "title_color": "#000000",
             "title_highlight_color": "#478641",
             "custom_title_font": false,
@@ -663,29 +663,29 @@
         "benefit_1_5lAsTN": {
           "type": "benefit",
           "settings": {
-            "title": "<strong>Alta absorción X5</strong>",
-            "text": "Favorece mayor disponibilidad del activo."
+            "title": "<strong>Baja el cortisol</strong>",
+            "text": "Regula la hormona del estrés — el mensajero químico que mantiene tu sistema nervioso en alerta — para que tu cuerpo pueda descansar de verdad."
           }
         },
         "benefit_2_WLkZAU": {
           "type": "benefit",
           "settings": {
-            "title": "<strong>Mejor aprovechamiento</strong>",
-            "text": "Ayuda a que cada cápsula trabaje mejor."
+            "title": "<strong>Calma sin somnolencia</strong>",
+            "text": "No te duerme, te relaja. Puedes tomarlo y seguir con tu tarde sin sentirte aturdido ni con la cabeza pesada."
           }
         },
         "benefit_3_XK8kZV": {
           "type": "benefit",
           "settings": {
-            "title": "<strong>Uso constante</strong>",
-            "text": "Apoya una experiencia más estable."
+            "title": "<strong>Mejor calidad de sueño</strong>",
+            "text": "No es que duermas más horas — es que las horas que duermes, descansan de verdad. Menos vueltas en la cama, más recuperación real."
           }
         },
         "benefit_4_gPhHh1": {
           "type": "benefit",
           "settings": {
-            "title": "<strong>Rutina fácil</strong>",
-            "text": "Cápsulas prácticas para el día a día."
+            "title": "<strong>Sin estimulantes</strong>",
+            "text": "Sin cafeína, sin rebote, sin dependencia. El efecto se construye con la constancia, no con una dosis cada vez más alta."
           }
         }
       },
