@@ -670,22 +670,22 @@
         "benefit_2_WLkZAU": {
           "type": "benefit",
           "settings": {
-            "title": "<strong>Mejor aprovechamiento</strong>",
-            "text": "Ayuda a que cada cápsula trabaje mejor."
+            "title": "<strong>Calma el sistema nervioso</strong>",
+            "text": "La glicina — el aminoácido al que está unido el magnesio — tiene efecto inhibidor sobre el sistema nervioso: baja la actividad eléctrica y prepara al cerebro para el sueño."
           }
         },
         "benefit_3_XK8kZV": {
           "type": "benefit",
           "settings": {
-            "title": "<strong>Uso constante</strong>",
-            "text": "Apoya una experiencia más estable."
+            "title": "<strong>Sueño más profundo y reparador</strong>",
+            "text": "No más horas de sueño — mejor calidad. Menos interrupciones, más recuperación real, y amanecer con energía en lugar de cansancio."
           }
         },
         "benefit_4_gPhHh1": {
           "type": "benefit",
           "settings": {
-            "title": "<strong>Rutina fácil</strong>",
-            "text": "Cápsulas prácticas para el día a día."
+            "title": "<strong>Suave con el estómago</strong>",
+            "text": "A diferencia de otras formas de magnesio, el glicinato no causa molestias digestivas ni efecto laxante. Es la forma mejor tolerada."
           }
         }
       },
