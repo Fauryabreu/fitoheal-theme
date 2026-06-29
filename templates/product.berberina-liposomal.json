@@ -160,7 +160,7 @@
         "description_4X83w7": {
           "type": "description",
           "settings": {
-            "description_text": "<p>Una fórmula liposomal de alta absorción basada en berberina — un compuesto vegetal que actúa sobre el metabolismo de la glucosa (el azúcar en sangre), el perfil lipídico (colesterol y triglicéridos) y el equilibrio digestivo.</p>",
+            "description_text": "<p>Una fórmula liposomal de alta absorción basada en berberina — un compuesto vegetal que actúa sobre el metabolismo de la glucosa (el azúcar en sangre), el perfil lipídico (colesterol y triglicéridos) y el equilibrio digestivo.</p><p>⚠  No combinar con medicamentos para diabetes (metformina, insulina), anticoagulantes ni medicamentos para la presión sin supervisión médica. No recomendado en embarazo ni lactancia.</p>",
             "description_color": "#111111",
             "description_font_size": 16,
             "description_font_size_mobile": 14,
@@ -412,7 +412,7 @@
         "section_max_width": 120,
         "padding_desktop": 60,
         "padding_tablet_mobile": 0,
-        "margin_desktop": 0,
+        "margin_desktop": 27,
         "margin_bottom_desktop": 0,
         "margin_tablet_mobile": 0,
         "margin_bottom_tablet_mobile": 0,
