@@ -412,7 +412,7 @@
         "section_max_width": 120,
         "padding_desktop": 60,
         "padding_tablet_mobile": 0,
-        "margin_desktop": 0,
+        "margin_desktop": 22,
         "margin_bottom_desktop": 0,
         "margin_tablet_mobile": 0,
         "margin_bottom_tablet_mobile": 0,
