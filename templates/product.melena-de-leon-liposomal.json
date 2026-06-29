@@ -412,7 +412,7 @@
         "section_max_width": 120,
         "padding_desktop": 60,
         "padding_tablet_mobile": 0,
-        "margin_desktop": 0,
+        "margin_desktop": 25,
         "margin_bottom_desktop": 0,
         "margin_tablet_mobile": 0,
         "margin_bottom_tablet_mobile": 0,
@@ -449,7 +449,7 @@
             "subtitle_letter_spacing": 1,
             "subtitle_color": "#ffffff",
             "subtitle_spacing": 16,
-            "title": "<strong>Claridad mental que tu cuerpo puede aprovechar mejor.</strong>",
+            "title": "<strong>Esto es para ti si...</strong>",
             "title_custom_font": false,
             "title_as": "h2",
             "title_font": "poppins_n6",
@@ -459,10 +459,10 @@
             "title_line_height": 120,
             "title_letter_spacing": 0,
             "title_color_type": "solid",
-            "title_color": "#ffffff",
+            "title_color": "#0CC172",
             "title_gradient": "linear-gradient(135deg, #EC4899 0%, #F472B6 100%)",
             "title_spacing": 16,
-            "text": "Transform your lashes with:",
+            "text": "",
             "text_custom_font": false,
             "text_as": "p",
             "text_font": "poppins_n4",
@@ -498,29 +498,29 @@
         "feature_1_iokXup": {
           "type": "feature",
           "settings": {
-            "feature_title": "<strong>Alta absorción X5</strong>",
-            "feature_text": "Mejor aprovechamiento del activo."
+            "feature_title": "<strong>Tu mente llega al mediodía y ya no responde</strong>",
+            "feature_text": "Empiezas el día con intención, pero a las 2 pm no puedes con una tarea. La energía mental se agota antes de que el día acabe."
           }
         },
         "feature_2_n0zBc0": {
           "type": "feature",
           "settings": {
-            "feature_title": "<strong>Memoria y enfoque</strong>",
-            "feature_text": "Apoya la claridad mental diaria."
+            "feature_title": "<strong>Necesitas cafeína solo para funcionar con normalidad</strong>",
+            "feature_text": "No es que te guste el café. Es que sin él no arrancas. Y aun con él, la concentración no dura."
           }
         },
         "feature_3_2EfXxK": {
           "type": "feature",
           "settings": {
-            "feature_title": "<strong>Tecnología liposomal</strong>",
-            "feature_text": "Ayuda a proteger y transportar sus componentes."
+            "feature_title": "<strong>Sientes niebla mental — que tu cabeza no está clara</strong>",
+            "feature_text": "Olvidas cosas que no deberías olvidar. Pierdes el hilo. Te cuesta procesar información rápido. No es falta de sueño — es que la mente no responde."
           }
         },
         "feature_4_w0MBJV": {
           "type": "feature",
           "settings": {
-            "feature_title": "<strong>Bienestar integral</strong>",
-            "feature_text": "Favorece sistema inmune y digestivo."
+            "feature_title": "<strong>Tienes períodos de alta exigencia cognitiva</strong>",
+            "feature_text": "Estudio, proyectos, trabajo que requiere enfoque sostenido. Necesitas que tu cerebro funcione a nivel alto por horas, no por minutos."
           }
         }
       },
