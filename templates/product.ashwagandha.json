@@ -1535,6 +1535,13 @@
             "question": "<strong>¿Tiene estimulantes o me va a dar sueño?</strong>",
             "answer": "<p>No tiene estimulantes. No te da sueño directamente — te relaja. La diferencia es importante: no te va a dejar aturdido, pero sí puedes notar que es más fácil desconectarte y conciliar el sueño.</p>"
           }
+        },
+        "faq_item_mAMQx3": {
+          "type": "faq_item",
+          "settings": {
+            "question": "<strong>¿Y si lo tomo y no siento nada?</strong>",
+            "answer": "<p>Verificar primero la constancia — la Ashwagandha necesita 2 a 4 semanas de uso diario para regular el cortisol de forma estable. Si llevas un mes tomándola correctamente y no notas diferencia, escríbenos. Te ayudamos a evaluar si es el producto correcto para ti.</p>"
+          }
         }
       },
       "block_order": [
@@ -1544,7 +1551,8 @@
         "faq_item_1_nCxGYg",
         "faq_item_2_ohlkGR",
         "faq_item_3_aKHWJF",
-        "faq_item_4_jrk0ZU"
+        "faq_item_4_jrk0ZU",
+        "faq_item_mAMQx3"
       ],
       "name": "VSO - FAQ 02",
       "settings": {
