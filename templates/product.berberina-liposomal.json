@@ -1054,6 +1054,7 @@
         "card_item_7_TC3pr9",
         "card_item_8_9b3ZpQ"
       ],
+      "disabled": true,
       "name": "VSO - Hero 45",
       "settings": {
         "enable_advanced_settings": false,
@@ -1555,7 +1556,7 @@
         "title_wMRzQ5": {
           "type": "title",
           "settings": {
-            "title": "<strong>Resuelve _tus dudas_ importantes</strong>",
+            "title": "<strong>Lo que suelen _preguntarnos</strong>",
             "title_color": "#000000",
             "title_highlight_color": "#478641",
             "custom_font": false,
@@ -1574,7 +1575,7 @@
         "subtitle_EvXGjz": {
           "type": "subtitle",
           "settings": {
-            "subtitle": "<p><strong>Información clara para saber cómo integrar Berberina Liposomal a tu rutina diaria.</strong></p>",
+            "subtitle": "<p>Sobre Berberina Liposomal de Fitoheal.</p>",
             "subtitle_color": "#121212",
             "custom_font": false,
             "subtitle_as": "p",
@@ -1618,28 +1619,35 @@
           "type": "faq_item",
           "settings": {
             "question": "<strong>¿Para qué sirve la Berberina Liposomal?</strong>",
-            "answer": "<p><strong>Apoya el metabolismo, contribuye al equilibrio de la glucosa y favorece el bienestar digestivo diario.</strong> Estos son los claims recomendados para e-commerce en berberina, junto con su acción antioxidante. </p>"
+            "answer": "<p>Para apoyar el metabolismo de la glucosa (azúcar en sangre), mejorar el perfil lipídico (colesterol y triglicéridos) y equilibrar la microbiota intestinal (las bacterias que regulan la digestión y el metabolismo). Es para quien siente que su cuerpo no responde metabólicamente como debería.</p>"
           }
         },
         "faq_item_2_ohlkGR": {
           "type": "faq_item",
           "settings": {
             "question": "<strong>¿Cómo debo tomarla?</strong>",
-            "answer": "<p><strong>Tomar de 1 a 2 cápsulas al día con agua, preferiblemente junto a una comida o según tu rutina diaria.</strong> La etiqueta indica uso oral y dosis de 1 a 2 cápsulas al día. </p>"
+            "answer": "<p>1 a 2 cápsulas con las comidas principales. La berberina actúa mejor cuando hay glucosa que regular — tomarla en ayunas reduce su efectividad.</p>"
           }
         },
         "faq_item_3_aKHWJF": {
           "type": "faq_item",
           "settings": {
-            "question": "<strong>¿Qué diferencia tiene la tecnología liposomal?</strong>",
-            "answer": "<p><strong>La tecnología liposomal ayuda a proteger y transportar los activos para favorecer una mejor absorción y aprovechamiento en el organismo.</strong> Fitoheal posiciona toda la línea con enfoque de “Alta absorción X5”.</p>"
+            "question": "<strong>¿Reemplaza los medicamentos para la diabetes?</strong>",
+            "answer": "<p>No. La berberina es un complemento natural — no reemplaza medicamentos ni tratamientos médicos. Si tienes diabetes tipo 2 o prediabetes y tomas medicación, consulta con tu médico antes de tomar berberina, ya que puede interactuar con algunos medicamentos antidiabéticos.</p>"
           }
         },
         "faq_item_4_jrk0ZU": {
           "type": "faq_item",
           "settings": {
-            "question": "<strong>¿Tiene estimulantes?</strong>",
-            "answer": "<p><strong>Sí, puede integrarse como parte de una rutina diaria de bienestar.</strong> Si estás embarazada, en lactancia o bajo tratamiento médico, consulta con un profesional de salud antes de usarla. La etiqueta también indica mantener fuera del alcance de los niños. </p>"
+            "question": "<strong>¿En cuánto tiempo noto cambios?</strong>",
+            "answer": "<p>La energía más estable puede notarse en las primeras semanas. Los cambios en glucosa y colesterol son medibles en exámenes después de 8 a 12 semanas de uso constante.</p>"
+          }
+        },
+        "faq_item_y3yt3i": {
+          "type": "faq_item",
+          "settings": {
+            "question": "<strong>¿Y si lo tomo y no siento nada?</strong>",
+            "answer": "<p>La berberina actúa sobre marcadores que no siempre se sienten directamente — glucosa, colesterol, triglicéridos. El mejor indicador son los exámenes de sangre después de 3 meses de uso. Si no hay cambios, escríbenos.</p>"
           }
         }
       },
@@ -1650,7 +1658,8 @@
         "faq_item_1_nCxGYg",
         "faq_item_2_ohlkGR",
         "faq_item_3_aKHWJF",
-        "faq_item_4_jrk0ZU"
+        "faq_item_4_jrk0ZU",
+        "faq_item_y3yt3i"
       ],
       "name": "VSO - FAQ 02",
       "settings": {
