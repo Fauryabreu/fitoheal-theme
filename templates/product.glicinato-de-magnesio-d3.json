@@ -342,7 +342,7 @@
             "subtitle_letter_spacing": 1,
             "subtitle_color": "#ffffff",
             "subtitle_spacing": 16,
-            "title": "<strong>Apoya tu descanso desde adentro.</strong>",
+            "title": "<strong>Esto es para ti si...</strong>",
             "title_custom_font": false,
             "title_as": "h2",
             "title_font": "poppins_n6",
@@ -391,29 +391,29 @@
         "feature_1_iokXup": {
           "type": "feature",
           "settings": {
-            "feature_title": "<strong>Relajación muscular</strong>",
-            "feature_text": "Ayuda a reducir la sensación de tensión corporal."
+            "feature_title": "<strong>Duermes pero te despiertas sin haber descansado</strong>",
+            "feature_text": "El sueño es superficial. Cualquier ruido te despierta. Amaneces rígido o con el cuerpo tenso sin razón aparente."
           }
         },
         "feature_2_n0zBc0": {
           "type": "feature",
           "settings": {
-            "feature_title": "<strong>Sistema nervioso</strong>",
-            "feature_text": "Favorece el equilibrio y la calma diaria."
+            "feature_title": "<strong>Cargas tensión en el cuerpo sin darte cuenta</strong>",
+            "feature_text": "Cuello apretado, mandíbula tensa, espalda que no suelta. Tu cuerpo está acumulando lo que tu mente no procesa."
           }
         },
         "feature_3_2EfXxK": {
           "type": "feature",
           "settings": {
-            "feature_title": "<strong>Apoya el sueño</strong>",
-            "feature_text": "Contribuye a una rutina de descanso más estable."
+            "feature_title": "<strong>Tienes ansiedad que no tiene una causa específica</strong>",
+            "feature_text": "No es miedo a algo concreto. Es una inquietud de fondo que hace difícil relajarte incluso cuando no pasa nada."
           }
         },
         "feature_4_w0MBJV": {
           "type": "feature",
           "settings": {
-            "feature_title": "<strong>Alta absorción X5</strong>",
-            "feature_text": "Tecnología liposomal para mejor aprovechamiento."
+            "feature_title": "<strong>Buscas un apoyo para el sueño sin somníferos</strong>",
+            "feature_text": "No quieres algo que te deje aturdido o del que dependas. Quieres que tu cuerpo aprenda a descansar solo."
           }
         }
       },
