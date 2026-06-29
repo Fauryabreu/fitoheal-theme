@@ -160,7 +160,7 @@
         "description_4X83w7": {
           "type": "description",
           "settings": {
-            "description_text": "<p>Una fórmula liposomal de alta absorción que regula el cortisol — la hormona que le dice a tu cuerpo que está en peligro — para que puedas desconectarte al final del día y descansar de verdad.</p>",
+            "description_text": "<p>Una fórmula liposomal de alta absorción que regula el cortisol — la hormona que le dice a tu cuerpo que está en peligro — para que puedas desconectarte al final del día y descansar de verdad.</p><p>⚠  Para embarazadas, personas en lactancia o quienes toman medicamentos para tiroides, presión o diabetes: consultar con un médico antes de tomar Ashwagandha.</p>",
             "description_color": "#111111",
             "description_font_size": 16,
             "description_font_size_mobile": 14,
@@ -1540,7 +1540,7 @@
           "type": "faq_item",
           "settings": {
             "question": "<strong>¿Y si lo tomo y no siento nada?</strong>",
-            "answer": "<p>Verificar primero la constancia — la Ashwagandha necesita 2 a 4 semanas de uso diario para regular el cortisol de forma estable. Si llevas un mes tomándola correctamente y no notas diferencia, escríbenos. Te ayudamos a evaluar si es el producto correcto para ti.</p>"
+            "answer": "<p>Verificar primero la constancia — la Ashwagandha necesita 2 a 4 semanas de uso diario para regular el cortisol de forma estable. Si llevas un mes tomándola correctamente y no notas diferencia, escríbenos. Te ayudamos a evaluar si es el producto correcto para ti.<br/></p>"
           }
         }
       },
