@@ -1556,7 +1556,7 @@
         "title_wMRzQ5": {
           "type": "title",
           "settings": {
-            "title": "<strong>Resuelve _tus dudas_ importantes</strong>",
+            "title": "<strong>Lo que suelen _preguntarnos</strong>",
             "title_color": "#000000",
             "title_highlight_color": "#478641",
             "custom_font": false,
@@ -1575,7 +1575,7 @@
         "subtitle_EvXGjz": {
           "type": "subtitle",
           "settings": {
-            "subtitle": "<p>Información clara para saber cómo integrar Citrato de Magnesio D3 Liposomal a tu rutina digestiva, intestinal y muscular.</p>",
+            "subtitle": "<p>Sobre Citrato de Magnesio Liposomal de Fitoheal.</p>",
             "subtitle_color": "#121212",
             "custom_font": false,
             "subtitle_as": "p",
