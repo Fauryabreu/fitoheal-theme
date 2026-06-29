@@ -57,7 +57,7 @@
         "text_WKhTaO": {
           "type": "text",
           "settings": {
-            "text": "<p>Tecnología liposomal de _alta absorción diseñada para ayudar a tu cuerpo a aprovechar mejor el magnesio_, apoyando la digestión, la salud intestinal y la función muscular.</p>",
+            "text": "<p>Tu intestino trabaja en tu contra. El _Citrato de Magnesio lo pone a trabajar contigo.</p>",
             "text_highlight_color": "#d7fca3",
             "text_highlight_text_color": "#111111",
             "text_color": "#555555",
@@ -160,7 +160,7 @@
         "description_4X83w7": {
           "type": "description",
           "settings": {
-            "description_text": "<p>No es solo magnesio. Es una fórmula liposomal pensada para favorecer una mejor absorción y acompañar tu bienestar digestivo diario.</p>",
+            "description_text": "<p>Una fórmula liposomal de alta absorción que actúa directo en el tracto intestinal — el tubo que va del estómago al intestino grueso — para regularizar el tránsito, reducir la hinchazón y devolver el equilibrio digestivo.</p>",
             "description_color": "#111111",
             "description_font_size": 16,
             "description_font_size_mobile": 14,
@@ -177,7 +177,7 @@
           "type": "collapsible_row",
           "settings": {
             "title": "¿Cómo funciona el Citrato de Magnesio Liposomal?",
-            "content": "<p>El citrato de magnesio apoya funciones clave como la digestión, la salud intestinal y la función muscular. Su tecnología liposomal ayuda a proteger y transportar el activo para favorecer una mejor absorción y aprovechamiento.</p>",
+            "content": "<p>El citrato de magnesio actúa en el intestino estimulando la motilidad intestinal — la capacidad del intestino de moverse y avanzar el contenido. Eso regulariza el tránsito, reduce la acumulación y alivia la hinchazón. Es la forma de magnesio más indicada cuando el problema es digestivo.</p>",
             "margin_top_desktop": 0,
             "margin_bottom_desktop": 0,
             "margin_top_mobile": 0,
@@ -188,7 +188,7 @@
           "type": "collapsible_row",
           "settings": {
             "title": "¿Cuándo debo tomarla?",
-            "content": "<p>Tomar de <strong>1 a 2 cápsulas al día</strong> con agua, preferiblemente junto a una comida o según tu rutina diaria. </p>",
+            "content": "<p>Con las comidas principales, preferiblemente en la mañana. Tomar 1 a 2 cápsulas con agua.</p>",
             "margin_top_desktop": 0,
             "margin_bottom_desktop": 0,
             "margin_top_mobile": 0,
@@ -199,7 +199,7 @@
           "type": "collapsible_row",
           "settings": {
             "title": "¿En cuánto tiempo puedo notar cambios?",
-            "content": "<p>Cada cuerpo responde de manera diferente. Con el uso constante, puede apoyar una mejor sensación digestiva, bienestar intestinal y equilibrio muscular.</p>",
+            "content": "<p>El tránsito intestinal suele regularizarse en la primera o segunda semana de uso constante. La hinchazón y la pesadez pueden mejorar antes.</p>",
             "margin_top_desktop": 0,
             "margin_bottom_desktop": 0,
             "margin_top_mobile": 0,
@@ -342,7 +342,7 @@
             "subtitle_letter_spacing": 1,
             "subtitle_color": "#ffffff",
             "subtitle_spacing": 16,
-            "title": "<strong>Magnesio diseñado para aprovecharse mejor.</strong>",
+            "title": "<strong>Esto es para ti si...</strong>",
             "title_custom_font": false,
             "title_as": "h2",
             "title_font": "poppins_n6",
@@ -391,29 +391,29 @@
         "feature_1_iokXup": {
           "type": "feature",
           "settings": {
-            "feature_title": "<strong>Alta absorción X5</strong>",
-            "feature_text": "Mejor aprovechamiento del magnesio."
+            "feature_title": "<strong>Comes y quedas pesado o hinchado</strong>",
+            "feature_text": "No importa qué comiste. El malestar aparece solo y se instala por horas. Tu digestión no procesa con fluidez."
           }
         },
         "feature_2_n0zBc0": {
           "type": "feature",
           "settings": {
-            "feature_title": "<strong>Digestión diaria</strong>",
-            "feature_text": "Apoya una rutina digestiva más ligera."
+            "feature_title": "<strong>Tu tránsito intestinal es irregular</strong>",
+            "feature_text": "Días que funciona, días que no. Esa inconsistencia afecta tu energía, tu ánimo y cómo te sientes en general."
           }
         },
         "feature_3_2EfXxK": {
           "type": "feature",
           "settings": {
-            "feature_title": "<strong>Tecnología liposomal</strong>",
-            "feature_text": "Ayuda a proteger y transportar el activo."
+            "feature_title": "<strong>Sientes que la comida se queda atascada</strong>",
+            "feature_text": "Lentitud digestiva, sensación de acumulación. Tu intestino no avanza al ritmo que debería."
           }
         },
         "feature_4_w0MBJV": {
           "type": "feature",
           "settings": {
-            "feature_title": "<strong>Función muscular</strong>",
-            "feature_text": "Contribuye al bienestar muscular."
+            "feature_title": "<strong>El estrés te lo cobra en el estómago</strong>",
+            "feature_text": "En Colombia el estrés laboral tiene consecuencias digestivas directas — gastritis, colon irritable, inflamación intestinal. Si eso te suena familiar, esto es para ti."
           }
         }
       },
