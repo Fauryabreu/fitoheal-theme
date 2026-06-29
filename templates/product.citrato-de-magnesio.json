@@ -700,7 +700,7 @@
           "type": "heading",
           "settings": {
             "heading_alignment": "center",
-            "heading": "_Digestión y absorción,_ paso a paso",
+            "heading": "_Lo que puedes esperar,_ semana a semana.",
             "heading_custom_font": false,
             "heading_as": "h3",
             "heading_font": "poppins_n4",
@@ -761,24 +761,24 @@
           "type": "timeline_item",
           "settings": {
             "subheading": "Primeros días",
-            "heading": "Tu cuerpo empieza a aprovechar mejor el magnesio",
-            "description": "<p>La tecnología liposomal ayuda a proteger y transportar el activo para favorecer una mejor absorción dentro de tu rutina diaria.</p>"
+            "heading": "El intestino empieza a responder",
+            "description": "<p>El citrato de magnesio activa la motilidad intestinal. La hinchazón y la pesadez después de comer suelen ser lo primero en mejorar.</p>"
           }
         },
         "timeline_item_2_3Qr27B": {
           "type": "timeline_item",
           "settings": {
             "subheading": "Semanas 2–4",
-            "heading": "Apoyo digestivo más constante",
-            "description": "<p>Con el uso continuo, puede favorecer una mejor sensación digestiva y apoyar el bienestar intestinal.</p>"
+            "heading": "Tránsito más regular",
+            "description": "<p>Con uso constante, el intestino encuentra un ritmo más estable. Menos días 'atascados', menos variabilidad. La digestión se vuelve más predecible.</p>"
           }
         },
         "timeline_item_3_6WDi7E": {
           "type": "timeline_item",
           "settings": {
             "subheading": "Uso continuo",
-            "heading": "Bienestar muscular y digestivo",
-            "description": "<p>Contribuye al apoyo de la función muscular, la salud intestinal y el equilibrio digestivo diario.</p>"
+            "heading": "Una digestión que no interrumpe tu día",
+            "description": "<p>El objetivo no es que no exista — es que no moleste. Comer sin preocuparte por cómo vas a sentirte después. Eso es lo que el uso constante construye.</p>"
           }
         }
       },
