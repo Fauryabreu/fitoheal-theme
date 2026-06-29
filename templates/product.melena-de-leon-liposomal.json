@@ -160,7 +160,7 @@
         "description_4X83w7": {
           "type": "description",
           "settings": {
-            "description_text": "<p>Una fórmula liposomal basada en Hericium erinaceus — el hongo medicinal conocido como Lion's Mane o Melena de León — que estimula la producción de NGF (Factor de Crecimiento Nervioso), una proteína esencial para la salud y la regeneración de las neuronas.</p>",
+            "description_text": "<p>Una fórmula liposomal basada en Hericium erinaceus — el hongo medicinal conocido como Lion's Mane o Melena de León — que estimula la producción de NGF (Factor de Crecimiento Nervioso), una proteína esencial para la salud y la regeneración de las neuronas.</p><p>⚠  Personas con alergia a los hongos consultar antes de tomar. Seguro en general para adultos sanos. No recomendado en embarazo sin supervisión médica.</p>",
             "description_color": "#111111",
             "description_font_size": 16,
             "description_font_size_mobile": 14,
@@ -1556,7 +1556,7 @@
         "title_wMRzQ5": {
           "type": "title",
           "settings": {
-            "title": "<strong>Resuelve _tus dudas_ importantes</strong>",
+            "title": "<strong>Lo que suelen _preguntarnos</strong>",
             "title_color": "#000000",
             "title_highlight_color": "#478641",
             "custom_font": false,
@@ -1575,7 +1575,7 @@
         "subtitle_EvXGjz": {
           "type": "subtitle",
           "settings": {
-            "subtitle": "<p>Información clara para saber cómo integrar Melena de León Liposomal a tu rutina diaria de enfoque, memoria y bienestar.</p>",
+            "subtitle": "<p>Sobre Melena de León Liposomal de Fitoheal.</p>",
             "subtitle_color": "#121212",
             "custom_font": false,
             "subtitle_as": "p",
@@ -1619,28 +1619,35 @@
           "type": "faq_item",
           "settings": {
             "question": "<strong>¿Para qué sirve la Melena de León Liposomal?</strong>",
-            "answer": "<p>Apoya la memoria, la concentración y el bienestar cognitivo diario. Además, puede contribuir al sistema inmune y favorecer la salud digestiva.</p>"
+            "answer": "<p>Para mejorar la claridad mental, la concentración y la memoria. Actúa estimulando el NGF (Factor de Crecimiento Nervioso) — la proteína que cuida y regenera las neuronas. Si sientes niebla mental, falta de enfoque o dependencia excesiva de cafeína para funcionar, el Lion's Mane actúa en la raíz de eso.</p>"
           }
         },
         "faq_item_2_ohlkGR": {
           "type": "faq_item",
           "settings": {
-            "question": "<strong>¿Cómo debo tomarla?</strong>",
-            "answer": "<p><strong>Tomar de 1 a 2 cápsulas al día con agua, según tu rutina y tolerancia.</strong></p>"
+            "question": "<strong>¿Cómo debo tomarlo?</strong>",
+            "answer": "<p>1 a 2 cápsulas en la mañana con el desayuno. El Lion's Mane no actúa como un estimulante — su efecto es gradual. Tomarlo en la mañana lo integra al momento del día de mayor demanda cognitiva.</p>"
           }
         },
         "faq_item_3_aKHWJF": {
           "type": "faq_item",
           "settings": {
-            "question": "<strong>¿Qué diferencia tiene la tecnología liposomal?</strong>",
-            "answer": "<p>La tecnología liposomal ayuda a proteger y transportar los activos de la Melena de León para favorecer una mejor absorción y aprovechamiento en el organismo.</p>"
+            "question": "<strong>¿Es lo mismo que tomar cafeína?</strong>",
+            "answer": "<p>No. La cafeína bloquea los receptores de adenosina — la molécula que produce sueño — y da una sensación de alerta artificial que luego cae. El Lion's Mane mejora la función neuronal real, sin estimular artificialmente ni generar rebote o dependencia.</p>"
           }
         },
         "faq_item_4_jrk0ZU": {
           "type": "faq_item",
           "settings": {
-            "question": "<strong>¿Tiene estimulantes?</strong>",
-            "answer": "<p>No. Su enfoque principal es el soporte cognitivo, pero también puede apoyar funciones relacionadas con el sistema inmune y digestivo, según los beneficios descritos en la etiqueta. </p>"
+            "question": "<strong>¿Puedo tomarlo con café?</strong>",
+            "answer": "<p>Sí. Son mecanismos distintos y compatibles. Muchas personas los combinan — el café para el inicio inmediato del día y el Lion's Mane para la claridad sostenida de largo plazo.</p>"
+          }
+        },
+        "faq_item_Axxypx": {
+          "type": "faq_item",
+          "settings": {
+            "question": "<strong>¿Y si lo tomo y no siento nada?</strong>",
+            "answer": "<p>El Lion's Mane necesita tiempo — sus cambios son graduales. Si después de 6 semanas de uso diario no notas diferencia en claridad o enfoque, escríbenos para evaluar si es el producto correcto o si hay algo que ajustar en la rutina.</p>"
           }
         }
       },
@@ -1651,7 +1658,8 @@
         "faq_item_1_nCxGYg",
         "faq_item_2_ohlkGR",
         "faq_item_3_aKHWJF",
-        "faq_item_4_jrk0ZU"
+        "faq_item_4_jrk0ZU",
+        "faq_item_Axxypx"
       ],
       "name": "VSO - FAQ 02",
       "settings": {
