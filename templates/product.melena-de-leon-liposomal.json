@@ -875,7 +875,7 @@
         "description_gdagdr": {
           "type": "description",
           "settings": {
-            "text": "Nuestra fórmula está diseñada para favorecer una mejor absorción de los activos de la Melena de León, ayudando a que tu cuerpo los aproveche mejor dentro de tu rutina diaria de enfoque, memoria y claridad mental.",
+            "text": "Los compuestos activos del Lion's Mane — hericenonas y erinacinas — tienen baja solubilidad en agua, lo que dificulta su absorción en el intestino en forma estándar. La versión liposomal los envuelve en una capa de grasa que mejora su paso a través de la barrera digestiva y los lleva al sistema nervioso central — el cerebro y la médula espinal — donde tienen que actuar.",
             "text_custom": false,
             "text_font": "assistant_n4",
             "text_font_weight": "400",
@@ -1054,6 +1054,7 @@
         "card_item_7_TC3pr9",
         "card_item_8_9b3ZpQ"
       ],
+      "disabled": true,
       "name": "VSO - Hero 45",
       "settings": {
         "enable_advanced_settings": false,
