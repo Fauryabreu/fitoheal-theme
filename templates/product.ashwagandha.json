@@ -392,28 +392,28 @@
           "type": "feature",
           "settings": {
             "feature_title": "<strong>Llegas al final del día y tu cabeza no para</strong>",
-            "feature_text": "Favorece una respuesta más equilibrada frente al estrés diario."
+            "feature_text": "Trabajo, pendientes, conversaciones que no cerraron. Te acuestas y sigues procesando todo."
           }
         },
         "feature_2_n0zBc0": {
           "type": "feature",
           "settings": {
-            "feature_title": "<strong>Equilibrio emocional</strong>",
-            "feature_text": "Apoya la calma mental y el bienestar general durante el día."
+            "feature_title": "<strong>Duermes pero no descansas</strong>",
+            "feature_text": "Te despiertas antes de la alarma o amaneces cansado. Las horas de sueño están, la recuperación no."
           }
         },
         "feature_3_2EfXxK": {
           "type": "feature",
           "settings": {
-            "feature_title": "<strong>Mejor descanso</strong>",
-            "feature_text": "Contribuye a una rutina de sueño más estable y reparadora."
+            "feature_title": "<strong>El estrés ya no tiene una causa clara</strong>",
+            "feature_text": "No es un problema puntual. Es una tensión de fondo que llevas semanas cargando sin que nada la baje."
           }
         },
         "feature_4_w0MBJV": {
           "type": "feature",
           "settings": {
-            "feature_title": "<strong>Energía sin estimulantes</strong>",
-            "feature_text": "Ideal para sentirte más centrado, sin depender de cafeína o estimulantes."
+            "feature_title": "<strong>Quieres algo natural, sin pastillas para dormir</strong>",
+            "feature_text": "Buscas apoyo real sin depender de algo que te deje aturdido o sin el que no puedas funcionar."
           }
         }
       },
