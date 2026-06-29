@@ -1532,7 +1532,14 @@
         "faq_item_4_jrk0ZU": {
           "type": "faq_item",
           "settings": {
-            "question": "<strong>¿Tiene estimulantes?</strong>",
+            "question": "<strong>¿Tiene estimulantes o me va a dar sueño?</strong>",
+            "answer": "<p>No tiene estimulantes. No te da sueño directamente — te relaja. La diferencia es importante: no te va a dejar aturdido, pero sí puedes notar que es más fácil desconectarte y conciliar el sueño.</p>"
+          }
+        },
+        "faq_item_GQdqnW": {
+          "type": "faq_item",
+          "settings": {
+            "question": "<strong>¿Y si lo tomo y no siento nada?</strong>",
             "answer": "<p>No tiene estimulantes. No te da sueño directamente — te relaja. La diferencia es importante: no te va a dejar aturdido, pero sí puedes notar que es más fácil desconectarte y conciliar el sueño.</p>"
           }
         }
@@ -1544,7 +1551,8 @@
         "faq_item_1_nCxGYg",
         "faq_item_2_ohlkGR",
         "faq_item_3_aKHWJF",
-        "faq_item_4_jrk0ZU"
+        "faq_item_4_jrk0ZU",
+        "faq_item_GQdqnW"
       ],
       "name": "VSO - FAQ 02",
       "settings": {
