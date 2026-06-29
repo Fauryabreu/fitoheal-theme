@@ -160,7 +160,7 @@
         "description_4X83w7": {
           "type": "description",
           "settings": {
-            "description_text": "<p>Una fórmula liposomal de alta absorción diseñada para apoyar tu bienestar diario, la calma mental y la calidad del sueño.</p>",
+            "description_text": "<p>Una fórmula liposomal de alta absorción que regula el cortisol — la hormona que le dice a tu cuerpo que está en peligro — para que puedas desconectarte al final del día y descansar de verdad.</p>",
             "description_color": "#111111",
             "description_font_size": 16,
             "description_font_size_mobile": 14,
@@ -177,7 +177,7 @@
           "type": "collapsible_row",
           "settings": {
             "title": "¿Cómo funciona la Ashwagandha?",
-            "content": "<p>La Ashwagandha es un adaptógeno natural que ayuda al cuerpo a manejar mejor el estrés diario. Su fórmula liposomal favorece una mejor absorción, apoyando la calma mental, el equilibrio emocional y el descanso.</p>",
+            "content": "<p>Regula el cortisol — la hormona del estrés. Cuando el cortisol está elevado de forma crónica, tu sistema nervioso no sabe apagarse: sigues en alerta aunque ya no haya peligro. La Ashwagandha le indica al cuerpo que puede bajar la guardia.</p>",
             "margin_top_desktop": 0,
             "margin_bottom_desktop": 0,
             "margin_top_mobile": 0,
