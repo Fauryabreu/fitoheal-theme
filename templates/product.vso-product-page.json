@@ -38,7 +38,7 @@
         "title_bpx6jA": {
           "type": "title",
           "settings": {
-            "title_text": "Ashwagandha Withania Somnífera D3 Liposomal",
+            "title_text": "<strong>Ashwagandha Liposomal</strong>",
             "heading_tag": "h3",
             "title_custom_typography": true,
             "title_size": 30,
@@ -57,7 +57,7 @@
         "text_WKhTaO": {
           "type": "text",
           "settings": {
-            "text": "<p>Apoya el _equilibrio emocional_, ayuda a manejar el _estrés diario_ y favorece un _descanso_ de mejor calidad.</p>",
+            "text": "<p>Tu sistema nervioso lleva semanas en modo alerta. _La Ashwagandha lo ayuda a apagarse._</p>",
             "text_highlight_color": "#d7fca3",
             "text_highlight_text_color": "#111111",
             "text_color": "#555555",
@@ -160,7 +160,7 @@
         "description_4X83w7": {
           "type": "description",
           "settings": {
-            "description_text": "<p>Una fórmula liposomal de alta absorción diseñada para apoyar tu bienestar diario, la calma mental y la calidad del sueño.</p>",
+            "description_text": "<p>Una fórmula liposomal de alta absorción que regula el cortisol — la hormona que le dice a tu cuerpo que está en peligro — para que puedas desconectarte al final del día y descansar de verdad.</p>",
             "description_color": "#111111",
             "description_font_size": 16,
             "description_font_size_mobile": 14,
