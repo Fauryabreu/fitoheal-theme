@@ -331,7 +331,7 @@
         "heading_rUiuRq": {
           "type": "heading",
           "settings": {
-            "subtitle": "<strong>Bienestar emocional y descanso</strong>",
+            "subtitle": "",
             "subtitle_custom_font": false,
             "subtitle_as": "p",
             "subtitle_font": "poppins_n4",
@@ -342,7 +342,7 @@
             "subtitle_letter_spacing": 1,
             "subtitle_color": "#ffffff",
             "subtitle_spacing": 16,
-            "title": "<strong>Siente más calma en tu rutina diaria.</strong>",
+            "title": "<strong>Esto es para ti si...</strong>",
             "title_custom_font": false,
             "title_as": "h2",
             "title_font": "poppins_n6",
