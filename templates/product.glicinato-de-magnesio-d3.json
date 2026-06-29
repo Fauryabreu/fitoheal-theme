@@ -1511,7 +1511,7 @@
         "faq_item_1_nCxGYg": {
           "type": "faq_item",
           "settings": {
-            "question": "<strong>¿Para qué sirve el Glicinato de Magnesio D3 Liposomal?</strong>",
+            "question": "<strong>¿Cuál es la diferencia entre Glicinato y Citrato de Magnesio?</strong>",
             "answer": "<p>Para relajar los músculos, calmar el sistema nervioso y mejorar la calidad del sueño. Si tu problema es tensión física acumulada, ansiedad de fondo o sueño superficial que no descansa, el glicinato actúa directo ahí.</p>"
           }
         },
@@ -1532,8 +1532,15 @@
         "faq_item_4_jrk0ZU": {
           "type": "faq_item",
           "settings": {
-            "question": "<strong>¿Tiene estimulantes?</strong>",
-            "answer": "<p>No. Es una fórmula pensada para apoyar la calma, el equilibrio y el bienestar diario sin depender de estimulantes.</p>"
+            "question": "<strong>¿Tiene algún efecto secundario?</strong>",
+            "answer": "<p>El glicinato es la forma de magnesio mejor tolerada — no causa el efecto laxante que tienen otras versiones como el citrato o el óxido. En dosis muy altas puede generar somnolencia, que en este contexto generalmente es el efecto buscado.</p>"
+          }
+        },
+        "faq_item_CbYVGC": {
+          "type": "faq_item",
+          "settings": {
+            "question": "<strong>¿Y si lo tomo y no siento nada?</strong>",
+            "answer": "<p>Revisar primero si se está tomando en el horario correcto (noche) y con constancia diaria. La primera semana el efecto más notorio es en músculos. El sueño más profundo llega después. Si después de 3 semanas no hay diferencia, escríbenos.</p>"
           }
         }
       },
@@ -1544,7 +1551,8 @@
         "faq_item_1_nCxGYg",
         "faq_item_2_ohlkGR",
         "faq_item_3_aKHWJF",
-        "faq_item_4_jrk0ZU"
+        "faq_item_4_jrk0ZU",
+        "faq_item_CbYVGC"
       ],
       "name": "VSO - FAQ 02",
       "settings": {
