@@ -160,7 +160,7 @@
         "description_4X83w7": {
           "type": "description",
           "settings": {
-            "description_text": "<p>No es solo tomar Melena de León. Es darle a tu cuerpo una fórmula diseñada para absorberse mejor y apoyar tu claridad mental desde adentro.</p>",
+            "description_text": "<p>Una fórmula liposomal basada en Hericium erinaceus — el hongo medicinal conocido como Lion's Mane o Melena de León — que estimula la producción de NGF (Factor de Crecimiento Nervioso), una proteína esencial para la salud y la regeneración de las neuronas.</p>",
             "description_color": "#111111",
             "description_font_size": 16,
             "description_font_size_mobile": 14,
@@ -177,7 +177,7 @@
           "type": "collapsible_row",
           "settings": {
             "title": "¿Cómo funciona la Melena de León Liposomal?",
-            "content": "<p>La Melena de León es un hongo funcional utilizado como soporte cognitivo natural. En formato liposomal, ayuda a proteger y transportar sus activos para favorecer una mejor absorción y aprovechamiento dentro de tu rutina diaria.</p>",
+            "content": "<p>Contiene hericenonas y erinacinas — dos compuestos únicos de este hongo — que estimulan la producción de NGF (Factor de Crecimiento Nervioso, una proteína que cuida y regenera las neuronas). Más NGF significa neuronas más sanas, conexiones más rápidas y mejor función cognitiva — concentración, memoria y claridad mental.</p>",
             "margin_top_desktop": 0,
             "margin_bottom_desktop": 0,
             "margin_top_mobile": 0,
@@ -188,7 +188,7 @@
           "type": "collapsible_row",
           "settings": {
             "title": "¿Cuándo debo tomarla?",
-            "content": "<p>Tomar <strong>1 a 2 cápsulas al día</strong>, preferiblemente con agua y según la tolerancia de cada persona. Para rutinas enfocadas en descanso, muchas personas prefieren tomarla en la tarde o noche. La etiqueta indica uso oral y dosis de 1 a 2 cápsulas al día. </p>",
+            "content": "<p>En la mañana, con el desayuno. El Lion's Mane no es un estimulante de efecto inmediato — su efecto es gradual y se acumula. Tomarlo en la mañana lo integra al momento del día de mayor demanda cognitiva.</p>",
             "margin_top_desktop": 0,
             "margin_bottom_desktop": 0,
             "margin_top_mobile": 0,
@@ -199,7 +199,7 @@
           "type": "collapsible_row",
           "settings": {
             "title": "¿En cuánto tiempo puedo notar cambios?",
-            "content": "<p>Cada cuerpo responde de manera diferente. Con el uso constante, puede apoyar la memoria, la concentración y una sensación de mayor claridad mental.</p>",
+            "content": "<p>Entre 2 y 6 semanas de uso constante. Las neuronas no se regeneran de un día para otro. La mayoría nota primero menos niebla mental y mayor facilidad para concentrarse, y después mejoras en memoria y claridad sostenida.</p>",
             "margin_top_desktop": 0,
             "margin_bottom_desktop": 0,
             "margin_top_mobile": 0,
