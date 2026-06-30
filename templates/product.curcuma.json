@@ -57,7 +57,7 @@
         "text_WKhTaO": {
           "type": "text",
           "settings": {
-            "text": "<p>Apoya la respuesta _antiinflamatoria natural del cuerpo, favorece la salud articular y contribuye al bienestar diario.</p>",
+            "text": "<p>Ya tomaste cúrcuma antes y no sentiste nada. _No era el ingrediente — era la forma en que llegaba.</p>",
             "text_highlight_color": "#d7fca3",
             "text_highlight_text_color": "#111111",
             "text_color": "#555555",
@@ -160,7 +160,7 @@
         "description_4X83w7": {
           "type": "description",
           "settings": {
-            "description_text": "<p>Una fórmula liposomal de alta absorción diseñada para apoyar el bienestar físico, la movilidad y la protección antioxidante.</p>",
+            "description_text": "<p>Una fórmula liposomal basada en curcumina — el compuesto activo de la cúrcuma con propiedades antiinflamatorias y antioxidantes comprobadas — diseñada para resolver el mayor problema de la cúrcuma tradicional: que el cuerpo casi no la absorbe.</p>",
             "description_color": "#111111",
             "description_font_size": 16,
             "description_font_size_mobile": 14,
@@ -176,8 +176,8 @@
         "collapsible_row_1_DAxcm0": {
           "type": "collapsible_row",
           "settings": {
-            "title": "¿Cómo funciona la Cúrcuma Liposomal?",
-            "content": "<p>La cúrcuma es reconocida por su aporte al bienestar físico y su acción antioxidante. En fórmula liposomal, ayuda a favorecer una mejor absorción para que el cuerpo pueda aprovechar mejor sus activos.</p>",
+            "title": "¿Por qué la cúrcuma normal no funciona?",
+            "content": "<p>La curcumina — el compuesto activo de la cúrcuma — es lipofílica (solo se disuelve en grasa, no en agua). Como el intestino es un ambiente acuoso, la cúrcuma en polvo o cápsula estándar pasa por el cuerpo sin ser absorbida. El cuerpo aprovecha menos del 1%. La versión liposomal resuelve eso.</p>",
             "margin_top_desktop": 0,
             "margin_bottom_desktop": 0,
             "margin_top_mobile": 0,
@@ -187,8 +187,8 @@
         "collapsible_row_2_b5NJ8R": {
           "type": "collapsible_row",
           "settings": {
-            "title": "¿Cuándo debo tomarla?",
-            "content": "<p><strong>Tomar de 1 a 2 cápsulas al día con agua, preferiblemente junto a una comida o según tu rutina diaria.</strong></p><p>La etiqueta indica vía oral y modo de uso de 1 a 2 cápsulas al día. </p>",
+            "title": "¿Para qué sirve la Cúrcuma Liposomal?",
+            "content": "<p>Para reducir la inflamación crónica — la inflamación de fondo que se acumula en articulaciones, tejidos y sistema digestivo sin que haya una lesión visible. También tiene propiedades antioxidantes que protegen las células del daño acumulado por el tiempo y el estrés.</p>",
             "margin_top_desktop": 0,
             "margin_bottom_desktop": 0,
             "margin_top_mobile": 0,
@@ -198,8 +198,8 @@
         "collapsible_row_3_fMM5Om": {
           "type": "collapsible_row",
           "settings": {
-            "title": "¿En cuánto tiempo puedo notar cambios?",
-            "content": "<p>Cada cuerpo responde de manera diferente. Con el uso constante, puede apoyar el bienestar articular, la movilidad y una sensación general de equilibrio físico.</p>",
+            "title": "¿En cuánto tiempo voy a notar cambios?",
+            "content": "<p>La respuesta antiinflamatoria es gradual — no actúa como un ibuprofeno inmediato. La mayoría nota diferencia en movilidad articular y menor rigidez después de 4 a 8 semanas de uso constante.</p>",
             "margin_top_desktop": 0,
             "margin_bottom_desktop": 0,
             "margin_top_mobile": 0,
