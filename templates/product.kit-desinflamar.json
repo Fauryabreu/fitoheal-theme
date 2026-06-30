@@ -57,7 +57,7 @@
         "text_WKhTaO": {
           "type": "text",
           "settings": {
-            "text": "<p>Una combinación liposomal diseñada para _apoyar el bienestar físico, la salud articular, la digestión y la relajación muscular.</p>",
+            "text": "<p>Tu cuerpo lleva tiempo inflamado y lo sientes en dos lugares. _Este kit ataca los dos.</p>",
             "text_highlight_color": "#d7fca3",
             "text_highlight_text_color": "#111111",
             "text_color": "#555555",
@@ -160,7 +160,7 @@
         "description_4X83w7": {
           "type": "description",
           "settings": {
-            "description_text": "<p>Incluye Cúrcuma Liposomal + Citrato de Magnesio D3 Liposomal: dos fórmulas pensadas para apoyar tu cuerpo desde adentro con mejor absorción y aprovechamiento.</p>",
+            "description_text": "<p>Incluye Cúrcuma Liposomal + Citrato de Magnesio Liposomal — dos fórmulas que trabajan juntas porque la inflamación no vive solo en las articulaciones ni solo en el intestino: cuando uno está inflamado, el otro también lo siente.</p>",
             "description_color": "#111111",
             "description_font_size": 16,
             "description_font_size_mobile": 14,
