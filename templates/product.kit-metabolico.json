@@ -160,7 +160,7 @@
         "description_4X83w7": {
           "type": "description",
           "settings": {
-            "description_text": "<p>Una combinación <strong>liposomal de Berberina + Cúrcuma,</strong> diseñada para apoyar el metabolismo, favorecer la salud digestiva y contribuir al bienestar físico diario.</p>",
+            "description_text": "<p>Una combinación <strong>liposomal de Berberina + Cúrcuma,</strong> diseñada para apoyar el metabolismo, favorecer la salud digestiva y contribuir al bienestar físico diario.</p><p>⚠  No combinar Berberina con medicamentos para diabetes (metformina, insulina), anticoagulantes ni medicamentos para presión sin supervisión médica. No combinar Cúrcuma con anticoagulantes. No recomendado en embarazo ni lactancia.</p>",
             "description_color": "#111111",
             "description_font_size": 16,
             "description_font_size_mobile": 14,
@@ -1628,22 +1628,36 @@
         "faq_item_2_ohlkGR": {
           "type": "faq_item",
           "settings": {
-            "question": "<strong>¿Cómo debo tomarla?</strong>",
-            "answer": "<p>Se recomienda tomar <strong>1 a 2 cápsulas al día</strong>, preferiblemente con alimentos.<br/><br/>La constancia es clave para integrarlo como parte de una rutina saludable.</p>"
+            "question": "<strong>¿Por qué comprar el kit y no solo la Berberina?</strong>",
+            "answer": "<p>Porque el metabolismo dañado y la inflamación crónica se generan mutuamente. La Berberina regula la glucosa pero no corta la inflamación que esa glucosa inestable produce. La Cúrcuma corta la inflamación pero no regula el metabolismo. Los dos juntos rompen el ciclo completo.</p>"
           }
         },
         "faq_item_3_aKHWJF": {
           "type": "faq_item",
           "settings": {
-            "question": "<strong>¿Qué diferencia tiene la tecnología liposomal?</strong>",
-            "answer": "<p>La tecnología liposomal ayuda a proteger y transportar mejor los activos, favoreciendo una mejor absorción y aprovechamiento por parte del cuerpo.</p>"
+            "question": "<strong>¿Este kit sirve para bajar de peso?</strong>",
+            "answer": "<p>No es su función principal. La Berberina apoya el metabolismo de la glucosa y el equilibrio lipídico — que son factores que afectan el peso — pero no es un quemador de grasa ni un supresor de apetito. Su función es metabólica y antiinflamatoria, no estética.</p>"
           }
         },
         "faq_item_4_jrk0ZU": {
           "type": "faq_item",
           "settings": {
-            "question": "<strong>¿Este kit ayuda a bajar de peso?</strong>",
-            "answer": "<p>No debe verse como una solución para bajar de peso.<br/><br/>Su función es <strong>apoyar el metabolismo, la digestión y el equilibrio diario</strong>, especialmente cuando se combina con buenos hábitos de alimentación, movimiento y descanso.</p>"
+            "question": "<strong>¿Cómo debo tomarlo?</strong>",
+            "answer": "<p>1 a 2 cápsulas de cada producto con las comidas principales. La Berberina actúa mejor cuando hay glucosa que regular. La Cúrcuma se absorbe mejor con grasa presente en los alimentos.</p>"
+          }
+        },
+        "faq_item_xaK4iK": {
+          "type": "faq_item",
+          "settings": {
+            "question": "<strong>¿En cuánto tiempo voy a notar cambios?</strong>",
+            "answer": "<p>La energía más estable puede notarse en las primeras semanas. Los cambios en glucosa, colesterol y triglicéridos son medibles en exámenes de sangre después de 8 a 12 semanas de uso constante.</p>"
+          }
+        },
+        "faq_item_VJwPjK": {
+          "type": "faq_item",
+          "settings": {
+            "question": "<strong>¿Y si lo tomo y no siento nada?</strong>",
+            "answer": "<p>La Berberina actúa sobre marcadores que no siempre se sienten directamente. El mejor indicador son los exámenes de sangre después de 3 meses. Si no hay cambios con uso diario constante y comidas, escríbenos.</p>"
           }
         }
       },
@@ -1654,7 +1668,9 @@
         "faq_item_1_nCxGYg",
         "faq_item_2_ohlkGR",
         "faq_item_3_aKHWJF",
-        "faq_item_4_jrk0ZU"
+        "faq_item_4_jrk0ZU",
+        "faq_item_xaK4iK",
+        "faq_item_VJwPjK"
       ],
       "name": "VSO - FAQ 02",
       "settings": {
