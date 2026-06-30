@@ -449,7 +449,7 @@
             "subtitle_letter_spacing": 1,
             "subtitle_color": "#ffffff",
             "subtitle_spacing": 16,
-            "title": "<strong>Siente más claridad en tu rutina diaria.</strong>",
+            "title": "<strong>Esto es para ti si...</strong>",
             "title_custom_font": false,
             "title_as": "h2",
             "title_font": "poppins_n6",
@@ -498,15 +498,15 @@
         "feature_1_iokXup": {
           "type": "feature",
           "settings": {
-            "feature_title": "<strong>Enfoque mental</strong>",
-            "feature_text": "Ayuda a mantener una mente más clara durante tus actividades diarias."
+            "feature_title": "<strong>Tu mente llega al mediodía y ya no responde</strong>",
+            "feature_text": "Empiezas el día con intención pero a las 2 pm no puedes con una tarea. La energía mental se agota mucho antes de que el día acabe."
           }
         },
         "feature_2_n0zBc0": {
           "type": "feature",
           "settings": {
-            "feature_title": "<strong>Memoria</strong>",
-            "feature_text": "Apoya la función cognitiva y la retención de información."
+            "feature_title": "<strong>El estrés te nubla la cabeza</strong>",
+            "feature_text": "Cuando estás bajo presión, pensar con claridad se vuelve difícil. El ruido mental — pensamientos que no paran — compite con lo que necesitas hacer."
           }
         },
         "feature_3_2EfXxK": {
