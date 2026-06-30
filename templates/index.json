@@ -323,6 +323,7 @@
         },
         "video_j7e9Tw": {
           "type": "video",
+          "disabled": true,
           "settings": {
             "video": "shopify://files/videos/o.mp4",
             "title": "",
