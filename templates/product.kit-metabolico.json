@@ -595,7 +595,7 @@
           "type": "heading",
           "settings": {
             "heading_alignment": "center",
-            "heading": "Un apoyo diario_ para sentir más equilibrio",
+            "heading": "<strong>Lo que puedes esperar, _semana a semana.</strong>",
             "heading_custom_font": false,
             "heading_as": "h3",
             "heading_font": "poppins_n4",
@@ -656,24 +656,24 @@
           "type": "timeline_item",
           "settings": {
             "subheading": "Primeros días",
-            "heading": "Tu rutina empieza a sentirse más ligera",
-            "description": "<p>Con el uso constante, este kit empieza a apoyar el metabolismo y a favorecer una mejor sensación de bienestar digestivo en tu día a día.</p>"
+            "heading": "Energía más estable durante el día",
+            "description": "<p>Menos variaciones después de comer — menos somnolencia post-almuerzo, menos urgencia antes de las comidas. El metabolismo empieza a manejar la glucosa con más orden.</p>"
           }
         },
         "timeline_item_2_3Qr27B": {
           "type": "timeline_item",
           "settings": {
             "subheading": "Semanas 2–4",
-            "heading": "Más equilibrio digestivo y metabólico",
-            "description": "<p>La combinación de <strong>Berberina + Cúrcuma</strong> puede contribuir a una rutina más equilibrada, apoyando el metabolismo, la digestión y la respuesta antiinflamatoria natural del cuerpo.</p>"
+            "heading": "El cuerpo responde diferente",
+            "description": "<p>La inflamación de fondo empieza a ceder. Con la glucosa más estable y la inflamación bajando, el cuerpo funciona con menos resistencia. La digestión mejora, la energía es más consistente.</p>"
           }
         },
         "timeline_item_3_6WDi7E": {
           "type": "timeline_item",
           "settings": {
             "subheading": "Uso continuo",
-            "heading": "Bienestar diario como parte de tu rutina",
-            "description": "<p>Como parte de hábitos saludables, puede ayudarte a sostener un mejor equilibrio general, con apoyo digestivo, acción antioxidante y acompañamiento metabólico diario.</p>"
+            "heading": "Cambios medibles en sangre",
+            "description": "<p>Glucosa en ayunas, hemoglobina glicosilada — marcador del azúcar promedio en los últimos 3 meses — colesterol y triglicéridos. Los cambios se evidencian en laboratorio después de uso constante.</p>"
           }
         }
       },
