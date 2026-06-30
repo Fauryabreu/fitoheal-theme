@@ -1618,15 +1618,15 @@
         "faq_item_1_nCxGYg": {
           "type": "faq_item",
           "settings": {
-            "question": "<strong>¿Para qué sirve la Cúrcuma Liposomal?</strong>",
-            "answer": "<p>Apoya la respuesta antiinflamatoria natural del cuerpo, favorece la salud articular y contribuye al bienestar antioxidante.</p>"
+            "question": "<strong>¿Por qué la cúrcuma que tomé antes no funcionó?</strong>",
+            "answer": "<p>Porque la curcumina — el compuesto activo — casi no se absorbe en su forma normal. El intestino es un ambiente acuoso y la curcumina solo se disuelve en grasa. El resultado: menos del 1% llega al cuerpo. La versión liposomal resuelve ese problema envolviendo la curcumina en grasa para que atraviese el sistema digestivo y llegue a los tejidos.</p>"
           }
         },
         "faq_item_2_ohlkGR": {
           "type": "faq_item",
           "settings": {
-            "question": "<strong>¿Cómo debo tomarla?</strong>",
-            "answer": "<p>Tomar de <strong>1 a 2 cápsulas al día</strong> con agua, preferiblemente junto a una comida o según tu rutina diaria. La etiqueta indica uso oral y dosis de 1 a 2 cápsulas al día.</p>"
+            "question": "<strong>¿Para qué sirve la Cúrcuma Liposomal?</strong>",
+            "answer": "<p>Para reducir la inflamación crónica — la de articulaciones, tejidos y sistema digestivo — y proteger las células con sus propiedades antioxidantes. No actúa como un analgésico inmediato, sino como un regulador de fondo que trabaja con el tiempo.</p>"
           }
         },
         "faq_item_3_aKHWJF": {
@@ -1639,8 +1639,22 @@
         "faq_item_4_jrk0ZU": {
           "type": "faq_item",
           "settings": {
-            "question": "<strong>¿Puedo tomarla todos los días?</strong>",
-            "answer": "<p>Sí, puede integrarse como parte de una rutina diaria de bienestar. Si estás embarazada, en lactancia o bajo tratamiento médico, consulta con un profesional de salud antes de usarla. La etiqueta también indica mantener fuera del alcance de los niños. </p>"
+            "question": "<strong>¿Cómo debo tomarla?</strong>",
+            "answer": "<p>1 a 2 cápsulas con las comidas. La presencia de grasa en los alimentos potencia la absorción de la curcumina — incluso en la versión liposomal.</p>"
+          }
+        },
+        "faq_item_4Thzdg": {
+          "type": "faq_item",
+          "settings": {
+            "question": "<strong> ¿Es lo mismo que tomar ibuprofeno?</strong>",
+            "answer": "<p>No. El ibuprofeno es un antiinflamatorio sintético de efecto inmediato que actúa bloqueando enzimas específicas. La curcumina actúa sobre múltiples vías inflamatorias de forma más gradual y sin los efectos secundarios gástricos del ibuprofeno. Son complementarios, no equivalentes.</p>"
+          }
+        },
+        "faq_item_ANRCkd": {
+          "type": "faq_item",
+          "settings": {
+            "question": "<strong>¿Y si lo tomo y no siento nada?</strong>",
+            "answer": "<p>La Cúrcuma Liposomal necesita consistencia — su efecto es gradual y acumulativo. Si después de 8 semanas de uso diario no notas diferencia en movilidad o inflamación, escríbenos para evaluar tu caso.</p>"
           }
         }
       },
@@ -1651,7 +1665,9 @@
         "faq_item_1_nCxGYg",
         "faq_item_2_ohlkGR",
         "faq_item_3_aKHWJF",
-        "faq_item_4_jrk0ZU"
+        "faq_item_4_jrk0ZU",
+        "faq_item_4Thzdg",
+        "faq_item_ANRCkd"
       ],
       "name": "VSO - FAQ 02",
       "settings": {
