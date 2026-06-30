@@ -702,7 +702,7 @@
           "type": "heading",
           "settings": {
             "heading_alignment": "center",
-            "heading": "Un apoyo diario para _sentir más claridad",
+            "heading": "<strong>Lo que puedes esperar, _semana a semana.</strong>",
             "heading_custom_font": false,
             "heading_as": "h3",
             "heading_font": "poppins_n4",
@@ -763,24 +763,24 @@
           "type": "timeline_item",
           "settings": {
             "subheading": "Primeros días",
-            "heading": "Tu mente empieza a sentirse más estable",
-            "description": "<p>Con el uso constante, este kit puede apoyar una sensación gradual de calma, claridad y mejor disposición mental durante el día.</p>"
+            "heading": "Menos niebla mental",
+            "description": "<p>La Ashwagandha empieza a regular el cortisol — el ruido mental cede. La cabeza está más despejada. Es más fácil retomar el hilo después de una interrupción.</p>"
           }
         },
         "timeline_item_2_3Qr27B": {
           "type": "timeline_item",
           "settings": {
             "subheading": "Semanas 2–4",
-            "heading": "Mayor enfoque y equilibrio",
-            "description": "<p>La combinación de <strong>Ashwagandha + Melena de León</strong> puede contribuir a una rutina más enfocada, apoyando la memoria, la concentración y el bienestar emocional.</p>"
+            "heading": "Enfoque más sostenido",
+            "description": "<p>Con el NGF acumulándose, las conexiones neuronales mejoran. Concentrarse por períodos más largos se vuelve menos difícil. La necesidad de cafeína puede disminuir.</p>"
           }
         },
         "timeline_item_3_6WDi7E": {
           "type": "timeline_item",
           "settings": {
             "subheading": "Uso continuo",
-            "heading": "Más claridad como parte de tu rutina",
-            "description": "<p>Como parte de hábitos saludables, puede ayudarte a sostener mejor concentración, calma mental y energía sin estimulantes.</p>"
+            "heading": "Una mente que trabaja para ti",
+            "description": "<p>El cortisol de base baja. Las neuronas están mejor nutridas. El rendimiento cognitivo es más estable — no depende del día ni de cuántos cafés tomaste.</p>"
           }
         }
       },
