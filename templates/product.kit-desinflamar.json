@@ -1759,6 +1759,13 @@
             "question": "<strong>¿En cuánto tiempo voy a notar cambios?</strong>",
             "answer": "<p>La digestión y la hinchazón mejoran en las primeras dos semanas. La movilidad articular y la menor rigidez llegan entre semana 4 y 8. La cúrcuma es acumulativa — el efecto crece con el tiempo.</p>"
           }
+        },
+        "faq_item_QwttVx": {
+          "type": "faq_item",
+          "settings": {
+            "question": "<strong>¿Y si lo tomo y no siento nada?</strong>",
+            "answer": "<p>Verificar que se esté tomando con las comidas y con constancia diaria. La cúrcuma no es de efecto inmediato. Si después de 8 semanas de uso diario no hay diferencia, escríbenos para evaluar el caso.</p>"
+          }
         }
       },
       "block_order": [
@@ -1769,7 +1776,8 @@
         "faq_item_2_ohlkGR",
         "faq_item_3_aKHWJF",
         "faq_item_4_jrk0ZU",
-        "faq_item_yU3Ge4"
+        "faq_item_yU3Ge4",
+        "faq_item_QwttVx"
       ],
       "name": "VSO - FAQ 02",
       "settings": {
