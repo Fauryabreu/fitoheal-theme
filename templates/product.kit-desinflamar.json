@@ -657,7 +657,7 @@
         "section_max_width": 64,
         "section_horizontal_padding": 24,
         "padding_horizontal_mobile": 15,
-        "background_color": "#F7F7F7",
+        "background_color": "#FAFDF8",
         "full_width": true,
         "section_border_radius": 12,
         "section_border_radius_mobile": 0,
