@@ -594,7 +594,7 @@
             "content_alignment": "center",
             "title": "<strong>¿Por qué dos productos _y no uno solo?</strong>",
             "title_color": "#000000",
-            "title_highlight_color": "#0CC172",
+            "title_highlight_color": "#0cc172",
             "custom_title_font": false,
             "title_as": "h2",
             "title_font": "sans_serif_n4",
@@ -657,7 +657,7 @@
         "section_max_width": 64,
         "section_horizontal_padding": 24,
         "padding_horizontal_mobile": 15,
-        "background_color": "#FAFDF8",
+        "background_color": "#fafdf8",
         "full_width": true,
         "section_border_radius": 12,
         "section_border_radius_mobile": 0,
@@ -687,120 +687,12 @@
         "block_text_size_mobile": 14,
         "block_text_line_height": 150,
         "blocks_text_color": "#000000",
-        "block_background_color": "transparent",
+        "block_background_color": "rgba(0,0,0,0)",
         "desktop_icon_size": 50,
         "mobile_icon_size": 40,
         "block_padding": 0,
         "block_elements_gap": 16,
         "block_border_radius": 8
-      }
-    },
-    "vso_icon_benefits_01_QX0kww": {
-      "type": "vso-icon-benefits-01",
-      "blocks": {
-        "heading_TUMvsh": {
-          "type": "heading",
-          "settings": {
-            "content_alignment": "left",
-            "title": "<strong>Tecnología _liposomal para una mejor absorción</strong>",
-            "title_color": "#000000",
-            "title_highlight_color": "#478641",
-            "custom_title_font": false,
-            "title_as": "h4",
-            "title_font": "sans_serif_n4",
-            "title_size_desktop": 40,
-            "title_size_mobile": 32,
-            "title_line_height": 130,
-            "subtitle": "",
-            "subtitle_color": "#000000",
-            "custom_subtitle_font": false,
-            "subtitle_as": "p",
-            "subtitle_font": "sans_serif_n4",
-            "subtitle_size_desktop": 20,
-            "subtitle_size_mobile": 16,
-            "subtitle_line_height": 130,
-            "header_elements_gap": 16,
-            "header_blocks_gap": 50
-          }
-        },
-        "benefit_1_5lAsTN": {
-          "type": "benefit",
-          "settings": {
-            "title": "<strong>Alta absorción X5</strong>",
-            "text": "Favorece mayor disponibilidad del activo."
-          }
-        },
-        "benefit_2_WLkZAU": {
-          "type": "benefit",
-          "settings": {
-            "title": "<strong>Mejor aprovechamiento</strong>",
-            "text": "Ayuda a que cada cápsula trabaje mejor."
-          }
-        },
-        "benefit_3_XK8kZV": {
-          "type": "benefit",
-          "settings": {
-            "title": "<strong>Uso constante</strong>",
-            "text": "Apoya una experiencia más estable."
-          }
-        },
-        "benefit_4_gPhHh1": {
-          "type": "benefit",
-          "settings": {
-            "title": "<strong>Rutina fácil</strong>",
-            "text": "Cápsulas prácticas para el día a día."
-          }
-        }
-      },
-      "block_order": [
-        "heading_TUMvsh",
-        "benefit_1_5lAsTN",
-        "benefit_2_WLkZAU",
-        "benefit_3_XK8kZV",
-        "benefit_4_gPhHh1"
-      ],
-      "name": "VSO - Icon Benefits 01",
-      "settings": {
-        "enable_advanced_settings": false,
-        "section_max_width": 64,
-        "section_horizontal_padding": 24,
-        "padding_horizontal_mobile": 15,
-        "background_color": "#ffffff",
-        "full_width": true,
-        "section_border_radius": 12,
-        "section_border_radius_mobile": 0,
-        "padding_top_desktop": 40,
-        "padding_bottom_desktop": 40,
-        "padding_top_mobile": 20,
-        "padding_bottom_mobile": 20,
-        "margin_top_desktop": 40,
-        "margin_bottom_desktop": 40,
-        "margin_top_mobile": 20,
-        "margin_bottom_mobile": 20,
-        "mobile_columns": "2",
-        "blocks_alignment": "center",
-        "desktop_blocks_gap": 32,
-        "mobile_blocks_gap": 16,
-        "custom_blocks_title_font": false,
-        "blocks_title_as": "h3",
-        "blocks_title_font": "sans_serif_n4",
-        "block_title_size_desktop": 18,
-        "block_title_size_mobile": 18,
-        "block_title_line_height": 120,
-        "blocks_title_color": "#000000",
-        "custom_blocks_text_font": true,
-        "blocks_text_as": "p",
-        "blocks_text_font": "gelasio_n4",
-        "block_text_size_desktop": 20,
-        "block_text_size_mobile": 16,
-        "block_text_line_height": 150,
-        "blocks_text_color": "#000000",
-        "block_background_color": "rgba(0,0,0,0)",
-        "desktop_icon_size": 180,
-        "mobile_icon_size": 100,
-        "block_padding": 0,
-        "block_elements_gap": 16,
-        "block_border_radius": 0
       }
     },
     "vso_hero_19_XGjzRA": {
@@ -955,6 +847,114 @@
         "margin_bottom": 20,
         "margin_top_mobile": 0,
         "margin_bottom_mobile": 0
+      }
+    },
+    "vso_icon_benefits_01_QX0kww": {
+      "type": "vso-icon-benefits-01",
+      "blocks": {
+        "heading_TUMvsh": {
+          "type": "heading",
+          "settings": {
+            "content_alignment": "left",
+            "title": "<strong>Para el cuerpo que lleva tiempo _cargando más de lo que debería.</strong>",
+            "title_color": "#000000",
+            "title_highlight_color": "#478641",
+            "custom_title_font": false,
+            "title_as": "h4",
+            "title_font": "sans_serif_n4",
+            "title_size_desktop": 40,
+            "title_size_mobile": 32,
+            "title_line_height": 130,
+            "subtitle": "",
+            "subtitle_color": "#000000",
+            "custom_subtitle_font": false,
+            "subtitle_as": "p",
+            "subtitle_font": "sans_serif_n4",
+            "subtitle_size_desktop": 20,
+            "subtitle_size_mobile": 16,
+            "subtitle_line_height": 130,
+            "header_elements_gap": 16,
+            "header_blocks_gap": 50
+          }
+        },
+        "benefit_1_5lAsTN": {
+          "type": "benefit",
+          "settings": {
+            "title": "<strong>Antiinflamatorio natural en articulaciones</strong>",
+            "text": "La curcumina — el compuesto activo de la cúrcuma — inhibe los mensajeros químicos que producen y mantienen la inflamación en articulaciones y tejidos. Menos inflamación, más movilidad."
+          }
+        },
+        "benefit_2_WLkZAU": {
+          "type": "benefit",
+          "settings": {
+            "title": "<strong>Mejor aprovechamiento</strong>",
+            "text": "Ayuda a que cada cápsula trabaje mejor."
+          }
+        },
+        "benefit_3_XK8kZV": {
+          "type": "benefit",
+          "settings": {
+            "title": "<strong>Uso constante</strong>",
+            "text": "Apoya una experiencia más estable."
+          }
+        },
+        "benefit_4_gPhHh1": {
+          "type": "benefit",
+          "settings": {
+            "title": "<strong>Rutina fácil</strong>",
+            "text": "Cápsulas prácticas para el día a día."
+          }
+        }
+      },
+      "block_order": [
+        "heading_TUMvsh",
+        "benefit_1_5lAsTN",
+        "benefit_2_WLkZAU",
+        "benefit_3_XK8kZV",
+        "benefit_4_gPhHh1"
+      ],
+      "name": "VSO - Icon Benefits 01",
+      "settings": {
+        "enable_advanced_settings": false,
+        "section_max_width": 64,
+        "section_horizontal_padding": 24,
+        "padding_horizontal_mobile": 15,
+        "background_color": "#ffffff",
+        "full_width": true,
+        "section_border_radius": 12,
+        "section_border_radius_mobile": 0,
+        "padding_top_desktop": 40,
+        "padding_bottom_desktop": 40,
+        "padding_top_mobile": 20,
+        "padding_bottom_mobile": 20,
+        "margin_top_desktop": 40,
+        "margin_bottom_desktop": 40,
+        "margin_top_mobile": 20,
+        "margin_bottom_mobile": 20,
+        "mobile_columns": "2",
+        "blocks_alignment": "center",
+        "desktop_blocks_gap": 32,
+        "mobile_blocks_gap": 16,
+        "custom_blocks_title_font": false,
+        "blocks_title_as": "h3",
+        "blocks_title_font": "sans_serif_n4",
+        "block_title_size_desktop": 18,
+        "block_title_size_mobile": 18,
+        "block_title_line_height": 120,
+        "blocks_title_color": "#000000",
+        "custom_blocks_text_font": true,
+        "blocks_text_as": "p",
+        "blocks_text_font": "gelasio_n4",
+        "block_text_size_desktop": 20,
+        "block_text_size_mobile": 16,
+        "block_text_line_height": 150,
+        "blocks_text_color": "#000000",
+        "block_background_color": "rgba(0,0,0,0)",
+        "desktop_icon_size": 180,
+        "mobile_icon_size": 100,
+        "block_padding": 0,
+        "block_elements_gap": 16,
+        "block_border_radius": 0
       }
     },
     "vso_img_with_text_01_xtNmKG": {
@@ -1811,8 +1811,8 @@
     "about_section_mFe7hp",
     "vso_hero_36_81fyqM",
     "vso_icon_benefits_01_NifD9m",
-    "vso_icon_benefits_01_QX0kww",
     "vso_hero_19_XGjzRA",
+    "vso_icon_benefits_01_QX0kww",
     "vso_img_with_text_01_xtNmKG",
     "vso_hero_45_8W1D8M",
     "vso_hero_32_5X7zMU",
