@@ -297,20 +297,20 @@
     "vso_video_carousel_01_mafDjU": {
       "type": "vso-video-carousel-01",
       "blocks": {
-        "video_q3EmtX": {
-          "type": "video",
-          "settings": {
-            "video": "shopify://files/videos/beneficio.mp4",
-            "title": "",
-            "description": "Beneficios de la tecnologia Liposomal"
-          }
-        },
         "video_MB4RyY": {
           "type": "video",
           "settings": {
             "video": "shopify://files/videos/QUE ES LIPOSOMAL.mp4",
             "title": "",
             "description": "Qué son los suplementos liposomales"
+          }
+        },
+        "video_q3EmtX": {
+          "type": "video",
+          "settings": {
+            "video": "shopify://files/videos/beneficio.mp4",
+            "title": "",
+            "description": "Beneficios de la tecnologia Liposomal"
           }
         },
         "video_XMdYi4": {
@@ -331,8 +331,8 @@
         }
       },
       "block_order": [
-        "video_q3EmtX",
         "video_MB4RyY",
+        "video_q3EmtX",
         "video_XMdYi4",
         "video_j7e9Tw"
       ],
