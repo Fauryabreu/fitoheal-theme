@@ -702,7 +702,7 @@
           "type": "heading",
           "settings": {
             "heading_alignment": "center",
-            "heading": "Un apoyo diario para _sentir más equilibrio",
+            "heading": "<strong>Lo que puedes esperar, _semana a semana.</strong>",
             "heading_custom_font": false,
             "heading_as": "h3",
             "heading_font": "poppins_n4",
@@ -763,24 +763,24 @@
           "type": "timeline_item",
           "settings": {
             "subheading": "Primeros días",
-            "heading": "Tu cuerpo empieza con mejor absorción",
-            "description": "<p>Las fórmulas liposomales ayudan a proteger y transportar los activos para favorecer un mejor aprovechamiento.</p>"
+            "heading": "El intestino empieza a responder",
+            "description": "<p>El Citrato de Magnesio actúa primero — la hinchazón y la pesadez después de comer suelen ser lo primero en mejorar. La digestión empieza a fluir con más regularidad.</p>"
           }
         },
         "timeline_item_2_3Qr27B": {
           "type": "timeline_item",
           "settings": {
             "subheading": "Semanas 2–4",
-            "heading": "Apoyo digestivo y articular",
-            "description": "<p>La Cúrcuma apoya la respuesta antiinflamatoria natural y la salud articular, mientras el Citrato de Magnesio favorece la digestión y la función muscular. </p>"
+            "heading": "Menos rigidez, más movilidad",
+            "description": "<p>Con la curcumina acumulándose en el tejido, la inflamación articular empieza a ceder. Menos rigidez matutina, mayor facilidad para moverse. La recuperación post-esfuerzo mejora.</p>"
           }
         },
         "timeline_item_3_6WDi7E": {
           "type": "timeline_item",
           "settings": {
             "subheading": "Uso continuo",
-            "heading": "Bienestar físico diario",
-            "description": "<p>Con el uso constante, este kit puede apoyar una rutina más ligera, equilibrada y enfocada en el bienestar del cuerpo.</p>"
+            "heading": "Un cuerpo con menos carga inflamatoria",
+            "description": "<p>La curcumina tiene efecto preventivo acumulativo — no solo reduce la inflamación actual sino que contribuye a que vuelva más lento. El intestino mantiene su equilibrio. El cuerpo carga menos.</p>"
           }
         }
       },
