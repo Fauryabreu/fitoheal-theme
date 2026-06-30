@@ -76,7 +76,7 @@
         "section_border_radius": 12,
         "section_border_radius_mobile": 0,
         "height_mode": "fixed",
-        "section_height": 880,
+        "section_height": 700,
         "height_mode_mobile": "fixed",
         "section_height_mobile": 500,
         "content_position_desktop": "center-left",
