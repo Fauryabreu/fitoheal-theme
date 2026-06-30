@@ -1164,6 +1164,7 @@
         "card_item_7_TC3pr9",
         "card_item_8_9b3ZpQ"
       ],
+      "disabled": true,
       "name": "VSO - Hero 45",
       "settings": {
         "enable_advanced_settings": false,
@@ -1684,7 +1685,7 @@
         "subtitle_EvXGjz": {
           "type": "subtitle",
           "settings": {
-            "subtitle": "<p><strong>Información clara para saber cómo integrar el Kit Sueño / Estrés a tu rutina nocturna.</strong></p>",
+            "subtitle": "<p>Nuestra fórmula está diseñada para favorecer una mejor absorción de los activos, ayudando a que tu cuerpo los aproveche de forma más eficiente dentro de tu rutina diaria.</p>",
             "subtitle_color": "#121212",
             "custom_font": false,
             "subtitle_as": "p",
