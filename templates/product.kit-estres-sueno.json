@@ -449,7 +449,7 @@
             "subtitle_letter_spacing": 1,
             "subtitle_color": "#ffffff",
             "subtitle_spacing": 16,
-            "title": "<strong>Descansa mejor cuando cuerpo y mente se relajan.</strong>",
+            "title": "Esto es para ti si...",
             "title_custom_font": false,
             "title_as": "h2",
             "title_font": "poppins_n6",
@@ -462,7 +462,7 @@
             "title_color": "#ffffff",
             "title_gradient": "linear-gradient(135deg, #EC4899 0%, #F472B6 100%)",
             "title_spacing": 16,
-            "text": "Transform your lashes with:",
+            "text": "",
             "text_custom_font": false,
             "text_as": "p",
             "text_font": "poppins_n4",
@@ -498,29 +498,29 @@
         "feature_1_iokXup": {
           "type": "feature",
           "settings": {
-            "feature_title": "Calma mental",
-            "feature_text": "Apoya el equilibrio emocional al final del día."
+            "feature_title": "Llegas al final del día y tu cabeza no para",
+            "feature_text": "Trabajo, pendientes, conversaciones que no cerraron. Te acuestas y sigues procesando todo."
           }
         },
         "feature_2_n0zBc0": {
           "type": "feature",
           "settings": {
-            "feature_title": "<strong>Mejor descanso</strong>",
-            "feature_text": "Favorece una rutina de sueño más reparadora."
+            "feature_title": "<strong>Duermes pero te despiertas sin haber descansado</strong>",
+            "feature_text": "El sueño es superficial. Cualquier ruido te despierta. Amaneces rígido o con el cuerpo tenso sin razón aparente."
           }
         },
         "feature_3_2EfXxK": {
           "type": "feature",
           "settings": {
-            "feature_title": "<strong>Relajación muscular</strong>",
-            "feature_text": "Ayuda a soltar la tensión corporal."
+            "feature_title": "<strong>Cargas tensión en el cuerpo sin darte cuenta</strong>",
+            "feature_text": "Cuello apretado, mandíbula tensa, espalda que no suelta. Tu cuerpo está acumulando lo que tu mente no procesa."
           }
         },
         "feature_4_w0MBJV": {
           "type": "feature",
           "settings": {
-            "feature_title": "<strong>Alta absorción X5</strong>",
-            "feature_text": "Fórmulas liposomales para mejor aprovechamiento."
+            "feature_title": "<strong>El estrés ya no tiene una causa clara</strong>",
+            "feature_text": "No es un problema puntual. Es una tensión de fondo que llevas semanas cargando sin que nada la baje."
           }
         }
       },
@@ -542,7 +542,7 @@
         "section_outer_padding_bottom": 20,
         "section_outer_padding_top_mobile": 15,
         "section_outer_padding_bottom_mobile": 15,
-        "section_outer_bg_color": "#1e3b1d",
+        "section_outer_bg_color": "#1C4332",
         "full_width_desktop": false,
         "section_border_radius": 12,
         "section_border_radius_mobile": 0,
