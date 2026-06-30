@@ -459,7 +459,7 @@
             "title_line_height": 120,
             "title_letter_spacing": 0,
             "title_color_type": "solid",
-            "title_color": "#ffffff",
+            "title_color": "#0CC172",
             "title_gradient": "linear-gradient(135deg, #EC4899 0%, #F472B6 100%)",
             "title_spacing": 16,
             "text": "",
