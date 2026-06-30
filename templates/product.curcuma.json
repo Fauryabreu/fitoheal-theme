@@ -700,7 +700,7 @@
           "type": "heading",
           "settings": {
             "heading_alignment": "center",
-            "heading": "Bienestar físico, _paso a paso",
+            "heading": "Lo que puedes esperar, _semana a semana.",
             "heading_custom_font": false,
             "heading_as": "h3",
             "heading_font": "poppins_n4",
@@ -761,24 +761,24 @@
           "type": "timeline_item",
           "settings": {
             "subheading": "Primeros días",
-            "heading": "Apoyo diario para tu cuerpo",
-            "description": "<p>Integra la cúrcuma a tu rutina para favorecer el bienestar físico general.</p>"
+            "heading": "La inflamación de fondo empieza a responder",
+            "description": "<p>La curcumina comienza a circular y a actuar sobre las vías inflamatorias. Algunas personas notan menor rigidez matutina y mejor movilidad en las primeras semanas.</p>"
           }
         },
         "timeline_item_2_3Qr27B": {
           "type": "timeline_item",
           "settings": {
             "subheading": "Semanas 2–4",
-            "heading": "Mayor equilibrio articular",
-            "description": "<p>Con el uso constante, puede apoyar la movilidad y la comodidad diaria.</p>"
+            "heading": "Menos molestia, más movilidad",
+            "description": "<p>Con el uso constante, la inflamación crónica disminuye de forma más visible. Moverse duele menos. La recuperación post-esfuerzo es más rápida.</p>"
           }
         },
         "timeline_item_3_6WDi7E": {
           "type": "timeline_item",
           "settings": {
             "subheading": "Uso continuo",
-            "heading": "Uso continuo",
-            "description": "<p>Contribuye al cuidado celular y al equilibrio natural del cuerpo.</p>"
+            "heading": "Un cuerpo con menos carga inflamatoria",
+            "description": "<p>La curcumina tiene efecto preventivo acumulativo — no solo reduce la inflamación actual sino que contribuye a que se vuelva a acumular más lento. El beneficio crece con el tiempo.</p>"
           }
         }
       },
