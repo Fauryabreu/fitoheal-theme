@@ -856,7 +856,7 @@
           "type": "heading",
           "settings": {
             "content_alignment": "left",
-            "title": "<strong>Tecnología _liposomal para una mejor absorción</strong>",
+            "title": "<strong>Para el cuerpo que no sabe _cómo soltar el día.</strong>",
             "title_color": "#000000",
             "title_highlight_color": "#478641",
             "custom_title_font": false,
@@ -880,29 +880,29 @@
         "benefit_1_5lAsTN": {
           "type": "benefit",
           "settings": {
-            "title": "<strong>Alta absorción X5</strong>",
-            "text": "Favorece mayor disponibilidad del activo."
+            "title": "<strong>Baja el cortisol</strong>",
+            "text": "La Ashwagandha regula la hormona del estrés — el mensajero químico que mantiene tu sistema nervioso en alerta — para que tu cuerpo pueda descansar de verdad."
           }
         },
         "benefit_2_WLkZAU": {
           "type": "benefit",
           "settings": {
-            "title": "<strong>Mejor aprovechamiento</strong>",
-            "text": "Ayuda a que cada cápsula trabaje mejor."
+            "title": "<strong>Relaja los músculos</strong>",
+            "text": "El Glicinato de Magnesio afloja la contracción crónica que el estrés acumula en cuello, espalda y mandíbula."
           }
         },
         "benefit_3_XK8kZV": {
           "type": "benefit",
           "settings": {
-            "title": "<strong>Uso constante</strong>",
-            "text": "Apoya una experiencia más estable."
+            "title": "<strong>Sueño más profundo y reparador</strong>",
+            "text": "No son más horas de sueño — son horas que realmente descansan. Menos vueltas en la cama, más recuperación real."
           }
         },
         "benefit_4_gPhHh1": {
           "type": "benefit",
           "settings": {
-            "title": "<strong>Rutina fácil</strong>",
-            "text": "Cápsulas prácticas para el día a día."
+            "title": "<strong>Sin estimulantes, sin somnolencia</strong>",
+            "text": "Ninguno de los dos te duerme ni te deja aturdido. El efecto se construye con la constancia, no con una dosis cada vez más alta."
           }
         }
       },
