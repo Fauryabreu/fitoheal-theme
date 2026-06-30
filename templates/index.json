@@ -24,8 +24,127 @@
         "item_3_link": ""
       }
     },
+    "vso_hero_12_i9ifzL": {
+      "type": "vso-hero-12",
+      "blocks": {
+        "slide_YfKmky": {
+          "type": "slide",
+          "settings": {
+            "media_type": "image",
+            "slide_image": "shopify://shop_images/ChatGPT_Image_30_jun_2026_14_00_09.png",
+            "heading": "",
+            "description": "",
+            "button_label": "",
+            "button_url": ""
+          }
+        },
+        "slide_8XtUdi": {
+          "type": "slide",
+          "settings": {
+            "media_type": "image",
+            "slide_image": "shopify://shop_images/ChatGPT_Image_30_jun_2026_14_05_12.png",
+            "heading": "",
+            "description": "",
+            "button_label": "",
+            "button_url": ""
+          }
+        },
+        "slide_FFaHYD": {
+          "type": "slide",
+          "disabled": true,
+          "settings": {
+            "media_type": "image",
+            "heading": "Special Offers",
+            "description": "<p>Limited time deals on your favorite products</p>",
+            "button_label": "Shop Deals",
+            "button_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "slide_YfKmky",
+        "slide_8XtUdi",
+        "slide_FFaHYD"
+      ],
+      "name": "VSO - Hero Carousel 12",
+      "settings": {
+        "enable_advanced_settings": false,
+        "section_bg_type": "solid",
+        "section_bg_color": "#ffffff",
+        "section_bg_gradient": "linear-gradient(180deg, #ffffff 0%, #f3f4f6 100%)",
+        "bg_full_width": true,
+        "section_border_radius": 12,
+        "section_border_radius_mobile": 0,
+        "height_mode": "fullscreen",
+        "section_height": 600,
+        "height_mode_mobile": "fullscreen",
+        "section_height_mobile": 500,
+        "content_position_desktop": "center-left",
+        "content_position_mobile": "center-left",
+        "overlay_padding": 60,
+        "overlay_padding_mobile": 30,
+        "overlay_bg_color": "",
+        "section_full_width": true,
+        "section_max_width": 120,
+        "padding_horizontal": 0,
+        "padding_horizontal_mobile": 0,
+        "padding_top": 40,
+        "padding_bottom": 40,
+        "padding_top_mobile": 20,
+        "padding_bottom_mobile": 20,
+        "margin_top": 40,
+        "margin_bottom": 40,
+        "margin_top_mobile": 20,
+        "margin_bottom_mobile": 20,
+        "enable_autoplay": true,
+        "autoplay_delay": 10,
+        "pause_on_interaction": false,
+        "enable_loop": true,
+        "transition_effect": "slide",
+        "transition_speed": 600,
+        "show_pagination": true,
+        "pagination_size": 12,
+        "pagination_gap": 8,
+        "pagination_color": "rgba(255, 255, 255, 0.5)",
+        "pagination_active_color": "#ffffff",
+        "heading_margin_bottom": 10,
+        "heading_custom_font": false,
+        "heading_as": "h2",
+        "heading_font": "poppins_n4",
+        "heading_font_size": 48,
+        "heading_font_size_mobile": 36,
+        "heading_font_weight": 700,
+        "heading_line_height": 120,
+        "heading_letter_spacing": 0,
+        "heading_color": "#ffffff",
+        "description_margin_bottom": 10,
+        "description_custom_font": false,
+        "description_as": "p",
+        "description_font": "poppins_n4",
+        "description_font_size": 18,
+        "description_font_size_mobile": 16,
+        "description_font_weight": 400,
+        "description_line_height": 140,
+        "description_color": "#ffffff",
+        "button_custom_font": false,
+        "button_as": "p",
+        "button_font": "poppins_n4",
+        "button_font_size": 16,
+        "button_font_size_mobile": 14,
+        "button_font_weight": 500,
+        "button_padding_x": 32,
+        "button_padding_x_mobile": 20,
+        "button_padding_y": 18,
+        "button_border_radius": 25,
+        "button_bg_color": "#2C3E32",
+        "button_text_color": "#FFFFFF",
+        "button_hover_bg_color": "#1E2B22",
+        "button_hover_text_color": "#F0F8F2"
+      }
+    },
     "hero-grid": {
       "type": "hero-grid",
+      "disabled": true,
       "settings": {
         "bg_color": "#fafdf8",
         "titulo": "La evolución de la suplementación",
@@ -1375,6 +1494,7 @@
   },
   "order": [
     "announcement-bar",
+    "vso_hero_12_i9ifzL",
     "hero-grid",
     "social-proof",
     "features-bar",
