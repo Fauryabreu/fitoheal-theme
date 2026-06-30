@@ -11,7 +11,6 @@
   "sections": {
     "announcement-bar": {
       "type": "announcement-bar",
-      "disabled": true,
       "settings": {
         "show_bar": true,
         "bg_color": "#1b4332",
@@ -66,6 +65,7 @@
         "slide_8XtUdi",
         "slide_FFaHYD"
       ],
+      "disabled": true,
       "name": "VSO - Hero Carousel 12",
       "settings": {
         "enable_advanced_settings": false,
@@ -144,7 +144,6 @@
     },
     "hero-grid": {
       "type": "hero-grid",
-      "disabled": true,
       "settings": {
         "bg_color": "#fafdf8",
         "titulo": "La evolución de la suplementación",
