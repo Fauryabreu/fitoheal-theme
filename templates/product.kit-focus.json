@@ -880,29 +880,29 @@
         "benefit_1_5lAsTN": {
           "type": "benefit",
           "settings": {
-            "title": "<strong>Alta absorción X5</strong>",
-            "text": "Favorece mayor disponibilidad del activo."
+            "title": "<strong>Menos ruido mental</strong>",
+            "text": "La Ashwagandha baja el cortisol — la hormona del estrés — que genera los pensamientos en loop y la distracción involuntaria que compiten con lo que intentas hacer."
           }
         },
         "benefit_2_WLkZAU": {
           "type": "benefit",
           "settings": {
-            "title": "<strong>Mejor aprovechamiento</strong>",
-            "text": "Ayuda a que cada cápsula trabaje mejor."
+            "title": "<strong>Concentración que dura</strong>",
+            "text": "La Melena de León estimula el NGF — el Factor de Crecimiento Nervioso — para que las neuronas funcionen mejor. El enfoque no se agota a las 2 horas."
           }
         },
         "benefit_3_XK8kZV": {
           "type": "benefit",
           "settings": {
-            "title": "<strong>Uso constante</strong>",
-            "text": "Apoya una experiencia más estable."
+            "title": "<strong>Memoria más ágil</strong>",
+            "text": "Con neuronas más sanas y menos interferencia del cortisol, la memoria de trabajo — la que necesitas para seguir varios pensamientos a la vez — responde con más rapidez."
           }
         },
         "benefit_4_gPhHh1": {
           "type": "benefit",
           "settings": {
-            "title": "<strong>Rutina fácil</strong>",
-            "text": "Cápsulas prácticas para el día a día."
+            "title": "<strong>Sin cafeína, sin crash</strong>",
+            "text": "No acelera el sistema nervioso artificialmente. Mejora la función cognitiva real. Sin rebote, sin dependencia, sin el bajón de la tarde."
           }
         }
       },
