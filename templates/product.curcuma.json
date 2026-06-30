@@ -449,7 +449,7 @@
             "subtitle_letter_spacing": 1,
             "subtitle_color": "#ffffff",
             "subtitle_spacing": 16,
-            "title": "<strong>Apoya tu cuerpo desde adentro.</strong>",
+            "title": "<strong>Esto es para ti si...</strong>",
             "title_custom_font": false,
             "title_as": "h2",
             "title_font": "poppins_n6",
@@ -462,7 +462,7 @@
             "title_color": "#ffffff",
             "title_gradient": "linear-gradient(135deg, #EC4899 0%, #F472B6 100%)",
             "title_spacing": 16,
-            "text": "Transform your lashes with:",
+            "text": "",
             "text_custom_font": false,
             "text_as": "p",
             "text_font": "poppins_n4",
@@ -498,29 +498,29 @@
         "feature_1_iokXup": {
           "type": "feature",
           "settings": {
-            "feature_title": "<strong>Respuesta antiinflamatoria</strong>",
-            "feature_text": "Apoya el equilibrio natural del cuerpo."
+            "feature_title": "Tienes dolores articulares o rigidez que no ceden",
+            "feature_text": "Rodillas, caderas, espalda, manos. Una inflamación que el médico dice que 'no es nada grave' pero que está ahí todos los días."
           }
         },
         "feature_2_n0zBc0": {
           "type": "feature",
           "settings": {
-            "feature_title": "<strong>Acción antioxidante</strong>",
-            "feature_text": "Contribuye al cuidado celular."
+            "feature_title": "Tu recuperación física es más lenta de lo que debería",
+            "feature_text": "Después de ejercicio o esfuerzo físico, el cuerpo tarda más en recuperarse. La inflamación post-entreno no baja tan rápido."
           }
         },
         "feature_3_2EfXxK": {
           "type": "feature",
           "settings": {
-            "feature_title": "<strong>Salud articular</strong>",
-            "feature_text": "Favorece articulaciones y movilidad diaria."
+            "feature_title": "Sientes inflamación de fondo en el cuerpo",
+            "feature_text": "No hay una lesión específica. Es una pesadez generalizada, molestias que van y vienen, un cuerpo que siente que carga más de lo que debería."
           }
         },
         "feature_4_w0MBJV": {
           "type": "feature",
           "settings": {
-            "feature_title": "<strong>Alta absorción X5</strong>",
-            "feature_text": "Tecnología liposomal para mejor aprovechamiento."
+            "feature_title": "<strong>Ya probaste cúrcuma y no notaste nada</strong>",
+            "feature_text": "Tés, polvo, cápsulas genéricas. No funcionaron porque el problema no era el ingrediente — era la absorción. Eso es exactamente lo que el liposomal resuelve."
           }
         }
       },
@@ -542,7 +542,7 @@
         "section_outer_padding_bottom": 20,
         "section_outer_padding_top_mobile": 15,
         "section_outer_padding_bottom_mobile": 15,
-        "section_outer_bg_color": "#1e3b1d",
+        "section_outer_bg_color": "#1C4332",
         "full_width_desktop": false,
         "section_border_radius": 12,
         "section_border_radius_mobile": 0,
