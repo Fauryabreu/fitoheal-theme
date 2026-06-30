@@ -512,15 +512,15 @@
         "feature_3_2EfXxK": {
           "type": "feature",
           "settings": {
-            "feature_title": "<strong>Calma diaria</strong>",
-            "feature_text": "Favorece una respuesta más equilibrada frente al estrés cotidiano."
+            "feature_title": "<strong>Dependes de la cafeína para funcionar con normalidad</strong>",
+            "feature_text": "No es que te guste el café — es que sin él no arrancas. Y aun con él, la concentración no dura lo que necesitas."
           }
         },
         "feature_4_w0MBJV": {
           "type": "feature",
           "settings": {
-            "feature_title": "<strong>Energía sin estimulantes</strong>",
-            "feature_text": "Ideal para sentirte más centrado, sin depender de cafeína o estimulantes."
+            "feature_title": "<strong>Tienes períodos de alta exigencia cognitiva</strong>",
+            "feature_text": "Estudio, proyectos, trabajo que requiere enfoque sostenido por horas. Necesitas que tu cerebro funcione a nivel alto de forma consistente, no por rachas."
           }
         }
       },
