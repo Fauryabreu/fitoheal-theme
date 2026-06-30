@@ -1164,6 +1164,7 @@
         "card_item_7_TC3pr9",
         "card_item_8_9b3ZpQ"
       ],
+      "disabled": true,
       "name": "VSO - Hero 45",
       "settings": {
         "enable_advanced_settings": false,
@@ -1665,7 +1666,7 @@
         "title_wMRzQ5": {
           "type": "title",
           "settings": {
-            "title": "<strong>Resuelve _tus dudas_ importantes</strong>",
+            "title": "<strong>Lo que suelen _preguntarnos</strong>",
             "title_color": "#000000",
             "title_highlight_color": "#478641",
             "custom_font": false,
@@ -1728,28 +1729,28 @@
           "type": "faq_item",
           "settings": {
             "question": "<strong>¿Para qué sirve el Kit Desinflamar?</strong>",
-            "answer": "<p>Apoya el bienestar físico, la salud articular, la digestión y la función muscular, combinando Cúrcuma Liposomal + Citrato de Magnesio D3 Liposomal.</p>"
+            "answer": "<p>Para reducir la inflamación desde dos frentes: la inflamación articular y de tejidos — con la Cúrcuma Liposomal — y la inflamación intestinal — con el Citrato de Magnesio Liposomal. Cuando el cuerpo lleva tiempo inflamado, generalmente los dos están activos al mismo tiempo.</p>"
           }
         },
         "faq_item_2_ohlkGR": {
           "type": "faq_item",
           "settings": {
-            "question": "<strong>¿Por qué combinar Cúrcuma y Citrato de Magnesio?</strong>",
-            "answer": "<p>Porque trabajan de forma complementaria: la Cúrcuma apoya la respuesta antiinflamatoria natural, las articulaciones y la acción antioxidante, mientras el Citrato de Magnesio favorece la digestión, la salud intestinal y la función muscular. </p><p></p>"
+            "question": "<strong>¿Por qué comprar el kit y no solo uno de los dos?</strong>",
+            "answer": "<p>Porque la inflamación intestinal y la inflamación articular se alimentan mutuamente. Un intestino inflamado genera inflamación sistémica — que llega a las articulaciones. Articulaciones inflamadas generan estrés oxidativo que afecta el intestino. Los dos juntos cortan el ciclo completo.</p><p></p>"
           }
         },
         "faq_item_3_aKHWJF": {
           "type": "faq_item",
           "settings": {
-            "question": "<strong>¿Cuándo debo tomarlo?</strong>",
-            "answer": "<p>Tomar según la indicación de cada producto: <strong>1 a 2 cápsulas al día</strong> con agua, preferiblemente junto a una comida o según tu rutina diaria.</p>"
+            "question": "<strong>¿Por qué la cúrcuma en polvo o en té no funcionó antes?</strong>",
+            "answer": "<p>Porque la curcumina — el compuesto activo de la cúrcuma — casi no se absorbe en su forma normal: el cuerpo aprovecha menos del 1%. La versión liposomal envuelve la curcumina en grasa para que atraviese el sistema digestivo y llegue al tejido donde tiene que actuar.</p>"
           }
         },
         "faq_item_4_jrk0ZU": {
           "type": "faq_item",
           "settings": {
-            "question": "<strong>¿Qué diferencia tiene que sea liposomal?</strong>",
-            "answer": "<p>La tecnología liposomal ayuda a proteger y transportar los activos para favorecer una mejor absorción y aprovechamiento en el organismo.</p>"
+            "question": "<strong>¿Cómo debo tomarlo?</strong>",
+            "answer": "<p>1 a 2 cápsulas de cada producto con las comidas. La grasa de los alimentos potencia la absorción de la cúrcuma. El Citrato de Magnesio actúa mejor cuando el sistema digestivo está activo.</p>"
           }
         }
       },
