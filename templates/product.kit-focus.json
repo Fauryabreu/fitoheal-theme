@@ -57,7 +57,7 @@
         "text_WKhTaO": {
           "type": "text",
           "settings": {
-            "text": "<p>Apoya el enfoque, la memoria y el equilibrio mental durante el día.</p><h2></h2>",
+            "text": "<p>La mente no rinde por dos razones. _Este kit resuelve las dos.</p><h2></h2>",
             "text_highlight_color": "#d7fca3",
             "text_highlight_text_color": "#111111",
             "text_color": "#555555",
@@ -160,7 +160,7 @@
         "description_4X83w7": {
           "type": "description",
           "settings": {
-            "description_text": "<p>Una fórmula liposomal de alta absorción diseñada para apoyar la concentración, la memoria y la calma mental sin depender de estimulantes.</p>",
+            "description_text": "<p>Incluye Ashwagandha Liposomal + Melena de León Liposomal — dos fórmulas que trabajan juntas porque el enfoque no falla por una sola causa: el estrés bloquea la mente y las neuronas no tienen lo que necesitan para funcionar bien. Uno elimina el obstáculo, el otro construye la capacidad.</p>",
             "description_color": "#111111",
             "description_font_size": 16,
             "description_font_size_mobile": 14,
@@ -176,8 +176,8 @@
         "collapsible_row_1_DAxcm0": {
           "type": "collapsible_row",
           "settings": {
-            "title": "¿Cómo funciona el Kit Focus?",
-            "content": "<p>Combina <strong>Ashwagandha Liposomal + Melena de León Liposomal</strong>.<br/><br/>La Ashwagandha ayuda a favorecer el equilibrio emocional y la calma diaria, mientras que la Melena de León apoya la memoria, la concentración y el bienestar cognitivo.</p>",
+            "title": "¿Cómo funciona este kit?",
+            "content": "<p>La Ashwagandha baja el cortisol — la hormona del estrés — que genera el ruido mental que bloquea la concentración. La Melena de León estimula el NGF (Factor de Crecimiento Nervioso), una proteína que cuida y regenera las neuronas para que funcionen mejor. Juntos limpian el camino y construyen la capacidad.</p>",
             "margin_top_desktop": 0,
             "margin_bottom_desktop": 0,
             "margin_top_mobile": 0,
@@ -187,8 +187,8 @@
         "collapsible_row_2_b5NJ8R": {
           "type": "collapsible_row",
           "settings": {
-            "title": "¿Cuándo debo tomarla?",
-            "content": "<p>Puedes tomarlo durante el día, preferiblemente con alimentos.<br/><br/>La dosis general recomendada es de <strong>1 a 2 cápsulas al día</strong>, según la indicación del producto.</p>",
+            "title": "¿Cuándo debo tomarlo?",
+            "content": "<p>En la mañana, con el desayuno. La Ashwagandha baja el cortisol de inicio del día — que en personas estresadas puede estar elevado desde que se despiertan. La Melena de León actúa durante el período de mayor demanda cognitiva. Los dos en la mañana preparan la mente para el día.</p>",
             "margin_top_desktop": 0,
             "margin_bottom_desktop": 0,
             "margin_top_mobile": 0,
@@ -198,8 +198,8 @@
         "collapsible_row_3_fMM5Om": {
           "type": "collapsible_row",
           "settings": {
-            "title": "¿En cuánto tiempo puedo notar cambios?",
-            "content": "<p>Depende de cada persona y de su constancia.<br/><br/>Este kit está pensado como apoyo diario para la concentración, la claridad mental y el equilibrio, no como un efecto inmediato.</p>",
+            "title": "¿En cuánto tiempo voy a notar cambios?",
+            "content": "<p>La menor niebla mental y la mayor facilidad para concentrarse suelen notarse entre la semana 2 y 4. La memoria más ágil y el enfoque sostenido llegan entre la semana 4 y 8, con el NGF acumulándose de forma constante.</p>",
             "margin_top_desktop": 0,
             "margin_bottom_desktop": 0,
             "margin_top_mobile": 0,
