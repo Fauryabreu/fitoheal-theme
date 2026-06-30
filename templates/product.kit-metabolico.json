@@ -749,7 +749,7 @@
           "type": "heading",
           "settings": {
             "content_alignment": "left",
-            "title": "<strong>Tecnología _liposomal para una mejor absorción</strong>",
+            "title": "<strong>Para el cuerpo que tiene _dos problemas activos al mismo tiempo.</strong>",
             "title_color": "#000000",
             "title_highlight_color": "#478641",
             "custom_title_font": false,
@@ -773,29 +773,29 @@
         "benefit_1_5lAsTN": {
           "type": "benefit",
           "settings": {
-            "title": "<strong>Alta absorción X5</strong>",
-            "text": "Favorece mayor disponibilidad del activo."
+            "title": "<strong>Glucosa más estable</strong>",
+            "text": "La Berberina activa la AMPK — el interruptor maestro del metabolismo — para mejorar cómo el cuerpo procesa el azúcar. Menos picos de glucosa, menos variaciones de energía, menos antojos."
           }
         },
         "benefit_2_WLkZAU": {
           "type": "benefit",
           "settings": {
-            "title": "<strong>Mejor aprovechamiento</strong>",
-            "text": "Ayuda a que cada cápsula trabaje mejor."
+            "title": "<strong>Menos inflamación de fondo</strong>",
+            "text": "La Cúrcuma corta las vías inflamatorias que el metabolismo dañado activa. El cuerpo empieza a funcionar con menos resistencia y menos pesadez generalizada."
           }
         },
         "benefit_3_XK8kZV": {
           "type": "benefit",
           "settings": {
-            "title": "<strong>Uso constante</strong>",
-            "text": "Apoya una experiencia más estable."
+            "title": "<strong>Apoyo al perfil lipídico</strong>",
+            "text": "La Berberina contribuye a mantener el colesterol LDL — el malo — y los triglicéridos — grasas en sangre — en rangos saludables, en combinación con alimentación balanceada."
           }
         },
         "benefit_4_gPhHh1": {
           "type": "benefit",
           "settings": {
-            "title": "<strong>Rutina fácil</strong>",
-            "text": "Cápsulas prácticas para el día a día."
+            "title": "<strong>Equilibrio desde adentro</strong>",
+            "text": "Cuando la glucosa es estable y la inflamación baja, el cuerpo responde mejor. Energía más consistente, digestión más ordenada, metabolismo que trabaja contigo."
           }
         }
       },
@@ -1057,6 +1057,7 @@
         "card_item_7_TC3pr9",
         "card_item_8_9b3ZpQ"
       ],
+      "disabled": true,
       "name": "VSO - Hero 45",
       "settings": {
         "enable_advanced_settings": false,
