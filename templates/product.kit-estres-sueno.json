@@ -1729,28 +1729,42 @@
           "type": "faq_item",
           "settings": {
             "question": "<strong>¿Para qué sirve el Kit Sueño / Estrés?</strong>",
-            "answer": "<p>Apoya la calma mental, la relajación muscular y una rutina de descanso más estable, combinando Ashwagandha Liposomal + Glicinato de Magnesio D3 Liposomal.</p>"
+            "answer": "<p>Para regular el cortisol — la hormona del estrés — con la Ashwagandha, y relajar los músculos y el sistema nervioso con el Glicinato de Magnesio. Cuando el estrés se acumula, generalmente afecta la mente y el cuerpo al mismo tiempo.</p>"
           }
         },
         "faq_item_2_ohlkGR": {
           "type": "faq_item",
           "settings": {
-            "question": "<strong>¿Por qué combinar Ashwagandha y Glicinato de Magnesio?</strong>",
-            "answer": "<p>Porque trabajan de forma complementaria: la Ashwagandha apoya el equilibrio emocional y el manejo del estrés diario, mientras el Glicinato de Magnesio contribuye a la relajación muscular y al descanso. </p>"
+            "question": "<strong>¿Por qué comprar el kit y no solo la Ashwagandha?</strong>",
+            "answer": "<p>Porque el estrés mental y la tensión física se generan mutuamente. La Ashwagandha baja el cortisol pero no suelta la tensión muscular ya acumulada. El Glicinato de Magnesio relaja el cuerpo pero no regula la causa hormonal del estrés. Los dos juntos rompen el ciclo completo.</p>"
           }
         },
         "faq_item_3_aKHWJF": {
           "type": "faq_item",
           "settings": {
-            "question": "<strong>¿Cuándo debo tomarlo?</strong>",
-            "answer": "<p>Preferiblemente en la tarde o noche, como parte de una rutina de descanso. Sigue la indicación de cada producto: <strong>1 a 2 cápsulas al día</strong> con agua.</p>"
+            "question": "<strong>¿Me va a dar sueño durante el día?</strong>",
+            "answer": "<p>No. Ninguno de los dos tiene efecto sedante inmediato. Tomados en la noche, te ayudan a relajarte y conciliar el sueño — durante el día no genera somnolencia ni aturdimiento.</p>"
           }
         },
         "faq_item_4_jrk0ZU": {
           "type": "faq_item",
           "settings": {
-            "question": "<strong>¿Puedo usarlo todos los días?</strong>",
-            "answer": "<p>Sí, puede integrarse como parte de una rutina diaria de bienestar. Si estás embarazada, en lactancia o bajo tratamiento médico, consulta con un profesional de salud antes de usarlo.</p>"
+            "question": "<strong>¿Cómo debo tomarlo?</strong>",
+            "answer": "<p>1 a 2 cápsulas de cada producto, 30 a 60 minutos antes de dormir, con agua. Tomarlo a la misma hora todas las noches ayuda a que el cuerpo lo integre como parte de la rutina de descanso.</p>"
+          }
+        },
+        "faq_item_aE7pXd": {
+          "type": "faq_item",
+          "settings": {
+            "question": "<strong>¿En cuánto tiempo voy a notar cambios?</strong>",
+            "answer": "<p>La relajación muscular suele notarse en la primera semana. El cortisol regulado de forma estable, y con eso un sueño realmente profundo, llega entre la semana 2 y 4 de uso constante.</p>"
+          }
+        },
+        "faq_item_qdJNwT": {
+          "type": "faq_item",
+          "settings": {
+            "question": "<strong>¿Y si lo tomo y no siento nada?</strong>",
+            "answer": "<p>Verificar primero que se esté tomando en la noche y con constancia diaria — el cortisol no se regula de un día para otro. Si después de 4 semanas de uso diario no notas diferencia, escríbenos para evaluar tu caso.</p>"
           }
         }
       },
@@ -1761,7 +1775,9 @@
         "faq_item_1_nCxGYg",
         "faq_item_2_ohlkGR",
         "faq_item_3_aKHWJF",
-        "faq_item_4_jrk0ZU"
+        "faq_item_4_jrk0ZU",
+        "faq_item_aE7pXd",
+        "faq_item_qdJNwT"
       ],
       "name": "VSO - FAQ 02",
       "settings": {
