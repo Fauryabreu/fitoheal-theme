@@ -177,7 +177,7 @@
           "type": "collapsible_row",
           "settings": {
             "title": "¿Cómo funciona este kit?",
-            "content": "<p>Este kit combina Cúrcuma Liposomal y Citrato de Magnesio D3 Liposomal. La Cúrcuma apoya la respuesta antiinflamatoria natural, la salud articular y la acción antioxidante, mientras el Citrato de Magnesio favorece la digestión, la salud intestinal y la función muscular. </p>",
+            "content": "<p>La Cúrcuma actúa sobre la inflamación sistémica — la inflamación de fondo que afecta articulaciones, tejidos y músculos. El Citrato de Magnesio actúa en el tracto intestinal — el tubo digestivo — regularizando el tránsito y reduciendo la inflamación intestinal. Juntos atacan la inflamación desde adentro y desde afuera.</p>",
             "margin_top_desktop": 0,
             "margin_bottom_desktop": 0,
             "margin_top_mobile": 0,
@@ -187,8 +187,8 @@
         "collapsible_row_2_b5NJ8R": {
           "type": "collapsible_row",
           "settings": {
-            "title": "¿Cuándo debo tomarla?",
-            "content": "<p>Tomar según la indicación de cada producto: <strong>1 a 2 cápsulas al día</strong> con agua, preferiblemente junto a una comida o según tu rutina diaria.</p>",
+            "title": "¿Cuándo debo tomarlo?",
+            "content": "<p>Con las comidas. La Cúrcuma se absorbe mejor con grasa presente en los alimentos. El Citrato de Magnesio actúa mejor cuando el sistema digestivo está activo. 1 a 2 cápsulas de cada producto al día.</p>",
             "margin_top_desktop": 0,
             "margin_bottom_desktop": 0,
             "margin_top_mobile": 0,
@@ -198,8 +198,8 @@
         "collapsible_row_3_fMM5Om": {
           "type": "collapsible_row",
           "settings": {
-            "title": "¿En cuánto tiempo puedo notar cambios?",
-            "content": "<p>Cada cuerpo responde diferente. Con el uso constante, este kit puede apoyar una mejor sensación de bienestar físico, digestivo y articular.</p>",
+            "title": "¿En cuánto tiempo voy a notar cambios?",
+            "content": "<p>La hinchazón y la pesadez digestiva suelen mejorar en las primeras dos semanas. La movilidad articular y la menor rigidez llegan entre la semana 4 y 8 con el uso constante.</p>",
             "margin_top_desktop": 0,
             "margin_bottom_desktop": 0,
             "margin_top_mobile": 0,
