@@ -459,7 +459,7 @@
             "title_line_height": 120,
             "title_letter_spacing": 0,
             "title_color_type": "solid",
-            "title_color": "#ffffff",
+            "title_color": "#0CC172",
             "title_gradient": "linear-gradient(135deg, #EC4899 0%, #F472B6 100%)",
             "title_spacing": 16,
             "text": "",
@@ -592,7 +592,7 @@
           "type": "heading",
           "settings": {
             "content_alignment": "left",
-            "title": "<strong>Tecnología _liposomal para una mejor absorción</strong>",
+            "title": "<strong>Para la inflamación _que llevas tiempo cargando.</strong>",
             "title_color": "#000000",
             "title_highlight_color": "#478641",
             "custom_title_font": false,
@@ -616,22 +616,22 @@
         "benefit_1_5lAsTN": {
           "type": "benefit",
           "settings": {
-            "title": "<strong>Alta absorción X5</strong>",
-            "text": "Favorece mayor disponibilidad del activo."
+            "title": "<strong>Antiinflamatorio natural</strong>",
+            "text": "La curcumina inhibe las vías de inflamación celular — los mensajeros químicos que producen y mantienen la inflamación. Menos inflamación de fondo, más movilidad y menos molestia física."
           }
         },
         "benefit_2_WLkZAU": {
           "type": "benefit",
           "settings": {
-            "title": "<strong>Mejor aprovechamiento</strong>",
-            "text": "Ayuda a que cada cápsula trabaje mejor."
+            "title": "<strong>Protección antioxidante</strong>",
+            "text": "Los antioxidantes neutralizan los radicales libres — moléculas que dañan las células con el tiempo. La curcumina es uno de los antioxidantes más potentes conocidos en la naturaleza."
           }
         },
         "benefit_3_XK8kZV": {
           "type": "benefit",
           "settings": {
-            "title": "<strong>Uso constante</strong>",
-            "text": "Apoya una experiencia más estable."
+            "title": "<strong>Bienestar articular</strong>",
+            "text": "Rodillas, caderas, columna. La curcumina actúa sobre la inflamación del tejido articular — no como un calmante temporal sino como un regulador de fondo."
           }
         },
         "benefit_4_gPhHh1": {
