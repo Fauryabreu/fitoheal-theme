@@ -24,6 +24,83 @@
         "item_3_link": ""
       }
     },
+    "1782847609a80ad226": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_006ab73_pYnPT3": {
+          "type": "ai_gen_block_006ab73",
+          "settings": {
+            "autoplay": true,
+            "autoplay_speed": 5,
+            "transition_type": "fade",
+            "show_arrows": true,
+            "show_dots": true,
+            "arrow_bg_color": "#FAFDF8",
+            "arrow_color": "#1B4332",
+            "dot_color": "#FAFDF8",
+            "fallback_color": "#2D6A4F",
+            "slide_1_media_type": "image",
+            "slide_1_image_desktop": "shopify://shop_images/1_3db045ae-4130-4d5f-9bd9-be25789081f6.png",
+            "slide_1_image_mobile": "shopify://shop_images/3_0acbf2a8-67eb-401d-bc67-782298870f7d.png",
+            "slide_1_video_url": "",
+            "slide_1_show_overlay": true,
+            "slide_1_overlay_opacity": 0,
+            "slide_1_heading": "",
+            "slide_1_heading_color": "#FAFDF8",
+            "slide_1_subheading": "",
+            "slide_1_subheading_color": "#FAFDF8",
+            "slide_1_text_alignment": "center",
+            "slide_1_vertical_position": "center",
+            "slide_1_button_1_text": "",
+            "slide_1_button_1_link": "",
+            "slide_1_button_1_bg_color": "#74C69D",
+            "slide_1_button_1_text_color": "#1B4332",
+            "slide_1_button_2_text": "",
+            "slide_1_button_2_link": "",
+            "slide_1_button_2_text_color": "#FAFDF8",
+            "slide_2_media_type": "image",
+            "slide_2_video_url": "",
+            "slide_2_show_overlay": true,
+            "slide_2_overlay_opacity": 30,
+            "slide_2_heading": "",
+            "slide_2_heading_color": "#FAFDF8",
+            "slide_2_subheading": "",
+            "slide_2_subheading_color": "#FAFDF8",
+            "slide_2_text_alignment": "center",
+            "slide_2_vertical_position": "center",
+            "slide_2_button_1_text": "",
+            "slide_2_button_1_link": "",
+            "slide_2_button_1_bg_color": "#74C69D",
+            "slide_2_button_1_text_color": "#1B4332",
+            "slide_2_button_2_text": "",
+            "slide_2_button_2_link": "",
+            "slide_2_button_2_text_color": "#FAFDF8",
+            "slide_3_media_type": "image",
+            "slide_3_video_url": "",
+            "slide_3_show_overlay": true,
+            "slide_3_overlay_opacity": 30,
+            "slide_3_heading": "",
+            "slide_3_heading_color": "#FAFDF8",
+            "slide_3_subheading": "",
+            "slide_3_subheading_color": "#FAFDF8",
+            "slide_3_text_alignment": "center",
+            "slide_3_vertical_position": "center",
+            "slide_3_button_1_text": "",
+            "slide_3_button_1_link": "",
+            "slide_3_button_1_bg_color": "#74C69D",
+            "slide_3_button_1_text_color": "#1B4332",
+            "slide_3_button_2_text": "",
+            "slide_3_button_2_link": "",
+            "slide_3_button_2_text_color": "#FAFDF8"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_006ab73_pYnPT3"
+      ],
+      "settings": {}
+    },
     "vso_hero_12_i9ifzL": {
       "type": "vso-hero-12",
       "blocks": {
@@ -66,6 +143,7 @@
         "slide_8XtUdi",
         "slide_FFaHYD"
       ],
+      "disabled": true,
       "name": "VSO - Hero Carousel 12",
       "settings": {
         "enable_advanced_settings": true,
@@ -105,7 +183,7 @@
         "show_pagination": true,
         "pagination_size": 12,
         "pagination_gap": 8,
-        "pagination_color": "rgba(255, 255, 255, 0.5)",
+        "pagination_color": "#ffffff80",
         "pagination_active_color": "#ffffff",
         "heading_margin_bottom": 10,
         "heading_custom_font": false,
@@ -136,10 +214,10 @@
         "button_padding_x_mobile": 20,
         "button_padding_y": 18,
         "button_border_radius": 25,
-        "button_bg_color": "#2C3E32",
-        "button_text_color": "#FFFFFF",
-        "button_hover_bg_color": "#1E2B22",
-        "button_hover_text_color": "#F0F8F2"
+        "button_bg_color": "#2c3e32",
+        "button_text_color": "#ffffff",
+        "button_hover_bg_color": "#1e2b22",
+        "button_hover_text_color": "#f0f8f2"
       }
     },
     "hero-grid": {
@@ -1494,6 +1572,7 @@
   },
   "order": [
     "announcement-bar",
+    "1782847609a80ad226",
     "vso_hero_12_i9ifzL",
     "hero-grid",
     "social-proof",
