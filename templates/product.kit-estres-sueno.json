@@ -585,6 +585,116 @@
         "feature_text_color": "#ffffff"
       }
     },
+    "vso_icon_benefits_01_7adn6z": {
+      "type": "vso-icon-benefits-01",
+      "blocks": {
+        "heading_meYRq3": {
+          "type": "heading",
+          "settings": {
+            "content_alignment": "center",
+            "title": "<strong>¿Por qué dos productos _y no uno solo?</strong>",
+            "title_color": "#000000",
+            "title_highlight_color": "#0cc172",
+            "custom_title_font": false,
+            "title_as": "h2",
+            "title_font": "sans_serif_n4",
+            "title_size_desktop": 40,
+            "title_size_mobile": 32,
+            "title_line_height": 130,
+            "subtitle": "El estrés no actúa en un solo lugar. Bloquea la mente y, al mismo tiempo, se acumula como tensión física en el cuerpo — y uno alimenta al otro mientras no se trate.",
+            "subtitle_color": "#000000",
+            "custom_subtitle_font": false,
+            "subtitle_as": "p",
+            "subtitle_font": "sans_serif_n4",
+            "subtitle_size_desktop": 20,
+            "subtitle_size_mobile": 16,
+            "subtitle_line_height": 130,
+            "header_elements_gap": 16,
+            "header_blocks_gap": 50
+          }
+        },
+        "benefit_ChnW3B": {
+          "type": "benefit",
+          "settings": {
+            "title": "<strong>Ashwagandha Liposomal.</strong>",
+            "text": "Regula el cortisol Baja el cortisol — la hormona del estrés — que le dice a tu sistema nervioso que está en peligro"
+          }
+        },
+        "benefit_CAxMeK": {
+          "type": "benefit",
+          "settings": {
+            "title": "<strong>Glicinato de Magnesio Liposomal.</strong>",
+            "text": " Suelta la tensión física Relaja directamente los músculos y calma el sistema nervioso con glicina, un aminoácido con efecto inhibidor sobre la actividad eléctrica cerebral que prepara el cuerpo para dormir."
+          }
+        },
+        "benefit_fazx3t": {
+          "type": "benefit",
+          "disabled": true,
+          "settings": {
+            "title": "Muscle Recovery",
+            "text": "Eases cramps and supports faster post-workout recovery."
+          }
+        },
+        "benefit_m4KaBm": {
+          "type": "benefit",
+          "disabled": true,
+          "settings": {
+            "title": "Heart & Energy Support",
+            "text": "Boosts cardiovascular health and helps convert food into steady energy."
+          }
+        }
+      },
+      "block_order": [
+        "heading_meYRq3",
+        "benefit_ChnW3B",
+        "benefit_CAxMeK",
+        "benefit_fazx3t",
+        "benefit_m4KaBm"
+      ],
+      "name": "VSO - Icon Benefits 01",
+      "settings": {
+        "enable_advanced_settings": false,
+        "section_max_width": 64,
+        "section_horizontal_padding": 24,
+        "padding_horizontal_mobile": 15,
+        "background_color": "#fafdf8",
+        "full_width": true,
+        "section_border_radius": 12,
+        "section_border_radius_mobile": 0,
+        "padding_top_desktop": 60,
+        "padding_bottom_desktop": 60,
+        "padding_top_mobile": 32,
+        "padding_bottom_mobile": 32,
+        "margin_top_desktop": 0,
+        "margin_bottom_desktop": 0,
+        "margin_top_mobile": 0,
+        "margin_bottom_mobile": 0,
+        "mobile_columns": "2",
+        "blocks_alignment": "left",
+        "desktop_blocks_gap": 32,
+        "mobile_blocks_gap": 16,
+        "custom_blocks_title_font": false,
+        "blocks_title_as": "h3",
+        "blocks_title_font": "sans_serif_n4",
+        "block_title_size_desktop": 18,
+        "block_title_size_mobile": 18,
+        "block_title_line_height": 120,
+        "blocks_title_color": "#000000",
+        "custom_blocks_text_font": false,
+        "blocks_text_as": "p",
+        "blocks_text_font": "sans_serif_n4",
+        "block_text_size_desktop": 16,
+        "block_text_size_mobile": 14,
+        "block_text_line_height": 150,
+        "blocks_text_color": "#000000",
+        "block_background_color": "rgba(0,0,0,0)",
+        "desktop_icon_size": 50,
+        "mobile_icon_size": 40,
+        "block_padding": 0,
+        "block_elements_gap": 16,
+        "block_border_radius": 8
+      }
+    },
     "vso_hero_19_XGjzRA": {
       "type": "vso-hero-19",
       "blocks": {
@@ -1700,6 +1810,7 @@
     "vso_img_with_text_01_diipXG",
     "about_section_DDnr9x",
     "vso_hero_36_81fyqM",
+    "vso_icon_benefits_01_7adn6z",
     "vso_hero_19_XGjzRA",
     "vso_icon_benefits_01_QX0kww",
     "vso_img_with_text_01_xtNmKG",
