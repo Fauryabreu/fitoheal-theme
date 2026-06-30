@@ -1164,6 +1164,7 @@
         "card_item_7_TC3pr9",
         "card_item_8_9b3ZpQ"
       ],
+      "disabled": true,
       "name": "VSO - Hero 45",
       "settings": {
         "enable_advanced_settings": false,
@@ -1665,7 +1666,7 @@
         "title_wMRzQ5": {
           "type": "title",
           "settings": {
-            "title": "<strong>Resuelve _tus dudas_ importantes</strong>",
+            "title": "<strong>Lo que suelen _preguntarnos</strong>",
             "title_color": "#000000",
             "title_highlight_color": "#478641",
             "custom_font": false,
@@ -1684,7 +1685,7 @@
         "subtitle_EvXGjz": {
           "type": "subtitle",
           "settings": {
-            "subtitle": "<p>Información clara para que sepas cómo integrar el Kit Focus Liposomal a tu rutina diaria.</p>",
+            "subtitle": "<p>Sobre el Kit Focus Liposomal de Fitoheal.</p>",
             "subtitle_color": "#121212",
             "custom_font": false,
             "subtitle_as": "p",
@@ -1727,43 +1728,36 @@
         "faq_item_1_nCxGYg": {
           "type": "faq_item",
           "settings": {
-            "question": "<strong>¿Para qué sirve el Kit Focus Liposomal?</strong>",
-            "answer": "<p>Está diseñado para apoyar el enfoque, la memoria, la concentración y el equilibrio mental durante el día. </p><p>Combina <strong>Ashwagandha Liposomal + Melena de León Liposomal</strong>, una mezcla pensada para momentos de alta exigencia mental.</p>"
+            "question": "<strong>¿Para qué sirve el Kit Focus?</strong>",
+            "answer": "<p>Para mejorar el enfoque y la claridad mental atacando los dos problemas que los bloquean: el cortisol elevado — que genera ruido mental y distracción — con la Ashwagandha, y las neuronas sin los nutrientes que necesitan — con la Melena de León que estimula el NGF o Factor de Crecimiento Nervioso.</p>"
           }
         },
         "faq_item_2_ohlkGR": {
           "type": "faq_item",
           "settings": {
-            "question": "<strong>¿Cómo debo tomarla?</strong>",
-            "answer": "<p>Se recomienda tomar <strong>1 a 2 cápsulas al día</strong>, preferiblemente con alimentos.<br/><br/>Puedes integrarlo en tu rutina de la mañana o durante el día.</p>"
+            "question": "<strong>¿Por qué comprar el kit y no solo uno de los dos?</strong>",
+            "answer": "<p>Porque el enfoque falla por dos razones distintas al mismo tiempo. Si solo bajas el estrés con Ashwagandha, las neuronas siguen sin los nutrientes que necesitan para rendir. Si solo nutres las neuronas con Melena de León, el cortisol elevado sigue bloqueando la concentración. Los dos juntos resuelven el problema desde la raíz.</p>"
           }
         },
         "faq_item_3_aKHWJF": {
           "type": "faq_item",
           "settings": {
-            "question": "<strong>¿Qué diferencia tiene la tecnología liposomal?</strong>",
-            "answer": "<p>La tecnología liposomal ayuda a proteger y transportar mejor los activos, favoreciendo una mejor absorción y aprovechamiento dentro del cuerpo.</p>"
+            "question": "<strong>¿Es lo mismo que tomar cafeína?</strong>",
+            "answer": "<p>No. La cafeína bloquea los receptores de adenosina — la molécula que produce sueño — y da una sensación de alerta artificial que luego cae. Este kit mejora la función cognitiva real: baja el cortisol que bloquea y nutre las neuronas que rinden. Sin rebote, sin dependencia, sin crash.</p>"
           }
         },
         "faq_item_4_jrk0ZU": {
           "type": "faq_item",
           "settings": {
-            "question": "<strong>¿Me puede dar sueño?</strong>",
-            "answer": "<p>No está pensado como un producto para dormir.<br/><br/>La Ashwagandha puede favorecer la calma, pero en este kit el objetivo principal es apoyar el enfoque, la memoria y el equilibrio mental durante el día.</p>"
+            "question": "<strong>¿Puedo tomarlo para estudiar o trabajar?</strong>",
+            "answer": "<p>Sí — es exactamente para eso. La combinación de menor ruido mental y mejor función neuronal lo hace ideal para períodos de alta exigencia cognitiva: exámenes, proyectos, trabajo que requiere enfoque sostenido.</p>"
           }
         },
         "faq_item_7d7hjk": {
           "type": "faq_item",
           "settings": {
-            "question": "<strong>¿Puedo tomarlo para estudiar o trabajar?</strong>",
-            "answer": "<p>Sí. Puede integrarse como apoyo diario en rutinas de estudio, trabajo o concentración, especialmente cuando buscas más claridad mental y menos sensación de saturación.</p>"
-          }
-        },
-        "faq_item_4t7Dxr": {
-          "type": "faq_item",
-          "settings": {
-            "question": "<strong>¿Quiénes deben consultar antes de usarlo?</strong>",
-            "answer": "<p>Personas embarazadas, en lactancia, con condiciones médicas, trastornos autoinmunes, hipertiroidismo o que tomen medicamentos deben consultar con un profesional de salud antes de usarlo.</p>"
+            "question": "<strong>¿Y si lo tomo y no siento nada?</strong>",
+            "answer": "<p>Verificar que se tome en la mañana con consistencia diaria. Los primeros cambios suelen ser la menor niebla mental — más fácil de retomar el hilo, cabeza más despejada. Si después de 4 semanas no hay diferencia, escríbenos.</p>"
           }
         }
       },
@@ -1775,8 +1769,7 @@
         "faq_item_2_ohlkGR",
         "faq_item_3_aKHWJF",
         "faq_item_4_jrk0ZU",
-        "faq_item_7d7hjk",
-        "faq_item_4t7Dxr"
+        "faq_item_7d7hjk"
       ],
       "name": "VSO - FAQ 02",
       "settings": {
