@@ -702,7 +702,7 @@
           "type": "heading",
           "settings": {
             "heading_alignment": "center",
-            "heading": "_Calma y descanso,_ paso a paso",
+            "heading": "_Lo que puedes esperar,_ semana a semana.",
             "heading_custom_font": false,
             "heading_as": "h3",
             "heading_font": "poppins_n4",
@@ -763,24 +763,24 @@
           "type": "timeline_item",
           "settings": {
             "subheading": "Primeros días",
-            "heading": "Tu rutina empieza con mejor absorción",
-            "description": "<p>Las fórmulas liposomales ayudan a proteger y transportar los activos para favorecer un mejor aprovechamiento.</p>"
+            "heading": "Tu cuerpo empieza a recibir la señal",
+            "description": "<p>El Glicinato de Magnesio actúa primero sobre los músculos — muchas personas notan menos rigidez al despertar. La Ashwagandha empieza a regular el cortisol desde los primeros días, aunque el efecto aún no es estable.</p>"
           }
         },
         "timeline_item_2_3Qr27B": {
           "type": "timeline_item",
           "settings": {
             "subheading": "Semanas 2–4",
-            "heading": "Más calma al final del día",
-            "description": "<p>La Ashwagandha apoya el equilibrio emocional, mientras el Glicinato de Magnesio contribuye a la relajación muscular.</p>"
+            "heading": "Menos tensión, mejor descanso",
+            "description": "<p>Con el cortisol regulándose y los músculos más relajados, el sueño se vuelve más profundo y menos interrumpido. Te acuestas con menos pensamientos en loop y amaneces con más energía.</p>"
           }
         },
         "timeline_item_3_6WDi7E": {
           "type": "timeline_item",
           "settings": {
             "subheading": "Uso continuo",
-            "heading": "Descanso más estable",
-            "description": "<p>Con el uso constante, el kit puede ayudar a crear una rutina nocturna más relajada y reparadora.</p>"
+            "heading": "Un cuerpo que sabe descansar",
+            "description": "<p>El ciclo estrés-tensión-mal sueño se interrumpe. No necesitas el día perfecto para desconectarte — tu cuerpo aprende a bajar el nivel de alerta cuando el día termina.</p>"
           }
         }
       },
