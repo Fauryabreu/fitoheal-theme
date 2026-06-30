@@ -601,7 +601,7 @@
             "title_size_desktop": 40,
             "title_size_mobile": 32,
             "title_line_height": 130,
-            "subtitle": "La inflamación crónica y el metabolismo dañado no son problemas separados — se generan mutuamente. Cuando hay glucosa inestable, hay inflamación. Cuando hay inflamación crónica, el metabolismo empeora.",
+            "subtitle": "El enfoque no falla por una sola razón. Hay dos problemas distintos que actúan al mismo tiempo — y cada uno necesita su solución.",
             "subtitle_color": "#000000",
             "custom_subtitle_font": false,
             "subtitle_as": "p",
@@ -616,8 +616,8 @@
         "benefit_9YmwaC": {
           "type": "benefit",
           "settings": {
-            "title": "<strong>Berberina Liposomal.</strong> Regula el metabolismo",
-            "text": "Activa la AMPK — el interruptor maestro del metabolismo — que mejora el manejo de la glucosa (azúcar en sangre), apoya el perfil lipídico (colesterol y triglicéridos) y equilibra la microbiota intestinal (las bacterias que regulan la digestión)."
+            "title": "<strong>Ashwagandha Liposomal. </strong>Elimina el freno",
+            "text": "Baja el cortisol — la hormona del estrés — que genera el ruido mental y la distracció"
           }
         },
         "benefit_tAU9CR": {
