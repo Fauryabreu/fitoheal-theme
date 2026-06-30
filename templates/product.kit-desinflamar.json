@@ -498,29 +498,29 @@
         "feature_1_iokXup": {
           "type": "feature",
           "settings": {
-            "feature_title": "<strong>Bienestar físico</strong>",
-            "feature_text": "Apoya la respuesta natural del cuerpo."
+            "feature_title": "Tienes dolores articulares o rigidez que no ceden",
+            "feature_text": "Rodillas, espalda, caderas, manos. Una molestia que el médico dice que no es grave pero que está ahí todos los días y limita lo que puedes hacer."
           }
         },
         "feature_2_n0zBc0": {
           "type": "feature",
           "settings": {
-            "feature_title": "<strong>Apoyo digestivo</strong>",
-            "feature_text": "Contribuye a una digestión más ligera."
+            "feature_title": "Tu digestión está inflamada y lo sientes en todo",
+            "feature_text": "Pesadez, hinchazón, malestar después de comer. No sabes qué lo causa — a veces es todo, a veces es nada."
           }
         },
         "feature_3_2EfXxK": {
           "type": "feature",
           "settings": {
-            "feature_title": "<strong>Salud articular</strong>",
-            "feature_text": "Favorece articulaciones y movilidad."
+            "feature_title": "Sientes inflamación de fondo en el cuerpo",
+            "feature_text": "No hay una lesión específica. Es una pesadez generalizada, un cuerpo que siente que carga más de lo que debería, que se recupera más lento."
           }
         },
         "feature_4_w0MBJV": {
           "type": "feature",
           "settings": {
-            "feature_title": "<strong>Alta absorción X5</strong>",
-            "feature_text": "Fórmulas liposomales para mejor aprovechamiento."
+            "feature_title": "Ya probaste cúrcuma y no notaste nada",
+            "feature_text": "Tés, polvo, cápsulas genéricas. No funcionaron porque la cúrcuma estándar el cuerpo casi no la absorbe — menos del 1%. El liposomal resuelve exactamente eso"
           }
         }
       },
