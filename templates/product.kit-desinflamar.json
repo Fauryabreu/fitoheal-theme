@@ -887,22 +887,22 @@
         "benefit_2_WLkZAU": {
           "type": "benefit",
           "settings": {
-            "title": "<strong>Mejor aprovechamiento</strong>",
-            "text": "Ayuda a que cada cápsula trabaje mejor."
+            "title": "<strong>Digestión que fluye</strong>",
+            "text": "El Citrato de Magnesio regulariza el tránsito intestinal — la capacidad del intestino de avanzar el contenido — para que la digestión fluya sin acumulación ni pesadez."
           }
         },
         "benefit_3_XK8kZV": {
           "type": "benefit",
           "settings": {
-            "title": "<strong>Uso constante</strong>",
-            "text": "Apoya una experiencia más estable."
+            "title": "<strong>Protección antioxidante</strong>",
+            "text": "Los antioxidantes neutralizan los radicales libres — moléculas que dañan las células con el tiempo. La curcumina es uno de los antioxidantes más potentes de la naturaleza."
           }
         },
         "benefit_4_gPhHh1": {
           "type": "benefit",
           "settings": {
-            "title": "<strong>Rutina fácil</strong>",
-            "text": "Cápsulas prácticas para el día a día."
+            "title": "<strong>Bienestar desde adentro</strong>",
+            "text": "Cuando la inflamación intestinal baja, el cuerpo entero lo siente: más energía, mejor digestión, menos molestia generalizada."
           }
         }
       },
