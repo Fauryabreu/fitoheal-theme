@@ -751,7 +751,7 @@
             "media_object_position_vertical_mobile": "center",
             "use_different_media_on_mobile": false,
             "mobile_media_type": "image",
-            "enable_hover_zoom": true,
+            "enable_hover_zoom": false,
             "media_lazy_load": true
           }
         },
