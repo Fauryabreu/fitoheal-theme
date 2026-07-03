@@ -1,0 +1,1381 @@
+{% doc %}
+  @prompt
+    Crea una sección Hero para Shopify con las siguientes especificaciones:
+    
+    MEDIA DE FONDO
+    - Toggle en el schema para elegir entre "Imagen" o "Video" como fondo (select con opciones image/video)
+    - Si es imagen: dos campos image_picker separados — "Imagen Desktop" y "Imagen Mobile" (no usar la misma imagen recortada con CSS, deben ser dos uploads independientes)
+    - Si es video: campo video (Shopify video picker) o video_url para embed externo, con autoplay, loop, muted y sin controles
+    - El media de fondo debe usar aspect-ratio CSS, no alto fijo en px:
+      - Desktop (min-width: 750px): aspect-ratio: 1920 / 700
+      - Mobile (max-width: 749px): aspect-ratio: 1080 / 1350
+    - object-fit: cover en ambos casos para que no se deforme
+    - Si no hay media cargado, fallback a un color de fondo sólido configurable
+    
+    CONTENIDO SOBRE EL MEDIA
+    - Overlay opcional con opacidad configurable (range 0-100) para mejorar contraste del texto
+    - Heading (richtext o texto simple)
+    - Subheading/descripción (richtext)
+    - Hasta 2 botones CTA, cada uno con texto, link y estilo (primary/secondary)
+    - Control de alineación de texto: izquierda, centro, derecha (select)
+    - Control de posición vertical del contenido: arriba, centro, abajo
+    
+    ESTRUCTURA TÉCNICA
+    - Usar el prefijo de clases CSS fh-* (ej: fh-hero-media, fh-hero-content, fh-hero-overlay)
+    - Schema completo con todos los campos editables desde el theme editor
+    - Debe seguir la paleta de marca: verde oscuro #1B4332, verde medio #2D6A4F, verde claro #74C69D, crema #FAFDF8
+    - Tipografía: Fraunces para el heading, DM Sans para subheading y botones
+    - Mobile: el contenido debe poder leerse cómodamente dentro del espacio vertical 4:5 sin que el texto se corte
+    
+    NO HACER
+    - No uses una sola imagen recortada por CSS para los dos breakpoints
+    - No fijes alturas en px directamente, usa aspect-ratio
+    - No quites la opción de fallback a color sólido si no hay media, Crea una sección Hero Slider/Carousel para Shopify con las siguientes especificaciones:
+    
+    ESTRUCTURA: BLOCKS REPETIBLES (no un solo media fijo)
+    - La sección usa "blocks" de Shopify (type: "slide"), permitiendo agregar, eliminar y reordenar slides desde el editor
+    - Cada slide (block) es independiente y tiene:
+      - Select "Tipo de media" con opciones: Imagen / Video
+      - Si es Imagen: dos image_picker — "Imagen Desktop" y "Imagen Mobile" (uploads separados, no recorte por CSS)
+      - Si es Video: video picker nativo de Shopify (o video_url para externo), autoplay, loop, muted, sin controles
+      - Heading propio del slide (texto o richtext)
+      - Subheading/descripción propia del slide
+      - Hasta 2 botones CTA por slide (texto, link, estilo primary/secondary)
+      - Alineación de texto del slide: izquierda/centro/derecha
+      - Posición vertical del contenido: arriba/centro/abajo
+      - Overlay opcional por slide (range 0-100 de opacidad)
+    
+    DIMENSIONES DEL CONTENEDOR (igual para todos los slides, fijo a nivel sección)
+    - Usar aspect-ratio, no alto fijo en px
+    - Desktop (min-width: 750px): aspect-ratio: 1920 / 700
+    - Mobile (max-width: 749px): aspect-ratio: 1080 / 1350
+    - object-fit: cover en imágenes y videos
+    
+    NAVEGACIÓN DEL CAROUSEL
+    - Flechas prev/next (mostrar/ocultar configurable, settings.show_arrows)
+    - Dots/indicadores de posición (mostrar/ocultar configurable)
+    - Autoplay configurable: toggle on/off + velocidad en segundos (range)
+    - Pausa el autoplay al hacer hover (desktop) o al tocar (mobile)
+    - Swipe nativo en mobile (touch events)
+    - Transición tipo fade o slide (select para elegir)
+    - Accesibilidad: pausar autoplay si prefers-reduced-motion está activo, aria-labels en flechas y dots
+    
+    ESTRUCTURA TÉCNICA
+    - Prefijo de clases CSS fh-* (ej: fh-hero-slider, fh-hero-slide, fh-hero-dots, fh-hero-arrow)
+    - Schema completo: section settings (autoplay, velocidad, mostrar flechas, mostrar dots) + block settings (uno por slide, como se detalla arriba)
+    - Mínimo 1 slide, sin límite máximo razonable (o limit: 6 si quieres controlar peso de página)
+    - Paleta de marca: verde oscuro #1B4332, verde medio #2D6A4F, verde claro #74C69D, crema #FAFDF8
+    - Tipografía: Fraunces para heading, DM Sans para subheading y botones
+    - El contenido de cada slide debe leerse cómodamente en el espacio vertical 4:5 de mobile sin cortarse
+    
+    NO HACER
+    - No uses un solo media fijo — debe ser sistema de blocks repetibles
+    - No recortes una sola imagen por CSS para los dos breakpoints, cada slide necesita su propio upload desktop/mobile
+    - No fijes alturas en px, usa aspect-ratio
+    - No cargues todos los videos de todos los slides en simultáneo (lazy load, solo el video activo reproduce)
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .fh-hero-slider-{{ ai_gen_id }} {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    display: block;
+  }
+
+  .fh-hero-slider-container-{{ ai_gen_id }} {
+    position: relative;
+    width: 100%;
+  }
+
+  @media screen and (min-width: 750px) {
+    .fh-hero-slider-container-{{ ai_gen_id }} {
+      aspect-ratio: 1920 / 700;
+    }
+  }
+
+  @media screen and (max-width: 749px) {
+    .fh-hero-slider-container-{{ ai_gen_id }} {
+      aspect-ratio: 1080 / 1350;
+    }
+  }
+
+  .fh-hero-slides-wrapper-{{ ai_gen_id }} {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+  .fh-hero-slide-{{ ai_gen_id }} {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.6s ease, visibility 0.6s ease;
+  }
+
+  .fh-hero-slide-{{ ai_gen_id }}.fh-hero-slide-active-{{ ai_gen_id }} {
+    opacity: 1;
+    visibility: visible;
+    z-index: 1;
+  }
+
+  .fh-hero-slide-{{ ai_gen_id }}.fh-hero-slide-transition-slide-{{ ai_gen_id }} {
+    transition: transform 0.6s ease, opacity 0.6s ease, visibility 0.6s ease;
+  }
+
+  .fh-hero-slide-{{ ai_gen_id }}.fh-hero-slide-prev-{{ ai_gen_id }} {
+    transform: translateX(-100%);
+  }
+
+  .fh-hero-slide-{{ ai_gen_id }}.fh-hero-slide-next-{{ ai_gen_id }} {
+    transform: translateX(100%);
+  }
+
+  .fh-hero-slide-media-{{ ai_gen_id }} {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+  .fh-hero-slide-image-{{ ai_gen_id }},
+  .fh-hero-slide-video-{{ ai_gen_id }} {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .fh-hero-slide-fallback-{{ ai_gen_id }} {
+    width: 100%;
+    height: 100%;
+    background-color: {{ block.settings.fallback_color }};
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .fh-hero-slide-fallback-{{ ai_gen_id }} svg {
+    width: 100%;
+    height: 100%;
+    max-width: 500px;
+    max-height: 500px;
+    opacity: 0.3;
+  }
+
+  .fh-hero-slide-overlay-{{ ai_gen_id }} {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+  }
+
+  .fh-hero-slide-content-wrapper-{{ ai_gen_id }} {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+    z-index: 2;
+  }
+
+  @media screen and (max-width: 749px) {
+    .fh-hero-slide-content-wrapper-{{ ai_gen_id }} {
+      padding: 30px 16px;
+    }
+  }
+
+  .fh-hero-slide-content-{{ ai_gen_id }} {
+    max-width: 800px;
+    width: 100%;
+  }
+
+  .fh-hero-slide-heading-{{ ai_gen_id }} {
+    font-family: 'Fraunces', serif;
+    font-size: 56px;
+    line-height: 1.2;
+    margin: 0 0 20px;
+    font-weight: 700;
+  }
+
+  @media screen and (max-width: 749px) {
+    .fh-hero-slide-heading-{{ ai_gen_id }} {
+      font-size: 36px;
+      margin: 0 0 16px;
+    }
+  }
+
+  .fh-hero-slide-subheading-{{ ai_gen_id }} {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 0 0 30px;
+  }
+
+  @media screen and (max-width: 749px) {
+    .fh-hero-slide-subheading-{{ ai_gen_id }} {
+      font-size: 16px;
+      margin: 0 0 24px;
+    }
+  }
+
+  .fh-hero-slide-buttons-{{ ai_gen_id }} {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+
+  .fh-hero-slide-button-{{ ai_gen_id }} {
+    font-family: 'DM Sans', sans-serif;
+    padding: 14px 32px;
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 4px;
+    display: inline-block;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    border: 2px solid transparent;
+  }
+
+  @media screen and (max-width: 749px) {
+    .fh-hero-slide-button-{{ ai_gen_id }} {
+      padding: 12px 24px;
+      font-size: 14px;
+    }
+  }
+
+  .fh-hero-mobile-only-{{ ai_gen_id }} {
+    display: none;
+  }
+
+  .fh-hero-desktop-only-{{ ai_gen_id }} {
+    display: block;
+  }
+
+  @media screen and (max-width: 749px) {
+    .fh-hero-mobile-only-{{ ai_gen_id }} {
+      display: block;
+    }
+
+    .fh-hero-desktop-only-{{ ai_gen_id }} {
+      display: none;
+    }
+  }
+
+  .fh-hero-arrow-{{ ai_gen_id }} {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    background-color: {{ block.settings.arrow_bg_color }};
+    color: {{ block.settings.arrow_color }};
+    border: none;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    opacity: 0.9;
+  }
+
+  .fh-hero-arrow-{{ ai_gen_id }}:hover {
+    opacity: 1;
+    transform: translateY(-50%) scale(1.1);
+  }
+
+  .fh-hero-arrow-prev-{{ ai_gen_id }} {
+    left: 20px;
+  }
+
+  .fh-hero-arrow-next-{{ ai_gen_id }} {
+    right: 20px;
+  }
+
+  @media screen and (max-width: 749px) {
+    .fh-hero-arrow-{{ ai_gen_id }} {
+      width: 40px;
+      height: 40px;
+    }
+
+    .fh-hero-arrow-prev-{{ ai_gen_id }} {
+      left: 10px;
+    }
+
+    .fh-hero-arrow-next-{{ ai_gen_id }} {
+      right: 10px;
+    }
+  }
+
+  .fh-hero-arrow-{{ ai_gen_id }} svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  .fh-hero-dots-{{ ai_gen_id }} {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+  }
+
+  @media screen and (max-width: 749px) {
+    .fh-hero-dots-{{ ai_gen_id }} {
+      bottom: 20px;
+      gap: 10px;
+    }
+  }
+
+  .fh-hero-dot-{{ ai_gen_id }} {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: {{ block.settings.dot_color }};
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    opacity: 0.5;
+    transition: all 0.3s ease;
+  }
+
+  .fh-hero-dot-{{ ai_gen_id }}:hover {
+    opacity: 0.8;
+  }
+
+  .fh-hero-dot-{{ ai_gen_id }}.fh-hero-dot-active-{{ ai_gen_id }} {
+    opacity: 1;
+    transform: scale(1.3);
+  }
+
+  .fh-hero-slide-item-{{ ai_gen_id }} {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .fh-hero-slide-{{ ai_gen_id }},
+    .fh-hero-arrow-{{ ai_gen_id }},
+    .fh-hero-dot-{{ ai_gen_id }} {
+      transition: none;
+    }
+  }
+{% endstyle %}
+
+<fh-hero-slider-{{ ai_gen_id }}
+  class="fh-hero-slider-{{ ai_gen_id }}"
+  data-autoplay="{{ block.settings.autoplay }}"
+  data-autoplay-speed="{{ block.settings.autoplay_speed }}"
+  data-transition="{{ block.settings.transition_type }}"
+  data-slide-count="{{ block.settings.slide_images | size }}"
+  {{ block.shopify_attributes }}
+>
+  <div class="fh-hero-slider-container-{{ ai_gen_id }}">
+    <div class="fh-hero-slides-wrapper-{{ ai_gen_id }}">
+      {% assign slide_data = '1,2,3' | split: ',' %}
+      {% for i in slide_data %}
+        {% assign slide_num = forloop.index %}
+        {% assign media_type_key = 'slide_' | append: slide_num | append: '_media_type' %}
+        {% assign image_desktop_key = 'slide_' | append: slide_num | append: '_image_desktop' %}
+        {% assign image_mobile_key = 'slide_' | append: slide_num | append: '_image_mobile' %}
+        {% assign video_key = 'slide_' | append: slide_num | append: '_video' %}
+        {% assign video_url_key = 'slide_' | append: slide_num | append: '_video_url' %}
+        {% assign heading_key = 'slide_' | append: slide_num | append: '_heading' %}
+        {% assign heading_color_key = 'slide_' | append: slide_num | append: '_heading_color' %}
+        {% assign subheading_key = 'slide_' | append: slide_num | append: '_subheading' %}
+        {% assign subheading_color_key = 'slide_' | append: slide_num | append: '_subheading_color' %}
+        {% assign text_alignment_key = 'slide_' | append: slide_num | append: '_text_alignment' %}
+        {% assign vertical_position_key = 'slide_' | append: slide_num | append: '_vertical_position' %}
+        {% assign show_overlay_key = 'slide_' | append: slide_num | append: '_show_overlay' %}
+        {% assign overlay_opacity_key = 'slide_' | append: slide_num | append: '_overlay_opacity' %}
+        {% assign button_1_text_key = 'slide_' | append: slide_num | append: '_button_1_text' %}
+        {% assign button_1_link_key = 'slide_' | append: slide_num | append: '_button_1_link' %}
+        {% assign button_1_bg_color_key = 'slide_' | append: slide_num | append: '_button_1_bg_color' %}
+        {% assign button_1_text_color_key = 'slide_' | append: slide_num | append: '_button_1_text_color' %}
+        {% assign button_2_text_key = 'slide_' | append: slide_num | append: '_button_2_text' %}
+        {% assign button_2_link_key = 'slide_' | append: slide_num | append: '_button_2_link' %}
+        {% assign button_2_text_color_key = 'slide_' | append: slide_num | append: '_button_2_text_color' %}
+
+        {% assign media_type = block.settings[media_type_key] %}
+        {% assign image_desktop = block.settings[image_desktop_key] %}
+        {% assign image_mobile = block.settings[image_mobile_key] %}
+        {% assign video = block.settings[video_key] %}
+        {% assign video_url = block.settings[video_url_key] %}
+        {% assign heading = block.settings[heading_key] %}
+        {% assign heading_color = block.settings[heading_color_key] %}
+        {% assign subheading = block.settings[subheading_key] %}
+        {% assign subheading_color = block.settings[subheading_color_key] %}
+        {% assign text_alignment = block.settings[text_alignment_key] %}
+        {% assign vertical_position = block.settings[vertical_position_key] %}
+        {% assign show_overlay = block.settings[show_overlay_key] %}
+        {% assign overlay_opacity = block.settings[overlay_opacity_key] %}
+        {% assign button_1_text = block.settings[button_1_text_key] %}
+        {% assign button_1_link = block.settings[button_1_link_key] %}
+        {% assign button_1_bg_color = block.settings[button_1_bg_color_key] %}
+        {% assign button_1_text_color = block.settings[button_1_text_color_key] %}
+        {% assign button_2_text = block.settings[button_2_text_key] %}
+        {% assign button_2_link = block.settings[button_2_link_key] %}
+        {% assign button_2_text_color = block.settings[button_2_text_color_key] %}
+
+        {% if image_desktop != blank or image_mobile != blank or video != blank or video_url != blank %}
+          <div
+            class="fh-hero-slide-{{ ai_gen_id }} {% if forloop.first %}fh-hero-slide-active-{{ ai_gen_id }}{% endif %} {% if block.settings.transition_type == 'slide' %}fh-hero-slide-transition-slide-{{ ai_gen_id }}{% endif %}"
+            data-slide-index="{{ forloop.index0 }}"
+          >
+            <div class="fh-hero-slide-media-{{ ai_gen_id }}">
+              {% if media_type == 'image' %}
+                {% if image_desktop != blank %}
+                  <img
+                    src="{{ image_desktop | image_url: width: 1920 }}"
+                    srcset="{{ image_desktop | image_url: width: 750 }} 750w,
+                            {{ image_desktop | image_url: width: 1100 }} 1100w,
+                            {{ image_desktop | image_url: width: 1500 }} 1500w,
+                            {{ image_desktop | image_url: width: 1920 }} 1920w"
+                    sizes="100vw"
+                    alt="{{ image_desktop.alt | escape }}"
+                    loading="{% if forloop.first %}eager{% else %}lazy{% endif %}"
+                    width="{{ image_desktop.width }}"
+                    height="{{ image_desktop.height }}"
+                    class="fh-hero-slide-image-{{ ai_gen_id }} fh-hero-desktop-only-{{ ai_gen_id }}"
+                  >
+                {% else %}
+                  <div class="fh-hero-slide-fallback-{{ ai_gen_id }} fh-hero-desktop-only-{{ ai_gen_id }}">
+                    {{ 'hero-apparel-1' | placeholder_svg_tag }}
+                  </div>
+                {% endif %}
+
+                {% if image_mobile != blank %}
+                  <img
+                    src="{{ image_mobile | image_url: width: 1080 }}"
+                    srcset="{{ image_mobile | image_url: width: 375 }} 375w,
+                            {{ image_mobile | image_url: width: 750 }} 750w,
+                            {{ image_mobile | image_url: width: 1080 }} 1080w"
+                    sizes="100vw"
+                    alt="{{ image_mobile.alt | escape }}"
+                    loading="{% if forloop.first %}eager{% else %}lazy{% endif %}"
+                    width="{{ image_mobile.width }}"
+                    height="{{ image_mobile.height }}"
+                    class="fh-hero-slide-image-{{ ai_gen_id }} fh-hero-mobile-only-{{ ai_gen_id }}"
+                  >
+                {% elsif image_desktop != blank %}
+                  <img
+                    src="{{ image_desktop | image_url: width: 1080 }}"
+                    srcset="{{ image_desktop | image_url: width: 375 }} 375w,
+                            {{ image_desktop | image_url: width: 750 }} 750w,
+                            {{ image_desktop | image_url: width: 1080 }} 1080w"
+                    sizes="100vw"
+                    alt="{{ image_desktop.alt | escape }}"
+                    loading="{% if forloop.first %}eager{% else %}lazy{% endif %}"
+                    width="{{ image_desktop.width }}"
+                    height="{{ image_desktop.height }}"
+                    class="fh-hero-slide-image-{{ ai_gen_id }} fh-hero-mobile-only-{{ ai_gen_id }}"
+                  >
+                {% else %}
+                  <div class="fh-hero-slide-fallback-{{ ai_gen_id }} fh-hero-mobile-only-{{ ai_gen_id }}">
+                    {{ 'hero-apparel-1' | placeholder_svg_tag }}
+                  </div>
+                {% endif %}
+              {% elsif media_type == 'video' %}
+                {% if video != blank %}
+                  {{
+                    video
+                    | video_tag:
+                      image_size: '1920x',
+                      autoplay: forloop.first,
+                      loop: true,
+                      muted: true,
+                      controls: false,
+                      class: 'fh-hero-slide-video-' | append: ai_gen_id,
+                      data-video-slide: forloop.index0
+                  }}
+                {% elsif video_url != blank %}
+                  {% if video_url.type == 'youtube' %}
+                    <iframe
+                      src="https://www.youtube.com/embed/{{ video_url.id }}?autoplay={% if forloop.first %}1{% else %}0{% endif %}&mute=1&loop=1&playlist={{ video_url.id }}&controls=0&showinfo=0&rel=0&modestbranding=1&enablejsapi=1"
+                      class="fh-hero-slide-video-{{ ai_gen_id }}"
+                      data-video-slide="{{ forloop.index0 }}"
+                      frameborder="0"
+                      allow="autoplay; encrypted-media"
+                      allowfullscreen
+                      title="Slide {{ forloop.index }} video"
+                    ></iframe>
+                  {% elsif video_url.type == 'vimeo' %}
+                    <iframe
+                      src="https://player.vimeo.com/video/{{ video_url.id }}?autoplay={% if forloop.first %}1{% else %}0{% endif %}&muted=1&loop=1&background=1&controls=0"
+                      class="fh-hero-slide-video-{{ ai_gen_id }}"
+                      data-video-slide="{{ forloop.index0 }}"
+                      frameborder="0"
+                      allow="autoplay; fullscreen"
+                      allowfullscreen
+                      title="Slide {{ forloop.index }} video"
+                    ></iframe>
+                  {% endif %}
+                {% else %}
+                  <div class="fh-hero-slide-fallback-{{ ai_gen_id }}">
+                    {{ 'hero-apparel-1' | placeholder_svg_tag }}
+                  </div>
+                {% endif %}
+              {% else %}
+                <div class="fh-hero-slide-fallback-{{ ai_gen_id }}">
+                  {{ 'hero-apparel-1' | placeholder_svg_tag }}
+                </div>
+              {% endif %}
+
+              {% if show_overlay %}
+                <div
+                  class="fh-hero-slide-overlay-{{ ai_gen_id }}"
+                  style="background-color: rgba(0, 0, 0, {{ overlay_opacity | divided_by: 100.0 }});"
+                ></div>
+              {% endif %}
+            </div>
+
+            <div
+              class="fh-hero-slide-content-wrapper-{{ ai_gen_id }}"
+              style="align-items: {% if vertical_position == 'top' %}flex-start{% elsif vertical_position == 'bottom' %}flex-end{% else %}center{% endif %};"
+            >
+              <div
+                class="fh-hero-slide-content-{{ ai_gen_id }}"
+                style="text-align: {{ text_alignment }};"
+              >
+                {% if heading != blank %}
+                  <h2
+                    class="fh-hero-slide-heading-{{ ai_gen_id }}"
+                    style="color: {{ heading_color }};"
+                  >
+                    {{ heading }}
+                  </h2>
+                {% endif %}
+
+                {% if subheading != blank %}
+                  <div
+                    class="fh-hero-slide-subheading-{{ ai_gen_id }}"
+                    style="color: {{ subheading_color }};"
+                  >
+                    {{ subheading }}
+                  </div>
+                {% endif %}
+
+                {% if button_1_text != blank or button_2_text != blank %}
+                  <div
+                    class="fh-hero-slide-buttons-{{ ai_gen_id }}"
+                    style="justify-content: {% if text_alignment == 'center' %}center{% elsif text_alignment == 'right' %}flex-end{% else %}flex-start{% endif %};"
+                  >
+                    {% if button_1_text != blank %}
+                      <a
+                        href="{{ button_1_link }}"
+                        class="fh-hero-slide-button-{{ ai_gen_id }}"
+                        style="background-color: {{ button_1_bg_color }}; color: {{ button_1_text_color }};"
+                      >
+                        {{ button_1_text }}
+                      </a>
+                    {% endif %}
+
+                    {% if button_2_text != blank %}
+                      <a
+                        href="{{ button_2_link }}"
+                        class="fh-hero-slide-button-{{ ai_gen_id }}"
+                        style="background-color: transparent; color: {{ button_2_text_color }}; border-color: {{ button_2_text_color }};"
+                      >
+                        {{ button_2_text }}
+                      </a>
+                    {% endif %}
+                  </div>
+                {% endif %}
+              </div>
+            </div>
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+
+    {% assign total_slides = 0 %}
+    {% for i in slide_data %}
+      {% assign slide_num = forloop.index %}
+      {% assign image_desktop_key = 'slide_' | append: slide_num | append: '_image_desktop' %}
+      {% assign image_mobile_key = 'slide_' | append: slide_num | append: '_image_mobile' %}
+      {% assign video_key = 'slide_' | append: slide_num | append: '_video' %}
+      {% assign video_url_key = 'slide_' | append: slide_num | append: '_video_url' %}
+      
+      {% if block.settings[image_desktop_key] != blank or block.settings[image_mobile_key] != blank or block.settings[video_key] != blank or block.settings[video_url_key] != blank %}
+        {% assign total_slides = total_slides | plus: 1 %}
+      {% endif %}
+    {% endfor %}
+
+    {% if block.settings.show_arrows and total_slides > 1 %}
+      <button
+        class="fh-hero-arrow-{{ ai_gen_id }} fh-hero-arrow-prev-{{ ai_gen_id }}"
+        aria-label="Slide anterior"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="15 18 9 12 15 6"></polyline>
+        </svg>
+      </button>
+      <button
+        class="fh-hero-arrow-next-{{ ai_gen_id }} fh-hero-arrow-{{ ai_gen_id }}"
+        aria-label="Siguiente slide"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="9 18 15 12 9 6"></polyline>
+        </svg>
+      </button>
+    {% endif %}
+
+    {% if block.settings.show_dots and total_slides > 1 %}
+      <div class="fh-hero-dots-{{ ai_gen_id }}">
+        {% for i in (1..total_slides) %}
+          <button
+            class="fh-hero-dot-{{ ai_gen_id }} {% if forloop.first %}fh-hero-dot-active-{{ ai_gen_id }}{% endif %}"
+            data-dot-index="{{ forloop.index0 }}"
+            aria-label="Ir a slide {{ forloop.index }}"
+          ></button>
+        {% endfor %}
+      </div>
+    {% endif %}
+  </div>
+</fh-hero-slider-{{ ai_gen_id }}>
+
+<script>
+  (function() {
+    class FhHeroSlider{{ ai_gen_id }} extends HTMLElement {
+      constructor() {
+        super();
+        this.currentIndex = 0;
+        this.slides = [];
+        this.autoplayTimer = null;
+        this.isPaused = false;
+        this.touchStartX = 0;
+        this.touchEndX = 0;
+        this.prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      }
+
+      connectedCallback() {
+        this.slides = Array.from(this.querySelectorAll('.fh-hero-slide-{{ ai_gen_id }}'));
+        this.dots = Array.from(this.querySelectorAll('.fh-hero-dot-{{ ai_gen_id }}'));
+        this.prevButton = this.querySelector('.fh-hero-arrow-prev-{{ ai_gen_id }}');
+        this.nextButton = this.querySelector('.fh-hero-arrow-next-{{ ai_gen_id }}');
+        this.autoplay = this.dataset.autoplay === 'true';
+        this.autoplaySpeed = parseInt(this.dataset.autoplaySpeed) * 1000;
+        this.transitionType = this.dataset.transition;
+
+        if (this.slides.length <= 1) return;
+
+        this.setupEventListeners();
+        
+        if (this.autoplay && !this.prefersReducedMotion) {
+          this.startAutoplay();
+        }
+
+        this.playCurrentVideo();
+      }
+
+      setupEventListeners() {
+        if (this.prevButton) {
+          this.prevButton.addEventListener('click', () => this.goToPrev());
+        }
+
+        if (this.nextButton) {
+          this.nextButton.addEventListener('click', () => this.goToNext());
+        }
+
+        this.dots.forEach((dot, index) => {
+          dot.addEventListener('click', () => this.goToSlide(index));
+        });
+
+        this.addEventListener('mouseenter', () => this.pauseAutoplay());
+        this.addEventListener('mouseleave', () => this.resumeAutoplay());
+
+        this.addEventListener('touchstart', (e) => {
+          this.touchStartX = e.changedTouches[0].screenX;
+          this.pauseAutoplay();
+        });
+
+        this.addEventListener('touchend', (e) => {
+          this.touchEndX = e.changedTouches[0].screenX;
+          this.handleSwipe();
+          this.resumeAutoplay();
+        });
+      }
+
+      handleSwipe() {
+        const swipeThreshold = 50;
+        const diff = this.touchStartX - this.touchEndX;
+
+        if (Math.abs(diff) > swipeThreshold) {
+          if (diff > 0) {
+            this.goToNext();
+          } else {
+            this.goToPrev();
+          }
+        }
+      }
+
+      goToSlide(index) {
+        if (index === this.currentIndex) return;
+
+        const currentSlide = this.slides[this.currentIndex];
+        const nextSlide = this.slides[index];
+
+        this.pauseCurrentVideo();
+
+        if (this.transitionType === 'slide') {
+          if (index > this.currentIndex) {
+            nextSlide.classList.add('fh-hero-slide-next-{{ ai_gen_id }}');
+          } else {
+            nextSlide.classList.add('fh-hero-slide-prev-{{ ai_gen_id }}');
+          }
+
+          setTimeout(() => {
+            currentSlide.classList.remove('fh-hero-slide-active-{{ ai_gen_id }}');
+            nextSlide.classList.add('fh-hero-slide-active-{{ ai_gen_id }}');
+            nextSlide.classList.remove('fh-hero-slide-prev-{{ ai_gen_id }}', 'fh-hero-slide-next-{{ ai_gen_id }}');
+          }, 10);
+        } else {
+          currentSlide.classList.remove('fh-hero-slide-active-{{ ai_gen_id }}');
+          nextSlide.classList.add('fh-hero-slide-active-{{ ai_gen_id }}');
+        }
+
+        this.dots.forEach((dot, i) => {
+          dot.classList.toggle('fh-hero-dot-active-{{ ai_gen_id }}', i === index);
+        });
+
+        this.currentIndex = index;
+        this.playCurrentVideo();
+      }
+
+      goToNext() {
+        const nextIndex = (this.currentIndex + 1) % this.slides.length;
+        this.goToSlide(nextIndex);
+      }
+
+      goToPrev() {
+        const prevIndex = (this.currentIndex - 1 + this.slides.length) % this.slides.length;
+        this.goToSlide(prevIndex);
+      }
+
+      startAutoplay() {
+        if (this.prefersReducedMotion) return;
+        this.autoplayTimer = setInterval(() => {
+          if (!this.isPaused) {
+            this.goToNext();
+          }
+        }, this.autoplaySpeed);
+      }
+
+      pauseAutoplay() {
+        this.isPaused = true;
+      }
+
+      resumeAutoplay() {
+        this.isPaused = false;
+      }
+
+      playCurrentVideo() {
+        const currentSlide = this.slides[this.currentIndex];
+        const video = currentSlide.querySelector('video');
+        
+        if (video) {
+          video.play().catch(() => {});
+        }
+      }
+
+      pauseCurrentVideo() {
+        const currentSlide = this.slides[this.currentIndex];
+        const video = currentSlide.querySelector('video');
+        
+        if (video) {
+          video.pause();
+        }
+      }
+
+      disconnectedCallback() {
+        if (this.autoplayTimer) {
+          clearInterval(this.autoplayTimer);
+        }
+      }
+    }
+
+    customElements.define('fh-hero-slider-{{ ai_gen_id }}', FhHeroSlider{{ ai_gen_id }});
+  })();
+</script>
+
+{% schema %}
+{
+  "name": "Hero Slider FitoHeal",
+  "tag": null,
+  "settings": [
+    {
+      "type": "header",
+      "content": "Configuración del slider"
+    },
+    {
+      "type": "checkbox",
+      "id": "autoplay",
+      "label": "Autoplay",
+      "default": true
+    },
+    {
+      "type": "range",
+      "id": "autoplay_speed",
+      "label": "Velocidad de autoplay",
+      "min": 3,
+      "max": 10,
+      "step": 1,
+      "unit": "s",
+      "default": 5
+    },
+    {
+      "type": "select",
+      "id": "transition_type",
+      "label": "Tipo de transición",
+      "options": [
+        {
+          "value": "fade",
+          "label": "Fade"
+        },
+        {
+          "value": "slide",
+          "label": "Slide"
+        }
+      ],
+      "default": "fade"
+    },
+    {
+      "type": "header",
+      "content": "Navegación"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_arrows",
+      "label": "Mostrar flechas",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_dots",
+      "label": "Mostrar indicadores",
+      "default": true
+    },
+    {
+      "type": "color",
+      "id": "arrow_bg_color",
+      "label": "Color de fondo de flechas",
+      "default": "#FAFDF8"
+    },
+    {
+      "type": "color",
+      "id": "arrow_color",
+      "label": "Color de flechas",
+      "default": "#1B4332"
+    },
+    {
+      "type": "color",
+      "id": "dot_color",
+      "label": "Color de indicadores",
+      "default": "#FAFDF8"
+    },
+    {
+      "type": "header",
+      "content": "Fallback"
+    },
+    {
+      "type": "color",
+      "id": "fallback_color",
+      "label": "Color de fondo fallback",
+      "default": "#2D6A4F"
+    },
+    {
+      "type": "header",
+      "content": "Slide 1"
+    },
+    {
+      "type": "select",
+      "id": "slide_1_media_type",
+      "label": "Tipo de media",
+      "options": [
+        {
+          "value": "image",
+          "label": "Imagen"
+        },
+        {
+          "value": "video",
+          "label": "Video"
+        }
+      ],
+      "default": "image"
+    },
+    {
+      "type": "image_picker",
+      "id": "slide_1_image_desktop",
+      "label": "Imagen desktop"
+    },
+    {
+      "type": "image_picker",
+      "id": "slide_1_image_mobile",
+      "label": "Imagen mobile"
+    },
+    {
+      "type": "video",
+      "id": "slide_1_video",
+      "label": "Video (Shopify)"
+    },
+    {
+      "type": "video_url",
+      "id": "slide_1_video_url",
+      "label": "Video URL",
+      "accept": ["youtube", "vimeo"]
+    },
+    {
+      "type": "checkbox",
+      "id": "slide_1_show_overlay",
+      "label": "Mostrar overlay",
+      "default": true
+    },
+    {
+      "type": "range",
+      "id": "slide_1_overlay_opacity",
+      "label": "Opacidad del overlay",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "%",
+      "default": 30
+    },
+    {
+      "type": "richtext",
+      "id": "slide_1_heading",
+      "label": "Título",
+      "default": "<p>Bienvenido a FitoHeal</p>"
+    },
+    {
+      "type": "color",
+      "id": "slide_1_heading_color",
+      "label": "Color del título",
+      "default": "#FAFDF8"
+    },
+    {
+      "type": "richtext",
+      "id": "slide_1_subheading",
+      "label": "Subtítulo",
+      "default": "<p>Descubre el poder de la naturaleza</p>"
+    },
+    {
+      "type": "color",
+      "id": "slide_1_subheading_color",
+      "label": "Color del subtítulo",
+      "default": "#FAFDF8"
+    },
+    {
+      "type": "select",
+      "id": "slide_1_text_alignment",
+      "label": "Alineación del texto",
+      "options": [
+        {
+          "value": "left",
+          "label": "Izquierda"
+        },
+        {
+          "value": "center",
+          "label": "Centro"
+        },
+        {
+          "value": "right",
+          "label": "Derecha"
+        }
+      ],
+      "default": "center"
+    },
+    {
+      "type": "select",
+      "id": "slide_1_vertical_position",
+      "label": "Posición vertical",
+      "options": [
+        {
+          "value": "top",
+          "label": "Arriba"
+        },
+        {
+          "value": "center",
+          "label": "Centro"
+        },
+        {
+          "value": "bottom",
+          "label": "Abajo"
+        }
+      ],
+      "default": "center"
+    },
+    {
+      "type": "text",
+      "id": "slide_1_button_1_text",
+      "label": "Texto botón 1"
+    },
+    {
+      "type": "url",
+      "id": "slide_1_button_1_link",
+      "label": "Enlace botón 1"
+    },
+    {
+      "type": "color",
+      "id": "slide_1_button_1_bg_color",
+      "label": "Color de fondo botón 1",
+      "default": "#74C69D"
+    },
+    {
+      "type": "color",
+      "id": "slide_1_button_1_text_color",
+      "label": "Color de texto botón 1",
+      "default": "#1B4332"
+    },
+    {
+      "type": "text",
+      "id": "slide_1_button_2_text",
+      "label": "Texto botón 2"
+    },
+    {
+      "type": "url",
+      "id": "slide_1_button_2_link",
+      "label": "Enlace botón 2"
+    },
+    {
+      "type": "color",
+      "id": "slide_1_button_2_text_color",
+      "label": "Color de texto botón 2",
+      "default": "#FAFDF8"
+    },
+    {
+      "type": "header",
+      "content": "Slide 2"
+    },
+    {
+      "type": "select",
+      "id": "slide_2_media_type",
+      "label": "Tipo de media",
+      "options": [
+        {
+          "value": "image",
+          "label": "Imagen"
+        },
+        {
+          "value": "video",
+          "label": "Video"
+        }
+      ],
+      "default": "image"
+    },
+    {
+      "type": "image_picker",
+      "id": "slide_2_image_desktop",
+      "label": "Imagen desktop"
+    },
+    {
+      "type": "image_picker",
+      "id": "slide_2_image_mobile",
+      "label": "Imagen mobile"
+    },
+    {
+      "type": "video",
+      "id": "slide_2_video",
+      "label": "Video (Shopify)"
+    },
+    {
+      "type": "video_url",
+      "id": "slide_2_video_url",
+      "label": "Video URL",
+      "accept": ["youtube", "vimeo"]
+    },
+    {
+      "type": "checkbox",
+      "id": "slide_2_show_overlay",
+      "label": "Mostrar overlay",
+      "default": true
+    },
+    {
+      "type": "range",
+      "id": "slide_2_overlay_opacity",
+      "label": "Opacidad del overlay",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "%",
+      "default": 30
+    },
+    {
+      "type": "richtext",
+      "id": "slide_2_heading",
+      "label": "Título"
+    },
+    {
+      "type": "color",
+      "id": "slide_2_heading_color",
+      "label": "Color del título",
+      "default": "#FAFDF8"
+    },
+    {
+      "type": "richtext",
+      "id": "slide_2_subheading",
+      "label": "Subtítulo"
+    },
+    {
+      "type": "color",
+      "id": "slide_2_subheading_color",
+      "label": "Color del subtítulo",
+      "default": "#FAFDF8"
+    },
+    {
+      "type": "select",
+      "id": "slide_2_text_alignment",
+      "label": "Alineación del texto",
+      "options": [
+        {
+          "value": "left",
+          "label": "Izquierda"
+        },
+        {
+          "value": "center",
+          "label": "Centro"
+        },
+        {
+          "value": "right",
+          "label": "Derecha"
+        }
+      ],
+      "default": "center"
+    },
+    {
+      "type": "select",
+      "id": "slide_2_vertical_position",
+      "label": "Posición vertical",
+      "options": [
+        {
+          "value": "top",
+          "label": "Arriba"
+        },
+        {
+          "value": "center",
+          "label": "Centro"
+        },
+        {
+          "value": "bottom",
+          "label": "Abajo"
+        }
+      ],
+      "default": "center"
+    },
+    {
+      "type": "text",
+      "id": "slide_2_button_1_text",
+      "label": "Texto botón 1"
+    },
+    {
+      "type": "url",
+      "id": "slide_2_button_1_link",
+      "label": "Enlace botón 1"
+    },
+    {
+      "type": "color",
+      "id": "slide_2_button_1_bg_color",
+      "label": "Color de fondo botón 1",
+      "default": "#74C69D"
+    },
+    {
+      "type": "color",
+      "id": "slide_2_button_1_text_color",
+      "label": "Color de texto botón 1",
+      "default": "#1B4332"
+    },
+    {
+      "type": "text",
+      "id": "slide_2_button_2_text",
+      "label": "Texto botón 2"
+    },
+    {
+      "type": "url",
+      "id": "slide_2_button_2_link",
+      "label": "Enlace botón 2"
+    },
+    {
+      "type": "color",
+      "id": "slide_2_button_2_text_color",
+      "label": "Color de texto botón 2",
+      "default": "#FAFDF8"
+    },
+    {
+      "type": "header",
+      "content": "Slide 3"
+    },
+    {
+      "type": "select",
+      "id": "slide_3_media_type",
+      "label": "Tipo de media",
+      "options": [
+        {
+          "value": "image",
+          "label": "Imagen"
+        },
+        {
+          "value": "video",
+          "label": "Video"
+        }
+      ],
+      "default": "image"
+    },
+    {
+      "type": "image_picker",
+      "id": "slide_3_image_desktop",
+      "label": "Imagen desktop"
+    },
+    {
+      "type": "image_picker",
+      "id": "slide_3_image_mobile",
+      "label": "Imagen mobile"
+    },
+    {
+      "type": "video",
+      "id": "slide_3_video",
+      "label": "Video (Shopify)"
+    },
+    {
+      "type": "video_url",
+      "id": "slide_3_video_url",
+      "label": "Video URL",
+      "accept": ["youtube", "vimeo"]
+    },
+    {
+      "type": "checkbox",
+      "id": "slide_3_show_overlay",
+      "label": "Mostrar overlay",
+      "default": true
+    },
+    {
+      "type": "range",
+      "id": "slide_3_overlay_opacity",
+      "label": "Opacidad del overlay",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "%",
+      "default": 30
+    },
+    {
+      "type": "richtext",
+      "id": "slide_3_heading",
+      "label": "Título"
+    },
+    {
+      "type": "color",
+      "id": "slide_3_heading_color",
+      "label": "Color del título",
+      "default": "#FAFDF8"
+    },
+    {
+      "type": "richtext",
+      "id": "slide_3_subheading",
+      "label": "Subtítulo"
+    },
+    {
+      "type": "color",
+      "id": "slide_3_subheading_color",
+      "label": "Color del subtítulo",
+      "default": "#FAFDF8"
+    },
+    {
+      "type": "select",
+      "id": "slide_3_text_alignment",
+      "label": "Alineación del texto",
+      "options": [
+        {
+          "value": "left",
+          "label": "Izquierda"
+        },
+        {
+          "value": "center",
+          "label": "Centro"
+        },
+        {
+          "value": "right",
+          "label": "Derecha"
+        }
+      ],
+      "default": "center"
+    },
+    {
+      "type": "select",
+      "id": "slide_3_vertical_position",
+      "label": "Posición vertical",
+      "options": [
+        {
+          "value": "top",
+          "label": "Arriba"
+        },
+        {
+          "value": "center",
+          "label": "Centro"
+        },
+        {
+          "value": "bottom",
+          "label": "Abajo"
+        }
+      ],
+      "default": "center"
+    },
+    {
+      "type": "text",
+      "id": "slide_3_button_1_text",
+      "label": "Texto botón 1"
+    },
+    {
+      "type": "url",
+      "id": "slide_3_button_1_link",
+      "label": "Enlace botón 1"
+    },
+    {
+      "type": "color",
+      "id": "slide_3_button_1_bg_color",
+      "label": "Color de fondo botón 1",
+      "default": "#74C69D"
+    },
+    {
+      "type": "color",
+      "id": "slide_3_button_1_text_color",
+      "label": "Color de texto botón 1",
+      "default": "#1B4332"
+    },
+    {
+      "type": "text",
+      "id": "slide_3_button_2_text",
+      "label": "Texto botón 2"
+    },
+    {
+      "type": "url",
+      "id": "slide_3_button_2_link",
+      "label": "Enlace botón 2"
+    },
+    {
+      "type": "color",
+      "id": "slide_3_button_2_text_color",
+      "label": "Color de texto botón 2",
+      "default": "#FAFDF8"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Hero Slider FitoHeal"
+    }
+  ]
+}
+{% endschema %}

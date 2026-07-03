@@ -57,7 +57,7 @@
         "text_WKhTaO": {
           "type": "text",
           "settings": {
-            "text": "<p>Apoya el enfoque, la memoria y el equilibrio mental durante el día.</p><h2></h2>",
+            "text": "<p>La mente no rinde por dos razones. _Este kit resuelve las dos.</p><h2></h2>",
             "text_highlight_color": "#d7fca3",
             "text_highlight_text_color": "#111111",
             "text_color": "#555555",
@@ -160,7 +160,7 @@
         "description_4X83w7": {
           "type": "description",
           "settings": {
-            "description_text": "<p>Una fórmula liposomal de alta absorción diseñada para apoyar la concentración, la memoria y la calma mental sin depender de estimulantes.</p>",
+            "description_text": "<p>Incluye Ashwagandha Liposomal + Melena de León Liposomal — dos fórmulas que trabajan juntas porque el enfoque no falla por una sola causa: el estrés bloquea la mente y las neuronas no tienen lo que necesitan para funcionar bien. Uno elimina el obstáculo, el otro construye la capacidad.</p>",
             "description_color": "#111111",
             "description_font_size": 16,
             "description_font_size_mobile": 14,
@@ -176,8 +176,8 @@
         "collapsible_row_1_DAxcm0": {
           "type": "collapsible_row",
           "settings": {
-            "title": "¿Cómo funciona el Kit Focus?",
-            "content": "<p>Combina <strong>Ashwagandha Liposomal + Melena de León Liposomal</strong>.<br/><br/>La Ashwagandha ayuda a favorecer el equilibrio emocional y la calma diaria, mientras que la Melena de León apoya la memoria, la concentración y el bienestar cognitivo.</p>",
+            "title": "¿Cómo funciona este kit?",
+            "content": "<p>La Ashwagandha baja el cortisol — la hormona del estrés — que genera el ruido mental que bloquea la concentración. La Melena de León estimula el NGF (Factor de Crecimiento Nervioso), una proteína que cuida y regenera las neuronas para que funcionen mejor. Juntos limpian el camino y construyen la capacidad.</p>",
             "margin_top_desktop": 0,
             "margin_bottom_desktop": 0,
             "margin_top_mobile": 0,
@@ -187,8 +187,8 @@
         "collapsible_row_2_b5NJ8R": {
           "type": "collapsible_row",
           "settings": {
-            "title": "¿Cuándo debo tomarla?",
-            "content": "<p>Puedes tomarlo durante el día, preferiblemente con alimentos.<br/><br/>La dosis general recomendada es de <strong>1 a 2 cápsulas al día</strong>, según la indicación del producto.</p>",
+            "title": "¿Cuándo debo tomarlo?",
+            "content": "<p>En la mañana, con el desayuno. La Ashwagandha baja el cortisol de inicio del día — que en personas estresadas puede estar elevado desde que se despiertan. La Melena de León actúa durante el período de mayor demanda cognitiva. Los dos en la mañana preparan la mente para el día.</p>",
             "margin_top_desktop": 0,
             "margin_bottom_desktop": 0,
             "margin_top_mobile": 0,
@@ -198,8 +198,8 @@
         "collapsible_row_3_fMM5Om": {
           "type": "collapsible_row",
           "settings": {
-            "title": "¿En cuánto tiempo puedo notar cambios?",
-            "content": "<p>Depende de cada persona y de su constancia.<br/><br/>Este kit está pensado como apoyo diario para la concentración, la claridad mental y el equilibrio, no como un efecto inmediato.</p>",
+            "title": "¿En cuánto tiempo voy a notar cambios?",
+            "content": "<p>La menor niebla mental y la mayor facilidad para concentrarse suelen notarse entre la semana 2 y 4. La memoria más ágil y el enfoque sostenido llegan entre la semana 4 y 8, con el NGF acumulándose de forma constante.</p>",
             "margin_top_desktop": 0,
             "margin_bottom_desktop": 0,
             "margin_top_mobile": 0,
@@ -325,6 +325,113 @@
         "collapsible_icon_size": 30
       }
     },
+    "vso_img_with_text_01_Lbr7eV": {
+      "type": "vso-img-with-text-01",
+      "blocks": {
+        "image_YGA7dh": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/ChatGPT_Image_24_jun_2026_14_52_04.png",
+            "image_height": 580,
+            "image_height_mobile": 400,
+            "image_border_radius": 8
+          }
+        },
+        "title_cincJF": {
+          "type": "title",
+          "settings": {
+            "title": "¿Qué es la tecnología liposomal?",
+            "title_custom": false,
+            "title_font": "assistant_n4",
+            "title_font_weight": "700",
+            "title_font_size": 30,
+            "title_font_size_mobile": 24,
+            "title_margin_bottom": 20,
+            "title_color": "#0cc172"
+          }
+        },
+        "description_n4bLH6": {
+          "type": "description",
+          "settings": {
+            "text": "La tecnología liposomal ayuda a que los ingredientes activos lleguen mejor protegidos al cuerpo.Funciona mediante liposomas: pequeñas estructuras de fosfolípidos que encapsulan los nutrientes, los protegen durante la digestión y facilitan su transporte.El resultado: una absorción más eficiente y una mejor experiencia nutricional.",
+            "text_custom": false,
+            "text_font": "assistant_n4",
+            "text_font_weight": "400",
+            "text_alignment": "left",
+            "text_font_size": 16,
+            "text_font_size_mobile": 16,
+            "text_margin_bottom": 30,
+            "text_color": "#fafdf8"
+          }
+        },
+        "feature_f33n93": {
+          "type": "feature",
+          "disabled": true,
+          "settings": {
+            "text": "Hydration Retention",
+            "text_custom": false,
+            "text_font": "assistant_n4",
+            "text_font_weight": "400"
+          }
+        },
+        "feature_ggDafM": {
+          "type": "feature",
+          "disabled": true,
+          "settings": {
+            "text": "Temperature Regulation",
+            "text_custom": false,
+            "text_font": "assistant_n4",
+            "text_font_weight": "400"
+          }
+        }
+      },
+      "block_order": [
+        "image_YGA7dh",
+        "title_cincJF",
+        "description_n4bLH6",
+        "feature_f33n93",
+        "feature_ggDafM"
+      ],
+      "name": "VSO - Img With Text 01",
+      "settings": {
+        "reverse_layout": false,
+        "mobile_reverse_layout": true,
+        "content_background_color": "#1c4332",
+        "features_gap": 20,
+        "features_margin_top": 10,
+        "feature_icon_size": 48,
+        "feature_icon_size_mobile": 32,
+        "feature_icon_border_radius": 0,
+        "feature_icon_margin_bottom": 10,
+        "feature_text_font_size": 14,
+        "feature_text_font_size_mobile": 14,
+        "feature_text_color": "#000000",
+        "feature_text_font_weight": "400",
+        "features_in_row": false,
+        "grid_max_width": 1220,
+        "section_max_width": 120,
+        "padding_desktop": 60,
+        "padding_tablet_mobile": 0,
+        "margin_desktop": 24,
+        "margin_bottom_desktop": 0,
+        "margin_tablet_mobile": 0,
+        "margin_bottom_tablet_mobile": 0,
+        "background_color": "#1c4332",
+        "background_gradient_color": ""
+      }
+    },
+    "about_section_nx8BA6": {
+      "type": "about-section",
+      "settings": {
+        "bg_color": "#fafdf8",
+        "imagen_pos": "left",
+        "titulo": "¿Cómo funciona el liposomal?",
+        "descripcion": "<p>La tecnología liposomal funciona utilizando esferas microscópicas (llamadas liposomas) formadas por grasa para encapsular nutrientes. Actúan como un vehículo de transporte de alta tecnología que protege a los ingredientes de los ácidos estomacales y permite que se absorban directamente en las células. </p>",
+        "cta_label": "",
+        "cta_link": "",
+        "imagen": "shopify://shop_images/ChatGPT_Image_24_jun_2026_14_54_00.png"
+      }
+    },
     "vso_hero_36_81fyqM": {
       "type": "vso-hero-36",
       "blocks": {
@@ -342,7 +449,7 @@
             "subtitle_letter_spacing": 1,
             "subtitle_color": "#ffffff",
             "subtitle_spacing": 16,
-            "title": "<strong>Siente más claridad en tu rutina diaria.</strong>",
+            "title": "<strong>Esto es para ti si...</strong>",
             "title_custom_font": false,
             "title_as": "h2",
             "title_font": "poppins_n6",
@@ -352,10 +459,10 @@
             "title_line_height": 120,
             "title_letter_spacing": 0,
             "title_color_type": "solid",
-            "title_color": "#ffffff",
+            "title_color": "#0CC172",
             "title_gradient": "linear-gradient(135deg, #EC4899 0%, #F472B6 100%)",
             "title_spacing": 16,
-            "text": "Transform your lashes with:",
+            "text": "",
             "text_custom_font": false,
             "text_as": "p",
             "text_font": "poppins_n4",
@@ -391,29 +498,29 @@
         "feature_1_iokXup": {
           "type": "feature",
           "settings": {
-            "feature_title": "<strong>Enfoque mental</strong>",
-            "feature_text": "Ayuda a mantener una mente más clara durante tus actividades diarias."
+            "feature_title": "<strong>Tu mente llega al mediodía y ya no responde</strong>",
+            "feature_text": "Empiezas el día con intención pero a las 2 pm no puedes con una tarea. La energía mental se agota mucho antes de que el día acabe."
           }
         },
         "feature_2_n0zBc0": {
           "type": "feature",
           "settings": {
-            "feature_title": "<strong>Memoria</strong>",
-            "feature_text": "Apoya la función cognitiva y la retención de información."
+            "feature_title": "<strong>El estrés te nubla la cabeza</strong>",
+            "feature_text": "Cuando estás bajo presión, pensar con claridad se vuelve difícil. El ruido mental — pensamientos que no paran — compite con lo que necesitas hacer."
           }
         },
         "feature_3_2EfXxK": {
           "type": "feature",
           "settings": {
-            "feature_title": "<strong>Calma diaria</strong>",
-            "feature_text": "Favorece una respuesta más equilibrada frente al estrés cotidiano."
+            "feature_title": "<strong>Dependes de la cafeína para funcionar con normalidad</strong>",
+            "feature_text": "No es que te guste el café — es que sin él no arrancas. Y aun con él, la concentración no dura lo que necesitas."
           }
         },
         "feature_4_w0MBJV": {
           "type": "feature",
           "settings": {
-            "feature_title": "<strong>Energía sin estimulantes</strong>",
-            "feature_text": "Ideal para sentirte más centrado, sin depender de cafeína o estimulantes."
+            "feature_title": "<strong>Tienes períodos de alta exigencia cognitiva</strong>",
+            "feature_text": "Estudio, proyectos, trabajo que requiere enfoque sostenido por horas. Necesitas que tu cerebro funcione a nivel alto de forma consistente, no por rachas."
           }
         }
       },
@@ -435,7 +542,7 @@
         "section_outer_padding_bottom": 20,
         "section_outer_padding_top_mobile": 15,
         "section_outer_padding_bottom_mobile": 15,
-        "section_outer_bg_color": "#1e3b1d",
+        "section_outer_bg_color": "#1C4332",
         "full_width_desktop": false,
         "section_border_radius": 12,
         "section_border_radius_mobile": 0,
@@ -478,6 +585,116 @@
         "feature_text_color": "#ffffff"
       }
     },
+    "vso_icon_benefits_01_W6VGEW": {
+      "type": "vso-icon-benefits-01",
+      "blocks": {
+        "heading_dNrCVj": {
+          "type": "heading",
+          "settings": {
+            "content_alignment": "center",
+            "title": "<strong>¿Por qué dos productos _y no uno solo?</strong>",
+            "title_color": "#000000",
+            "title_highlight_color": "#0cc172",
+            "custom_title_font": false,
+            "title_as": "h2",
+            "title_font": "sans_serif_n4",
+            "title_size_desktop": 40,
+            "title_size_mobile": 32,
+            "title_line_height": 130,
+            "subtitle": "El enfoque no falla por una sola razón. Hay dos problemas distintos que actúan al mismo tiempo — y cada uno necesita su solución.",
+            "subtitle_color": "#000000",
+            "custom_subtitle_font": false,
+            "subtitle_as": "p",
+            "subtitle_font": "sans_serif_n4",
+            "subtitle_size_desktop": 20,
+            "subtitle_size_mobile": 16,
+            "subtitle_line_height": 130,
+            "header_elements_gap": 16,
+            "header_blocks_gap": 50
+          }
+        },
+        "benefit_9YmwaC": {
+          "type": "benefit",
+          "settings": {
+            "title": "<strong>Ashwagandha Liposomal. </strong>Elimina el freno",
+            "text": "Baja el cortisol — la hormona del estrés — que genera el ruido mental y la distracción involuntaria. Cuando el cortisol baja, el sistema nervioso deja de estar en alerta y la mente puede concentrarse."
+          }
+        },
+        "benefit_tAU9CR": {
+          "type": "benefit",
+          "settings": {
+            "title": "<strong>Melena de León Liposomal. </strong>Construye la capacidad",
+            "text": "Estimula el NGF (Factor de Crecimiento Nervioso) — la proteína que regenera y cuida las neuronas. Con neuronas más sanas, la concentración dura más, la memoria responde mejor y la claridad mental es más consistente."
+          }
+        },
+        "benefit_K94VBC": {
+          "type": "benefit",
+          "disabled": true,
+          "settings": {
+            "title": "Muscle Recovery",
+            "text": "Eases cramps and supports faster post-workout recovery."
+          }
+        },
+        "benefit_xMFKnP": {
+          "type": "benefit",
+          "disabled": true,
+          "settings": {
+            "title": "Heart & Energy Support",
+            "text": "Boosts cardiovascular health and helps convert food into steady energy."
+          }
+        }
+      },
+      "block_order": [
+        "heading_dNrCVj",
+        "benefit_9YmwaC",
+        "benefit_tAU9CR",
+        "benefit_K94VBC",
+        "benefit_xMFKnP"
+      ],
+      "name": "VSO - Icon Benefits 01",
+      "settings": {
+        "enable_advanced_settings": false,
+        "section_max_width": 64,
+        "section_horizontal_padding": 24,
+        "padding_horizontal_mobile": 15,
+        "background_color": "#fafdf8",
+        "full_width": true,
+        "section_border_radius": 12,
+        "section_border_radius_mobile": 0,
+        "padding_top_desktop": 60,
+        "padding_bottom_desktop": 60,
+        "padding_top_mobile": 32,
+        "padding_bottom_mobile": 32,
+        "margin_top_desktop": 0,
+        "margin_bottom_desktop": 0,
+        "margin_top_mobile": 0,
+        "margin_bottom_mobile": 0,
+        "mobile_columns": "2",
+        "blocks_alignment": "left",
+        "desktop_blocks_gap": 32,
+        "mobile_blocks_gap": 16,
+        "custom_blocks_title_font": false,
+        "blocks_title_as": "h3",
+        "blocks_title_font": "sans_serif_n4",
+        "block_title_size_desktop": 18,
+        "block_title_size_mobile": 18,
+        "block_title_line_height": 120,
+        "blocks_title_color": "#000000",
+        "custom_blocks_text_font": false,
+        "blocks_text_as": "p",
+        "blocks_text_font": "sans_serif_n4",
+        "block_text_size_desktop": 16,
+        "block_text_size_mobile": 14,
+        "block_text_line_height": 150,
+        "blocks_text_color": "#000000",
+        "block_background_color": "rgba(0,0,0,0)",
+        "desktop_icon_size": 50,
+        "mobile_icon_size": 40,
+        "block_padding": 0,
+        "block_elements_gap": 16,
+        "block_border_radius": 8
+      }
+    },
     "vso_hero_19_XGjzRA": {
       "type": "vso-hero-19",
       "blocks": {
@@ -485,7 +702,7 @@
           "type": "heading",
           "settings": {
             "heading_alignment": "center",
-            "heading": "Un apoyo diario para _sentir más claridad",
+            "heading": "<strong>Lo que puedes esperar, _semana a semana.</strong>",
             "heading_custom_font": false,
             "heading_as": "h3",
             "heading_font": "poppins_n4",
@@ -546,24 +763,24 @@
           "type": "timeline_item",
           "settings": {
             "subheading": "Primeros días",
-            "heading": "Tu mente empieza a sentirse más estable",
-            "description": "<p>Con el uso constante, este kit puede apoyar una sensación gradual de calma, claridad y mejor disposición mental durante el día.</p>"
+            "heading": "Menos niebla mental",
+            "description": "<p>La Ashwagandha empieza a regular el cortisol — el ruido mental cede. La cabeza está más despejada. Es más fácil retomar el hilo después de una interrupción.</p>"
           }
         },
         "timeline_item_2_3Qr27B": {
           "type": "timeline_item",
           "settings": {
             "subheading": "Semanas 2–4",
-            "heading": "Mayor enfoque y equilibrio",
-            "description": "<p>La combinación de <strong>Ashwagandha + Melena de León</strong> puede contribuir a una rutina más enfocada, apoyando la memoria, la concentración y el bienestar emocional.</p>"
+            "heading": "Enfoque más sostenido",
+            "description": "<p>Con el NGF acumulándose, las conexiones neuronales mejoran. Concentrarse por períodos más largos se vuelve menos difícil. La necesidad de cafeína puede disminuir.</p>"
           }
         },
         "timeline_item_3_6WDi7E": {
           "type": "timeline_item",
           "settings": {
             "subheading": "Uso continuo",
-            "heading": "Más claridad como parte de tu rutina",
-            "description": "<p>Como parte de hábitos saludables, puede ayudarte a sostener mejor concentración, calma mental y energía sin estimulantes.</p>"
+            "heading": "Una mente que trabaja para ti",
+            "description": "<p>El cortisol de base baja. Las neuronas están mejor nutridas. El rendimiento cognitivo es más estable — no depende del día ni de cuántos cafés tomaste.</p>"
           }
         }
       },
@@ -639,7 +856,7 @@
           "type": "heading",
           "settings": {
             "content_alignment": "left",
-            "title": "<strong>Tecnología _liposomal para una mejor absorción</strong>",
+            "title": "<strong>Para la mente que rinde a medias _cuando debería rendir completa.</strong>",
             "title_color": "#000000",
             "title_highlight_color": "#478641",
             "custom_title_font": false,
@@ -663,29 +880,29 @@
         "benefit_1_5lAsTN": {
           "type": "benefit",
           "settings": {
-            "title": "<strong>Alta absorción X5</strong>",
-            "text": "Favorece mayor disponibilidad del activo."
+            "title": "<strong>Menos ruido mental</strong>",
+            "text": "La Ashwagandha baja el cortisol — la hormona del estrés — que genera los pensamientos en loop y la distracción involuntaria que compiten con lo que intentas hacer."
           }
         },
         "benefit_2_WLkZAU": {
           "type": "benefit",
           "settings": {
-            "title": "<strong>Mejor aprovechamiento</strong>",
-            "text": "Ayuda a que cada cápsula trabaje mejor."
+            "title": "<strong>Concentración que dura</strong>",
+            "text": "La Melena de León estimula el NGF — el Factor de Crecimiento Nervioso — para que las neuronas funcionen mejor. El enfoque no se agota a las 2 horas."
           }
         },
         "benefit_3_XK8kZV": {
           "type": "benefit",
           "settings": {
-            "title": "<strong>Uso constante</strong>",
-            "text": "Apoya una experiencia más estable."
+            "title": "<strong>Memoria más ágil</strong>",
+            "text": "Con neuronas más sanas y menos interferencia del cortisol, la memoria de trabajo — la que necesitas para seguir varios pensamientos a la vez — responde con más rapidez."
           }
         },
         "benefit_4_gPhHh1": {
           "type": "benefit",
           "settings": {
-            "title": "<strong>Rutina fácil</strong>",
-            "text": "Cápsulas prácticas para el día a día."
+            "title": "<strong>Sin cafeína, sin crash</strong>",
+            "text": "No acelera el sistema nervioso artificialmente. Mejora la función cognitiva real. Sin rebote, sin dependencia, sin el bajón de la tarde."
           }
         }
       },
@@ -947,6 +1164,7 @@
         "card_item_7_TC3pr9",
         "card_item_8_9b3ZpQ"
       ],
+      "disabled": true,
       "name": "VSO - Hero 45",
       "settings": {
         "enable_advanced_settings": false,
@@ -1448,7 +1666,7 @@
         "title_wMRzQ5": {
           "type": "title",
           "settings": {
-            "title": "<strong>Resuelve _tus dudas_ importantes</strong>",
+            "title": "<strong>Lo que suelen _preguntarnos</strong>",
             "title_color": "#000000",
             "title_highlight_color": "#478641",
             "custom_font": false,
@@ -1467,7 +1685,7 @@
         "subtitle_EvXGjz": {
           "type": "subtitle",
           "settings": {
-            "subtitle": "<p>Información clara para que sepas cómo integrar el Kit Focus Liposomal a tu rutina diaria.</p>",
+            "subtitle": "<p>Sobre el Kit Focus Liposomal de Fitoheal.</p>",
             "subtitle_color": "#121212",
             "custom_font": false,
             "subtitle_as": "p",
@@ -1510,43 +1728,36 @@
         "faq_item_1_nCxGYg": {
           "type": "faq_item",
           "settings": {
-            "question": "<strong>¿Para qué sirve el Kit Focus Liposomal?</strong>",
-            "answer": "<p>Está diseñado para apoyar el enfoque, la memoria, la concentración y el equilibrio mental durante el día. </p><p>Combina <strong>Ashwagandha Liposomal + Melena de León Liposomal</strong>, una mezcla pensada para momentos de alta exigencia mental.</p>"
+            "question": "<strong>¿Para qué sirve el Kit Focus?</strong>",
+            "answer": "<p>Para mejorar el enfoque y la claridad mental atacando los dos problemas que los bloquean: el cortisol elevado — que genera ruido mental y distracción — con la Ashwagandha, y las neuronas sin los nutrientes que necesitan — con la Melena de León que estimula el NGF o Factor de Crecimiento Nervioso.</p>"
           }
         },
         "faq_item_2_ohlkGR": {
           "type": "faq_item",
           "settings": {
-            "question": "<strong>¿Cómo debo tomarla?</strong>",
-            "answer": "<p>Se recomienda tomar <strong>1 a 2 cápsulas al día</strong>, preferiblemente con alimentos.<br/><br/>Puedes integrarlo en tu rutina de la mañana o durante el día.</p>"
+            "question": "<strong>¿Por qué comprar el kit y no solo uno de los dos?</strong>",
+            "answer": "<p>Porque el enfoque falla por dos razones distintas al mismo tiempo. Si solo bajas el estrés con Ashwagandha, las neuronas siguen sin los nutrientes que necesitan para rendir. Si solo nutres las neuronas con Melena de León, el cortisol elevado sigue bloqueando la concentración. Los dos juntos resuelven el problema desde la raíz.</p>"
           }
         },
         "faq_item_3_aKHWJF": {
           "type": "faq_item",
           "settings": {
-            "question": "<strong>¿Qué diferencia tiene la tecnología liposomal?</strong>",
-            "answer": "<p>La tecnología liposomal ayuda a proteger y transportar mejor los activos, favoreciendo una mejor absorción y aprovechamiento dentro del cuerpo.</p>"
+            "question": "<strong>¿Es lo mismo que tomar cafeína?</strong>",
+            "answer": "<p>No. La cafeína bloquea los receptores de adenosina — la molécula que produce sueño — y da una sensación de alerta artificial que luego cae. Este kit mejora la función cognitiva real: baja el cortisol que bloquea y nutre las neuronas que rinden. Sin rebote, sin dependencia, sin crash.</p>"
           }
         },
         "faq_item_4_jrk0ZU": {
           "type": "faq_item",
           "settings": {
-            "question": "<strong>¿Me puede dar sueño?</strong>",
-            "answer": "<p>No está pensado como un producto para dormir.<br/><br/>La Ashwagandha puede favorecer la calma, pero en este kit el objetivo principal es apoyar el enfoque, la memoria y el equilibrio mental durante el día.</p>"
+            "question": "<strong>¿Puedo tomarlo para estudiar o trabajar?</strong>",
+            "answer": "<p>Sí — es exactamente para eso. La combinación de menor ruido mental y mejor función neuronal lo hace ideal para períodos de alta exigencia cognitiva: exámenes, proyectos, trabajo que requiere enfoque sostenido.</p>"
           }
         },
         "faq_item_7d7hjk": {
           "type": "faq_item",
           "settings": {
-            "question": "<strong>¿Puedo tomarlo para estudiar o trabajar?</strong>",
-            "answer": "<p>Sí. Puede integrarse como apoyo diario en rutinas de estudio, trabajo o concentración, especialmente cuando buscas más claridad mental y menos sensación de saturación.</p>"
-          }
-        },
-        "faq_item_4t7Dxr": {
-          "type": "faq_item",
-          "settings": {
-            "question": "<strong>¿Quiénes deben consultar antes de usarlo?</strong>",
-            "answer": "<p>Personas embarazadas, en lactancia, con condiciones médicas, trastornos autoinmunes, hipertiroidismo o que tomen medicamentos deben consultar con un profesional de salud antes de usarlo.</p>"
+            "question": "<strong>¿Y si lo tomo y no siento nada?</strong>",
+            "answer": "<p>Verificar que se tome en la mañana con consistencia diaria. Los primeros cambios suelen ser la menor niebla mental — más fácil de retomar el hilo, cabeza más despejada. Si después de 4 semanas no hay diferencia, escríbenos.</p>"
           }
         }
       },
@@ -1558,8 +1769,7 @@
         "faq_item_2_ohlkGR",
         "faq_item_3_aKHWJF",
         "faq_item_4_jrk0ZU",
-        "faq_item_7d7hjk",
-        "faq_item_4t7Dxr"
+        "faq_item_7d7hjk"
       ],
       "name": "VSO - FAQ 02",
       "settings": {
@@ -1606,7 +1816,10 @@
   },
   "order": [
     "vso_product_info_02_CB34KK",
+    "vso_img_with_text_01_Lbr7eV",
+    "about_section_nx8BA6",
     "vso_hero_36_81fyqM",
+    "vso_icon_benefits_01_W6VGEW",
     "vso_hero_19_XGjzRA",
     "vso_icon_benefits_01_QX0kww",
     "vso_img_with_text_01_xtNmKG",

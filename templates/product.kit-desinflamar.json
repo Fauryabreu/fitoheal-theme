@@ -57,7 +57,7 @@
         "text_WKhTaO": {
           "type": "text",
           "settings": {
-            "text": "<p>Una combinación liposomal diseñada para _apoyar el bienestar físico, la salud articular, la digestión y la relajación muscular.</p>",
+            "text": "<p>Tu cuerpo lleva tiempo inflamado y lo sientes en dos lugares. _Este kit ataca los dos.</p>",
             "text_highlight_color": "#d7fca3",
             "text_highlight_text_color": "#111111",
             "text_color": "#555555",
@@ -160,7 +160,7 @@
         "description_4X83w7": {
           "type": "description",
           "settings": {
-            "description_text": "<p>Incluye Cúrcuma Liposomal + Citrato de Magnesio D3 Liposomal: dos fórmulas pensadas para apoyar tu cuerpo desde adentro con mejor absorción y aprovechamiento.</p>",
+            "description_text": "<p>Incluye Cúrcuma Liposomal + Citrato de Magnesio Liposomal — dos fórmulas que trabajan juntas porque la inflamación no vive solo en las articulaciones ni solo en el intestino: cuando uno está inflamado, el otro también lo siente.</p>",
             "description_color": "#111111",
             "description_font_size": 16,
             "description_font_size_mobile": 14,
@@ -177,7 +177,7 @@
           "type": "collapsible_row",
           "settings": {
             "title": "¿Cómo funciona este kit?",
-            "content": "<p>Este kit combina Cúrcuma Liposomal y Citrato de Magnesio D3 Liposomal. La Cúrcuma apoya la respuesta antiinflamatoria natural, la salud articular y la acción antioxidante, mientras el Citrato de Magnesio favorece la digestión, la salud intestinal y la función muscular. </p>",
+            "content": "<p>La Cúrcuma actúa sobre la inflamación sistémica — la inflamación de fondo que afecta articulaciones, tejidos y músculos. El Citrato de Magnesio actúa en el tracto intestinal — el tubo digestivo — regularizando el tránsito y reduciendo la inflamación intestinal. Juntos atacan la inflamación desde adentro y desde afuera.</p>",
             "margin_top_desktop": 0,
             "margin_bottom_desktop": 0,
             "margin_top_mobile": 0,
@@ -187,8 +187,8 @@
         "collapsible_row_2_b5NJ8R": {
           "type": "collapsible_row",
           "settings": {
-            "title": "¿Cuándo debo tomarla?",
-            "content": "<p>Tomar según la indicación de cada producto: <strong>1 a 2 cápsulas al día</strong> con agua, preferiblemente junto a una comida o según tu rutina diaria.</p>",
+            "title": "¿Cuándo debo tomarlo?",
+            "content": "<p>Con las comidas. La Cúrcuma se absorbe mejor con grasa presente en los alimentos. El Citrato de Magnesio actúa mejor cuando el sistema digestivo está activo. 1 a 2 cápsulas de cada producto al día.</p>",
             "margin_top_desktop": 0,
             "margin_bottom_desktop": 0,
             "margin_top_mobile": 0,
@@ -198,8 +198,8 @@
         "collapsible_row_3_fMM5Om": {
           "type": "collapsible_row",
           "settings": {
-            "title": "¿En cuánto tiempo puedo notar cambios?",
-            "content": "<p>Cada cuerpo responde diferente. Con el uso constante, este kit puede apoyar una mejor sensación de bienestar físico, digestivo y articular.</p>",
+            "title": "¿En cuánto tiempo voy a notar cambios?",
+            "content": "<p>La hinchazón y la pesadez digestiva suelen mejorar en las primeras dos semanas. La movilidad articular y la menor rigidez llegan entre la semana 4 y 8 con el uso constante.</p>",
             "margin_top_desktop": 0,
             "margin_bottom_desktop": 0,
             "margin_top_mobile": 0,
@@ -325,6 +325,113 @@
         "collapsible_icon_size": 30
       }
     },
+    "vso_img_with_text_01_6FgMM7": {
+      "type": "vso-img-with-text-01",
+      "blocks": {
+        "image_9fLzCD": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/ChatGPT_Image_24_jun_2026_14_52_04.png",
+            "image_height": 580,
+            "image_height_mobile": 400,
+            "image_border_radius": 8
+          }
+        },
+        "title_FNPFBV": {
+          "type": "title",
+          "settings": {
+            "title": "¿Qué es la tecnología liposomal?",
+            "title_custom": false,
+            "title_font": "assistant_n4",
+            "title_font_weight": "700",
+            "title_font_size": 30,
+            "title_font_size_mobile": 24,
+            "title_margin_bottom": 20,
+            "title_color": "#0cc172"
+          }
+        },
+        "description_4h8D6A": {
+          "type": "description",
+          "settings": {
+            "text": "La tecnología liposomal ayuda a que los ingredientes activos lleguen mejor protegidos al cuerpo.Funciona mediante liposomas: pequeñas estructuras de fosfolípidos que encapsulan los nutrientes, los protegen durante la digestión y facilitan su transporte.El resultado: una absorción más eficiente y una mejor experiencia nutricional.",
+            "text_custom": false,
+            "text_font": "assistant_n4",
+            "text_font_weight": "400",
+            "text_alignment": "left",
+            "text_font_size": 16,
+            "text_font_size_mobile": 16,
+            "text_margin_bottom": 30,
+            "text_color": "#fafdf8"
+          }
+        },
+        "feature_8z99QJ": {
+          "type": "feature",
+          "disabled": true,
+          "settings": {
+            "text": "Hydration Retention",
+            "text_custom": false,
+            "text_font": "assistant_n4",
+            "text_font_weight": "400"
+          }
+        },
+        "feature_ApDHh4": {
+          "type": "feature",
+          "disabled": true,
+          "settings": {
+            "text": "Temperature Regulation",
+            "text_custom": false,
+            "text_font": "assistant_n4",
+            "text_font_weight": "400"
+          }
+        }
+      },
+      "block_order": [
+        "image_9fLzCD",
+        "title_FNPFBV",
+        "description_4h8D6A",
+        "feature_8z99QJ",
+        "feature_ApDHh4"
+      ],
+      "name": "VSO - Img With Text 01",
+      "settings": {
+        "reverse_layout": false,
+        "mobile_reverse_layout": true,
+        "content_background_color": "#1c4332",
+        "features_gap": 20,
+        "features_margin_top": 10,
+        "feature_icon_size": 48,
+        "feature_icon_size_mobile": 32,
+        "feature_icon_border_radius": 0,
+        "feature_icon_margin_bottom": 10,
+        "feature_text_font_size": 14,
+        "feature_text_font_size_mobile": 14,
+        "feature_text_color": "#000000",
+        "feature_text_font_weight": "400",
+        "features_in_row": false,
+        "grid_max_width": 1220,
+        "section_max_width": 120,
+        "padding_desktop": 60,
+        "padding_tablet_mobile": 0,
+        "margin_desktop": 18,
+        "margin_bottom_desktop": 0,
+        "margin_tablet_mobile": 0,
+        "margin_bottom_tablet_mobile": 0,
+        "background_color": "#1c4332",
+        "background_gradient_color": ""
+      }
+    },
+    "about_section_mFe7hp": {
+      "type": "about-section",
+      "settings": {
+        "bg_color": "#fafdf8",
+        "imagen_pos": "left",
+        "titulo": "¿Cómo funciona el liposomal?",
+        "descripcion": "<p>La tecnología liposomal funciona utilizando esferas microscópicas (llamadas liposomas) formadas por grasa para encapsular nutrientes. Actúan como un vehículo de transporte de alta tecnología que protege a los ingredientes de los ácidos estomacales y permite que se absorban directamente en las células. </p>",
+        "cta_label": "",
+        "cta_link": "",
+        "imagen": "shopify://shop_images/ChatGPT_Image_24_jun_2026_14_54_00.png"
+      }
+    },
     "vso_hero_36_81fyqM": {
       "type": "vso-hero-36",
       "blocks": {
@@ -342,7 +449,7 @@
             "subtitle_letter_spacing": 1,
             "subtitle_color": "#ffffff",
             "subtitle_spacing": 16,
-            "title": "<strong>Apoya tu cuerpo desde adentro.</strong>",
+            "title": "<strong>Esto es para ti si...</strong>",
             "title_custom_font": false,
             "title_as": "h2",
             "title_font": "poppins_n6",
@@ -355,7 +462,7 @@
             "title_color": "#ffffff",
             "title_gradient": "linear-gradient(135deg, #EC4899 0%, #F472B6 100%)",
             "title_spacing": 16,
-            "text": "Transform your lashes with:",
+            "text": "",
             "text_custom_font": false,
             "text_as": "p",
             "text_font": "poppins_n4",
@@ -363,7 +470,7 @@
             "text_font_size_mobile": 14,
             "text_font_weight": 400,
             "text_line_height": 150,
-            "text_color": "#333333",
+            "text_color": "#1c4332",
             "heading_block_spacing": 48,
             "heading_block_spacing_mobile": 32,
             "heading_alignment": "left",
@@ -391,29 +498,29 @@
         "feature_1_iokXup": {
           "type": "feature",
           "settings": {
-            "feature_title": "<strong>Bienestar físico</strong>",
-            "feature_text": "Apoya la respuesta natural del cuerpo."
+            "feature_title": "Tienes dolores articulares o rigidez que no ceden",
+            "feature_text": "Rodillas, espalda, caderas, manos. Una molestia que el médico dice que no es grave pero que está ahí todos los días y limita lo que puedes hacer."
           }
         },
         "feature_2_n0zBc0": {
           "type": "feature",
           "settings": {
-            "feature_title": "<strong>Apoyo digestivo</strong>",
-            "feature_text": "Contribuye a una digestión más ligera."
+            "feature_title": "Tu digestión está inflamada y lo sientes en todo",
+            "feature_text": "Pesadez, hinchazón, malestar después de comer. No sabes qué lo causa — a veces es todo, a veces es nada."
           }
         },
         "feature_3_2EfXxK": {
           "type": "feature",
           "settings": {
-            "feature_title": "<strong>Salud articular</strong>",
-            "feature_text": "Favorece articulaciones y movilidad."
+            "feature_title": "Sientes inflamación de fondo en el cuerpo",
+            "feature_text": "No hay una lesión específica. Es una pesadez generalizada, un cuerpo que siente que carga más de lo que debería, que se recupera más lento."
           }
         },
         "feature_4_w0MBJV": {
           "type": "feature",
           "settings": {
-            "feature_title": "<strong>Alta absorción X5</strong>",
-            "feature_text": "Fórmulas liposomales para mejor aprovechamiento."
+            "feature_title": "Ya probaste cúrcuma y no notaste nada",
+            "feature_text": "Tés, polvo, cápsulas genéricas. No funcionaron porque la cúrcuma estándar el cuerpo casi no la absorbe — menos del 1%. El liposomal resuelve exactamente eso"
           }
         }
       },
@@ -435,7 +542,7 @@
         "section_outer_padding_bottom": 20,
         "section_outer_padding_top_mobile": 15,
         "section_outer_padding_bottom_mobile": 15,
-        "section_outer_bg_color": "#1e3b1d",
+        "section_outer_bg_color": "#1C4332",
         "full_width_desktop": false,
         "section_border_radius": 12,
         "section_border_radius_mobile": 0,
@@ -478,6 +585,116 @@
         "feature_text_color": "#ffffff"
       }
     },
+    "vso_icon_benefits_01_NifD9m": {
+      "type": "vso-icon-benefits-01",
+      "blocks": {
+        "heading_wDWgBd": {
+          "type": "heading",
+          "settings": {
+            "content_alignment": "center",
+            "title": "<strong>¿Por qué dos productos _y no uno solo?</strong>",
+            "title_color": "#000000",
+            "title_highlight_color": "#0cc172",
+            "custom_title_font": false,
+            "title_as": "h2",
+            "title_font": "sans_serif_n4",
+            "title_size_desktop": 40,
+            "title_size_mobile": 32,
+            "title_line_height": 130,
+            "subtitle": "La inflamación no tiene una sola cara. Cuando el cuerpo lleva tiempo inflamado, lo sientes en las articulaciones y en el intestino — y los dos se alimentan mutuamente.",
+            "subtitle_color": "#000000",
+            "custom_subtitle_font": false,
+            "subtitle_as": "p",
+            "subtitle_font": "sans_serif_n4",
+            "subtitle_size_desktop": 20,
+            "subtitle_size_mobile": 16,
+            "subtitle_line_height": 130,
+            "header_elements_gap": 16,
+            "header_blocks_gap": 50
+          }
+        },
+        "benefit_tTiW8E": {
+          "type": "benefit",
+          "settings": {
+            "title": "<strong>Cúrcuma Liposomal. </strong>Actúa en articulaciones y tejidos",
+            "text": "La curcumina — el compuesto activo de la cúrcuma — inhibe las vías inflamatorias celulares. Menos inflamación en articulaciones, músculos y tejidos. Más movilidad, menos molestia física."
+          }
+        },
+        "benefit_6cDHmK": {
+          "type": "benefit",
+          "settings": {
+            "title": "<strong>Citrato de Magnesio Liposomal. </strong>Actúa en el intestino",
+            "text": "Regulariza el tránsito intestinal, reduce la hinchazón y apoya el equilibrio digestivo. Cuando el intestino deja de estar inflamado, el cuerpo entero lo nota."
+          }
+        },
+        "benefit_LRqxmn": {
+          "type": "benefit",
+          "disabled": true,
+          "settings": {
+            "title": "Muscle Recovery",
+            "text": "Eases cramps and supports faster post-workout recovery."
+          }
+        },
+        "benefit_LtAKCy": {
+          "type": "benefit",
+          "disabled": true,
+          "settings": {
+            "title": "Heart & Energy Support",
+            "text": "Boosts cardiovascular health and helps convert food into steady energy."
+          }
+        }
+      },
+      "block_order": [
+        "heading_wDWgBd",
+        "benefit_tTiW8E",
+        "benefit_6cDHmK",
+        "benefit_LRqxmn",
+        "benefit_LtAKCy"
+      ],
+      "name": "VSO - Icon Benefits 01",
+      "settings": {
+        "enable_advanced_settings": false,
+        "section_max_width": 64,
+        "section_horizontal_padding": 24,
+        "padding_horizontal_mobile": 15,
+        "background_color": "#fafdf8",
+        "full_width": true,
+        "section_border_radius": 12,
+        "section_border_radius_mobile": 0,
+        "padding_top_desktop": 60,
+        "padding_bottom_desktop": 60,
+        "padding_top_mobile": 32,
+        "padding_bottom_mobile": 32,
+        "margin_top_desktop": 0,
+        "margin_bottom_desktop": 0,
+        "margin_top_mobile": 0,
+        "margin_bottom_mobile": 0,
+        "mobile_columns": "2",
+        "blocks_alignment": "left",
+        "desktop_blocks_gap": 32,
+        "mobile_blocks_gap": 16,
+        "custom_blocks_title_font": false,
+        "blocks_title_as": "h3",
+        "blocks_title_font": "sans_serif_n4",
+        "block_title_size_desktop": 18,
+        "block_title_size_mobile": 18,
+        "block_title_line_height": 120,
+        "blocks_title_color": "#000000",
+        "custom_blocks_text_font": false,
+        "blocks_text_as": "p",
+        "blocks_text_font": "sans_serif_n4",
+        "block_text_size_desktop": 16,
+        "block_text_size_mobile": 14,
+        "block_text_line_height": 150,
+        "blocks_text_color": "#000000",
+        "block_background_color": "rgba(0,0,0,0)",
+        "desktop_icon_size": 50,
+        "mobile_icon_size": 40,
+        "block_padding": 0,
+        "block_elements_gap": 16,
+        "block_border_radius": 8
+      }
+    },
     "vso_hero_19_XGjzRA": {
       "type": "vso-hero-19",
       "blocks": {
@@ -485,7 +702,7 @@
           "type": "heading",
           "settings": {
             "heading_alignment": "center",
-            "heading": "Un apoyo diario para _sentir más equilibrio",
+            "heading": "<strong>Lo que puedes esperar, _semana a semana.</strong>",
             "heading_custom_font": false,
             "heading_as": "h3",
             "heading_font": "poppins_n4",
@@ -546,24 +763,24 @@
           "type": "timeline_item",
           "settings": {
             "subheading": "Primeros días",
-            "heading": "Tu cuerpo empieza con mejor absorción",
-            "description": "<p>Las fórmulas liposomales ayudan a proteger y transportar los activos para favorecer un mejor aprovechamiento.</p>"
+            "heading": "El intestino empieza a responder",
+            "description": "<p>El Citrato de Magnesio actúa primero — la hinchazón y la pesadez después de comer suelen ser lo primero en mejorar. La digestión empieza a fluir con más regularidad.</p>"
           }
         },
         "timeline_item_2_3Qr27B": {
           "type": "timeline_item",
           "settings": {
             "subheading": "Semanas 2–4",
-            "heading": "Apoyo digestivo y articular",
-            "description": "<p>La Cúrcuma apoya la respuesta antiinflamatoria natural y la salud articular, mientras el Citrato de Magnesio favorece la digestión y la función muscular. </p>"
+            "heading": "Menos rigidez, más movilidad",
+            "description": "<p>Con la curcumina acumulándose en el tejido, la inflamación articular empieza a ceder. Menos rigidez matutina, mayor facilidad para moverse. La recuperación post-esfuerzo mejora.</p>"
           }
         },
         "timeline_item_3_6WDi7E": {
           "type": "timeline_item",
           "settings": {
             "subheading": "Uso continuo",
-            "heading": "Bienestar físico diario",
-            "description": "<p>Con el uso constante, este kit puede apoyar una rutina más ligera, equilibrada y enfocada en el bienestar del cuerpo.</p>"
+            "heading": "Un cuerpo con menos carga inflamatoria",
+            "description": "<p>La curcumina tiene efecto preventivo acumulativo — no solo reduce la inflamación actual sino que contribuye a que vuelva más lento. El intestino mantiene su equilibrio. El cuerpo carga menos.</p>"
           }
         }
       },
@@ -639,7 +856,7 @@
           "type": "heading",
           "settings": {
             "content_alignment": "left",
-            "title": "<strong>Tecnología _liposomal para una mejor absorción</strong>",
+            "title": "<strong>Para el cuerpo que lleva tiempo _cargando más de lo que debería.</strong>",
             "title_color": "#000000",
             "title_highlight_color": "#478641",
             "custom_title_font": false,
@@ -663,29 +880,29 @@
         "benefit_1_5lAsTN": {
           "type": "benefit",
           "settings": {
-            "title": "<strong>Alta absorción X5</strong>",
-            "text": "Favorece mayor disponibilidad del activo."
+            "title": "<strong>Antiinflamatorio natural en articulaciones</strong>",
+            "text": "La curcumina — el compuesto activo de la cúrcuma — inhibe los mensajeros químicos que producen y mantienen la inflamación en articulaciones y tejidos. Menos inflamación, más movilidad."
           }
         },
         "benefit_2_WLkZAU": {
           "type": "benefit",
           "settings": {
-            "title": "<strong>Mejor aprovechamiento</strong>",
-            "text": "Ayuda a que cada cápsula trabaje mejor."
+            "title": "<strong>Digestión que fluye</strong>",
+            "text": "El Citrato de Magnesio regulariza el tránsito intestinal — la capacidad del intestino de avanzar el contenido — para que la digestión fluya sin acumulación ni pesadez."
           }
         },
         "benefit_3_XK8kZV": {
           "type": "benefit",
           "settings": {
-            "title": "<strong>Uso constante</strong>",
-            "text": "Apoya una experiencia más estable."
+            "title": "<strong>Protección antioxidante</strong>",
+            "text": "Los antioxidantes neutralizan los radicales libres — moléculas que dañan las células con el tiempo. La curcumina es uno de los antioxidantes más potentes de la naturaleza."
           }
         },
         "benefit_4_gPhHh1": {
           "type": "benefit",
           "settings": {
-            "title": "<strong>Rutina fácil</strong>",
-            "text": "Cápsulas prácticas para el día a día."
+            "title": "<strong>Bienestar desde adentro</strong>",
+            "text": "Cuando la inflamación intestinal baja, el cuerpo entero lo siente: más energía, mejor digestión, menos molestia generalizada."
           }
         }
       },
@@ -947,6 +1164,7 @@
         "card_item_7_TC3pr9",
         "card_item_8_9b3ZpQ"
       ],
+      "disabled": true,
       "name": "VSO - Hero 45",
       "settings": {
         "enable_advanced_settings": false,
@@ -1448,7 +1666,7 @@
         "title_wMRzQ5": {
           "type": "title",
           "settings": {
-            "title": "<strong>Resuelve _tus dudas_ importantes</strong>",
+            "title": "<strong>Lo que suelen _preguntarnos</strong>",
             "title_color": "#000000",
             "title_highlight_color": "#478641",
             "custom_font": false,
@@ -1467,7 +1685,7 @@
         "subtitle_EvXGjz": {
           "type": "subtitle",
           "settings": {
-            "subtitle": "<p><strong>Información clara para saber cómo integrar el Kit Desinflamar a tu rutina diaria de bienestar físico y digestivo.</strong></p>",
+            "subtitle": "<p>Sobre el Kit Desinflamar Liposomal de Fitoheal.</p>",
             "subtitle_color": "#121212",
             "custom_font": false,
             "subtitle_as": "p",
@@ -1511,28 +1729,42 @@
           "type": "faq_item",
           "settings": {
             "question": "<strong>¿Para qué sirve el Kit Desinflamar?</strong>",
-            "answer": "<p>Apoya el bienestar físico, la salud articular, la digestión y la función muscular, combinando Cúrcuma Liposomal + Citrato de Magnesio D3 Liposomal.</p>"
+            "answer": "<p>Para reducir la inflamación desde dos frentes: la inflamación articular y de tejidos — con la Cúrcuma Liposomal — y la inflamación intestinal — con el Citrato de Magnesio Liposomal. Cuando el cuerpo lleva tiempo inflamado, generalmente los dos están activos al mismo tiempo.</p>"
           }
         },
         "faq_item_2_ohlkGR": {
           "type": "faq_item",
           "settings": {
-            "question": "<strong>¿Por qué combinar Cúrcuma y Citrato de Magnesio?</strong>",
-            "answer": "<p>Porque trabajan de forma complementaria: la Cúrcuma apoya la respuesta antiinflamatoria natural, las articulaciones y la acción antioxidante, mientras el Citrato de Magnesio favorece la digestión, la salud intestinal y la función muscular. </p><p></p>"
+            "question": "<strong>¿Por qué comprar el kit y no solo uno de los dos?</strong>",
+            "answer": "<p>Porque la inflamación intestinal y la inflamación articular se alimentan mutuamente. Un intestino inflamado genera inflamación sistémica — que llega a las articulaciones. Articulaciones inflamadas generan estrés oxidativo que afecta el intestino. Los dos juntos cortan el ciclo completo.</p><p></p>"
           }
         },
         "faq_item_3_aKHWJF": {
           "type": "faq_item",
           "settings": {
-            "question": "<strong>¿Cuándo debo tomarlo?</strong>",
-            "answer": "<p>Tomar según la indicación de cada producto: <strong>1 a 2 cápsulas al día</strong> con agua, preferiblemente junto a una comida o según tu rutina diaria.</p>"
+            "question": "<strong>¿Por qué la cúrcuma en polvo o en té no funcionó antes?</strong>",
+            "answer": "<p>Porque la curcumina — el compuesto activo de la cúrcuma — casi no se absorbe en su forma normal: el cuerpo aprovecha menos del 1%. La versión liposomal envuelve la curcumina en grasa para que atraviese el sistema digestivo y llegue al tejido donde tiene que actuar.</p>"
           }
         },
         "faq_item_4_jrk0ZU": {
           "type": "faq_item",
           "settings": {
-            "question": "<strong>¿Qué diferencia tiene que sea liposomal?</strong>",
-            "answer": "<p>La tecnología liposomal ayuda a proteger y transportar los activos para favorecer una mejor absorción y aprovechamiento en el organismo.</p>"
+            "question": "<strong>¿Cómo debo tomarlo?</strong>",
+            "answer": "<p>1 a 2 cápsulas de cada producto con las comidas. La grasa de los alimentos potencia la absorción de la cúrcuma. El Citrato de Magnesio actúa mejor cuando el sistema digestivo está activo.</p>"
+          }
+        },
+        "faq_item_yU3Ge4": {
+          "type": "faq_item",
+          "settings": {
+            "question": "<strong>¿En cuánto tiempo voy a notar cambios?</strong>",
+            "answer": "<p>La digestión y la hinchazón mejoran en las primeras dos semanas. La movilidad articular y la menor rigidez llegan entre semana 4 y 8. La cúrcuma es acumulativa — el efecto crece con el tiempo.</p>"
+          }
+        },
+        "faq_item_QwttVx": {
+          "type": "faq_item",
+          "settings": {
+            "question": "<strong>¿Y si lo tomo y no siento nada?</strong>",
+            "answer": "<p>Verificar que se esté tomando con las comidas y con constancia diaria. La cúrcuma no es de efecto inmediato. Si después de 8 semanas de uso diario no hay diferencia, escríbenos para evaluar el caso.</p>"
           }
         }
       },
@@ -1543,7 +1775,9 @@
         "faq_item_1_nCxGYg",
         "faq_item_2_ohlkGR",
         "faq_item_3_aKHWJF",
-        "faq_item_4_jrk0ZU"
+        "faq_item_4_jrk0ZU",
+        "faq_item_yU3Ge4",
+        "faq_item_QwttVx"
       ],
       "name": "VSO - FAQ 02",
       "settings": {
@@ -1590,7 +1824,10 @@
   },
   "order": [
     "vso_product_info_02_CB34KK",
+    "vso_img_with_text_01_6FgMM7",
+    "about_section_mFe7hp",
     "vso_hero_36_81fyqM",
+    "vso_icon_benefits_01_NifD9m",
     "vso_hero_19_XGjzRA",
     "vso_icon_benefits_01_QX0kww",
     "vso_img_with_text_01_xtNmKG",

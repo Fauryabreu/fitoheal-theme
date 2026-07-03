@@ -15,10 +15,10 @@
         "kit-1": {
           "type": "kit",
           "settings": {
-            "imagen": "shopify://shop_images/ChatGPTImage26may2026_22_08_41_3.png",
+            "imagen": "shopify://shop_images/ChatGPT_Image_5_jun_2026_11_20_46.png",
             "nombre": "Estrés / Sueño",
             "descripcion": "Relájate, baja el estrés y mejora tu descanso.",
-            "link": "",
+            "link": "shopify://products/kit-sueno-estres",
             "color_fondo": "#f0faf4",
             "color_titulo": "#1b4332"
           }
@@ -26,10 +26,10 @@
         "kit-2": {
           "type": "kit",
           "settings": {
-            "imagen": "shopify://shop_images/ChatGPTImage26may2026_22_08_41_2.png",
+            "imagen": "shopify://shop_images/ChatGPT_Image_5_jun_2026_11_14_30_1.png",
             "nombre": "Desinflamar",
             "descripcion": "Apoya la inflamación natural y el equilibrio digestivo.",
-            "link": "",
+            "link": "shopify://products/kit-desinflamar",
             "color_fondo": "#f0faf4",
             "color_titulo": "#1b4332"
           }
@@ -37,10 +37,10 @@
         "kit-3": {
           "type": "kit",
           "settings": {
-            "imagen": "shopify://shop_images/ChatGPTImage26may2026_22_08_42_5.png",
+            "imagen": "shopify://shop_images/ChatGPT_Image_5_jun_2026_11_14_31_3.png",
             "nombre": "Metabólico",
             "descripcion": "Apoya el metabolismo de la glucosa y la inflamación.",
-            "link": "",
+            "link": "shopify://products/kit-metabolico",
             "color_fondo": "#f0faf4",
             "color_titulo": "#1b4332"
           }
@@ -48,36 +48,12 @@
         "kit-4": {
           "type": "kit",
           "settings": {
-            "imagen": "shopify://shop_images/ChatGPTImage26may2026_22_08_41_4.png",
+            "imagen": "shopify://shop_images/ChatGPT_Image_5_jun_2026_11_14_31_4.png",
             "nombre": "Focus",
             "descripcion": "Claridad mental, concentración y energía sostenida.",
-            "link": "",
+            "link": "shopify://products/kit-focus",
             "color_fondo": "#f0faf4",
             "color_titulo": "#1b4332"
-          }
-        },
-        "ben-1": {
-          "type": "beneficio",
-          "settings": {
-            "texto": "Tecnología liposomal de alta absorción"
-          }
-        },
-        "ben-2": {
-          "type": "beneficio",
-          "settings": {
-            "texto": "Ingredientes naturales seleccionados"
-          }
-        },
-        "ben-3": {
-          "type": "beneficio",
-          "settings": {
-            "texto": "Desarrollado por profesionales de la salud"
-          }
-        },
-        "ben-4": {
-          "type": "beneficio",
-          "settings": {
-            "texto": "Hecho en Colombia para tu bienestar diario"
           }
         }
       },
@@ -85,16 +61,12 @@
         "kit-1",
         "kit-2",
         "kit-3",
-        "kit-4",
-        "ben-1",
-        "ben-2",
-        "ben-3",
-        "ben-4"
+        "kit-4"
       ],
       "settings": {
-        "hero_imagen_desktop": "shopify://shop_images/Hero.png",
+        "hero_imagen_desktop": "shopify://shop_images/ChatGPT_Image_27_may_2026_01_36_10.png",
         "usar_video_desktop": false,
-        "hero_imagen_mobile": "shopify://shop_images/ChatGPT_Image_30_abr_2026_16_54_34.png",
+        "hero_imagen_mobile": "shopify://shop_images/productos_liposomal.png",
         "usar_video_mobile": false,
         "hero_overlay": "#0d1f17",
         "hero_opacidad": 45,
@@ -113,16 +85,20 @@
         "ver_todos_link": "",
         "kits_eyebrow": "Pensados para ti",
         "kits_titulo": "Kits por objetivo",
-        "kits_subtitulo": "",
-        "hero_inf_imagen": "shopify://shop_images/ChatGPT_Image_20_may_2026_13_51_09.png",
-        "hero_inf_eyebrow": "",
-        "hero_inf_titulo": "",
-        "hero_inf_desc": "",
-        "hero_inf_btn1_label": "",
-        "hero_inf_btn1_link": "",
-        "hero_inf_btn2_label": "",
-        "hero_inf_btn2_link": "",
-        "hero_inf_bg": "#fafdf8"
+        "kits_subtitulo": ""
+      }
+    },
+    "about_section_kT6MgK": {
+      "type": "about-section",
+      "name": "About Section",
+      "settings": {
+        "bg_color": "#fafdf8",
+        "imagen_pos": "right",
+        "titulo": "Bienestar que se adapta a tu rutina",
+        "descripcion": "<p>Fórmulas liposomales pensadas para acompañarte en lo que necesitas cada día: descansar mejor, sentirte más ligero, enfocarte o cuidar tu bienestar físico.</p>",
+        "cta_label": "",
+        "cta_link": "",
+        "imagen": "shopify://shop_images/ChatGPT_Image_27_may_2026_10_39_05.png"
       }
     },
     "footer_section_WTf9rw": {
@@ -148,7 +124,7 @@
             "titulo": "¿Necesitas ayuda?",
             "email": "info@fitoheal.co",
             "web": "www.fitoheal.co",
-            "social": "@fitoheal.co",
+            "social": "@fitoheal",
             "colombia_badge": true,
             "colombia_text": "Calidad, ciencia y naturaleza para tu bienestar diario."
           }
@@ -162,6 +138,7 @@
       "name": "Footer",
       "settings": {
         "bg_color": "#ffffff",
+        "logo": "shopify://shop_images/logo_fitoheal_verde_2.png",
         "logo_text": "fitoheal",
         "descripcion": "Soluciones liposomales de alta absorción con ingredientes naturales para tu bienestar diario.",
         "instagram": "",
@@ -173,6 +150,7 @@
   },
   "order": [
     "catalogo",
+    "about_section_kT6MgK",
     "footer_section_WTf9rw"
   ]
 }

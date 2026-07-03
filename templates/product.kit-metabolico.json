@@ -57,7 +57,7 @@
         "text_WKhTaO": {
           "type": "text",
           "settings": {
-            "text": "<p>_Apoya tu metabolismo, el equilibrio digestivo_ y la respuesta antiinflamatoria natural del cuerpo.</p>",
+            "text": "<p>Tu metabolismo no falla solo. _Trae inflamación de fondo. Este kit regula los dos a la vez.</p>",
             "text_highlight_color": "#d7fca3",
             "text_highlight_text_color": "#111111",
             "text_color": "#555555",
@@ -160,7 +160,7 @@
         "description_4X83w7": {
           "type": "description",
           "settings": {
-            "description_text": "<p>Una combinación liposomal de <strong>Berberina + Cúrcuma</strong>, diseñada para apoyar el metabolismo, favorecer la salud digestiva y contribuir al bienestar físico diario.</p>",
+            "description_text": "<p>Una combinación <strong>liposomal de Berberina + Cúrcuma,</strong> diseñada para apoyar el metabolismo, favorecer la salud digestiva y contribuir al bienestar físico diario.</p><p>⚠  No combinar Berberina con medicamentos para diabetes (metformina, insulina), anticoagulantes ni medicamentos para presión sin supervisión médica. No combinar Cúrcuma con anticoagulantes. No recomendado en embarazo ni lactancia.</p>",
             "description_color": "#111111",
             "description_font_size": 16,
             "description_font_size_mobile": 14,
@@ -176,8 +176,8 @@
         "collapsible_row_1_DAxcm0": {
           "type": "collapsible_row",
           "settings": {
-            "title": "¿Cómo funciona el Kit Metabólico?",
-            "content": "<p>Combina <strong>Berberina Liposomal</strong> y <strong>Cúrcuma Liposomal</strong>.<br/><br/>La berberina apoya procesos relacionados con el metabolismo y el equilibrio de glucosa, mientras que la cúrcuma contribuye a la respuesta antiinflamatoria natural y al bienestar general.</p>",
+            "title": "¿Cómo funciona este kit?",
+            "content": "<p>La Berberina activa la AMPK — el interruptor maestro del metabolismo — que regula cómo el cuerpo maneja la glucosa (azúcar en sangre) y el colesterol. La Cúrcuma corta la inflamación crónica de fondo que el metabolismo dañado genera y que a su vez lo empeora. Juntos atacan el ciclo completo: metabolismo y la inflamación que lo acompaña.</p>",
             "margin_top_desktop": 0,
             "margin_bottom_desktop": 0,
             "margin_top_mobile": 0,
@@ -187,8 +187,8 @@
         "collapsible_row_2_b5NJ8R": {
           "type": "collapsible_row",
           "settings": {
-            "title": "¿Cuándo debo tomarla?",
-            "content": "<p>Se recomienda tomarlo con alimentos.<br/><br/>La dosis general de los productos Fitoheal es de <strong>1 a 2 cápsulas al día</strong>, según la indicación del producto.</p>",
+            "title": "¿Cuándo debo tomarlo?",
+            "content": "<p>Con las comidas principales. La Berberina actúa mejor cuando hay glucosa — azúcar — que regular. La Cúrcuma se absorbe mejor con grasa presente en los alimentos. 1 a 2 cápsulas de cada producto al día.</p>",
             "margin_top_desktop": 0,
             "margin_bottom_desktop": 0,
             "margin_top_mobile": 0,
@@ -198,8 +198,8 @@
         "collapsible_row_3_fMM5Om": {
           "type": "collapsible_row",
           "settings": {
-            "title": "¿En cuánto tiempo puedo notar cambios?",
-            "content": "<p>Depende de cada persona, su rutina, alimentación y constancia.<br/><br/>Este kit está pensado como apoyo diario, no como solución inmediata.</p>",
+            "title": "¿En cuánto tiempo voy a notar cambios?",
+            "content": "<p>La energía más estable durante el día puede notarse en las primeras 2 a 3 semanas. Los cambios en glucosa, colesterol y triglicéridos son medibles en exámenes de sangre después de 8 a 12 semanas de uso constante.</p>",
             "margin_top_desktop": 0,
             "margin_bottom_desktop": 0,
             "margin_top_mobile": 0,
@@ -325,6 +325,113 @@
         "collapsible_icon_size": 30
       }
     },
+    "vso_img_with_text_01_Bb4LQU": {
+      "type": "vso-img-with-text-01",
+      "blocks": {
+        "image_mf69nE": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/ChatGPT_Image_24_jun_2026_14_52_04.png",
+            "image_height": 580,
+            "image_height_mobile": 400,
+            "image_border_radius": 8
+          }
+        },
+        "title_639MdD": {
+          "type": "title",
+          "settings": {
+            "title": "¿Qué es la tecnología liposomal?",
+            "title_custom": false,
+            "title_font": "assistant_n4",
+            "title_font_weight": "700",
+            "title_font_size": 30,
+            "title_font_size_mobile": 24,
+            "title_margin_bottom": 20,
+            "title_color": "#0cc172"
+          }
+        },
+        "description_xr7cDN": {
+          "type": "description",
+          "settings": {
+            "text": "La tecnología liposomal ayuda a que los ingredientes activos lleguen mejor protegidos al cuerpo.Funciona mediante liposomas: pequeñas estructuras de fosfolípidos que encapsulan los nutrientes, los protegen durante la digestión y facilitan su transporte.El resultado: una absorción más eficiente y una mejor experiencia nutricional.",
+            "text_custom": false,
+            "text_font": "assistant_n4",
+            "text_font_weight": "400",
+            "text_alignment": "left",
+            "text_font_size": 16,
+            "text_font_size_mobile": 16,
+            "text_margin_bottom": 30,
+            "text_color": "#fafdf8"
+          }
+        },
+        "feature_PgrB3W": {
+          "type": "feature",
+          "disabled": true,
+          "settings": {
+            "text": "Hydration Retention",
+            "text_custom": false,
+            "text_font": "assistant_n4",
+            "text_font_weight": "400"
+          }
+        },
+        "feature_pJ4YKh": {
+          "type": "feature",
+          "disabled": true,
+          "settings": {
+            "text": "Temperature Regulation",
+            "text_custom": false,
+            "text_font": "assistant_n4",
+            "text_font_weight": "400"
+          }
+        }
+      },
+      "block_order": [
+        "image_mf69nE",
+        "title_639MdD",
+        "description_xr7cDN",
+        "feature_PgrB3W",
+        "feature_pJ4YKh"
+      ],
+      "name": "VSO - Img With Text 01",
+      "settings": {
+        "reverse_layout": false,
+        "mobile_reverse_layout": true,
+        "content_background_color": "#1c4332",
+        "features_gap": 20,
+        "features_margin_top": 10,
+        "feature_icon_size": 48,
+        "feature_icon_size_mobile": 32,
+        "feature_icon_border_radius": 0,
+        "feature_icon_margin_bottom": 10,
+        "feature_text_font_size": 14,
+        "feature_text_font_size_mobile": 14,
+        "feature_text_color": "#000000",
+        "feature_text_font_weight": "400",
+        "features_in_row": false,
+        "grid_max_width": 1220,
+        "section_max_width": 120,
+        "padding_desktop": 60,
+        "padding_tablet_mobile": 0,
+        "margin_desktop": 22,
+        "margin_bottom_desktop": 0,
+        "margin_tablet_mobile": 0,
+        "margin_bottom_tablet_mobile": 0,
+        "background_color": "#1c4332",
+        "background_gradient_color": ""
+      }
+    },
+    "about_section_fiyzjC": {
+      "type": "about-section",
+      "settings": {
+        "bg_color": "#fafdf8",
+        "imagen_pos": "left",
+        "titulo": "¿Cómo funciona el liposomal?",
+        "descripcion": "<p>La tecnología liposomal funciona utilizando esferas microscópicas (llamadas liposomas) formadas por grasa para encapsular nutrientes. Actúan como un vehículo de transporte de alta tecnología que protege a los ingredientes de los ácidos estomacales y permite que se absorban directamente en las células. </p>",
+        "cta_label": "",
+        "cta_link": "",
+        "imagen": "shopify://shop_images/ChatGPT_Image_24_jun_2026_14_54_00.png"
+      }
+    },
     "vso_hero_36_81fyqM": {
       "type": "vso-hero-36",
       "blocks": {
@@ -342,7 +449,7 @@
             "subtitle_letter_spacing": 1,
             "subtitle_color": "#ffffff",
             "subtitle_spacing": 16,
-            "title": "<strong>Siente más equilibrio en tu rutina diaria.</strong>",
+            "title": "<strong>Esto es para ti si...</strong>",
             "title_custom_font": false,
             "title_as": "h2",
             "title_font": "poppins_n6",
@@ -352,10 +459,10 @@
             "title_line_height": 120,
             "title_letter_spacing": 0,
             "title_color_type": "solid",
-            "title_color": "#ffffff",
+            "title_color": "#0CC172",
             "title_gradient": "linear-gradient(135deg, #EC4899 0%, #F472B6 100%)",
             "title_spacing": 16,
-            "text": "Transform your lashes with:",
+            "text": "",
             "text_custom_font": false,
             "text_as": "p",
             "text_font": "poppins_n4",
@@ -391,29 +498,29 @@
         "feature_1_iokXup": {
           "type": "feature",
           "settings": {
-            "feature_title": "<strong>Apoyo metabólico</strong>",
-            "feature_text": "Contribuye al equilibrio del metabolismo en tu día a día."
+            "feature_title": "<strong>Tu energía sube y baja según lo que comes</strong>",
+            "feature_text": "Después de comer sientes pesadez o somnolencia. Antes de comer sientes urgencia o irritabilidad. Esas variaciones son señal de glucosa inestable — azúcar en sangre que sube y baja de forma irregular."
           }
         },
         "feature_2_n0zBc0": {
           "type": "feature",
           "settings": {
-            "feature_title": "<strong>Bienestar digestivo</strong>",
-            "feature_text": "Favorece una digestión más ligera y una mejor rutina intestinal."
+            "feature_title": "<strong>Haces las cosas bien pero el metabolismo no acompaña</strong>",
+            "feature_text": "Comes razonablemente, te mueves, pero los resultados no aparecen. Grasa abdominal que no cede, colesterol que no baja, cuerpo que no responde."
           }
         },
         "feature_3_2EfXxK": {
           "type": "feature",
           "settings": {
-            "feature_title": "<strong>Respuesta antiinflamatoria</strong>",
-            "feature_text": "Apoya la respuesta natural del cuerpo frente a la inflamación."
+            "feature_title": "<strong>Te dijeron que cuides la glucosa o el colesterol</strong>",
+            "feature_text": "Prediabetes, resistencia a la insulina o antecedentes familiares. Buscas un apoyo natural como complemento — no como reemplazo — de los cambios de estilo de vida."
           }
         },
         "feature_4_w0MBJV": {
           "type": "feature",
           "settings": {
-            "feature_title": "<strong>Acción antioxidante</strong>",
-            "feature_text": "Ayuda a proteger las células del estrés oxidativo diario."
+            "feature_title": "<strong>Acción Sientes inflamación de fondo que no cede</strong>",
+            "feature_text": "No es una lesión específica. Es un cuerpo que se siente pesado, que se recupera lento, que lleva tiempo con una inflamación que nadie sabe bien de dónde viene."
           }
         }
       },
@@ -435,7 +542,7 @@
         "section_outer_padding_bottom": 20,
         "section_outer_padding_top_mobile": 15,
         "section_outer_padding_bottom_mobile": 15,
-        "section_outer_bg_color": "#1e3b1d",
+        "section_outer_bg_color": "#1C4332",
         "full_width_desktop": false,
         "section_border_radius": 12,
         "section_border_radius_mobile": 0,
@@ -478,6 +585,116 @@
         "feature_text_color": "#ffffff"
       }
     },
+    "vso_icon_benefits_01_Ud3irE": {
+      "type": "vso-icon-benefits-01",
+      "blocks": {
+        "heading_dxkfgn": {
+          "type": "heading",
+          "settings": {
+            "content_alignment": "center",
+            "title": "<strong>¿Por qué dos productos _y no uno solo?</strong>",
+            "title_color": "#000000",
+            "title_highlight_color": "#0cc172",
+            "custom_title_font": false,
+            "title_as": "h2",
+            "title_font": "sans_serif_n4",
+            "title_size_desktop": 40,
+            "title_size_mobile": 32,
+            "title_line_height": 130,
+            "subtitle": "La inflamación crónica y el metabolismo dañado no son problemas separados — se generan mutuamente. Cuando hay glucosa inestable, hay inflamación. Cuando hay inflamación crónica, el metabolismo empeora.",
+            "subtitle_color": "#000000",
+            "custom_subtitle_font": false,
+            "subtitle_as": "p",
+            "subtitle_font": "sans_serif_n4",
+            "subtitle_size_desktop": 20,
+            "subtitle_size_mobile": 16,
+            "subtitle_line_height": 130,
+            "header_elements_gap": 16,
+            "header_blocks_gap": 50
+          }
+        },
+        "benefit_WcJgRA": {
+          "type": "benefit",
+          "settings": {
+            "title": "<strong>Berberina Liposomal.</strong> Regula el metabolismo",
+            "text": "Activa la AMPK — el interruptor maestro del metabolismo — que mejora el manejo de la glucosa (azúcar en sangre), apoya el perfil lipídico (colesterol y triglicéridos) y equilibra la microbiota intestinal (las bacterias que regulan la digestión)."
+          }
+        },
+        "benefit_hEhpWF": {
+          "type": "benefit",
+          "settings": {
+            "title": "<strong>Cúrcuma Liposomal. </strong>Corta la inflamación de fondo",
+            "text": "La curcumina inhibe las vías inflamatorias que el metabolismo dañado activa. Menos inflamación crónica significa que el metabolismo puede funcionar con menos resistencia."
+          }
+        },
+        "benefit_ArxRXB": {
+          "type": "benefit",
+          "disabled": true,
+          "settings": {
+            "title": "Muscle Recovery",
+            "text": "Eases cramps and supports faster post-workout recovery."
+          }
+        },
+        "benefit_6BG4Qz": {
+          "type": "benefit",
+          "disabled": true,
+          "settings": {
+            "title": "Heart & Energy Support",
+            "text": "Boosts cardiovascular health and helps convert food into steady energy."
+          }
+        }
+      },
+      "block_order": [
+        "heading_dxkfgn",
+        "benefit_WcJgRA",
+        "benefit_hEhpWF",
+        "benefit_ArxRXB",
+        "benefit_6BG4Qz"
+      ],
+      "name": "VSO - Icon Benefits 01",
+      "settings": {
+        "enable_advanced_settings": false,
+        "section_max_width": 64,
+        "section_horizontal_padding": 24,
+        "padding_horizontal_mobile": 15,
+        "background_color": "#fafdf8",
+        "full_width": true,
+        "section_border_radius": 12,
+        "section_border_radius_mobile": 0,
+        "padding_top_desktop": 60,
+        "padding_bottom_desktop": 60,
+        "padding_top_mobile": 32,
+        "padding_bottom_mobile": 32,
+        "margin_top_desktop": 0,
+        "margin_bottom_desktop": 0,
+        "margin_top_mobile": 0,
+        "margin_bottom_mobile": 0,
+        "mobile_columns": "2",
+        "blocks_alignment": "left",
+        "desktop_blocks_gap": 32,
+        "mobile_blocks_gap": 16,
+        "custom_blocks_title_font": false,
+        "blocks_title_as": "h3",
+        "blocks_title_font": "sans_serif_n4",
+        "block_title_size_desktop": 18,
+        "block_title_size_mobile": 18,
+        "block_title_line_height": 120,
+        "blocks_title_color": "#000000",
+        "custom_blocks_text_font": false,
+        "blocks_text_as": "p",
+        "blocks_text_font": "sans_serif_n4",
+        "block_text_size_desktop": 16,
+        "block_text_size_mobile": 14,
+        "block_text_line_height": 150,
+        "blocks_text_color": "#000000",
+        "block_background_color": "rgba(0,0,0,0)",
+        "desktop_icon_size": 50,
+        "mobile_icon_size": 40,
+        "block_padding": 0,
+        "block_elements_gap": 16,
+        "block_border_radius": 8
+      }
+    },
     "vso_hero_19_XGjzRA": {
       "type": "vso-hero-19",
       "blocks": {
@@ -485,7 +702,7 @@
           "type": "heading",
           "settings": {
             "heading_alignment": "center",
-            "heading": "Un apoyo diario_ para sentir más equilibrio",
+            "heading": "<strong>Lo que puedes esperar, _semana a semana.</strong>",
             "heading_custom_font": false,
             "heading_as": "h3",
             "heading_font": "poppins_n4",
@@ -546,24 +763,24 @@
           "type": "timeline_item",
           "settings": {
             "subheading": "Primeros días",
-            "heading": "Tu rutina empieza a sentirse más ligera",
-            "description": "<p>Con el uso constante, este kit empieza a apoyar el metabolismo y a favorecer una mejor sensación de bienestar digestivo en tu día a día.</p>"
+            "heading": "Energía más estable durante el día",
+            "description": "<p>Menos variaciones después de comer — menos somnolencia post-almuerzo, menos urgencia antes de las comidas. El metabolismo empieza a manejar la glucosa con más orden.</p>"
           }
         },
         "timeline_item_2_3Qr27B": {
           "type": "timeline_item",
           "settings": {
             "subheading": "Semanas 2–4",
-            "heading": "Más equilibrio digestivo y metabólico",
-            "description": "<p>La combinación de <strong>Berberina + Cúrcuma</strong> puede contribuir a una rutina más equilibrada, apoyando el metabolismo, la digestión y la respuesta antiinflamatoria natural del cuerpo.</p>"
+            "heading": "El cuerpo responde diferente",
+            "description": "<p>La inflamación de fondo empieza a ceder. Con la glucosa más estable y la inflamación bajando, el cuerpo funciona con menos resistencia. La digestión mejora, la energía es más consistente.</p>"
           }
         },
         "timeline_item_3_6WDi7E": {
           "type": "timeline_item",
           "settings": {
             "subheading": "Uso continuo",
-            "heading": "Bienestar diario como parte de tu rutina",
-            "description": "<p>Como parte de hábitos saludables, puede ayudarte a sostener un mejor equilibrio general, con apoyo digestivo, acción antioxidante y acompañamiento metabólico diario.</p>"
+            "heading": "Cambios medibles en sangre",
+            "description": "<p>Glucosa en ayunas, hemoglobina glicosilada — marcador del azúcar promedio en los últimos 3 meses — colesterol y triglicéridos. Los cambios se evidencian en laboratorio después de uso constante.</p>"
           }
         }
       },
@@ -639,7 +856,7 @@
           "type": "heading",
           "settings": {
             "content_alignment": "left",
-            "title": "<strong>Tecnología _liposomal para una mejor absorción</strong>",
+            "title": "<strong>Para el cuerpo que tiene _dos problemas activos al mismo tiempo.</strong>",
             "title_color": "#000000",
             "title_highlight_color": "#478641",
             "custom_title_font": false,
@@ -663,29 +880,29 @@
         "benefit_1_5lAsTN": {
           "type": "benefit",
           "settings": {
-            "title": "<strong>Alta absorción X5</strong>",
-            "text": "Favorece mayor disponibilidad del activo."
+            "title": "<strong>Glucosa más estable</strong>",
+            "text": "La Berberina activa la AMPK — el interruptor maestro del metabolismo — para mejorar cómo el cuerpo procesa el azúcar. Menos picos de glucosa, menos variaciones de energía, menos antojos."
           }
         },
         "benefit_2_WLkZAU": {
           "type": "benefit",
           "settings": {
-            "title": "<strong>Mejor aprovechamiento</strong>",
-            "text": "Ayuda a que cada cápsula trabaje mejor."
+            "title": "<strong>Menos inflamación de fondo</strong>",
+            "text": "La Cúrcuma corta las vías inflamatorias que el metabolismo dañado activa. El cuerpo empieza a funcionar con menos resistencia y menos pesadez generalizada."
           }
         },
         "benefit_3_XK8kZV": {
           "type": "benefit",
           "settings": {
-            "title": "<strong>Uso constante</strong>",
-            "text": "Apoya una experiencia más estable."
+            "title": "<strong>Apoyo al perfil lipídico</strong>",
+            "text": "La Berberina contribuye a mantener el colesterol LDL — el malo — y los triglicéridos — grasas en sangre — en rangos saludables, en combinación con alimentación balanceada."
           }
         },
         "benefit_4_gPhHh1": {
           "type": "benefit",
           "settings": {
-            "title": "<strong>Rutina fácil</strong>",
-            "text": "Cápsulas prácticas para el día a día."
+            "title": "<strong>Equilibrio desde adentro</strong>",
+            "text": "Cuando la glucosa es estable y la inflamación baja, el cuerpo responde mejor. Energía más consistente, digestión más ordenada, metabolismo que trabaja contigo."
           }
         }
       },
@@ -768,7 +985,7 @@
         "description_gdagdr": {
           "type": "description",
           "settings": {
-            "text": "Nuestra fórmula está diseñada para favorecer una mejor absorción de los activos, ayudando a que tu cuerpo los aproveche de forma más eficiente dentro de tu rutina diaria.",
+            "text": "La Berberina tiene absorción naturalmente baja — el cuerpo aprovecha una fracción pequeña en su forma estándar. La Cúrcuma en cápsula convencional el cuerpo absorbe menos del 1%. La versión liposomal de los dos resuelve el problema de raíz: envuelve cada ingrediente en una capa de grasa que lo protege del tránsito digestivo y lo lleva al torrente sanguíneo — donde pueden activar el metabolismo y cortar la inflamación.",
             "text_custom": false,
             "text_font": "assistant_n4",
             "text_font_weight": "400",
@@ -947,6 +1164,7 @@
         "card_item_7_TC3pr9",
         "card_item_8_9b3ZpQ"
       ],
+      "disabled": true,
       "name": "VSO - Hero 45",
       "settings": {
         "enable_advanced_settings": false,
@@ -1510,29 +1728,43 @@
         "faq_item_1_nCxGYg": {
           "type": "faq_item",
           "settings": {
-            "question": "<strong>¿Para qué sirve el Kit Metabólico Liposomal?</strong>",
-            "answer": "<p>Está diseñado para apoyar el metabolismo, favorecer la salud digestiva y contribuir al equilibrio general del cuerpo. Combina <strong>Berberina Liposomal + Cúrcuma Liposomal</strong>, dos activos enfocados en bienestar metabólico, acción antioxidante y respuesta antiinflamatoria natural.</p>"
+            "question": "<strong>¿Para qué sirve el Kit Metabólico?</strong>",
+            "answer": "<p>Para regular el metabolismo y cortar la inflamación crónica que lo acompaña. La Berberina mejora el manejo de la glucosa — azúcar en sangre — y el perfil lipídico — colesterol y triglicéridos. La Cúrcuma reduce la inflamación de fondo que el metabolismo dañado genera y que a su vez lo empeora.</p>"
           }
         },
         "faq_item_2_ohlkGR": {
           "type": "faq_item",
           "settings": {
-            "question": "<strong>¿Cómo debo tomarla?</strong>",
-            "answer": "<p>Se recomienda tomar <strong>1 a 2 cápsulas al día</strong>, preferiblemente con alimentos.<br/><br/>La constancia es clave para integrarlo como parte de una rutina saludable.</p>"
+            "question": "<strong>¿Por qué comprar el kit y no solo la Berberina?</strong>",
+            "answer": "<p>Porque el metabolismo dañado y la inflamación crónica se generan mutuamente. La Berberina regula la glucosa pero no corta la inflamación que esa glucosa inestable produce. La Cúrcuma corta la inflamación pero no regula el metabolismo. Los dos juntos rompen el ciclo completo.</p>"
           }
         },
         "faq_item_3_aKHWJF": {
           "type": "faq_item",
           "settings": {
-            "question": "<strong>¿Qué diferencia tiene la tecnología liposomal?</strong>",
-            "answer": "<p>La tecnología liposomal ayuda a proteger y transportar mejor los activos, favoreciendo una mejor absorción y aprovechamiento por parte del cuerpo.</p>"
+            "question": "<strong>¿Este kit sirve para bajar de peso?</strong>",
+            "answer": "<p>No es su función principal. La Berberina apoya el metabolismo de la glucosa y el equilibrio lipídico — que son factores que afectan el peso — pero no es un quemador de grasa ni un supresor de apetito. Su función es metabólica y antiinflamatoria, no estética.</p>"
           }
         },
         "faq_item_4_jrk0ZU": {
           "type": "faq_item",
           "settings": {
-            "question": "<strong>¿Este kit ayuda a bajar de peso?</strong>",
-            "answer": "<p>No debe verse como una solución para bajar de peso.<br/><br/>Su función es <strong>apoyar el metabolismo, la digestión y el equilibrio diario</strong>, especialmente cuando se combina con buenos hábitos de alimentación, movimiento y descanso.</p>"
+            "question": "<strong>¿Cómo debo tomarlo?</strong>",
+            "answer": "<p>1 a 2 cápsulas de cada producto con las comidas principales. La Berberina actúa mejor cuando hay glucosa que regular. La Cúrcuma se absorbe mejor con grasa presente en los alimentos.</p>"
+          }
+        },
+        "faq_item_xaK4iK": {
+          "type": "faq_item",
+          "settings": {
+            "question": "<strong>¿En cuánto tiempo voy a notar cambios?</strong>",
+            "answer": "<p>La energía más estable puede notarse en las primeras semanas. Los cambios en glucosa, colesterol y triglicéridos son medibles en exámenes de sangre después de 8 a 12 semanas de uso constante.</p>"
+          }
+        },
+        "faq_item_VJwPjK": {
+          "type": "faq_item",
+          "settings": {
+            "question": "<strong>¿Y si lo tomo y no siento nada?</strong>",
+            "answer": "<p>La Berberina actúa sobre marcadores que no siempre se sienten directamente. El mejor indicador son los exámenes de sangre después de 3 meses. Si no hay cambios con uso diario constante y comidas, escríbenos.</p>"
           }
         }
       },
@@ -1543,7 +1775,9 @@
         "faq_item_1_nCxGYg",
         "faq_item_2_ohlkGR",
         "faq_item_3_aKHWJF",
-        "faq_item_4_jrk0ZU"
+        "faq_item_4_jrk0ZU",
+        "faq_item_xaK4iK",
+        "faq_item_VJwPjK"
       ],
       "name": "VSO - FAQ 02",
       "settings": {
@@ -1590,7 +1824,10 @@
   },
   "order": [
     "vso_product_info_02_CB34KK",
+    "vso_img_with_text_01_Bb4LQU",
+    "about_section_fiyzjC",
     "vso_hero_36_81fyqM",
+    "vso_icon_benefits_01_Ud3irE",
     "vso_hero_19_XGjzRA",
     "vso_icon_benefits_01_QX0kww",
     "vso_img_with_text_01_xtNmKG",

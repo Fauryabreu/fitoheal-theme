@@ -57,7 +57,7 @@
         "text_WKhTaO": {
           "type": "text",
           "settings": {
-            "text": "<p>_Apoya el descanso_, contribuye a la relajación muscular y _favorece el equilibrio del sistema nervioso._</p>",
+            "text": "<p>_Tu cuerpo carga la tensión que acumulaste hace semanas_. El glicinato de magnesio le da permiso de soltar.</p>",
             "text_highlight_color": "#d7fca3",
             "text_highlight_text_color": "#111111",
             "text_color": "#555555",
@@ -160,7 +160,7 @@
         "description_4X83w7": {
           "type": "description",
           "settings": {
-            "description_text": "<p>Una fórmula liposomal de alta absorción diseñada para apoyar tu descanso, relajación y bienestar diario.</p>",
+            "description_text": "<p>Una fórmula liposomal que combina magnesio con glicina — un aminoácido (bloque básico de proteínas) con efecto relajante propio — para aflojar la tensión muscular y preparar el sistema nervioso para dormir profundo.</p><p>⚠  Consultar con un médico si se toman medicamentos para presión arterial, antibióticos o diuréticos, ya que el magnesio puede interactuar con algunos de ellos.</p>",
             "description_color": "#111111",
             "description_font_size": 16,
             "description_font_size_mobile": 14,
@@ -177,7 +177,7 @@
           "type": "collapsible_row",
           "settings": {
             "title": "¿Cómo funciona el Glicinato de Magnesio?",
-            "content": "<p>El glicinato de magnesio es una forma de magnesio orientada al apoyo del descanso, la relajación muscular y el equilibrio del sistema nervioso. Su tecnología liposomal favorece una mejor absorción y aprovechamiento dentro de tu rutina diaria.</p>",
+            "content": "<p>El magnesio participa en más de 300 procesos del cuerpo, incluyendo la regulación del sistema nervioso y la relajación muscular. La glicina — el aminoácido al que está unido — potencia ese efecto calmante. Juntos le dicen al cuerpo: ya puedes soltar.</p>",
             "margin_top_desktop": 0,
             "margin_bottom_desktop": 0,
             "margin_top_mobile": 0,
@@ -188,7 +188,7 @@
           "type": "collapsible_row",
           "settings": {
             "title": "¿Cuándo debo tomarla?",
-            "content": "<p>Tomar de <strong>1 a 2 cápsulas al día</strong> con agua, preferiblemente en la tarde o noche si tu objetivo es apoyar el descanso. La etiqueta indica uso oral y dosis de 1 a 2 cápsulas al día.</p>",
+            "content": "<p>30 a 60 minutos antes de dormir. Ese tiempo le da a la glicina espacio para preparar el sistema nervioso para el descanso. 1 a 2 cápsulas con agua.</p>",
             "margin_top_desktop": 0,
             "margin_bottom_desktop": 0,
             "margin_top_mobile": 0,
@@ -199,7 +199,7 @@
           "type": "collapsible_row",
           "settings": {
             "title": "¿En cuánto tiempo puedo notar cambios?",
-            "content": "<p>Cada cuerpo responde de manera diferente. Con el uso constante, puede apoyar una mejor sensación de relajación, descanso y equilibrio diario.</p>",
+            "content": "<p>Muchas personas notan diferencia en la primera o segunda semana. La tensión muscular suele ceder antes — el sueño más profundo llega con el uso constante.</p>",
             "margin_top_desktop": 0,
             "margin_bottom_desktop": 0,
             "margin_top_mobile": 0,
@@ -325,6 +325,113 @@
         "collapsible_icon_size": 30
       }
     },
+    "vso_img_with_text_01_FbjCHW": {
+      "type": "vso-img-with-text-01",
+      "blocks": {
+        "image_cTyGLH": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/ChatGPT_Image_24_jun_2026_14_52_04.png",
+            "image_height": 580,
+            "image_height_mobile": 400,
+            "image_border_radius": 8
+          }
+        },
+        "title_r7K8Ty": {
+          "type": "title",
+          "settings": {
+            "title": "¿Qué es la tecnología liposomal?",
+            "title_custom": false,
+            "title_font": "assistant_n4",
+            "title_font_weight": "700",
+            "title_font_size": 30,
+            "title_font_size_mobile": 24,
+            "title_margin_bottom": 20,
+            "title_color": "#0cc172"
+          }
+        },
+        "description_CPbzEf": {
+          "type": "description",
+          "settings": {
+            "text": "La tecnología liposomal ayuda a que los ingredientes activos lleguen mejor protegidos al cuerpo.Funciona mediante liposomas: pequeñas estructuras de fosfolípidos que encapsulan los nutrientes, los protegen durante la digestión y facilitan su transporte.El resultado: una absorción más eficiente y una mejor experiencia nutricional.",
+            "text_custom": false,
+            "text_font": "assistant_n4",
+            "text_font_weight": "400",
+            "text_alignment": "left",
+            "text_font_size": 16,
+            "text_font_size_mobile": 16,
+            "text_margin_bottom": 30,
+            "text_color": "#fafdf8"
+          }
+        },
+        "feature_6fDYCX": {
+          "type": "feature",
+          "disabled": true,
+          "settings": {
+            "text": "Hydration Retention",
+            "text_custom": false,
+            "text_font": "assistant_n4",
+            "text_font_weight": "400"
+          }
+        },
+        "feature_rNWahB": {
+          "type": "feature",
+          "disabled": true,
+          "settings": {
+            "text": "Temperature Regulation",
+            "text_custom": false,
+            "text_font": "assistant_n4",
+            "text_font_weight": "400"
+          }
+        }
+      },
+      "block_order": [
+        "image_cTyGLH",
+        "title_r7K8Ty",
+        "description_CPbzEf",
+        "feature_6fDYCX",
+        "feature_rNWahB"
+      ],
+      "name": "VSO - Img With Text 01",
+      "settings": {
+        "reverse_layout": false,
+        "mobile_reverse_layout": true,
+        "content_background_color": "#1c4332",
+        "features_gap": 20,
+        "features_margin_top": 10,
+        "feature_icon_size": 48,
+        "feature_icon_size_mobile": 32,
+        "feature_icon_border_radius": 0,
+        "feature_icon_margin_bottom": 10,
+        "feature_text_font_size": 14,
+        "feature_text_font_size_mobile": 14,
+        "feature_text_color": "#000000",
+        "feature_text_font_weight": "400",
+        "features_in_row": false,
+        "grid_max_width": 1220,
+        "section_max_width": 120,
+        "padding_desktop": 60,
+        "padding_tablet_mobile": 0,
+        "margin_desktop": 0,
+        "margin_bottom_desktop": 0,
+        "margin_tablet_mobile": 0,
+        "margin_bottom_tablet_mobile": 0,
+        "background_color": "#1c4332",
+        "background_gradient_color": ""
+      }
+    },
+    "about_section_pwTVcK": {
+      "type": "about-section",
+      "settings": {
+        "bg_color": "#fafdf8",
+        "imagen_pos": "left",
+        "titulo": "¿Cómo funciona el liposomal?",
+        "descripcion": "<p>La tecnología liposomal funciona utilizando esferas microscópicas (llamadas liposomas) formadas por grasa para encapsular nutrientes. Actúan como un vehículo de transporte de alta tecnología que protege a los ingredientes de los ácidos estomacales y permite que se absorban directamente en las células. </p>",
+        "cta_label": "",
+        "cta_link": "",
+        "imagen": "shopify://shop_images/ChatGPT_Image_24_jun_2026_14_54_00.png"
+      }
+    },
     "vso_hero_36_81fyqM": {
       "type": "vso-hero-36",
       "blocks": {
@@ -342,7 +449,7 @@
             "subtitle_letter_spacing": 1,
             "subtitle_color": "#ffffff",
             "subtitle_spacing": 16,
-            "title": "<strong>Apoya tu descanso desde adentro.</strong>",
+            "title": "<strong>Esto es para ti si...</strong>",
             "title_custom_font": false,
             "title_as": "h2",
             "title_font": "poppins_n6",
@@ -391,29 +498,29 @@
         "feature_1_iokXup": {
           "type": "feature",
           "settings": {
-            "feature_title": "<strong>Relajación muscular</strong>",
-            "feature_text": "Ayuda a reducir la sensación de tensión corporal."
+            "feature_title": "<strong>Duermes pero te despiertas sin haber descansado</strong>",
+            "feature_text": "El sueño es superficial. Cualquier ruido te despierta. Amaneces rígido o con el cuerpo tenso sin razón aparente."
           }
         },
         "feature_2_n0zBc0": {
           "type": "feature",
           "settings": {
-            "feature_title": "<strong>Sistema nervioso</strong>",
-            "feature_text": "Favorece el equilibrio y la calma diaria."
+            "feature_title": "<strong>Cargas tensión en el cuerpo sin darte cuenta</strong>",
+            "feature_text": "Cuello apretado, mandíbula tensa, espalda que no suelta. Tu cuerpo está acumulando lo que tu mente no procesa."
           }
         },
         "feature_3_2EfXxK": {
           "type": "feature",
           "settings": {
-            "feature_title": "<strong>Apoya el sueño</strong>",
-            "feature_text": "Contribuye a una rutina de descanso más estable."
+            "feature_title": "<strong>Tienes ansiedad que no tiene una causa específica</strong>",
+            "feature_text": "No es miedo a algo concreto. Es una inquietud de fondo que hace difícil relajarte incluso cuando no pasa nada."
           }
         },
         "feature_4_w0MBJV": {
           "type": "feature",
           "settings": {
-            "feature_title": "<strong>Alta absorción X5</strong>",
-            "feature_text": "Tecnología liposomal para mejor aprovechamiento."
+            "feature_title": "<strong>Buscas un apoyo para el sueño sin somníferos</strong>",
+            "feature_text": "No quieres algo que te deje aturdido o del que dependas. Quieres que tu cuerpo aprenda a descansar solo."
           }
         }
       },
@@ -435,7 +542,7 @@
         "section_outer_padding_bottom": 20,
         "section_outer_padding_top_mobile": 15,
         "section_outer_padding_bottom_mobile": 15,
-        "section_outer_bg_color": "#1e3b1d",
+        "section_outer_bg_color": "#1C4332",
         "full_width_desktop": false,
         "section_border_radius": 12,
         "section_border_radius_mobile": 0,
@@ -639,7 +746,7 @@
           "type": "heading",
           "settings": {
             "content_alignment": "left",
-            "title": "<strong>Tecnología _liposomal para una mejor absorción</strong>",
+            "title": "<strong>Para el cuerpo que no sabe _soltar la tensión del día.</strong>",
             "title_color": "#000000",
             "title_highlight_color": "#478641",
             "custom_title_font": false,
@@ -663,29 +770,29 @@
         "benefit_1_5lAsTN": {
           "type": "benefit",
           "settings": {
-            "title": "<strong>Alta absorción X5</strong>",
-            "text": "Favorece mayor disponibilidad del activo."
+            "title": "<strong>Relaja los músculos</strong>",
+            "text": "El magnesio actúa directo en el tejido muscular — afloja la contracción crónica que el estrés acumula en cuello, espalda y mandíbula."
           }
         },
         "benefit_2_WLkZAU": {
           "type": "benefit",
           "settings": {
-            "title": "<strong>Mejor aprovechamiento</strong>",
-            "text": "Ayuda a que cada cápsula trabaje mejor."
+            "title": "<strong>Calma el sistema nervioso</strong>",
+            "text": "La glicina — el aminoácido al que está unido el magnesio — tiene efecto inhibidor sobre el sistema nervioso: baja la actividad eléctrica y prepara al cerebro para el sueño."
           }
         },
         "benefit_3_XK8kZV": {
           "type": "benefit",
           "settings": {
-            "title": "<strong>Uso constante</strong>",
-            "text": "Apoya una experiencia más estable."
+            "title": "<strong>Sueño más profundo y reparador</strong>",
+            "text": "No más horas de sueño — mejor calidad. Menos interrupciones, más recuperación real, y amanecer con energía en lugar de cansancio."
           }
         },
         "benefit_4_gPhHh1": {
           "type": "benefit",
           "settings": {
-            "title": "<strong>Rutina fácil</strong>",
-            "text": "Cápsulas prácticas para el día a día."
+            "title": "<strong>Suave con el estómago</strong>",
+            "text": "A diferencia de otras formas de magnesio, el glicinato no causa molestias digestivas ni efecto laxante. Es la forma mejor tolerada."
           }
         }
       },
@@ -768,7 +875,7 @@
         "description_gdagdr": {
           "type": "description",
           "settings": {
-            "text": "Nuestra fórmula está diseñada para favorecer una mejor absorción del glicinato de magnesio, ayudando a que tu cuerpo lo aproveche mejor dentro de tu rutina de descanso y relajación.",
+            "text": "El magnesio compite con otros minerales por absorción en el intestino — en su forma normal, una parte importante se elimina sin ser usada. La versión liposomal envuelve el glicinato de magnesio en una capa de grasa que evita esa competencia y lo lleva directamente a los músculos y al sistema nervioso sin pérdida en el camino.",
             "text_custom": false,
             "text_font": "assistant_n4",
             "text_font_weight": "400",
@@ -947,6 +1054,7 @@
         "card_item_7_TC3pr9",
         "card_item_8_9b3ZpQ"
       ],
+      "disabled": true,
       "name": "VSO - Hero 45",
       "settings": {
         "enable_advanced_settings": false,
@@ -1448,7 +1556,7 @@
         "title_wMRzQ5": {
           "type": "title",
           "settings": {
-            "title": "<strong>Resuelve _tus dudas_ importantes</strong>",
+            "title": "<strong>Lo que suelen _preguntarnos</strong>",
             "title_color": "#000000",
             "title_highlight_color": "#478641",
             "custom_font": false,
@@ -1467,7 +1575,7 @@
         "subtitle_EvXGjz": {
           "type": "subtitle",
           "settings": {
-            "subtitle": "<p><strong>Información clara para saber cómo integrar Glicinato de Magnesio D3 Liposomal a tu rutina diaria.</strong></p>",
+            "subtitle": "<p>Sobre Glicinato de Magnesio Liposomal de Fitoheal.</p>",
             "subtitle_color": "#121212",
             "custom_font": false,
             "subtitle_as": "p",
@@ -1510,29 +1618,36 @@
         "faq_item_1_nCxGYg": {
           "type": "faq_item",
           "settings": {
-            "question": "<strong>¿Para qué sirve el Glicinato de Magnesio D3 Liposomal?</strong>",
-            "answer": "<p>Apoya el descanso, contribuye a la relajación muscular y favorece el equilibrio del sistema nervioso.</p>"
+            "question": "<strong>¿Cuál es la diferencia entre Glicinato y Citrato de Magnesio?</strong>",
+            "answer": "<p>Para relajar los músculos, calmar el sistema nervioso y mejorar la calidad del sueño. Si tu problema es tensión física acumulada, ansiedad de fondo o sueño superficial que no descansa, el glicinato actúa directo ahí.</p>"
           }
         },
         "faq_item_2_ohlkGR": {
           "type": "faq_item",
           "settings": {
             "question": "<strong>¿Cómo debo tomarla?</strong>",
-            "answer": "<p>Tomar de <strong>1 a 2 cápsulas al día</strong> con agua, preferiblemente en la tarde o noche si tu objetivo es apoyar el descanso. La etiqueta indica uso oral y dosis de 1 a 2 cápsulas al día.</p>"
+            "answer": "<p>Son el mismo mineral con destinos distintos. El glicinato va al sistema nervioso y los músculos — ideal para sueño y relajación. El citrato actúa principalmente en el intestino — ideal para digestión y tránsito. Si tu problema es dormir mal, glicinato. Si tu problema es la digestión, citrato.</p>"
           }
         },
         "faq_item_3_aKHWJF": {
           "type": "faq_item",
           "settings": {
             "question": "<strong>¿Qué diferencia tiene la tecnología liposomal?</strong>",
-            "answer": "<p>La tecnología liposomal ayuda a proteger y transportar los activos para favorecer una mejor absorción y aprovechamiento en el organismo.</p>"
+            "answer": "<p>1 a 2 cápsulas con agua, 30 a 60 minutos antes de dormir. Tomarlo a la misma hora todos los días ayuda a que el cuerpo lo integre como parte de la rutina de descanso.</p>"
           }
         },
         "faq_item_4_jrk0ZU": {
           "type": "faq_item",
           "settings": {
-            "question": "<strong>¿Tiene estimulantes?</strong>",
-            "answer": "<p>No. Es una fórmula pensada para apoyar la calma, el equilibrio y el bienestar diario sin depender de estimulantes.</p>"
+            "question": "<strong>¿Tiene algún efecto secundario?</strong>",
+            "answer": "<p>El glicinato es la forma de magnesio mejor tolerada — no causa el efecto laxante que tienen otras versiones como el citrato o el óxido. En dosis muy altas puede generar somnolencia, que en este contexto generalmente es el efecto buscado.</p>"
+          }
+        },
+        "faq_item_CbYVGC": {
+          "type": "faq_item",
+          "settings": {
+            "question": "<strong>¿Y si lo tomo y no siento nada?</strong>",
+            "answer": "<p>Revisar primero si se está tomando en el horario correcto (noche) y con constancia diaria. La primera semana el efecto más notorio es en músculos. El sueño más profundo llega después. Si después de 3 semanas no hay diferencia, escríbenos.</p>"
           }
         }
       },
@@ -1543,7 +1658,8 @@
         "faq_item_1_nCxGYg",
         "faq_item_2_ohlkGR",
         "faq_item_3_aKHWJF",
-        "faq_item_4_jrk0ZU"
+        "faq_item_4_jrk0ZU",
+        "faq_item_CbYVGC"
       ],
       "name": "VSO - FAQ 02",
       "settings": {
@@ -1590,6 +1706,8 @@
   },
   "order": [
     "vso_product_info_02_CB34KK",
+    "vso_img_with_text_01_FbjCHW",
+    "about_section_pwTVcK",
     "vso_hero_36_81fyqM",
     "vso_hero_19_XGjzRA",
     "vso_icon_benefits_01_QX0kww",

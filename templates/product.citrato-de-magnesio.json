@@ -57,7 +57,7 @@
         "text_WKhTaO": {
           "type": "text",
           "settings": {
-            "text": "<p>Tecnología liposomal de _alta absorción diseñada para ayudar a tu cuerpo a aprovechar mejor el magnesio_, apoyando la digestión, la salud intestinal y la función muscular.</p>",
+            "text": "<p>Tu intestino trabaja en tu contra. El _Citrato de Magnesio lo pone a trabajar contigo.</p>",
             "text_highlight_color": "#d7fca3",
             "text_highlight_text_color": "#111111",
             "text_color": "#555555",
@@ -160,7 +160,7 @@
         "description_4X83w7": {
           "type": "description",
           "settings": {
-            "description_text": "<p>No es solo magnesio. Es una fórmula liposomal pensada para favorecer una mejor absorción y acompañar tu bienestar digestivo diario.</p>",
+            "description_text": "<p>Una fórmula liposomal de alta absorción que actúa directo en el tracto intestinal — el tubo que va del estómago al intestino grueso — para regularizar el tránsito, reducir la hinchazón y devolver el equilibrio digestivo.</p><p>⚠  Consultar con un médico si se toman medicamentos para la presión arterial, antibióticos o diuréticos. No recomendado como sustituto de tratamiento médico para condiciones digestivas diagnosticadas.</p>",
             "description_color": "#111111",
             "description_font_size": 16,
             "description_font_size_mobile": 14,
@@ -177,7 +177,7 @@
           "type": "collapsible_row",
           "settings": {
             "title": "¿Cómo funciona el Citrato de Magnesio Liposomal?",
-            "content": "<p>El citrato de magnesio apoya funciones clave como la digestión, la salud intestinal y la función muscular. Su tecnología liposomal ayuda a proteger y transportar el activo para favorecer una mejor absorción y aprovechamiento.</p>",
+            "content": "<p>El citrato de magnesio actúa en el intestino estimulando la motilidad intestinal — la capacidad del intestino de moverse y avanzar el contenido. Eso regulariza el tránsito, reduce la acumulación y alivia la hinchazón. Es la forma de magnesio más indicada cuando el problema es digestivo.</p>",
             "margin_top_desktop": 0,
             "margin_bottom_desktop": 0,
             "margin_top_mobile": 0,
@@ -188,7 +188,7 @@
           "type": "collapsible_row",
           "settings": {
             "title": "¿Cuándo debo tomarla?",
-            "content": "<p>Tomar de <strong>1 a 2 cápsulas al día</strong> con agua, preferiblemente junto a una comida o según tu rutina diaria. </p>",
+            "content": "<p>Con las comidas principales, preferiblemente en la mañana. Tomar 1 a 2 cápsulas con agua.</p>",
             "margin_top_desktop": 0,
             "margin_bottom_desktop": 0,
             "margin_top_mobile": 0,
@@ -199,7 +199,7 @@
           "type": "collapsible_row",
           "settings": {
             "title": "¿En cuánto tiempo puedo notar cambios?",
-            "content": "<p>Cada cuerpo responde de manera diferente. Con el uso constante, puede apoyar una mejor sensación digestiva, bienestar intestinal y equilibrio muscular.</p>",
+            "content": "<p>El tránsito intestinal suele regularizarse en la primera o segunda semana de uso constante. La hinchazón y la pesadez pueden mejorar antes.</p>",
             "margin_top_desktop": 0,
             "margin_bottom_desktop": 0,
             "margin_top_mobile": 0,
@@ -325,6 +325,113 @@
         "collapsible_icon_size": 30
       }
     },
+    "vso_img_with_text_01_zgBQeU": {
+      "type": "vso-img-with-text-01",
+      "blocks": {
+        "image_Ak8VyP": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/ChatGPT_Image_24_jun_2026_14_52_04.png",
+            "image_height": 580,
+            "image_height_mobile": 400,
+            "image_border_radius": 8
+          }
+        },
+        "title_NVP3FR": {
+          "type": "title",
+          "settings": {
+            "title": "¿Qué es la tecnología liposomal?",
+            "title_custom": false,
+            "title_font": "assistant_n4",
+            "title_font_weight": "700",
+            "title_font_size": 30,
+            "title_font_size_mobile": 24,
+            "title_margin_bottom": 20,
+            "title_color": "#0cc172"
+          }
+        },
+        "description_HTNiNR": {
+          "type": "description",
+          "settings": {
+            "text": "La tecnología liposomal ayuda a que los ingredientes activos lleguen mejor protegidos al cuerpo.Funciona mediante liposomas: pequeñas estructuras de fosfolípidos que encapsulan los nutrientes, los protegen durante la digestión y facilitan su transporte.El resultado: una absorción más eficiente y una mejor experiencia nutricional.",
+            "text_custom": false,
+            "text_font": "assistant_n4",
+            "text_font_weight": "400",
+            "text_alignment": "left",
+            "text_font_size": 16,
+            "text_font_size_mobile": 16,
+            "text_margin_bottom": 30,
+            "text_color": "#fafdf8"
+          }
+        },
+        "feature_R4hJDj": {
+          "type": "feature",
+          "disabled": true,
+          "settings": {
+            "text": "Hydration Retention",
+            "text_custom": false,
+            "text_font": "assistant_n4",
+            "text_font_weight": "400"
+          }
+        },
+        "feature_tgy9Mt": {
+          "type": "feature",
+          "disabled": true,
+          "settings": {
+            "text": "Temperature Regulation",
+            "text_custom": false,
+            "text_font": "assistant_n4",
+            "text_font_weight": "400"
+          }
+        }
+      },
+      "block_order": [
+        "image_Ak8VyP",
+        "title_NVP3FR",
+        "description_HTNiNR",
+        "feature_R4hJDj",
+        "feature_tgy9Mt"
+      ],
+      "name": "VSO - Img With Text 01",
+      "settings": {
+        "reverse_layout": false,
+        "mobile_reverse_layout": true,
+        "content_background_color": "#1c4332",
+        "features_gap": 20,
+        "features_margin_top": 10,
+        "feature_icon_size": 48,
+        "feature_icon_size_mobile": 32,
+        "feature_icon_border_radius": 0,
+        "feature_icon_margin_bottom": 10,
+        "feature_text_font_size": 14,
+        "feature_text_font_size_mobile": 14,
+        "feature_text_color": "#000000",
+        "feature_text_font_weight": "400",
+        "features_in_row": false,
+        "grid_max_width": 1220,
+        "section_max_width": 120,
+        "padding_desktop": 60,
+        "padding_tablet_mobile": 0,
+        "margin_desktop": 22,
+        "margin_bottom_desktop": 0,
+        "margin_tablet_mobile": 0,
+        "margin_bottom_tablet_mobile": 0,
+        "background_color": "#1c4332",
+        "background_gradient_color": ""
+      }
+    },
+    "about_section_acdH46": {
+      "type": "about-section",
+      "settings": {
+        "bg_color": "#fafdf8",
+        "imagen_pos": "left",
+        "titulo": "¿Cómo funciona el liposomal?",
+        "descripcion": "<p>La tecnología liposomal funciona utilizando esferas microscópicas (llamadas liposomas) formadas por grasa para encapsular nutrientes. Actúan como un vehículo de transporte de alta tecnología que protege a los ingredientes de los ácidos estomacales y permite que se absorban directamente en las células. </p>",
+        "cta_label": "",
+        "cta_link": "",
+        "imagen": "shopify://shop_images/ChatGPT_Image_24_jun_2026_14_54_00.png"
+      }
+    },
     "vso_hero_36_81fyqM": {
       "type": "vso-hero-36",
       "blocks": {
@@ -342,7 +449,7 @@
             "subtitle_letter_spacing": 1,
             "subtitle_color": "#ffffff",
             "subtitle_spacing": 16,
-            "title": "<strong>Magnesio diseñado para aprovecharse mejor.</strong>",
+            "title": "<strong>Esto es para ti si...</strong>",
             "title_custom_font": false,
             "title_as": "h2",
             "title_font": "poppins_n6",
@@ -391,29 +498,29 @@
         "feature_1_iokXup": {
           "type": "feature",
           "settings": {
-            "feature_title": "<strong>Alta absorción X5</strong>",
-            "feature_text": "Mejor aprovechamiento del magnesio."
+            "feature_title": "<strong>Comes y quedas pesado o hinchado</strong>",
+            "feature_text": "No importa qué comiste. El malestar aparece solo y se instala por horas. Tu digestión no procesa con fluidez."
           }
         },
         "feature_2_n0zBc0": {
           "type": "feature",
           "settings": {
-            "feature_title": "<strong>Digestión diaria</strong>",
-            "feature_text": "Apoya una rutina digestiva más ligera."
+            "feature_title": "<strong>Tu tránsito intestinal es irregular</strong>",
+            "feature_text": "Días que funciona, días que no. Esa inconsistencia afecta tu energía, tu ánimo y cómo te sientes en general."
           }
         },
         "feature_3_2EfXxK": {
           "type": "feature",
           "settings": {
-            "feature_title": "<strong>Tecnología liposomal</strong>",
-            "feature_text": "Ayuda a proteger y transportar el activo."
+            "feature_title": "<strong>Sientes que la comida se queda atascada</strong>",
+            "feature_text": "Lentitud digestiva, sensación de acumulación. Tu intestino no avanza al ritmo que debería."
           }
         },
         "feature_4_w0MBJV": {
           "type": "feature",
           "settings": {
-            "feature_title": "<strong>Función muscular</strong>",
-            "feature_text": "Contribuye al bienestar muscular."
+            "feature_title": "<strong>El estrés te lo cobra en el estómago</strong>",
+            "feature_text": "En Colombia el estrés laboral tiene consecuencias digestivas directas — gastritis, colon irritable, inflamación intestinal. Si eso te suena familiar, esto es para ti."
           }
         }
       },
@@ -435,7 +542,7 @@
         "section_outer_padding_bottom": 20,
         "section_outer_padding_top_mobile": 15,
         "section_outer_padding_bottom_mobile": 15,
-        "section_outer_bg_color": "#1e3b1d",
+        "section_outer_bg_color": "#1C4332",
         "full_width_desktop": false,
         "section_border_radius": 12,
         "section_border_radius_mobile": 0,
@@ -478,6 +585,114 @@
         "feature_text_color": "#ffffff"
       }
     },
+    "vso_icon_benefits_01_QX0kww": {
+      "type": "vso-icon-benefits-01",
+      "blocks": {
+        "heading_TUMvsh": {
+          "type": "heading",
+          "settings": {
+            "content_alignment": "left",
+            "title": "<strong>Para la digestión _que interrumpe tu día.</strong>",
+            "title_color": "#000000",
+            "title_highlight_color": "#478641",
+            "custom_title_font": false,
+            "title_as": "h4",
+            "title_font": "sans_serif_n4",
+            "title_size_desktop": 40,
+            "title_size_mobile": 32,
+            "title_line_height": 130,
+            "subtitle": "",
+            "subtitle_color": "#000000",
+            "custom_subtitle_font": false,
+            "subtitle_as": "p",
+            "subtitle_font": "sans_serif_n4",
+            "subtitle_size_desktop": 20,
+            "subtitle_size_mobile": 16,
+            "subtitle_line_height": 130,
+            "header_elements_gap": 16,
+            "header_blocks_gap": 50
+          }
+        },
+        "benefit_1_5lAsTN": {
+          "type": "benefit",
+          "settings": {
+            "title": "<strong>Regulariza el tránsito intestinal</strong>",
+            "text": "Estimula la motilidad — la capacidad del intestino de moverse — para que el proceso digestivo fluya con consistencia, no por rachas."
+          }
+        },
+        "benefit_2_WLkZAU": {
+          "type": "benefit",
+          "settings": {
+            "title": "<strong>Reduce la hinchazón y la pesadez</strong>",
+            "text": "Menos acumulación, menos presión abdominal. Comes y sigues con tu día en lugar de quedarte incómodo por horas."
+          }
+        },
+        "benefit_3_XK8kZV": {
+          "type": "benefit",
+          "settings": {
+            "title": "<strong>Apoya el equilibrio intestinal</strong>",
+            "text": "El magnesio participa en el ambiente intestinal donde viven las bacterias beneficiosas — contribuye a que ese ecosistema se mantenga en orden."
+          }
+        },
+        "benefit_4_gPhHh1": {
+          "type": "benefit",
+          "settings": {
+            "title": "<strong>Actúa donde el problema está</strong>",
+            "text": "El citrato va directo al tracto intestinal — no actúa en otro lugar. Fórmula específica para digestión, no genérica."
+          }
+        }
+      },
+      "block_order": [
+        "heading_TUMvsh",
+        "benefit_1_5lAsTN",
+        "benefit_2_WLkZAU",
+        "benefit_3_XK8kZV",
+        "benefit_4_gPhHh1"
+      ],
+      "name": "VSO - Icon Benefits 01",
+      "settings": {
+        "enable_advanced_settings": false,
+        "section_max_width": 64,
+        "section_horizontal_padding": 24,
+        "padding_horizontal_mobile": 15,
+        "background_color": "#ffffff",
+        "full_width": true,
+        "section_border_radius": 12,
+        "section_border_radius_mobile": 0,
+        "padding_top_desktop": 40,
+        "padding_bottom_desktop": 40,
+        "padding_top_mobile": 20,
+        "padding_bottom_mobile": 20,
+        "margin_top_desktop": 40,
+        "margin_bottom_desktop": 40,
+        "margin_top_mobile": 20,
+        "margin_bottom_mobile": 20,
+        "mobile_columns": "2",
+        "blocks_alignment": "center",
+        "desktop_blocks_gap": 32,
+        "mobile_blocks_gap": 16,
+        "custom_blocks_title_font": false,
+        "blocks_title_as": "h3",
+        "blocks_title_font": "sans_serif_n4",
+        "block_title_size_desktop": 18,
+        "block_title_size_mobile": 18,
+        "block_title_line_height": 120,
+        "blocks_title_color": "#000000",
+        "custom_blocks_text_font": true,
+        "blocks_text_as": "p",
+        "blocks_text_font": "gelasio_n4",
+        "block_text_size_desktop": 20,
+        "block_text_size_mobile": 16,
+        "block_text_line_height": 150,
+        "blocks_text_color": "#000000",
+        "block_background_color": "rgba(0,0,0,0)",
+        "desktop_icon_size": 180,
+        "mobile_icon_size": 100,
+        "block_padding": 0,
+        "block_elements_gap": 16,
+        "block_border_radius": 0
+      }
+    },
     "vso_hero_19_XGjzRA": {
       "type": "vso-hero-19",
       "blocks": {
@@ -485,7 +700,7 @@
           "type": "heading",
           "settings": {
             "heading_alignment": "center",
-            "heading": "_Digestión y absorción,_ paso a paso",
+            "heading": "_Lo que puedes esperar,_ semana a semana.",
             "heading_custom_font": false,
             "heading_as": "h3",
             "heading_font": "poppins_n4",
@@ -546,24 +761,24 @@
           "type": "timeline_item",
           "settings": {
             "subheading": "Primeros días",
-            "heading": "Tu cuerpo empieza a aprovechar mejor el magnesio",
-            "description": "<p>La tecnología liposomal ayuda a proteger y transportar el activo para favorecer una mejor absorción dentro de tu rutina diaria.</p>"
+            "heading": "El intestino empieza a responder",
+            "description": "<p>El citrato de magnesio activa la motilidad intestinal. La hinchazón y la pesadez después de comer suelen ser lo primero en mejorar.</p>"
           }
         },
         "timeline_item_2_3Qr27B": {
           "type": "timeline_item",
           "settings": {
             "subheading": "Semanas 2–4",
-            "heading": "Apoyo digestivo más constante",
-            "description": "<p>Con el uso continuo, puede favorecer una mejor sensación digestiva y apoyar el bienestar intestinal.</p>"
+            "heading": "Tránsito más regular",
+            "description": "<p>Con uso constante, el intestino encuentra un ritmo más estable. Menos días 'atascados', menos variabilidad. La digestión se vuelve más predecible.</p>"
           }
         },
         "timeline_item_3_6WDi7E": {
           "type": "timeline_item",
           "settings": {
             "subheading": "Uso continuo",
-            "heading": "Bienestar muscular y digestivo",
-            "description": "<p>Contribuye al apoyo de la función muscular, la salud intestinal y el equilibrio digestivo diario.</p>"
+            "heading": "Una digestión que no interrumpe tu día",
+            "description": "<p>El objetivo no es que no exista — es que no moleste. Comer sin preocuparte por cómo vas a sentirte después. Eso es lo que el uso constante construye.</p>"
           }
         }
       },
@@ -632,114 +847,6 @@
         "margin_bottom_mobile": 0
       }
     },
-    "vso_icon_benefits_01_QX0kww": {
-      "type": "vso-icon-benefits-01",
-      "blocks": {
-        "heading_TUMvsh": {
-          "type": "heading",
-          "settings": {
-            "content_alignment": "left",
-            "title": "<strong>Tecnología _liposomal para una mejor absorción</strong>",
-            "title_color": "#000000",
-            "title_highlight_color": "#478641",
-            "custom_title_font": false,
-            "title_as": "h4",
-            "title_font": "sans_serif_n4",
-            "title_size_desktop": 40,
-            "title_size_mobile": 32,
-            "title_line_height": 130,
-            "subtitle": "",
-            "subtitle_color": "#000000",
-            "custom_subtitle_font": false,
-            "subtitle_as": "p",
-            "subtitle_font": "sans_serif_n4",
-            "subtitle_size_desktop": 20,
-            "subtitle_size_mobile": 16,
-            "subtitle_line_height": 130,
-            "header_elements_gap": 16,
-            "header_blocks_gap": 50
-          }
-        },
-        "benefit_1_5lAsTN": {
-          "type": "benefit",
-          "settings": {
-            "title": "<strong>Alta absorción X5</strong>",
-            "text": "Favorece mayor disponibilidad del activo."
-          }
-        },
-        "benefit_2_WLkZAU": {
-          "type": "benefit",
-          "settings": {
-            "title": "<strong>Mejor aprovechamiento</strong>",
-            "text": "Ayuda a que cada cápsula trabaje mejor."
-          }
-        },
-        "benefit_3_XK8kZV": {
-          "type": "benefit",
-          "settings": {
-            "title": "<strong>Uso constante</strong>",
-            "text": "Apoya una experiencia más estable."
-          }
-        },
-        "benefit_4_gPhHh1": {
-          "type": "benefit",
-          "settings": {
-            "title": "<strong>Rutina fácil</strong>",
-            "text": "Cápsulas prácticas para el día a día."
-          }
-        }
-      },
-      "block_order": [
-        "heading_TUMvsh",
-        "benefit_1_5lAsTN",
-        "benefit_2_WLkZAU",
-        "benefit_3_XK8kZV",
-        "benefit_4_gPhHh1"
-      ],
-      "name": "VSO - Icon Benefits 01",
-      "settings": {
-        "enable_advanced_settings": false,
-        "section_max_width": 64,
-        "section_horizontal_padding": 24,
-        "padding_horizontal_mobile": 15,
-        "background_color": "#ffffff",
-        "full_width": true,
-        "section_border_radius": 12,
-        "section_border_radius_mobile": 0,
-        "padding_top_desktop": 40,
-        "padding_bottom_desktop": 40,
-        "padding_top_mobile": 20,
-        "padding_bottom_mobile": 20,
-        "margin_top_desktop": 40,
-        "margin_bottom_desktop": 40,
-        "margin_top_mobile": 20,
-        "margin_bottom_mobile": 20,
-        "mobile_columns": "2",
-        "blocks_alignment": "center",
-        "desktop_blocks_gap": 32,
-        "mobile_blocks_gap": 16,
-        "custom_blocks_title_font": false,
-        "blocks_title_as": "h3",
-        "blocks_title_font": "sans_serif_n4",
-        "block_title_size_desktop": 18,
-        "block_title_size_mobile": 18,
-        "block_title_line_height": 120,
-        "blocks_title_color": "#000000",
-        "custom_blocks_text_font": true,
-        "blocks_text_as": "p",
-        "blocks_text_font": "gelasio_n4",
-        "block_text_size_desktop": 20,
-        "block_text_size_mobile": 16,
-        "block_text_line_height": 150,
-        "blocks_text_color": "#000000",
-        "block_background_color": "rgba(0,0,0,0)",
-        "desktop_icon_size": 180,
-        "mobile_icon_size": 100,
-        "block_padding": 0,
-        "block_elements_gap": 16,
-        "block_border_radius": 0
-      }
-    },
     "vso_img_with_text_01_xtNmKG": {
       "type": "vso-img-with-text-01",
       "blocks": {
@@ -768,7 +875,7 @@
         "description_gdagdr": {
           "type": "description",
           "settings": {
-            "text": "Nuestra fórmula está diseñada para favorecer una mejor absorción del Citrato de Magnesio D3, ayudando a que tu cuerpo lo aproveche mejor dentro de tu rutina digestiva, intestinal y muscular.",
+            "text": "El citrato de magnesio en dosis altas puede tener efecto laxante no deseado — uno de los problemas más comunes con los suplementos de magnesio convencionales. La versión liposomal permite que el ingrediente llegue al intestino en la cantidad correcta, sin exceso, y sin las molestias que genera la forma estándar.",
             "text_custom": false,
             "text_font": "assistant_n4",
             "text_font_weight": "400",
@@ -947,6 +1054,7 @@
         "card_item_7_TC3pr9",
         "card_item_8_9b3ZpQ"
       ],
+      "disabled": true,
       "name": "VSO - Hero 45",
       "settings": {
         "enable_advanced_settings": false,
@@ -1448,7 +1556,7 @@
         "title_wMRzQ5": {
           "type": "title",
           "settings": {
-            "title": "<strong>Resuelve _tus dudas_ importantes</strong>",
+            "title": "<strong>Lo que suelen _preguntarnos</strong>",
             "title_color": "#000000",
             "title_highlight_color": "#478641",
             "custom_font": false,
@@ -1467,7 +1575,7 @@
         "subtitle_EvXGjz": {
           "type": "subtitle",
           "settings": {
-            "subtitle": "<p>Información clara para saber cómo integrar Citrato de Magnesio D3 Liposomal a tu rutina digestiva, intestinal y muscular.</p>",
+            "subtitle": "<p>Sobre Citrato de Magnesio Liposomal de Fitoheal.</p>",
             "subtitle_color": "#121212",
             "custom_font": false,
             "subtitle_as": "p",
@@ -1510,29 +1618,36 @@
         "faq_item_1_nCxGYg": {
           "type": "faq_item",
           "settings": {
-            "question": "<strong>¿Para qué sirve el Citrato de Magnesio D3 Liposomal?</strong>",
-            "answer": "<p>Apoya la digestión, favorece la salud intestinal y contribuye al bienestar muscular diario.</p>"
+            "question": "<strong>¿Para qué sirve el Citrato de Magnesio Liposomal?</strong>",
+            "answer": "<p>Para regularizar el tránsito intestinal, reducir la hinchazón y devolver fluidez a la digestión. Si después de comer quedas pesado, incómodo o tu intestino funciona de forma irregular, el citrato actúa directo en eso.</p>"
           }
         },
         "faq_item_2_ohlkGR": {
           "type": "faq_item",
           "settings": {
-            "question": "<strong>¿Cómo debo tomarla?</strong>",
-            "answer": "<p>Tomar de <strong>1 a 2 cápsulas al día</strong> con agua, preferiblemente junto a una comida o según tu rutina diaria. La etiqueta indica uso oral y dosis de 1 a 2 cápsulas al día. </p>"
+            "question": "<strong>¿Cuál es la diferencia entre Citrato y Glicinato de Magnesio?</strong>",
+            "answer": "<p>Son el mismo mineral con destinos distintos. El citrato actúa en el intestino — digestión, tránsito, hinchazón. El glicinato actúa en el sistema nervioso y los músculos — sueño, tensión, ansiedad. Si tu problema es digestivo, citrato. Si tu problema es dormir mal o tensión física, glicinato.</p>"
           }
         },
         "faq_item_3_aKHWJF": {
           "type": "faq_item",
           "settings": {
-            "question": "<strong>¿Qué diferencia tiene la tecnología liposomal?</strong>",
-            "answer": "<p>La tecnología liposomal ayuda a proteger y transportar el activo para favorecer una mejor absorción y aprovechamiento del magnesio.</p>"
+            "question": "<strong>¿Cómo debo tomarlo?</strong>",
+            "answer": "<p>1 a 2 cápsulas con las comidas principales, preferiblemente en la mañana o al almuerzo. Con agua.</p>"
           }
         },
         "faq_item_4_jrk0ZU": {
           "type": "faq_item",
           "settings": {
-            "question": "<strong>¿Es solo para digestión?</strong>",
-            "answer": "<p>No. Aunque su enfoque principal es el bienestar digestivo e intestinal, también apoya la función muscular y el equilibrio general del cuerpo. La etiqueta menciona digestión, salud intestinal, músculos y alta absorción X5. </p>"
+            "question": "<strong>¿Tiene efecto laxante?</strong>",
+            "answer": "<p>La versión liposomal está diseñada para evitar ese efecto. El problema del citrato estándar en dosis altas es que atrae agua al intestino y puede generar diarrea. La forma liposomal llega en la cantidad correcta sin ese exceso.</p>"
+          }
+        },
+        "faq_item_mU8wT7": {
+          "type": "faq_item",
+          "settings": {
+            "question": "<strong>¿Y si lo tomo y no siento nada?</strong>",
+            "answer": "<p>El citrato actúa de forma gradual — no es un laxante de efecto inmediato. Si después de 2 semanas de uso diario no notas diferencia en el tránsito o la hinchazón, escríbenos para evaluar si el producto correcto para tu caso.</p>"
           }
         }
       },
@@ -1543,7 +1658,8 @@
         "faq_item_1_nCxGYg",
         "faq_item_2_ohlkGR",
         "faq_item_3_aKHWJF",
-        "faq_item_4_jrk0ZU"
+        "faq_item_4_jrk0ZU",
+        "faq_item_mU8wT7"
       ],
       "name": "VSO - FAQ 02",
       "settings": {
@@ -1590,9 +1706,11 @@
   },
   "order": [
     "vso_product_info_02_CB34KK",
+    "vso_img_with_text_01_zgBQeU",
+    "about_section_acdH46",
     "vso_hero_36_81fyqM",
-    "vso_hero_19_XGjzRA",
     "vso_icon_benefits_01_QX0kww",
+    "vso_hero_19_XGjzRA",
     "vso_img_with_text_01_xtNmKG",
     "vso_hero_45_8W1D8M",
     "vso_hero_32_5X7zMU",

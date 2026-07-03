@@ -57,7 +57,7 @@
         "text_WKhTaO": {
           "type": "text",
           "settings": {
-            "text": "<p>Apoya la respuesta _antiinflamatoria natural del cuerpo, favorece la salud articular y contribuye al bienestar diario.</p>",
+            "text": "<p>Ya tomaste cúrcuma antes y no sentiste nada. _No era el ingrediente — era la forma en que llegaba.</p>",
             "text_highlight_color": "#d7fca3",
             "text_highlight_text_color": "#111111",
             "text_color": "#555555",
@@ -160,7 +160,7 @@
         "description_4X83w7": {
           "type": "description",
           "settings": {
-            "description_text": "<p>Una fórmula liposomal de alta absorción diseñada para apoyar el bienestar físico, la movilidad y la protección antioxidante.</p>",
+            "description_text": "<p>Una fórmula liposomal basada en curcumina — el compuesto activo de la cúrcuma con propiedades antiinflamatorias y antioxidantes comprobadas — diseñada para resolver el mayor problema de la cúrcuma tradicional: que el cuerpo casi no la absorbe.</p>",
             "description_color": "#111111",
             "description_font_size": 16,
             "description_font_size_mobile": 14,
@@ -176,8 +176,8 @@
         "collapsible_row_1_DAxcm0": {
           "type": "collapsible_row",
           "settings": {
-            "title": "¿Cómo funciona la Cúrcuma Liposomal?",
-            "content": "<p>La cúrcuma es reconocida por su aporte al bienestar físico y su acción antioxidante. En fórmula liposomal, ayuda a favorecer una mejor absorción para que el cuerpo pueda aprovechar mejor sus activos.</p>",
+            "title": "¿Por qué la cúrcuma normal no funciona?",
+            "content": "<p>La curcumina — el compuesto activo de la cúrcuma — es lipofílica (solo se disuelve en grasa, no en agua). Como el intestino es un ambiente acuoso, la cúrcuma en polvo o cápsula estándar pasa por el cuerpo sin ser absorbida. El cuerpo aprovecha menos del 1%. La versión liposomal resuelve eso.</p>",
             "margin_top_desktop": 0,
             "margin_bottom_desktop": 0,
             "margin_top_mobile": 0,
@@ -187,8 +187,8 @@
         "collapsible_row_2_b5NJ8R": {
           "type": "collapsible_row",
           "settings": {
-            "title": "¿Cuándo debo tomarla?",
-            "content": "<p><strong>Tomar de 1 a 2 cápsulas al día con agua, preferiblemente junto a una comida o según tu rutina diaria.</strong></p><p>La etiqueta indica vía oral y modo de uso de 1 a 2 cápsulas al día. </p>",
+            "title": "¿Para qué sirve la Cúrcuma Liposomal?",
+            "content": "<p>Para reducir la inflamación crónica — la inflamación de fondo que se acumula en articulaciones, tejidos y sistema digestivo sin que haya una lesión visible. También tiene propiedades antioxidantes que protegen las células del daño acumulado por el tiempo y el estrés.</p>",
             "margin_top_desktop": 0,
             "margin_bottom_desktop": 0,
             "margin_top_mobile": 0,
@@ -198,8 +198,8 @@
         "collapsible_row_3_fMM5Om": {
           "type": "collapsible_row",
           "settings": {
-            "title": "¿En cuánto tiempo puedo notar cambios?",
-            "content": "<p>Cada cuerpo responde de manera diferente. Con el uso constante, puede apoyar el bienestar articular, la movilidad y una sensación general de equilibrio físico.</p>",
+            "title": "¿En cuánto tiempo voy a notar cambios?",
+            "content": "<p>La respuesta antiinflamatoria es gradual — no actúa como un ibuprofeno inmediato. La mayoría nota diferencia en movilidad articular y menor rigidez después de 4 a 8 semanas de uso constante.</p>",
             "margin_top_desktop": 0,
             "margin_bottom_desktop": 0,
             "margin_top_mobile": 0,
@@ -325,6 +325,113 @@
         "collapsible_icon_size": 30
       }
     },
+    "vso_img_with_text_01_TkhBTW": {
+      "type": "vso-img-with-text-01",
+      "blocks": {
+        "image_gdNKnN": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/ChatGPT_Image_24_jun_2026_14_52_04.png",
+            "image_height": 580,
+            "image_height_mobile": 400,
+            "image_border_radius": 8
+          }
+        },
+        "title_XzM9GM": {
+          "type": "title",
+          "settings": {
+            "title": "¿Qué es la tecnología liposomal?",
+            "title_custom": false,
+            "title_font": "assistant_n4",
+            "title_font_weight": "700",
+            "title_font_size": 30,
+            "title_font_size_mobile": 24,
+            "title_margin_bottom": 20,
+            "title_color": "#0cc172"
+          }
+        },
+        "description_YPLNx9": {
+          "type": "description",
+          "settings": {
+            "text": "La tecnología liposomal ayuda a que los ingredientes activos lleguen mejor protegidos al cuerpo.Funciona mediante liposomas: pequeñas estructuras de fosfolípidos que encapsulan los nutrientes, los protegen durante la digestión y facilitan su transporte.El resultado: una absorción más eficiente y una mejor experiencia nutricional.",
+            "text_custom": false,
+            "text_font": "assistant_n4",
+            "text_font_weight": "400",
+            "text_alignment": "left",
+            "text_font_size": 16,
+            "text_font_size_mobile": 16,
+            "text_margin_bottom": 30,
+            "text_color": "#fafdf8"
+          }
+        },
+        "feature_4WKC6G": {
+          "type": "feature",
+          "disabled": true,
+          "settings": {
+            "text": "Hydration Retention",
+            "text_custom": false,
+            "text_font": "assistant_n4",
+            "text_font_weight": "400"
+          }
+        },
+        "feature_Lhdxww": {
+          "type": "feature",
+          "disabled": true,
+          "settings": {
+            "text": "Temperature Regulation",
+            "text_custom": false,
+            "text_font": "assistant_n4",
+            "text_font_weight": "400"
+          }
+        }
+      },
+      "block_order": [
+        "image_gdNKnN",
+        "title_XzM9GM",
+        "description_YPLNx9",
+        "feature_4WKC6G",
+        "feature_Lhdxww"
+      ],
+      "name": "VSO - Img With Text 01",
+      "settings": {
+        "reverse_layout": false,
+        "mobile_reverse_layout": true,
+        "content_background_color": "#1c4332",
+        "features_gap": 20,
+        "features_margin_top": 10,
+        "feature_icon_size": 48,
+        "feature_icon_size_mobile": 32,
+        "feature_icon_border_radius": 0,
+        "feature_icon_margin_bottom": 10,
+        "feature_text_font_size": 14,
+        "feature_text_font_size_mobile": 14,
+        "feature_text_color": "#000000",
+        "feature_text_font_weight": "400",
+        "features_in_row": false,
+        "grid_max_width": 1220,
+        "section_max_width": 120,
+        "padding_desktop": 60,
+        "padding_tablet_mobile": 0,
+        "margin_desktop": 24,
+        "margin_bottom_desktop": 0,
+        "margin_tablet_mobile": 0,
+        "margin_bottom_tablet_mobile": 0,
+        "background_color": "#1c4332",
+        "background_gradient_color": ""
+      }
+    },
+    "about_section_866ix9": {
+      "type": "about-section",
+      "settings": {
+        "bg_color": "#fafdf8",
+        "imagen_pos": "left",
+        "titulo": "¿Cómo funciona el liposomal?",
+        "descripcion": "<p>La tecnología liposomal funciona utilizando esferas microscópicas (llamadas liposomas) formadas por grasa para encapsular nutrientes. Actúan como un vehículo de transporte de alta tecnología que protege a los ingredientes de los ácidos estomacales y permite que se absorban directamente en las células. </p>",
+        "cta_label": "",
+        "cta_link": "",
+        "imagen": "shopify://shop_images/ChatGPT_Image_24_jun_2026_14_54_00.png"
+      }
+    },
     "vso_hero_36_81fyqM": {
       "type": "vso-hero-36",
       "blocks": {
@@ -342,7 +449,7 @@
             "subtitle_letter_spacing": 1,
             "subtitle_color": "#ffffff",
             "subtitle_spacing": 16,
-            "title": "<strong>Apoya tu cuerpo desde adentro.</strong>",
+            "title": "<strong>Esto es para ti si...</strong>",
             "title_custom_font": false,
             "title_as": "h2",
             "title_font": "poppins_n6",
@@ -352,10 +459,10 @@
             "title_line_height": 120,
             "title_letter_spacing": 0,
             "title_color_type": "solid",
-            "title_color": "#ffffff",
+            "title_color": "#0CC172",
             "title_gradient": "linear-gradient(135deg, #EC4899 0%, #F472B6 100%)",
             "title_spacing": 16,
-            "text": "Transform your lashes with:",
+            "text": "",
             "text_custom_font": false,
             "text_as": "p",
             "text_font": "poppins_n4",
@@ -391,29 +498,29 @@
         "feature_1_iokXup": {
           "type": "feature",
           "settings": {
-            "feature_title": "<strong>Respuesta antiinflamatoria</strong>",
-            "feature_text": "Apoya el equilibrio natural del cuerpo."
+            "feature_title": "Tienes dolores articulares o rigidez que no ceden",
+            "feature_text": "Rodillas, caderas, espalda, manos. Una inflamación que el médico dice que 'no es nada grave' pero que está ahí todos los días."
           }
         },
         "feature_2_n0zBc0": {
           "type": "feature",
           "settings": {
-            "feature_title": "<strong>Acción antioxidante</strong>",
-            "feature_text": "Contribuye al cuidado celular."
+            "feature_title": "Tu recuperación física es más lenta de lo que debería",
+            "feature_text": "Después de ejercicio o esfuerzo físico, el cuerpo tarda más en recuperarse. La inflamación post-entreno no baja tan rápido."
           }
         },
         "feature_3_2EfXxK": {
           "type": "feature",
           "settings": {
-            "feature_title": "<strong>Salud articular</strong>",
-            "feature_text": "Favorece articulaciones y movilidad diaria."
+            "feature_title": "Sientes inflamación de fondo en el cuerpo",
+            "feature_text": "No hay una lesión específica. Es una pesadez generalizada, molestias que van y vienen, un cuerpo que siente que carga más de lo que debería."
           }
         },
         "feature_4_w0MBJV": {
           "type": "feature",
           "settings": {
-            "feature_title": "<strong>Alta absorción X5</strong>",
-            "feature_text": "Tecnología liposomal para mejor aprovechamiento."
+            "feature_title": "<strong>Ya probaste cúrcuma y no notaste nada</strong>",
+            "feature_text": "Tés, polvo, cápsulas genéricas. No funcionaron porque el problema no era el ingrediente — era la absorción. Eso es exactamente lo que el liposomal resuelve."
           }
         }
       },
@@ -435,7 +542,7 @@
         "section_outer_padding_bottom": 20,
         "section_outer_padding_top_mobile": 15,
         "section_outer_padding_bottom_mobile": 15,
-        "section_outer_bg_color": "#1e3b1d",
+        "section_outer_bg_color": "#1C4332",
         "full_width_desktop": false,
         "section_border_radius": 12,
         "section_border_radius_mobile": 0,
@@ -478,6 +585,114 @@
         "feature_text_color": "#ffffff"
       }
     },
+    "vso_icon_benefits_01_QX0kww": {
+      "type": "vso-icon-benefits-01",
+      "blocks": {
+        "heading_TUMvsh": {
+          "type": "heading",
+          "settings": {
+            "content_alignment": "left",
+            "title": "<strong>Para la inflamación _que llevas tiempo cargando.</strong>",
+            "title_color": "#000000",
+            "title_highlight_color": "#478641",
+            "custom_title_font": false,
+            "title_as": "h4",
+            "title_font": "sans_serif_n4",
+            "title_size_desktop": 40,
+            "title_size_mobile": 32,
+            "title_line_height": 130,
+            "subtitle": "",
+            "subtitle_color": "#000000",
+            "custom_subtitle_font": false,
+            "subtitle_as": "p",
+            "subtitle_font": "sans_serif_n4",
+            "subtitle_size_desktop": 20,
+            "subtitle_size_mobile": 16,
+            "subtitle_line_height": 130,
+            "header_elements_gap": 16,
+            "header_blocks_gap": 50
+          }
+        },
+        "benefit_1_5lAsTN": {
+          "type": "benefit",
+          "settings": {
+            "title": "<strong>Antiinflamatorio natural</strong>",
+            "text": "La curcumina inhibe las vías de inflamación celular — los mensajeros químicos que producen y mantienen la inflamación. Menos inflamación de fondo, más movilidad y menos molestia física."
+          }
+        },
+        "benefit_2_WLkZAU": {
+          "type": "benefit",
+          "settings": {
+            "title": "<strong>Protección antioxidante</strong>",
+            "text": "Los antioxidantes neutralizan los radicales libres — moléculas que dañan las células con el tiempo. La curcumina es uno de los antioxidantes más potentes conocidos en la naturaleza."
+          }
+        },
+        "benefit_3_XK8kZV": {
+          "type": "benefit",
+          "settings": {
+            "title": "<strong>Bienestar articular</strong>",
+            "text": "Rodillas, caderas, columna. La curcumina actúa sobre la inflamación del tejido articular — no como un calmante temporal sino como un regulador de fondo."
+          }
+        },
+        "benefit_4_gPhHh1": {
+          "type": "benefit",
+          "settings": {
+            "title": "<strong>Apoyo digestivo</strong>",
+            "text": "La cúrcuma también tiene efecto antiinflamatorio sobre el tracto intestinal — útil para quienes tienen inflamación digestiva crónica o colon sensible."
+          }
+        }
+      },
+      "block_order": [
+        "heading_TUMvsh",
+        "benefit_1_5lAsTN",
+        "benefit_2_WLkZAU",
+        "benefit_3_XK8kZV",
+        "benefit_4_gPhHh1"
+      ],
+      "name": "VSO - Icon Benefits 01",
+      "settings": {
+        "enable_advanced_settings": false,
+        "section_max_width": 64,
+        "section_horizontal_padding": 24,
+        "padding_horizontal_mobile": 15,
+        "background_color": "#ffffff",
+        "full_width": true,
+        "section_border_radius": 12,
+        "section_border_radius_mobile": 0,
+        "padding_top_desktop": 40,
+        "padding_bottom_desktop": 40,
+        "padding_top_mobile": 20,
+        "padding_bottom_mobile": 20,
+        "margin_top_desktop": 40,
+        "margin_bottom_desktop": 40,
+        "margin_top_mobile": 20,
+        "margin_bottom_mobile": 20,
+        "mobile_columns": "2",
+        "blocks_alignment": "center",
+        "desktop_blocks_gap": 32,
+        "mobile_blocks_gap": 16,
+        "custom_blocks_title_font": false,
+        "blocks_title_as": "h3",
+        "blocks_title_font": "sans_serif_n4",
+        "block_title_size_desktop": 18,
+        "block_title_size_mobile": 18,
+        "block_title_line_height": 120,
+        "blocks_title_color": "#000000",
+        "custom_blocks_text_font": true,
+        "blocks_text_as": "p",
+        "blocks_text_font": "gelasio_n4",
+        "block_text_size_desktop": 20,
+        "block_text_size_mobile": 16,
+        "block_text_line_height": 150,
+        "blocks_text_color": "#000000",
+        "block_background_color": "rgba(0,0,0,0)",
+        "desktop_icon_size": 180,
+        "mobile_icon_size": 100,
+        "block_padding": 0,
+        "block_elements_gap": 16,
+        "block_border_radius": 0
+      }
+    },
     "vso_hero_19_XGjzRA": {
       "type": "vso-hero-19",
       "blocks": {
@@ -485,7 +700,7 @@
           "type": "heading",
           "settings": {
             "heading_alignment": "center",
-            "heading": "Bienestar físico, _paso a paso",
+            "heading": "Lo que puedes esperar, _semana a semana.",
             "heading_custom_font": false,
             "heading_as": "h3",
             "heading_font": "poppins_n4",
@@ -546,24 +761,24 @@
           "type": "timeline_item",
           "settings": {
             "subheading": "Primeros días",
-            "heading": "Apoyo diario para tu cuerpo",
-            "description": "<p>Integra la cúrcuma a tu rutina para favorecer el bienestar físico general.</p>"
+            "heading": "La inflamación de fondo empieza a responder",
+            "description": "<p>La curcumina comienza a circular y a actuar sobre las vías inflamatorias. Algunas personas notan menor rigidez matutina y mejor movilidad en las primeras semanas.</p>"
           }
         },
         "timeline_item_2_3Qr27B": {
           "type": "timeline_item",
           "settings": {
             "subheading": "Semanas 2–4",
-            "heading": "Mayor equilibrio articular",
-            "description": "<p>Con el uso constante, puede apoyar la movilidad y la comodidad diaria.</p>"
+            "heading": "Menos molestia, más movilidad",
+            "description": "<p>Con el uso constante, la inflamación crónica disminuye de forma más visible. Moverse duele menos. La recuperación post-esfuerzo es más rápida.</p>"
           }
         },
         "timeline_item_3_6WDi7E": {
           "type": "timeline_item",
           "settings": {
             "subheading": "Uso continuo",
-            "heading": "Uso continuo",
-            "description": "<p>Contribuye al cuidado celular y al equilibrio natural del cuerpo.</p>"
+            "heading": "Un cuerpo con menos carga inflamatoria",
+            "description": "<p>La curcumina tiene efecto preventivo acumulativo — no solo reduce la inflamación actual sino que contribuye a que se vuelva a acumular más lento. El beneficio crece con el tiempo.</p>"
           }
         }
       },
@@ -632,114 +847,6 @@
         "margin_bottom_mobile": 0
       }
     },
-    "vso_icon_benefits_01_QX0kww": {
-      "type": "vso-icon-benefits-01",
-      "blocks": {
-        "heading_TUMvsh": {
-          "type": "heading",
-          "settings": {
-            "content_alignment": "left",
-            "title": "<strong>Tecnología _liposomal para una mejor absorción</strong>",
-            "title_color": "#000000",
-            "title_highlight_color": "#478641",
-            "custom_title_font": false,
-            "title_as": "h4",
-            "title_font": "sans_serif_n4",
-            "title_size_desktop": 40,
-            "title_size_mobile": 32,
-            "title_line_height": 130,
-            "subtitle": "",
-            "subtitle_color": "#000000",
-            "custom_subtitle_font": false,
-            "subtitle_as": "p",
-            "subtitle_font": "sans_serif_n4",
-            "subtitle_size_desktop": 20,
-            "subtitle_size_mobile": 16,
-            "subtitle_line_height": 130,
-            "header_elements_gap": 16,
-            "header_blocks_gap": 50
-          }
-        },
-        "benefit_1_5lAsTN": {
-          "type": "benefit",
-          "settings": {
-            "title": "<strong>Alta absorción X5</strong>",
-            "text": "Favorece mayor disponibilidad del activo."
-          }
-        },
-        "benefit_2_WLkZAU": {
-          "type": "benefit",
-          "settings": {
-            "title": "<strong>Mejor aprovechamiento</strong>",
-            "text": "Ayuda a que cada cápsula trabaje mejor."
-          }
-        },
-        "benefit_3_XK8kZV": {
-          "type": "benefit",
-          "settings": {
-            "title": "<strong>Uso constante</strong>",
-            "text": "Apoya una experiencia más estable."
-          }
-        },
-        "benefit_4_gPhHh1": {
-          "type": "benefit",
-          "settings": {
-            "title": "<strong>Rutina fácil</strong>",
-            "text": "Cápsulas prácticas para el día a día."
-          }
-        }
-      },
-      "block_order": [
-        "heading_TUMvsh",
-        "benefit_1_5lAsTN",
-        "benefit_2_WLkZAU",
-        "benefit_3_XK8kZV",
-        "benefit_4_gPhHh1"
-      ],
-      "name": "VSO - Icon Benefits 01",
-      "settings": {
-        "enable_advanced_settings": false,
-        "section_max_width": 64,
-        "section_horizontal_padding": 24,
-        "padding_horizontal_mobile": 15,
-        "background_color": "#ffffff",
-        "full_width": true,
-        "section_border_radius": 12,
-        "section_border_radius_mobile": 0,
-        "padding_top_desktop": 40,
-        "padding_bottom_desktop": 40,
-        "padding_top_mobile": 20,
-        "padding_bottom_mobile": 20,
-        "margin_top_desktop": 40,
-        "margin_bottom_desktop": 40,
-        "margin_top_mobile": 20,
-        "margin_bottom_mobile": 20,
-        "mobile_columns": "2",
-        "blocks_alignment": "center",
-        "desktop_blocks_gap": 32,
-        "mobile_blocks_gap": 16,
-        "custom_blocks_title_font": false,
-        "blocks_title_as": "h3",
-        "blocks_title_font": "sans_serif_n4",
-        "block_title_size_desktop": 18,
-        "block_title_size_mobile": 18,
-        "block_title_line_height": 120,
-        "blocks_title_color": "#000000",
-        "custom_blocks_text_font": true,
-        "blocks_text_as": "p",
-        "blocks_text_font": "gelasio_n4",
-        "block_text_size_desktop": 20,
-        "block_text_size_mobile": 16,
-        "block_text_line_height": 150,
-        "blocks_text_color": "#000000",
-        "block_background_color": "rgba(0,0,0,0)",
-        "desktop_icon_size": 180,
-        "mobile_icon_size": 100,
-        "block_padding": 0,
-        "block_elements_gap": 16,
-        "block_border_radius": 0
-      }
-    },
     "vso_img_with_text_01_xtNmKG": {
       "type": "vso-img-with-text-01",
       "blocks": {
@@ -768,7 +875,7 @@
         "description_gdagdr": {
           "type": "description",
           "settings": {
-            "text": "Nuestra fórmula está diseñada para favorecer una mejor absorción de los activos de la cúrcuma, ayudando a que tu cuerpo los aproveche mejor dentro de tu rutina diaria.",
+            "text": "La cúrcuma en polvo, en té o en cápsula estándar no funciona como antiinflamatorio — el cuerpo absorbe menos del 1% de la curcumina porque es una molécula que solo se disuelve en grasa, no en agua. La versión liposomal encapsula la curcumina en grasa, le permite atravesar el sistema digestivo sin degradarse y llegar a los tejidos donde tiene que reducir la inflamación. Sin el liposomal, la cúrcuma simplemente no llega.",
             "text_custom": false,
             "text_font": "assistant_n4",
             "text_font_weight": "400",
@@ -947,6 +1054,7 @@
         "card_item_7_TC3pr9",
         "card_item_8_9b3ZpQ"
       ],
+      "disabled": true,
       "name": "VSO - Hero 45",
       "settings": {
         "enable_advanced_settings": false,
@@ -1448,7 +1556,7 @@
         "title_wMRzQ5": {
           "type": "title",
           "settings": {
-            "title": "<strong>Resuelve _tus dudas_ importantes</strong>",
+            "title": "<strong>Lo que suelen _preguntarnos</strong>",
             "title_color": "#000000",
             "title_highlight_color": "#478641",
             "custom_font": false,
@@ -1467,7 +1575,7 @@
         "subtitle_EvXGjz": {
           "type": "subtitle",
           "settings": {
-            "subtitle": "<p>Información clara para saber cómo integrar Cúrcuma Liposomal a tu rutina diaria.</p>",
+            "subtitle": "<p>Sobre Cúrcuma Liposomal de Fitoheal.</p>",
             "subtitle_color": "#121212",
             "custom_font": false,
             "subtitle_as": "p",
@@ -1510,15 +1618,15 @@
         "faq_item_1_nCxGYg": {
           "type": "faq_item",
           "settings": {
-            "question": "<strong>¿Para qué sirve la Cúrcuma Liposomal?</strong>",
-            "answer": "<p>Apoya la respuesta antiinflamatoria natural del cuerpo, favorece la salud articular y contribuye al bienestar antioxidante.</p>"
+            "question": "<strong>¿Por qué la cúrcuma que tomé antes no funcionó?</strong>",
+            "answer": "<p>Porque la curcumina — el compuesto activo — casi no se absorbe en su forma normal. El intestino es un ambiente acuoso y la curcumina solo se disuelve en grasa. El resultado: menos del 1% llega al cuerpo. La versión liposomal resuelve ese problema envolviendo la curcumina en grasa para que atraviese el sistema digestivo y llegue a los tejidos.</p>"
           }
         },
         "faq_item_2_ohlkGR": {
           "type": "faq_item",
           "settings": {
-            "question": "<strong>¿Cómo debo tomarla?</strong>",
-            "answer": "<p>Tomar de <strong>1 a 2 cápsulas al día</strong> con agua, preferiblemente junto a una comida o según tu rutina diaria. La etiqueta indica uso oral y dosis de 1 a 2 cápsulas al día.</p>"
+            "question": "<strong>¿Para qué sirve la Cúrcuma Liposomal?</strong>",
+            "answer": "<p>Para reducir la inflamación crónica — la de articulaciones, tejidos y sistema digestivo — y proteger las células con sus propiedades antioxidantes. No actúa como un analgésico inmediato, sino como un regulador de fondo que trabaja con el tiempo.</p>"
           }
         },
         "faq_item_3_aKHWJF": {
@@ -1531,8 +1639,22 @@
         "faq_item_4_jrk0ZU": {
           "type": "faq_item",
           "settings": {
-            "question": "<strong>¿Puedo tomarla todos los días?</strong>",
-            "answer": "<p>Sí, puede integrarse como parte de una rutina diaria de bienestar. Si estás embarazada, en lactancia o bajo tratamiento médico, consulta con un profesional de salud antes de usarla. La etiqueta también indica mantener fuera del alcance de los niños. </p>"
+            "question": "<strong>¿Cómo debo tomarla?</strong>",
+            "answer": "<p>1 a 2 cápsulas con las comidas. La presencia de grasa en los alimentos potencia la absorción de la curcumina — incluso en la versión liposomal.</p>"
+          }
+        },
+        "faq_item_4Thzdg": {
+          "type": "faq_item",
+          "settings": {
+            "question": "<strong> ¿Es lo mismo que tomar ibuprofeno?</strong>",
+            "answer": "<p>No. El ibuprofeno es un antiinflamatorio sintético de efecto inmediato que actúa bloqueando enzimas específicas. La curcumina actúa sobre múltiples vías inflamatorias de forma más gradual y sin los efectos secundarios gástricos del ibuprofeno. Son complementarios, no equivalentes.</p>"
+          }
+        },
+        "faq_item_ANRCkd": {
+          "type": "faq_item",
+          "settings": {
+            "question": "<strong>¿Y si lo tomo y no siento nada?</strong>",
+            "answer": "<p>La Cúrcuma Liposomal necesita consistencia — su efecto es gradual y acumulativo. Si después de 8 semanas de uso diario no notas diferencia en movilidad o inflamación, escríbenos para evaluar tu caso.</p>"
           }
         }
       },
@@ -1543,7 +1665,9 @@
         "faq_item_1_nCxGYg",
         "faq_item_2_ohlkGR",
         "faq_item_3_aKHWJF",
-        "faq_item_4_jrk0ZU"
+        "faq_item_4_jrk0ZU",
+        "faq_item_4Thzdg",
+        "faq_item_ANRCkd"
       ],
       "name": "VSO - FAQ 02",
       "settings": {
@@ -1590,9 +1714,11 @@
   },
   "order": [
     "vso_product_info_02_CB34KK",
+    "vso_img_with_text_01_TkhBTW",
+    "about_section_866ix9",
     "vso_hero_36_81fyqM",
-    "vso_hero_19_XGjzRA",
     "vso_icon_benefits_01_QX0kww",
+    "vso_hero_19_XGjzRA",
     "vso_img_with_text_01_xtNmKG",
     "vso_hero_45_8W1D8M",
     "vso_hero_32_5X7zMU",

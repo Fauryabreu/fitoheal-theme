@@ -57,7 +57,7 @@
         "text_WKhTaO": {
           "type": "text",
           "settings": {
-            "text": "<p>Apoya el _equilibrio emocional_, ayuda a manejar el _estrés diario_ y favorece un _descanso_ de mejor calidad.</p>",
+            "text": "<p>Tu sistema nervioso lleva semanas en modo alerta. _La Ashwagandha lo ayuda a apagarse.</p>",
             "text_highlight_color": "#d7fca3",
             "text_highlight_text_color": "#111111",
             "text_color": "#555555",
@@ -160,7 +160,7 @@
         "description_4X83w7": {
           "type": "description",
           "settings": {
-            "description_text": "<p>Una fórmula liposomal de alta absorción diseñada para apoyar tu bienestar diario, la calma mental y la calidad del sueño.</p>",
+            "description_text": "<p>Una fórmula liposomal de alta absorción que regula el cortisol — la hormona que le dice a tu cuerpo que está en peligro — para que puedas desconectarte al final del día y descansar de verdad.</p><p>⚠  Para embarazadas, personas en lactancia o quienes toman medicamentos para tiroides, presión o diabetes: consultar con un médico antes de tomar Ashwagandha.</p>",
             "description_color": "#111111",
             "description_font_size": 16,
             "description_font_size_mobile": 14,
@@ -177,7 +177,7 @@
           "type": "collapsible_row",
           "settings": {
             "title": "¿Cómo funciona la Ashwagandha?",
-            "content": "<p>La Ashwagandha es un adaptógeno natural que ayuda al cuerpo a manejar mejor el estrés diario. Su fórmula liposomal favorece una mejor absorción, apoyando la calma mental, el equilibrio emocional y el descanso.</p>",
+            "content": "<p>Regula el cortisol — la hormona del estrés. Cuando el cortisol está elevado de forma crónica, tu sistema nervioso no sabe apagarse: sigues en alerta aunque ya no haya peligro. La Ashwagandha le indica al cuerpo que puede bajar la guardia.</p>",
             "margin_top_desktop": 0,
             "margin_bottom_desktop": 0,
             "margin_top_mobile": 0,
@@ -188,7 +188,7 @@
           "type": "collapsible_row",
           "settings": {
             "title": "¿Cuándo debo tomarla?",
-            "content": "<p>Tomar <strong>1 a 2 cápsulas al día</strong>, preferiblemente con agua y según la tolerancia de cada persona. Para rutinas enfocadas en descanso, muchas personas prefieren tomarla en la tarde o noche. La etiqueta indica uso oral y dosis de 1 a 2 cápsulas al día. </p>",
+            "content": "<p>1 a 2 cápsulas en la tarde o noche, con agua. Muchas personas la toman como señal al cuerpo de que el día terminó. El efecto se acumula con el uso constante — no actúa como la cafeína en el momento.</p>",
             "margin_top_desktop": 0,
             "margin_bottom_desktop": 0,
             "margin_top_mobile": 0,
@@ -325,13 +325,120 @@
         "collapsible_icon_size": 30
       }
     },
+    "vso_img_with_text_01_6JyJrU": {
+      "type": "vso-img-with-text-01",
+      "blocks": {
+        "image_iLXhh6": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/ChatGPT_Image_24_jun_2026_14_52_04.png",
+            "image_height": 580,
+            "image_height_mobile": 400,
+            "image_border_radius": 8
+          }
+        },
+        "title_in8PtW": {
+          "type": "title",
+          "settings": {
+            "title": "¿Qué es la tecnología liposomal?",
+            "title_custom": false,
+            "title_font": "assistant_n4",
+            "title_font_weight": "700",
+            "title_font_size": 30,
+            "title_font_size_mobile": 24,
+            "title_margin_bottom": 20,
+            "title_color": "#0cc172"
+          }
+        },
+        "description_kKJhiC": {
+          "type": "description",
+          "settings": {
+            "text": "La tecnología liposomal ayuda a que los ingredientes activos lleguen mejor protegidos al cuerpo.Funciona mediante liposomas: pequeñas estructuras de fosfolípidos que encapsulan los nutrientes, los protegen durante la digestión y facilitan su transporte.El resultado: una absorción más eficiente y una mejor experiencia nutricional.",
+            "text_custom": false,
+            "text_font": "assistant_n4",
+            "text_font_weight": "400",
+            "text_alignment": "left",
+            "text_font_size": 16,
+            "text_font_size_mobile": 16,
+            "text_margin_bottom": 30,
+            "text_color": "#fafdf8"
+          }
+        },
+        "feature_PBUrrr": {
+          "type": "feature",
+          "disabled": true,
+          "settings": {
+            "text": "Hydration Retention",
+            "text_custom": false,
+            "text_font": "assistant_n4",
+            "text_font_weight": "400"
+          }
+        },
+        "feature_bT9PhR": {
+          "type": "feature",
+          "disabled": true,
+          "settings": {
+            "text": "Temperature Regulation",
+            "text_custom": false,
+            "text_font": "assistant_n4",
+            "text_font_weight": "400"
+          }
+        }
+      },
+      "block_order": [
+        "image_iLXhh6",
+        "title_in8PtW",
+        "description_kKJhiC",
+        "feature_PBUrrr",
+        "feature_bT9PhR"
+      ],
+      "name": "VSO - Img With Text 01",
+      "settings": {
+        "reverse_layout": false,
+        "mobile_reverse_layout": true,
+        "content_background_color": "#1c4332",
+        "features_gap": 20,
+        "features_margin_top": 10,
+        "feature_icon_size": 48,
+        "feature_icon_size_mobile": 32,
+        "feature_icon_border_radius": 0,
+        "feature_icon_margin_bottom": 10,
+        "feature_text_font_size": 14,
+        "feature_text_font_size_mobile": 14,
+        "feature_text_color": "#000000",
+        "feature_text_font_weight": "400",
+        "features_in_row": false,
+        "grid_max_width": 1220,
+        "section_max_width": 120,
+        "padding_desktop": 60,
+        "padding_tablet_mobile": 0,
+        "margin_desktop": 22,
+        "margin_bottom_desktop": 0,
+        "margin_tablet_mobile": 0,
+        "margin_bottom_tablet_mobile": 0,
+        "background_color": "#1c4332",
+        "background_gradient_color": ""
+      }
+    },
+    "about_section_KJ4PiU": {
+      "type": "about-section",
+      "settings": {
+        "bg_color": "#fafdf8",
+        "imagen_pos": "left",
+        "titulo": "¿Cómo funciona el liposomal?",
+        "descripcion": "<p>La tecnología liposomal funciona utilizando esferas microscópicas (llamadas liposomas) formadas por grasa para encapsular nutrientes. Actúan como un vehículo de transporte de alta tecnología que protege a los ingredientes de los ácidos estomacales y permite que se absorban directamente en las células. </p>",
+        "cta_label": "",
+        "cta_link": "",
+        "imagen": "shopify://shop_images/ChatGPT_Image_24_jun_2026_14_54_00.png"
+      }
+    },
     "vso_hero_36_81fyqM": {
       "type": "vso-hero-36",
       "blocks": {
         "heading_rUiuRq": {
           "type": "heading",
           "settings": {
-            "subtitle": "<strong>Bienestar emocional y descanso</strong>",
+            "subtitle": "",
             "subtitle_custom_font": false,
             "subtitle_as": "p",
             "subtitle_font": "poppins_n4",
@@ -340,9 +447,9 @@
             "subtitle_font_weight": 400,
             "subtitle_line_height": 140,
             "subtitle_letter_spacing": 1,
-            "subtitle_color": "#ffffff",
+            "subtitle_color": "#0CC172",
             "subtitle_spacing": 16,
-            "title": "<strong>Siente más calma en tu rutina diaria.</strong>",
+            "title": "<strong>Esto es para ti si...</strong>",
             "title_custom_font": false,
             "title_as": "h2",
             "title_font": "poppins_n6",
@@ -352,10 +459,10 @@
             "title_line_height": 120,
             "title_letter_spacing": 0,
             "title_color_type": "solid",
-            "title_color": "#ffffff",
+            "title_color": "#0CC172",
             "title_gradient": "linear-gradient(135deg, #EC4899 0%, #F472B6 100%)",
             "title_spacing": 16,
-            "text": "Transform your lashes with:",
+            "text": "",
             "text_custom_font": false,
             "text_as": "p",
             "text_font": "poppins_n4",
@@ -391,29 +498,29 @@
         "feature_1_iokXup": {
           "type": "feature",
           "settings": {
-            "feature_title": "<strong>Ayuda a reducir el estrés</strong>",
-            "feature_text": "Favorece una respuesta más equilibrada frente al estrés diario."
+            "feature_title": "<strong>Llegas al final del día y tu cabeza no para</strong>",
+            "feature_text": "Trabajo, pendientes, conversaciones que no cerraron. Te acuestas y sigues procesando todo."
           }
         },
         "feature_2_n0zBc0": {
           "type": "feature",
           "settings": {
-            "feature_title": "<strong>Equilibrio emocional</strong>",
-            "feature_text": "Apoya la calma mental y el bienestar general durante el día."
+            "feature_title": "<strong>Duermes pero no descansas</strong>",
+            "feature_text": "Te despiertas antes de la alarma o amaneces cansado. Las horas de sueño están, la recuperación no."
           }
         },
         "feature_3_2EfXxK": {
           "type": "feature",
           "settings": {
-            "feature_title": "<strong>Mejor descanso</strong>",
-            "feature_text": "Contribuye a una rutina de sueño más estable y reparadora."
+            "feature_title": "<strong>El estrés ya no tiene una causa clara</strong>",
+            "feature_text": "No es un problema puntual. Es una tensión de fondo que llevas semanas cargando sin que nada la baje."
           }
         },
         "feature_4_w0MBJV": {
           "type": "feature",
           "settings": {
-            "feature_title": "<strong>Energía sin estimulantes</strong>",
-            "feature_text": "Ideal para sentirte más centrado, sin depender de cafeína o estimulantes."
+            "feature_title": "<strong>Quieres algo natural, sin pastillas para dormir</strong>",
+            "feature_text": "Buscas apoyo real sin depender de algo que te deje aturdido o sin el que no puedas funcionar."
           }
         }
       },
@@ -435,7 +542,7 @@
         "section_outer_padding_bottom": 20,
         "section_outer_padding_top_mobile": 15,
         "section_outer_padding_bottom_mobile": 15,
-        "section_outer_bg_color": "#1e3b1d",
+        "section_outer_bg_color": "#1C4332",
         "full_width_desktop": false,
         "section_border_radius": 12,
         "section_border_radius_mobile": 0,
@@ -476,6 +583,114 @@
         "feature_text_font_weight": 400,
         "feature_text_line_height": 150,
         "feature_text_color": "#ffffff"
+      }
+    },
+    "vso_icon_benefits_01_QX0kww": {
+      "type": "vso-icon-benefits-01",
+      "blocks": {
+        "heading_TUMvsh": {
+          "type": "heading",
+          "settings": {
+            "content_alignment": "left",
+            "title": "<strong>Para cuando el día terminó, _pero tu cabeza sigue</strong>",
+            "title_color": "#000000",
+            "title_highlight_color": "#478641",
+            "custom_title_font": false,
+            "title_as": "h4",
+            "title_font": "sans_serif_n4",
+            "title_size_desktop": 40,
+            "title_size_mobile": 32,
+            "title_line_height": 130,
+            "subtitle": "",
+            "subtitle_color": "#000000",
+            "custom_subtitle_font": false,
+            "subtitle_as": "p",
+            "subtitle_font": "sans_serif_n4",
+            "subtitle_size_desktop": 20,
+            "subtitle_size_mobile": 16,
+            "subtitle_line_height": 130,
+            "header_elements_gap": 16,
+            "header_blocks_gap": 50
+          }
+        },
+        "benefit_1_5lAsTN": {
+          "type": "benefit",
+          "settings": {
+            "title": "<strong>Baja el cortisol</strong>",
+            "text": "Regula la hormona del estrés — el mensajero químico que mantiene tu sistema nervioso en alerta — para que tu cuerpo pueda descansar de verdad."
+          }
+        },
+        "benefit_2_WLkZAU": {
+          "type": "benefit",
+          "settings": {
+            "title": "<strong>Calma sin somnolencia</strong>",
+            "text": "No te duerme, te relaja. Puedes tomarlo y seguir con tu tarde sin sentirte aturdido ni con la cabeza pesada."
+          }
+        },
+        "benefit_3_XK8kZV": {
+          "type": "benefit",
+          "settings": {
+            "title": "<strong>Mejor calidad de sueño</strong>",
+            "text": "No es que duermas más horas — es que las horas que duermes, descansan de verdad. Menos vueltas en la cama, más recuperación real."
+          }
+        },
+        "benefit_4_gPhHh1": {
+          "type": "benefit",
+          "settings": {
+            "title": "<strong>Sin estimulantes</strong>",
+            "text": "Sin cafeína, sin rebote, sin dependencia. El efecto se construye con la constancia, no con una dosis cada vez más alta."
+          }
+        }
+      },
+      "block_order": [
+        "heading_TUMvsh",
+        "benefit_1_5lAsTN",
+        "benefit_2_WLkZAU",
+        "benefit_3_XK8kZV",
+        "benefit_4_gPhHh1"
+      ],
+      "name": "VSO - Icon Benefits 01",
+      "settings": {
+        "enable_advanced_settings": false,
+        "section_max_width": 64,
+        "section_horizontal_padding": 24,
+        "padding_horizontal_mobile": 15,
+        "background_color": "#ffffff",
+        "full_width": true,
+        "section_border_radius": 12,
+        "section_border_radius_mobile": 0,
+        "padding_top_desktop": 40,
+        "padding_bottom_desktop": 40,
+        "padding_top_mobile": 20,
+        "padding_bottom_mobile": 20,
+        "margin_top_desktop": 40,
+        "margin_bottom_desktop": 40,
+        "margin_top_mobile": 20,
+        "margin_bottom_mobile": 20,
+        "mobile_columns": "2",
+        "blocks_alignment": "center",
+        "desktop_blocks_gap": 32,
+        "mobile_blocks_gap": 16,
+        "custom_blocks_title_font": false,
+        "blocks_title_as": "h3",
+        "blocks_title_font": "sans_serif_n4",
+        "block_title_size_desktop": 18,
+        "block_title_size_mobile": 18,
+        "block_title_line_height": 120,
+        "blocks_title_color": "#000000",
+        "custom_blocks_text_font": true,
+        "blocks_text_as": "p",
+        "blocks_text_font": "gelasio_n4",
+        "block_text_size_desktop": 20,
+        "block_text_size_mobile": 16,
+        "block_text_line_height": 150,
+        "blocks_text_color": "#000000",
+        "block_background_color": "rgba(0,0,0,0)",
+        "desktop_icon_size": 180,
+        "mobile_icon_size": 100,
+        "block_padding": 0,
+        "block_elements_gap": 16,
+        "block_border_radius": 0
       }
     },
     "vso_hero_19_XGjzRA": {
@@ -546,24 +761,24 @@
           "type": "timeline_item",
           "settings": {
             "subheading": "Primeros días",
-            "heading": "Tu cuerpo empieza a adaptarse",
-            "description": "<p>La Ashwagandha puede ayudar a apoyar una respuesta más equilibrada frente al estrés diario y favorecer una sensación gradual de calma.</p>"
+            "heading": "Tu cuerpo empieza a recibir la señal",
+            "description": "<p>La Ashwagandha empieza a actuar sobre el cortisol. Algunas personas notan leve sensación de calma al final del día. No todos lo sienten desde el primer momento — y eso es normal.</p>"
           }
         },
         "timeline_item_2_3Qr27B": {
           "type": "timeline_item",
           "settings": {
             "subheading": "Semanas 2–4",
-            "heading": "Mayor equilibrio emocional",
-            "description": "<p>Con el uso constante, puede contribuir a sentirte más centrado durante el día y apoyar una rutina de descanso más estable.</p>"
+            "heading": "Menos irritabilidad, mejor descanso",
+            "description": "<p>Con el uso constante, el cortisol empieza a regularse. Te acuestas con menos pensamientos en loop, duermes más profundo y amaneces con más energía. La diferencia no es dramática — es estable.</p>"
           }
         },
         "timeline_item_3_6WDi7E": {
           "type": "timeline_item",
           "settings": {
             "subheading": "Uso continuo",
-            "heading": "Mejor bienestar diario",
-            "description": "<p>Como parte de una rutina saludable, puede favorecer la calma mental, el equilibrio de energía y la calidad del sueño.</p>"
+            "heading": "Un sistema nervioso que sabe descansar",
+            "description": "<p>No necesitas el día perfecto para desconectarte. Tu cuerpo aprende a bajar el nivel de alerta cuando el día termina. Ese es el beneficio real de la constancia.</p>"
           }
         }
       },
@@ -632,114 +847,6 @@
         "margin_bottom_mobile": 0
       }
     },
-    "vso_icon_benefits_01_QX0kww": {
-      "type": "vso-icon-benefits-01",
-      "blocks": {
-        "heading_TUMvsh": {
-          "type": "heading",
-          "settings": {
-            "content_alignment": "left",
-            "title": "<strong>Tecnología _liposomal para una mejor absorción</strong>",
-            "title_color": "#000000",
-            "title_highlight_color": "#478641",
-            "custom_title_font": false,
-            "title_as": "h4",
-            "title_font": "sans_serif_n4",
-            "title_size_desktop": 40,
-            "title_size_mobile": 32,
-            "title_line_height": 130,
-            "subtitle": "",
-            "subtitle_color": "#000000",
-            "custom_subtitle_font": false,
-            "subtitle_as": "p",
-            "subtitle_font": "sans_serif_n4",
-            "subtitle_size_desktop": 20,
-            "subtitle_size_mobile": 16,
-            "subtitle_line_height": 130,
-            "header_elements_gap": 16,
-            "header_blocks_gap": 50
-          }
-        },
-        "benefit_1_5lAsTN": {
-          "type": "benefit",
-          "settings": {
-            "title": "<strong>Alta absorción X5</strong>",
-            "text": "Favorece mayor disponibilidad del activo."
-          }
-        },
-        "benefit_2_WLkZAU": {
-          "type": "benefit",
-          "settings": {
-            "title": "<strong>Mejor aprovechamiento</strong>",
-            "text": "Ayuda a que cada cápsula trabaje mejor."
-          }
-        },
-        "benefit_3_XK8kZV": {
-          "type": "benefit",
-          "settings": {
-            "title": "<strong>Uso constante</strong>",
-            "text": "Apoya una experiencia más estable."
-          }
-        },
-        "benefit_4_gPhHh1": {
-          "type": "benefit",
-          "settings": {
-            "title": "<strong>Rutina fácil</strong>",
-            "text": "Cápsulas prácticas para el día a día."
-          }
-        }
-      },
-      "block_order": [
-        "heading_TUMvsh",
-        "benefit_1_5lAsTN",
-        "benefit_2_WLkZAU",
-        "benefit_3_XK8kZV",
-        "benefit_4_gPhHh1"
-      ],
-      "name": "VSO - Icon Benefits 01",
-      "settings": {
-        "enable_advanced_settings": false,
-        "section_max_width": 64,
-        "section_horizontal_padding": 24,
-        "padding_horizontal_mobile": 15,
-        "background_color": "#ffffff",
-        "full_width": true,
-        "section_border_radius": 12,
-        "section_border_radius_mobile": 0,
-        "padding_top_desktop": 40,
-        "padding_bottom_desktop": 40,
-        "padding_top_mobile": 20,
-        "padding_bottom_mobile": 20,
-        "margin_top_desktop": 40,
-        "margin_bottom_desktop": 40,
-        "margin_top_mobile": 20,
-        "margin_bottom_mobile": 20,
-        "mobile_columns": "2",
-        "blocks_alignment": "center",
-        "desktop_blocks_gap": 32,
-        "mobile_blocks_gap": 16,
-        "custom_blocks_title_font": false,
-        "blocks_title_as": "h3",
-        "blocks_title_font": "sans_serif_n4",
-        "block_title_size_desktop": 18,
-        "block_title_size_mobile": 18,
-        "block_title_line_height": 120,
-        "blocks_title_color": "#000000",
-        "custom_blocks_text_font": true,
-        "blocks_text_as": "p",
-        "blocks_text_font": "gelasio_n4",
-        "block_text_size_desktop": 20,
-        "block_text_size_mobile": 16,
-        "block_text_line_height": 150,
-        "blocks_text_color": "#000000",
-        "block_background_color": "rgba(0,0,0,0)",
-        "desktop_icon_size": 180,
-        "mobile_icon_size": 100,
-        "block_padding": 0,
-        "block_elements_gap": 16,
-        "block_border_radius": 0
-      }
-    },
     "vso_img_with_text_01_xtNmKG": {
       "type": "vso-img-with-text-01",
       "blocks": {
@@ -768,7 +875,7 @@
         "description_gdagdr": {
           "type": "description",
           "settings": {
-            "text": "Nuestra fórmula está diseñada para favorecer una mejor absorción del activo, ayudando a que tu cuerpo lo aproveche de forma más eficiente dentro de tu rutina diaria.",
+            "text": "La Ashwagandha en cápsula normal se degrada en el estómago — el ácido gástrico la descompone antes de que pueda actuar. La versión liposomal está envuelta en una capa de grasa idéntica a la de tus células, lo que le permite pasar el sistema digestivo sin destruirse y llegar directo al sistema nervioso donde tiene que trabajar.",
             "text_custom": false,
             "text_font": "assistant_n4",
             "text_font_weight": "400",
@@ -947,6 +1054,7 @@
         "card_item_7_TC3pr9",
         "card_item_8_9b3ZpQ"
       ],
+      "disabled": true,
       "name": "VSO - Hero 45",
       "settings": {
         "enable_advanced_settings": false,
@@ -1448,7 +1556,7 @@
         "title_wMRzQ5": {
           "type": "title",
           "settings": {
-            "title": "<strong>Resuelve _tus dudas_ importantes</strong>",
+            "title": "<strong>Lo que suelen _preguntarnos</strong>",
             "title_color": "#000000",
             "title_highlight_color": "#478641",
             "custom_font": false,
@@ -1467,7 +1575,7 @@
         "subtitle_EvXGjz": {
           "type": "subtitle",
           "settings": {
-            "subtitle": "<p><strong>Información clara para que sepas cómo integrar Ashwagandha Liposomal a tu rutina diaria.</strong></p>",
+            "subtitle": "<p>Sobre Ashwagandha Liposomal de Fitoheal.</p>",
             "subtitle_color": "#121212",
             "custom_font": false,
             "subtitle_as": "p",
@@ -1511,28 +1619,35 @@
           "type": "faq_item",
           "settings": {
             "question": "<strong>¿Para qué sirve la Ashwagandha Liposomal?</strong>",
-            "answer": "<p>Apoya el manejo del estrés diario, favorece el equilibrio emocional y contribuye a una mejor calidad de descanso.</p>"
+            "answer": "<p>Para regular el cortisol — la hormona del estrés — y ayudarle a tu sistema nervioso a descansar. Si al final del día tu mente sigue acelerada, duermes mal o te despiertas sin energía, la Ashwagandha actúa en la raíz de eso.</p>"
           }
         },
         "faq_item_2_ohlkGR": {
           "type": "faq_item",
           "settings": {
             "question": "<strong>¿Cómo debo tomarla?</strong>",
-            "answer": "<p><strong>Tomar de 1 a 2 cápsulas al día con agua, según tu rutina y tolerancia.</strong></p>"
+            "answer": "<p>1 a 2 cápsulas al día con agua, preferiblemente en la tarde o noche. Tómala a la misma hora todos los días — la constancia es lo que hace la diferencia, no la dosis.</p>"
           }
         },
         "faq_item_3_aKHWJF": {
           "type": "faq_item",
           "settings": {
             "question": "<strong>¿Qué diferencia tiene la tecnología liposomal?</strong>",
-            "answer": "<p>Ayuda a proteger y transportar los activos para favorecer una mejor absorción y aprovechamiento en el organismo.</p>"
+            "answer": "<p>La Ashwagandha normal se degrada en el estómago antes de llegar a donde tiene que actuar. La versión liposomal está protegida por una capa de grasa idéntica a la de tus células — entra directo al sistema nervioso y hace lo que tiene que hacer.</p>"
           }
         },
         "faq_item_4_jrk0ZU": {
           "type": "faq_item",
           "settings": {
-            "question": "<strong>¿Tiene estimulantes?</strong>",
-            "answer": "<p>No. Es una fórmula pensada para apoyar la calma, el equilibrio y el bienestar diario sin depender de estimulantes.</p>"
+            "question": "<strong>¿Tiene estimulantes o me va a dar sueño?</strong>",
+            "answer": "<p>No tiene estimulantes. No te da sueño directamente — te relaja. La diferencia es importante: no te va a dejar aturdido, pero sí puedes notar que es más fácil desconectarte y conciliar el sueño.</p>"
+          }
+        },
+        "faq_item_mAMQx3": {
+          "type": "faq_item",
+          "settings": {
+            "question": "<strong>¿Y si lo tomo y no siento nada?</strong>",
+            "answer": "<p>Verificar primero la constancia — la Ashwagandha necesita 2 a 4 semanas de uso diario para regular el cortisol de forma estable. Si llevas un mes tomándola correctamente y no notas diferencia, escríbenos. Te ayudamos a evaluar si es el producto correcto para ti.<br/></p>"
           }
         }
       },
@@ -1543,7 +1658,8 @@
         "faq_item_1_nCxGYg",
         "faq_item_2_ohlkGR",
         "faq_item_3_aKHWJF",
-        "faq_item_4_jrk0ZU"
+        "faq_item_4_jrk0ZU",
+        "faq_item_mAMQx3"
       ],
       "name": "VSO - FAQ 02",
       "settings": {
@@ -1590,9 +1706,11 @@
   },
   "order": [
     "vso_product_info_02_CB34KK",
+    "vso_img_with_text_01_6JyJrU",
+    "about_section_KJ4PiU",
     "vso_hero_36_81fyqM",
-    "vso_hero_19_XGjzRA",
     "vso_icon_benefits_01_QX0kww",
+    "vso_hero_19_XGjzRA",
     "vso_img_with_text_01_xtNmKG",
     "vso_hero_45_8W1D8M",
     "vso_hero_32_5X7zMU",

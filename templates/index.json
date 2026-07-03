@@ -24,17 +24,291 @@
         "item_3_link": ""
       }
     },
+    "1782847609a80ad226": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_006ab73_pYnPT3": {
+          "type": "ai_gen_block_006ab73",
+          "settings": {
+            "autoplay": true,
+            "autoplay_speed": 5,
+            "transition_type": "fade",
+            "show_arrows": true,
+            "show_dots": true,
+            "arrow_bg_color": "#fafdf8",
+            "arrow_color": "#1b4332",
+            "dot_color": "#fafdf8",
+            "fallback_color": "#2d6a4f",
+            "slide_1_media_type": "image",
+            "slide_1_image_desktop": "shopify://shop_images/ChatGPT_Image_30_jun_2026_16_33_37.png",
+            "slide_1_image_mobile": "shopify://shop_images/ChatGPT_Image_30_jun_2026_16_47_38.png",
+            "slide_1_video_url": "",
+            "slide_1_show_overlay": true,
+            "slide_1_overlay_opacity": 0,
+            "slide_1_heading": "",
+            "slide_1_heading_color": "#fafdf8",
+            "slide_1_subheading": "",
+            "slide_1_subheading_color": "#fafdf8",
+            "slide_1_text_alignment": "center",
+            "slide_1_vertical_position": "center",
+            "slide_1_button_1_text": "",
+            "slide_1_button_1_link": "",
+            "slide_1_button_1_bg_color": "#74c69d",
+            "slide_1_button_1_text_color": "#1b4332",
+            "slide_1_button_2_text": "",
+            "slide_1_button_2_link": "",
+            "slide_1_button_2_text_color": "#fafdf8",
+            "slide_2_media_type": "image",
+            "slide_2_video_url": "",
+            "slide_2_show_overlay": true,
+            "slide_2_overlay_opacity": 30,
+            "slide_2_heading": "",
+            "slide_2_heading_color": "#fafdf8",
+            "slide_2_subheading": "",
+            "slide_2_subheading_color": "#fafdf8",
+            "slide_2_text_alignment": "center",
+            "slide_2_vertical_position": "center",
+            "slide_2_button_1_text": "",
+            "slide_2_button_1_link": "",
+            "slide_2_button_1_bg_color": "#74c69d",
+            "slide_2_button_1_text_color": "#1b4332",
+            "slide_2_button_2_text": "",
+            "slide_2_button_2_link": "",
+            "slide_2_button_2_text_color": "#fafdf8",
+            "slide_3_media_type": "image",
+            "slide_3_video_url": "",
+            "slide_3_show_overlay": true,
+            "slide_3_overlay_opacity": 30,
+            "slide_3_heading": "",
+            "slide_3_heading_color": "#fafdf8",
+            "slide_3_subheading": "",
+            "slide_3_subheading_color": "#fafdf8",
+            "slide_3_text_alignment": "center",
+            "slide_3_vertical_position": "center",
+            "slide_3_button_1_text": "",
+            "slide_3_button_1_link": "",
+            "slide_3_button_1_bg_color": "#74c69d",
+            "slide_3_button_1_text_color": "#1b4332",
+            "slide_3_button_2_text": "",
+            "slide_3_button_2_link": "",
+            "slide_3_button_2_text_color": "#fafdf8"
+          },
+          "blocks": {}
+        },
+        "ai_gen_block_6d235a8_BJDaxw": {
+          "type": "ai_gen_block_6d235a8",
+          "disabled": true,
+          "settings": {
+            "height_desktop": "medium",
+            "height_mobile": "medium",
+            "overlay_opacity": 40,
+            "show_arrows": true,
+            "show_dots": true,
+            "autoplay": true,
+            "autoplay_speed": 5,
+            "pause_on_hover": true,
+            "transition_type": "fade",
+            "heading_font": "serif",
+            "body_font": "system_ui_n4",
+            "title_size_desktop": 64,
+            "title_size_mobile": 32,
+            "button_border_radius": 4,
+            "slide_1_video_desktop": "https://vimeo.com/1206808641?share=copy&fl=sv&fe=ci",
+            "slide_1_video_mobile": "",
+            "slide_1_eyebrow": "",
+            "slide_1_title": "",
+            "slide_1_subtitle": "",
+            "slide_1_h_align": "center",
+            "slide_1_v_align": "center",
+            "slide_1_btn_primary_text": "",
+            "slide_1_btn_primary_link": "",
+            "slide_1_btn_secondary_text": "",
+            "slide_1_btn_secondary_link": "",
+            "slide_2_video_desktop": "",
+            "slide_2_video_mobile": "",
+            "slide_2_eyebrow": "",
+            "slide_2_title": "",
+            "slide_2_subtitle": "",
+            "slide_2_h_align": "center",
+            "slide_2_v_align": "center",
+            "slide_2_btn_primary_text": "",
+            "slide_2_btn_primary_link": "",
+            "slide_2_btn_secondary_text": "",
+            "slide_2_btn_secondary_link": "",
+            "slide_3_video_desktop": "",
+            "slide_3_video_mobile": "",
+            "slide_3_eyebrow": "",
+            "slide_3_title": "",
+            "slide_3_subtitle": "",
+            "slide_3_h_align": "center",
+            "slide_3_v_align": "center",
+            "slide_3_btn_primary_text": "",
+            "slide_3_btn_primary_link": "",
+            "slide_3_btn_secondary_text": "",
+            "slide_3_btn_secondary_link": "",
+            "slide_4_video_desktop": "",
+            "slide_4_video_mobile": "",
+            "slide_4_eyebrow": "",
+            "slide_4_title": "",
+            "slide_4_subtitle": "",
+            "slide_4_h_align": "center",
+            "slide_4_v_align": "center",
+            "slide_4_btn_primary_text": "",
+            "slide_4_btn_primary_link": "",
+            "slide_4_btn_secondary_text": "",
+            "slide_4_btn_secondary_link": "",
+            "slide_5_video_desktop": "",
+            "slide_5_video_mobile": "",
+            "slide_5_eyebrow": "",
+            "slide_5_title": "",
+            "slide_5_subtitle": "",
+            "slide_5_h_align": "center",
+            "slide_5_v_align": "center",
+            "slide_5_btn_primary_text": "",
+            "slide_5_btn_primary_link": "",
+            "slide_5_btn_secondary_text": "",
+            "slide_5_btn_secondary_link": ""
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_006ab73_pYnPT3",
+        "ai_gen_block_6d235a8_BJDaxw"
+      ],
+      "settings": {}
+    },
+    "vso_hero_12_i9ifzL": {
+      "type": "vso-hero-12",
+      "blocks": {
+        "slide_YfKmky": {
+          "type": "slide",
+          "settings": {
+            "media_type": "image",
+            "slide_image": "shopify://shop_images/1_3db045ae-4130-4d5f-9bd9-be25789081f6.png",
+            "heading": "",
+            "description": "",
+            "button_label": "",
+            "button_url": ""
+          }
+        },
+        "slide_8XtUdi": {
+          "type": "slide",
+          "settings": {
+            "media_type": "image",
+            "slide_image": "shopify://shop_images/22.png",
+            "heading": "",
+            "description": "",
+            "button_label": "",
+            "button_url": ""
+          }
+        },
+        "slide_FFaHYD": {
+          "type": "slide",
+          "disabled": true,
+          "settings": {
+            "media_type": "image",
+            "heading": "Special Offers",
+            "description": "<p>Limited time deals on your favorite products</p>",
+            "button_label": "Shop Deals",
+            "button_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "slide_YfKmky",
+        "slide_8XtUdi",
+        "slide_FFaHYD"
+      ],
+      "disabled": true,
+      "name": "VSO - Hero Carousel 12",
+      "settings": {
+        "enable_advanced_settings": true,
+        "section_bg_type": "solid",
+        "section_bg_color": "#ffffff",
+        "section_bg_gradient": "linear-gradient(180deg, #ffffff 0%, #f3f4f6 100%)",
+        "bg_full_width": true,
+        "section_border_radius": 12,
+        "section_border_radius_mobile": 0,
+        "height_mode": "fixed",
+        "section_height": 700,
+        "height_mode_mobile": "fixed",
+        "section_height_mobile": 500,
+        "content_position_desktop": "center-left",
+        "content_position_mobile": "center-left",
+        "overlay_padding": 52,
+        "overlay_padding_mobile": 27,
+        "overlay_bg_color": "",
+        "section_full_width": true,
+        "section_max_width": 120,
+        "padding_horizontal": 0,
+        "padding_horizontal_mobile": 0,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "padding_top_mobile": 0,
+        "padding_bottom_mobile": 0,
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "margin_top_mobile": 0,
+        "margin_bottom_mobile": 0,
+        "enable_autoplay": true,
+        "autoplay_delay": 10,
+        "pause_on_interaction": false,
+        "enable_loop": true,
+        "transition_effect": "slide",
+        "transition_speed": 600,
+        "show_pagination": true,
+        "pagination_size": 12,
+        "pagination_gap": 8,
+        "pagination_color": "#ffffff80",
+        "pagination_active_color": "#ffffff",
+        "heading_margin_bottom": 10,
+        "heading_custom_font": false,
+        "heading_as": "h2",
+        "heading_font": "poppins_n4",
+        "heading_font_size": 48,
+        "heading_font_size_mobile": 36,
+        "heading_font_weight": 700,
+        "heading_line_height": 120,
+        "heading_letter_spacing": 0,
+        "heading_color": "#ffffff",
+        "description_margin_bottom": 10,
+        "description_custom_font": false,
+        "description_as": "p",
+        "description_font": "poppins_n4",
+        "description_font_size": 18,
+        "description_font_size_mobile": 16,
+        "description_font_weight": 400,
+        "description_line_height": 140,
+        "description_color": "#ffffff",
+        "button_custom_font": false,
+        "button_as": "p",
+        "button_font": "poppins_n4",
+        "button_font_size": 16,
+        "button_font_size_mobile": 14,
+        "button_font_weight": 500,
+        "button_padding_x": 32,
+        "button_padding_x_mobile": 20,
+        "button_padding_y": 18,
+        "button_border_radius": 25,
+        "button_bg_color": "#2c3e32",
+        "button_text_color": "#ffffff",
+        "button_hover_bg_color": "#1e2b22",
+        "button_hover_text_color": "#f0f8f2"
+      }
+    },
     "hero-grid": {
       "type": "hero-grid",
+      "disabled": true,
       "settings": {
         "bg_color": "#fafdf8",
-        "titulo": "No es solo suplementarte. Es absorber mejor.",
-        "subtitulo": "Fitoheal utiliza tecnología liposomal para ayudar a proteger y transportar los activos, favoreciendo una mejor absorción y aprovechamiento en tu rutina diaria.",
+        "titulo": "La evolución de la suplementación",
+        "subtitulo": "Tomar suplementos no siempre significa que tu cuerpo los aproveche.\nMuchos nutrientes pueden degradarse durante la digestión antes de llegar a donde realmente los necesitas: tus células.\nPor eso en FitoHeal decidimos hacerlo diferente: fórmulas liposomales de alta absorción, creadas para apoyar tu bienestar de forma más eficiente.",
         "texto_btn_primario": "Comprar ahora",
-        "link_btn_primario": "",
-        "texto_btn_secundario": "Descubre los kits",
+        "link_btn_primario": "shopify://pages/catalogo",
+        "texto_btn_secundario": "",
         "link_btn_secundario": "",
-        "imagen_hero": "shopify://shop_images/Hero_Principal.png",
+        "imagen_hero": "shopify://shop_images/banner_principa.png",
         "trust_icon_color": "#40916c",
         "trust_1_text": "Liposomal alta absorción X5",
         "trust_2_text": "Ingredientes naturales",
@@ -97,28 +371,574 @@
       ],
       "settings": {}
     },
+    "vso_video_carousel_01_mafDjU": {
+      "type": "vso-video-carousel-01",
+      "blocks": {
+        "video_MB4RyY": {
+          "type": "video",
+          "settings": {
+            "video": "shopify://files/videos/QUE ES LIPOSOMAL.mp4",
+            "title": "",
+            "description": "Qué son los suplementos liposomales"
+          }
+        },
+        "video_q3EmtX": {
+          "type": "video",
+          "settings": {
+            "video": "shopify://files/videos/333.mp4",
+            "title": "",
+            "description": "Beneficios de la tecnologia Liposomal"
+          }
+        },
+        "video_XMdYi4": {
+          "type": "video",
+          "settings": {
+            "video": "shopify://files/videos/111.mp4",
+            "title": "",
+            "description": "Suplementos: moda vs. necesidad real"
+          }
+        },
+        "video_j7e9Tw": {
+          "type": "video",
+          "disabled": true,
+          "settings": {
+            "video": "shopify://files/videos/o.mp4",
+            "title": "",
+            "description": "Cada fórmula de Fitoheal está diseñada con un objetivo"
+          }
+        }
+      },
+      "block_order": [
+        "video_MB4RyY",
+        "video_q3EmtX",
+        "video_XMdYi4",
+        "video_j7e9Tw"
+      ],
+      "name": "VSO - Video Carousel 01",
+      "settings": {
+        "heading": "",
+        "heading_color": "#1c4332",
+        "heading_highlight_color": "#facd56",
+        "heading_align": "center",
+        "heading_size": 32,
+        "heading_size_mobile": 24,
+        "heading_weight": 600,
+        "heading_custom_font": true,
+        "heading_font": "serif",
+        "slider_view": 3,
+        "slider_view_tablet": 3,
+        "slider_view_mobile": 1.2,
+        "slider_gap": 0,
+        "slider_gap_mobile": 0,
+        "slider_speed": 300,
+        "video_radius": 0,
+        "desktop_height_increase": 0,
+        "show_video_controls_desktop": false,
+        "show_video_controls_mobile": false,
+        "text_overlay_bg": "#000000",
+        "text_overlay_opacity": 0.2,
+        "title_color": "#ffffff",
+        "title_size": 20,
+        "title_size_mobile": 16,
+        "description_color": "#ffffff",
+        "description_size": 17,
+        "description_size_mobile": 12,
+        "disable_overlay_no_text": false,
+        "play_button_size": 60,
+        "play_button_size_mobile": 60,
+        "play_button_icon_size": 16,
+        "play_button_icon_size_mobile": 16,
+        "play_button_color": "#ffffff",
+        "play_button_bg": "rgba(0,0,0,0)",
+        "play_button_opacity": 0.7,
+        "play_button_border_color": "#ffffff",
+        "play_button_border_width": 2,
+        "play_button_pulse": false,
+        "play_button_pulse_color": "#000000",
+        "play_button_position": "top_right",
+        "arrow_show_desktop": true,
+        "arrow_show_mobile": false,
+        "disable_progress_bar_when_arrows_hidden": true,
+        "arrow_size": 46,
+        "arrow_icon_size": 20,
+        "arrow_color": "#000000",
+        "arrow_bg": "#ffffff",
+        "arrow_hover_color": "#000000",
+        "arrow_hover_bg": "#ffffff",
+        "arrow_border_color": "#808080",
+        "arrow_border_width": 1,
+        "arrow_stroke_width": 1.5,
+        "arrow_button_border_radius": 50,
+        "progress_bg_color": "#cccccc",
+        "progress_filled_color": "#000000",
+        "background_color": "#fafdf8",
+        "background_gradient": "",
+        "full_width": true,
+        "content_width": 120,
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "padding_top": 0,
+        "padding_bottom": 12,
+        "padding_horizontal": 0,
+        "padding_horizontal_mobile": 0,
+        "mobile_peek_percentage": 10
+      }
+    },
+    "vso_img_with_text_01_HLxdjV": {
+      "type": "vso-img-with-text-01",
+      "blocks": {
+        "image_bVtJPM": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/ChatGPT_Image_24_jun_2026_14_52_04.png",
+            "image_height": 580,
+            "image_height_mobile": 400,
+            "image_border_radius": 8
+          }
+        },
+        "title_Y6QBxe": {
+          "type": "title",
+          "settings": {
+            "title": "¿Qué es la tecnología liposomal?",
+            "title_custom": false,
+            "title_font": "assistant_n4",
+            "title_font_weight": "700",
+            "title_font_size": 30,
+            "title_font_size_mobile": 24,
+            "title_margin_bottom": 20,
+            "title_color": "#0cc172"
+          }
+        },
+        "description_w9LtYG": {
+          "type": "description",
+          "settings": {
+            "text": "La tecnología liposomal ayuda a que los ingredientes activos lleguen mejor protegidos al cuerpo.Funciona mediante liposomas: pequeñas estructuras de fosfolípidos que encapsulan los nutrientes, los protegen durante la digestión y facilitan su transporte.El resultado: una absorción más eficiente y una mejor experiencia nutricional.",
+            "text_custom": false,
+            "text_font": "assistant_n4",
+            "text_font_weight": "400",
+            "text_alignment": "left",
+            "text_font_size": 16,
+            "text_font_size_mobile": 16,
+            "text_margin_bottom": 30,
+            "text_color": "#fafdf8"
+          }
+        },
+        "feature_bUNBUz": {
+          "type": "feature",
+          "disabled": true,
+          "settings": {
+            "text": "Hydration Retention",
+            "text_custom": false,
+            "text_font": "assistant_n4",
+            "text_font_weight": "400"
+          }
+        },
+        "feature_VtTJM7": {
+          "type": "feature",
+          "disabled": true,
+          "settings": {
+            "text": "Temperature Regulation",
+            "text_custom": false,
+            "text_font": "assistant_n4",
+            "text_font_weight": "400"
+          }
+        }
+      },
+      "block_order": [
+        "image_bVtJPM",
+        "title_Y6QBxe",
+        "description_w9LtYG",
+        "feature_bUNBUz",
+        "feature_VtTJM7"
+      ],
+      "name": "VSO - Img With Text 01",
+      "settings": {
+        "reverse_layout": false,
+        "mobile_reverse_layout": true,
+        "content_background_color": "#1c4332",
+        "features_gap": 20,
+        "features_margin_top": 10,
+        "feature_icon_size": 48,
+        "feature_icon_size_mobile": 32,
+        "feature_icon_border_radius": 0,
+        "feature_icon_margin_bottom": 10,
+        "feature_text_font_size": 14,
+        "feature_text_font_size_mobile": 14,
+        "feature_text_color": "#000000",
+        "feature_text_font_weight": "400",
+        "features_in_row": false,
+        "grid_max_width": 1220,
+        "section_max_width": 120,
+        "padding_desktop": 60,
+        "padding_tablet_mobile": 0,
+        "margin_desktop": 0,
+        "margin_bottom_desktop": 0,
+        "margin_tablet_mobile": 0,
+        "margin_bottom_tablet_mobile": 0,
+        "background_color": "#1c4332",
+        "background_gradient_color": ""
+      }
+    },
+    "about-section": {
+      "type": "about-section",
+      "settings": {
+        "bg_color": "#fafdf8",
+        "imagen_pos": "left",
+        "titulo": "¿Cómo funciona el liposomal?",
+        "descripcion": "<p>La tecnología liposomal funciona utilizando esferas microscópicas (llamadas liposomas) formadas por grasa para encapsular nutrientes. Actúan como un vehículo de transporte de alta tecnología que protege a los ingredientes de los ácidos estomacales y permite que se absorban directamente en las células. </p>",
+        "cta_label": "",
+        "cta_link": "",
+        "imagen": "shopify://shop_images/ChatGPT_Image_24_jun_2026_14_54_00.png"
+      }
+    },
+    "vso_video_carousel_03_zPGYPV": {
+      "type": "vso-video-carousel-03",
+      "blocks": {
+        "video_block_gfC3Xq": {
+          "type": "video_block",
+          "settings": {
+            "video_file": "shopify://files/videos/elegir suplemento.mp4",
+            "video_url": "",
+            "testimonial_text": "",
+            "testimonial_author": ""
+          }
+        },
+        "video_block_MRbbFJ": {
+          "type": "video_block",
+          "settings": {
+            "video_file": "shopify://files/videos/BENEFICIOS DE LIPOSOMAL.mp4",
+            "video_url": "",
+            "testimonial_text": "",
+            "testimonial_author": ""
+          }
+        },
+        "video_block_Wmk4hx": {
+          "type": "video_block",
+          "settings": {
+            "video_file": "shopify://files/videos/QUE ES LIPOSOMAL.mp4",
+            "video_url": "",
+            "testimonial_text": "",
+            "testimonial_author": ""
+          }
+        },
+        "video_block_jNyw4e": {
+          "type": "video_block",
+          "settings": {
+            "video_file": "shopify://files/videos/o.mp4",
+            "video_url": "",
+            "testimonial_text": "\"My stomach thanks me for choosing Versio Golden Hibiscus instead of coffee every morning.\"",
+            "testimonial_author": "Amara – Oakland"
+          }
+        },
+        "video_block_qgV88j": {
+          "type": "video_block",
+          "disabled": true,
+          "settings": {
+            "video_url": "",
+            "testimonial_text": "\"Versio Cloudberry Matcha gives coffee-level clarity with steady focus all day.\"",
+            "testimonial_author": "Kenji – Portland"
+          }
+        }
+      },
+      "block_order": [
+        "video_block_gfC3Xq",
+        "video_block_MRbbFJ",
+        "video_block_Wmk4hx",
+        "video_block_jNyw4e",
+        "video_block_qgV88j"
+      ],
+      "disabled": true,
+      "name": "VSO - Video Carousel 03",
+      "settings": {
+        "enable_advanced_settings": true,
+        "content_width": 120,
+        "padding_horizontal_desktop": 0,
+        "padding_horizontal_mobile": 0,
+        "section_bg_type": "solid",
+        "section_bg_color": "#ffffff",
+        "section_bg_gradient": "linear-gradient(180deg, #EAF6FF 0%, #FFFFFF 100%)",
+        "full_width_desktop": true,
+        "section_border_radius": 0,
+        "padding_top_desktop": 0,
+        "padding_bottom_desktop": 0,
+        "padding_top_mobile": 0,
+        "padding_bottom_mobile": 0,
+        "margin_top_desktop": 24,
+        "margin_bottom_desktop": 8,
+        "margin_top_mobile": 0,
+        "margin_bottom_mobile": 0,
+        "header_alignment_desktop": "center",
+        "header_alignment_mobile": "center",
+        "description_alignment_desktop": "center",
+        "description_alignment_mobile": "center",
+        "heading": "¿Qué es la tecnología Liposomal?",
+        "custom_heading_font": false,
+        "heading_as": "h2",
+        "heading_size_desktop": 40,
+        "heading_size_mobile": 32,
+        "heading_font": "sans_serif_n4",
+        "heading_color": "#000000",
+        "heading_line_height": 130,
+        "heading_font_weight": 700,
+        "heading_bottom_spacing": 7,
+        "description": "La tecnología liposomal ayuda a que los ingredientes activos lleguen mejor protegidos al cuerpo. A través de pequeños liposomas, similares a las membranas celulares, los nutrientes se encapsulan para resistir mejor el proceso digestivo y favorecer una absorción más eficiente.",
+        "custom_description_font": false,
+        "description_as": "p",
+        "description_size_desktop": 20,
+        "description_size_mobile": 18,
+        "description_font": "sans_serif_n4",
+        "description_line_height": 150,
+        "description_color": "#0b0b0b",
+        "description_bottom_spacing": 17,
+        "testimonial_spacing_top_desktop": 24,
+        "testimonial_spacing_top_mobile": 24,
+        "testimonial_width_desktop": 640,
+        "custom_testimonial_text_font": false,
+        "testimonial_text_as": "p",
+        "testimonial_text_font": "sans_serif_n4",
+        "testimonial_text_size_desktop": 18,
+        "testimonial_text_size_mobile": 16,
+        "testimonial_text_line_height": 165,
+        "testimonial_text_font_weight": 500,
+        "testimonial_text_color": "#0b0b0b",
+        "custom_testimonial_author_font": false,
+        "testimonial_author_as": "p",
+        "testimonial_author_font": "sans_serif_n4",
+        "testimonial_author_size_desktop": 14,
+        "testimonial_author_size_mobile": 13,
+        "testimonial_author_line_height": 140,
+        "testimonial_author_font_weight": 600,
+        "testimonial_author_color": "#0b0b0b",
+        "video_autoplay": true,
+        "show_mute_button": true,
+        "show_play_button": true,
+        "video_border_radius": 12,
+        "video_button_size": 44,
+        "video_button_border_radius": 8,
+        "video_button_bg_color": "#ffffff",
+        "video_button_border_color": "#ffffff",
+        "video_button_border_width": 1,
+        "video_button_icon_color": "#ffffff",
+        "show_navigation_desktop": true,
+        "nav_arrow_size": 45,
+        "nav_arrow_bg_color": "#ffffff",
+        "nav_arrow_icon_color": "#262626",
+        "nav_arrow_border_color": "#e5e7eb",
+        "nav_arrow_border_width": 0,
+        "nav_arrow_shadow_enable": true,
+        "nav_arrow_shadow_color": "#000000"
+      }
+    },
+    "all_products_CT9cBY": {
+      "type": "all-products",
+      "name": "All Products",
+      "settings": {
+        "titulo": "Nuestros productos",
+        "subtitulo": "",
+        "show_subtitle": true,
+        "coleccion": "todos-los-productos",
+        "limite": 12,
+        "bg_color": "#fafdf8",
+        "btn_label": "Comprar ahora"
+      }
+    },
+    "vso_hero_54_GBrMXJ": {
+      "type": "vso-hero-54",
+      "blocks": {
+        "media_iKPzri": {
+          "type": "media",
+          "settings": {
+            "media_type": "image",
+            "image": "shopify://shop_images/ChatGPT_Image_24_jun_2026_14_58_24.png",
+            "media_height_desktop": 640,
+            "media_object_position_horizontal": "center",
+            "media_object_position_vertical": "center",
+            "media_height_mobile": 380,
+            "mobile_media_position": "top",
+            "media_object_position_horizontal_mobile": "center",
+            "media_object_position_vertical_mobile": "center",
+            "use_different_media_on_mobile": false,
+            "mobile_media_type": "image",
+            "enable_hover_zoom": true,
+            "media_lazy_load": true
+          }
+        },
+        "heading_4nURfc": {
+          "type": "heading",
+          "settings": {
+            "eyebrow": "",
+            "eyebrow_custom_font": false,
+            "eyebrow_as": "p",
+            "eyebrow_font": "poppins_n5",
+            "eyebrow_font_size": 14,
+            "eyebrow_font_size_mobile": 13,
+            "eyebrow_font_weight": 500,
+            "eyebrow_line_height": 130,
+            "eyebrow_letter_spacing": 1,
+            "eyebrow_color": "#2f2f2f",
+            "eyebrow_spacing": 5,
+            "title": "<strong>No es solo lo que tomas, es lo que tu cuerpo absorbe</strong>",
+            "title_custom_font": false,
+            "title_as": "h3",
+            "title_font": "poppins_n7",
+            "title_font_size": 42,
+            "title_font_size_mobile": 32,
+            "title_font_weight": 700,
+            "title_line_height": 110,
+            "title_letter_spacing": 0,
+            "title_color_type": "solid",
+            "title_color": "#ffffff",
+            "title_gradient": "linear-gradient(120deg, #FFFFFF 0%, #D1D5DB 100%)",
+            "margin_top": 21,
+            "margin_bottom": 0,
+            "margin_top_mobile": 0,
+            "margin_bottom_mobile": 0
+          }
+        },
+        "benefit_ECJGzC": {
+          "type": "benefit",
+          "settings": {
+            "title": "El problema con los suplementos normales",
+            "text": "Al tomarlos, tu cuerpo los procesa durante la digestión y parte de los ingredientes activos puede perderse antes de ser aprovechada.",
+            "show_divider": false
+          }
+        },
+        "benefit_bkxEia": {
+          "type": "benefit",
+          "settings": {
+            "title": "Lo que hace el liposomal",
+            "text": "Los ingredientes activos se protegen dentro de liposomas, pequeñas estructuras similares a las membranas celulares, que ayudan a transportarlos mejor.",
+            "show_divider": false
+          }
+        },
+        "benefit_74dWHm": {
+          "type": "benefit",
+          "settings": {
+            "title": "Por eso lo sientes diferente",
+            "text": "Al favorecer una mejor absorción, tu cuerpo puede aprovechar más cada fórmula. Esa es la diferencia entre tomar un suplemento convencional y elegir uno diseñado para absorberse mejor.",
+            "show_divider": false
+          }
+        },
+        "button_Rndggh": {
+          "type": "button",
+          "settings": {
+            "button_text": "Comprar ahora",
+            "button_action": "scroll_to_buy",
+            "button_link": "",
+            "button_bg_color": "#ffffff",
+            "button_text_color": "#1c4332",
+            "button_border_color": "#1a1a1a",
+            "button_border_width": 0,
+            "button_border_radius": 6,
+            "button_padding_vertical": 16,
+            "button_padding_horizontal": 36,
+            "button_padding_vertical_mobile": 14,
+            "button_padding_horizontal_mobile": 28,
+            "button_custom_font": true,
+            "button_font": "poppins_n6",
+            "button_font_size": 14,
+            "button_font_size_mobile": 13,
+            "button_font_weight": 600,
+            "button_letter_spacing": 1,
+            "margin_top": 8,
+            "margin_bottom": 24,
+            "margin_top_mobile": 8,
+            "margin_bottom_mobile": 0
+          }
+        }
+      },
+      "block_order": [
+        "media_iKPzri",
+        "heading_4nURfc",
+        "benefit_ECJGzC",
+        "benefit_bkxEia",
+        "benefit_74dWHm",
+        "button_Rndggh"
+      ],
+      "name": "VSO - Hero 54",
+      "settings": {
+        "enable_advanced_settings": false,
+        "section_bg_type": "solid",
+        "section_bg_color": "#1c4332",
+        "section_bg_gradient": "linear-gradient(180deg, #F1EFEC 0%, #E8E5E1 100%)",
+        "section_border_radius": 12,
+        "section_border_radius_mobile": 0,
+        "section_padding_top_mobile": 20,
+        "section_padding_bottom_mobile": 20,
+        "margin_top": 40,
+        "margin_bottom": 40,
+        "margin_top_mobile": 20,
+        "margin_bottom_mobile": 20,
+        "content_alignment": "left",
+        "content_alignment_mobile": "left",
+        "content_vertical_alignment": "center",
+        "content_vertical_alignment_mobile": "center",
+        "reverse_layout_desktop": true,
+        "double_inner_spacing": false,
+        "reverse_layout_mobile": false,
+        "content_max_width": 460,
+        "content_max_width_mobile": 460,
+        "media_column_width": 50,
+        "content_gap": 16,
+        "content_gap_mobile": 14,
+        "benefits_gap": 14,
+        "benefits_gap_mobile": 12,
+        "benefits_icon_text_gap": 16,
+        "benefits_icon_text_gap_mobile": 14,
+        "benefits_divider_color": "#ffffff",
+        "benefits_icon_color": "#1c4332",
+        "benefits_icon_bg_color": "#0cc172",
+        "benefits_icon_size": 48,
+        "benefits_icon_size_mobile": 44,
+        "benefits_icon_border_radius": 10,
+        "benefits_title_custom_font": false,
+        "benefits_title_as": "p",
+        "benefits_title_font": "poppins_n6",
+        "benefits_title_font_size": 16,
+        "benefits_title_font_size_mobile": 15,
+        "benefits_title_font_weight": 600,
+        "benefits_title_line_height": 140,
+        "benefits_title_letter_spacing": 0,
+        "benefits_title_color": "#0cc172",
+        "benefits_text_custom_font": false,
+        "benefits_text_as": "p",
+        "benefits_text_font": "poppins_n4",
+        "benefits_text_font_size": 15,
+        "benefits_text_font_size_mobile": 14,
+        "benefits_text_font_weight": 400,
+        "benefits_text_line_height": 150,
+        "benefits_text_letter_spacing": 0,
+        "benefits_text_color": "#ffffff",
+        "section_max_width": 90,
+        "section_horizontal_padding": 0,
+        "section_horizontal_padding_mobile": 0,
+        "section_border_width": 0,
+        "section_border_width_mobile": 0,
+        "section_border_color": "#ffffff"
+      }
+    },
     "how-it-works": {
       "type": "how-it-works",
       "blocks": {
         "s1": {
           "type": "step",
           "settings": {
-            "titulo": "Tecnología liposomal",
-            "descripcion": "Es una tecnología que ayuda a proteger los activos del suplemento para que tu cuerpo pueda absorberlos mejor."
+            "titulo": "El problema con los suplementos normales",
+            "descripcion": "Al tomarlos, tu cuerpo los procesa y los ácidos estomacales destruyen el principio activo  y la mayor parte no se absorbe."
           }
         },
         "s2": {
           "type": "step",
           "settings": {
-            "titulo": "Mejor absorción y aprovechamiento",
-            "descripcion": "Porque no basta con tomar un suplemento. Lo importante es que tu cuerpo pueda aprovecharlo bien."
+            "titulo": "Lo que hace el liposomal",
+            "descripcion": "El ingrediente se envuelve en una capa de grasa idéntica a la de tus propias células. Eso le permite pasar el sistema digestivo sin descomponerse y entrar directo donde tiene que actuar: en tu sistema nervioso si es para dormir, en tu intestino si es para la digestión, en tu cerebro si es para concentrarte."
           }
         },
         "s3": {
           "type": "step",
           "settings": {
-            "titulo": "Bienestar más enfocado",
-            "descripcion": "Más absorción, mejor aprovechamiento y fórmulas pensadas para objetivos como descanso, digestión, enfoque y metabolismo."
+            "titulo": "Por eso lo sientes diferente",
+            "descripcion": "La biodisponibilidad se aumenta y la absorción del p se aumenta. Esa es la diferencia entre un suplemento que tomas y uno que tu cuerpo realmente usa."
           }
         }
       },
@@ -127,11 +947,12 @@
         "s2",
         "s3"
       ],
+      "disabled": true,
       "settings": {
         "bg_color": "#ffffff",
-        "titulo": "¿Por qué elegir una fórmula liposomal?",
+        "titulo": "¿Has tomado suplementos semanas enteras y no sentiste nada?",
         "cta_label": "Encuentra tu fórmula",
-        "cta_link": "",
+        "cta_link": "shopify://pages/catalogo",
         "imagen": "shopify://shop_images/Como_funciona.png"
       }
     },
@@ -251,10 +1072,148 @@
       ],
       "settings": {
         "bg_color": "#fafdf8",
-        "titulo": "Elige tu fórmula liposomal según tu objetivo",
-        "descripcion": "Cada fórmula Fitoheal está diseñada para favorecer una mejor absorción y apoyar una necesidad concreta de tu rutina diaria.",
-        "cta_label": "Conoce nuestra línea",
-        "cta_link": ""
+        "titulo": "Elige tu suplemento según lo que quieres mejorar",
+        "descripcion": "Fórmulas liposomales individuales para apoyar objetivos como descanso, digestión, enfoque y metabolismo.",
+        "cta_label": "",
+        "cta_link": "shopify://pages/catalogo"
+      }
+    },
+    "vso_hero_13_DLDjJD": {
+      "type": "vso-hero-13",
+      "blocks": {
+        "heading_RqTzV6": {
+          "type": "heading",
+          "settings": {
+            "logo_size_desktop": 120,
+            "logo_size_mobile": 80,
+            "logo_margin_bottom": 24,
+            "heading": "_<strong>Hay una fórmula para lo que estás sintiendo.</strong>_",
+            "heading_margin_bottom": 10,
+            "heading_custom_font": false,
+            "heading_as": "h2",
+            "heading_font": "poppins_n4",
+            "heading_size_desktop": 56,
+            "heading_size_mobile": 32,
+            "heading_font_weight": 600,
+            "heading_line_height": 1.2,
+            "heading_color": "#ffffff",
+            "heading_highlight_color": "linear-gradient(135deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1) 100%)",
+            "spacing_top_desktop": 0,
+            "spacing_bottom_desktop": 0,
+            "spacing_top_mobile": 0,
+            "spacing_bottom_mobile": 0
+          }
+        },
+        "description_cnfBGb": {
+          "type": "description",
+          "settings": {
+            "description": "<p>FitoHeal combina ingredientes seleccionados, tecnología liposomal y procesos enfocados en calidad para favorecer una mejor absorción y un mejor aprovechamiento en tu rutina diaria. Y cuando un objetivo necesita un apoyo más completo, reunimos fórmulas complementarias en kits pensados para descanso, digestión, metabolismo, desinflamación y enfoque.</p>",
+            "description_margin_bottom": 10,
+            "description_custom_font": false,
+            "description_as": "p",
+            "description_font": "poppins_n4",
+            "description_size_desktop": 18,
+            "description_size_mobile": 16,
+            "description_font_weight": 400,
+            "description_line_height": 1.5,
+            "description_max_width": 500,
+            "description_color": "#ffffff",
+            "spacing_top_desktop": 10,
+            "spacing_bottom_desktop": 10,
+            "spacing_top_mobile": 10,
+            "spacing_bottom_mobile": 10
+          }
+        },
+        "button_ihHQ4y": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_text": "SHOP SKINCARE",
+            "button_link_type": "url",
+            "button_url": "",
+            "button_custom_font": false,
+            "button_as": "p",
+            "button_font": "poppins_n4",
+            "button_text_size_desktop": 16,
+            "button_text_size_mobile": 14,
+            "button_font_weight": 600,
+            "button_padding_vertical": 16,
+            "button_padding_horizontal": 40,
+            "button_padding_horizontal_mobile": 32,
+            "button_radius": 50,
+            "button_full_width": true,
+            "button_bg_color": "linear-gradient(135deg, rgba(236, 72, 153, 1), rgba(244, 114, 182, 1) 100%)",
+            "button_text_color": "#ffffff",
+            "button_enable_glare": true,
+            "button_glare_color": "#ffffff",
+            "feature_1_text": "Natural Ingredients",
+            "feature_2_text": "Dermatologist Tested",
+            "feature_3_text": "Cruelty Free",
+            "features_custom_font": false,
+            "features_as": "p",
+            "features_font": "assistant_n4",
+            "feature_text_size_desktop": 12,
+            "feature_text_size_mobile": 11,
+            "feature_text_weight": 400,
+            "feature_text_line_height": 1.5,
+            "feature_text_color": "#ffffff",
+            "feature_icon_size": 20,
+            "feature_icon_gap": 4,
+            "feature_icon_color": "#ffffff",
+            "features_gap": 16,
+            "features_margin_top": 16,
+            "spacing_top_desktop": 0,
+            "spacing_bottom_desktop": 0,
+            "spacing_top_mobile": 0,
+            "spacing_bottom_mobile": 0
+          }
+        }
+      },
+      "block_order": [
+        "heading_RqTzV6",
+        "description_cnfBGb",
+        "button_ihHQ4y"
+      ],
+      "name": "VSO - Hero 13",
+      "settings": {
+        "enable_advanced_settings": false,
+        "section_max_width": 120,
+        "section_min_height": 600,
+        "section_min_height_mobile": 500,
+        "padding_horizontal": 0,
+        "padding_horizontal_mobile": 0,
+        "section_bg_type": "solid",
+        "section_bg_color": "#1c4332",
+        "section_bg_gradient": "linear-gradient(180deg, #0F172A 0%, #0B1220 100%)",
+        "full_width_desktop": false,
+        "full_width_mobile": false,
+        "section_radius": 16,
+        "section_radius_mobile": 16,
+        "section_text_color": "#ffffff",
+        "content_max_width": 600,
+        "desktop_grid_gap": 40,
+        "polaroid_column_gap": 32,
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "margin_top_mobile": 0,
+        "margin_bottom_mobile": 0,
+        "polaroid_1_image": "shopify://shop_images/ChatGPT_Image_23_jun_2026_13_32_40.png",
+        "polaroid_1_rotation": -20,
+        "polaroid_2_image": "shopify://shop_images/ChatGPT_Image_23_jun_2026_13_40_47.png",
+        "polaroid_2_rotation": 15,
+        "polaroid_3_image": "shopify://shop_images/ChatGPT_Image_28_may_2026_13_11_10.png",
+        "polaroid_3_rotation": 25,
+        "polaroid_4_image": "shopify://shop_images/ChatGPT_Image_20_may_2026_13_51_09.png",
+        "polaroid_4_rotation": -12,
+        "polaroid_width": 180,
+        "polaroid_height": 220,
+        "polaroid_width_mobile": 120,
+        "polaroid_height_mobile": 140,
+        "polaroids_mobile_margin_bottom": 32,
+        "polaroid_padding": 5,
+        "polaroid_radius": 4,
+        "polaroid_image_radius": 2,
+        "polaroid_enable_shadow": true
       }
     },
     "kits-section": {
@@ -265,7 +1224,7 @@
           "settings": {
             "imagen": "shopify://shop_images/kit_descanso_estress.png",
             "nombre": "Estrés / Sueño",
-            "descripcion": "Relájate, baja el estrés y mejora tu descanso.",
+            "descripcion": "Baja el cortisol, entra en calma. Duerme profundo sin depender de nada.",
             "cta_label": "Ver kit",
             "cta_link": "shopify://products/kit-sueno-estres"
           }
@@ -285,7 +1244,7 @@
           "settings": {
             "imagen": "shopify://shop_images/Kit_Metabolismo.png",
             "nombre": "Metabólico",
-            "descripcion": "Apoya el metabolismo de la glucosa y la inflamación.",
+            "descripcion": "Glucosa, inflamación, energía. Un reset para el metabolismo.",
             "cta_label": "Ver kit",
             "cta_link": "shopify://products/kit-metabolico"
           }
@@ -293,7 +1252,7 @@
         "kit-4": {
           "type": "kit",
           "settings": {
-            "imagen": "shopify://shop_images/Kit_Focus.png",
+            "imagen": "shopify://shop_images/ChatGPT_Image_5_jun_2026_11_39_26.png",
             "nombre": "Focus",
             "descripcion": "Claridad mental, concentración y energía sostenida.",
             "cta_label": "Ver kit",
@@ -309,32 +1268,149 @@
       ],
       "settings": {
         "bg_color": "#ffffff",
-        "titulo": "Kits diseñados para tus objetivos"
+        "titulo": "Kits pensados para lo que tu cuerpo necesita"
       }
     },
-    "all_products_CT9cBY": {
-      "type": "all-products",
-      "name": "All Products",
+    "vso_hero_14_Qz6GQN": {
+      "type": "vso-hero-14",
+      "blocks": {
+        "heading_hh4QfC": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>Fitoheal es para ti, si...</strong>",
+            "heading_margin_bottom": 8,
+            "heading_margin_bottom_mobile": 8,
+            "heading_custom_font": false,
+            "heading_as": "h1",
+            "heading_font": "poppins_n4",
+            "heading_size_desktop": 48,
+            "heading_size_mobile": 32,
+            "heading_color": "#1f2937",
+            "heading_weight": 600,
+            "heading_highlight_color": "linear-gradient(135deg, rgba(16, 185, 129, 1), rgba(5, 150, 105, 1) 100%)",
+            "heading_highlight_custom_font": false,
+            "heading_highlight_font": "poppins_n4",
+            "heading_highlight_size_desktop": 48,
+            "heading_highlight_size_mobile": 32,
+            "heading_highlight_weight": 600
+          }
+        },
+        "media_7PQNKq": {
+          "type": "media",
+          "settings": {
+            "media_type": "image",
+            "image": "shopify://shop_images/ChatGPT_Image_21_jun_2026_18_17_10.png",
+            "video_url": "",
+            "image_radius": 12,
+            "image_min_height_desktop": 400,
+            "image_max_height_desktop": 600,
+            "video_autoplay": true,
+            "video_loop": true,
+            "video_muted": true,
+            "video_controls": false,
+            "mobile_media_type": "image",
+            "mobile_video_url": "",
+            "image_min_height_mobile": 400,
+            "image_max_height_mobile": 500,
+            "mobile_video_autoplay": true,
+            "mobile_video_loop": true,
+            "mobile_video_muted": true,
+            "mobile_video_controls": false
+          }
+        },
+        "feature_6FTJwF": {
+          "type": "feature",
+          "settings": {
+            "heading": "Duermes pero sientes que no descansas",
+            "description": "<p>Das vueltas en la cama, sientes que no descansas, o antes de comenzar tus actividades</p>"
+          }
+        },
+        "feature_4WntVw": {
+          "type": "feature",
+          "settings": {
+            "heading": "Tu digestión te interrumpe el día",
+            "description": "<p>Comes y te sientes pesado o hinchado. El malestar aparece, y ya no sabes qué lo causa.</p>"
+          }
+        },
+        "feature_aaDwrW": {
+          "type": "feature",
+          "settings": {
+            "heading": "Tu mente no se enfoca, no rinde como antes",
+            "description": "<p>Empiezas con intención y al mediodía ya no puedes. Necesitas cafeína solo para funcionar.</p>"
+          }
+        },
+        "feature_M4tCWj": {
+          "type": "feature",
+          "settings": {
+            "heading": "Sientes tu cuerpo pesado o inflamado",
+            "description": "<p>Te cuidas, intentas comer mejor, pero aún sientes pesadez, inflamación o que tu metabolismo no responde como quisieras.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_hh4QfC",
+        "media_7PQNKq",
+        "feature_6FTJwF",
+        "feature_4WntVw",
+        "feature_aaDwrW",
+        "feature_M4tCWj"
+      ],
+      "name": "VSO - Hero 14",
       "settings": {
-        "titulo": "Nuestros productos",
-        "subtitulo": "",
-        "show_subtitle": true,
-        "coleccion": "",
-        "limite": 12,
-        "bg_color": "#ffffff",
-        "btn_label": "Comprar ahora"
-      }
-    },
-    "about-section": {
-      "type": "about-section",
-      "settings": {
-        "bg_color": "#fafdf8",
-        "imagen_pos": "right",
-        "titulo": "Más sobre Fitoheal",
-        "descripcion": "<p>Somos un sistema de soluciones liposomales de alta absorción con ingredientes seleccionados y ciencia moderna para acompañarte en tus objetivos sin restricciones impuestas.</p><p>Creados para integrarse fácilmente a tu rutina diaria y ayudarte a sentir la mejor versión. Todos los días.</p>",
-        "cta_label": "Conoce nuestra historia",
-        "cta_link": "",
-        "imagen": "shopify://shop_images/Sobre_FitoHeal.png"
+        "enable_advanced_settings": false,
+        "section_bg_type": "solid",
+        "section_bg_color": "#fbfdf9",
+        "section_bg_gradient": "linear-gradient(135deg, #FFFFFF 0%, #F7F7F7 100%)",
+        "section_full_width": true,
+        "section_border_radius": 12,
+        "section_border_radius_mobile": 0,
+        "section_text_color": "#1f2937",
+        "padding_top": 40,
+        "padding_bottom": 40,
+        "padding_top_mobile": 20,
+        "padding_bottom_mobile": 20,
+        "margin_top": 40,
+        "margin_bottom": 40,
+        "margin_top_mobile": 20,
+        "margin_bottom_mobile": 20,
+        "mobile_media_above": false,
+        "section_max_width": 120,
+        "padding_horizontal": 0,
+        "padding_horizontal_mobile": 16,
+        "content_gap_desktop": 60,
+        "content_gap_mobile": 20,
+        "content_max_width_desktop": 46,
+        "content_horizontal_padding": 40,
+        "content_horizontal_padding_mobile": 0,
+        "feature_alignment_desktop": "left",
+        "feature_alignment_mobile": "left",
+        "features_gap": 24,
+        "feature_padding_vertical": 12,
+        "feature_padding_horizontal": 12,
+        "feature_radius": 8,
+        "feature_border_width": 1,
+        "feature_border_style": "dashed",
+        "feature_bg_color": "#ffffff",
+        "feature_border_color": "#e5e7eb",
+        "feature_icon_size": 32,
+        "feature_icon_gap": 8,
+        "feature_icon_color": "#10b981",
+        "feature_heading_margin_bottom": 8,
+        "feature_heading_custom_font": false,
+        "feature_heading_as": "h3",
+        "feature_heading_font": "poppins_n4",
+        "feature_heading_size_desktop": 18,
+        "feature_heading_size_mobile": 16,
+        "feature_heading_color": "#1f2937",
+        "feature_heading_weight": 600,
+        "feature_description_custom_font": false,
+        "feature_description_as": "p",
+        "feature_description_font": "poppins_n4",
+        "feature_description_size_desktop": 14,
+        "feature_description_size_mobile": 14,
+        "feature_description_line_height": 1.4,
+        "feature_description_color": "#6b7280",
+        "feature_description_weight": 400
       }
     },
     "cta-banner": {
@@ -343,9 +1419,186 @@
         "bg_color": "#1b4332",
         "texto": "Descubre cómo la tecnología liposomal puede apoyar tu rutina diaria",
         "btn_primario_label": "Comprar ahora",
-        "btn_primario_link": "",
+        "btn_primario_link": "shopify://pages/catalogo",
         "btn_secundario_label": "",
         "btn_secundario_link": ""
+      }
+    },
+    "vso_faq_02_4p8iQ4": {
+      "type": "vso-faq-02",
+      "blocks": {
+        "title_EyikRj": {
+          "type": "title",
+          "settings": {
+            "title": "Lo que suelen _preguntarnos_",
+            "title_color": "#000000",
+            "title_highlight_color": "#40916c",
+            "custom_font": false,
+            "title_as": "h2",
+            "font": "bricolage_grotesque_n4",
+            "title_size": 40,
+            "title_size_mobile": 26,
+            "title_alignment_desktop": "left",
+            "title_alignment_mobile": "center",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "margin_top_mobile": 0,
+            "margin_bottom_mobile": 0
+          }
+        },
+        "subtitle_jiMXqV": {
+          "type": "subtitle",
+          "settings": {
+            "subtitle": "<p>Todo lo que necesitas saber para elegir y usar mejor tus fórmulas liposomales Fitoheal.</p>",
+            "subtitle_color": "#333333",
+            "custom_font": false,
+            "subtitle_as": "p",
+            "font": "bricolage_grotesque_n4",
+            "subtitle_size": 20,
+            "subtitle_size_mobile": 18,
+            "subtitle_alignment_desktop": "left",
+            "subtitle_alignment_mobile": "center",
+            "margin_top": 10,
+            "margin_bottom": 10,
+            "margin_top_mobile": 10,
+            "margin_bottom_mobile": 10
+          }
+        },
+        "team_4Q6kCV": {
+          "type": "team",
+          "disabled": true,
+          "settings": {
+            "team_images_count": 3,
+            "team_image_size": 60,
+            "team_image_border_width": 2,
+            "team_image_border_color": "#ffffff",
+            "team_images_overlap": 10,
+            "team_images_margin_bottom": 10,
+            "paragraph": "Expect a reply within one business day.",
+            "team_paragraph_color": "#333333",
+            "custom_font": false,
+            "team_paragraph_as": "p",
+            "font": "bricolage_grotesque_n4",
+            "team_paragraph_size": 18,
+            "team_paragraph_size_mobile": 16,
+            "team_alignment_desktop": "left",
+            "team_alignment_mobile": "center",
+            "margin_top": 0,
+            "margin_bottom": 0,
+            "margin_top_mobile": 0,
+            "margin_bottom_mobile": 30
+          }
+        },
+        "faq_item_3KA4VF": {
+          "type": "faq_item",
+          "settings": {
+            "question": "<strong>¿Por qué un suplemento liposomal funciona diferente?</strong>",
+            "answer": "<p>Porque llega. Los suplementos normales tu cuerpo los procesa y no llega a absorberse. El liposomal está protegido por una capa de grasa igual a la de tus células — tu cuerpo no lo destruye, entra directo y hace lo que tiene que hacer.</p>"
+          }
+        },
+        "faq_item_NMUmjw": {
+          "type": "faq_item",
+          "settings": {
+            "question": "<strong>¿Qué significa \"5x más absorción\"?</strong>",
+            "answer": "<p>Comparado con el mismo ingrediente en cápsula o tableta estándar, la tecnología liposomal puede alcanzar una absorción hasta 5 veces mayor. </p>"
+          }
+        },
+        "faq_item_piUwNz": {
+          "type": "faq_item",
+          "settings": {
+            "question": "<strong>¿Cómo sé cuál producto es para mí?</strong>",
+            "answer": "<p>Piensa en tu síntoma principal: mal sueño, digestión lenta, mente nublada, o metabolismo que no acompaña. La sección \"Elige tu fórmula\" te lleva directo. Si tienes más de uno, los kits están diseñados exactamente para eso.</p>"
+          }
+        },
+        "faq_item_AEU8mN": {
+          "type": "faq_item",
+          "settings": {
+            "question": "<strong>¿Puedo tomar varios productos al mismo tiempo?</strong>",
+            "answer": "<p>Sí. Los kits están diseñados para eso — combinaciones que se complementan. Si estás embarazada, en lactancia o bajo tratamiento médico, consulta primero con un profesional.</p>"
+          }
+        },
+        "faq_item_f8fhTQ": {
+          "type": "faq_item",
+          "settings": {
+            "question": "<strong>¿Y si lo tomo y no siento nada?</strong>",
+            "answer": "<p>Primero, revisar la constancia y el objetivo. El liposomal mejora la absorción, pero necesita tiempo y rutina. Si llevas semanas tomándolo correctamente y no notas nada, escríbenos — te ayudamos a encontrar la fórmula correcta.</p>"
+          }
+        },
+        "faq_item_ztkDxp": {
+          "type": "faq_item",
+          "settings": {
+            "question": "<strong>¿Fitoheal reemplaza un médico?</strong>",
+            "answer": "<p>No. Fitoheal apoya el bienestar diario — no diagnostica ni trata enfermedades. Si tienes una condición de salud, consulta con un profesional primero.</p>"
+          }
+        },
+        "faq_item_UMrDeM": {
+          "type": "faq_item",
+          "settings": {
+            "question": "<strong>¿Puedo combinar varios productos?</strong>",
+            "answer": "<p>Sí, algunos productos están pensados para complementarse en kits. Si estás embarazada, en lactancia, bajo tratamiento médico o tienes una condición de salud, consulta primero con un profesional.</p>"
+          }
+        },
+        "faq_item_DJn9rB": {
+          "type": "faq_item",
+          "settings": {
+            "question": "<strong>¿Fitoheal reemplaza un tratamiento médico?</strong>",
+            "answer": "<p>No. Fitoheal es un apoyo para el bienestar diario. No reemplaza diagnósticos, tratamientos ni recomendaciones médicas profesionales.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "title_EyikRj",
+        "subtitle_jiMXqV",
+        "team_4Q6kCV",
+        "faq_item_3KA4VF",
+        "faq_item_NMUmjw",
+        "faq_item_piUwNz",
+        "faq_item_AEU8mN",
+        "faq_item_f8fhTQ",
+        "faq_item_ztkDxp",
+        "faq_item_UMrDeM",
+        "faq_item_DJn9rB"
+      ],
+      "name": "VSO - FAQ 02",
+      "settings": {
+        "enable_advanced_settings": false,
+        "section_full_width": false,
+        "section_max_width_desktop": 120,
+        "padding_horizontal": 20,
+        "padding_horizontal_mobile": 15,
+        "desktop_column_gap": 20,
+        "left_column_padding_right_desktop": 40,
+        "section_bg_type": "solid",
+        "section_bg_color": "#fbfdf9",
+        "section_bg_gradient": "linear-gradient(360deg, rgba(245, 245, 245, 1), rgba(255, 255, 255, 1) 100%)",
+        "full_width_desktop": true,
+        "section_border_radius": 12,
+        "padding_top": 40,
+        "padding_bottom": 40,
+        "padding_top_mobile": 20,
+        "padding_bottom_mobile": 20,
+        "margin_top": 40,
+        "margin_bottom": 40,
+        "margin_top_mobile": 20,
+        "margin_bottom_mobile": 20,
+        "faq_item_gap": 10,
+        "faq_divider_width": 1,
+        "faq_question_color": "#1b4332",
+        "faq_question_custom_font": false,
+        "faq_question_as": "p",
+        "faq_question_font": "bricolage_grotesque_n4",
+        "faq_question_font_size": 18,
+        "faq_question_font_size_mobile": 16,
+        "faq_question_font_weight": "500",
+        "faq_question_padding_vertical": 10,
+        "faq_question_padding_vertical_mobile": 10,
+        "faq_answer_color": "#1b4332",
+        "faq_answer_custom_font": false,
+        "faq_answer_font": "bricolage_grotesque_n4",
+        "faq_answer_font_size": 16,
+        "faq_answer_font_size_mobile": 15,
+        "faq_icon_size": 18,
+        "faq_icon_color": "#000000"
       }
     },
     "footer_section_yUzwdH": {
@@ -355,7 +1608,7 @@
           "type": "nav_col",
           "settings": {
             "titulo": "Navegación",
-            "menu": ""
+            "menu": "main-menu"
           }
         },
         "nav_col_iHJf7L": {
@@ -371,7 +1624,7 @@
             "titulo": "¿Necesitas ayuda?",
             "email": "info@fitoheal.co",
             "web": "www.fitoheal.co",
-            "social": "@fitoheal.co",
+            "social": "@fitoheal",
             "colombia_badge": true,
             "colombia_text": "Calidad, ciencia y naturaleza para tu bienestar diario."
           }
@@ -397,15 +1650,24 @@
   },
   "order": [
     "announcement-bar",
+    "1782847609a80ad226",
+    "vso_hero_12_i9ifzL",
     "hero-grid",
     "social-proof",
     "features-bar",
+    "vso_video_carousel_01_mafDjU",
+    "vso_img_with_text_01_HLxdjV",
+    "about-section",
+    "vso_video_carousel_03_zPGYPV",
+    "all_products_CT9cBY",
+    "vso_hero_54_GBrMXJ",
     "how-it-works",
     "product-tabs",
+    "vso_hero_13_DLDjJD",
     "kits-section",
-    "all_products_CT9cBY",
-    "about-section",
+    "vso_hero_14_Qz6GQN",
     "cta-banner",
+    "vso_faq_02_4p8iQ4",
     "footer_section_yUzwdH"
   ]
 }

@@ -57,7 +57,7 @@
         "text_WKhTaO": {
           "type": "text",
           "settings": {
-            "text": "<p>_Apoya el metabolismo_, contribuye al equilibrio de la glucosa y _favorece el bienestar digestivo diario.</p>",
+            "text": "<p>Comes bien, te mueves, pero tu metabolismo no acompaña. _La Berberina actúa donde el problema realmente está.</p>",
             "text_highlight_color": "#d7fca3",
             "text_highlight_text_color": "#111111",
             "text_color": "#555555",
@@ -160,7 +160,7 @@
         "description_4X83w7": {
           "type": "description",
           "settings": {
-            "description_text": "<p>Una fórmula liposomal de alta absorción diseñada para apoyar tu metabolismo, digestión y bienestar diario.</p>",
+            "description_text": "<p>Una fórmula liposomal de alta absorción basada en berberina — un compuesto vegetal que actúa sobre el metabolismo de la glucosa (el azúcar en sangre), el perfil lipídico (colesterol y triglicéridos) y el equilibrio digestivo.</p><p>⚠  No combinar con medicamentos para diabetes (metformina, insulina), anticoagulantes ni medicamentos para la presión sin supervisión médica. No recomendado en embarazo ni lactancia.</p>",
             "description_color": "#111111",
             "description_font_size": 16,
             "description_font_size_mobile": 14,
@@ -177,7 +177,7 @@
           "type": "collapsible_row",
           "settings": {
             "title": "¿Cómo funciona la Berberina Liposomal?",
-            "content": "<p>La berberina es un activo natural utilizado para apoyar el metabolismo, el equilibrio de la glucosa y el bienestar digestivo. Su tecnología liposomal favorece una mejor absorción y aprovechamiento dentro de la rutina diaria.</p>",
+            "content": "<p>La berberina activa una enzima llamada AMPK — conocida como el 'interruptor maestro del metabolismo' — que regula cómo el cuerpo usa y almacena la energía. Eso se traduce en mejor manejo de la glucosa (azúcar en sangre), mejores niveles de colesterol y mayor equilibrio metabólico general.</p>",
             "margin_top_desktop": 0,
             "margin_bottom_desktop": 0,
             "margin_top_mobile": 0,
@@ -188,7 +188,7 @@
           "type": "collapsible_row",
           "settings": {
             "title": "¿Cuándo debo tomarla?",
-            "content": "<p>Tomar de <strong>1 a 2 cápsulas al día</strong> con agua, preferiblemente junto a una comida o según tu rutina diaria. La etiqueta indica vía oral y dosis de 1 a 2 cápsulas al día. </p>",
+            "content": "<p>Con las comidas principales — desayuno, almuerzo o comida. Actúa mejor cuando hay glucosa que regular. 1 a 2 cápsulas al día.</p>",
             "margin_top_desktop": 0,
             "margin_bottom_desktop": 0,
             "margin_top_mobile": 0,
@@ -199,7 +199,7 @@
           "type": "collapsible_row",
           "settings": {
             "title": "¿En cuánto tiempo puedo notar cambios?",
-            "content": "<p>Cada cuerpo responde de manera diferente. Con el uso constante, puede apoyar el equilibrio metabólico, la digestión y el bienestar general.</p>",
+            "content": "<p>Los cambios en glucosa y colesterol suelen evidenciarse en exámenes después de 8 a 12 semanas de uso constante. La energía más estable durante el día puede notarse antes.</p>",
             "margin_top_desktop": 0,
             "margin_bottom_desktop": 0,
             "margin_top_mobile": 0,
@@ -325,6 +325,113 @@
         "collapsible_icon_size": 30
       }
     },
+    "vso_img_with_text_01_AAacND": {
+      "type": "vso-img-with-text-01",
+      "blocks": {
+        "image_3J4gWK": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/ChatGPT_Image_24_jun_2026_14_52_04.png",
+            "image_height": 580,
+            "image_height_mobile": 400,
+            "image_border_radius": 8
+          }
+        },
+        "title_dgdpij": {
+          "type": "title",
+          "settings": {
+            "title": "¿Qué es la tecnología liposomal?",
+            "title_custom": false,
+            "title_font": "assistant_n4",
+            "title_font_weight": "700",
+            "title_font_size": 30,
+            "title_font_size_mobile": 24,
+            "title_margin_bottom": 20,
+            "title_color": "#0cc172"
+          }
+        },
+        "description_rQh89r": {
+          "type": "description",
+          "settings": {
+            "text": "La tecnología liposomal ayuda a que los ingredientes activos lleguen mejor protegidos al cuerpo.Funciona mediante liposomas: pequeñas estructuras de fosfolípidos que encapsulan los nutrientes, los protegen durante la digestión y facilitan su transporte.El resultado: una absorción más eficiente y una mejor experiencia nutricional.",
+            "text_custom": false,
+            "text_font": "assistant_n4",
+            "text_font_weight": "400",
+            "text_alignment": "left",
+            "text_font_size": 16,
+            "text_font_size_mobile": 16,
+            "text_margin_bottom": 30,
+            "text_color": "#fafdf8"
+          }
+        },
+        "feature_63BrfT": {
+          "type": "feature",
+          "disabled": true,
+          "settings": {
+            "text": "Hydration Retention",
+            "text_custom": false,
+            "text_font": "assistant_n4",
+            "text_font_weight": "400"
+          }
+        },
+        "feature_ikQYPG": {
+          "type": "feature",
+          "disabled": true,
+          "settings": {
+            "text": "Temperature Regulation",
+            "text_custom": false,
+            "text_font": "assistant_n4",
+            "text_font_weight": "400"
+          }
+        }
+      },
+      "block_order": [
+        "image_3J4gWK",
+        "title_dgdpij",
+        "description_rQh89r",
+        "feature_63BrfT",
+        "feature_ikQYPG"
+      ],
+      "name": "VSO - Img With Text 01",
+      "settings": {
+        "reverse_layout": false,
+        "mobile_reverse_layout": true,
+        "content_background_color": "#1c4332",
+        "features_gap": 20,
+        "features_margin_top": 10,
+        "feature_icon_size": 48,
+        "feature_icon_size_mobile": 32,
+        "feature_icon_border_radius": 0,
+        "feature_icon_margin_bottom": 10,
+        "feature_text_font_size": 14,
+        "feature_text_font_size_mobile": 14,
+        "feature_text_color": "#000000",
+        "feature_text_font_weight": "400",
+        "features_in_row": false,
+        "grid_max_width": 1220,
+        "section_max_width": 120,
+        "padding_desktop": 60,
+        "padding_tablet_mobile": 0,
+        "margin_desktop": 27,
+        "margin_bottom_desktop": 0,
+        "margin_tablet_mobile": 0,
+        "margin_bottom_tablet_mobile": 0,
+        "background_color": "#1c4332",
+        "background_gradient_color": ""
+      }
+    },
+    "about_section_DnEUem": {
+      "type": "about-section",
+      "settings": {
+        "bg_color": "#fafdf8",
+        "imagen_pos": "left",
+        "titulo": "¿Cómo funciona el liposomal?",
+        "descripcion": "<p>La tecnología liposomal funciona utilizando esferas microscópicas (llamadas liposomas) formadas por grasa para encapsular nutrientes. Actúan como un vehículo de transporte de alta tecnología que protege a los ingredientes de los ácidos estomacales y permite que se absorban directamente en las células. </p>",
+        "cta_label": "",
+        "cta_link": "",
+        "imagen": "shopify://shop_images/ChatGPT_Image_24_jun_2026_14_54_00.png"
+      }
+    },
     "vso_hero_36_81fyqM": {
       "type": "vso-hero-36",
       "blocks": {
@@ -342,7 +449,7 @@
             "subtitle_letter_spacing": 1,
             "subtitle_color": "#ffffff",
             "subtitle_spacing": 16,
-            "title": "<strong>Apoya tu equilibrio desde adentro.</strong>",
+            "title": "<strong>Esto es para ti si...</strong>",
             "title_custom_font": false,
             "title_as": "h2",
             "title_font": "poppins_n6",
@@ -355,7 +462,7 @@
             "title_color": "#ffffff",
             "title_gradient": "linear-gradient(135deg, #EC4899 0%, #F472B6 100%)",
             "title_spacing": 16,
-            "text": "Transform your lashes with:",
+            "text": "",
             "text_custom_font": false,
             "text_as": "p",
             "text_font": "poppins_n4",
@@ -391,29 +498,29 @@
         "feature_1_iokXup": {
           "type": "feature",
           "settings": {
-            "feature_title": "<strong>Apoyo metabólico</strong>",
-            "feature_text": "Contribuye al equilibrio natural del metabolismo."
+            "feature_title": "<strong>Tu energía sube y baja según lo que comes</strong>",
+            "feature_text": "Después de comer sientes pesadez o somnolencia. Antes de comer sientes urgencia o irritabilidad. Esas variaciones son señal de glucosa inestable."
           }
         },
         "feature_2_n0zBc0": {
           "type": "feature",
           "settings": {
-            "feature_title": "<strong>Bienestar digestivo</strong>",
-            "feature_text": "Favorece una mejor sensación digestiva."
+            "feature_title": "<strong>Tu metabolismo no responde como antes</strong>",
+            "feature_text": "Haces las cosas bien — comes razonablemente, te mueves — pero los resultados no acompañan. Grasa abdominal que no cede, colesterol que no baja."
           }
         },
         "feature_3_2EfXxK": {
           "type": "feature",
           "settings": {
-            "feature_title": "<strong>Equilibrio de glucosa</strong>",
-            "feature_text": "Apoya niveles saludables dentro de una rutina diaria."
+            "feature_title": "<strong>Tienes glucosa en límite o te dijeron que cuides el azúcar</strong>",
+            "feature_text": "Prediabetes, resistencia a la insulina o antecedentes familiares. Buscas un apoyo natural como complemento — no como reemplazo — de los cambios de estilo de vida."
           }
         },
         "feature_4_w0MBJV": {
           "type": "feature",
           "settings": {
-            "feature_title": "<strong>Acción antioxidante</strong>",
-            "feature_text": "Contribuye al cuidado celular."
+            "feature_title": "<strong>Tu digestión tiene desequilibrios frecuentes</strong>",
+            "feature_text": "La berberina también actúa sobre la microbiota intestinal — las bacterias que viven en tu intestino y que regulan muchos procesos del cuerpo."
           }
         }
       },
@@ -435,7 +542,7 @@
         "section_outer_padding_bottom": 20,
         "section_outer_padding_top_mobile": 15,
         "section_outer_padding_bottom_mobile": 15,
-        "section_outer_bg_color": "#1e3b1d",
+        "section_outer_bg_color": "#1C4332",
         "full_width_desktop": false,
         "section_border_radius": 12,
         "section_border_radius_mobile": 0,
@@ -478,6 +585,114 @@
         "feature_text_color": "#ffffff"
       }
     },
+    "vso_icon_benefits_01_QX0kww": {
+      "type": "vso-icon-benefits-01",
+      "blocks": {
+        "heading_TUMvsh": {
+          "type": "heading",
+          "settings": {
+            "content_alignment": "left",
+            "title": "<strong>Para el metabolismo _que trabaja en tu contra.</strong>",
+            "title_color": "#000000",
+            "title_highlight_color": "#478641",
+            "custom_title_font": false,
+            "title_as": "h4",
+            "title_font": "sans_serif_n4",
+            "title_size_desktop": 40,
+            "title_size_mobile": 32,
+            "title_line_height": 130,
+            "subtitle": "",
+            "subtitle_color": "#000000",
+            "custom_subtitle_font": false,
+            "subtitle_as": "p",
+            "subtitle_font": "sans_serif_n4",
+            "subtitle_size_desktop": 20,
+            "subtitle_size_mobile": 16,
+            "subtitle_line_height": 130,
+            "header_elements_gap": 16,
+            "header_blocks_gap": 50
+          }
+        },
+        "benefit_1_5lAsTN": {
+          "type": "benefit",
+          "settings": {
+            "title": "<strong>Regula la glucosa en sangre</strong>",
+            "text": "El azúcar en sangre que sube y baja de forma inconsistente genera cansancio, antojos y grasa acumulada. La berberina ayuda a mantenerla estable."
+          }
+        },
+        "benefit_2_WLkZAU": {
+          "type": "benefit",
+          "settings": {
+            "title": "<strong>Apoya el perfil lipídico</strong>",
+            "text": "Colesterol LDL (el 'malo') y triglicéridos (grasas en sangre) — la berberina contribuye a mantenerlos en rango en combinación con alimentación saludable."
+          }
+        },
+        "benefit_3_XK8kZV": {
+          "type": "benefit",
+          "settings": {
+            "title": "<strong>Equilibra la microbiota intestinal</strong>",
+            "text": "Las bacterias del intestino regulan la digestión, la inmunidad y el metabolismo. La berberina tiene efecto modulador sobre ese ecosistema — lo pone en mejor orden."
+          }
+        },
+        "benefit_4_gPhHh1": {
+          "type": "benefit",
+          "settings": {
+            "title": "<strong>Energía más estable durante el día</strong>",
+            "text": "Cuando la glucosa es consistente, la energía también lo es. Sin el pico de energía después de comer ni el bajón de las 3 de la tarde."
+          }
+        }
+      },
+      "block_order": [
+        "heading_TUMvsh",
+        "benefit_1_5lAsTN",
+        "benefit_2_WLkZAU",
+        "benefit_3_XK8kZV",
+        "benefit_4_gPhHh1"
+      ],
+      "name": "VSO - Icon Benefits 01",
+      "settings": {
+        "enable_advanced_settings": false,
+        "section_max_width": 64,
+        "section_horizontal_padding": 24,
+        "padding_horizontal_mobile": 15,
+        "background_color": "#ffffff",
+        "full_width": true,
+        "section_border_radius": 12,
+        "section_border_radius_mobile": 0,
+        "padding_top_desktop": 40,
+        "padding_bottom_desktop": 40,
+        "padding_top_mobile": 20,
+        "padding_bottom_mobile": 20,
+        "margin_top_desktop": 40,
+        "margin_bottom_desktop": 40,
+        "margin_top_mobile": 20,
+        "margin_bottom_mobile": 20,
+        "mobile_columns": "2",
+        "blocks_alignment": "center",
+        "desktop_blocks_gap": 32,
+        "mobile_blocks_gap": 16,
+        "custom_blocks_title_font": false,
+        "blocks_title_as": "h3",
+        "blocks_title_font": "sans_serif_n4",
+        "block_title_size_desktop": 18,
+        "block_title_size_mobile": 18,
+        "block_title_line_height": 120,
+        "blocks_title_color": "#000000",
+        "custom_blocks_text_font": true,
+        "blocks_text_as": "p",
+        "blocks_text_font": "gelasio_n4",
+        "block_text_size_desktop": 20,
+        "block_text_size_mobile": 16,
+        "block_text_line_height": 150,
+        "blocks_text_color": "#000000",
+        "block_background_color": "rgba(0,0,0,0)",
+        "desktop_icon_size": 180,
+        "mobile_icon_size": 100,
+        "block_padding": 0,
+        "block_elements_gap": 16,
+        "block_border_radius": 0
+      }
+    },
     "vso_hero_19_XGjzRA": {
       "type": "vso-hero-19",
       "blocks": {
@@ -485,7 +700,7 @@
           "type": "heading",
           "settings": {
             "heading_alignment": "center",
-            "heading": "_Equilibrio metabólico_, paso a paso",
+            "heading": "_Lo que puedes esperar,_ semana a semana.",
             "heading_custom_font": false,
             "heading_as": "h3",
             "heading_font": "poppins_n4",
@@ -546,24 +761,24 @@
           "type": "timeline_item",
           "settings": {
             "subheading": "Primeros días",
-            "heading": "Apoyo diario",
-            "description": "<p>Integra la berberina a tu rutina para acompañar tu bienestar metabólico.</p>"
+            "heading": "Energía más estable",
+            "description": "<p>Algunos notan menos variaciones de energía durante el día — menos somnolencia post-comida, menos urgencia antes de comer. El metabolismo empieza a responder.</p>"
           }
         },
         "timeline_item_2_3Qr27B": {
           "type": "timeline_item",
           "settings": {
             "subheading": "Semanas 2–4",
-            "heading": "Mayor equilibrio",
-            "description": "<p>Con el uso constante, puede apoyar el metabolismo y el bienestar digestivo.</p>"
+            "heading": "El metabolismo encuentra equilibrio",
+            "description": "<p>La glucosa se estabiliza. La digestión mejora. Con alimentación saludable de por medio, el cuerpo empieza a responder de forma más predecible.</p>"
           }
         },
         "timeline_item_3_6WDi7E": {
           "type": "timeline_item",
           "settings": {
             "subheading": "Uso continuo",
-            "heading": "Bienestar integral",
-            "description": "<p>Contribuye al equilibrio de la glucosa, la digestión y el cuidado antioxidante.</p>"
+            "heading": "Cambios medibles en sangre",
+            "description": "<p>Glucosa en ayunas, hemoglobina glicosilada (marcador de glucosa promedio en los últimos 3 meses), colesterol y triglicéridos — los cambios se evidencian en los exámenes de laboratorio.</p>"
           }
         }
       },
@@ -632,114 +847,6 @@
         "margin_bottom_mobile": 0
       }
     },
-    "vso_icon_benefits_01_QX0kww": {
-      "type": "vso-icon-benefits-01",
-      "blocks": {
-        "heading_TUMvsh": {
-          "type": "heading",
-          "settings": {
-            "content_alignment": "left",
-            "title": "<strong>Tecnología _liposomal para una mejor absorción</strong>",
-            "title_color": "#000000",
-            "title_highlight_color": "#478641",
-            "custom_title_font": false,
-            "title_as": "h4",
-            "title_font": "sans_serif_n4",
-            "title_size_desktop": 40,
-            "title_size_mobile": 32,
-            "title_line_height": 130,
-            "subtitle": "",
-            "subtitle_color": "#000000",
-            "custom_subtitle_font": false,
-            "subtitle_as": "p",
-            "subtitle_font": "sans_serif_n4",
-            "subtitle_size_desktop": 20,
-            "subtitle_size_mobile": 16,
-            "subtitle_line_height": 130,
-            "header_elements_gap": 16,
-            "header_blocks_gap": 50
-          }
-        },
-        "benefit_1_5lAsTN": {
-          "type": "benefit",
-          "settings": {
-            "title": "<strong>Alta absorción X5</strong>",
-            "text": "Favorece mayor disponibilidad del activo."
-          }
-        },
-        "benefit_2_WLkZAU": {
-          "type": "benefit",
-          "settings": {
-            "title": "<strong>Mejor aprovechamiento</strong>",
-            "text": "Ayuda a que cada cápsula trabaje mejor."
-          }
-        },
-        "benefit_3_XK8kZV": {
-          "type": "benefit",
-          "settings": {
-            "title": "<strong>Uso constante</strong>",
-            "text": "Apoya una experiencia más estable."
-          }
-        },
-        "benefit_4_gPhHh1": {
-          "type": "benefit",
-          "settings": {
-            "title": "<strong>Rutina fácil</strong>",
-            "text": "Cápsulas prácticas para el día a día."
-          }
-        }
-      },
-      "block_order": [
-        "heading_TUMvsh",
-        "benefit_1_5lAsTN",
-        "benefit_2_WLkZAU",
-        "benefit_3_XK8kZV",
-        "benefit_4_gPhHh1"
-      ],
-      "name": "VSO - Icon Benefits 01",
-      "settings": {
-        "enable_advanced_settings": false,
-        "section_max_width": 64,
-        "section_horizontal_padding": 24,
-        "padding_horizontal_mobile": 15,
-        "background_color": "#ffffff",
-        "full_width": true,
-        "section_border_radius": 12,
-        "section_border_radius_mobile": 0,
-        "padding_top_desktop": 40,
-        "padding_bottom_desktop": 40,
-        "padding_top_mobile": 20,
-        "padding_bottom_mobile": 20,
-        "margin_top_desktop": 40,
-        "margin_bottom_desktop": 40,
-        "margin_top_mobile": 20,
-        "margin_bottom_mobile": 20,
-        "mobile_columns": "2",
-        "blocks_alignment": "center",
-        "desktop_blocks_gap": 32,
-        "mobile_blocks_gap": 16,
-        "custom_blocks_title_font": false,
-        "blocks_title_as": "h3",
-        "blocks_title_font": "sans_serif_n4",
-        "block_title_size_desktop": 18,
-        "block_title_size_mobile": 18,
-        "block_title_line_height": 120,
-        "blocks_title_color": "#000000",
-        "custom_blocks_text_font": true,
-        "blocks_text_as": "p",
-        "blocks_text_font": "gelasio_n4",
-        "block_text_size_desktop": 20,
-        "block_text_size_mobile": 16,
-        "block_text_line_height": 150,
-        "blocks_text_color": "#000000",
-        "block_background_color": "rgba(0,0,0,0)",
-        "desktop_icon_size": 180,
-        "mobile_icon_size": 100,
-        "block_padding": 0,
-        "block_elements_gap": 16,
-        "block_border_radius": 0
-      }
-    },
     "vso_img_with_text_01_xtNmKG": {
       "type": "vso-img-with-text-01",
       "blocks": {
@@ -768,7 +875,7 @@
         "description_gdagdr": {
           "type": "description",
           "settings": {
-            "text": "Nuestra fórmula está diseñada para favorecer una mejor absorción de los activos de la berberina, ayudando a que tu cuerpo los aproveche mejor dentro de tu rutina diaria.",
+            "text": "La berberina tiene un problema conocido: su biodisponibilidad natural es muy baja — el cuerpo absorbe una fracción pequeña de lo que se toma en cápsula estándar. La versión liposomal resuelve eso: envuelve la berberina en una capa de grasa que protege el compuesto en el tránsito digestivo y lo lleva directamente al torrente sanguíneo donde puede activar el metabolismo.",
             "text_custom": false,
             "text_font": "assistant_n4",
             "text_font_weight": "400",
@@ -947,6 +1054,7 @@
         "card_item_7_TC3pr9",
         "card_item_8_9b3ZpQ"
       ],
+      "disabled": true,
       "name": "VSO - Hero 45",
       "settings": {
         "enable_advanced_settings": false,
@@ -1448,7 +1556,7 @@
         "title_wMRzQ5": {
           "type": "title",
           "settings": {
-            "title": "<strong>Resuelve _tus dudas_ importantes</strong>",
+            "title": "<strong>Lo que suelen _preguntarnos</strong>",
             "title_color": "#000000",
             "title_highlight_color": "#478641",
             "custom_font": false,
@@ -1467,7 +1575,7 @@
         "subtitle_EvXGjz": {
           "type": "subtitle",
           "settings": {
-            "subtitle": "<p><strong>Información clara para saber cómo integrar Berberina Liposomal a tu rutina diaria.</strong></p>",
+            "subtitle": "<p>Sobre Berberina Liposomal de Fitoheal.</p>",
             "subtitle_color": "#121212",
             "custom_font": false,
             "subtitle_as": "p",
@@ -1511,28 +1619,35 @@
           "type": "faq_item",
           "settings": {
             "question": "<strong>¿Para qué sirve la Berberina Liposomal?</strong>",
-            "answer": "<p><strong>Apoya el metabolismo, contribuye al equilibrio de la glucosa y favorece el bienestar digestivo diario.</strong> Estos son los claims recomendados para e-commerce en berberina, junto con su acción antioxidante. </p>"
+            "answer": "<p>Para apoyar el metabolismo de la glucosa (azúcar en sangre), mejorar el perfil lipídico (colesterol y triglicéridos) y equilibrar la microbiota intestinal (las bacterias que regulan la digestión y el metabolismo). Es para quien siente que su cuerpo no responde metabólicamente como debería.</p>"
           }
         },
         "faq_item_2_ohlkGR": {
           "type": "faq_item",
           "settings": {
             "question": "<strong>¿Cómo debo tomarla?</strong>",
-            "answer": "<p><strong>Tomar de 1 a 2 cápsulas al día con agua, preferiblemente junto a una comida o según tu rutina diaria.</strong> La etiqueta indica uso oral y dosis de 1 a 2 cápsulas al día. </p>"
+            "answer": "<p>1 a 2 cápsulas con las comidas principales. La berberina actúa mejor cuando hay glucosa que regular — tomarla en ayunas reduce su efectividad.</p>"
           }
         },
         "faq_item_3_aKHWJF": {
           "type": "faq_item",
           "settings": {
-            "question": "<strong>¿Qué diferencia tiene la tecnología liposomal?</strong>",
-            "answer": "<p><strong>La tecnología liposomal ayuda a proteger y transportar los activos para favorecer una mejor absorción y aprovechamiento en el organismo.</strong> Fitoheal posiciona toda la línea con enfoque de “Alta absorción X5”.</p>"
+            "question": "<strong>¿Reemplaza los medicamentos para la diabetes?</strong>",
+            "answer": "<p>No. La berberina es un complemento natural — no reemplaza medicamentos ni tratamientos médicos. Si tienes diabetes tipo 2 o prediabetes y tomas medicación, consulta con tu médico antes de tomar berberina, ya que puede interactuar con algunos medicamentos antidiabéticos.</p>"
           }
         },
         "faq_item_4_jrk0ZU": {
           "type": "faq_item",
           "settings": {
-            "question": "<strong>¿Tiene estimulantes?</strong>",
-            "answer": "<p><strong>Sí, puede integrarse como parte de una rutina diaria de bienestar.</strong> Si estás embarazada, en lactancia o bajo tratamiento médico, consulta con un profesional de salud antes de usarla. La etiqueta también indica mantener fuera del alcance de los niños. </p>"
+            "question": "<strong>¿En cuánto tiempo noto cambios?</strong>",
+            "answer": "<p>La energía más estable puede notarse en las primeras semanas. Los cambios en glucosa y colesterol son medibles en exámenes después de 8 a 12 semanas de uso constante.</p>"
+          }
+        },
+        "faq_item_y3yt3i": {
+          "type": "faq_item",
+          "settings": {
+            "question": "<strong>¿Y si lo tomo y no siento nada?</strong>",
+            "answer": "<p>La berberina actúa sobre marcadores que no siempre se sienten directamente — glucosa, colesterol, triglicéridos. El mejor indicador son los exámenes de sangre después de 3 meses de uso. Si no hay cambios, escríbenos.</p>"
           }
         }
       },
@@ -1543,7 +1658,8 @@
         "faq_item_1_nCxGYg",
         "faq_item_2_ohlkGR",
         "faq_item_3_aKHWJF",
-        "faq_item_4_jrk0ZU"
+        "faq_item_4_jrk0ZU",
+        "faq_item_y3yt3i"
       ],
       "name": "VSO - FAQ 02",
       "settings": {
@@ -1590,9 +1706,11 @@
   },
   "order": [
     "vso_product_info_02_CB34KK",
+    "vso_img_with_text_01_AAacND",
+    "about_section_DnEUem",
     "vso_hero_36_81fyqM",
-    "vso_hero_19_XGjzRA",
     "vso_icon_benefits_01_QX0kww",
+    "vso_hero_19_XGjzRA",
     "vso_img_with_text_01_xtNmKG",
     "vso_hero_45_8W1D8M",
     "vso_hero_32_5X7zMU",
