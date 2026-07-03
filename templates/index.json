@@ -304,6 +304,7 @@
         },
         "slide_NLkp9a": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "poster_desktop": "shopify://shop_images/ChatGPT_Image_3_jul_2026_12_10_06.png",
             "eyebrow": "",
@@ -319,8 +320,8 @@
         },
         "slide_exaHqc": {
           "type": "slide",
+          "disabled": true,
           "settings": {
-            "poster_desktop": "shopify://shop_images/ChatGPT_Image_3_jul_2026_12_01_47.png",
             "eyebrow": "",
             "title": "",
             "subtitle": "",
