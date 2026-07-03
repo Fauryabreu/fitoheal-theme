@@ -302,6 +302,20 @@
             "text_pos_v": "center"
           }
         },
+        "slide_NLkp9a": {
+          "type": "slide",
+          "settings": {
+            "eyebrow": "",
+            "title": "",
+            "subtitle": "",
+            "btn1_text": "",
+            "btn1_link": "",
+            "btn2_text": "",
+            "btn2_link": "",
+            "text_pos_h": "left",
+            "text_pos_v": "center"
+          }
+        },
         "slide_exaHqc": {
           "type": "slide",
           "settings": {
@@ -319,6 +333,7 @@
       },
       "block_order": [
         "slide_jYpmpM",
+        "slide_NLkp9a",
         "slide_exaHqc"
       ],
       "name": "Hero Slideshow Video",
