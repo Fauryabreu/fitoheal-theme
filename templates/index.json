@@ -570,8 +570,29 @@
         "background_gradient_color": ""
       }
     },
+    "text_media_yg9xaJ": {
+      "type": "text-media",
+      "name": "Texto + Media",
+      "settings": {
+        "video": "shopify://files/videos/beneficio.mp4",
+        "media_position": "right",
+        "media_aspect": "1 / 1",
+        "media_radius": 20,
+        "eyebrow": "",
+        "title": "¿Cómo funciona el liposomal?",
+        "title_size": 44,
+        "text": "<p>La tecnología liposomal funciona utilizando esferas microscópicas (llamadas liposomas) formadas por grasa para encapsular nutrientes. Actúan como un vehículo de transporte de alta tecnología que protege a los ingredientes de los ácidos estomacales y permite que se absorban directamente en las células. </p>",
+        "btn1_text": "",
+        "btn1_link": "",
+        "btn2_text": "",
+        "btn2_link": "",
+        "bg_color": "#FFFFFF",
+        "text_color": "#1C4332"
+      }
+    },
     "about-section": {
       "type": "about-section",
+      "disabled": true,
       "settings": {
         "bg_color": "#fafdf8",
         "imagen_pos": "left",
@@ -1649,6 +1670,7 @@
     "features-bar",
     "vso_video_carousel_01_mafDjU",
     "vso_img_with_text_01_HLxdjV",
+    "text_media_yg9xaJ",
     "about-section",
     "vso_video_carousel_03_zPGYPV",
     "all_products_CT9cBY",
