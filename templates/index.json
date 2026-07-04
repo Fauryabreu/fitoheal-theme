@@ -581,7 +581,7 @@
       "type": "text-media",
       "name": "Texto + Media",
       "settings": {
-        "video": "shopify://files/videos/ffff.mp4",
+        "video": "shopify://files/videos/fsdfsdf.mp4",
         "media_position": "right",
         "media_aspect": "1 / 1",
         "media_radius": 0,
