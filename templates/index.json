@@ -345,7 +345,7 @@
         "height_desktop": "85vh",
         "height_mobile": "88svh",
         "autoplay": true,
-        "autoplay_speed": 4,
+        "autoplay_speed": 3,
         "transition": "fade",
         "show_arrows": true,
         "show_dots": true,
