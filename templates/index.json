@@ -577,7 +577,7 @@
         "video": "shopify://files/videos/beneficio.mp4",
         "media_position": "right",
         "media_aspect": "1 / 1",
-        "media_radius": 20,
+        "media_radius": 0,
         "eyebrow": "",
         "title": "¿Cómo funciona el liposomal?",
         "title_size": 44,
@@ -586,8 +586,8 @@
         "btn1_link": "",
         "btn2_text": "",
         "btn2_link": "",
-        "bg_color": "#FFFFFF",
-        "text_color": "#1C4332"
+        "bg_color": "#ffffff",
+        "text_color": "#1c4332"
       }
     },
     "about-section": {
