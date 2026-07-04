@@ -582,6 +582,7 @@
       "name": "Texto + Media",
       "settings": {
         "video": "shopify://files/videos/3ffff.mp4",
+        "show_audio_toggle": false,
         "media_position": "right",
         "media_aspect": "1 / 1",
         "media_radius": 0,
@@ -593,8 +594,8 @@
         "btn1_link": "",
         "btn2_text": "",
         "btn2_link": "",
-        "bg_color": "#1B4332",
-        "text_color": "#FAFDF8"
+        "bg_color": "#1b4332",
+        "text_color": "#fafdf8"
       }
     },
     "text_media_yg9xaJ": {
@@ -1580,6 +1581,7 @@
         },
         "faq_item_DJn9rB": {
           "type": "faq_item",
+          "disabled": true,
           "settings": {
             "question": "<strong>¿Fitoheal reemplaza un tratamiento médico?</strong>",
             "answer": "<p>No. Fitoheal es un apoyo para el bienestar diario. No reemplaza diagnósticos, tratamientos ni recomendaciones médicas profesionales.</p>"
