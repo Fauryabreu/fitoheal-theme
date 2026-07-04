@@ -576,6 +576,26 @@
         "background_gradient_color": ""
       }
     },
+    "text_media_xM3UNX": {
+      "type": "text-media",
+      "name": "Texto + Media",
+      "settings": {
+        "video": "shopify://files/videos/ffff.mp4",
+        "media_position": "right",
+        "media_aspect": "1 / 1",
+        "media_radius": 20,
+        "eyebrow": "",
+        "title": "¿Qué es la tecnología liposomal?",
+        "title_size": 44,
+        "text": "<p>La tecnología liposomal ayuda a que los ingredientes activos lleguen mejor protegidos al cuerpo.Funciona mediante liposomas: pequeñas estructuras de fosfolípidos que encapsulan los nutrientes, los protegen durante la digestión y facilitan su transporte.El resultado: una absorción más eficiente y una mejor experiencia nutricional.</p>",
+        "btn1_text": "",
+        "btn1_link": "",
+        "btn2_text": "",
+        "btn2_link": "",
+        "bg_color": "#1B4332",
+        "text_color": "#FAFDF8"
+      }
+    },
     "text_media_yg9xaJ": {
       "type": "text-media",
       "name": "Texto + Media",
@@ -1677,6 +1697,7 @@
     "features-bar",
     "vso_video_carousel_01_mafDjU",
     "vso_img_with_text_01_HLxdjV",
+    "text_media_xM3UNX",
     "text_media_yg9xaJ",
     "about-section",
     "vso_video_carousel_03_zPGYPV",
