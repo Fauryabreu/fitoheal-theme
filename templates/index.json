@@ -490,7 +490,7 @@
             "image": "shopify://shop_images/ChatGPT_Image_4_jul_2026_01_43_28.png",
             "image_height": 580,
             "image_height_mobile": 400,
-            "image_border_radius": 8
+            "image_border_radius": 7
           }
         },
         "title_Y6QBxe": {
@@ -548,6 +548,7 @@
         "feature_bUNBUz",
         "feature_VtTJM7"
       ],
+      "disabled": true,
       "name": "VSO - Img With Text 01",
       "settings": {
         "reverse_layout": false,
@@ -583,7 +584,7 @@
         "video": "shopify://files/videos/ffff.mp4",
         "media_position": "right",
         "media_aspect": "1 / 1",
-        "media_radius": 20,
+        "media_radius": 0,
         "eyebrow": "",
         "title": "¿Qué es la tecnología liposomal?",
         "title_size": 44,
