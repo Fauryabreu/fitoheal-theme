@@ -334,19 +334,36 @@
             "text_pos_h": "left",
             "text_pos_v": "center"
           }
+        },
+        "slide_HbRfbr": {
+          "type": "slide",
+          "settings": {
+            "video_desktop": "shopify://files/videos/video_202607040644.mp4",
+            "video_mobile": "shopify://files/videos/2026-07-04 01:30:59.MP4",
+            "eyebrow": "",
+            "title": "",
+            "subtitle": "",
+            "btn1_text": "",
+            "btn1_link": "",
+            "btn2_text": "",
+            "btn2_link": "",
+            "text_pos_h": "left",
+            "text_pos_v": "center"
+          }
         }
       },
       "block_order": [
         "slide_NLkp9a",
         "slide_jYpmpM",
-        "slide_exaHqc"
+        "slide_exaHqc",
+        "slide_HbRfbr"
       ],
       "name": "Hero Slideshow Video",
       "settings": {
         "height_desktop": "85vh",
         "height_mobile": "88svh",
         "autoplay": true,
-        "autoplay_speed": 3,
+        "autoplay_speed": 4,
         "transition": "fade",
         "show_arrows": true,
         "show_dots": true,
