@@ -603,7 +603,7 @@
       "name": "Texto + Media",
       "settings": {
         "video": "shopify://files/videos/333.mp4",
-        "show_audio_toggle": false,
+        "show_audio_toggle": true,
         "media_position": "right",
         "media_aspect": "1 / 1",
         "media_radius": 0,
