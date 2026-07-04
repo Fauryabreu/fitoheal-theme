@@ -1,0 +1,300 @@
+{% comment %}
+  FITOHEAL — Texto + Media
+  - Layout 2 columnas: texto + media (imagen O video)
+  - Prioridad: si hay video, gana el video; si no, imagen
+  - Video: autoplay muted loop, solo reproduce cuando está en pantalla
+  - Media como card redondeada, aspect ratio configurable
+  - Posición de media: izquierda o derecha
+{% endcomment %}
+
+{%- liquid
+  assign sid = section.id
+-%}
+
+<style>
+  #fh-textmedia-{{ sid }} {
+    background: {{ section.settings.bg_color }};
+    padding: clamp(3rem, 8vw, 6rem) clamp(1.25rem, 4vw, 3rem);
+  }
+  #fh-textmedia-{{ sid }} .fh-textmedia__grid {
+    max-width: var(--page-width, 1200px);
+    margin-inline: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: clamp(2rem, 5vw, 4.5rem);
+    align-items: center;
+  }
+  {%- if section.settings.media_position == 'left' -%}
+  #fh-textmedia-{{ sid }} .fh-textmedia__media { order: -1; }
+  {%- endif -%}
+
+  #fh-textmedia-{{ sid }} .fh-textmedia__eyebrow {
+    font-family: var(--font-body);
+    font-size: 0.8125rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: {{ section.settings.text_color | color_modify: 'alpha', 0.75 }};
+    margin-bottom: 0.75rem;
+  }
+  #fh-textmedia-{{ sid }} .fh-textmedia__title {
+    font-family: var(--font-display);
+    font-size: clamp(1.75rem, 4vw, {{ section.settings.title_size }}px);
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+    font-weight: 500;
+    color: {{ section.settings.text_color }};
+    margin-bottom: 1.25rem;
+  }
+  #fh-textmedia-{{ sid }} .fh-textmedia__text {
+    font-family: var(--font-body);
+    font-size: 1.0625rem;
+    line-height: 1.7;
+    color: {{ section.settings.text_color | color_modify: 'alpha', 0.88 }};
+  }
+  #fh-textmedia-{{ sid }} .fh-textmedia__text p { margin-bottom: 1rem; }
+  #fh-textmedia-{{ sid }} .fh-textmedia__ctas {
+    display: flex;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+    margin-top: 1.75rem;
+  }
+
+  #fh-textmedia-{{ sid }} .fh-textmedia__media {
+    position: relative;
+    border-radius: {{ section.settings.media_radius }}px;
+    overflow: hidden;
+    {%- if section.settings.media_aspect != 'auto' -%}
+    aspect-ratio: {{ section.settings.media_aspect }};
+    {%- endif -%}
+    box-shadow: var(--shadow-lg, 0 20px 40px rgba(0,0,0,0.12));
+  }
+  #fh-textmedia-{{ sid }} .fh-textmedia__media img,
+  #fh-textmedia-{{ sid }} .fh-textmedia__media video {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  @media (max-width: 767px) {
+    #fh-textmedia-{{ sid }} .fh-textmedia__grid {
+      grid-template-columns: 1fr;
+    }
+    #fh-textmedia-{{ sid }} .fh-textmedia__media { order: -1; }
+    #fh-textmedia-{{ sid }} .fh-textmedia__ctas .fh-btn { width: 100%; }
+  }
+</style>
+
+<section id="fh-textmedia-{{ sid }}" class="fh-textmedia">
+  <div class="fh-textmedia__grid">
+
+    <div class="fh-textmedia__content">
+      {%- if section.settings.eyebrow != blank -%}
+        <p class="fh-textmedia__eyebrow">{{ section.settings.eyebrow }}</p>
+      {%- endif -%}
+      {%- if section.settings.title != blank -%}
+        <h2 class="fh-textmedia__title">{{ section.settings.title }}</h2>
+      {%- endif -%}
+      {%- if section.settings.text != blank -%}
+        <div class="fh-textmedia__text">{{ section.settings.text }}</div>
+      {%- endif -%}
+      {%- if section.settings.btn1_text != blank or section.settings.btn2_text != blank -%}
+        <div class="fh-textmedia__ctas">
+          {%- if section.settings.btn1_text != blank -%}
+            <a href="{{ section.settings.btn1_link | default: '#' }}" class="fh-btn fh-btn--primary">{{ section.settings.btn1_text }}</a>
+          {%- endif -%}
+          {%- if section.settings.btn2_text != blank -%}
+            <a href="{{ section.settings.btn2_link | default: '#' }}" class="fh-btn fh-btn--outline">{{ section.settings.btn2_text }}</a>
+          {%- endif -%}
+        </div>
+      {%- endif -%}
+    </div>
+
+    {%- if section.settings.video != blank or section.settings.image != blank -%}
+      <div class="fh-textmedia__media">
+        {%- if section.settings.video != blank -%}
+          <video muted loop playsinline preload="metadata"
+            {% if section.settings.poster %}poster="{{ section.settings.poster | image_url: width: 1400 }}"{% endif %}
+            data-fh-autoplay>
+            {%- for source in section.settings.video.sources -%}
+              <source src="{{ source.url }}" type="{{ source.mime_type }}">
+            {%- endfor -%}
+          </video>
+        {%- else -%}
+          <img
+            src="{{ section.settings.image | image_url: width: 1400 }}"
+            srcset="{{ section.settings.image | image_url: width: 800 }} 800w, {{ section.settings.image | image_url: width: 1400 }} 1400w"
+            sizes="(max-width: 767px) 100vw, 50vw"
+            alt="{{ section.settings.image.alt | default: section.settings.title | escape }}"
+            loading="lazy"
+            width="{{ section.settings.image.width }}"
+            height="{{ section.settings.image.height }}">
+        {%- endif -%}
+      </div>
+    {%- endif -%}
+
+  </div>
+</section>
+
+{%- if section.settings.video != blank -%}
+<script>
+(function () {
+  var root = document.getElementById('fh-textmedia-{{ sid }}');
+  if (!root) return;
+  var video = root.querySelector('video[data-fh-autoplay]');
+  if (!video) return;
+
+  // Reproduce solo cuando la sección está en pantalla — ahorra datos y batería
+  if ('IntersectionObserver' in window) {
+    new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          var p = video.play();
+          if (p && p.catch) p.catch(function () {});
+        } else {
+          video.pause();
+        }
+      });
+    }, { threshold: 0.25 }).observe(root);
+  } else {
+    video.play();
+  }
+})();
+</script>
+{%- endif -%}
+
+{% schema %}
+{
+  "name": "Texto + Media",
+  "tag": "section",
+  "class": "fh-textmedia-section",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Media (imagen o video)"
+    },
+    {
+      "type": "paragraph",
+      "content": "Si subes video e imagen, el video tiene prioridad."
+    },
+    {
+      "type": "video",
+      "id": "video",
+      "label": "Video"
+    },
+    {
+      "type": "image_picker",
+      "id": "poster",
+      "label": "Poster del video (imagen mientras carga)"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Imagen",
+      "info": "Se usa solo si NO hay video."
+    },
+    {
+      "type": "select",
+      "id": "media_position",
+      "label": "Posición de la media",
+      "options": [
+        { "value": "right", "label": "Derecha" },
+        { "value": "left", "label": "Izquierda" }
+      ],
+      "default": "right"
+    },
+    {
+      "type": "select",
+      "id": "media_aspect",
+      "label": "Proporción de la media",
+      "options": [
+        { "value": "auto", "label": "Automática (tamaño original)" },
+        { "value": "1 / 1", "label": "Cuadrada (1:1)" },
+        { "value": "4 / 3", "label": "Horizontal (4:3)" },
+        { "value": "16 / 9", "label": "Panorámica (16:9)" },
+        { "value": "3 / 4", "label": "Vertical (3:4)" }
+      ],
+      "default": "4 / 3"
+    },
+    {
+      "type": "range",
+      "id": "media_radius",
+      "label": "Bordes redondeados (px)",
+      "min": 0,
+      "max": 40,
+      "step": 4,
+      "default": 20
+    },
+    {
+      "type": "header",
+      "content": "Contenido"
+    },
+    {
+      "type": "text",
+      "id": "eyebrow",
+      "label": "Etiqueta pequeña (eyebrow)"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Título"
+    },
+    {
+      "type": "range",
+      "id": "title_size",
+      "label": "Tamaño máximo del título (px)",
+      "min": 32,
+      "max": 64,
+      "step": 2,
+      "default": 44
+    },
+    {
+      "type": "richtext",
+      "id": "text",
+      "label": "Texto"
+    },
+    {
+      "type": "text",
+      "id": "btn1_text",
+      "label": "Botón primario — texto"
+    },
+    {
+      "type": "url",
+      "id": "btn1_link",
+      "label": "Botón primario — link"
+    },
+    {
+      "type": "text",
+      "id": "btn2_text",
+      "label": "Botón secundario — texto"
+    },
+    {
+      "type": "url",
+      "id": "btn2_link",
+      "label": "Botón secundario — link"
+    },
+    {
+      "type": "header",
+      "content": "Colores"
+    },
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Color de fondo",
+      "default": "#1B4332"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Color del texto",
+      "default": "#FAFDF8"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Texto + Media"
+    }
+  ]
+}
+{% endschema %}
