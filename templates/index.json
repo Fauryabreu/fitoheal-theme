@@ -375,6 +375,7 @@
         },
         "video_q3EmtX": {
           "type": "video",
+          "disabled": true,
           "settings": {
             "video": "shopify://files/videos/333.mp4",
             "title": "",
@@ -383,6 +384,7 @@
         },
         "video_XMdYi4": {
           "type": "video",
+          "disabled": true,
           "settings": {
             "video": "shopify://files/videos/111.mp4",
             "title": "",
@@ -405,6 +407,7 @@
         "video_XMdYi4",
         "video_j7e9Tw"
       ],
+      "disabled": true,
       "name": "VSO - Video Carousel 01",
       "settings": {
         "heading": "",
