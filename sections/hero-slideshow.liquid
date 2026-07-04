@@ -1,9 +1,10 @@
 {% comment %}
-  FITOHEAL — Hero Slideshow (solo video)
-  - Video desktop + video mobile independientes por slide
+  FITOHEAL — Hero Slideshow v2 (video + imagen mezclados)
+  - Cada slide acepta VIDEO o IMAGEN, por dispositivo
+  - Prioridad: si hay video, gana el video; si no, se usa la imagen
+  - Media desktop + media mobile independientes por slide
   - Lazy load: solo slide activo + siguiente cargan
-  - Poster image por dispositivo para LCP rápido
-  - Alturas independientes desktop/mobile
+  - Poster image para videos (LCP rápido)
 {% endcomment %}
 
 {%- liquid
@@ -45,15 +46,15 @@
   #fh-slideshow-{{ sid }} .fh-slide.is-active { transform: translateX(0); }
   {%- endif -%}
 
-  #fh-slideshow-{{ sid }} .fh-slide__media,
-  #fh-slideshow-{{ sid }} .fh-slide__video {
+  #fh-slideshow-{{ sid }} .fh-slide__media {
     position: absolute;
     inset: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
   }
-  #fh-slideshow-{{ sid }} .fh-slide__video--mobile { display: none; }
+  /* Desktop: solo capa desktop visible */
+  #fh-slideshow-{{ sid }} .fh-slide__media--mobile { display: none; }
 
   #fh-slideshow-{{ sid }} .fh-slide__overlay {
     position: absolute;
@@ -162,9 +163,10 @@
 
   @media (max-width: 767px) {
     #fh-slideshow-{{ sid }} { height: {{ section.settings.height_mobile }}; }
-    #fh-slideshow-{{ sid }} .fh-slide__video--desktop { display: none; }
-    #fh-slideshow-{{ sid }} .fh-slide__video--mobile { display: block; }
-    #fh-slideshow-{{ sid }} .fh-slide:not(.fh-slide--has-mobile) .fh-slide__video--desktop { display: block; }
+    /* Mobile: capa mobile visible, desktop oculta — salvo fallback */
+    #fh-slideshow-{{ sid }} .fh-slide__media--desktop { display: none; }
+    #fh-slideshow-{{ sid }} .fh-slide__media--mobile { display: block; }
+    #fh-slideshow-{{ sid }} .fh-slide:not(.fh-slide--has-mobile) .fh-slide__media--desktop { display: block; }
     #fh-slideshow-{{ sid }} .fh-slide__content {
       align-items: center !important;
       justify-content: flex-end !important;
@@ -196,7 +198,7 @@
       {%- liquid
         assign is_first = forloop.first
         assign has_mobile = false
-        if block.settings.video_mobile != blank
+        if block.settings.video_mobile != blank or block.settings.image_mobile != blank
           assign has_mobile = true
         endif
       -%}
@@ -204,26 +206,44 @@
         data-index="{{ forloop.index0 }}"
         {{ block.shopify_attributes }}>
 
-        {%- comment -%} VIDEO DESKTOP {%- endcomment -%}
+        {%- comment -%} CAPA DESKTOP: video gana sobre imagen {%- endcomment -%}
         {%- if block.settings.video_desktop != blank -%}
-          <video class="fh-slide__video fh-slide__video--desktop"
+          <video class="fh-slide__media fh-slide__media--desktop"
             muted loop playsinline preload="none"
             {% if block.settings.poster_desktop %}poster="{{ block.settings.poster_desktop | image_url: width: 1920 }}"{% endif %}>
             {%- for source in block.settings.video_desktop.sources -%}
               <source {% if is_first %}src{% else %}data-src{% endif %}="{{ source.url }}" type="{{ source.mime_type }}">
             {%- endfor -%}
           </video>
+        {%- elsif block.settings.image_desktop != blank -%}
+          <img class="fh-slide__media fh-slide__media--desktop"
+            src="{{ block.settings.image_desktop | image_url: width: 1920 }}"
+            srcset="{{ block.settings.image_desktop | image_url: width: 1100 }} 1100w, {{ block.settings.image_desktop | image_url: width: 1920 }} 1920w, {{ block.settings.image_desktop | image_url: width: 2560 }} 2560w"
+            sizes="100vw"
+            alt="{{ block.settings.image_desktop.alt | default: block.settings.title | escape }}"
+            {% if is_first %}loading="eager" fetchpriority="high"{% else %}loading="lazy"{% endif %}
+            width="{{ block.settings.image_desktop.width }}"
+            height="{{ block.settings.image_desktop.height }}">
         {%- endif -%}
 
-        {%- comment -%} VIDEO MOBILE (independiente) {%- endcomment -%}
-        {%- if has_mobile -%}
-          <video class="fh-slide__video fh-slide__video--mobile"
+        {%- comment -%} CAPA MOBILE: video gana sobre imagen {%- endcomment -%}
+        {%- if block.settings.video_mobile != blank -%}
+          <video class="fh-slide__media fh-slide__media--mobile"
             muted loop playsinline preload="none"
             {% if block.settings.poster_mobile %}poster="{{ block.settings.poster_mobile | image_url: width: 900 }}"{% endif %}>
             {%- for source in block.settings.video_mobile.sources -%}
               <source {% if is_first %}src{% else %}data-src{% endif %}="{{ source.url }}" type="{{ source.mime_type }}">
             {%- endfor -%}
           </video>
+        {%- elsif block.settings.image_mobile != blank -%}
+          <img class="fh-slide__media fh-slide__media--mobile"
+            src="{{ block.settings.image_mobile | image_url: width: 900 }}"
+            srcset="{{ block.settings.image_mobile | image_url: width: 750 }} 750w, {{ block.settings.image_mobile | image_url: width: 1080 }} 1080w"
+            sizes="100vw"
+            alt="{{ block.settings.image_mobile.alt | default: block.settings.title | escape }}"
+            {% if is_first %}loading="eager" fetchpriority="high"{% else %}loading="lazy"{% endif %}
+            width="{{ block.settings.image_mobile.width }}"
+            height="{{ block.settings.image_mobile.height }}">
         {%- endif -%}
 
         <div class="fh-slide__overlay" aria-hidden="true"></div>
@@ -296,7 +316,8 @@
   var speed = parseInt(root.dataset.speed, 10) || 5000;
   var isMobile = window.matchMedia('(max-width: 767px)');
 
-  // Hidrata los <source data-src> de un slide (lazy load real)
+  // Hidrata los <source data-src> de un slide (lazy load real).
+  // Los slides de imagen no tienen sources — no-op.
   function hydrate(slide) {
     slide.querySelectorAll('source[data-src]').forEach(function (s) {
       s.src = s.dataset.src;
@@ -305,12 +326,17 @@
     });
   }
 
-  // Devuelve el video visible según viewport
+  // Devuelve el VIDEO visible según viewport, o null si el slide es de imagen
   function activeVideo(slide) {
-    var mob = slide.querySelector('.fh-slide__video--mobile');
-    var desk = slide.querySelector('.fh-slide__video--desktop');
-    if (isMobile.matches && mob) return mob;
-    return desk || mob;
+    var mob = slide.querySelector('video.fh-slide__media--mobile');
+    var desk = slide.querySelector('video.fh-slide__media--desktop');
+    if (isMobile.matches) {
+      // En mobile: video mobile si existe; si el slide no tiene capa mobile, cae al desktop
+      if (mob) return mob;
+      if (!slide.classList.contains('fh-slide--has-mobile')) return desk;
+      return null; // capa mobile existe pero es imagen
+    }
+    return desk;
   }
 
   function playSlide(slide) {
@@ -524,8 +550,12 @@
       "name": "Slide",
       "settings": [
         {
+          "type": "paragraph",
+          "content": "Cada slide puede ser VIDEO o IMAGEN. Si subes ambos, el video tiene prioridad."
+        },
+        {
           "type": "header",
-          "content": "Video Desktop (horizontal 16:9)"
+          "content": "Media Desktop (horizontal 16:9)"
         },
         {
           "type": "video",
@@ -534,23 +564,36 @@
         },
         {
           "type": "image_picker",
+          "id": "image_desktop",
+          "label": "Imagen desktop",
+          "info": "Se usa solo si NO hay video desktop."
+        },
+        {
+          "type": "image_picker",
           "id": "poster_desktop",
-          "label": "Poster desktop (imagen mientras carga)"
+          "label": "Poster del video (imagen mientras carga)",
+          "info": "Solo aplica si el slide es de video."
         },
         {
           "type": "header",
-          "content": "Video Mobile (vertical 9:16)"
+          "content": "Media Mobile (vertical 9:16)"
         },
         {
           "type": "video",
           "id": "video_mobile",
-          "label": "Video mobile",
-          "info": "Si está vacío, se usa el de desktop como respaldo."
+          "label": "Video mobile"
+        },
+        {
+          "type": "image_picker",
+          "id": "image_mobile",
+          "label": "Imagen mobile",
+          "info": "Se usa solo si NO hay video mobile. Si ambos están vacíos, se usa la media de desktop."
         },
         {
           "type": "image_picker",
           "id": "poster_mobile",
-          "label": "Poster mobile"
+          "label": "Poster del video mobile",
+          "info": "Solo aplica si el slide es de video."
         },
         {
           "type": "header",
