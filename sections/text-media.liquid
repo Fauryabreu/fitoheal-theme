@@ -77,6 +77,32 @@
     object-fit: cover;
   }
 
+  #fh-textmedia-{{ sid }} .fh-textmedia__audio {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    z-index: 2;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: rgba(0,0,0,0.45);
+    backdrop-filter: blur(6px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    cursor: pointer;
+    transition: background 200ms, transform 150ms;
+  }
+  #fh-textmedia-{{ sid }} .fh-textmedia__audio:hover {
+    background: rgba(0,0,0,0.65);
+    transform: scale(1.06);
+  }
+  #fh-textmedia-{{ sid }} .fh-textmedia__audio svg { width: 20px; height: 20px; }
+  #fh-textmedia-{{ sid }} .fh-textmedia__audio .fh-icon-on { display: none; }
+  #fh-textmedia-{{ sid }} .fh-textmedia__audio.is-unmuted .fh-icon-on { display: block; }
+  #fh-textmedia-{{ sid }} .fh-textmedia__audio.is-unmuted .fh-icon-off { display: none; }
+
   @media (max-width: 767px) {
     #fh-textmedia-{{ sid }} .fh-textmedia__grid {
       grid-template-columns: 1fr;
@@ -121,6 +147,12 @@
               <source src="{{ source.url }}" type="{{ source.mime_type }}">
             {%- endfor -%}
           </video>
+          {%- if section.settings.show_audio_toggle -%}
+            <button type="button" class="fh-textmedia__audio" data-fh-audio aria-label="Activar sonido" aria-pressed="false">
+              <svg class="fh-icon-off" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><line x1="23" y1="9" x2="17" y2="15"/><line x1="17" y1="9" x2="23" y2="15"/></svg>
+              <svg class="fh-icon-on" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/></svg>
+            </button>
+          {%- endif -%}
         {%- else -%}
           <img
             src="{{ section.settings.image | image_url: width: 1400 }}"
@@ -154,11 +186,33 @@
           if (p && p.catch) p.catch(function () {});
         } else {
           video.pause();
+          // Si el usuario activó el sonido y scrollea lejos, re-mutear:
+          // evita que el audio arranque de golpe al volver a pasar por la sección
+          if (!video.muted) {
+            video.muted = true;
+            if (audioBtn) {
+              audioBtn.classList.remove('is-unmuted');
+              audioBtn.setAttribute('aria-pressed', 'false');
+              audioBtn.setAttribute('aria-label', 'Activar sonido');
+            }
+          }
         }
       });
     }, { threshold: 0.25 }).observe(root);
   } else {
     video.play();
+  }
+
+  // Toggle de audio
+  var audioBtn = root.querySelector('[data-fh-audio]');
+  if (audioBtn) {
+    audioBtn.addEventListener('click', function () {
+      video.muted = !video.muted;
+      audioBtn.classList.toggle('is-unmuted', !video.muted);
+      audioBtn.setAttribute('aria-pressed', String(!video.muted));
+      audioBtn.setAttribute('aria-label', video.muted ? 'Activar sonido' : 'Silenciar');
+      if (!video.muted && video.paused) video.play();
+    });
   }
 })();
 </script>
@@ -193,6 +247,13 @@
       "id": "image",
       "label": "Imagen",
       "info": "Se usa solo si NO hay video."
+    },
+    {
+      "type": "checkbox",
+      "id": "show_audio_toggle",
+      "label": "Mostrar botón de activar sonido",
+      "info": "Solo tiene sentido si el video tiene pista de audio. El video siempre arranca silenciado (los navegadores lo exigen).",
+      "default": false
     },
     {
       "type": "select",
