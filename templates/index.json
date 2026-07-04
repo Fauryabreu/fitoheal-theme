@@ -306,6 +306,7 @@
           "type": "slide",
           "settings": {
             "image_desktop": "shopify://shop_images/ChatGPT_Image_3_jul_2026_12_10_06.png",
+            "image_mobile": "shopify://shop_images/ChatGPT_Image_4_jul_2026_00_02_23.png",
             "eyebrow": "",
             "title": "",
             "subtitle": "",
@@ -321,6 +322,7 @@
           "type": "slide",
           "settings": {
             "image_desktop": "shopify://shop_images/ChatGPT_Image_3_jul_2026_12_01_47.png",
+            "image_mobile": "shopify://shop_images/ChatGPT_Image_3_jul_2026_23_58_26_2.png",
             "eyebrow": "",
             "title": "",
             "subtitle": "",
