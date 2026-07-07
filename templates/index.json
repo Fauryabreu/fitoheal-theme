@@ -319,8 +319,25 @@
             "text_pos_v": "center"
           }
         },
+        "slide_mhEBFb": {
+          "type": "slide",
+          "settings": {
+            "video_desktop": "shopify://files/videos/fitoheal2.mp4",
+            "video_mobile": "shopify://files/videos/Product_bottles_with_liposomes_f…_202607040700.mp4",
+            "eyebrow": "",
+            "title": "",
+            "subtitle": "",
+            "btn1_text": "",
+            "btn1_link": "",
+            "btn2_text": "",
+            "btn2_link": "",
+            "text_pos_h": "left",
+            "text_pos_v": "center"
+          }
+        },
         "slide_jYpmpM": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "video_desktop": "shopify://files/videos/fitoheal2.mp4",
             "video_mobile": "shopify://files/videos/2026-07-04 01:30:59.MP4",
@@ -355,6 +372,7 @@
       "block_order": [
         "slide_HbRfbr",
         "slide_NLkp9a",
+        "slide_mhEBFb",
         "slide_jYpmpM",
         "slide_exaHqc"
       ],
